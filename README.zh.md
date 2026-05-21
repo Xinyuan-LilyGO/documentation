@@ -31,7 +31,7 @@ npm run dev
 npm run build
 ```
 
-构建产物输出到 `../vitepress-dist/`（项目目录的上一级）。
+构建产物输出到 `vitepress-dist/` 。
 
 ## 预览生产构建
 

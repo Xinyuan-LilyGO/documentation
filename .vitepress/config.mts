@@ -11,7 +11,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 export default defineConfig({
   srcDir: '.',
   srcExclude: ['README.md', 'README.zh.md'],
-  outDir: '../vitepress-dist',
+  outDir: 'vitepress-dist',
   cacheDir: '.vitepress/cache',
 
   rewrites: {

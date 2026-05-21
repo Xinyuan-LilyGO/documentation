@@ -31,7 +31,7 @@ Changes to `.md` files or configs/components under `.vitepress/` hot-reload auto
 npm run build
 ```
 
-Output is written to `../vitepress-dist/` (one level above the project directory).
+Output is written to `vitepress-dist/` .
 
 ## Preview Production Build
 
