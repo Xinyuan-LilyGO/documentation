@@ -9,17 +9,17 @@ import ImageNav from './components/ImageNav.vue'
 import ProductGrid from './components/ProductGrid.vue'
 import HomeLayout from './components/HomeLayout.vue'
 import ImageGallery from './components/ImageGallery.vue'
+import GiscusComment from './components/GiscusComment.vue'
 
 export default {
   extends: DefaultTheme,
 
-  // Inject the Google Translate button into the right side of the nav bar.
-  // All other layout slots are left to the default theme.
   Layout: () => h(DefaultTheme.Layout, null, {
     'nav-bar-content-after': () => h(GoogleTranslate, {
       lang: 'auto',
       domain: 'translate.google.com',
     }),
+    'doc-after': () => h(GiscusComment),
   }),
 
   enhanceApp({ app }: { app: App }) {
