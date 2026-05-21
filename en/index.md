@@ -12,7 +12,7 @@ sections:
       - title: LILYGO Products
         desc: Full range of LILYGO ESP32 development boards covering displays, wearables, LoRa communication, AI, and more.
         image: /image/logo.png
-        link: /en/products
+        link: /products
         btn: View Products
   - id: dev-tools
     label: Dev Tools
@@ -21,7 +21,7 @@ sections:
       - title: LILYGO Spark
         desc: All-in-one desktop app for firmware management, serial tools, and embedded utilities. Supports Windows / macOS / Linux.
         image: /dev-tools/lilygo-spark/image.png
-        link: /en/dev-tools/lilygo-spark
+        link: /dev-tools/lilygo-spark
         btn: Get Started
   - id: drivers
     label: Software Drivers
@@ -40,12 +40,12 @@ sections:
       - title: Meshtastic
         desc: Decentralized LoRa-based mesh communication firmware. Supports T-Beam, T-Echo, LoRa32, T-Deck, and more.
         image: /image/meshtastic.svg
-        link: /en/open-source/meshtastic
+        link: /open-source/meshtastic
         btn: Get Started
       - title: Meshcore
         desc: Lightweight C++ multi-hop routing library for off-grid LoRa and radio networks. Supports T-Deck, T-LoRa Pager, and more.
         image: /image/meshcore.png
-        link: /en/open-source/meshcore
+        link: /open-source/meshcore
         btn: Get Started
 ---
 

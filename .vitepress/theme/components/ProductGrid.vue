@@ -88,8 +88,10 @@ const i18n = {
   },
 }
 
-const t = computed(() => i18n[localeIndex.value as 'zh' | 'en'] ?? i18n.zh)
-const catalog = computed(() => data[localeIndex.value as 'zh' | 'en'] ?? data.zh)
+// localeIndex is 'root' for the default (English) locale, 'zh' for Chinese
+const locale = computed(() => localeIndex.value === 'zh' ? 'zh' : 'en')
+const t = computed(() => i18n[locale.value])
+const catalog = computed(() => data[locale.value])
 
 const searchQuery = ref('')
 const selectedCategory = ref('')

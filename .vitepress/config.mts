@@ -8,13 +8,17 @@ import { en } from './config/en'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
-
 export default defineConfig({
   srcDir: '.',
+  srcExclude: ['README.md', 'README.zh.md'],
   outDir: '../vitepress-dist',
   cacheDir: '.vitepress/cache',
 
-  rewrites: {},
+  rewrites: {
+    'en/:rest*': ':rest*',
+  },
+
+  lastUpdated: true,
 
   vite: {
     publicDir: resolve(__dirname, '../public'),
@@ -24,11 +28,6 @@ export default defineConfig({
         configureServer(server) {
           server.middlewares.use((req, res, next) => {
             const urlPath = (req.url ?? '').split('?')[0]
-            if (urlPath === '/' || urlPath === '/index.html') {
-              res.writeHead(302, { Location: '/en/' })
-              res.end()
-              return
-            }
             if (urlPath.endsWith('.bin')) {
               const filePath = resolve(__dirname, '..', decodeURIComponent(urlPath.slice(1)))
               if (existsSync(filePath)) {
@@ -69,14 +68,19 @@ export default defineConfig({
   ignoreDeadLinks: true,
 
   locales: {
-    zh: { label: '中文', link: '/zh/', ...zh },
-    en: { label: 'English', link: '/en/', ...en },
+    root: { label: 'English', ...en },
+    zh: { label: '中文', ...zh },
   },
+
+  head: [[
+    'link',
+    { rel: 'icon', href: '/image/logo.png' },
+  ]],
 
   themeConfig: {
     logo: '/image/logo.png',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Xinyuan-LilyGO' },
+      { icon: 'github', link: 'https://github.com/Xinyuan-LilyGO/documentation' },
     ],
     search: {
       provider: 'local',

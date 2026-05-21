@@ -184,7 +184,7 @@ export const zh = defineConfig({
     returnToTopLabel: '回到顶部',
     langMenuLabel: '切换语言',
     editLink: {
-      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
+      pattern: 'https://github.com/Xinyuan-LilyGO/documentation/edit/master/:path',
       text: '在 GitHub 上编辑此页面'
     },
     lastUpdated: {

@@ -21,7 +21,7 @@ sections:
       - title: LILYGO Spark
         desc: 集固件管理、串口工具、嵌入式实用工具于一体的桌面应用，支持 Windows / macOS / Linux。
         image: /dev-tools/lilygo-spark/image.png
-        link: /en/dev-tools/lilygo-spark
+        link: /zh/dev-tools/lilygo-spark
         btn: 快速上手
   - id: drivers
     label: 软件驱动

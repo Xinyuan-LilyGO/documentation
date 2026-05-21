@@ -110,7 +110,7 @@ function buildOpenSourceSidebar(): DefaultTheme.SidebarItem[] {
       const linkName = file.name.replace('.md', '')
       return {
         text: fileTitle || linkName,
-        link: `/en/open-source/${dir.name}/${linkName}/`,
+        link: `/open-source/${dir.name}/${linkName}/`,
       }
     })
     
@@ -134,16 +134,16 @@ function buildSidebar(): DefaultTheme.Sidebar {
   ]
 
   const sidebar: DefaultTheme.Sidebar = {
-    '/en/products/': sorted.map(cat => ({
+    '/products/': sorted.map(cat => ({
       text: getCategoryLabel(cat),
       collapsed: false,
-      items: scanDir(join(productsDir, cat), `/en/products/${cat}`),
+      items: scanDir(join(productsDir, cat), `/products/${cat}`),
     })),
   }
 
   const openSourceItems = buildOpenSourceSidebar()
   if (openSourceItems.length > 0) {
-    sidebar['/en/open-source/'] = openSourceItems
+    sidebar['/open-source/'] = openSourceItems
   }
 
   return sidebar
@@ -174,6 +174,9 @@ export const en = defineConfig({
     outline: {
       label: 'On this page',
       level: [2, 2],
+    },
+    editLink: {
+      pattern: 'https://github.com/Xinyuan-LilyGO/documentation/edit/master/:path',
     },
   },
 })

@@ -73,7 +73,7 @@ function collectEnProducts(dir: string, relBase: string, category: string, produ
       products.push({
         name: parseFrontmatterTitle(content) || dirName,
         category,
-        docLink: `/en/products/${relBase}/`,
+        docLink: `/products/${relBase}/`,
         shopLink: extractShopLink(content),
         imageUrl: `/products/${relBase}/assets/${dirName}-1.jpg`,
       })
