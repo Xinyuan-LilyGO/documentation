@@ -10,7 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   srcDir: '.',
-  srcExclude: ['README.md', 'README.zh.md'],
+  srcExclude: ['README.md', 'README.zh.md', "CONTRIBUTING.md", "CONTRIBUTING.zh.md"],
   outDir: 'vitepress-dist',
   cacheDir: '.vitepress/cache',
 
@@ -84,7 +84,39 @@ export default defineConfig({
     ],
     search: {
       provider: 'local',
-    },
+      options: {
+        _render(src, env, md) {
+          // md.render() populates env.frontmatter as a side effect; replace template
+          // expressions in the resulting HTML so headings like "{{ $frontmatter.title }}"
+          // are indexed by their real value rather than the literal template syntax.
+          const html = md.render(src, env)
+          if (env.frontmatter) {
+            return html.replace(/\{\{\s*\$frontmatter\.(\w+)\s*\}\}/g, (_, key) => {
+              return String((env.frontmatter as Record<string, unknown>)[key] ?? '')
+            })
+          }
+          return html
+        },
+        locales: {
+          zh: {
+            translations: {
+              button: {
+                buttonText: '搜索文档',
+                buttonAriaLabel: '搜索文档'
+              },
+              modal: {
+                noResultsText: '无法找到相关结果',
+                resetButtonTitle: '清除查询条件',
+                footer: {
+                  selectText: '选择',
+                  navigateText: '切换'
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   },
 
   markdown: {
