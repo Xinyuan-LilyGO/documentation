@@ -6,10 +6,10 @@ tags: LoRa, GPS, AI Sensor, Keyboard, ESP32-S3
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-lora-pager" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-lora-series/t-lora-pager/assets/t-lorapager-1.jpg', alt: 'T-LoraPager front view' },
-  { src: '/products/t-lora-series/t-lora-pager/assets/t-lorapager-2.jpg', alt: 'T-LoraPager physical image' },
-  { src: '/products/t-lora-series/t-lora-pager/assets/t-lorapager-info-en.jpg', alt: 'T-LoraPager component overview' },
-  { src: '/products/t-lora-series/t-lora-pager/assets/t-lorapager-three-views-en.jpg', alt: 'T-LoraPager dimension diagram' }
+  { src: '/products/t-lora-series/t-lora-pager/index/image/t-lorapager-1.jpg', alt: 'T-LoraPager front view' },
+  { src: '/products/t-lora-series/t-lora-pager/index/image/t-lorapager-2.jpg', alt: 'T-LoraPager physical image' },
+  { src: '/products/t-lora-series/t-lora-pager/index/image/t-lorapager-info-en.jpg', alt: 'T-LoraPager component overview' },
+  { src: '/products/t-lora-series/t-lora-pager/index/image/t-lorapager-three-views-en.jpg', alt: 'T-LoraPager dimension diagram' }
 ]" />
 
 ## Overview
@@ -150,7 +150,7 @@ The development board is feature-rich, integrating QWERT keyboard, AI-enabled IM
 
 ## Pin Diagram
 
-<img src="/products/t-lora-series/t-lora-pager/assets/t-lorapager-3.jpg" alt="summary" width=100%>
+<img src="/products/t-lora-series/t-lora-pager/index/image/t-lorapager-3.jpg" alt="summary" width=100%>
 
 ### Display
 
@@ -242,7 +242,7 @@ The development board is feature-rich, integrating QWERT keyboard, AI-enabled IM
 
 ## Dimension Diagram
 
-<img src="/products/t-lora-series/t-lora-pager/assets/t-lorapager-three-views-en.jpg" alt="summary" width=100%>
+<img src="/products/t-lora-series/t-lora-pager/index/image/t-lorapager-three-views-en.jpg" alt="summary" width=100%>
 
 ## Schematic
 

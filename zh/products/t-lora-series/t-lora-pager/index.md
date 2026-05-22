@@ -7,9 +7,9 @@ tags: LoRa, GPS, AI Sensor, Keyboard, ESP32-S3
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-lora-pager" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-lora-series/t-lora-pager/assets/t-lorapager-1.jpg', alt: 'T-LoraPager 正面图' },
-  { src: '/products/t-lora-series/t-lora-pager/assets/t-lorapager-2.jpg', alt: 'T-LoraPager 实物图' },
-  { src: '/products/t-lora-series/t-lora-pager/assets/t-lorapager-3.jpg', alt: 'T-LoraPager 引脚图' }
+  { src: '/products/t-lora-series/t-lora-pager/index/image/t-lorapager-1.jpg', alt: 'T-LoraPager 正面图' },
+  { src: '/products/t-lora-series/t-lora-pager/index/image/t-lorapager-2.jpg', alt: 'T-LoraPager 实物图' },
+  { src: '/products/t-lora-series/t-lora-pager/index/image/t-lorapager-3.jpg', alt: 'T-LoraPager 引脚图' }
 ]" />
 
 ## 概述
@@ -118,9 +118,9 @@ T-LoraPager 是一款 LILYGO 推出的手持式 AIOT 可编程开发设备，集
 
 ## 引脚图
 
-<img src="/products/t-lora-series/t-lora-pager/assets/t-lorapager-3.jpg" alt="T-LoraPager 引脚图" width=100%>
+<img src="/products/t-lora-series/t-lora-pager/index/image/t-lorapager-3.jpg" alt="T-LoraPager 引脚图" width=100%>
 
-<img src="/products/t-lora-series/t-lora-pager/assets/t-lorapager-info-zh.jpg" alt="T-LoraPager 概述图" width=100%>
+<img src="/products/t-lora-series/t-lora-pager/index/image/t-lorapager-info-zh.jpg" alt="T-LoraPager 概述图" width=100%>
 
 ### 引脚映射
 
@@ -162,7 +162,7 @@ T-LoraPager 是一款 LILYGO 推出的手持式 AIOT 可编程开发设备，集
 
 ## 尺寸图
 
-<img src="/products/t-lora-series/t-lora-pager/assets/t-lorapager-three-views-zh.jpg" alt="T-LoraPager 三视图" width=100%>
+<img src="/products/t-lora-series/t-lora-pager/index/image/t-lorapager-three-views-zh.jpg" alt="T-LoraPager 三视图" width=100%>
 
 ## 原理图
 

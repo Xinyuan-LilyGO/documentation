@@ -7,7 +7,7 @@ macOS 和 Windows 版 Claude 可通过 BLE 将 Claude Cowork 和 Claude Code 连
 作为示例，我们在 ESP32 上制作了一个桌面宠物，它靠处理权限审批和与 Claude 的交互"生存"。当没有任何事情发生时它会入睡，会话开始时会醒来，有待审批的权限提示时会显得不耐烦，并让你直接在设备上批准或拒绝。
 
 <p align="center">
-  <img src="/products/t-lora-series/t-lora-pager/assets/device.jpg" alt="运行 buddy 固件的 T-Lora pager" width="500">
+  <img src="/products/t-lora-series/t-lora-pager/claude-desktop-buddy/image/device.jpg" alt="运行 buddy 固件的 T-Lora pager" width="500">
 </p>
 
 ## 硬件
@@ -23,7 +23,7 @@ macOS 和 Windows 版 Claude 可通过 BLE 将 Claude Cowork 和 Claude Code 连
       name: 'Claude Desktop Buddy',
       version: 'v1.0.0',
       description: 'Claude Desktop Buddy with T-Lora pager',
-      url: '/en/LoRa_GPS/T-LoraPager/assets/claude-desktop-buddy_t-lora-pager_0x0.bin',
+      url: '/products/t-lora-series/t-lora-pager/claude-desktop-buddy/firmware/claude-desktop-buddy_t-lora-pager_0x0.bin',
       address: 0x0000,
     }
   ]"
@@ -35,8 +35,8 @@ macOS 和 Windows 版 Claude 可通过 BLE 将 Claude Cowork 和 Claude Code 连
 要将设备与 Claude 配对，首先启用开发者模式（**帮助 → 故障排查 → 启用开发者模式**）。然后在 **开发者 → 打开 Hardware Buddy…** 中打开 Hardware Buddy 窗口，点击 **连接**，从列表中选择你的设备。macOS 在首次连接时会提示蓝牙权限，请授予。
 
 <p align="center">
-  <img src="/products/t-lora-series/t-lora-pager/assets/menu.png" alt="开发者 → 打开 Hardware Buddy… 菜单项" width="420">
-  <img src="/products/t-lora-series/t-lora-pager/assets/hardware-buddy-window.png" alt="带有连接按钮和文件夹拖放目标的 Hardware Buddy 窗口" width="420">
+  <img src="/products/t-lora-series/t-lora-pager/claude-desktop-buddy/image/menu.png" alt="开发者 → 打开 Hardware Buddy… 菜单项" width="420">
+  <img src="/products/t-lora-series/t-lora-pager/claude-desktop-buddy/image/hardware-buddy-window.png" alt="带有连接按钮和文件夹拖放目标的 Hardware Buddy 窗口" width="420">
 </p>
 
 配对完成后，只要双方都处于唤醒状态，桥接会自动重连。

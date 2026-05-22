@@ -17,7 +17,7 @@ wakes when sessions start, gets visibly impatient when an approval prompt is
 waiting, and lets you approve or deny right from the device.
 
 <p align="center">
-  <img src="/products/t-lora-series/t-lora-pager/assets/device.jpg" alt="T-Lora pager running the buddy firmware" width="500">
+  <img src="/products/t-lora-series/t-lora-pager/claude-desktop-buddy/image/device.jpg" alt="T-Lora pager running the buddy firmware" width="500">
 </p>
 
 ## Hardware
@@ -34,7 +34,7 @@ the LilyGoLib library for display, IMU, and peripheral drivers.
       name: 'Claude Desktop Buddy',
       version: 'v1.0.0',
       description: 'Claude Desktop Buddy with T-Lora pager',
-      url: '/en/LoRa_GPS/T-LoraPager/assets/claude-desktop-buddy_t-lora-pager_0x0.bin',
+      url: '/products/t-lora-series/t-lora-pager/claude-desktop-buddy/firmware/claude-desktop-buddy_t-lora-pager_0x0.bin',
       address: 0x0000,
     }
   ]"
@@ -50,8 +50,8 @@ your device from the list. macOS will prompt for Bluetooth permission on
 first connect; grant it.
 
 <p align="center">
-  <img src="/products/t-lora-series/t-lora-pager/assets/menu.png" alt="Developer → Open Hardware Buddy… menu item" width="420">
-  <img src="/products/t-lora-series/t-lora-pager/assets/hardware-buddy-window.png" alt="Hardware Buddy window with Connect button and folder drop target" width="420">
+  <img src="/products/t-lora-series/t-lora-pager/claude-desktop-buddy/image/menu.png" alt="Developer → Open Hardware Buddy… menu item" width="420">
+  <img src="/products/t-lora-series/t-lora-pager/claude-desktop-buddy/image/hardware-buddy-window.png" alt="Hardware Buddy window with Connect button and folder drop target" width="420">
 </p>
 
 Once paired, the bridge auto-reconnects whenever both sides are awake.
