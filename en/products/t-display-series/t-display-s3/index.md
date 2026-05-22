@@ -73,6 +73,15 @@ Install Arduino IDE
 
 8. Click `upload` , Wait for compilation and writing to complete
 
+###  ESP-IDF
+
+* `T-Display-S3` esp-idf version example, please jump to this [LilyGo-Display-IDF](https://github.com/Xinyuan-LilyGO/LilyGo-Display-IDF)
+
+### Micropython
+
+* [russhughes/st7789s3_mpy](https://github.com/russhughes/st7789s3_mpy)
+* [Micropython](https://github.com/Xinyuan-LilyGO/lilygo-micropython)
+
 ### Development Platforms
 
 1. [Arduino IDE](https://www.arduino.cc/en/software)
@@ -80,6 +89,8 @@ Install Arduino IDE
 3. [MicroPython](https://micropython.org/)
 
 ## Video
+
+* [T-Display-S3 Arduino IDE Record](https://www.youtube.com/watch?v=PgtxisFvMcc)
 
 ## Key Features
 
@@ -112,8 +123,88 @@ Install Arduino IDE
 
 <img src="/products/t-display-series/t-display-bar/assets/t-display-s3-pin.jpg" alt="T-Display-S3 pin diagram" width=100%>
 
+## Dimension Diagram
 
-JST-SH 1.0mm 4-PIN
+* [DWG File](https://github.com/Xinyuan-LilyGO/T-Display-S3/blob/main/dimensions/PCB.dwg)
 
+## Schematic
 
-Coming soon
+* [T-Display-S3 Schematic](https://github.com/Xinyuan-LilyGO/T-Display-S3/blob/main/schematic/T_Display_S3.pdf)
+
+## Datasheet
+
+* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+
+## Software Development
+
+* [T-Display-S3 GitHub Repository](https://https://github.com/Xinyuan-LilyGO/T-Display-S3/tree/main)
+
+### Dependent Libraries
+
+* [lvgl](https://github.com/lvgl/lvgl)
+* [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
+* [TFT-eSPI](https://github.com/Bodmer/TFT_eSPI)
+* [ESP32_Host_MIDI](https://github.com/sauloverissimo/ESP32_Host_MIDI)
+* [Gingoduino](https://github.com/sauloverissimo/gingoduino)
+* [Adafruit_MPR121](https://github.com/adafruit/Adafruit_MPR121)
+
+## FAQ
+
+1. **The screen does not light up when using battery?**
+   * When T-Display-S3 is powered by battery, GPIO15 must be set to HIGH to turn on the backlight.
+   * Please add the following two lines at the beginning of the setup
+   ```C++
+   void setup(){
+      //Turn on display power
+      pinMode(15, OUTPUT);
+      digitalWrite(15, HIGH);
+   }
+   
+   ```
+2.  **The program can be written normally, but there is still no display after writing**
+   * If you are using **TFT_eSPI**, then you can try running `Arduino_GFXDemo` first. If nothing is displayed after writing, you can determine that there is a problem with the hardware.
+   * If `Arduino_GFXDemo` is written normally, but **TFT_eSPI** is not displayed, then it can be judged that `User_Setup_Select` has been overwritten, then please read the third article of **FAQ** to reconfigure **TFT_eSPI**
+3. **How to update **TFT_eSPI**, or confirm whether the **TFT_eSPI** pin configuration is correct?**
+   * Search for **TFT_eSPI** in the ArduinoIDE library manager and click Update.
+   * Enter the default library manager installation location and open the **TFT_eSPI** folder. The default installation location is:(e.g. C:\Users\YourName\Documents\Arduino\libraries)
+   * Open User_Setup_Select.h, comment out #include <User_Setup.h> which is enabled by default, or delete it
+   * Search **Setup206_LilyGo_T_Display_S3**, find it, cancel the previous comment, then save it, and finally close it, so that TFT_eSPI uses the pin definition of T-Display-S3 by default
+   ```c++
+   #include <User_Setups/Setup206_LilyGo_T_Display_S3.h>     // For the LilyGo T-Display S3 based ESP32S3 with ST7789 170 x 320 TFT
+   ```
+4. **Can't upload any sketch，Please enter the upload mode manually.**
+   * Connect the board via the USB cable
+   * Press and hold the **BOOT** button , While still pressing the **BOOT** button
+   * Press **RST** button
+   * Release the **RST** button
+   * Release the **BOOT** button (If there is no **BOOT** button, disconnect IO0 from GND.)
+   * Upload sketch
+   * Press the **RST** button to exit download mode
+
+5. **If you use external power supply instead of USB-C, please turn off the CDC option. This is because the board will wait for USB access when it starts.**
+
+   * For Arduino IDE users, it can be turned off in the options , Please note that turning off USB CDC will turn off Serial redirection to USBC. At this time, you will not see any Serial message output when opening the port from USB-C, but output from GPIO43 and GPIO44.
+
+   ```c
+   Tools -> USB CDC On Boot -> Disable
+   ```
+
+   * For platformio users, you can add the following compilation flags in the ini file
+
+   ```c
+   build_flags =
+       ; Enable -DARDUINO_USB_CDC_ON_BOOT will start printing and wait for terminal access during startup
+       ; -DARDUINO_USB_CDC_ON_BOOT=1
+
+       ; Enable -UARDUINO_USB_CDC_ON_BOOT will turn off printing and will not block when using the battery
+       -UARDUINO_USB_CDC_ON_BOOT
+   ```
+
+6. **If all the above are invalid, please flash the factory firmware for quick verification, please check [here](https://github.com/Xinyuan-LilyGO/T-Display-S3/blob/main/firmware/README.MD)**
+7. **Can I use an external 5V pin for power? Please see here [issues/205](https://github.com/Xinyuan-LilyGO/T-Display-S3/issues/205)**
+8. The default charging current is set at 500mA per hour. If you need to adjust the charging current, please see this [issue](https://github.com/Xinyuan-LilyGO/T-Display-S3/issues/230)
+
+## Version History
+
+| Version | Release Date | Update Description |
+| :-----: | :----------: | :----------------: |
