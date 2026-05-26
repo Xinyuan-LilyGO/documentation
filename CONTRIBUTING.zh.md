@@ -107,15 +107,20 @@ tags: LoRa, ESP32-S3, GPS
 ---
 ```
 
-### 2. 放置产品图片
+### 2. 放置产品资源
 
-将产品图片放到以下目录：
+每个 Markdown 文件对应 `public/products/{系列}/{产品名}/` 下同名的子目录。`index.md` 对应的根目录为 `index/`，在该目录下按类型分子目录存放：
 
 ```
-public/products/{系列}/{产品名}/assets/
+public/products/{系列}/{产品名}/index/
+  image/        ← 产品图片（JPG/PNG）
+  hardware/     ← 原理图、PCB 尺寸图、DXF 文件
+  firmware/     ← 固件文件
+  datasheet/    ← 芯片及外设规格书（PDF）
+  model/        ← 外壳及 3D 模型文件
 ```
 
-命名建议使用 `{产品名}-1.jpg`、`{产品名}-2.jpg` 等，首张图片会作为产品目录封面。
+图片命名建议使用 `{产品名}-1.jpg`、`{产品名}-2.jpg` 等，首张图片（`{产品名}-1.jpg`）会作为产品目录封面。
 
 ### 3. 侧边栏自动更新
 
@@ -137,8 +142,8 @@ tags: Tag1, Tag2, ChipName
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/..." />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/{系列}/{产品名}/assets/{产品名}-1.jpg', alt: '正面' },
-  { src: '/products/{系列}/{产品名}/assets/{产品名}-2.jpg', alt: '背面' },
+  { src: '/products/{系列}/{产品名}/index/image/{产品名}-1.jpg', alt: '正面' },
+  { src: '/products/{系列}/{产品名}/index/image/{产品名}-2.jpg', alt: '背面' },
 ]" />
 ```
 

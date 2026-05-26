@@ -107,15 +107,20 @@ tags: LoRa, ESP32-S3, GPS
 ---
 ```
 
-### 2. Place product images
+### 2. Place product assets
 
-Put product images in the following directory:
+Each Markdown file corresponds to a same-named subdirectory under `public/products/{series}/{product-name}/`. For `index.md` the root is `index/`. Under that root, place files in the appropriate subdirectory:
 
 ```
-public/products/{series}/{product-name}/assets/
+public/products/{series}/{product-name}/index/
+  image/        ← product photos (JPG/PNG)
+  hardware/     ← schematics, PCB dimension drawings, DXF files
+  firmware/     ← firmware binaries
+  datasheet/    ← SoC and peripheral spec sheets (PDF)
+  model/        ← enclosure and 3D model files
 ```
 
-Recommended naming: `{product-name}-1.jpg`, `{product-name}-2.jpg`, etc. The first image is used as the product catalog cover.
+Recommended image naming: `{product-name}-1.jpg`, `{product-name}-2.jpg`, etc. The first image (`{product-name}-1.jpg`) is used as the product catalog cover.
 
 ### 3. Sidebar auto-update
 
@@ -137,8 +142,8 @@ tags: Tag1, Tag2, ChipName
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/..." />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/{series}/{product}/assets/{product}-1.jpg', alt: 'Front' },
-  { src: '/products/{series}/{product}/assets/{product}-2.jpg', alt: 'Back' },
+  { src: '/products/{series}/{product}/index/image/{product}-1.jpg', alt: 'Front' },
+  { src: '/products/{series}/{product}/index/image/{product}-2.jpg', alt: 'Back' },
 ]" />
 ```
 

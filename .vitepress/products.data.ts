@@ -50,6 +50,13 @@ function extractShopLink(content: string): string {
 // ─── EN: scan vitepress-wiki/en/products/ ────────────────────────────────────
 
 const EN_PRODUCTS_DIR = resolve(__dirname, '../en/products')
+const PUBLIC_DIR = resolve(__dirname, '../public')
+
+function resolveImageUrl(relBase: string, dirName: string): string {
+  const newPath = join(PUBLIC_DIR, 'products', relBase, 'index', 'image', `${dirName}-1.jpg`)
+  if (existsSync(newPath)) return `/products/${relBase}/index/image/${dirName}-1.jpg`
+  return `/products/${relBase}/assets/${dirName}-1.jpg`
+}
 
 function getEnCategoryOrder(): string[] {
   const fm = readFm(join(EN_PRODUCTS_DIR, 'index.md'))
@@ -75,7 +82,7 @@ function collectEnProducts(dir: string, relBase: string, category: string, produ
         category,
         docLink: `/products/${relBase}/`,
         shopLink: extractShopLink(content),
-        imageUrl: `/products/${relBase}/assets/${dirName}-1.jpg`,
+        imageUrl: resolveImageUrl(relBase, dirName),
       })
     }
   }
@@ -132,7 +139,7 @@ function collectZhProducts(dir: string, relBase: string, category: string, produ
         category,
         docLink: `/zh/products/${relBase}/`,
         shopLink: extractShopLink(content),
-        imageUrl: `/products/${relBase}/assets/${dirName}-1.jpg`,
+        imageUrl: resolveImageUrl(relBase, dirName),
       })
     }
   }
