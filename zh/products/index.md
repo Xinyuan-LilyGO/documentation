@@ -23,6 +23,7 @@ category_order:
   - t5-series
   - t8-series
   - t4-series
+  - industrial-series
   - other
 ---
 
