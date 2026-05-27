@@ -6,9 +6,9 @@ tags: ESP32-C6, LoRa, Wi-Fi 6, Bluetooth 5, IoT
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-lora-c6" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-lora-series/t-lora-c6/assets/t-lora-c6-1.jpg', alt: 'T-LoRa C6 front view' },
-  { src: '/products/t-lora-series/t-lora-c6/assets/t-lora-c6-2.jpg', alt: 'T-LoRa C6 physical image' },
-  { src: '/products/t-lora-series/t-lora-c6/assets/t-lora-c6-en.jpg', alt: 'T-LoRa C6 component overview' }
+  { src: '/products/t-lora-series/t-lora-c6/index/image/t-lora-c6-1.jpg', alt: 'T-LoRa C6 front view' },
+  { src: '/products/t-lora-series/t-lora-c6/index/image/t-lora-c6-2.jpg', alt: 'T-LoRa C6 physical image' },
+  { src: '/products/t-lora-series/t-lora-c6/index/image/t-lora-c6-en.jpg', alt: 'T-LoRa C6 component overview' }
 ]" />
 
 ## Overview
@@ -101,7 +101,7 @@ LILYGO T-LoRa C6 is a compact IoT development board based on the **ESP32-C6-MINI
 
 ## Pin Diagram
 
-<img src="/products/t-lora-series/t-lora-c6/assets/t-lora-c6-3.jpg" alt="T-LoRa C6 pin diagram" width=100%>
+<img src="/products/t-lora-series/t-lora-c6/index/image/t-lora-c6-3.jpg" alt="T-LoRa C6 pin diagram" width=100%>
 
 ### Pin Mapping
 

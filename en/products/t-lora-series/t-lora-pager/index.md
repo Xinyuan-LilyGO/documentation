@@ -246,7 +246,7 @@ The development board is feature-rich, integrating QWERT keyboard, AI-enabled IM
 
 ## Schematic
 
-* [T-Lora Pager Schematic PDF](/products/t-lora-series/t-lora-pager/schematic/T-Lora%20Pager%20V1.0%20SCH%2025-06-13.pdf)
+* [T-Lora Pager Schematic PDF](/products/t-lora-series/t-lora-pager/index/hardware/T-Lora%20Pager%20V1.0%20SCH%2025-06-13.pdf)
 
 ## Datasheet
 

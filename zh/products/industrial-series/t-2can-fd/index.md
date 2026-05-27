@@ -7,9 +7,9 @@ tags: CAN FD, ESP32-S3, MCP2518
 # {{ $frontmatter.title }} <ShopLink href="" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/industrial-series/t-2can-fd/assets/t-2can-fd-1.jpg', alt: 'T-2Can-Fd 正面' },
-  { src: '/products/industrial-series/t-2can-fd/assets/t-2can-fd-2.jpg', alt: 'T-2Can-Fd 背面' },
-  { src: '/products/industrial-series/t-2can-fd/assets/t-2can-fd-pin.jpg', alt: 'T-2Can-Fd 引脚图' }
+  { src: '/products/industrial-series/t-2can-fd/index/image/t-2can-fd-1.jpg', alt: 'T-2Can-Fd 正面' },
+  { src: '/products/industrial-series/t-2can-fd/index/image/t-2can-fd-2.jpg', alt: 'T-2Can-Fd 背面' },
+  { src: '/products/industrial-series/t-2can-fd/index/image/t-2can-fd-pin.jpg', alt: 'T-2Can-Fd 引脚图' }
 ]" />
 
 ## 概述
@@ -122,7 +122,7 @@ T-2Can-Fd 是一款基于 ESP32-S3 开发的、集成双 CAN FD 总线接口的�
 
 ## 尺寸图
 
-<img src="/products/industrial-series/t-2can-fd/assets/t-2can-fd-3.jpg" alt="T-2Can-Fd 尺寸图" width="100%" />
+<img src="/products/industrial-series/t-2can-fd/index/image/t-2can-fd-3.jpg" alt="T-2Can-Fd 尺寸图" width="100%" />
 
 ## 原理图
 

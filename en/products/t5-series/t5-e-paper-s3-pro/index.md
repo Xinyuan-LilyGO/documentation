@@ -6,9 +6,9 @@ tags: E-Paper, ESP32-S3, LoRa, GPS, MagSafe
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t5-e-paper-s3-pro" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t5-series/t5-e-paper-s3-pro/assets/t5-e-paper-s3-pro1.jpg', alt: 'T5 E-Paper S3 Pro front view' },
-  { src: '/products/t5-series/t5-e-paper-s3-pro/assets/t5-e-paper-s3-pro2.jpg', alt: 'T5 E-Paper S3 Pro physical image' },
-  { src: '/products/t5-series/t5-e-paper-s3-pro/assets/t5-e-paper-s3-pro-en.jpg', alt: 'T5 E-Paper S3 Pro pin diagram' }
+  { src: '/products/t5-series/t5-e-paper-s3-pro/index/image/t5-e-paper-s3-pro1.jpg', alt: 'T5 E-Paper S3 Pro front view' },
+  { src: '/products/t5-series/t5-e-paper-s3-pro/index/image/t5-e-paper-s3-pro2.jpg', alt: 'T5 E-Paper S3 Pro physical image' },
+  { src: '/products/t5-series/t5-e-paper-s3-pro/index/image/t5-e-paper-s3-pro-en.jpg', alt: 'T5 E-Paper S3 Pro pin diagram' }
 ]" />
 
 ## Overview
@@ -126,7 +126,7 @@ T5-4.7-S3 E-Paper PRO is a multifunctional IoT device based on **ESP32-S3-WROOM-
 
 ## Pin Diagram
 
-<img src="/products/t5-series/t5-e-paper-s3-pro/assets/t5-e-paper-s3-pro-en.jpg" alt="T5 E-Paper S3 Pro pin diagram" width=100%>
+<img src="/products/t5-series/t5-e-paper-s3-pro/index/image/t5-e-paper-s3-pro-en.jpg" alt="T5 E-Paper S3 Pro pin diagram" width=100%>
 
 ### Pin Mapping
 

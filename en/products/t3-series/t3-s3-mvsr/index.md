@@ -6,9 +6,9 @@ tags: ESP32-S3, LoRa, Audio, Voice, Vibration, RTC
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3-s3-mvsr-board" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t3-series/t3-s3-mvsr/assets/t3-s3_mvsrboard01.jpg', alt: 'T3-S3 MVSR Board front view' },
-  { src: '/products/t3-series/t3-s3-mvsr/assets/t3-s3_mvsrboard02.jpg', alt: 'T3-S3 MVSR Board physical image' },
-  { src: '/products/t3-series/t3-s3-mvsr/assets/t3-s3_mvsrboard.jpg', alt: 'T3-S3 MVSR Board pin diagram' }
+  { src: '/products/t3-series/t3-s3-mvsr/index/image/t3-s3_mvsrboard01.jpg', alt: 'T3-S3 MVSR Board front view' },
+  { src: '/products/t3-series/t3-s3-mvsr/index/image/t3-s3_mvsrboard02.jpg', alt: 'T3-S3 MVSR Board physical image' },
+  { src: '/products/t3-series/t3-s3-mvsr/index/image/t3-s3_mvsrboard.jpg', alt: 'T3-S3 MVSR Board pin diagram' }
 ]" />
 
 ## Overview
@@ -120,7 +120,7 @@ The T3-S3 MVSR Board is an expansion baseboard for the **T3-S3 V1.2** main board
 
 ## Pin Diagram
 
-<img src="/products/t3-series/t3-s3-mvsr/assets/t3-s3_mvsrboard.jpg" alt="T3-S3 MVSR Board pin diagram" width=100%>
+<img src="/products/t3-series/t3-s3-mvsr/index/image/t3-s3_mvsrboard.jpg" alt="T3-S3 MVSR Board pin diagram" width=100%>
 
 ### Speaker (MAX98357A)
 
@@ -232,7 +232,7 @@ The T3-S3 MVSR Board is an expansion baseboard for the **T3-S3 V1.2** main board
 
 * **Q. How to adjust the external antenna resistor?**
   A. Refer to the image below for resistor direction adjustment:
-  <img src="/products/t3-series/t3-s3-mvsr/assets/t3-s3_mvsrboard04.jpg" alt="Antenna resistor adjustment" width=60%>
+  <img src="/products/t3-series/t3-s3-mvsr/index/image/t3-s3_mvsrboard04.jpg" alt="Antenna resistor adjustment" width=60%>
 
 * **Q. What's the difference between SX1262 and SX1280 versions?**
   A. SX1262 supports 868/915 MHz using FSK modulation; SX1280 supports 2.4 GHz using LoRa modulation.

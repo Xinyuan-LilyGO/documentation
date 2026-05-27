@@ -7,9 +7,9 @@ tags: ESP32-C6, BLDC, Haptic, Motor, Rotary, IoT
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-knob/assets/t-knob-1.jpg', alt: 'T-Knob front view' },
-  { src: '/products/other/t-knob/assets/t-knob-2.jpg', alt: 'T-Knob appearance' },
-  { src: '/products/other/t-knob/assets/t-knob-info-en.jpg', alt: 'T-Knob component overview' }
+  { src: '/products/other/t-knob/index/image/t-knob-1.jpg', alt: 'T-Knob front view' },
+  { src: '/products/other/t-knob/index/image/t-knob-2.jpg', alt: 'T-Knob appearance' },
+  { src: '/products/other/t-knob/index/image/t-knob-info-en.jpg', alt: 'T-Knob component overview' }
 ]" />
 
 ## Overview
@@ -93,7 +93,7 @@ LILYGO T-Knob is a smart rotary controller based on the **ESP32-C6-MINI-1U** wir
 
 ## Pin Diagram
 
-<img src="/products/other/t-knob/assets/t-knob-pin-en.jpg" alt="T-Knob pin diagram" width=100%>
+<img src="/products/other/t-knob/index/image/t-knob-pin-en.jpg" alt="T-Knob pin diagram" width=100%>
 
 ## Dimension Diagram
 

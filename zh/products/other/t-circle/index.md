@@ -7,9 +7,9 @@ tags: T-Circle, LCD, ESP32
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-circle-s3?variant=44912874062005" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-circle/assets/t-circle-1.jpg', alt: 'T-Circle 正面图' },
-  { src: '/products/other/t-circle/assets/t-circle-2.jpg', alt: 'T-Circle 实物图' },
-  { src: '/products/other/t-circle/assets/t-circle-zh.jpg', alt: 'T-Circle 引脚图' }
+  { src: '/products/other/t-circle/index/image/t-circle-1.jpg', alt: 'T-Circle 正面图' },
+  { src: '/products/other/t-circle/index/image/t-circle-2.jpg', alt: 'T-Circle 实物图' },
+  { src: '/products/other/t-circle/index/image/t-circle-zh.jpg', alt: 'T-Circle 引脚图' }
 ]" />
 
 ## 概述
@@ -86,7 +86,7 @@ LILYGO T-Circle 是 ESP32 版本的圆形屏幕开发板，核心搭载 0.75 英
 
 ## 引脚图
 
-<img src="/products/other/t-circle/assets/t-circle-zh.jpg" alt="T-Circle 引脚图" width=100%>
+<img src="/products/other/t-circle/index/image/t-circle-zh.jpg" alt="T-Circle 引脚图" width=100%>
 
 ## 尺寸图
 

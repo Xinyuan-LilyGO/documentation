@@ -4,4 +4,4 @@ title: Other
 
 # {{ $frontmatter.title }}
 
-Coming soon
+<ProductGrid category="other" />

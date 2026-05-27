@@ -7,9 +7,9 @@ tags: ESP32-S3, Ethernet, PoE, W5500, IoT
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-lite-s3/assets/t-eth-lite-s3-1.jpg', alt: 'T-ETH Lite S3 front view' },
-  { src: '/products/t-eth-series/t-eth-lite-s3/assets/t-eth-lite-s3-2.jpg', alt: 'T-ETH Lite S3 physical image' },
-  { src: '/products/t-eth-series/t-eth-lite-s3/assets/t-eth-lite-s3-pin-en.jpg', alt: 'T-ETH Lite S3 pin diagram' }
+  { src: '/products/t-eth-series/t-eth-lite-s3/index/image/t-eth-lite-s3-1.jpg', alt: 'T-ETH Lite S3 front view' },
+  { src: '/products/t-eth-series/t-eth-lite-s3/index/image/t-eth-lite-s3-2.jpg', alt: 'T-ETH Lite S3 physical image' },
+  { src: '/products/t-eth-series/t-eth-lite-s3/index/image/t-eth-lite-s3-pin-en.jpg', alt: 'T-ETH Lite S3 pin diagram' }
 ]" />
 
 ## Overview
@@ -95,7 +95,7 @@ T-ETH Lite S3 is an Ethernet-enabled IoT development board based on **ESP32-S3**
 
 ## Pin Diagram
 
-<img src="/products/t-eth-series/t-eth-lite-s3/assets/t-eth-lite-s3-pin-en.jpg" alt="T-ETH Lite S3 pin diagram" width=100%>
+<img src="/products/t-eth-series/t-eth-lite-s3/index/image/t-eth-lite-s3-pin-en.jpg" alt="T-ETH Lite S3 pin diagram" width=100%>
 
 ## Dimension Diagram
 

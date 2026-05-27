@@ -4,4 +4,4 @@ title: T-Watch Series
 
 # {{ $frontmatter.title }}
 
-Coming soon
+<ProductGrid category="t-watch-series" />

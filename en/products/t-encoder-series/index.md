@@ -4,4 +4,4 @@ title: T-Encoder Series
 
 # {{ $frontmatter.title }}
 
-Coming soon
+<ProductGrid category="t-encoder-series" />

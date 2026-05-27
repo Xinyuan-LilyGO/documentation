@@ -7,9 +7,9 @@ tags: LoRa, nRF52840, E-Paper, Low Power, Meshtastic, Keyboard
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-echo-lite?variant=45331277906101" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-echo-series/t-echo-lite/assets/t-echo-lite01.jpg', alt: 'T-Echo Lite 正面图' },
-  { src: '/products/t-echo-series/t-echo-lite/assets/t-echo-lite02.jpg', alt: 'T-Echo Lite 实物图' },
-  { src: '/products/t-echo-series/t-echo-lite/assets/t-echo-lite03.jpg', alt: 'T-Echo Lite 配件图' }
+  { src: '/products/t-echo-series/t-echo-lite/index/image/t-echo-lite01.jpg', alt: 'T-Echo Lite 正面图' },
+  { src: '/products/t-echo-series/t-echo-lite/index/image/t-echo-lite02.jpg', alt: 'T-Echo Lite 实物图' },
+  { src: '/products/t-echo-series/t-echo-lite/index/image/t-echo-lite03.jpg', alt: 'T-Echo Lite 配件图' }
 ]" />
 
 ## 概述
@@ -65,7 +65,7 @@ T-Echo Lite 是 T-Echo 的轻便版本，基于 nRF52840 设计，具有更小�
 6. 进入引导下载模式：按下 RST 后松开，等待 LED1 亮起，再次按下 RST 后松开，观察 LED1 逐渐熄灭并点亮，即已进入下载模式。
 
 > **JLINK 烧录：** 安装 [nRF-Connect-for-Desktop](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-Desktop) 和 [JLINK](https://www.segger.com/downloads/jlink/)，按下图连接 JLINK，同时选择 bootloader 和 firmware 文件后点击 Erase & Write。
-> <img src="/products/t-echo-series/t-echo-lite/assets/12.jpg" alt="JLINK 连接图" width=60%>
+> <img src="/products/t-echo-series/t-echo-lite/index/image/12.jpg" alt="JLINK 连接图" width=60%>
 
 ### 开发平台
 
@@ -114,7 +114,7 @@ T-Echo Lite 是 T-Echo 的轻便版本，基于 nRF52840 设计，具有更小�
 > * [t_echo_lite_config.h](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/libraries/private_library/t_echo_lite_config.h)
 > * [t_echo_lite_keyshield_config.h](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/libraries/private_library/t_echo_lite_keyshield_config.h)
 
-<img src="/products/t-echo-series/t-echo-lite/assets/14.png" alt="T-Echo Lite 天线分布图" width=80%>
+<img src="/products/t-echo-series/t-echo-lite/index/image/14.png" alt="T-Echo Lite 天线分布图" width=80%>
 
 > T-Echo Lite 的蓝牙天线和 LoRa 天线如上图所示。
 

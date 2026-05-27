@@ -6,9 +6,9 @@ tags: ESP32-S3, LoRa, GPS, Trackball, Keyboard
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-deck" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-deck-series/t-deck/assets/t-deck-1.jpg', alt: 'T-Deck front view' },
-  { src: '/products/t-deck-series/t-deck/assets/t-deck-2.jpg', alt: 'T-Deck physical image' },
-  { src: '/products/t-deck-series/t-deck/assets/t-deck-info-en.jpg', alt: 'T-Deck component overview' }
+  { src: '/products/t-deck-series/t-deck/index/image/t-deck-1.jpg', alt: 'T-Deck front view' },
+  { src: '/products/t-deck-series/t-deck/index/image/t-deck-2.jpg', alt: 'T-Deck physical image' },
+  { src: '/products/t-deck-series/t-deck/index/image/t-deck-info-en.jpg', alt: 'T-Deck component overview' }
 ]" />
 
 ## Overview
@@ -114,7 +114,7 @@ Available examples:
 
 ## Pin Diagram
 
-<img src="/products/t-deck-series/t-deck/assets/t-deck-pin-en.jpg" alt="T-Deck pin diagram" width=100%>
+<img src="/products/t-deck-series/t-deck/index/image/t-deck-pin-en.jpg" alt="T-Deck pin diagram" width=100%>
 
 ### Pin Mapping
 

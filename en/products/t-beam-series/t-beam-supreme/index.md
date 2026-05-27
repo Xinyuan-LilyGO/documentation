@@ -6,9 +6,9 @@ tags: LoRa, GPS, ESP32-S3, IoT, Sensor
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-beam-supreme" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-beam-series/t-beam-supreme/assets/t-beam-supreme-1.jpg', alt: 'T-Beam Supreme front view' },
-  { src: '/products/t-beam-series/t-beam-supreme/assets/t-beam-supreme-2.jpg', alt: 'T-Beam Supreme physical image' },
-  { src: '/products/t-beam-series/t-beam-supreme/assets/t-beam-supreme-info-en.jpg', alt: 'T-Beam Supreme component overview' }
+  { src: '/products/t-beam-series/t-beam-supreme/index/image/t-beam-supreme-1.jpg', alt: 'T-Beam Supreme front view' },
+  { src: '/products/t-beam-series/t-beam-supreme/index/image/t-beam-supreme-2.jpg', alt: 'T-Beam Supreme physical image' },
+  { src: '/products/t-beam-series/t-beam-supreme/index/image/t-beam-supreme-info-en.jpg', alt: 'T-Beam Supreme component overview' }
 ]" />
 
 ## Overview
@@ -160,7 +160,7 @@ Suitable for smart hardware, environmental monitoring, LoRa long-range communica
 
 ## Pin Diagram
 
-<img src="/products/t-beam-series/t-beam-supreme/assets/t-beam-supreme-pin-en.jpg" alt="T-Beam Supreme pin diagram" width=100%>
+<img src="/products/t-beam-series/t-beam-supreme/index/image/t-beam-supreme-pin-en.jpg" alt="T-Beam Supreme pin diagram" width=100%>
 
 ### Pin Mapping
 

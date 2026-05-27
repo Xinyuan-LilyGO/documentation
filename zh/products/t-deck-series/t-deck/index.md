@@ -7,9 +7,9 @@ tags: ESP32-S3, LoRa, GPS, Trackball, Keyboard
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-deck" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-deck-series/t-deck/assets/t-deck-1.jpg', alt: 'T-Deck 正面图' },
-  { src: '/products/t-deck-series/t-deck/assets/t-deck-2.jpg', alt: 'T-Deck 实物图' },
-  { src: '/products/t-deck-series/t-deck/assets/t-deck-pin-zh.jpg', alt: 'T-Deck 引脚图' }
+  { src: '/products/t-deck-series/t-deck/index/image/t-deck-1.jpg', alt: 'T-Deck 正面图' },
+  { src: '/products/t-deck-series/t-deck/index/image/t-deck-2.jpg', alt: 'T-Deck 实物图' },
+  { src: '/products/t-deck-series/t-deck/index/image/t-deck-pin-zh.jpg', alt: 'T-Deck 引脚图' }
 ]" />
 
 ## 概述
@@ -86,7 +86,7 @@ LILYGO T-Deck 是一款基于 ESP32-S3 的多功能嵌入式开发平台，搭�
 
 ## 产品参数
 
-<img src="/products/t-deck-series/t-deck/assets/t-deck-info-zh.jpg" alt="T-Deck 概述图" width=100%>
+<img src="/products/t-deck-series/t-deck/index/image/t-deck-info-zh.jpg" alt="T-Deck 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -112,7 +112,7 @@ LILYGO T-Deck 是一款基于 ESP32-S3 的多功能嵌入式开发平台，搭�
 
 ## 引脚图
 
-<img src="/products/t-deck-series/t-deck/assets/t-deck-pin-zh.jpg" alt="T-Deck 引脚图" width=100%>
+<img src="/products/t-deck-series/t-deck/index/image/t-deck-pin-zh.jpg" alt="T-Deck 引脚图" width=100%>
 
 ### 引脚映射
 

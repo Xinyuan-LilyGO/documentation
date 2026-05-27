@@ -7,9 +7,9 @@ tags: RP2350, ESP32-C6, Raspberry Pi, Dual-Core
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-pico?variant=45197490585781" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-pico-2350/assets/t-pico-2350-03.jpg', alt: 'T-PICO-2350 正面图' },
-  { src: '/products/other/t-pico-2350/assets/t-pico-2350-04.jpg', alt: 'T-PICO-2350 实物图' },
-  { src: '/products/other/t-pico-2350/assets/t-pico-2350-01.jpg', alt: 'T-PICO-2350 引脚图' }
+  { src: '/products/other/t-pico-2350/index/image/t-pico-2350-03.jpg', alt: 'T-PICO-2350 正面图' },
+  { src: '/products/other/t-pico-2350/index/image/t-pico-2350-04.jpg', alt: 'T-PICO-2350 实物图' },
+  { src: '/products/other/t-pico-2350/index/image/t-pico-2350-01.jpg', alt: 'T-PICO-2350 引脚图' }
 ]" />
 
 ## 概述
@@ -46,7 +46,7 @@ T-PICO-2350 是 T-Pico 系列基于树莓派 RP2350 芯片的版本，集成 RP2
 2. 将 `lib` 目录中的所有文件夹复制到 Arduino 库目录（`~/Documents/Arduino/libraries`）。
 3. 按照下图配置 Arduino IDE 设置：
 
-<img src="/products/other/t-pico-2350/assets/image.png" alt="Arduino IDE 设置" width=80%>
+<img src="/products/other/t-pico-2350/index/image/image.png" alt="Arduino IDE 设置" width=80%>
 
 4. 选择正确的端口，上传程序。
 
@@ -85,7 +85,7 @@ T-PICO-2350 是 T-Pico 系列基于树莓派 RP2350 芯片的版本，集成 RP2
 
 ## 引脚图
 
-<img src="/products/other/t-pico-2350/assets/t-pico-2350-01.jpg" alt="T-PICO-2350 引脚图" width=100%>
+<img src="/products/other/t-pico-2350/index/image/t-pico-2350-01.jpg" alt="T-PICO-2350 引脚图" width=100%>
 
 > XL9535 是 RP2350A 的外部扩展 IO 端口，详细引脚定义请参考原理图。
 

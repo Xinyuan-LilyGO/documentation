@@ -7,9 +7,9 @@ tags: ESP32-S3, Long Display, AMOLED, IoT, Touch Screen
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-s3-long" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-long/assets/t-display-s3-long-1.jpg', alt: 'T-Display-S3-Long 正面图' },
-  { src: '/products/t-display-series/t-display-s3-long/assets/t-display-s3-long-2.jpg', alt: 'T-Display-S3-Long 实物图' },
-  { src: '/products/t-display-series/t-display-s3-long/assets/t-display-s3-long-pin-zh.jpg', alt: 'T-Display-S3-Long 引脚图' }
+  { src: '/products/t-display-series/t-display-s3-long/index/image/t-display-s3-long-1.jpg', alt: 'T-Display-S3-Long 正面图' },
+  { src: '/products/t-display-series/t-display-s3-long/index/image/t-display-s3-long-2.jpg', alt: 'T-Display-S3-Long 实物图' },
+  { src: '/products/t-display-series/t-display-s3-long/index/image/t-display-s3-long-pin-zh.jpg', alt: 'T-Display-S3-Long 引脚图' }
 ]" />
 
 ## 概述
@@ -41,7 +41,7 @@ T-Display-S3-Long 是一款基于 ESP32-S3R8 的长条形显示屏开发板，�
 2. 将 `lib` 目录中的所有文件夹复制到 Arduino 库目录（`~/Documents/Arduino/libraries`）。
 3. 按照下图配置 Arduino IDE 设置：
 
-<img src="/products/t-display-series/t-display-s3-long/assets/arduinoide.jpg" alt="Arduino IDE 设置" width=80%>
+<img src="/products/t-display-series/t-display-s3-long/index/image/arduinoide.jpg" alt="Arduino IDE 设置" width=80%>
 
 4. 选择正确的端口，上传程序。
 
@@ -63,7 +63,7 @@ T-Display-S3-Long 是一款基于 ESP32-S3R8 的长条形显示屏开发板，�
 
 ## 产品参数
 
-<img src="/products/t-display-series/t-display-s3-long/assets/t-display-s3-long-info-zh.jpg" alt="T-Display-S3-Long 概述图" width=100%>
+<img src="/products/t-display-series/t-display-s3-long/index/image/t-display-s3-long-info-zh.jpg" alt="T-Display-S3-Long 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -80,7 +80,7 @@ T-Display-S3-Long 是一款基于 ESP32-S3R8 的长条形显示屏开发板，�
 
 ## 引脚图
 
-<img src="/products/t-display-series/t-display-s3-long/assets/t-display-s3-long-pin-zh.jpg" alt="T-Display-S3-Long 引脚图" width=100%>
+<img src="/products/t-display-series/t-display-s3-long/index/image/t-display-s3-long-pin-zh.jpg" alt="T-Display-S3-Long 引脚图" width=100%>
 
 ### 引脚映射
 

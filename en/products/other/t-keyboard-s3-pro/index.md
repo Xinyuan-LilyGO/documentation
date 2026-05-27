@@ -6,9 +6,9 @@ tags: ESP32-S3, Keyboard, Mechanical, RGB, Multi-screen
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-keyboard-s3-pro" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-keyboard-s3-pro/assets/t-keyboard-s3-pro-1.jpg', alt: 'T-Keyboard S3 Pro front view' },
-  { src: '/products/other/t-keyboard-s3-pro/assets/t-keyboard-s3-pro-2.jpg', alt: 'T-Keyboard S3 Pro physical image' },
-  { src: '/products/other/t-keyboard-s3-pro/assets/t-keyboard-s3-pro-en.jpg', alt: 'T-Keyboard S3 Pro pin diagram' }
+  { src: '/products/other/t-keyboard-s3-pro/index/image/t-keyboard-s3-pro-1.jpg', alt: 'T-Keyboard S3 Pro front view' },
+  { src: '/products/other/t-keyboard-s3-pro/index/image/t-keyboard-s3-pro-2.jpg', alt: 'T-Keyboard S3 Pro physical image' },
+  { src: '/products/other/t-keyboard-s3-pro/index/image/t-keyboard-s3-pro-en.jpg', alt: 'T-Keyboard S3 Pro pin diagram' }
 ]" />
 
 > **Note**: A host device is required. Slave devices connect to the host via magnetic interfaces.
@@ -103,7 +103,7 @@ T-Keyboard S3 Pro is a high-end programmable keyboard based on **dual-MCU archit
 
 ## Pin Diagram
 
-<img src="/products/other/t-keyboard-s3-pro/assets/t-keyboard-s3-pro-en.jpg" alt="T-Keyboard S3 Pro pin diagram" width=100%>
+<img src="/products/other/t-keyboard-s3-pro/index/image/t-keyboard-s3-pro-en.jpg" alt="T-Keyboard S3 Pro pin diagram" width=100%>
 
 ### Pin Mapping (ESP32-S3)
 

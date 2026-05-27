@@ -7,9 +7,9 @@ tags: Radar, 60GHz, A121, HighPrecision, IoT, Sensing
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-radar" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-radar/assets/t-radar-1.jpg', alt: 'T-Radar 正面图' },
-  { src: '/products/other/t-radar/assets/t-radar-set.jpg', alt: 'T-Radar 安装示意图' },
-  { src: '/products/other/t-radar/assets/t-radar-pin.jpg', alt: 'T-Radar 引脚图' }
+  { src: '/products/other/t-radar/index/image/t-radar-1.jpg', alt: 'T-Radar 正面图' },
+  { src: '/products/other/t-radar/index/image/t-radar-set.jpg', alt: 'T-Radar 安装示意图' },
+  { src: '/products/other/t-radar/index/image/t-radar-pin.jpg', alt: 'T-Radar 引脚图' }
 ]" />
 
 ## 概述
@@ -56,7 +56,7 @@ tags: Radar, 60GHz, A121, HighPrecision, IoT, Sensing
 
 ## 引脚图
 
-<img src="/products/other/t-radar/assets/t-radar-pin.jpg" alt="T-Radar 引脚图" width=100%>
+<img src="/products/other/t-radar/index/image/t-radar-pin.jpg" alt="T-Radar 引脚图" width=100%>
 
 ## 尺寸图
 

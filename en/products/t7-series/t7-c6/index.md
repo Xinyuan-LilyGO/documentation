@@ -7,9 +7,9 @@ tags: ESP32-C6, Wi-Fi 6, Bluetooth 5, IoT, Development Board
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t7-series/t7-c6/assets/t7_c6_1.jpg', alt: 'T7-C6 front view' },
-  { src: '/products/t7-series/t7-c6/assets/t7_c6_2.jpg', alt: 'T7-C6 appearance' },
-  { src: '/products/t7-series/t7-c6/assets/t7_c6_3.jpg', alt: 'T7-C6 pin diagram' }
+  { src: '/products/t7-series/t7-c6/index/image/t7_c6_1.jpg', alt: 'T7-C6 front view' },
+  { src: '/products/t7-series/t7-c6/index/image/t7_c6_2.jpg', alt: 'T7-C6 appearance' },
+  { src: '/products/t7-series/t7-c6/index/image/t7_c6_3.jpg', alt: 'T7-C6 pin diagram' }
 ]" />
 
 ## Overview
@@ -87,7 +87,7 @@ The LILYGO T7-C6 is a compact development board based on the **ESP32-C6-MINI-1**
 
 ## Pin Diagram
 
-<img src="/products/t7-series/t7-c6/assets/t7_c6_3.jpg" alt="T7-C6 pin diagram" width=100%>
+<img src="/products/t7-series/t7-c6/index/image/t7_c6_3.jpg" alt="T7-C6 pin diagram" width=100%>
 
 ## Dimension Diagram
 

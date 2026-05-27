@@ -7,9 +7,9 @@ tags: T-Watch, ESP32-S3, Smart Watch, GPS, LoRa
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-watch-series/t-watch-s3/assets/主图.jpg', alt: 'T-Watch S3 Plus front view' },
-  { src: '/products/t-watch-series/t-watch-s3/assets/watch2020v3_s3.jpg', alt: 'T-Watch S3 Plus physical image' },
-  { src: '/products/t-watch-series/t-watch-s3/assets/watchs3英文版.jpg', alt: 'T-Watch S3 Plus pin diagram' }
+  { src: '/products/t-watch-series/t-watch-s3/index/image/主图.jpg', alt: 'T-Watch S3 Plus front view' },
+  { src: '/products/t-watch-series/t-watch-s3/index/image/watch2020v3_s3.jpg', alt: 'T-Watch S3 Plus physical image' },
+  { src: '/products/t-watch-series/t-watch-s3/index/image/watchs3英文版.jpg', alt: 'T-Watch S3 Plus pin diagram' }
 ]" />
 
 ## Overview
@@ -97,7 +97,7 @@ T-Watch S3 Plus is an enhanced version of T-Watch S3, adding GPS functionality. 
 
 ## Pin Diagram
 
-<img src="/products/t-watch-series/t-watch-s3/assets/watchs3英文版.jpg" alt="T-Watch S3 Plus pin diagram" width=100%>
+<img src="/products/t-watch-series/t-watch-s3/index/image/watchs3英文版.jpg" alt="T-Watch S3 Plus pin diagram" width=100%>
 
 ## Dimension Diagram
 

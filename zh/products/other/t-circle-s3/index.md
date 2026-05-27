@@ -7,9 +7,9 @@ tags: ESP32-S3, LCD, Audio, Touch Screen, QWIIC
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-circle-s3" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-circle-s3/assets/t-circle-s3-1.jpg', alt: 'T-Circle S3 正面图' },
-  { src: '/products/other/t-circle-s3/assets/t-circle-s3-2.jpg', alt: 'T-Circle S3 实物图' },
-  { src: '/products/other/t-circle-s3/assets/t-circle-s3.jpg', alt: 'T-Circle S3 引脚图' }
+  { src: '/products/other/t-circle-s3/index/image/t-circle-s3-1.jpg', alt: 'T-Circle S3 正面图' },
+  { src: '/products/other/t-circle-s3/index/image/t-circle-s3-2.jpg', alt: 'T-Circle S3 实物图' },
+  { src: '/products/other/t-circle-s3/index/image/t-circle-s3.jpg', alt: 'T-Circle S3 引脚图' }
 ]" />
 
 ## 概述
@@ -85,7 +85,7 @@ LILYGO T-Circle S3 是基于 ESP32-S3-R8 的圆形显示屏开发板，搭载 0.
 
 ## 产品参数
 
-<img src="/products/other/t-circle-s3/assets/t-circle-s3-zh.jpg" alt="T-Circle S3 概述图" width=100%>
+<img src="/products/other/t-circle-s3/index/image/t-circle-s3-zh.jpg" alt="T-Circle S3 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -107,7 +107,7 @@ LILYGO T-Circle S3 是基于 ESP32-S3-R8 的圆形显示屏开发板，搭载 0.
 
 ## 引脚图
 
-<img src="/products/other/t-circle-s3/assets/t-circle-s3.jpg" alt="T-Circle S3 引脚图" width=100%>
+<img src="/products/other/t-circle-s3/index/image/t-circle-s3.jpg" alt="T-Circle S3 引脚图" width=100%>
 
 ### 引脚映射
 

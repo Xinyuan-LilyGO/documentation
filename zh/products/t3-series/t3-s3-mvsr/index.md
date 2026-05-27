@@ -7,9 +7,9 @@ tags: ESP32-S3, LoRa, Audio, Voice, Vibration, RTC
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3-s3-mvsr-board" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t3-series/t3-s3-mvsr/assets/t3-s3_mvsrboard01.jpg', alt: 'T3-S3 MVSR Board 正面图' },
-  { src: '/products/t3-series/t3-s3-mvsr/assets/t3-s3_mvsrboard02.jpg', alt: 'T3-S3 MVSR Board 实物图' },
-  { src: '/products/t3-series/t3-s3-mvsr/assets/t3-s3_mvsrboard.jpg', alt: 'T3-S3 MVSR Board 引脚图' }
+  { src: '/products/t3-series/t3-s3-mvsr/index/image/t3-s3_mvsrboard01.jpg', alt: 'T3-S3 MVSR Board 正面图' },
+  { src: '/products/t3-series/t3-s3-mvsr/index/image/t3-s3_mvsrboard02.jpg', alt: 'T3-S3 MVSR Board 实物图' },
+  { src: '/products/t3-series/t3-s3-mvsr/index/image/t3-s3_mvsrboard.jpg', alt: 'T3-S3 MVSR Board 引脚图' }
 ]" />
 
 ## 概述
@@ -101,7 +101,7 @@ T3-S3 MVSR 版本是基于 T3-S3 主板设计了带有震动马达、麦克风�
 
 ## 引脚图
 
-<img src="/products/t3-series/t3-s3-mvsr/assets/t3-s3_mvsrboard.jpg" alt="T3-S3 MVSR Board 引脚图" width=100%>
+<img src="/products/t3-series/t3-s3-mvsr/index/image/t3-s3_mvsrboard.jpg" alt="T3-S3 MVSR Board 引脚图" width=100%>
 
 ### 扬声器引脚映射
 
@@ -213,7 +213,7 @@ T3-S3 MVSR 版本是基于 T3-S3 主板设计了带有震动马达、麦克风�
 
 * **Q. 如何调节外接天线电阻？**  
   A. 参考下图箭头指向处可更换电阻实现调整外接天线的电阻：
-  <img src="/products/t3-series/t3-s3-mvsr/assets/t3-s3_mvsrboard04.jpg" alt="天线电阻调节" width=60%>
+  <img src="/products/t3-series/t3-s3-mvsr/index/image/t3-s3_mvsrboard04.jpg" alt="天线电阻调节" width=60%>
 
 * **Q. SX1262 和 SX1280 版本有什么区别？**  
   A. SX1262 支持 868/915MHz 频段，使用 FSK 调制；SX1280 支持 2.4GHz 频段，使用 LoRa 调制。

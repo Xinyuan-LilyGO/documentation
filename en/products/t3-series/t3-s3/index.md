@@ -6,9 +6,9 @@ tags: LoRa, ESP32-S3, OLED, IoT
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3s3-v1-0?_pos=1&_psq=T3&_ss=e&_v=1.0" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t3-series/t3-s3/assets/t3s3-1.jpg', alt: 'T3-S3 front view' },
-  { src: '/products/t3-series/t3-s3/assets/t3s3-2.jpg', alt: 'T3-S3 physical image' },
-  { src: '/products/t3-series/t3-s3/assets/t3s3-info.jpg', alt: 'T3-S3 component overview' }
+  { src: '/products/t3-series/t3-s3/index/image/t3s3-1.jpg', alt: 'T3-S3 front view' },
+  { src: '/products/t3-series/t3-s3/index/image/t3s3-2.jpg', alt: 'T3-S3 physical image' },
+  { src: '/products/t3-series/t3-s3/index/image/t3s3-info.jpg', alt: 'T3-S3 component overview' }
 ]" />
 
 ## Overview
@@ -120,7 +120,7 @@ T3-S3 (LILYGO T3-S3 V1.2) is a compact development board integrating the **ESP32
 
 ## Pin Diagram
 
-<img src="/products/t3-series/t3-s3/assets/t3s3-pin.jpg" alt="T3-S3 pin diagram" width=100%>
+<img src="/products/t3-series/t3-s3/index/image/t3s3-pin.jpg" alt="T3-S3 pin diagram" width=100%>
 
 ### SX1262 Pin Mapping
 

@@ -6,9 +6,9 @@ tags: Radar, 60GHz, A121, High Precision, IoT, Sensing
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-radar" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-radar/assets/t-radar-1.jpg', alt: 'T-Radar front view' },
-  { src: '/products/other/t-radar/assets/t-radar-pin.jpg', alt: 'T-Radar pin diagram' },
-  { src: '/products/other/t-radar/assets/t-radar-set.jpg', alt: 'T-Radar installation diagram' }
+  { src: '/products/other/t-radar/index/image/t-radar-1.jpg', alt: 'T-Radar front view' },
+  { src: '/products/other/t-radar/index/image/t-radar-pin.jpg', alt: 'T-Radar pin diagram' },
+  { src: '/products/other/t-radar/index/image/t-radar-set.jpg', alt: 'T-Radar installation diagram' }
 ]" />
 
 ## Overview
@@ -60,7 +60,7 @@ LILYGO T-Radar V1.0 is a high-precision proximity detection expansion board base
 
 ## Pin Diagram
 
-<img src="/products/other/t-radar/assets/t-radar-pin.jpg" alt="T-Radar pin diagram" width=100%>
+<img src="/products/other/t-radar/index/image/t-radar-pin.jpg" alt="T-Radar pin diagram" width=100%>
 
 ## Dimension Diagram
 

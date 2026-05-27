@@ -6,9 +6,9 @@ tags: ESP32-S3, E-Paper, LoRa, Low Power, IoT
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/ts-s3-epaper" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t3-series/t3-s3-e-paper/assets/t3-s3-e-paper-1.jpg', alt: 'T3-S3 E-Paper front view' },
-  { src: '/products/t3-series/t3-s3-e-paper/assets/t3-s3-e-paper-2.jpg', alt: 'T3-S3 E-Paper physical image' },
-  { src: '/products/t3-series/t3-s3-e-paper/assets/t3-s3-e-paper-info-en.jpg', alt: 'T3-S3 E-Paper component overview' }
+  { src: '/products/t3-series/t3-s3-e-paper/index/image/t3-s3-e-paper-1.jpg', alt: 'T3-S3 E-Paper front view' },
+  { src: '/products/t3-series/t3-s3-e-paper/index/image/t3-s3-e-paper-2.jpg', alt: 'T3-S3 E-Paper physical image' },
+  { src: '/products/t3-series/t3-s3-e-paper/index/image/t3-s3-e-paper-info-en.jpg', alt: 'T3-S3 E-Paper component overview' }
 ]" />
 
 ## Overview
@@ -96,7 +96,7 @@ T3-S3 E-Paper is a low-power IoT development board based on the **ESP32-S3FH4R2*
 
 ## Pin Diagram
 
-<img src="/products/t3-series/t3-s3-e-paper/assets/t3-s3-e-paper-en.jpg" alt="T3-S3 E-Paper pin diagram" width=100%>
+<img src="/products/t3-series/t3-s3-e-paper/index/image/t3-s3-e-paper-en.jpg" alt="T3-S3 E-Paper pin diagram" width=100%>
 
 ### Pin Mapping
 
@@ -163,7 +163,7 @@ T3-S3 E-Paper is a low-power IoT development board based on the **ESP32-S3FH4R2*
 
 * **Q. How to adjust the external antenna resistor?**
   A. Refer to the image below for resistor direction adjustment:
-  <img src="/products/t3-series/t3-s3-e-paper/assets/t3-s3-e-paper-3.jpg" alt="Antenna resistor adjustment" width=60%>
+  <img src="/products/t3-series/t3-s3-e-paper/index/image/t3-s3-e-paper-3.jpg" alt="Antenna resistor adjustment" width=60%>
 
 * **Q. Why is the E-ink refresh slow?**
   A. E-ink full refresh takes 2–3 seconds by design. After refresh, no power is needed to maintain the display — ideal for static content.

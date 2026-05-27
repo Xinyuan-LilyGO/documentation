@@ -6,9 +6,9 @@ tags: ESP32-S3, LR1121, LoRa, Dual-Band, OLED, IoT
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3-s3-lr1121" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t3-series/t3-s3-lr1121/assets/t3-s3-lr1121-1.jpg', alt: 'T3-S3 LR1121 front view' },
-  { src: '/products/t3-series/t3-s3-lr1121/assets/t3-s3-lr1121-2.jpg', alt: 'T3-S3 LR1121 physical image' },
-  { src: '/products/t3-series/t3-s3-lr1121/assets/t3-s3-lr1121-3.jpg', alt: 'T3-S3 LR1121 pin diagram' }
+  { src: '/products/t3-series/t3-s3-lr1121/index/image/t3-s3-lr1121-1.jpg', alt: 'T3-S3 LR1121 front view' },
+  { src: '/products/t3-series/t3-s3-lr1121/index/image/t3-s3-lr1121-2.jpg', alt: 'T3-S3 LR1121 physical image' },
+  { src: '/products/t3-series/t3-s3-lr1121/index/image/t3-s3-lr1121-3.jpg', alt: 'T3-S3 LR1121 pin diagram' }
 ]" />
 
 ## Overview
@@ -109,7 +109,7 @@ LILYGO T3-S3 LR1121 is a highly integrated IoT development board based on **ESP3
 
 ## Pin Diagram
 
-<img src="/products/t3-series/t3-s3-lr1121/assets/t3-s3-lr1121-3.jpg" alt="T3-S3 LR1121 pin diagram" width=100%>
+<img src="/products/t3-series/t3-s3-lr1121/index/image/t3-s3-lr1121-3.jpg" alt="T3-S3 LR1121 pin diagram" width=100%>
 
 ### Pin Mapping
 
@@ -163,7 +163,7 @@ LILYGO T3-S3 LR1121 is a highly integrated IoT development board based on **ESP3
 
 * **Q. How to adjust the external antenna resistor?**
   A. Refer to the image below for resistor direction adjustment:
-  <img src="/products/t3-series/t3-s3-lr1121/assets/t3-s3-lr1121-4.jpg" alt="Antenna resistor adjustment" width=60%>
+  <img src="/products/t3-series/t3-s3-lr1121/index/image/t3-s3-lr1121-4.jpg" alt="Antenna resistor adjustment" width=60%>
 
 * **Q. What advantages does LR1121 have over traditional LoRa chips?**
   A. LR1121 supports dual-band (Sub-GHz + 2.4 GHz), providing greater deployment flexibility and better anti-interference capability.

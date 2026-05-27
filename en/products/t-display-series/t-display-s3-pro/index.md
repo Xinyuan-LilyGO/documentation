@@ -6,9 +6,9 @@ tags: ESP32-S3, IPS, TFT_eSPI, USB OTG, Camera, Capacitive Touch
 
 # {{ $frontmatter.title }} <ShopLink href="https://www.lilygo.cc/products/t-display-s3-pro" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-pro/assets/t-display-s3-pro-1.jpg', alt: 'T-Display S3 Pro front view' },
-  { src: '/products/t-display-series/t-display-s3-pro/assets/t-display-s3 pro-pin.jpg', alt: 'T-Display S3 Pro front pin diagram' },
-  { src: '/products/t-display-series/t-display-s3-pro/assets/t-display-pro-pin-behind.jpg', alt: 'T-Display S3 Pro back pin diagram' }
+  { src: '/products/t-display-series/t-display-s3-pro/index/image/t-display-s3-pro-1.jpg', alt: 'T-Display S3 Pro front view' },
+  { src: '/products/t-display-series/t-display-s3-pro/index/image/t-display-s3 pro-pin.jpg', alt: 'T-Display S3 Pro front pin diagram' },
+  { src: '/products/t-display-series/t-display-s3-pro/index/image/t-display-pro-pin-behind.jpg', alt: 'T-Display S3 Pro back pin diagram' }
 ]" />
 
 ## Overview
@@ -93,8 +93,8 @@ T-Display S3 Pro is a high-performance development board based on **ESP32-S3R8**
 
 ## Pin Diagram
 
-<img src="/products/t-display-series/t-display-s3-pro/assets/t-display-s3 pro-pin.jpg" alt="T-Display S3 Pro front pin diagram" width=100%>
-<img src="/products/t-display-series/t-display-s3-pro/assets/t-display-pro-pin-behind.jpg" alt="T-Display S3 Pro back pin diagram" width=100%>
+<img src="/products/t-display-series/t-display-s3-pro/index/image/t-display-s3 pro-pin.jpg" alt="T-Display S3 Pro front pin diagram" width=100%>
+<img src="/products/t-display-series/t-display-s3-pro/index/image/t-display-pro-pin-behind.jpg" alt="T-Display S3 Pro back pin diagram" width=100%>
 
 ## Dimension Diagram
 

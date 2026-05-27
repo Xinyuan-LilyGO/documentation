@@ -7,9 +7,9 @@ tags: ESP32-S3, Display, IPS, BHI260AP, Touch Screen
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-bar" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-bar/assets/t-display-bar-1.jpg', alt: 'T-Display Bar 正面图' },
-  { src: '/products/t-display-series/t-display-bar/assets/t-display-bar-2.jpg', alt: 'T-Display Bar 实物图' },
-  { src: '/products/t-display-series/t-display-bar/assets/t-display-bar-pin.jpg', alt: 'T-Display Bar 引脚图' }
+  { src: '/products/t-display-series/t-display-bar/index/image/t-display-bar-1.jpg', alt: 'T-Display Bar 正面图' },
+  { src: '/products/t-display-series/t-display-bar/index/image/t-display-bar-2.jpg', alt: 'T-Display Bar 实物图' },
+  { src: '/products/t-display-series/t-display-bar/index/image/t-display-bar-pin.jpg', alt: 'T-Display Bar 引脚图' }
 ]" />
 
 ## 概述
@@ -84,7 +84,7 @@ LILYGO T-Display Bar 是一款基于 ESP32-S3R8 的高集成嵌入式智能显�
 
 ## 产品参数
 
-<img src="/products/t-display-series/t-display-bar/assets/t-display-bar-info.jpg" alt="T-Display Bar 概述图" width=80%>
+<img src="/products/t-display-series/t-display-bar/index/image/t-display-bar-info.jpg" alt="T-Display Bar 概述图" width=80%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -105,7 +105,7 @@ LILYGO T-Display Bar 是一款基于 ESP32-S3R8 的高集成嵌入式智能显�
 
 ## 引脚图
 
-<img src="/products/t-display-series/t-display-bar/assets/t-display-bar-pin.jpg" alt="T-Display Bar 引脚图" width=100%>
+<img src="/products/t-display-series/t-display-bar/index/image/t-display-bar-pin.jpg" alt="T-Display Bar 引脚图" width=100%>
 
 ### 引脚映射
 

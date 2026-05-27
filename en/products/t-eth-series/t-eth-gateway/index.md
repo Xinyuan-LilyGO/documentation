@@ -7,9 +7,9 @@ tags: LoRa, GPS, Gateway, SX1302, T-ETH-Elite
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-gateway/assets/t-eth-gateway-1.jpg', alt: 'T-ETH Gateway Shield front view' },
-  { src: '/products/t-eth-series/t-eth-gateway/assets/t-eth-gateway-2.jpg', alt: 'T-ETH Gateway Shield physical image' },
-  { src: '/products/t-eth-series/t-eth-gateway/assets/t-eth-gateway-3.jpg', alt: 'T-ETH Gateway Shield pin diagram' }
+  { src: '/products/t-eth-series/t-eth-gateway/index/image/t-eth-gateway-1.jpg', alt: 'T-ETH Gateway Shield front view' },
+  { src: '/products/t-eth-series/t-eth-gateway/index/image/t-eth-gateway-2.jpg', alt: 'T-ETH Gateway Shield physical image' },
+  { src: '/products/t-eth-series/t-eth-gateway/index/image/t-eth-gateway-3.jpg', alt: 'T-ETH Gateway Shield pin diagram' }
 ]" />
 
 ## Overview
@@ -60,7 +60,7 @@ Refer to the [T-ETH-Elite](../t-eth-elite/index.md) Quick Start guide for Arduin
 
 ## Pin Diagram
 
-<img src="/products/t-eth-series/t-eth-gateway/assets/t-eth-gateway-3.jpg" alt="T-ETH Gateway Shield pin diagram" width=100%>
+<img src="/products/t-eth-series/t-eth-gateway/index/image/t-eth-gateway-3.jpg" alt="T-ETH Gateway Shield pin diagram" width=100%>
 
 ## Dimension Diagram
 

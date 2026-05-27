@@ -7,9 +7,9 @@ tags: nRF52840, LoRa, E-Paper, GPS, NFC, Low Power
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-echo-lilygo" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-echo-series/t-echo/assets/t-echo1.jpg', alt: 'T-Echo 正面图' },
-  { src: '/products/t-echo-series/t-echo/assets/t-echo2.jpg', alt: 'T-Echo 实物图' },
-  { src: '/products/t-echo-series/t-echo/assets/t-echo-info-zh.jpg', alt: 'T-Echo 概述图' }
+  { src: '/products/t-echo-series/t-echo/index/image/t-echo1.jpg', alt: 'T-Echo 正面图' },
+  { src: '/products/t-echo-series/t-echo/index/image/t-echo2.jpg', alt: 'T-Echo 实物图' },
+  { src: '/products/t-echo-series/t-echo/index/image/t-echo-info-zh.jpg', alt: 'T-Echo 概述图' }
 ]" />
 
 ## 概述
@@ -67,7 +67,7 @@ T-Echo 兼容多个开源固件项目，包括 SoftRF 和 Meshtastic，可用于
 
 ## 产品参数
 
-<img src="/products/t-echo-series/t-echo/assets/t-echo-info-zh.jpg" alt="T-Echo 概述图" width=100%>
+<img src="/products/t-echo-series/t-echo/index/image/t-echo-info-zh.jpg" alt="T-Echo 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |

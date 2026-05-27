@@ -7,9 +7,9 @@ tags: SX1302, LoRa, Gateway, Ethernet, Shield
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-eth-elite-1?variant=44525092765877" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-1302/assets/t-eth-1302-1.jpg', alt: 'T-SX1302 正面图' },
-  { src: '/products/t-eth-series/t-eth-1302/assets/t-eth-1302-2.jpg', alt: 'T-SX1302 实物图' },
-  { src: '/products/t-eth-series/t-eth-1302/assets/t-eth-1302-3.jpg', alt: 'T-SX1302 概述图' }
+  { src: '/products/t-eth-series/t-eth-1302/index/image/t-eth-1302-1.jpg', alt: 'T-SX1302 正面图' },
+  { src: '/products/t-eth-series/t-eth-1302/index/image/t-eth-1302-2.jpg', alt: 'T-SX1302 实物图' },
+  { src: '/products/t-eth-series/t-eth-1302/index/image/t-eth-1302-3.jpg', alt: 'T-SX1302 概述图' }
 ]" />
 
 ## 概述
@@ -47,7 +47,7 @@ LILYGO T-SX1302 是搭配 T-ETH-ELITE 主板使用的 LoRa 网关扩展板，采
 
 ## 引脚图
 
-<img src="/products/t-eth-series/t-eth-1302/assets/t-eth-1302-3.jpg" alt="T-SX1302 概述图" width=80%>
+<img src="/products/t-eth-series/t-eth-1302/index/image/t-eth-1302-3.jpg" alt="T-SX1302 概述图" width=80%>
 
 ## 尺寸图
 

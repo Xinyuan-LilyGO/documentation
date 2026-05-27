@@ -7,9 +7,9 @@ tags: ESP32, Ethernet, RTL8201, PoE, IoT
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-eth-lite?variant=43120880746677" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-lite/assets/t-eth-lite-1.jpg', alt: 'T-ETH-Lite 正面图' },
-  { src: '/products/t-eth-series/t-eth-lite/assets/t-eth-lite-2.jpg', alt: 'T-ETH-Lite 实物图' },
-  { src: '/products/t-eth-series/t-eth-lite/assets/t-eth-lite-pin-zh.jpg', alt: 'T-ETH-Lite 引脚图' }
+  { src: '/products/t-eth-series/t-eth-lite/index/image/t-eth-lite-1.jpg', alt: 'T-ETH-Lite 正面图' },
+  { src: '/products/t-eth-series/t-eth-lite/index/image/t-eth-lite-2.jpg', alt: 'T-ETH-Lite 实物图' },
+  { src: '/products/t-eth-series/t-eth-lite/index/image/t-eth-lite-pin-zh.jpg', alt: 'T-ETH-Lite 引脚图' }
 ]" />
 
 ## 概述
@@ -79,9 +79,9 @@ T-ETH-Lite 是一款多功能嵌入式开发板，搭载 ESP32 主控芯片，�
 
 ## 引脚图
 
-<img src="/products/t-eth-series/t-eth-lite/assets/t-eth-lite-pin-zh.jpg" alt="T-ETH-Lite 引脚图" width=100%>
+<img src="/products/t-eth-series/t-eth-lite/index/image/t-eth-lite-pin-zh.jpg" alt="T-ETH-Lite 引脚图" width=100%>
 
-<img src="/products/t-eth-series/t-eth-lite/assets/t-eth-lite-info-zh.jpg" alt="T-ETH-Lite 概述图" width=100%>
+<img src="/products/t-eth-series/t-eth-lite/index/image/t-eth-lite-info-zh.jpg" alt="T-ETH-Lite 概述图" width=100%>
 
 ## 尺寸图
 

@@ -6,9 +6,9 @@ tags: CAN, ESP32-S3, Communication
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-2can" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-2can/assets/t-2can-1.jpg', alt: 'T-2Can front view' },
-  { src: '/products/t-sim-series/t-2can/assets/t-2can-2.jpg', alt: 'T-2Can physical image' },
-  { src: '/products/t-sim-series/t-2can/assets/t-2can-pin.jpg', alt: 'T-2Can pin diagram' }
+  { src: '/products/t-sim-series/t-2can/index/image/t-2can-1.jpg', alt: 'T-2Can front view' },
+  { src: '/products/t-sim-series/t-2can/index/image/t-2can-2.jpg', alt: 'T-2Can physical image' },
+  { src: '/products/t-sim-series/t-2can/index/image/t-2can-pin.jpg', alt: 'T-2Can pin diagram' }
 ]" />
 
 ## Overview
@@ -93,7 +93,7 @@ T-2CAN is a compact dual-channel CAN communication module based on **ESP32-S3-WR
 
 ## Pin Diagram
 
-<img src="/products/t-sim-series/t-2can/assets/t-2can-pin.jpg" alt="T-2Can pin diagram" width=100%>
+<img src="/products/t-sim-series/t-2can/index/image/t-2can-pin.jpg" alt="T-2Can pin diagram" width=100%>
 
 ## Dimension Diagram
 

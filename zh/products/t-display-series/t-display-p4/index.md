@@ -7,9 +7,9 @@ tags: ESP32-P4, MIPI, AMOLED, LoRa, GPS, ESP32-C6
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-p4" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-p4/assets/t-display-p4-1.jpg', alt: 'T-Display-P4 正面图' },
-  { src: '/products/t-display-series/t-display-p4/assets/t-display-p4-2.jpg', alt: 'T-Display-P4 实物图' },
-  { src: '/products/t-display-series/t-display-p4/assets/t-display-p4-amoled.jpg', alt: 'T-Display-P4 引脚图' }
+  { src: '/products/t-display-series/t-display-p4/index/image/t-display-p4-1.jpg', alt: 'T-Display-P4 正面图' },
+  { src: '/products/t-display-series/t-display-p4/index/image/t-display-p4-2.jpg', alt: 'T-Display-P4 实物图' },
+  { src: '/products/t-display-series/t-display-p4/index/image/t-display-p4-amoled.jpg', alt: 'T-Display-P4 引脚图' }
 ]" />
 
 ## 概述
@@ -115,11 +115,11 @@ T-Display-P4 有 AMOLED、TFT 两个版本：
 
 #### AMOLED 版本
 
-<img src="/products/t-display-series/t-display-p4/assets/t-display-p4-amoled.jpg" alt="T-Display-P4 AMOLED 引脚图" width=100%>
+<img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-amoled.jpg" alt="T-Display-P4 AMOLED 引脚图" width=100%>
 
 #### TFT 版本
 
-<img src="/products/t-display-series/t-display-p4/assets/t-display-p4-tft.jpg" alt="T-Display-P4 TFT 引脚图" width=100%>
+<img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-tft.jpg" alt="T-Display-P4 TFT 引脚图" width=100%>
 
 引脚定义请参考配置文件：
 - [t_display_p4_config.h](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/components/private_library/t_display_p4_config.h)

@@ -7,9 +7,9 @@ tags: ESP32-S3, Encoder, AMOLED, Rotary, HMI
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-encoder-plus" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-encoder-series/t-encoder-pro/assets/t-encoder-pro-1.jpg', alt: 'T-Encoder Pro 正面图' },
-  { src: '/products/t-encoder-series/t-encoder-pro/assets/t-encoder-pro-2.jpg', alt: 'T-Encoder Pro 实物图' },
-  { src: '/products/t-encoder-series/t-encoder-pro/assets/t-encoder-pro-pin-zh.jpg', alt: 'T-Encoder Pro 引脚图' }
+  { src: '/products/t-encoder-series/t-encoder-pro/index/image/t-encoder-pro-1.jpg', alt: 'T-Encoder Pro 正面图' },
+  { src: '/products/t-encoder-series/t-encoder-pro/index/image/t-encoder-pro-2.jpg', alt: 'T-Encoder Pro 实物图' },
+  { src: '/products/t-encoder-series/t-encoder-pro/index/image/t-encoder-pro-pin-zh.jpg', alt: 'T-Encoder Pro 引脚图' }
 ]" />
 
 ## 概述
@@ -97,9 +97,9 @@ LILYGO T-Encoder-Pro 是一款配备 AMOLED 触摸屏的智能控制旋钮开发
 
 ## 引脚图
 
-<img src="/products/t-encoder-series/t-encoder-pro/assets/t-encoder-pro-pin-zh.jpg" alt="T-Encoder Pro 引脚图" width=100%>
+<img src="/products/t-encoder-series/t-encoder-pro/index/image/t-encoder-pro-pin-zh.jpg" alt="T-Encoder Pro 引脚图" width=100%>
 
-<img src="/products/t-encoder-series/t-encoder-pro/assets/t-encoder-pro-info-zh.jpg" alt="T-Encoder Pro 概述图" width=80%>
+<img src="/products/t-encoder-series/t-encoder-pro/index/image/t-encoder-pro-info-zh.jpg" alt="T-Encoder Pro 概述图" width=80%>
 
 ### 引脚映射
 

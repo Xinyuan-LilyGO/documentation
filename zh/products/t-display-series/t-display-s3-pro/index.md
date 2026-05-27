@@ -7,9 +7,9 @@ tags: ESP32-S3, AMOLED, TFT_eSPI, USB OTG, IPS, Capacitive Touch
 # {{ $frontmatter.title }} <ShopLink href="https://www.lilygo.cc/products/t-display-s3-pro" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-pro/assets/t-display-s3-pro-1.jpg', alt: 'T-Display S3 Pro 正面图' },
-  { src: '/products/t-display-series/t-display-s3-pro/assets/t-display-s3-info.jpg', alt: 'T-Display S3 Pro 概述图' },
-  { src: '/products/t-display-series/t-display-s3-pro/assets/t-display-s3 pro-pin.jpg', alt: 'T-Display S3 Pro 引脚图' }
+  { src: '/products/t-display-series/t-display-s3-pro/index/image/t-display-s3-pro-1.jpg', alt: 'T-Display S3 Pro 正面图' },
+  { src: '/products/t-display-series/t-display-s3-pro/index/image/t-display-s3-info.jpg', alt: 'T-Display S3 Pro 概述图' },
+  { src: '/products/t-display-series/t-display-s3-pro/index/image/t-display-s3 pro-pin.jpg', alt: 'T-Display S3 Pro 引脚图' }
 ]" />
 
 ## 概述
@@ -98,9 +98,9 @@ tags: ESP32-S3, AMOLED, TFT_eSPI, USB OTG, IPS, Capacitive Touch
 
 ## 引脚图
 
-<img src="/products/t-display-series/t-display-s3-pro/assets/t-display-s3 pro-pin.jpg" alt="T-Display S3 Pro 引脚图（正面）" width=100%>
+<img src="/products/t-display-series/t-display-s3-pro/index/image/t-display-s3 pro-pin.jpg" alt="T-Display S3 Pro 引脚图（正面）" width=100%>
 
-<img src="/products/t-display-series/t-display-s3-pro/assets/t-display-pro-pin-behind.jpg" alt="T-Display S3 Pro 引脚图（背面）" width=100%>
+<img src="/products/t-display-series/t-display-s3-pro/index/image/t-display-pro-pin-behind.jpg" alt="T-Display S3 Pro 引脚图（背面）" width=100%>
 
 ## 尺寸图
 

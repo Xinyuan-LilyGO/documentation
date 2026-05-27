@@ -6,9 +6,9 @@ tags: T-Watch, ESP32-S3, Smart Watch, GPS, LoRa
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-watch-s3-plus" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-watch-series/t-watch-s3-plus/assets/t-watch-s3-plus1.jpg', alt: 'T-Watch S3 Plus front view' },
-  { src: '/products/t-watch-series/t-watch-s3-plus/assets/t-watch-s3-plus2.jpg', alt: 'T-Watch S3 Plus physical image' },
-  { src: '/products/t-watch-series/t-watch-s3-plus/assets/t-watch-s3-plus3.jpg', alt: 'T-Watch S3 Plus pin diagram' }
+  { src: '/products/t-watch-series/t-watch-s3-plus/index/image/t-watch-s3-plus1.jpg', alt: 'T-Watch S3 Plus front view' },
+  { src: '/products/t-watch-series/t-watch-s3-plus/index/image/t-watch-s3-plus2.jpg', alt: 'T-Watch S3 Plus physical image' },
+  { src: '/products/t-watch-series/t-watch-s3-plus/index/image/t-watch-s3-plus3.jpg', alt: 'T-Watch S3 Plus pin diagram' }
 ]" />
 
 ## Overview
@@ -106,7 +106,7 @@ T-Watch S3 Plus is an enhanced version of T-Watch S3, adding GPS functionality t
 
 ## Pin Diagram
 
-<img src="/products/t-watch-series/t-watch-s3-plus/assets/t-watch-s3-plus3.jpg" alt="T-Watch S3 Plus pin diagram" width=100%>
+<img src="/products/t-watch-series/t-watch-s3-plus/index/image/t-watch-s3-plus3.jpg" alt="T-Watch S3 Plus pin diagram" width=100%>
 
 ### Pin Mapping
 

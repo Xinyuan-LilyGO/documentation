@@ -7,9 +7,9 @@ tags: CAN FD, ESP32-S3, MCP2518
 # {{ $frontmatter.title }} <ShopLink href="" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/industrial-series/t-2can-fd/assets/t-2can-fd-1.jpg', alt: 'T-2Can-Fd front view' },
-  { src: '/products/industrial-series/t-2can-fd/assets/t-2can-fd-2.jpg', alt: 'T-2Can-Fd rear view' },
-  { src: '/products/industrial-series/t-2can-fd/assets/t-2can-fd-pin.jpg', alt: 'T-2Can-Fd pinout diagram' }
+  { src: '/products/industrial-series/t-2can-fd/index/image/t-2can-fd-1.jpg', alt: 'T-2Can-Fd front view' },
+  { src: '/products/industrial-series/t-2can-fd/index/image/t-2can-fd-2.jpg', alt: 'T-2Can-Fd rear view' },
+  { src: '/products/industrial-series/t-2can-fd/index/image/t-2can-fd-pin.jpg', alt: 'T-2Can-Fd pinout diagram' }
 ]" />
 
 ## Overview
@@ -122,7 +122,7 @@ Pin definitions refer to the configuration file:
 
 ## Dimension Diagram
 
-<img src="/products/industrial-series/t-2can-fd/assets/t-2can-fd-3.jpg" alt="T-2Can-Fd dimension diagram" width="100%" />
+<img src="/products/industrial-series/t-2can-fd/index/image/t-2can-fd-3.jpg" alt="T-2Can-Fd dimension diagram" width="100%" />
 
 ## Schematic
 

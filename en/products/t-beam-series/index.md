@@ -4,4 +4,4 @@ title: T-Beam Series
 
 # {{ $frontmatter.title }}
 
-Coming soon
+<ProductGrid category="t-beam-series" />

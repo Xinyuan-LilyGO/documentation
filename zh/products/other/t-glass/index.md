@@ -7,9 +7,9 @@ tags: ESP32-S3, AMOLED, Wearable, BHI260AP, Smart Glasses
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-glass" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-glass/assets/t-glass-1.jpg', alt: 'T-Glass 正面图' },
-  { src: '/products/other/t-glass/assets/t-glass-2.jpg', alt: 'T-Glass 实物图' },
-  { src: '/products/other/t-glass/assets/t-glass-pin-zh.jpg', alt: 'T-Glass 引脚图' }
+  { src: '/products/other/t-glass/index/image/t-glass-1.jpg', alt: 'T-Glass 正面图' },
+  { src: '/products/other/t-glass/index/image/t-glass-2.jpg', alt: 'T-Glass 实物图' },
+  { src: '/products/other/t-glass/index/image/t-glass-pin-zh.jpg', alt: 'T-Glass 引脚图' }
 ]" />
 
 ## 概述
@@ -83,7 +83,7 @@ LILYGO T-Glass 是一款基于 ESP32-S3 FN4R2 的智能可穿戴开发板，集�
 
 ## 产品参数
 
-<img src="/products/other/t-glass/assets/t-glass-point-zh.jpg" alt="T-Glass 概述图" width=80%>
+<img src="/products/other/t-glass/index/image/t-glass-point-zh.jpg" alt="T-Glass 概述图" width=80%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -106,7 +106,7 @@ LILYGO T-Glass 是一款基于 ESP32-S3 FN4R2 的智能可穿戴开发板，集�
 
 ## 引脚图
 
-<img src="/products/other/t-glass/assets/t-glass-pin-zh.jpg" alt="T-Glass 引脚图" width=100%>
+<img src="/products/other/t-glass/index/image/t-glass-pin-zh.jpg" alt="T-Glass 引脚图" width=100%>
 
 ## 尺寸图
 

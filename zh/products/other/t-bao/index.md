@@ -7,9 +7,9 @@ tags: K210, ESP32, AI, Camera, Touch Screen, IoT
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-bao" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-bao/assets/t-bao-1.jpg', alt: 'T-Bao 正面图' },
-  { src: '/products/other/t-bao/assets/t-bao-2.jpg', alt: 'T-Bao 实物图' },
-  { src: '/products/other/t-bao/assets/t-bao.jpg', alt: 'T-Bao 引脚图' }
+  { src: '/products/other/t-bao/index/image/t-bao-1.jpg', alt: 'T-Bao 正面图' },
+  { src: '/products/other/t-bao/index/image/t-bao-2.jpg', alt: 'T-Bao 实物图' },
+  { src: '/products/other/t-bao/index/image/t-bao.jpg', alt: 'T-Bao 引脚图' }
 ]" />
 
 ## 概述
@@ -79,10 +79,10 @@ T-Bao 是一款基于 ESP32-D0WDQ6-V3 和 K210 RISC-V AI 芯片的开源 AIoT �
 
 ## 引脚图
 
-<img src="/products/other/t-bao/assets/t-bao.jpg" alt="T-Bao 引脚图" width=100%>
+<img src="/products/other/t-bao/index/image/t-bao.jpg" alt="T-Bao 引脚图" width=100%>
 
 > **SD 卡使用注意事项**  
-> <img src="/products/other/t-bao/assets/t-bao-zh.jpg" alt="SD 卡安装说明" width=80%>
+> <img src="/products/other/t-bao/index/image/t-bao-zh.jpg" alt="SD 卡安装说明" width=80%>
 
 ## 尺寸图
 

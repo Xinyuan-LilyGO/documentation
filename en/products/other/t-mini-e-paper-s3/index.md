@@ -6,9 +6,9 @@ tags: ESP32-S3, E-Paper, LoRa, Low Power, IoT
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-mini-epaper-s3" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-mini-e-paper-s3/assets/t-mini-e-paper-s3-1.jpg', alt: 'T-Mini E-Paper S3 front view' },
-  { src: '/products/other/t-mini-e-paper-s3/assets/t-mini-e-paper-s3-2.jpg', alt: 'T-Mini E-Paper S3 physical image' },
-  { src: '/products/other/t-mini-e-paper-s3/assets/t-mini-e-paper-s3-pin.jpg', alt: 'T-Mini E-Paper S3 pin diagram' }
+  { src: '/products/other/t-mini-e-paper-s3/index/image/t-mini-e-paper-s3-1.jpg', alt: 'T-Mini E-Paper S3 front view' },
+  { src: '/products/other/t-mini-e-paper-s3/index/image/t-mini-e-paper-s3-2.jpg', alt: 'T-Mini E-Paper S3 physical image' },
+  { src: '/products/other/t-mini-e-paper-s3/index/image/t-mini-e-paper-s3-pin.jpg', alt: 'T-Mini E-Paper S3 pin diagram' }
 ]" />
 
 ## Overview
@@ -99,7 +99,7 @@ T-Mini E-Paper S3 is a compact multifunctional development board based on **ESP3
 
 ## Pin Diagram
 
-<img src="/products/other/t-mini-e-paper-s3/assets/t-mini-e-paper-s3-pin.jpg" alt="T-Mini E-Paper S3 pin diagram" width=100%>
+<img src="/products/other/t-mini-e-paper-s3/index/image/t-mini-e-paper-s3-pin.jpg" alt="T-Mini E-Paper S3 pin diagram" width=100%>
 
 ### Pin Mapping
 

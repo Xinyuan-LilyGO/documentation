@@ -7,9 +7,9 @@ tags: ESP32-S3, Keyboard, Mechanical, RGB, Multi-screen
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-keyboard-s3-pro" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-keyboard-s3-pro/assets/t-keyboard-s3-pro-1.jpg', alt: 'T-Keyboard S3 Pro 正面图' },
-  { src: '/products/other/t-keyboard-s3-pro/assets/t-keyboard-s3-pro-2.jpg', alt: 'T-Keyboard S3 Pro 实物图' },
-  { src: '/products/other/t-keyboard-s3-pro/assets/t-keyboard-s3-pro-zh.jpg', alt: 'T-Keyboard S3 Pro 引脚图' }
+  { src: '/products/other/t-keyboard-s3-pro/index/image/t-keyboard-s3-pro-1.jpg', alt: 'T-Keyboard S3 Pro 正面图' },
+  { src: '/products/other/t-keyboard-s3-pro/index/image/t-keyboard-s3-pro-2.jpg', alt: 'T-Keyboard S3 Pro 实物图' },
+  { src: '/products/other/t-keyboard-s3-pro/index/image/t-keyboard-s3-pro-zh.jpg', alt: 'T-Keyboard S3 Pro 引脚图' }
 ]" />
 
 > **重要提示**：使用时必须要有主机，从机通过磁吸接口与主机连接。
@@ -117,7 +117,7 @@ T-Keyboard-S3 Pro 是一款基于双 MCU 架构（ESP32-S3 + STM32G030F6P6）的
 
 ## 引脚图
 
-<img src="/products/other/t-keyboard-s3-pro/assets/t-keyboard-s3-pro-zh.jpg" alt="T-Keyboard S3 Pro 引脚图" width=100%>
+<img src="/products/other/t-keyboard-s3-pro/index/image/t-keyboard-s3-pro-zh.jpg" alt="T-Keyboard S3 Pro 引脚图" width=100%>
 
 ### ESP32-S3 引脚映射
 

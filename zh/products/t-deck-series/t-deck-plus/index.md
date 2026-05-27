@@ -7,9 +7,9 @@ tags: ESP32-S3, LoRa, GPS, Trackball, Keyboard
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-deck" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-deck-series/t-deck-plus/assets/t-deck-plus-1.jpg', alt: 'T-Deck Plus 正面图' },
-  { src: '/products/t-deck-series/t-deck-plus/assets/t-deck-plus-2.jpg', alt: 'T-Deck Plus 实物图' },
-  { src: '/products/t-deck-series/t-deck-plus/assets/t-deck-plus-zh.jpg', alt: 'T-Deck Plus 引脚图' }
+  { src: '/products/t-deck-series/t-deck-plus/index/image/t-deck-plus-1.jpg', alt: 'T-Deck Plus 正面图' },
+  { src: '/products/t-deck-series/t-deck-plus/index/image/t-deck-plus-2.jpg', alt: 'T-Deck Plus 实物图' },
+  { src: '/products/t-deck-series/t-deck-plus/index/image/t-deck-plus-zh.jpg', alt: 'T-Deck Plus 引脚图' }
 ]" />
 
 ## 概述
@@ -84,7 +84,7 @@ LILYGO T-Deck Plus 是 T-Deck 的升级版本，基于 ESP32-S3 主控，搭载 
 
 ## 产品参数
 
-<img src="/products/t-deck-series/t-deck-plus/assets/t-deck-info-zh.jpg" alt="T-Deck Plus 概述图" width=100%>
+<img src="/products/t-deck-series/t-deck-plus/index/image/t-deck-info-zh.jpg" alt="T-Deck Plus 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -110,7 +110,7 @@ LILYGO T-Deck Plus 是 T-Deck 的升级版本，基于 ESP32-S3 主控，搭载 
 
 ## 引脚图
 
-<img src="/products/t-deck-series/t-deck-plus/assets/t-deck-plus-zh.jpg" alt="T-Deck Plus 引脚图" width=100%>
+<img src="/products/t-deck-series/t-deck-plus/index/image/t-deck-plus-zh.jpg" alt="T-Deck Plus 引脚图" width=100%>
 
 ### 引脚映射
 

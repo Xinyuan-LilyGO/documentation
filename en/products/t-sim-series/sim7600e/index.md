@@ -7,8 +7,8 @@ tags: LTE, SIM7600E, 4G, mini PCIe, GNSS
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="2" :images="[
-  { src: '/products/t-sim-series/sim7600e/assets/sim7600e.jpg', alt: 'T-PCIE SIM7600E front view' },
-  { src: '/products/t-sim-series/sim7600e/assets/sim7600e-r.jpg', alt: 'T-PCIE SIM7600E rear view' }
+  { src: '/products/t-sim-series/sim7600e/index/image/sim7600e.jpg', alt: 'T-PCIE SIM7600E front view' },
+  { src: '/products/t-sim-series/sim7600e/index/image/sim7600e-r.jpg', alt: 'T-PCIE SIM7600E rear view' }
 ]" />
 
 ## Overview
@@ -68,7 +68,7 @@ Refer to the mainboard Quick Start guide for Arduino board settings.
 
 ## Pin Diagram
 
-<img src="/products/t-sim-series/sim7600e/assets/sim7600e-1.jpg" alt="T-PCIE SIM7600E pin definition" width=60%>
+<img src="/products/t-sim-series/sim7600e/index/image/sim7600e-1.jpg" alt="T-PCIE SIM7600E pin definition" width=60%>
 
 ## Dimension Diagram
 

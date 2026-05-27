@@ -7,9 +7,9 @@ tags: ESP32, Ethernet, RS485, Industrial, LAN8671
 # {{ $frontmatter.title }} <ShopLink href="" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/industrial-series/t-spe/assets/t-spe-1.jpg', alt: 'T-Spe front view' },
-  { src: '/products/industrial-series/t-spe/assets/t-spe-2.jpg', alt: 'T-Spe back view' },
-  { src: '/products/industrial-series/t-spe/assets/t-spe-pin.jpg', alt: 'T-Spe pinout diagram' }
+  { src: '/products/industrial-series/t-spe/index/image/t-spe-1.jpg', alt: 'T-Spe front view' },
+  { src: '/products/industrial-series/t-spe/index/image/t-spe-2.jpg', alt: 'T-Spe back view' },
+  { src: '/products/industrial-series/t-spe/index/image/t-spe-pin.jpg', alt: 'T-Spe pinout diagram' }
 ]" />
 
 ## Overview
@@ -93,7 +93,7 @@ If you cloned without submodules, run:
 
 ## Pinout Diagram
 
-<img src="/products/industrial-series/t-spe/assets/t-spe-pin.jpg" alt="T-Spe pinout diagram" width="100%" />
+<img src="/products/industrial-series/t-spe/index/image/t-spe-pin.jpg" alt="T-Spe pinout diagram" width="100%" />
 
 Pin definitions refer to the configuration file:  
 [t_spe_config.h](https://github.com/Xinyuan-LilyGO/lilygo_device_driver/blob/main/src/device/t_spe/t_spe_config.h)
@@ -112,7 +112,7 @@ Pin definitions refer to the configuration file:
 
 ## Dimension Diagram
 
-<img src="/products/industrial-series/t-spe/assets/t-spe-3.jpg" alt="T-Spe dimension diagram" width="100%" />
+<img src="/products/industrial-series/t-spe/index/image/t-spe-3.jpg" alt="T-Spe dimension diagram" width="100%" />
 
 ## Schematic
 

@@ -7,9 +7,9 @@ tags: ESP32-S3, Camera, TFT, Audio, Vision
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-camera-plus-s3" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-camera-series/t-camera-plus-s3/assets/t-cameraplus-s3-1.jpg', alt: 'T-Camera Plus S3 正面图' },
-  { src: '/products/t-camera-series/t-camera-plus-s3/assets/t-cameraplus-s3-2.jpg', alt: 'T-Camera Plus S3 实物图' },
-  { src: '/products/t-camera-series/t-camera-plus-s3/assets/t-cameraplus-s3-pin-zh.jpg', alt: 'T-Camera Plus S3 引脚图' }
+  { src: '/products/t-camera-series/t-camera-plus-s3/index/image/t-cameraplus-s3-1.jpg', alt: 'T-Camera Plus S3 正面图' },
+  { src: '/products/t-camera-series/t-camera-plus-s3/index/image/t-cameraplus-s3-2.jpg', alt: 'T-Camera Plus S3 实物图' },
+  { src: '/products/t-camera-series/t-camera-plus-s3/index/image/t-cameraplus-s3-pin-zh.jpg', alt: 'T-Camera Plus S3 引脚图' }
 ]" />
 
 ## 概述
@@ -84,7 +84,7 @@ T-CameraPlus-S3是一款基于ESP32-S3主控芯片的多功能智能硬件开发
 
 ## 产品参数
 
-<img src="/products/t-camera-series/t-camera-plus-s3/assets/t-cameraplus-s3-info-zh.jpg" alt="T-Camera Plus S3 概述图" width=100%>
+<img src="/products/t-camera-series/t-camera-plus-s3/index/image/t-cameraplus-s3-info-zh.jpg" alt="T-Camera Plus S3 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -108,7 +108,7 @@ T-CameraPlus-S3是一款基于ESP32-S3主控芯片的多功能智能硬件开发
 
 ## 引脚图
 
-<img src="/products/t-camera-series/t-camera-plus-s3/assets/t-cameraplus-s3-pin-zh.jpg" alt="T-Camera Plus S3 引脚图" width=100%>
+<img src="/products/t-camera-series/t-camera-plus-s3/index/image/t-cameraplus-s3-pin-zh.jpg" alt="T-Camera Plus S3 引脚图" width=100%>
 
 ### 引脚映射（V1.0-V1.1）
 

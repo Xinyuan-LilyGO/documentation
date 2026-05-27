@@ -4,4 +4,4 @@ title: T-Relay Series
 
 # {{ $frontmatter.title }}
 
-Coming soon
+<ProductGrid category="t-relay-series" />

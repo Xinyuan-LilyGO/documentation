@@ -7,9 +7,9 @@ tags: Solar, Lowpower
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-solar-kit" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-solar/assets/t-solar-1.jpg', alt: 'T-Solar 正面图' },
-  { src: '/products/other/t-solar/assets/t-solar-set.jpg', alt: 'T-Solar 安装示意图' },
-  { src: '/products/other/t-solar/assets/t-solar-all.jpg', alt: 'T-Solar 套件全貌' }
+  { src: '/products/other/t-solar/index/image/t-solar-1.jpg', alt: 'T-Solar 正面图' },
+  { src: '/products/other/t-solar/index/image/t-solar-set.jpg', alt: 'T-Solar 安装示意图' },
+  { src: '/products/other/t-solar/index/image/t-solar-all.jpg', alt: 'T-Solar 套件全貌' }
 ]" />
 
 ## 概述
@@ -27,8 +27,8 @@ tags: Solar, Lowpower
 
 ### 天线安装选项
 
-- **M12 接口：** <img src="/products/other/t-solar/assets/t-solar-m12.jpg" alt="M12转接头" width="400px">
-- **M16 接口：** <img src="/products/other/t-solar/assets/t-solar-m16.jpg" alt="M16转接头" width="400px">
+- **M12 接口：** <img src="/products/other/t-solar/index/image/t-solar-m12.jpg" alt="M12转接头" width="400px">
+- **M16 接口：** <img src="/products/other/t-solar/index/image/t-solar-m16.jpg" alt="M16转接头" width="400px">
 
 ## 视频
 
@@ -42,7 +42,7 @@ tags: Solar, Lowpower
 
 ## 产品参数
 
-<img src="/products/other/t-solar/assets/t-solar-board-info.jpg" alt="T-Solar 信息图" width=100%>
+<img src="/products/other/t-solar/index/image/t-solar-board-info.jpg" alt="T-Solar 信息图" width=100%>
 
 ### 太阳能板参数
 

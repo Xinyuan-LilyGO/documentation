@@ -7,9 +7,9 @@ tags: ESP32-S3, GNSS, Walkie-Talkie, OLED
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-twr-rev2-1?variant=44505308528821" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-twr-series/t-twr/assets/t-twr-1.jpg', alt: 'T-TWR 正面图' },
-  { src: '/products/t-twr-series/t-twr/assets/t-twr-2.jpg', alt: 'T-TWR 实物图' },
-  { src: '/products/t-twr-series/t-twr/assets/t-twr-3.jpg', alt: 'T-TWR 引脚图' }
+  { src: '/products/t-twr-series/t-twr/index/image/t-twr-1.jpg', alt: 'T-TWR 正面图' },
+  { src: '/products/t-twr-series/t-twr/index/image/t-twr-2.jpg', alt: 'T-TWR 实物图' },
+  { src: '/products/t-twr-series/t-twr/index/image/t-twr-3.jpg', alt: 'T-TWR 引脚图' }
 ]" />
 
 ## 概述
@@ -82,7 +82,7 @@ LILYGO T-TWR REV2.1 是一款基于 ESP32-S3-WROOM-1-N16R8 的对讲机开发板
 
 ## 产品参数
 
-<img src="/products/t-twr-series/t-twr/assets/t-twr-4.jpg" alt="T-TWR 概述图" width=100%>
+<img src="/products/t-twr-series/t-twr/index/image/t-twr-4.jpg" alt="T-TWR 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -108,7 +108,7 @@ LILYGO T-TWR REV2.1 是一款基于 ESP32-S3-WROOM-1-N16R8 的对讲机开发板
 
 ## 引脚图
 
-<img src="/products/t-twr-series/t-twr/assets/t-twr-3.jpg" alt="T-TWR 引脚图" width=100%>
+<img src="/products/t-twr-series/t-twr/index/image/t-twr-3.jpg" alt="T-TWR 引脚图" width=100%>
 
 ## 尺寸图
 

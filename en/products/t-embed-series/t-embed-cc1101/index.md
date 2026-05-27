@@ -7,9 +7,9 @@ tags: ESP32-S3, CC1101, Sub-GHz, NFC, PN532, IoT
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-embed-series/t-embed-cc1101/assets/t-embed-cc1101-1.jpg', alt: 'T-Embed CC1101 front view' },
-  { src: '/products/t-embed-series/t-embed-cc1101/assets/t-embed-cc1101-2.jpg', alt: 'T-Embed CC1101 appearance' },
-  { src: '/products/t-embed-series/t-embed-cc1101/assets/t-embed-cc1101-en.jpg', alt: 'T-Embed CC1101 pin diagram' }
+  { src: '/products/t-embed-series/t-embed-cc1101/index/image/t-embed-cc1101-1.jpg', alt: 'T-Embed CC1101 front view' },
+  { src: '/products/t-embed-series/t-embed-cc1101/index/image/t-embed-cc1101-2.jpg', alt: 'T-Embed CC1101 appearance' },
+  { src: '/products/t-embed-series/t-embed-cc1101/index/image/t-embed-cc1101-en.jpg', alt: 'T-Embed CC1101 pin diagram' }
 ]" />
 
 ## Overview
@@ -101,7 +101,7 @@ LILYGO T-Embed CC1101 is a highly integrated IoT development board based on **ES
 
 ## Pin Diagram
 
-<img src="/products/t-embed-series/t-embed-cc1101/assets/t-embed-cc1101-en.jpg" alt="T-Embed CC1101 pin diagram" width=100%>
+<img src="/products/t-embed-series/t-embed-cc1101/index/image/t-embed-cc1101-en.jpg" alt="T-Embed CC1101 pin diagram" width=100%>
 
 ## Dimension Diagram
 

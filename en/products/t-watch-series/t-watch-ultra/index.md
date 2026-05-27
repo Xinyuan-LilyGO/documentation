@@ -6,9 +6,9 @@ tags: Smart Watch, ESP32-S3, LoRa, GNSS, AMOLED, AI Sensor, NFC
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-watch-ultra" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-watch-series/t-watch-ultra/assets/t-watch-ultra-1.jpg', alt: 'T-Watch Ultra front view' },
-  { src: '/products/t-watch-series/t-watch-ultra/assets/t-watch-ultra-2.jpg', alt: 'T-Watch Ultra physical image' },
-  { src: '/products/t-watch-series/t-watch-ultra/assets/t-watch-ultra-pin.jpg', alt: 'T-Watch Ultra pin diagram' }
+  { src: '/products/t-watch-series/t-watch-ultra/index/image/t-watch-ultra-1.jpg', alt: 'T-Watch Ultra front view' },
+  { src: '/products/t-watch-series/t-watch-ultra/index/image/t-watch-ultra-2.jpg', alt: 'T-Watch Ultra physical image' },
+  { src: '/products/t-watch-series/t-watch-ultra/index/image/t-watch-ultra-pin.jpg', alt: 'T-Watch Ultra pin diagram' }
 ]" />
 
 ## Overview
@@ -112,7 +112,7 @@ T-Watch Ultra is a high-performance smart watch development module based on **ES
 
 ## Pin Diagram
 
-<img src="/products/t-watch-series/t-watch-ultra/assets/t-watch-ultra-pin.jpg" alt="T-Watch Ultra pin diagram" width=100%>
+<img src="/products/t-watch-series/t-watch-ultra/index/image/t-watch-ultra-pin.jpg" alt="T-Watch Ultra pin diagram" width=100%>
 
 ### Pin Mapping
 

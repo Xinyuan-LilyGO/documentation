@@ -7,9 +7,9 @@ tags: ESP32-S3, SI4732, Radio, TFT, AM/FM
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-embed" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-embed-series/t-embed-si4732/assets/t-embed-si4732-1.jpg', alt: 'T-Embed SI4732 正面图' },
-  { src: '/products/t-embed-series/t-embed-si4732/assets/t-embed-si4732-2.jpg', alt: 'T-Embed SI4732 实物图' },
-  { src: '/products/t-embed-series/t-embed-si4732/assets/t-embed-si4732.jpg', alt: 'T-Embed SI4732 引脚图' }
+  { src: '/products/t-embed-series/t-embed-si4732/index/image/t-embed-si4732-1.jpg', alt: 'T-Embed SI4732 正面图' },
+  { src: '/products/t-embed-series/t-embed-si4732/index/image/t-embed-si4732-2.jpg', alt: 'T-Embed SI4732 实物图' },
+  { src: '/products/t-embed-series/t-embed-si4732/index/image/t-embed-si4732.jpg', alt: 'T-Embed SI4732 引脚图' }
 ]" />
 
 > 点这里切换到 [T-Embed-CC1101](https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Embed-CC1101/T-Embed-CC1101.html) 版本
@@ -102,9 +102,9 @@ LILYGO T-Embed SI4732 这是基于基础款T-Embed 增加SI4732扩展模块的�
 
 ## 引脚图
 
-<img src="/products/t-embed-series/t-embed-si4732/assets/t-embed-si4732.jpg" alt="T-Embed SI4732 引脚图" width=100%>
+<img src="/products/t-embed-series/t-embed-si4732/index/image/t-embed-si4732.jpg" alt="T-Embed SI4732 引脚图" width=100%>
 
-<img src="/products/t-embed-series/t-embed-si4732/assets/t-embed-si4732-3.jpg" alt="T-Embed SI4732 概述图" width=80%>
+<img src="/products/t-embed-series/t-embed-si4732/index/image/t-embed-si4732-3.jpg" alt="T-Embed SI4732 概述图" width=80%>
 
 ## 尺寸图
 

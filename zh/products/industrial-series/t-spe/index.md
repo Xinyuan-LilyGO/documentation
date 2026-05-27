@@ -7,9 +7,9 @@ tags: ESP32, Ethernet, RS485, Industrial, LAN8671
 # {{ $frontmatter.title }} <ShopLink href="" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/industrial-series/t-spe/assets/t-spe-1.jpg', alt: 'T-Spe 正面' },
-  { src: '/products/industrial-series/t-spe/assets/t-spe-2.jpg', alt: 'T-Spe 背面' },
-  { src: '/products/industrial-series/t-spe/assets/t-spe-pin.jpg', alt: 'T-Spe 引脚图' }
+  { src: '/products/industrial-series/t-spe/index/image/t-spe-1.jpg', alt: 'T-Spe 正面' },
+  { src: '/products/industrial-series/t-spe/index/image/t-spe-2.jpg', alt: 'T-Spe 背面' },
+  { src: '/products/industrial-series/t-spe/index/image/t-spe-pin.jpg', alt: 'T-Spe 引脚图' }
 ]" />
 
 ## 概述
@@ -91,7 +91,7 @@ git clone --recursive https://github.com/Xinyuan-LilyGO/T-Spe.git
 
 ## 引脚图
 
-<img src="/products/industrial-series/t-spe/assets/t-spe-pin.jpg" alt="T-Spe 引脚图" width="100%" />
+<img src="/products/industrial-series/t-spe/index/image/t-spe-pin.jpg" alt="T-Spe 引脚图" width="100%" />
 
 Pin definitions 请参考配置文件：  
 [t_spe_config.h](https://github.com/Xinyuan-LilyGO/lilygo_device_driver/blob/main/src/device/t_spe/t_spe_config.h)
@@ -110,7 +110,7 @@ Pin definitions 请参考配置文件：
 
 ## 尺寸图
 
-<img src="/products/industrial-series/t-spe/assets/t-spe-3.jpg" alt="T-Spe 尺寸图" width="100%" />
+<img src="/products/industrial-series/t-spe/index/image/t-spe-3.jpg" alt="T-Spe 尺寸图" width="100%" />
 
 ## 原理图
 

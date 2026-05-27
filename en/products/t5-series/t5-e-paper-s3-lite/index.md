@@ -7,9 +7,9 @@ tags: E-Paper, ESP32-S3, Touch, E-Ink, Lite
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t5-series/t5-e-paper-s3-lite/assets/t5-e-paper-lite-1.jpg', alt: 'T5 E-Paper S3 Lite front view' },
-  { src: '/products/t5-series/t5-e-paper-s3-lite/assets/t5-e-paper-lite-2.jpg', alt: 'T5 E-Paper S3 Lite physical image' },
-  { src: '/products/t5-series/t5-e-paper-s3-lite/assets/t5-4.7-s3-pro-pin.jpg', alt: 'T5 E-Paper S3 Lite pin diagram' }
+  { src: '/products/t5-series/t5-e-paper-s3-lite/index/image/t5-e-paper-lite-1.jpg', alt: 'T5 E-Paper S3 Lite front view' },
+  { src: '/products/t5-series/t5-e-paper-s3-lite/index/image/t5-e-paper-lite-2.jpg', alt: 'T5 E-Paper S3 Lite physical image' },
+  { src: '/products/t5-series/t5-e-paper-s3-lite/index/image/t5-4.7-s3-pro-pin.jpg', alt: 'T5 E-Paper S3 Lite pin diagram' }
 ]" />
 
 ## Overview
@@ -135,7 +135,7 @@ examples/
 
 ## Pin Diagram
 
-<img src="/products/t5-series/t5-e-paper-s3-lite/assets/t5-4.7-s3-pro-pin.jpg" alt="T5 E-Paper S3 Lite pin diagram" width=100%>
+<img src="/products/t5-series/t5-e-paper-s3-lite/index/image/t5-4.7-s3-pro-pin.jpg" alt="T5 E-Paper S3 Lite pin diagram" width=100%>
 
 ### Pin Mapping
 

@@ -7,9 +7,9 @@ tags: AMOLED, Display, ESP32-S3
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-s3-amoled-1-64?variant=44507650556085" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-amoled-1.43/assets/t-display-s3-amoled-1.43-1.jpg', alt: 'T-Display S3 AMOLED 1.43 正面图' },
-  { src: '/products/t-display-series/t-display-s3-amoled-1.43/assets/t-display-s3-amoled-1.43-2.jpg', alt: 'T-Display S3 AMOLED 1.43 实物图' },
-  { src: '/products/t-display-series/t-display-s3-amoled-1.43/assets/t-display-s3-amoled-1.43-zh.jpg', alt: 'T-Display S3 AMOLED 1.43 引脚图' }
+  { src: '/products/t-display-series/t-display-s3-amoled-1.43/index/image/t-display-s3-amoled-1.43-1.jpg', alt: 'T-Display S3 AMOLED 1.43 正面图' },
+  { src: '/products/t-display-series/t-display-s3-amoled-1.43/index/image/t-display-s3-amoled-1.43-2.jpg', alt: 'T-Display S3 AMOLED 1.43 实物图' },
+  { src: '/products/t-display-series/t-display-s3-amoled-1.43/index/image/t-display-s3-amoled-1.43-zh.jpg', alt: 'T-Display S3 AMOLED 1.43 引脚图' }
 ]" />
 
 ## 概述
@@ -81,7 +81,7 @@ T-Display-S3-AMOLED-1.43 是一款集成 ESP32-S3 高性能 Wi-Fi/蓝牙双模�
 
 ## 产品参数
 
-<img src="/products/t-display-series/t-display-s3-amoled-1.43/assets/t-display-s3-amoled-1.43-info-zh.jpg" alt="T-Display S3 AMOLED 1.43 概述图" width=80%>
+<img src="/products/t-display-series/t-display-s3-amoled-1.43/index/image/t-display-s3-amoled-1.43-info-zh.jpg" alt="T-Display S3 AMOLED 1.43 概述图" width=80%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -102,7 +102,7 @@ T-Display-S3-AMOLED-1.43 是一款集成 ESP32-S3 高性能 Wi-Fi/蓝牙双模�
 
 ## 引脚图
 
-<img src="/products/t-display-series/t-display-s3-amoled-1.43/assets/t-display-s3-amoled-1.43-zh.jpg" alt="T-Display S3 AMOLED 1.43 引脚图" width=100%>
+<img src="/products/t-display-series/t-display-s3-amoled-1.43/index/image/t-display-s3-amoled-1.43-zh.jpg" alt="T-Display S3 AMOLED 1.43 引脚图" width=100%>
 
 ### 引脚映射
 

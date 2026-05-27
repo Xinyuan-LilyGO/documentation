@@ -6,9 +6,9 @@ tags: RP2350, ESP32-C6, Raspberry Pi, Dual-Core
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-pico?variant=45197490585781" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-pico-2350/assets/t-pico-2350-03.jpg', alt: 'T-PICO-2350 front view' },
-  { src: '/products/other/t-pico-2350/assets/t-pico-2350-04.jpg', alt: 'T-PICO-2350 physical image' },
-  { src: '/products/other/t-pico-2350/assets/t-pico-2350-01.jpg', alt: 'T-PICO-2350 pin diagram' }
+  { src: '/products/other/t-pico-2350/index/image/t-pico-2350-03.jpg', alt: 'T-PICO-2350 front view' },
+  { src: '/products/other/t-pico-2350/index/image/t-pico-2350-04.jpg', alt: 'T-PICO-2350 physical image' },
+  { src: '/products/other/t-pico-2350/index/image/t-pico-2350-01.jpg', alt: 'T-PICO-2350 pin diagram' }
 ]" />
 
 ## Overview
@@ -80,7 +80,7 @@ T-PICO-2350 is a dual-processor development board based on **Raspberry Pi RP2350
 
 ## Pin Diagram
 
-<img src="/products/other/t-pico-2350/assets/t-pico-2350-01.jpg" alt="T-PICO-2350 pin diagram" width=100%>
+<img src="/products/other/t-pico-2350/index/image/t-pico-2350-01.jpg" alt="T-PICO-2350 pin diagram" width=100%>
 
 ## Dimension Diagram
 

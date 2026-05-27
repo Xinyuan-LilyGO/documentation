@@ -7,9 +7,9 @@ tags: AMOLED, ESP32-S3, Display, Touch
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-s3-amoled-1-64?variant=44437365031093" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-amoled-1.64/assets/t-display-s3-amoled-1.64-1.jpg', alt: 'T-Display S3 AMOLED 1.64 正面图' },
-  { src: '/products/t-display-series/t-display-s3-amoled-1.64/assets/t-display-s3-amoled-1.64-2.jpg', alt: 'T-Display S3 AMOLED 1.64 实物图' },
-  { src: '/products/t-display-series/t-display-s3-amoled-1.64/assets/t-display-s3-amoled-1.64-zh.jpg', alt: 'T-Display S3 AMOLED 1.64 引脚图' }
+  { src: '/products/t-display-series/t-display-s3-amoled-1.64/index/image/t-display-s3-amoled-1.64-1.jpg', alt: 'T-Display S3 AMOLED 1.64 正面图' },
+  { src: '/products/t-display-series/t-display-s3-amoled-1.64/index/image/t-display-s3-amoled-1.64-2.jpg', alt: 'T-Display S3 AMOLED 1.64 实物图' },
+  { src: '/products/t-display-series/t-display-s3-amoled-1.64/index/image/t-display-s3-amoled-1.64-zh.jpg', alt: 'T-Display S3 AMOLED 1.64 引脚图' }
 ]" />
 
 ## 概述
@@ -110,9 +110,9 @@ T-Display-S3 AMOLED 1.64 是一款基于 ESP32-S3R8 双核 LX7 微处理器的�
 
 ## 引脚图
 
-<img src="/products/t-display-series/t-display-s3-amoled-1.64/assets/t-display-s3-amoled-1.64-zh.jpg" alt="T-Display S3 AMOLED 1.64 引脚图" width=100%>
+<img src="/products/t-display-series/t-display-s3-amoled-1.64/index/image/t-display-s3-amoled-1.64-zh.jpg" alt="T-Display S3 AMOLED 1.64 引脚图" width=100%>
 
-<img src="/products/t-display-series/t-display-s3-amoled-1.64/assets/t-display-s3-amoled-1.64-info-zh.jpg" alt="T-Display S3 AMOLED 1.64 概述图" width=80%>
+<img src="/products/t-display-series/t-display-s3-amoled-1.64/index/image/t-display-s3-amoled-1.64-info-zh.jpg" alt="T-Display S3 AMOLED 1.64 概述图" width=80%>
 
 ## 尺寸图
 

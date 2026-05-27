@@ -6,8 +6,8 @@ tags: ESP32, LR1121, ExpressLRS, LoRa
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-lora-dual" />
 <ImageGallery :columns="2" :images="[
-  { src: '/products/t-lora-series/t-lora-dual/assets/t-lora-dual-1.jpg', alt: 'T-LoRa Dual front view' },
-  { src: '/products/t-lora-series/t-lora-dual/assets/t-lora-dual-2.jpg', alt: 'T-LoRa Dual physical image' }
+  { src: '/products/t-lora-series/t-lora-dual/index/image/t-lora-dual-1.jpg', alt: 'T-LoRa Dual front view' },
+  { src: '/products/t-lora-series/t-lora-dual/index/image/t-lora-dual-2.jpg', alt: 'T-LoRa Dual physical image' }
 ]" />
 
 ## Overview
@@ -81,7 +81,7 @@ The two LR1121 modules share the SPI bus (SCK/MOSI/MISO) with independent CS sig
 
 ## Pin Diagram
 
-<img src="/products/t-lora-series/t-lora-dual/assets/t-lora-dual-pin.jpg" alt="T-LoRa Dual pin diagram" width=100%>
+<img src="/products/t-lora-series/t-lora-dual/index/image/t-lora-dual-pin.jpg" alt="T-LoRa Dual pin diagram" width=100%>
 
 ### LR1121-1 Module
 
@@ -174,4 +174,4 @@ The two LR1121 modules share the SPI bus (SCK/MOSI/MISO) with independent CS sig
 
 ### Hardware Overview
 
-<img src="/products/t-lora-series/t-lora-dual/assets/t-lora-dual-info.jpg" alt="T-LoRa Dual hardware overview" width=100%>
+<img src="/products/t-lora-series/t-lora-dual/index/image/t-lora-dual-info.jpg" alt="T-LoRa Dual hardware overview" width=100%>

@@ -7,9 +7,9 @@ tags: ESP32, LR1121, ExpressLRS, LoRa
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-lora-dual" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-lora-series/t-lora-dual/assets/t-lora-dual-1.jpg', alt: 'T-Lora-Dual 正面图' },
-  { src: '/products/t-lora-series/t-lora-dual/assets/t-lora-dual-2.jpg', alt: 'T-Lora-Dual 实物图' },
-  { src: '/products/t-lora-series/t-lora-dual/assets/t-lora-dual-pin.jpg', alt: 'T-Lora-Dual 引脚图' }
+  { src: '/products/t-lora-series/t-lora-dual/index/image/t-lora-dual-1.jpg', alt: 'T-Lora-Dual 正面图' },
+  { src: '/products/t-lora-series/t-lora-dual/index/image/t-lora-dual-2.jpg', alt: 'T-Lora-Dual 实物图' },
+  { src: '/products/t-lora-series/t-lora-dual/index/image/t-lora-dual-pin.jpg', alt: 'T-Lora-Dual 引脚图' }
 ]" />
 
 ## 概述
@@ -58,7 +58,7 @@ T-Lora-Dual 是一款基于 **ESP32-PICO-D4** 微控制器的双频无线通信�
 
 ## 产品参数
 
-<img src="/products/t-lora-series/t-lora-dual/assets/t-lora-dual-info.jpg" alt="T-Lora-Dual 硬件配置" width=100%>
+<img src="/products/t-lora-series/t-lora-dual/index/image/t-lora-dual-info.jpg" alt="T-Lora-Dual 硬件配置" width=100%>
 
 | 模块 | 型号 | 主要特性 |
 | :-- | :-- | :-- |
@@ -69,7 +69,7 @@ T-Lora-Dual 是一款基于 **ESP32-PICO-D4** 微控制器的双频无线通信�
 
 ## 引脚图
 
-<img src="/products/t-lora-series/t-lora-dual/assets/t-lora-dual-pin.jpg" alt="T-Lora-Dual 引脚图" width=100%>
+<img src="/products/t-lora-series/t-lora-dual/index/image/t-lora-dual-pin.jpg" alt="T-Lora-Dual 引脚图" width=100%>
 
 ### 引脚映射
 

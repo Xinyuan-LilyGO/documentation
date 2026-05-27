@@ -7,9 +7,9 @@ tags: ESP32, Ethernet, PoE, RTL8201, IoT
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-lite/assets/t-eth-lite-1.jpg', alt: 'T-ETH Lite front view' },
-  { src: '/products/t-eth-series/t-eth-lite/assets/t-eth-lite-2.jpg', alt: 'T-ETH Lite physical image' },
-  { src: '/products/t-eth-series/t-eth-lite/assets/t-eth-lite-pin-en.jpg', alt: 'T-ETH Lite pin diagram' }
+  { src: '/products/t-eth-series/t-eth-lite/index/image/t-eth-lite-1.jpg', alt: 'T-ETH Lite front view' },
+  { src: '/products/t-eth-series/t-eth-lite/index/image/t-eth-lite-2.jpg', alt: 'T-ETH Lite physical image' },
+  { src: '/products/t-eth-series/t-eth-lite/index/image/t-eth-lite-pin-en.jpg', alt: 'T-ETH Lite pin diagram' }
 ]" />
 
 ## Overview
@@ -90,7 +90,7 @@ T-ETH Lite is an Ethernet-enabled development board based on **ESP32** (16 MB Fl
 
 ## Pin Diagram
 
-<img src="/products/t-eth-series/t-eth-lite/assets/t-eth-lite-pin-en.jpg" alt="T-ETH Lite pin diagram" width=100%>
+<img src="/products/t-eth-series/t-eth-lite/index/image/t-eth-lite-pin-en.jpg" alt="T-ETH Lite pin diagram" width=100%>
 
 ## Dimension Diagram
 

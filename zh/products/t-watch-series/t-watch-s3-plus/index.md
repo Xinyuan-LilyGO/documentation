@@ -7,9 +7,9 @@ tags: T-Watch, ESP32-S3, 智能手表, GPS, LoRa
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-watch-s3-plus" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-watch-series/t-watch-s3-plus/assets/t-watch-s3-plus1.jpg', alt: 'T-Watch S3 Plus 正面图' },
-  { src: '/products/t-watch-series/t-watch-s3-plus/assets/t-watch-s3-plus2.jpg', alt: 'T-Watch S3 Plus 实物图' },
-  { src: '/products/t-watch-series/t-watch-s3-plus/assets/t-watch-s3-plus3.jpg', alt: 'T-Watch S3 Plus 引脚图' }
+  { src: '/products/t-watch-series/t-watch-s3-plus/index/image/t-watch-s3-plus1.jpg', alt: 'T-Watch S3 Plus 正面图' },
+  { src: '/products/t-watch-series/t-watch-s3-plus/index/image/t-watch-s3-plus2.jpg', alt: 'T-Watch S3 Plus 实物图' },
+  { src: '/products/t-watch-series/t-watch-s3-plus/index/image/t-watch-s3-plus3.jpg', alt: 'T-Watch S3 Plus 引脚图' }
 ]" />
 
 ## 概述
@@ -129,7 +129,7 @@ T-Watch S3 Plus 是基于 T-Watch S3 的增强版本，增加了 GPS 功能，�
 
 ## 引脚图
 
-<img src="/products/t-watch-series/t-watch-s3-plus/assets/t-watch-s3-plus3.jpg" alt="T-Watch S3 Plus 引脚图" width=100%>
+<img src="/products/t-watch-series/t-watch-s3-plus/index/image/t-watch-s3-plus3.jpg" alt="T-Watch S3 Plus 引脚图" width=100%>
 
 ### 引脚映射
 

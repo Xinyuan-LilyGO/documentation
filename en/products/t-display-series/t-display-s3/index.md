@@ -7,9 +7,9 @@ tags: ESP32-S3R8, WIFI, BLE, LCD
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-s3?variant=42589373268149" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3/assets/t-display-s3-1.jpg', alt: 'T-Display-S3 front view' },
-  { src: '/products/t-display-series/t-display-s3/assets/t-display-s3-2.jpg', alt: 'T-Display-S3 back view' },
-  { src: '/products/t-display-series/t-display-s3/assets/t-display-s3-pin.jpg', alt: 'T-Display-S3 pin diagram' },
+  { src: '/products/t-display-series/t-display-s3/index/image/t-display-s3-1.jpg', alt: 'T-Display-S3 front view' },
+  { src: '/products/t-display-series/t-display-s3/index/image/t-display-s3-2.jpg', alt: 'T-Display-S3 back view' },
+  { src: '/products/t-display-series/t-display-s3/index/image/t-display-s3-pin.jpg', alt: 'T-Display-S3 pin diagram' },
 ]" />
 
 ## Overview
@@ -121,7 +121,7 @@ Install Arduino IDE
 
 ## Pin Diagram
 
-<img src="/products/t-display-series/t-display-s3/assets/t-display-s3-pin.jpg" alt="T-Display-S3 pin diagram" width=100%>
+<img src="/products/t-display-series/t-display-s3/index/image/t-display-s3-pin.jpg" alt="T-Display-S3 pin diagram" width=100%>
 
 ### Display
 

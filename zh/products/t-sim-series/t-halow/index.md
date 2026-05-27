@@ -7,9 +7,9 @@ tags: ESP32-S3, WiFi-HaLow, 802.11ah, Camera, IoT, LongRange
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-halow" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-halow/assets/t-halow-1.jpg', alt: 'T-Halow 正面图' },
-  { src: '/products/t-sim-series/t-halow/assets/t-halow-2.jpg', alt: 'T-Halow 实物图' },
-  { src: '/products/t-sim-series/t-halow/assets/t-halow-pin.jpg', alt: 'T-Halow 引脚图' }
+  { src: '/products/t-sim-series/t-halow/index/image/t-halow-1.jpg', alt: 'T-Halow 正面图' },
+  { src: '/products/t-sim-series/t-halow/index/image/t-halow-2.jpg', alt: 'T-Halow 实物图' },
+  { src: '/products/t-sim-series/t-halow/index/image/t-halow-pin.jpg', alt: 'T-Halow 引脚图' }
 ]" />
 
 ## 概述
@@ -105,7 +105,7 @@ T-Halow 有两个不同版本，主要在配对方式上有所区别：
 
 ## 引脚图
 
-<img src="/products/t-sim-series/t-halow/assets/t-halow-pin.jpg" alt="T-Halow 引脚图" width=100%>
+<img src="/products/t-sim-series/t-halow/index/image/t-halow-pin.jpg" alt="T-Halow 引脚图" width=100%>
 
 ### 引脚映射
 

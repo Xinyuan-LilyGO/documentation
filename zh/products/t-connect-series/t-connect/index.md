@@ -7,9 +7,9 @@ tags: ESP32-S3, RS485, CAN, Industrial
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-connect" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-connect-series/t-connect/assets/t-connect-1.jpg', alt: 'T-Connect 正面图' },
-  { src: '/products/t-connect-series/t-connect/assets/t-connect-2.jpg', alt: 'T-Connect 实物图' },
-  { src: '/products/t-connect-series/t-connect/assets/t-connect-zh-1.jpg', alt: 'T-Connect 引脚图' }
+  { src: '/products/t-connect-series/t-connect/index/image/t-connect-1.jpg', alt: 'T-Connect 正面图' },
+  { src: '/products/t-connect-series/t-connect/index/image/t-connect-2.jpg', alt: 'T-Connect 实物图' },
+  { src: '/products/t-connect-series/t-connect/index/image/t-connect-zh-1.jpg', alt: 'T-Connect 引脚图' }
 ]" />
 
 ## 概述
@@ -76,7 +76,7 @@ T-Connect 是一款基于 ESP32-S3 芯片的多功能工业通信开发板，搭
 
 ## 产品参数
 
-<img src="/products/t-connect-series/t-connect/assets/t-connect-zh.jpg" alt="T-Connect 概述图" width=100%>
+<img src="/products/t-connect-series/t-connect/index/image/t-connect-zh.jpg" alt="T-Connect 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -97,7 +97,7 @@ T-Connect 是一款基于 ESP32-S3 芯片的多功能工业通信开发板，搭
 
 ## 引脚图
 
-<img src="/products/t-connect-series/t-connect/assets/t-connect-zh-1.jpg" alt="T-Connect 引脚图" width=100%>
+<img src="/products/t-connect-series/t-connect/index/image/t-connect-zh-1.jpg" alt="T-Connect 引脚图" width=100%>
 
 ### 引脚映射
 

@@ -155,7 +155,7 @@ tags: {tags}
 ## Pin Diagram
 
 {pinout image if available, e.g.:
-<img src="/products/{series}/{product}/assets/{product}-pinout.jpg" alt="pin diagram" width=100%>
+<img src="/products/{series}/{product}/index/image/{product}-pin.jpg" alt="pin diagram" width=100%>
 }
 
 {one subsection per peripheral, following this exact format:

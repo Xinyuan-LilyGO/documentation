@@ -7,9 +7,9 @@ tags: LoRa, SX1302, Gateway, T-ETH-Elite
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-1302/assets/t-eth-1302-1.jpg', alt: 'T-SX1302 front view' },
-  { src: '/products/t-eth-series/t-eth-1302/assets/t-eth-1302-2.jpg', alt: 'T-SX1302 physical image' },
-  { src: '/products/t-eth-series/t-eth-1302/assets/t-eth-1302-3.jpg', alt: 'T-SX1302 module information' }
+  { src: '/products/t-eth-series/t-eth-1302/index/image/t-eth-1302-1.jpg', alt: 'T-SX1302 front view' },
+  { src: '/products/t-eth-series/t-eth-1302/index/image/t-eth-1302-2.jpg', alt: 'T-SX1302 physical image' },
+  { src: '/products/t-eth-series/t-eth-1302/index/image/t-eth-1302-3.jpg', alt: 'T-SX1302 module information' }
 ]" />
 
 ## Overview

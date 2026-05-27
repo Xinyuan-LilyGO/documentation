@@ -7,9 +7,9 @@ tags: ESP32-S3, LoRa, CAN, Ethernet, Industrial
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-connect-pro" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-connect-series/t-connect-pro/assets/t-connect-pro1.jpg', alt: 'T-Connect Pro 正面图' },
-  { src: '/products/t-connect-series/t-connect-pro/assets/t-connect-pro2.jpg', alt: 'T-Connect Pro 实物图' },
-  { src: '/products/t-connect-series/t-connect-pro/assets/t-connect-pro-zh.jpg', alt: 'T-Connect Pro 引脚图' }
+  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro1.jpg', alt: 'T-Connect Pro 正面图' },
+  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro2.jpg', alt: 'T-Connect Pro 实物图' },
+  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-zh.jpg', alt: 'T-Connect Pro 引脚图' }
 ]" />
 
 ## 概述
@@ -116,7 +116,7 @@ T-Connect-Pro 是一款基于 ESP32-S3 的多功能工业级控制与通信模�
 
 ## 引脚图
 
-<img src="/products/t-connect-series/t-connect-pro/assets/t-connect-pro-zh.jpg" alt="T-Connect Pro 引脚图" width=100%>
+<img src="/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-zh.jpg" alt="T-Connect Pro 引脚图" width=100%>
 
 ### 引脚映射
 

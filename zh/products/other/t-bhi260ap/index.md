@@ -7,9 +7,9 @@ tags: BHI260AP, IMU, AI, Motion, Sensor
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-bhi260ap" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-bhi260ap/assets/t-bhi260ap-1.jpg', alt: 'T-BHI260AP 正面图' },
-  { src: '/products/other/t-bhi260ap/assets/t-bhi260ap-2.jpg', alt: 'T-BHI260AP 实物图' },
-  { src: '/products/other/t-bhi260ap/assets/t-bhi260ap-3.jpg', alt: 'T-BHI260AP 参数图' }
+  { src: '/products/other/t-bhi260ap/index/image/t-bhi260ap-1.jpg', alt: 'T-BHI260AP 正面图' },
+  { src: '/products/other/t-bhi260ap/index/image/t-bhi260ap-2.jpg', alt: 'T-BHI260AP 实物图' },
+  { src: '/products/other/t-bhi260ap/index/image/t-bhi260ap-3.jpg', alt: 'T-BHI260AP 参数图' }
 ]" />
 
 ## 概述
@@ -42,7 +42,7 @@ T-BHI260AP 是一款集成自学习 AI 算法与 6 轴 IMU（加速度计 + 陀�
 
 ## 引脚图
 
-<img src="/products/other/t-bhi260ap/assets/t-bhi260ap-3.jpg" alt="T-BHI260AP 参数图" width=100%>
+<img src="/products/other/t-bhi260ap/index/image/t-bhi260ap-3.jpg" alt="T-BHI260AP 参数图" width=100%>
 
 ## 尺寸图
 

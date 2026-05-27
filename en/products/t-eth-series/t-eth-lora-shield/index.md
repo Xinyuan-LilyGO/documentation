@@ -7,9 +7,9 @@ tags: LoRa, GPS, L76K, T-ETH-Elite, SX1262
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-lora-shield/assets/t-eth-lora-shield-1.jpg', alt: 'T-ETH Elite LoRa Shield front view' },
-  { src: '/products/t-eth-series/t-eth-lora-shield/assets/t-eth-lora-shield-2.jpg', alt: 'T-ETH Elite LoRa Shield physical image' },
-  { src: '/products/t-eth-series/t-eth-lora-shield/assets/t-eth-lora-shield-3.jpg', alt: 'T-ETH Elite LoRa Shield pin diagram' }
+  { src: '/products/t-eth-series/t-eth-lora-shield/index/image/t-eth-lora-shield-1.jpg', alt: 'T-ETH Elite LoRa Shield front view' },
+  { src: '/products/t-eth-series/t-eth-lora-shield/index/image/t-eth-lora-shield-2.jpg', alt: 'T-ETH Elite LoRa Shield physical image' },
+  { src: '/products/t-eth-series/t-eth-lora-shield/index/image/t-eth-lora-shield-3.jpg', alt: 'T-ETH Elite LoRa Shield pin diagram' }
 ]" />
 
 ## Overview
@@ -62,7 +62,7 @@ Refer to the [T-ETH-Elite](../t-eth-elite/index.md) Quick Start guide for Arduin
 
 ## Pin Diagram
 
-<img src="/products/t-eth-series/t-eth-lora-shield/assets/t-eth-lora-shield-3.jpg" alt="T-ETH Elite LoRa Shield pin diagram" width=100%>
+<img src="/products/t-eth-series/t-eth-lora-shield/index/image/t-eth-lora-shield-3.jpg" alt="T-ETH Elite LoRa Shield pin diagram" width=100%>
 
 ## Dimension Diagram
 

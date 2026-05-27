@@ -7,9 +7,9 @@ tags: AMOLED, Display, ESP32-S3
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-s3-amoled-1-64?variant=44848332931253" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-amoled-1.75/assets/t-display-s3-amoled-1.75-1.jpg', alt: 'T-Display S3 AMOLED 1.75 正面图' },
-  { src: '/products/t-display-series/t-display-s3-amoled-1.75/assets/t-display-s3-amoled-1.75-2.jpg', alt: 'T-Display S3 AMOLED 1.75 实物图' },
-  { src: '/products/t-display-series/t-display-s3-amoled-1.75/assets/t-display-s3-amoled-1.75-zh.jpg', alt: 'T-Display S3 AMOLED 1.75 引脚图' }
+  { src: '/products/t-display-series/t-display-s3-amoled-1.75/index/image/t-display-s3-amoled-1.75-1.jpg', alt: 'T-Display S3 AMOLED 1.75 正面图' },
+  { src: '/products/t-display-series/t-display-s3-amoled-1.75/index/image/t-display-s3-amoled-1.75-2.jpg', alt: 'T-Display S3 AMOLED 1.75 实物图' },
+  { src: '/products/t-display-series/t-display-s3-amoled-1.75/index/image/t-display-s3-amoled-1.75-zh.jpg', alt: 'T-Display S3 AMOLED 1.75 引脚图' }
 ]" />
 
 ## 概述
@@ -102,7 +102,7 @@ T-Display S3 AMOLED 是一款基于 ESP32-S3 微控制器的高集成度开发�
 
 ## 引脚图
 
-<img src="/products/t-display-series/t-display-s3-amoled-1.75/assets/t-display-s3-amoled-1.75-zh.jpg" alt="T-Display S3 AMOLED 1.75 引脚图" width=100%>
+<img src="/products/t-display-series/t-display-s3-amoled-1.75/index/image/t-display-s3-amoled-1.75-zh.jpg" alt="T-Display S3 AMOLED 1.75 引脚图" width=100%>
 
 ## 尺寸图
 

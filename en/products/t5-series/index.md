@@ -4,4 +4,4 @@ title: e-Paper
 
 # {{ $frontmatter.title }}
 
-Coming soon
+<ProductGrid category="t5-series" />

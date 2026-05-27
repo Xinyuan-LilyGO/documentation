@@ -6,9 +6,9 @@ tags: ESP32-Pico-D4, LoRa, TCXO, OLED, IoT
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3-txco" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t3-series/t3-txco/assets/t3-txco-1.jpg', alt: 'T3-TCXO front view' },
-  { src: '/products/t3-series/t3-txco/assets/t3-txco-2.jpg', alt: 'T3-TCXO physical image' },
-  { src: '/products/t3-series/t3-txco/assets/t3-txco-3.jpg', alt: 'T3-TCXO pin diagram' }
+  { src: '/products/t3-series/t3-txco/index/image/t3-txco-1.jpg', alt: 'T3-TCXO front view' },
+  { src: '/products/t3-series/t3-txco/index/image/t3-txco-2.jpg', alt: 'T3-TCXO physical image' },
+  { src: '/products/t3-series/t3-txco/index/image/t3-txco-3.jpg', alt: 'T3-TCXO pin diagram' }
 ]" />
 
 ## Overview
@@ -105,7 +105,7 @@ LILYGO T3-TCXO is a wireless communication development board based on the **ESP3
 
 ## Pin Diagram
 
-<img src="/products/t3-series/t3-txco/assets/t3-txco-3.jpg" alt="T3-TCXO pin diagram" width=100%>
+<img src="/products/t3-series/t3-txco/index/image/t3-txco-3.jpg" alt="T3-TCXO pin diagram" width=100%>
 
 ### Pin Mapping
 
@@ -155,7 +155,7 @@ LILYGO T3-TCXO is a wireless communication development board based on the **ESP3
 
 * **Q. How to adjust the external antenna resistor?**
   A. Refer to the image below for resistor direction adjustment:
-  <img src="/products/t3-series/t3-txco/assets/t3-txco-4.jpg" alt="Antenna resistor adjustment" width=60%>
+  <img src="/products/t3-series/t3-txco/index/image/t3-txco-4.jpg" alt="Antenna resistor adjustment" width=60%>
 
 * **Q. What advantages does TCXO have over a standard crystal?**
   A. TCXO maintains higher frequency stability when temperature changes (±0.5 ppm over −40 °C to +85 °C), suitable for precision communication in variable-temperature environments.

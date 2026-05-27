@@ -6,10 +6,10 @@ tags: K230, AIoT, LoRa, AMOLED, RISC-V
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-k230" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-k230/assets/t-display-k230-1.jpg', alt: 'T-Display K230 front view' },
-  { src: '/products/t-display-series/t-display-k230/assets/t-display-k230-2.jpg', alt: 'T-Display K230 physical image' },
-  { src: '/products/t-display-series/t-display-k230/assets/t-display-k230-3.jpg', alt: 'T-Display K230 pin diagram' },
-  { src: '/products/t-display-series/t-display-k230/assets/t-display-k230-cn.jpg' }
+  { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-1.jpg', alt: 'T-Display K230 front view' },
+  { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-2.jpg', alt: 'T-Display K230 physical image' },
+  { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-3.jpg', alt: 'T-Display K230 pin diagram' },
+  { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-cn.jpg' }
 ]" />
 
 ## Overview
@@ -122,7 +122,7 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 
 ## Pin Diagram
 
-<img src="/products/t-display-series/t-display-k230/assets/t-display-k230-cn.jpg" alt="T-Display K230 pin diagram" width=100%>
+<img src="/products/t-display-series/t-display-k230/index/image/t-display-k230-cn.jpg" alt="T-Display K230 pin diagram" width=100%>
 
 ## Dimension Diagram
 

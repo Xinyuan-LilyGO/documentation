@@ -7,9 +7,9 @@ tags: CAN, ESP32-S3, Communication
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-2can" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-2can/assets/t-2can-1.jpg', alt: 'T-2Can 正面图' },
-  { src: '/products/t-sim-series/t-2can/assets/t-2can-2.jpg', alt: 'T-2Can 实物图' },
-  { src: '/products/t-sim-series/t-2can/assets/t-2can-pin.jpg', alt: 'T-2Can 引脚图' }
+  { src: '/products/t-sim-series/t-2can/index/image/t-2can-1.jpg', alt: 'T-2Can 正面图' },
+  { src: '/products/t-sim-series/t-2can/index/image/t-2can-2.jpg', alt: 'T-2Can 实物图' },
+  { src: '/products/t-sim-series/t-2can/index/image/t-2can-pin.jpg', alt: 'T-2Can 引脚图' }
 ]" />
 
 ## 概述
@@ -74,7 +74,7 @@ LILYGO T-2CAN 是一款高性能、紧凑型嵌入式通信模块，基于 ESP32
 
 ## 产品参数
 
-<img src="/products/t-sim-series/t-2can/assets/t-2can-info.jpg" alt="T-2Can 概述图" width=100%>
+<img src="/products/t-sim-series/t-2can/index/image/t-2can-info.jpg" alt="T-2Can 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -92,7 +92,7 @@ LILYGO T-2CAN 是一款高性能、紧凑型嵌入式通信模块，基于 ESP32
 
 ## 引脚图
 
-<img src="/products/t-sim-series/t-2can/assets/t-2can-pin.jpg" alt="T-2Can 引脚图" width=100%>
+<img src="/products/t-sim-series/t-2can/index/image/t-2can-pin.jpg" alt="T-2Can 引脚图" width=100%>
 
 ## 尺寸图
 

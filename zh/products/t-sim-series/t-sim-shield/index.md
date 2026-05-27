@@ -7,9 +7,9 @@ tags: Sim系列, 扩展板, LoRa, 电流检测, RS485, INA3221
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/sim-shield" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-sim-shield/assets/t-sim-shield-1.jpg', alt: 'Sim Shield 正面图' },
-  { src: '/products/t-sim-series/t-sim-shield/assets/intervface.png', alt: 'Sim Shield 接口图' },
-  { src: '/products/t-sim-series/t-sim-shield/assets/battery_current_detection_mode.png', alt: 'Sim Shield 电流检测' }
+  { src: '/products/t-sim-series/t-sim-shield/index/image/t-sim-shield-1.jpg', alt: 'Sim Shield 正面图' },
+  { src: '/products/t-sim-series/t-sim-shield/index/image/intervface.png', alt: 'Sim Shield 接口图' },
+  { src: '/products/t-sim-series/t-sim-shield/index/image/battery_current_detection_mode.png', alt: 'Sim Shield 电流检测' }
 ]" />
 
 > **⚠️ 重要警告：** 通电前必须检查跳线帽和 DIP 开关设置，错误配置可能导致硬件损坏。
@@ -72,7 +72,7 @@ Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配
 
 ### SIM7000G / A7670X / A7608X（ESP32 版）
 
-![配置图](/products/t-sim-series/t-sim-shield/assets/sim7000_a7608_a7670_esp32.png)
+![配置图](/products/t-sim-series/t-sim-shield/index/image/sim7000_a7608_a7670_esp32.png)
 
 | 跳线/开关 | 设置 | 说明 |
 | :--- | :---: | :--- |
@@ -102,7 +102,7 @@ Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配
 
 ### SIM7600X（ESP32 版）
 
-![配置图](/products/t-sim-series/t-sim-shield/assets/sim7600_esp32.png)
+![配置图](/products/t-sim-series/t-sim-shield/index/image/sim7600_esp32.png)
 
 | 跳线/开关 | 设置 | 说明 |
 | :--- | :---: | :--- |
@@ -117,7 +117,7 @@ Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配
 
 ### SIM7670G（ESP32-S3 版）
 
-![配置图](/products/t-sim-series/t-sim-shield/assets/sim7670g_esp32s3.png)
+![配置图](/products/t-sim-series/t-sim-shield/index/image/sim7670g_esp32s3.png)
 
 | 跳线/开关 | 设置 | 说明 |
 | :--- | :---: | :--- |
@@ -145,7 +145,7 @@ Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配
 
 ### A7608X（ESP32-S3 版）
 
-![配置图](/products/t-sim-series/t-sim-shield/assets/a7608_esp32s3.png)
+![配置图](/products/t-sim-series/t-sim-shield/index/image/a7608_esp32s3.png)
 
 | 跳线/开关 | 设置 | 说明 |
 | :--- | :---: | :--- |
@@ -173,7 +173,7 @@ Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配
 
 ### SIM7080G（ESP32-S3 PMU 版）
 
-![配置图](/products/t-sim-series/t-sim-shield/assets/sim7080g_esp32s3.png)
+![配置图](/products/t-sim-series/t-sim-shield/index/image/sim7080g_esp32s3.png)
 
 | 跳线/开关 | 设置 | 说明 |
 | :--- | :---: | :--- |
@@ -184,7 +184,7 @@ Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配
 
 > **重要：** SIM7080G 需将 18650 电池座正极焊接到指定位置，并移除主板 18650 电池座。`DC5` 和 `VSYS` 引脚必须空置。
 
-![焊接示意图](/products/t-sim-series/t-sim-shield/assets/h606-sim7080.png)
+![焊接示意图](/products/t-sim-series/t-sim-shield/index/image/h606-sim7080.png)
 
 适用型号：[SIM7080G-ESP32S3](https://lilygo.cc/products/t-sim7080-s3)
 
@@ -205,7 +205,7 @@ Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配
 
 ### 标准系列（SIM7000G / A7670X / SIM7670G / SIM7080G）
 
-![配置图](/products/t-sim-series/t-sim-shield/assets/standard%20series.png)
+![配置图](/products/t-sim-series/t-sim-shield/index/image/standard%20series.png)
 
 | 跳线/开关 | 设置 | 说明 |
 | :--- | :---: | :--- |
@@ -233,13 +233,13 @@ Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配
 
 **电池连接**
 
-![电池连接](/products/t-sim-series/t-sim-shield/assets/battery_sokect.png)
+![电池连接](/products/t-sim-series/t-sim-shield/index/image/battery_sokect.png)
 
 通过跳线帽将外部电池接口连接到主板电池接口。如果外接电池，请勿在主板的 18650 插座上安装电池。
 
 **电流监测设置**
 
-![电流监测](/products/t-sim-series/t-sim-shield/assets/battery_current_detection_mode.png)
+![电流监测](/products/t-sim-series/t-sim-shield/index/image/battery_current_detection_mode.png)
 
 - **垂直跳线帽：** 将电池电流路由至 INA3221 通道 2，可监测充放电电流
 - **无跳线帽：** 监测压线端子接口电流
@@ -247,7 +247,7 @@ Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配
 
 **电流检测通道**
 
-![电流检测接口](/products/t-sim-series/t-sim-shield/assets/intervface.png)
+![电流检测接口](/products/t-sim-series/t-sim-shield/index/image/intervface.png)
 
 | 通道 | 可用性 | 说明 |
 | :--- | :---: | :--- |

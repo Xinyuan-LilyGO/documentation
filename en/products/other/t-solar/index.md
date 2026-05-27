@@ -6,9 +6,9 @@ tags: Solar, Low Power, Charging, Outdoor, IoT
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-solar-kit" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-solar/assets/t-solar-1.jpg', alt: 'T-Solar Kit front view' },
-  { src: '/products/other/t-solar/assets/t-solar-board-info.jpg', alt: 'T-Solar panel specifications' },
-  { src: '/products/other/t-solar/assets/t-solar-set.jpg', alt: 'T-Solar installation diagram' }
+  { src: '/products/other/t-solar/index/image/t-solar-1.jpg', alt: 'T-Solar Kit front view' },
+  { src: '/products/other/t-solar/index/image/t-solar-board-info.jpg', alt: 'T-Solar panel specifications' },
+  { src: '/products/other/t-solar/index/image/t-solar-set.jpg', alt: 'T-Solar installation diagram' }
 ]" />
 
 ## Overview
@@ -24,7 +24,7 @@ The **T-Solar Kit** is a solar charging expansion solution designed for outdoor 
 
 ### Installation
 
-<img src="/products/other/t-solar/assets/t-solar-all.jpg" alt="T-Solar installation steps" width=100%>
+<img src="/products/other/t-solar/index/image/t-solar-all.jpg" alt="T-Solar installation steps" width=100%>
 
 1. Connect the solar panel's JST2.0 interface to the expansion board
 2. Secure the expansion board using the provided M4/M5 screws
@@ -72,11 +72,11 @@ The **T-Solar Kit** is a solar charging expansion solution designed for outdoor 
 
 **M12 Interface:**
 
-<img src="/products/other/t-solar/assets/t-solar-m12.jpg" alt="M12 adapter" width=400px>
+<img src="/products/other/t-solar/index/image/t-solar-m12.jpg" alt="M12 adapter" width=400px>
 
 **M16 Interface:**
 
-<img src="/products/other/t-solar/assets/t-solar-m16.jpg" alt="M16 adapter" width=400px>
+<img src="/products/other/t-solar/index/image/t-solar-m16.jpg" alt="M16 adapter" width=400px>
 
 ## Dimension Diagram
 

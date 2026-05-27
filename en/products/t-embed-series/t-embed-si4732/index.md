@@ -7,9 +7,9 @@ tags: ESP32-S3, SI4732, Radio, AM, FM, OLED, IoT
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-embed-series/t-embed-si4732/assets/t-embed-si4732-1.jpg', alt: 'T-Embed SI4732 front view' },
-  { src: '/products/t-embed-series/t-embed-si4732/assets/t-embed-si4732-2.jpg', alt: 'T-Embed SI4732 appearance' },
-  { src: '/products/t-embed-series/t-embed-si4732/assets/t-embed-si4732-3.jpg', alt: 'T-Embed SI4732 component overview' }
+  { src: '/products/t-embed-series/t-embed-si4732/index/image/t-embed-si4732-1.jpg', alt: 'T-Embed SI4732 front view' },
+  { src: '/products/t-embed-series/t-embed-si4732/index/image/t-embed-si4732-2.jpg', alt: 'T-Embed SI4732 appearance' },
+  { src: '/products/t-embed-series/t-embed-si4732/index/image/t-embed-si4732-3.jpg', alt: 'T-Embed SI4732 component overview' }
 ]" />
 
 ## Overview
@@ -99,7 +99,7 @@ LILYGO T-Embed SI4732 is an enhanced T-Embed featuring an integrated **SI4732-A1
 
 ## Pin Diagram
 
-<img src="/products/t-embed-series/t-embed-si4732/assets/t-embed-si4732.jpg" alt="T-Embed SI4732 pin diagram" width=100%>
+<img src="/products/t-embed-series/t-embed-si4732/index/image/t-embed-si4732.jpg" alt="T-Embed SI4732 pin diagram" width=100%>
 
 ## Dimension Diagram
 

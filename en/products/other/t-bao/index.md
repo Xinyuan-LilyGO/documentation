@@ -6,9 +6,9 @@ tags: K210, ESP32, AI, Camera, Touch Screen, IoT
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-bao" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-bao/assets/t-bao-1.jpg', alt: 'T-Bao front view' },
-  { src: '/products/other/t-bao/assets/t-bao-2.jpg', alt: 'T-Bao physical image' },
-  { src: '/products/other/t-bao/assets/t-bao.jpg', alt: 'T-Bao pin diagram' }
+  { src: '/products/other/t-bao/index/image/t-bao-1.jpg', alt: 'T-Bao front view' },
+  { src: '/products/other/t-bao/index/image/t-bao-2.jpg', alt: 'T-Bao physical image' },
+  { src: '/products/other/t-bao/index/image/t-bao.jpg', alt: 'T-Bao pin diagram' }
 ]" />
 
 ## Overview
@@ -98,11 +98,11 @@ Built-in **MAX98357A** I2S digital power amplifier, **MSM261S** high-sensitivity
 
 ## Pin Diagram
 
-<img src="/products/other/t-bao/assets/t-bao.jpg" alt="T-Bao pin diagram" width=100%>
+<img src="/products/other/t-bao/index/image/t-bao.jpg" alt="T-Bao pin diagram" width=100%>
 
 ### SD Card Notes
 
-<img src="/products/other/t-bao/assets/t-bao-en.jpg" alt="T-Bao SD card usage notes" width=80%>
+<img src="/products/other/t-bao/index/image/t-bao-en.jpg" alt="T-Bao SD card usage notes" width=80%>
 
 ## Dimension Diagram
 

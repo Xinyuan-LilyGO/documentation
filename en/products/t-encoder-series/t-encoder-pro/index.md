@@ -6,9 +6,9 @@ tags: ESP32-S3, Encoder, AMOLED, Rotary, HMI
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-encoder-plus" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-encoder-series/t-encoder-pro/assets/t-encoder-pro-1.jpg', alt: 'T-Encoder Pro front view' },
-  { src: '/products/t-encoder-series/t-encoder-pro/assets/t-encoder-pro-2.jpg', alt: 'T-Encoder Pro physical image' },
-  { src: '/products/t-encoder-series/t-encoder-pro/assets/t-encoder-pro-pin-en.jpg', alt: 'T-Encoder Pro pin diagram' }
+  { src: '/products/t-encoder-series/t-encoder-pro/index/image/t-encoder-pro-1.jpg', alt: 'T-Encoder Pro front view' },
+  { src: '/products/t-encoder-series/t-encoder-pro/index/image/t-encoder-pro-2.jpg', alt: 'T-Encoder Pro physical image' },
+  { src: '/products/t-encoder-series/t-encoder-pro/index/image/t-encoder-pro-pin-en.jpg', alt: 'T-Encoder Pro pin diagram' }
 ]" />
 
 ## Overview
@@ -96,7 +96,7 @@ T-Encoder Pro is a smart control knob development board based on **ESP32-S3-R8**
 
 ## Pin Diagram
 
-<img src="/products/t-encoder-series/t-encoder-pro/assets/t-encoder-pro-pin-en.jpg" alt="T-Encoder Pro pin diagram" width=100%>
+<img src="/products/t-encoder-series/t-encoder-pro/index/image/t-encoder-pro-pin-en.jpg" alt="T-Encoder Pro pin diagram" width=100%>
 
 ### Pin Mapping
 

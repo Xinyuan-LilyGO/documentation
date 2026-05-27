@@ -7,9 +7,9 @@ tags: LoRa, GPS, ESP32-S3, IoT, Sensor
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-beam-supreme" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-beam-series/t-beam/assets/t-beam-supreme-1.jpg', alt: 'T-Beam Supreme 正面图' },
-  { src: '/products/t-beam-series/t-beam/assets/t-beam-supreme-2.jpg', alt: 'T-Beam Supreme 实物图' },
-  { src: '/products/t-beam-series/t-beam/assets/t-beam-supreme-pin-en.jpg', alt: 'T-Beam Supreme 引脚图' }
+  { src: '/products/t-beam-series/t-beam/index/image/t-beam-supreme-1.jpg', alt: 'T-Beam Supreme 正面图' },
+  { src: '/products/t-beam-series/t-beam/index/image/t-beam-supreme-2.jpg', alt: 'T-Beam Supreme 实物图' },
+  { src: '/products/t-beam-series/t-beam/index/image/t-beam-supreme-pin-en.jpg', alt: 'T-Beam Supreme 引脚图' }
 ]" />
 
 ## 概述
@@ -87,7 +87,7 @@ T-BEAM-SUPREME V3.0 是一款高性能多功能的物联网开发板，基于 ES
 
 ## 产品参数
 
-<img src="/products/t-beam-series/t-beam/assets/t-beam-supreme-info-zh.jpg" alt="T-Beam Supreme 概述图" width=100%>
+<img src="/products/t-beam-series/t-beam/index/image/t-beam-supreme-info-zh.jpg" alt="T-Beam Supreme 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -121,11 +121,11 @@ T-BEAM-SUPREME V3.0 是一款高性能多功能的物联网开发板，基于 ES
 
 ## 引脚图
 
-<img src="/products/t-beam-series/t-beam/assets/t-beam-supreme-pin-en.jpg" alt="T-Beam Supreme 引脚图" width=100%>
+<img src="/products/t-beam-series/t-beam/index/image/t-beam-supreme-pin-en.jpg" alt="T-Beam Supreme 引脚图" width=100%>
 
-<img src="/products/t-beam-series/t-beam/assets/t-beam-s3-core.jpg" alt="T-Beam S3 核心板" width=100%>
+<img src="/products/t-beam-series/t-beam/index/image/t-beam-s3-core.jpg" alt="T-Beam S3 核心板" width=100%>
 
-<img src="/products/t-beam-series/t-beam/assets/t-beam-supreme-3.jpg" alt="T-Beam Supreme 扩展板" width=100%>
+<img src="/products/t-beam-series/t-beam/index/image/t-beam-supreme-3.jpg" alt="T-Beam Supreme 扩展板" width=100%>
 
 ### 引脚映射
 

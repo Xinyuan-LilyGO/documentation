@@ -7,9 +7,9 @@ tags: LoRa, GPS, ESP32-S3, OLED, AXP2101
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-beam-1w" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-beam-series/t-beam-1w/assets/t-beam-1w-1.jpg', alt: 'T-Beam 1W 正面图' },
-  { src: '/products/t-beam-series/t-beam-1w/assets/t-beam-1w-2.jpg', alt: 'T-Beam 1W 实物图' },
-  { src: '/products/t-beam-series/t-beam-1w/assets/t-beam-1w-pin.jpg', alt: 'T-Beam 1W 引脚图' }
+  { src: '/products/t-beam-series/t-beam-1w/index/image/t-beam-1w-1.jpg', alt: 'T-Beam 1W 正面图' },
+  { src: '/products/t-beam-series/t-beam-1w/index/image/t-beam-1w-2.jpg', alt: 'T-Beam 1W 实物图' },
+  { src: '/products/t-beam-series/t-beam-1w/index/image/t-beam-1w-pin.jpg', alt: 'T-Beam 1W 引脚图' }
 ]" />
 
 ## 概述
@@ -69,7 +69,7 @@ T-Beam-1W 是一款集成了 **ESP32-S3** 双核处理器、**LoRa SX1262** 模�
 
 ## 产品参数
 
-<img src="/products/t-beam-series/t-beam-1w/assets/t-beam-1w-info-zh.jpg" alt="T-Beam 1W 概述图" width=100%>
+<img src="/products/t-beam-series/t-beam-1w/index/image/t-beam-1w-info-zh.jpg" alt="T-Beam 1W 概述图" width=100%>
 
 | 组件 | 规格 |
 | :--: | :--: |
@@ -98,7 +98,7 @@ T-Beam-1W 是一款集成了 **ESP32-S3** 双核处理器、**LoRa SX1262** 模�
 
 ## 引脚图
 
-<img src="/products/t-beam-series/t-beam-1w/assets/t-beam-1w-pin.jpg" alt="T-Beam 1W 引脚图" width=100%>
+<img src="/products/t-beam-series/t-beam-1w/index/image/t-beam-1w-pin.jpg" alt="T-Beam 1W 引脚图" width=100%>
 
 ### 引脚映射
 

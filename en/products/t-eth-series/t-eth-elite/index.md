@@ -7,9 +7,9 @@ tags: ESP32-S3, Ethernet, PoE, W5500, LoRa, IoT
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-elite/assets/t-eth-elite-1.jpg', alt: 'T-ETH Elite front view' },
-  { src: '/products/t-eth-series/t-eth-elite/assets/t-eth-elite-2.jpg', alt: 'T-ETH Elite physical image' },
-  { src: '/products/t-eth-series/t-eth-elite/assets/t-eth-elite-3.jpg', alt: 'T-ETH Elite pin diagram' }
+  { src: '/products/t-eth-series/t-eth-elite/index/image/t-eth-elite-1.jpg', alt: 'T-ETH Elite front view' },
+  { src: '/products/t-eth-series/t-eth-elite/index/image/t-eth-elite-2.jpg', alt: 'T-ETH Elite physical image' },
+  { src: '/products/t-eth-series/t-eth-elite/index/image/t-eth-elite-3.jpg', alt: 'T-ETH Elite pin diagram' }
 ]" />
 
 ## Overview
@@ -93,7 +93,7 @@ T-ETH Elite is a high-performance IoT development board based on **ESP32-S3R8** 
 
 ## Pin Diagram
 
-<img src="/products/t-eth-series/t-eth-elite/assets/t-eth-elite-en.jpg" alt="T-ETH Elite pin diagram" width=100%>
+<img src="/products/t-eth-series/t-eth-elite/index/image/t-eth-elite-en.jpg" alt="T-ETH Elite pin diagram" width=100%>
 
 ## Dimension Diagram
 

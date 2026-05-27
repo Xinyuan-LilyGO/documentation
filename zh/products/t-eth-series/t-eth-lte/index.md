@@ -7,9 +7,9 @@ tags: LTE, 4G, GPS, Ethernet, Shield
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-eth-elite-1?variant=44498205049013" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-lte/assets/t-eth-lte-1.jpg', alt: 'T-ETH LTE 正面图' },
-  { src: '/products/t-eth-series/t-eth-lte/assets/t-eth-lte-2.jpg', alt: 'T-ETH LTE 实物图' },
-  { src: '/products/t-eth-series/t-eth-lte/assets/t-eth-lte-3.jpg', alt: 'T-ETH LTE 引脚图' }
+  { src: '/products/t-eth-series/t-eth-lte/index/image/t-eth-lte-1.jpg', alt: 'T-ETH LTE 正面图' },
+  { src: '/products/t-eth-series/t-eth-lte/index/image/t-eth-lte-2.jpg', alt: 'T-ETH LTE 实物图' },
+  { src: '/products/t-eth-series/t-eth-lte/index/image/t-eth-lte-3.jpg', alt: 'T-ETH LTE 引脚图' }
 ]" />
 
 ## 概述
@@ -50,9 +50,9 @@ LILYGO T-ETH ELITE-LTE Shield 是一款专为 T-ETH-Elite 主板设计的 4G 蜂
 
 ## 引脚图
 
-<img src="/products/t-eth-series/t-eth-lte/assets/t-eth-lte-3.jpg" alt="T-ETH LTE 引脚图" width=100%>
+<img src="/products/t-eth-series/t-eth-lte/index/image/t-eth-lte-3.jpg" alt="T-ETH LTE 引脚图" width=100%>
 
-<img src="/products/t-eth-series/t-eth-lte/assets/t-eth-lte-4.jpg" alt="T-ETH LTE 概述图" width=100%>
+<img src="/products/t-eth-series/t-eth-lte/index/image/t-eth-lte-4.jpg" alt="T-ETH LTE 概述图" width=100%>
 
 ## 尺寸图
 

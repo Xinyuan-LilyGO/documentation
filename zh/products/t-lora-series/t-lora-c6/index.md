@@ -7,9 +7,9 @@ tags: ESP32-C6, LoRa, Wi-Fi 6, Bluetooth 5, IoT
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-lora-c6" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-lora-series/t-lora-c6/assets/t-lora-c6-1.jpg', alt: 'T-LoRa C6 正面图' },
-  { src: '/products/t-lora-series/t-lora-c6/assets/t-lora-c6-2.jpg', alt: 'T-LoRa C6 实物图' },
-  { src: '/products/t-lora-series/t-lora-c6/assets/t-lora-c6-3.jpg', alt: 'T-LoRa C6 引脚图' }
+  { src: '/products/t-lora-series/t-lora-c6/index/image/t-lora-c6-1.jpg', alt: 'T-LoRa C6 正面图' },
+  { src: '/products/t-lora-series/t-lora-c6/index/image/t-lora-c6-2.jpg', alt: 'T-LoRa C6 实物图' },
+  { src: '/products/t-lora-series/t-lora-c6/index/image/t-lora-c6-3.jpg', alt: 'T-LoRa C6 引脚图' }
 ]" />
 
 ## 概述
@@ -72,7 +72,7 @@ LILYGO T-LoRa C6 是一款基于 ESP32-C6-MINI-1 模组的紧凑型物联网开�
 
 ## 产品参数
 
-<img src="/products/t-lora-series/t-lora-c6/assets/t-lora-c6-zh.jpg" alt="T-LoRa C6 概述图" width=80%>
+<img src="/products/t-lora-series/t-lora-c6/index/image/t-lora-c6-zh.jpg" alt="T-LoRa C6 概述图" width=80%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -89,7 +89,7 @@ LILYGO T-LoRa C6 是一款基于 ESP32-C6-MINI-1 模组的紧凑型物联网开�
 
 ## 引脚图
 
-<img src="/products/t-lora-series/t-lora-c6/assets/t-lora-c6-3.jpg" alt="T-LoRa C6 引脚图" width=100%>
+<img src="/products/t-lora-series/t-lora-c6/index/image/t-lora-c6-3.jpg" alt="T-LoRa C6 引脚图" width=100%>
 
 ### 引脚映射
 

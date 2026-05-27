@@ -7,9 +7,9 @@ tags: ESP32-S3, LCD, IMU, BHI260AP, IoT
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-bar" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-bar/assets/t-display-bar-1.jpg', alt: 'T-Display Bar front view' },
-  { src: '/products/t-display-series/t-display-bar/assets/t-display-bar-2.jpg', alt: 'T-Display Bar physical image' },
-  { src: '/products/t-display-series/t-display-bar/assets/t-display-bar-pin.jpg', alt: 'T-Display Bar pin diagram' }
+  { src: '/products/t-display-series/t-display-bar/index/image/t-display-bar-1.jpg', alt: 'T-Display Bar front view' },
+  { src: '/products/t-display-series/t-display-bar/index/image/t-display-bar-2.jpg', alt: 'T-Display Bar physical image' },
+  { src: '/products/t-display-series/t-display-bar/index/image/t-display-bar-pin.jpg', alt: 'T-Display Bar pin diagram' }
 ]" />
 
 ## Overview
@@ -98,7 +98,7 @@ LILYGO T-Display Bar is a highly integrated embedded smart display module based 
 
 ## Pin Diagram
 
-<img src="/products/t-display-series/t-display-bar/assets/t-display-bar-pin.jpg" alt="T-Display Bar pin diagram" width=100%>
+<img src="/products/t-display-series/t-display-bar/index/image/t-display-bar-pin.jpg" alt="T-Display Bar pin diagram" width=100%>
 
 ### Pin Mapping
 

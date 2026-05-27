@@ -4,4 +4,4 @@ title: T3 Series
 
 # {{ $frontmatter.title }}
 
-Coming soon
+<ProductGrid category="t3-series" />

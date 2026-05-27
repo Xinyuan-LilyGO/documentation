@@ -7,9 +7,9 @@ tags: ESP32-S3, LoRa, CAN, Ethernet, Industrial
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-connect-series/t-connect-pro/assets/t-connect-pro1.jpg', alt: 'T-Connect Pro front view' },
-  { src: '/products/t-connect-series/t-connect-pro/assets/t-connect-pro2.jpg', alt: 'T-Connect Pro physical image' },
-  { src: '/products/t-connect-series/t-connect-pro/assets/t-connect-pro-en.jpg', alt: 'T-Connect Pro pin diagram' }
+  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro1.jpg', alt: 'T-Connect Pro front view' },
+  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro2.jpg', alt: 'T-Connect Pro physical image' },
+  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-en.jpg', alt: 'T-Connect Pro pin diagram' }
 ]" />
 
 ## Overview
@@ -105,7 +105,7 @@ T-Connect Pro is a 3-layer stackable industrial-grade module based on **ESP32-S3
 
 ## Pin Diagram
 
-<img src="/products/t-connect-series/t-connect-pro/assets/t-connect-pro-en.jpg" alt="T-Connect Pro pin diagram" width=100%>
+<img src="/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-en.jpg" alt="T-Connect Pro pin diagram" width=100%>
 
 ### Pin Mapping
 

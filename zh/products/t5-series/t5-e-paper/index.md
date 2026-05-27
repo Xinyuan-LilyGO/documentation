@@ -7,9 +7,9 @@ tags: E-Paper, ESP32-S3, Touch, E-Ink
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t5-series/t5-e-paper/assets/t5-e-paper-1.jpg', alt: 'T5 E-Paper 正面图' },
-  { src: '/products/t5-series/t5-e-paper/assets/t5-e-paper-2.jpg', alt: 'T5 E-Paper 实物图' },
-  { src: '/products/t5-series/t5-e-paper/assets/t5-e-paper-pin-zh.jpg', alt: 'T5 E-Paper 引脚图' }
+  { src: '/products/t5-series/t5-e-paper/index/image/t5-e-paper-1.jpg', alt: 'T5 E-Paper 正面图' },
+  { src: '/products/t5-series/t5-e-paper/index/image/t5-e-paper-2.jpg', alt: 'T5 E-Paper 实物图' },
+  { src: '/products/t5-series/t5-e-paper/index/image/t5-e-paper-pin-zh.jpg', alt: 'T5 E-Paper 引脚图' }
 ]" />
 
 ## 概述
@@ -104,7 +104,7 @@ examples/
 
 ## 引脚图
 
-<img src="/products/t5-series/t5-e-paper/assets/t5-e-paper-pin-zh.jpg" alt="T5 E-Paper 引脚图" width=100%>
+<img src="/products/t5-series/t5-e-paper/index/image/t5-e-paper-pin-zh.jpg" alt="T5 E-Paper 引脚图" width=100%>
 
 ### 引脚映射
 

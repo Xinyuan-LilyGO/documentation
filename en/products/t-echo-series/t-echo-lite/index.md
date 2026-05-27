@@ -6,9 +6,9 @@ tags: LoRa, nRF52840, E-Paper, Low Power, Meshtastic, Keyboard
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-echo-lite?_pos=1&_sid=79b4c08e7&_ss=r&variant=45331277906101" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-echo-series/t-echo-lite/assets/t-echo-lite01.jpg', alt: 'T-Echo Lite front view' },
-  { src: '/products/t-echo-series/t-echo-lite/assets/t-echo-lite02.jpg', alt: 'T-Echo Lite physical image' },
-  { src: '/products/t-echo-series/t-echo-lite/assets/t-echo-lite03.jpg', alt: 'T-Echo Lite software overview' }
+  { src: '/products/t-echo-series/t-echo-lite/index/image/t-echo-lite01.jpg', alt: 'T-Echo Lite front view' },
+  { src: '/products/t-echo-series/t-echo-lite/index/image/t-echo-lite02.jpg', alt: 'T-Echo Lite physical image' },
+  { src: '/products/t-echo-series/t-echo-lite/index/image/t-echo-lite03.jpg', alt: 'T-Echo Lite software overview' }
 ]" />
 
 ## Overview
@@ -75,7 +75,7 @@ T-Echo-Lite is a lightweight version of T-Echo featuring a smaller form factor a
 2. Install [J-Link](https://www.segger.com/downloads/jlink/)
 3. Connect JLINK to the board as shown below:
 
-<img src="/products/t-echo-series/t-echo-lite/assets/12.jpg" alt="JLINK connection" width=100%>
+<img src="/products/t-echo-series/t-echo-lite/index/image/12.jpg" alt="JLINK connection" width=100%>
 
 4. Open nRF Connect for Desktop, install and open the **Programmer** tool
 5. Add both the bootloader file and firmware file, click **Erase & Write** to flash
@@ -126,7 +126,7 @@ For pin definitions, refer to the configuration files in the repository:
 * [t_echo_lite_config.h](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/libraries/private_library/t_echo_lite_config.h)
 * [t_echo_lite_keyshield_config.h](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/libraries/private_library/t_echo_lite_keyshield_config.h)
 
-<img src="/products/t-echo-series/t-echo-lite/assets/14.png" alt="T-Echo Lite antenna identification" width=60%>
+<img src="/products/t-echo-series/t-echo-lite/index/image/14.png" alt="T-Echo Lite antenna identification" width=60%>
 
 > **Antenna note:** The Bluetooth and LoRa antennas are separate — see the diagram above to distinguish them.
 

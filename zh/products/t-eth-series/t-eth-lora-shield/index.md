@@ -7,9 +7,9 @@ tags: LoRa, SX1262, GPS, Ethernet, Shield
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-eth-elite-1?variant=44498256298165" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-lora-shield/assets/t-eth-lora-shield-1.jpg', alt: 'T-ETH LoRa Shield 正面图' },
-  { src: '/products/t-eth-series/t-eth-lora-shield/assets/t-eth-lora-shield-2.jpg', alt: 'T-ETH LoRa Shield 实物图' },
-  { src: '/products/t-eth-series/t-eth-lora-shield/assets/t-eth-lora-shield-3.jpg', alt: 'T-ETH LoRa Shield 引脚图' }
+  { src: '/products/t-eth-series/t-eth-lora-shield/index/image/t-eth-lora-shield-1.jpg', alt: 'T-ETH LoRa Shield 正面图' },
+  { src: '/products/t-eth-series/t-eth-lora-shield/index/image/t-eth-lora-shield-2.jpg', alt: 'T-ETH LoRa Shield 实物图' },
+  { src: '/products/t-eth-series/t-eth-lora-shield/index/image/t-eth-lora-shield-3.jpg', alt: 'T-ETH LoRa Shield 引脚图' }
 ]" />
 
 ## 概述
@@ -51,9 +51,9 @@ LILYGO T-ETH LoRa Shield 是一款专为 T-ETH-Elite 主板设计的扩展模块
 
 ## 引脚图
 
-<img src="/products/t-eth-series/t-eth-lora-shield/assets/t-eth-lora-shield-3.jpg" alt="T-ETH LoRa Shield 引脚图" width=100%>
+<img src="/products/t-eth-series/t-eth-lora-shield/index/image/t-eth-lora-shield-3.jpg" alt="T-ETH LoRa Shield 引脚图" width=100%>
 
-<img src="/products/t-eth-series/t-eth-lora-shield/assets/t-eth-lora-shield-4.jpg" alt="T-ETH LoRa Shield 概述图" width=100%>
+<img src="/products/t-eth-series/t-eth-lora-shield/index/image/t-eth-lora-shield-4.jpg" alt="T-ETH LoRa Shield 概述图" width=100%>
 
 ## 尺寸图
 

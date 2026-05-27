@@ -7,9 +7,9 @@ tags: ESP32, LTE, A7670SA, 4G, South America, Australia, IoT
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-a7670/t-a7670sa/assets/t-a7670sa-1.jpg', alt: 'T-A7670SA front view' },
-  { src: '/products/t-sim-series/t-a7670/t-a7670sa/assets/t-a7670sa-2.jpg', alt: 'T-A7670SA physical image' },
-  { src: '/products/t-sim-series/t-a7670/t-a7670sa/assets/a7670sa.jpg', alt: 'T-A7670SA pin diagram' }
+  { src: '/products/t-sim-series/t-a7670/t-a7670sa/index/image/t-a7670sa-1.jpg', alt: 'T-A7670SA front view' },
+  { src: '/products/t-sim-series/t-a7670/t-a7670sa/index/image/t-a7670sa-2.jpg', alt: 'T-A7670SA physical image' },
+  { src: '/products/t-sim-series/t-a7670/t-a7670sa/index/image/a7670sa.jpg', alt: 'T-A7670SA pin diagram' }
 ]" />
 
 ## Overview
@@ -92,7 +92,7 @@ T-A7670SA R2 is a 4G LTE Cat1 IoT development board based on **ESP32-WROVER-E** 
 
 ## Pin Diagram
 
-<img src="/products/t-sim-series/t-a7670/t-a7670sa/assets/a7670sa.jpg" alt="T-A7670SA pin diagram" width=100%>
+<img src="/products/t-sim-series/t-a7670/t-a7670sa/index/image/a7670sa.jpg" alt="T-A7670SA pin diagram" width=100%>
 
 ## Dimension Diagram
 

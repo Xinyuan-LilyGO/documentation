@@ -6,9 +6,9 @@ tags: ESP32-S3, AMOLED, LoRa, LR1121
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-pro-lr1121/assets/t-display-s3-pro-lr1121-1.jpg', alt: 'T-Display S3 Pro LR1121 front view' },
-  { src: '/products/t-display-series/t-display-s3-pro-lr1121/assets/t-display-s3-pro-lr1121-2.jpg', alt: 'T-Display S3 Pro LR1121 physical image' },
-  { src: '/products/t-display-series/t-display-s3-pro-lr1121/assets/t-display-s3-pro-lr1121-3.jpg', alt: 'T-Display S3 Pro LR1121 pin diagram' }
+  { src: '/products/t-display-series/t-display-s3-pro-lr1121/index/image/t-display-s3-pro-lr1121-1.jpg', alt: 'T-Display S3 Pro LR1121 front view' },
+  { src: '/products/t-display-series/t-display-s3-pro-lr1121/index/image/t-display-s3-pro-lr1121-2.jpg', alt: 'T-Display S3 Pro LR1121 physical image' },
+  { src: '/products/t-display-series/t-display-s3-pro-lr1121/index/image/t-display-s3-pro-lr1121-3.jpg', alt: 'T-Display S3 Pro LR1121 pin diagram' }
 ]" />
 
 ## Overview
@@ -95,7 +95,7 @@ T-Display S3 Pro LR1121 is a highly integrated development board based on **ESP3
 
 ## Pin Diagram
 
-<img src="/products/t-display-series/t-display-s3-pro-lr1121/assets/t-display-s3-pro-lr1121-3.jpg" alt="T-Display S3 Pro LR1121 pin diagram" width=100%>
+<img src="/products/t-display-series/t-display-s3-pro-lr1121/index/image/t-display-s3-pro-lr1121-3.jpg" alt="T-Display S3 Pro LR1121 pin diagram" width=100%>
 
 ## Dimension Diagram
 

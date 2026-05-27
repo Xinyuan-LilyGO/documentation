@@ -6,9 +6,9 @@ tags: ESP32-S3, GNSS, Walkie-Talkie, OLED
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-twr-rev2-1?variant=44505308528821" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-twr-series/t-twr/assets/t-twr-1.jpg', alt: 'T-TWR front view' },
-  { src: '/products/t-twr-series/t-twr/assets/t-twr-2.jpg', alt: 'T-TWR physical image' },
-  { src: '/products/t-twr-series/t-twr/assets/t-twr-3.jpg', alt: 'T-TWR pin diagram' }
+  { src: '/products/t-twr-series/t-twr/index/image/t-twr-1.jpg', alt: 'T-TWR front view' },
+  { src: '/products/t-twr-series/t-twr/index/image/t-twr-2.jpg', alt: 'T-TWR physical image' },
+  { src: '/products/t-twr-series/t-twr/index/image/t-twr-3.jpg', alt: 'T-TWR pin diagram' }
 ]" />
 
 ## Overview
@@ -105,7 +105,7 @@ T-TWR REV2.1 is a portable walkie-talkie and GNSS development board based on **E
 
 ## Pin Diagram
 
-<img src="/products/t-twr-series/t-twr/assets/t-twr-3.jpg" alt="T-TWR pin diagram" width=100%>
+<img src="/products/t-twr-series/t-twr/index/image/t-twr-3.jpg" alt="T-TWR pin diagram" width=100%>
 
 ## Dimension Diagram
 

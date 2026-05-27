@@ -6,9 +6,9 @@ tags: T-Circle-S3, LCD, ESP32-S3, Audio
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-circle-s3" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-circle-s3/assets/t-circle-s3-1.jpg', alt: 'T-Circle S3 front view' },
-  { src: '/products/other/t-circle-s3/assets/t-circle-s3-2.jpg', alt: 'T-Circle S3 physical image' },
-  { src: '/products/other/t-circle-s3/assets/t-circle-s3-en.jpg', alt: 'T-Circle S3 pin diagram' }
+  { src: '/products/other/t-circle-s3/index/image/t-circle-s3-1.jpg', alt: 'T-Circle S3 front view' },
+  { src: '/products/other/t-circle-s3/index/image/t-circle-s3-2.jpg', alt: 'T-Circle S3 physical image' },
+  { src: '/products/other/t-circle-s3/index/image/t-circle-s3-en.jpg', alt: 'T-Circle S3 pin diagram' }
 ]" />
 
 ## Overview
@@ -95,7 +95,7 @@ LILYGO T-Circle S3 is a versatile development board based on **ESP32-S3-R8** (16
 
 ## Pin Diagram
 
-<img src="/products/other/t-circle-s3/assets/t-circle-s3-en.jpg" alt="T-Circle S3 pin diagram" width=100%>
+<img src="/products/other/t-circle-s3/index/image/t-circle-s3-en.jpg" alt="T-Circle S3 pin diagram" width=100%>
 
 ### Pin Mapping
 

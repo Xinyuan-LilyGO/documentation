@@ -7,9 +7,9 @@ tags: LTE, 4G, GPS, L76K, T-ETH-Elite
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-lte/assets/t-eth-lte-1.jpg', alt: 'T-ETH Elite LTE Shield front view' },
-  { src: '/products/t-eth-series/t-eth-lte/assets/t-eth-lte-2.jpg', alt: 'T-ETH Elite LTE Shield physical image' },
-  { src: '/products/t-eth-series/t-eth-lte/assets/t-eth-lte-3.jpg', alt: 'T-ETH Elite LTE Shield pin diagram' }
+  { src: '/products/t-eth-series/t-eth-lte/index/image/t-eth-lte-1.jpg', alt: 'T-ETH Elite LTE Shield front view' },
+  { src: '/products/t-eth-series/t-eth-lte/index/image/t-eth-lte-2.jpg', alt: 'T-ETH Elite LTE Shield physical image' },
+  { src: '/products/t-eth-series/t-eth-lte/index/image/t-eth-lte-3.jpg', alt: 'T-ETH Elite LTE Shield pin diagram' }
 ]" />
 
 ## Overview
@@ -62,7 +62,7 @@ Refer to the [T-ETH-Elite](../t-eth-elite/index.md) Quick Start guide for Arduin
 
 ## Pin Diagram
 
-<img src="/products/t-eth-series/t-eth-lte/assets/t-eth-lte-3.jpg" alt="T-ETH Elite LTE Shield pin diagram" width=100%>
+<img src="/products/t-eth-series/t-eth-lte/index/image/t-eth-lte-3.jpg" alt="T-ETH Elite LTE Shield pin diagram" width=100%>
 
 ## Dimension Diagram
 

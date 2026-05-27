@@ -4,4 +4,4 @@ title: T-SIM / T-PCIE Series
 
 # {{ $frontmatter.title }}
 
-Coming soon
+<ProductGrid category="t-sim-series" />

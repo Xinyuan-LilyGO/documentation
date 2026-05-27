@@ -7,9 +7,9 @@ tags: ESP32-C6, BLDC, Knob, MT6701, TMC6300, HMI
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-knob" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-knob/assets/t-knob-1.jpg', alt: 'T-Knob 正面图' },
-  { src: '/products/other/t-knob/assets/t-knob-2.jpg', alt: 'T-Knob 实物图' },
-  { src: '/products/other/t-knob/assets/t-knob-pin-zh.jpg', alt: 'T-Knob 引脚图' }
+  { src: '/products/other/t-knob/index/image/t-knob-1.jpg', alt: 'T-Knob 正面图' },
+  { src: '/products/other/t-knob/index/image/t-knob-2.jpg', alt: 'T-Knob 实物图' },
+  { src: '/products/other/t-knob/index/image/t-knob-pin-zh.jpg', alt: 'T-Knob 引脚图' }
 ]" />
 
 ## 概述
@@ -75,9 +75,9 @@ LILYGO T-Knob 是一款基于 ESP32-C6-MINI-1U 无线模块的智能旋钮控制
 
 ## 引脚图
 
-<img src="/products/other/t-knob/assets/t-knob-pin-zh.jpg" alt="T-Knob 引脚图" width=100%>
+<img src="/products/other/t-knob/index/image/t-knob-pin-zh.jpg" alt="T-Knob 引脚图" width=100%>
 
-<img src="/products/other/t-knob/assets/t-knob-info-zh.jpg" alt="T-Knob 概述图" width=100%>
+<img src="/products/other/t-knob/index/image/t-knob-info-zh.jpg" alt="T-Knob 概述图" width=100%>
 
 ## 尺寸图
 

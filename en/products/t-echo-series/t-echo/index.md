@@ -6,9 +6,9 @@ tags: nRF52840, LoRa, E-Paper, GPS, NFC, Low Power
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-echo-lilygo" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-echo-series/t-echo/assets/t-echo1.jpg', alt: 'T-Echo front view' },
-  { src: '/products/t-echo-series/t-echo/assets/t-echo2.jpg', alt: 'T-Echo physical image' },
-  { src: '/products/t-echo-series/t-echo/assets/t-echo-info-en.jpg', alt: 'T-Echo component overview' }
+  { src: '/products/t-echo-series/t-echo/index/image/t-echo1.jpg', alt: 'T-Echo front view' },
+  { src: '/products/t-echo-series/t-echo/index/image/t-echo2.jpg', alt: 'T-Echo physical image' },
+  { src: '/products/t-echo-series/t-echo/index/image/t-echo-info-en.jpg', alt: 'T-Echo component overview' }
 ]" />
 
 ## Overview

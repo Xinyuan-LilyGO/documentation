@@ -7,9 +7,9 @@ tags: Smart Watch, ESP32-S3, LoRa, GNSS, AMOLED, AI Sensor, NFC
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-watch-ultra" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-watch-series/t-watch-ultra/assets/t-watch-ultra-1.jpg', alt: 'T-Watch Ultra 正面图' },
-  { src: '/products/t-watch-series/t-watch-ultra/assets/t-watch-ultra-2.jpg', alt: 'T-Watch Ultra 实物图' },
-  { src: '/products/t-watch-series/t-watch-ultra/assets/t-watch-ultra-pin.jpg', alt: 'T-Watch Ultra 引脚图' }
+  { src: '/products/t-watch-series/t-watch-ultra/index/image/t-watch-ultra-1.jpg', alt: 'T-Watch Ultra 正面图' },
+  { src: '/products/t-watch-series/t-watch-ultra/index/image/t-watch-ultra-2.jpg', alt: 'T-Watch Ultra 实物图' },
+  { src: '/products/t-watch-series/t-watch-ultra/index/image/t-watch-ultra-pin.jpg', alt: 'T-Watch Ultra 引脚图' }
 ]" />
 
 ## 概述
@@ -127,7 +127,7 @@ LILYGO T-Watch Ultra 是一款高性能智能手表开发模组，基于 ESP32-S
 
 ## 引脚图
 
-<img src="/products/t-watch-series/t-watch-ultra/assets/t-watch-ultra-pin.jpg" alt="T-Watch Ultra 引脚图" width=100%>
+<img src="/products/t-watch-series/t-watch-ultra/index/image/t-watch-ultra-pin.jpg" alt="T-Watch Ultra 引脚图" width=100%>
 
 ### 引脚映射
 

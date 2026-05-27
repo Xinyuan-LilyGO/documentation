@@ -6,9 +6,9 @@ tags: ESP32-C6, Wearable, TFT, IMU, QWIIC
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-qt-c6" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-qt-c6/assets/t-qt-c6-1.jpg', alt: 'T-QT C6 front view' },
-  { src: '/products/other/t-qt-c6/assets/t-qt-c6-2.jpg', alt: 'T-QT C6 physical image' },
-  { src: '/products/other/t-qt-c6/assets/t-qt-c6-pin-en.jpg', alt: 'T-QT C6 pin diagram' }
+  { src: '/products/other/t-qt-c6/index/image/t-qt-c6-1.jpg', alt: 'T-QT C6 front view' },
+  { src: '/products/other/t-qt-c6/index/image/t-qt-c6-2.jpg', alt: 'T-QT C6 physical image' },
+  { src: '/products/other/t-qt-c6/index/image/t-qt-c6-pin-en.jpg', alt: 'T-QT C6 pin diagram' }
 ]" />
 
 ## Overview
@@ -93,7 +93,7 @@ T-QT C6 is a compact smart wearable development kit based on **ESP32-C6-MINI-1U*
 
 ## Pin Diagram
 
-<img src="/products/other/t-qt-c6/assets/t-qt-c6-pin-en.jpg" alt="T-QT C6 pin diagram" width=100%>
+<img src="/products/other/t-qt-c6/index/image/t-qt-c6-pin-en.jpg" alt="T-QT C6 pin diagram" width=100%>
 
 ### Pin Mapping
 

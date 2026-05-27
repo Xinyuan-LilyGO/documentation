@@ -7,9 +7,9 @@ tags: ESP32, 4G LTE, SIM, A7670G, Global, IoT
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-a7670/t-a7670g/assets/t-a7670g-2.jpg', alt: 'T-A7670G 正面图' },
-  { src: '/products/t-sim-series/t-a7670/t-a7670g/assets/t-a7670g-1.jpg', alt: 'T-A7670G 实物图' },
-  { src: '/products/t-sim-series/t-a7670/t-a7670g/assets/t-a7670g-zh.jpg', alt: 'T-A7670G 引脚图' }
+  { src: '/products/t-sim-series/t-a7670/t-a7670g/index/image/t-a7670g-2.jpg', alt: 'T-A7670G 正面图' },
+  { src: '/products/t-sim-series/t-a7670/t-a7670g/index/image/t-a7670g-1.jpg', alt: 'T-A7670G 实物图' },
+  { src: '/products/t-sim-series/t-a7670/t-a7670g/index/image/t-a7670g-zh.jpg', alt: 'T-A7670G 引脚图' }
 ]" />
 
 > T-A76xx 系列各型号差异请参考 [SIM 对比页面](../../SIM.md)
@@ -87,7 +87,7 @@ LILYGO T-A7670G R2 是一款专为物联网设计的 4G LTE Cat1 通信模块，
 
 ## 引脚图
 
-<img src="/products/t-sim-series/t-a7670/t-a7670g/assets/t-a7670g-zh.jpg" alt="T-A7670G 引脚图" width=100%>
+<img src="/products/t-sim-series/t-a7670/t-a7670g/index/image/t-a7670g-zh.jpg" alt="T-A7670G 引脚图" width=100%>
 
 ## 尺寸图
 

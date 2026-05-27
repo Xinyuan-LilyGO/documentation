@@ -7,9 +7,9 @@ tags: E-Paper, ESP32-S3, Touch, E-Ink
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t5-series/t5-e-paper/assets/t5-e-paper-1.jpg', alt: 'T5 E-Paper front view' },
-  { src: '/products/t5-series/t5-e-paper/assets/t5-e-paper-2.jpg', alt: 'T5 E-Paper physical image' },
-  { src: '/products/t5-series/t5-e-paper/assets/t5-e-paper-pin-en.jpg', alt: 'T5 E-Paper pin diagram' }
+  { src: '/products/t5-series/t5-e-paper/index/image/t5-e-paper-1.jpg', alt: 'T5 E-Paper front view' },
+  { src: '/products/t5-series/t5-e-paper/index/image/t5-e-paper-2.jpg', alt: 'T5 E-Paper physical image' },
+  { src: '/products/t5-series/t5-e-paper/index/image/t5-e-paper-pin-en.jpg', alt: 'T5 E-Paper pin diagram' }
 ]" />
 
 ## Overview
@@ -124,7 +124,7 @@ examples/
 
 ## Pin Diagram
 
-<img src="/products/t5-series/t5-e-paper/assets/t5-e-paper-pin-en.jpg" alt="T5 E-Paper pin diagram" width=100%>
+<img src="/products/t5-series/t5-e-paper/index/image/t5-e-paper-pin-en.jpg" alt="T5 E-Paper pin diagram" width=100%>
 
 ### Pin Mapping
 

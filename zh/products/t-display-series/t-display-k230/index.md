@@ -7,9 +7,9 @@ tags: K230, AIoT, LoRa, AMOLED, RISC-V
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-k230" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-k230/assets/t-display-k230-1.jpg', alt: 'T-Display K230 正面图' },
-  { src: '/products/t-display-series/t-display-k230/assets/t-display-k230-2.jpg', alt: 'T-Display K230 实物图' },
-  { src: '/products/t-display-series/t-display-k230/assets/t-display-k230-cn.jpg', alt: 'T-Display K230 引脚图' }
+  { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-1.jpg', alt: 'T-Display K230 正面图' },
+  { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-2.jpg', alt: 'T-Display K230 实物图' },
+  { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-cn.jpg', alt: 'T-Display K230 引脚图' }
 ]" />
 
 ## 概述
@@ -115,7 +115,7 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 
 ## 引脚图
 
-<img src="/products/t-display-series/t-display-k230/assets/t-display-k230-cn.jpg" alt="T-Display K230 引脚图" width=100%>
+<img src="/products/t-display-series/t-display-k230/index/image/t-display-k230-cn.jpg" alt="T-Display K230 引脚图" width=100%>
 
 ## 尺寸图
 

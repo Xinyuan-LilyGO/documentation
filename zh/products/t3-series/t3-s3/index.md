@@ -7,9 +7,9 @@ tags: LoRa, ESP32-S3, OLED, IoT
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3s3-v1-0?_pos=1&_psq=T3&_ss=e&_v=1.0" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t3-series/t3-s3/assets/t3s3-1.jpg', alt: 'T3S3 正面图' },
-  { src: '/products/t3-series/t3-s3/assets/t3s3-2.jpg', alt: 'T3S3 实物图' },
-  { src: '/products/t3-series/t3-s3/assets/t3s3-pin.jpg', alt: 'T3S3 引脚图' }
+  { src: '/products/t3-series/t3-s3/index/image/t3s3-1.jpg', alt: 'T3S3 正面图' },
+  { src: '/products/t3-series/t3-s3/index/image/t3s3-2.jpg', alt: 'T3S3 实物图' },
+  { src: '/products/t3-series/t3-s3/index/image/t3s3-pin.jpg', alt: 'T3S3 引脚图' }
 ]" />
 
 ## 概述
@@ -78,7 +78,7 @@ T3S3 (LILYGO T3-S3 V1.2) 是一款集成 ESP32-S3 主控与多频段 LoRa 通信
 
 ## 产品参数
 
-<img src="/products/t3-series/t3-s3/assets/t3s3-info.jpg" alt="T3S3 概述图" width=100%>
+<img src="/products/t3-series/t3-s3/index/image/t3s3-info.jpg" alt="T3S3 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -98,7 +98,7 @@ T3S3 (LILYGO T3-S3 V1.2) 是一款集成 ESP32-S3 主控与多频段 LoRa 通信
 
 ## 引脚图
 
-<img src="/products/t3-series/t3-s3/assets/t3s3-pin.jpg" alt="T3S3 引脚图" width=100%>
+<img src="/products/t3-series/t3-s3/index/image/t3s3-pin.jpg" alt="T3S3 引脚图" width=100%>
 
 ### 引脚映射（SX1262）
 

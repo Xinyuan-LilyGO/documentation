@@ -7,9 +7,9 @@ tags: LoRa, ESP32, OLED, IoT, SX1276, SX1278
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/lora3" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t3-series/t3-lora32/assets/lora32-1.jpg', alt: 'LoRa32 正面图' },
-  { src: '/products/t3-series/t3-lora32/assets/lora32-2.jpg', alt: 'LoRa32 实物图' },
-  { src: '/products/t3-series/t3-lora32/assets/lora32-pin.jpg', alt: 'LoRa32 引脚图' }
+  { src: '/products/t3-series/t3-lora32/index/image/lora32-1.jpg', alt: 'LoRa32 正面图' },
+  { src: '/products/t3-series/t3-lora32/index/image/lora32-2.jpg', alt: 'LoRa32 实物图' },
+  { src: '/products/t3-series/t3-lora32/index/image/lora32-pin.jpg', alt: 'LoRa32 引脚图' }
 ]" />
 
 ## 概述
@@ -78,7 +78,7 @@ LILYGO T3_V1.6.1（LoRa32 V2.1.6）多协议物联网开发板是一款集成 ES
 
 ## 产品参数
 
-<img src="/products/t3-series/t3-lora32/assets/lora32-info-zh.jpg" alt="LoRa32 概述图" width=100%>
+<img src="/products/t3-series/t3-lora32/index/image/lora32-info-zh.jpg" alt="LoRa32 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -96,11 +96,11 @@ LILYGO T3_V1.6.1（LoRa32 V2.1.6）多协议物联网开发板是一款集成 ES
 | 固定孔 | 2 × 2mm 定位孔 |
 | 尺寸 | 66 × 36 × 15mm |
 
-<img src="/products/t3-series/t3-lora32/assets/lora32-version.jpg" alt="LoRa32 版本对比图" width=100%>
+<img src="/products/t3-series/t3-lora32/index/image/lora32-version.jpg" alt="LoRa32 版本对比图" width=100%>
 
 ## 引脚图
 
-<img src="/products/t3-series/t3-lora32/assets/lora32-pin.jpg" alt="LoRa32 引脚图" width=100%>
+<img src="/products/t3-series/t3-lora32/index/image/lora32-pin.jpg" alt="LoRa32 引脚图" width=100%>
 
 ### 引脚映射（LoRa32 V1.3）
 

@@ -7,9 +7,9 @@ tags: ESP32-S3, E-Paper, LoRa, Low Power, IoT
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-mini-epaper-s3" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-mini-e-paper-s3/assets/t-mini-e-paper-s3-1.jpg', alt: 'T-Mini E-Paper S3 正面图' },
-  { src: '/products/other/t-mini-e-paper-s3/assets/t-mini-e-paper-s3-2.jpg', alt: 'T-Mini E-Paper S3 实物图' },
-  { src: '/products/other/t-mini-e-paper-s3/assets/t-mini-e-paper-s3-pin.jpg', alt: 'T-Mini E-Paper S3 引脚图' }
+  { src: '/products/other/t-mini-e-paper-s3/index/image/t-mini-e-paper-s3-1.jpg', alt: 'T-Mini E-Paper S3 正面图' },
+  { src: '/products/other/t-mini-e-paper-s3/index/image/t-mini-e-paper-s3-2.jpg', alt: 'T-Mini E-Paper S3 实物图' },
+  { src: '/products/other/t-mini-e-paper-s3/index/image/t-mini-e-paper-s3-pin.jpg', alt: 'T-Mini E-Paper S3 引脚图' }
 ]" />
 
 ## 概述
@@ -82,7 +82,7 @@ LILYGO T-MINI E-Paper S3 Kit 是一款紧凑型（102×24.5×53mm）多功能开
 
 ## 产品参数
 
-<img src="/products/other/t-mini-e-paper-s3/assets/t-mini-e-paper-s3-info.jpg" alt="T-Mini E-Paper S3 概述图" width=80%>
+<img src="/products/other/t-mini-e-paper-s3/index/image/t-mini-e-paper-s3-info.jpg" alt="T-Mini E-Paper S3 概述图" width=80%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -103,7 +103,7 @@ LILYGO T-MINI E-Paper S3 Kit 是一款紧凑型（102×24.5×53mm）多功能开
 
 ## 引脚图
 
-<img src="/products/other/t-mini-e-paper-s3/assets/t-mini-e-paper-s3-pin.jpg" alt="T-Mini E-Paper S3 引脚图" width=100%>
+<img src="/products/other/t-mini-e-paper-s3/index/image/t-mini-e-paper-s3-pin.jpg" alt="T-Mini E-Paper S3 引脚图" width=100%>
 
 ### 引脚映射
 

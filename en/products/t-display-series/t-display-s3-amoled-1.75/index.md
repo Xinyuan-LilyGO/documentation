@@ -6,9 +6,9 @@ tags: ESP32-S3, AMOLED, Display, Touch
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-s3-amoled-1-64?variant=44848332931253" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-amoled-1.75/assets/t-display-s3-amoled-1.75-1.jpg', alt: 'T-Display S3 AMOLED 1.75 front view' },
-  { src: '/products/t-display-series/t-display-s3-amoled-1.75/assets/t-display-s3-amoled-1.75-2.jpg', alt: 'T-Display S3 AMOLED 1.75 physical image' },
-  { src: '/products/t-display-series/t-display-s3-amoled-1.75/assets/t-display-s3-amoled-1.75-en.jpg', alt: 'T-Display S3 AMOLED 1.75 pin diagram' }
+  { src: '/products/t-display-series/t-display-s3-amoled-1.75/index/image/t-display-s3-amoled-1.75-1.jpg', alt: 'T-Display S3 AMOLED 1.75 front view' },
+  { src: '/products/t-display-series/t-display-s3-amoled-1.75/index/image/t-display-s3-amoled-1.75-2.jpg', alt: 'T-Display S3 AMOLED 1.75 physical image' },
+  { src: '/products/t-display-series/t-display-s3-amoled-1.75/index/image/t-display-s3-amoled-1.75-en.jpg', alt: 'T-Display S3 AMOLED 1.75 pin diagram' }
 ]" />
 
 ## Overview
@@ -104,7 +104,7 @@ T-Display S3 AMOLED 1.75 is a highly integrated development board based on **ESP
 
 ## Pin Diagram
 
-<img src="/products/t-display-series/t-display-s3-amoled-1.75/assets/t-display-s3-amoled-1.75-en.jpg" alt="T-Display S3 AMOLED 1.75 pin diagram" width=100%>
+<img src="/products/t-display-series/t-display-s3-amoled-1.75/index/image/t-display-s3-amoled-1.75-en.jpg" alt="T-Display S3 AMOLED 1.75 pin diagram" width=100%>
 
 ## Dimension Diagram
 

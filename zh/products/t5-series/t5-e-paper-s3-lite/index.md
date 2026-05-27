@@ -7,9 +7,9 @@ tags: E-Paper, ESP32-S3, Touch, E-Ink, Lite
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t5-series/t5-e-paper-s3-lite/assets/t5-e-paper-lite-1.jpg', alt: 'T5 E-Paper S3 Lite 正面图' },
-  { src: '/products/t5-series/t5-e-paper-s3-lite/assets/t5-e-paper-lite-2.jpg', alt: 'T5 E-Paper S3 Lite 实物图' },
-  { src: '/products/t5-series/t5-e-paper-s3-lite/assets/t5-4.7-s3-pro-pin.jpg', alt: 'T5 E-Paper S3 Lite 引脚图' }
+  { src: '/products/t5-series/t5-e-paper-s3-lite/index/image/t5-e-paper-lite-1.jpg', alt: 'T5 E-Paper S3 Lite 正面图' },
+  { src: '/products/t5-series/t5-e-paper-s3-lite/index/image/t5-e-paper-lite-2.jpg', alt: 'T5 E-Paper S3 Lite 实物图' },
+  { src: '/products/t5-series/t5-e-paper-s3-lite/index/image/t5-4.7-s3-pro-pin.jpg', alt: 'T5 E-Paper S3 Lite 引脚图' }
 ]" />
 
 ## 概述
@@ -20,7 +20,7 @@ LILYGO T5-4.7-S3 系列是基于 ESP32-S3-WROOM-1-N16R8（16 MB Flash，8 MB PSR
 
 ## 版本差异
 
-![Pro vs Lite 对比图](/products/t5-series/t5-e-paper-s3-lite/assets/对比图.jpg)
+![Pro vs Lite 对比图](/products/t5-series/t5-e-paper-s3-lite/index/image/对比图.jpg)
 
 | 功能 | T5-4.7-S3 Pro | T5-4.7-S3 Lite |
 | :--: | :---: | :---: |
@@ -120,9 +120,9 @@ examples/
 
 ## 引脚图
 
-<img src="/products/t5-series/t5-e-paper-s3-lite/assets/t5-4.7-s3-pro-pin.jpg" alt="T5 E-Paper S3 Lite 引脚图" width=100%>
+<img src="/products/t5-series/t5-e-paper-s3-lite/index/image/t5-4.7-s3-pro-pin.jpg" alt="T5 E-Paper S3 Lite 引脚图" width=100%>
 
-<img src="/products/t5-series/t5-e-paper-s3-lite/assets/t5-4.7-s3-pro-info-zh.jpg" alt="T5 E-Paper S3 Lite 产品信息图" width=100%>
+<img src="/products/t5-series/t5-e-paper-s3-lite/index/image/t5-4.7-s3-pro-info-zh.jpg" alt="T5 E-Paper S3 Lite 产品信息图" width=100%>
 
 ### 引脚映射
 

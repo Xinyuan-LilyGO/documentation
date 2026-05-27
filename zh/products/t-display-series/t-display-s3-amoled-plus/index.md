@@ -7,9 +7,9 @@ tags: ESP32-S3, AMOLED, LoRa, Power Management
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-s3-amoled-plus" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-amoled-plus/assets/t-display-s3-amoled-plus-1.jpg', alt: 'T-Display S3 AMOLED Plus 正面图' },
-  { src: '/products/t-display-series/t-display-s3-amoled-plus/assets/t-display-s3-amoled-plus-2.jpg', alt: 'T-Display S3 AMOLED Plus 实物图' },
-  { src: '/products/t-display-series/t-display-s3-amoled-plus/assets/t-display-s3-amoled-plus-3.jpg', alt: 'T-Display S3 AMOLED Plus 引脚图' }
+  { src: '/products/t-display-series/t-display-s3-amoled-plus/index/image/t-display-s3-amoled-plus-1.jpg', alt: 'T-Display S3 AMOLED Plus 正面图' },
+  { src: '/products/t-display-series/t-display-s3-amoled-plus/index/image/t-display-s3-amoled-plus-2.jpg', alt: 'T-Display S3 AMOLED Plus 实物图' },
+  { src: '/products/t-display-series/t-display-s3-amoled-plus/index/image/t-display-s3-amoled-plus-3.jpg', alt: 'T-Display S3 AMOLED Plus 引脚图' }
 ]" />
 
 ## 概述
@@ -93,7 +93,7 @@ T-Display S3 AMOLED Plus 是一款基于 ESP32-S3 微控制器的高集成度开
 
 ## 引脚图
 
-<img src="/products/t-display-series/t-display-s3-amoled-plus/assets/t-display-s3-amoled-plus-3.jpg" alt="T-Display S3 AMOLED Plus 引脚图" width=100%>
+<img src="/products/t-display-series/t-display-s3-amoled-plus/index/image/t-display-s3-amoled-plus-3.jpg" alt="T-Display S3 AMOLED Plus 引脚图" width=100%>
 
 ## 尺寸图
 

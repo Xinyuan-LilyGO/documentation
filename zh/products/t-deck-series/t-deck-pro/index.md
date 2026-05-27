@@ -7,9 +7,9 @@ tags: ESP32-S3, 4G, LoRa, E-Paper, GPS
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-deck-pro" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-deck-series/t-deck-pro/assets/t-deck-pro1.jpg', alt: 'T-Deck Pro 正面图' },
-  { src: '/products/t-deck-series/t-deck-pro/assets/t-deck-pro2.jpg', alt: 'T-Deck Pro 实物图' },
-  { src: '/products/t-deck-series/t-deck-pro/assets/t-deck-pro3.jpg', alt: 'T-Deck Pro 引脚图' }
+  { src: '/products/t-deck-series/t-deck-pro/index/image/t-deck-pro1.jpg', alt: 'T-Deck Pro 正面图' },
+  { src: '/products/t-deck-series/t-deck-pro/index/image/t-deck-pro2.jpg', alt: 'T-Deck Pro 实物图' },
+  { src: '/products/t-deck-series/t-deck-pro/index/image/t-deck-pro3.jpg', alt: 'T-Deck Pro 引脚图' }
 ]" />
 
 ## 概述
@@ -120,7 +120,7 @@ A7682E 为 LTE Cat1 模块，支持 LTE-FDD/GSM/GPRS/EDGE 无线通信，通过 
 
 ## 引脚图
 
-<img src="/products/t-deck-series/t-deck-pro/assets/t-deck-pro3.jpg" alt="T-Deck Pro 引脚图" width=100%>
+<img src="/products/t-deck-series/t-deck-pro/index/image/t-deck-pro3.jpg" alt="T-Deck Pro 引脚图" width=100%>
 
 ### 引脚定义
 

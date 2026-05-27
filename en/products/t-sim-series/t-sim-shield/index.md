@@ -6,7 +6,7 @@ tags: Sim Series, Expansion Board, LoRa, Current Sensing, RS485, INA3221
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/sim-shield" />
 <ImageGallery :columns="1" :images="[
-  { src: '/products/t-sim-series/t-sim-shield/assets/t-sim-shield-1.jpg', alt: 'Sim Shield front view' }
+  { src: '/products/t-sim-series/t-sim-shield/index/image/t-sim-shield-1.jpg', alt: 'Sim Shield front view' }
 ]" />
 
 ## Overview

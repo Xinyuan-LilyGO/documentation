@@ -7,9 +7,9 @@ tags: BHI260AP, IMU, AI, Motion Sensing, IoT
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-bhi260ap/assets/t-bhi260ap-1.jpg', alt: 'T-BHI260AP front view' },
-  { src: '/products/other/t-bhi260ap/assets/t-bhi260ap-2.jpg', alt: 'T-BHI260AP appearance' },
-  { src: '/products/other/t-bhi260ap/assets/t-bhi260ap-3.jpg', alt: 'T-BHI260AP pin diagram' }
+  { src: '/products/other/t-bhi260ap/index/image/t-bhi260ap-1.jpg', alt: 'T-BHI260AP front view' },
+  { src: '/products/other/t-bhi260ap/index/image/t-bhi260ap-2.jpg', alt: 'T-BHI260AP appearance' },
+  { src: '/products/other/t-bhi260ap/index/image/t-bhi260ap-3.jpg', alt: 'T-BHI260AP pin diagram' }
 ]" />
 
 ## Overview
@@ -48,7 +48,7 @@ The T-BHI260AP AI Smart Sensor is a multifunctional motion monitoring expansion 
 
 ## Pin Diagram
 
-<img src="/products/other/t-bhi260ap/assets/t-bhi260ap-3.jpg" alt="T-BHI260AP pin diagram" width=100%>
+<img src="/products/other/t-bhi260ap/index/image/t-bhi260ap-3.jpg" alt="T-BHI260AP pin diagram" width=100%>
 
 ## Dimension Diagram
 

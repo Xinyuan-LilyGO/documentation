@@ -7,9 +7,9 @@ tags: SIM7600E, LTE, 4G, PCIe, GPS
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/sim7600e/assets/sim7600e.jpg', alt: 'T-PCIE SIM7600E 正面图' },
-  { src: '/products/t-sim-series/sim7600e/assets/sim7600e-r.jpg', alt: 'T-PCIE SIM7600E 背面图' },
-  { src: '/products/t-sim-series/sim7600e/assets/sim7600e-1.jpg', alt: 'T-PCIE SIM7600E 引脚图' }
+  { src: '/products/t-sim-series/sim7600e/index/image/sim7600e.jpg', alt: 'T-PCIE SIM7600E 正面图' },
+  { src: '/products/t-sim-series/sim7600e/index/image/sim7600e-r.jpg', alt: 'T-PCIE SIM7600E 背面图' },
+  { src: '/products/t-sim-series/sim7600e/index/image/sim7600e-1.jpg', alt: 'T-PCIE SIM7600E 引脚图' }
 ]" />
 
 ## 概述
@@ -52,10 +52,10 @@ T-SIM7600E-PCIE 是一款基于 SIM7600E 芯片的 LTE Cat 1 模块，支持 LTE
 
 ## 引脚图
 
-<img src="/products/t-sim-series/sim7600e/assets/sim7600e-1.jpg" alt="SIM7600E 引脚图 1" width=60%>
-<img src="/products/t-sim-series/sim7600e/assets/sim7600e-2.jpg" alt="SIM7600E 引脚图 2" width=60%>
-<img src="/products/t-sim-series/sim7600e/assets/sim7600e-3.jpg" alt="SIM7600E 引脚图 3" width=40%>
-<img src="/products/t-sim-series/sim7600e/assets/sim7600e-4.jpg" alt="SIM7600E 引脚图 4" width=40%>
+<img src="/products/t-sim-series/sim7600e/index/image/sim7600e-1.jpg" alt="SIM7600E 引脚图 1" width=60%>
+<img src="/products/t-sim-series/sim7600e/index/image/sim7600e-2.jpg" alt="SIM7600E 引脚图 2" width=60%>
+<img src="/products/t-sim-series/sim7600e/index/image/sim7600e-3.jpg" alt="SIM7600E 引脚图 3" width=40%>
+<img src="/products/t-sim-series/sim7600e/index/image/sim7600e-4.jpg" alt="SIM7600E 引脚图 4" width=40%>
 
 ## 尺寸图
 

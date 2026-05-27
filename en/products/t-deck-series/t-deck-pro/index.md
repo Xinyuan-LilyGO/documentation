@@ -6,9 +6,9 @@ tags: ESP32-S3, 4G, LoRa, E-Paper, GPS
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-deck-pro" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-deck-series/t-deck-pro/assets/t-deck-pro-1.jpg', alt: 'T-Deck Pro front view' },
-  { src: '/products/t-deck-series/t-deck-pro/assets/t-deck-pro2.jpg', alt: 'T-Deck Pro physical image' },
-  { src: '/products/t-deck-series/t-deck-pro/assets/t-deck-pro3.jpg', alt: 'T-Deck Pro pin diagram' }
+  { src: '/products/t-deck-series/t-deck-pro/index/image/t-deck-pro-1.jpg', alt: 'T-Deck Pro front view' },
+  { src: '/products/t-deck-series/t-deck-pro/index/image/t-deck-pro2.jpg', alt: 'T-Deck Pro physical image' },
+  { src: '/products/t-deck-series/t-deck-pro/index/image/t-deck-pro3.jpg', alt: 'T-Deck Pro pin diagram' }
 ]" />
 
 ## Overview

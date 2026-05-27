@@ -6,9 +6,9 @@ tags: LoRa, GPS, ESP32-S3, OLED, AXP2101
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-beam-1w" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-beam-series/t-beam-1w/assets/t-beam-1w-1.jpg', alt: 'T-Beam 1W front view' },
-  { src: '/products/t-beam-series/t-beam-1w/assets/t-beam-1w-2.jpg', alt: 'T-Beam 1W physical image' },
-  { src: '/products/t-beam-series/t-beam-1w/assets/t-beam-1w-info-en.jpg', alt: 'T-Beam 1W component overview' }
+  { src: '/products/t-beam-series/t-beam-1w/index/image/t-beam-1w-1.jpg', alt: 'T-Beam 1W front view' },
+  { src: '/products/t-beam-series/t-beam-1w/index/image/t-beam-1w-2.jpg', alt: 'T-Beam 1W physical image' },
+  { src: '/products/t-beam-series/t-beam-1w/index/image/t-beam-1w-info-en.jpg', alt: 'T-Beam 1W component overview' }
 ]" />
 
 ## Overview
@@ -106,7 +106,7 @@ T-Beam-1W is a high-performance IoT development board integrating **ESP32-S3** d
 
 ## Pin Diagram
 
-<img src="/products/t-beam-series/t-beam-1w/assets/t-beam-1w-pin.jpg" alt="T-Beam 1W pin diagram" width=100%>
+<img src="/products/t-beam-series/t-beam-1w/index/image/t-beam-1w-pin.jpg" alt="T-Beam 1W pin diagram" width=100%>
 
 ### Pin Mapping
 
@@ -205,12 +205,12 @@ T-Beam-1W is a high-performance IoT development board integrating **ESP32-S3** d
 
 ### RF Block Diagram
 
-<img src="/products/t-beam-series/t-beam-1w/assets/xy16p35.jpg" alt="RF block diagram" width=100%>
+<img src="/products/t-beam-series/t-beam-1w/index/image/xy16p35.jpg" alt="RF block diagram" width=100%>
 
 ### VCC = +5V, 400–520 MHz Output Power and Current
 
-<img src="/products/t-beam-series/t-beam-1w/assets/currneta.jpg" alt="400-520MHz output power chart" width=100%>
+<img src="/products/t-beam-series/t-beam-1w/index/image/currneta.jpg" alt="400-520MHz output power chart" width=100%>
 
 ### VCC = +5V, 830–950 MHz Output Power and Current
 
-<img src="/products/t-beam-series/t-beam-1w/assets/currnetb.jpg" alt="830-950MHz output power chart" width=100%>
+<img src="/products/t-beam-series/t-beam-1w/index/image/currnetb.jpg" alt="830-950MHz output power chart" width=100%>

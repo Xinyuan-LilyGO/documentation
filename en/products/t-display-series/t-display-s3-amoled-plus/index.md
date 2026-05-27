@@ -6,9 +6,9 @@ tags: ESP32-S3, AMOLED, LoRa, Power Management
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-s3-amoled-plus" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-amoled-plus/assets/t-display-s3-amoled-plus-1.jpg', alt: 'T-Display S3 AMOLED Plus front view' },
-  { src: '/products/t-display-series/t-display-s3-amoled-plus/assets/t-display-s3-amoled-plus-2.jpg', alt: 'T-Display S3 AMOLED Plus physical image' },
-  { src: '/products/t-display-series/t-display-s3-amoled-plus/assets/t-display-s3-amoled-plus-3.jpg', alt: 'T-Display S3 AMOLED Plus pin diagram' }
+  { src: '/products/t-display-series/t-display-s3-amoled-plus/index/image/t-display-s3-amoled-plus-1.jpg', alt: 'T-Display S3 AMOLED Plus front view' },
+  { src: '/products/t-display-series/t-display-s3-amoled-plus/index/image/t-display-s3-amoled-plus-2.jpg', alt: 'T-Display S3 AMOLED Plus physical image' },
+  { src: '/products/t-display-series/t-display-s3-amoled-plus/index/image/t-display-s3-amoled-plus-3.jpg', alt: 'T-Display S3 AMOLED Plus pin diagram' }
 ]" />
 
 ## Overview
@@ -95,7 +95,7 @@ T-Display S3 AMOLED Plus is a highly integrated development board based on **ESP
 
 ## Pin Diagram
 
-<img src="/products/t-display-series/t-display-s3-amoled-plus/assets/t-display-s3-amoled-plus-3.jpg" alt="T-Display S3 AMOLED Plus pin diagram" width=100%>
+<img src="/products/t-display-series/t-display-s3-amoled-plus/index/image/t-display-s3-amoled-plus-3.jpg" alt="T-Display S3 AMOLED Plus pin diagram" width=100%>
 
 ## Dimension Diagram
 

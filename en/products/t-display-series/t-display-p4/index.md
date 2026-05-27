@@ -6,9 +6,9 @@ tags: ESP32-P4, MIPI, AMOLED, LoRa, GPS, ESP32-C6
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-p4" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-p4/assets/t-display-p4-1.jpg', alt: 'T-Display P4 front view' },
-  { src: '/products/t-display-series/t-display-p4/assets/t-display-p4-2.jpg', alt: 'T-Display P4 physical image' },
-  { src: '/products/t-display-series/t-display-p4/assets/t-display-p4-amoled.jpg', alt: 'T-Display P4 AMOLED pin diagram' }
+  { src: '/products/t-display-series/t-display-p4/index/image/t-display-p4-1.jpg', alt: 'T-Display P4 front view' },
+  { src: '/products/t-display-series/t-display-p4/index/image/t-display-p4-2.jpg', alt: 'T-Display P4 physical image' },
+  { src: '/products/t-display-series/t-display-p4/index/image/t-display-p4-amoled.jpg', alt: 'T-Display P4 AMOLED pin diagram' }
 ]" />
 
 ## Overview
@@ -98,10 +98,10 @@ Configure board as **ESP32P4 Dev Module** with appropriate settings when Arduino
 ## Pin Diagram
 
 #### AMOLED Version
-<img src="/products/t-display-series/t-display-p4/assets/t-display-p4-amoled.jpg" alt="T-Display P4 AMOLED pin diagram" width=100%>
+<img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-amoled.jpg" alt="T-Display P4 AMOLED pin diagram" width=100%>
 
 #### TFT Version
-<img src="/products/t-display-series/t-display-p4/assets/t-display-p4-tft.jpg" alt="T-Display P4 TFT pin diagram" width=100%>
+<img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-tft.jpg" alt="T-Display P4 TFT pin diagram" width=100%>
 
 For pin definitions see config files:
 - [t_display_p4_config.h](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/components/private_library/t_display_p4_config.h)

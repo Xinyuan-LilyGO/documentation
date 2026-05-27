@@ -7,9 +7,9 @@ tags: ESP32-S3, Ethernet, PoE, W5500, IoT
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-eth-elite-1?variant=44498204983477" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-elite/assets/t-eth-elite-1.jpg', alt: 'T-ETH ELite 正面图' },
-  { src: '/products/t-eth-series/t-eth-elite/assets/t-eth-elite-2.jpg', alt: 'T-ETH ELite 实物图' },
-  { src: '/products/t-eth-series/t-eth-elite/assets/t-eth-elite-3.jpg', alt: 'T-ETH ELite 引脚图' }
+  { src: '/products/t-eth-series/t-eth-elite/index/image/t-eth-elite-1.jpg', alt: 'T-ETH ELite 正面图' },
+  { src: '/products/t-eth-series/t-eth-elite/index/image/t-eth-elite-2.jpg', alt: 'T-ETH ELite 实物图' },
+  { src: '/products/t-eth-series/t-eth-elite/index/image/t-eth-elite-3.jpg', alt: 'T-ETH ELite 引脚图' }
 ]" />
 
 ## 概述
@@ -83,9 +83,9 @@ LILYGO T-ETH ELITE 是一款基于 ESP32-S3-WROOM-1 模组的高性能物联网�
 
 ## 引脚图
 
-<img src="/products/t-eth-series/t-eth-elite/assets/t-eth-elite-3.jpg" alt="T-ETH ELite 引脚图" width=100%>
+<img src="/products/t-eth-series/t-eth-elite/index/image/t-eth-elite-3.jpg" alt="T-ETH ELite 引脚图" width=100%>
 
-<img src="/products/t-eth-series/t-eth-elite/assets/t-eth-elite-zh.jpg" alt="T-ETH ELite 概述图" width=100%>
+<img src="/products/t-eth-series/t-eth-elite/index/image/t-eth-elite-zh.jpg" alt="T-ETH ELite 概述图" width=100%>
 
 ## 尺寸图
 
@@ -119,7 +119,7 @@ LILYGO T-ETH ELITE 是一款基于 ESP32-S3-WROOM-1 模组的高性能物联网�
 
 ## 应用参考
 
-<img src="/products/t-eth-series/t-eth-elite/assets/t-eth-mode.jpg" alt="T-ETH ELite 应用方案" width=100%>
+<img src="/products/t-eth-series/t-eth-elite/index/image/t-eth-mode.jpg" alt="T-ETH ELite 应用方案" width=100%>
 
 ### LoRa 网关方案
 

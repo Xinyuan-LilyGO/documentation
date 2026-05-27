@@ -7,9 +7,9 @@ tags: ESP32-S3, LR1121, LoRa, Dual-Band, OLED, IoT
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3-s3-lr1121" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t3-series/t3-s3-lr1121/assets/t3-s3-lr1121-1.jpg', alt: 'T3-S3 LR1121 正面图' },
-  { src: '/products/t3-series/t3-s3-lr1121/assets/t3-s3-lr1121-2.jpg', alt: 'T3-S3 LR1121 实物图' },
-  { src: '/products/t3-series/t3-s3-lr1121/assets/t3-s3-lr1121-3.jpg', alt: 'T3-S3 LR1121 引脚图' }
+  { src: '/products/t3-series/t3-s3-lr1121/index/image/t3-s3-lr1121-1.jpg', alt: 'T3-S3 LR1121 正面图' },
+  { src: '/products/t3-series/t3-s3-lr1121/index/image/t3-s3-lr1121-2.jpg', alt: 'T3-S3 LR1121 实物图' },
+  { src: '/products/t3-series/t3-s3-lr1121/index/image/t3-s3-lr1121-3.jpg', alt: 'T3-S3 LR1121 引脚图' }
 ]" />
 
 ## 概述
@@ -110,7 +110,7 @@ LILYGO T3-S3 LR1121 是一款基于 ESP32-S3 的高集成物联网开发板，�
 
 ## 引脚图
 
-<img src="/products/t3-series/t3-s3-lr1121/assets/t3-s3-lr1121-3.jpg" alt="T3-S3 LR1121 引脚图" width=100%>
+<img src="/products/t3-series/t3-s3-lr1121/index/image/t3-s3-lr1121-3.jpg" alt="T3-S3 LR1121 引脚图" width=100%>
 
 ### 引脚映射
 
@@ -164,7 +164,7 @@ LILYGO T3-S3 LR1121 是一款基于 ESP32-S3 的高集成物联网开发板，�
 
 * **Q. 如何调节外接天线电阻？**  
   A. 参考下图调整电阻方向：  
-  <img src="/products/t3-series/t3-s3-lr1121/assets/t3-s3-lr1121-4.jpg" alt="天线电阻调节" width=60%>
+  <img src="/products/t3-series/t3-s3-lr1121/index/image/t3-s3-lr1121-4.jpg" alt="天线电阻调节" width=60%>
 
 * **Q. LR1121 相比传统 LoRa 芯片有什么优势？**  
   A. LR1121 支持双频段（Sub-GHz + 2.4GHz），提供更大的部署灵活性和更好的抗干扰能力。

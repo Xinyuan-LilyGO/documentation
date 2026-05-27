@@ -6,9 +6,9 @@ tags: ESP32-S3, AMOLED, Display, Touch
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-s3-amoled-1-64?variant=44507650556085" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-amoled-1.43/assets/t-display-s3-amoled-1.43-1.jpg', alt: 'T-Display S3 AMOLED 1.43 front view' },
-  { src: '/products/t-display-series/t-display-s3-amoled-1.43/assets/t-display-s3-amoled-1.43-2.jpg', alt: 'T-Display S3 AMOLED 1.43 physical image' },
-  { src: '/products/t-display-series/t-display-s3-amoled-1.43/assets/t-display-s3-amoled-1.43-en.jpg', alt: 'T-Display S3 AMOLED 1.43 pin diagram' }
+  { src: '/products/t-display-series/t-display-s3-amoled-1.43/index/image/t-display-s3-amoled-1.43-1.jpg', alt: 'T-Display S3 AMOLED 1.43 front view' },
+  { src: '/products/t-display-series/t-display-s3-amoled-1.43/index/image/t-display-s3-amoled-1.43-2.jpg', alt: 'T-Display S3 AMOLED 1.43 physical image' },
+  { src: '/products/t-display-series/t-display-s3-amoled-1.43/index/image/t-display-s3-amoled-1.43-en.jpg', alt: 'T-Display S3 AMOLED 1.43 pin diagram' }
 ]" />
 
 ## Overview
@@ -95,7 +95,7 @@ T-Display S3 AMOLED 1.43 is a smart display development board based on **ESP32-S
 
 ## Pin Diagram
 
-<img src="/products/t-display-series/t-display-s3-amoled-1.43/assets/t-display-s3-amoled-1.43-en.jpg" alt="T-Display S3 AMOLED 1.43 pin diagram" width=100%>
+<img src="/products/t-display-series/t-display-s3-amoled-1.43/index/image/t-display-s3-amoled-1.43-en.jpg" alt="T-Display S3 AMOLED 1.43 pin diagram" width=100%>
 
 ### Pin Mapping
 

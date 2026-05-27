@@ -7,9 +7,9 @@ tags: LoRa, SX1302, GPS, Ethernet, Gateway
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-eth-elite-1?variant=44498205016245" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-gateway/assets/t-eth-gateway-1.jpg', alt: 'T-ETH Gateway 正面图' },
-  { src: '/products/t-eth-series/t-eth-gateway/assets/t-eth-gateway-2.jpg', alt: 'T-ETH Gateway 实物图' },
-  { src: '/products/t-eth-series/t-eth-gateway/assets/t-eth-gateway-3.jpg', alt: 'T-ETH Gateway 引脚图' }
+  { src: '/products/t-eth-series/t-eth-gateway/index/image/t-eth-gateway-1.jpg', alt: 'T-ETH Gateway 正面图' },
+  { src: '/products/t-eth-series/t-eth-gateway/index/image/t-eth-gateway-2.jpg', alt: 'T-ETH Gateway 实物图' },
+  { src: '/products/t-eth-series/t-eth-gateway/index/image/t-eth-gateway-3.jpg', alt: 'T-ETH Gateway 引脚图' }
 ]" />
 
 ## 概述
@@ -51,9 +51,9 @@ LILYGO T-ETH ELITE Gateway Shield（网关扩展板）是一款多功能物联�
 
 ## 引脚图
 
-<img src="/products/t-eth-series/t-eth-gateway/assets/t-eth-gateway-3.jpg" alt="T-ETH Gateway 引脚图" width=100%>
+<img src="/products/t-eth-series/t-eth-gateway/index/image/t-eth-gateway-3.jpg" alt="T-ETH Gateway 引脚图" width=100%>
 
-<img src="/products/t-eth-series/t-eth-gateway/assets/t-eth-gateway-4.jpg" alt="T-ETH Gateway 概述图" width=100%>
+<img src="/products/t-eth-series/t-eth-gateway/index/image/t-eth-gateway-4.jpg" alt="T-ETH Gateway 概述图" width=100%>
 
 ## 尺寸图
 

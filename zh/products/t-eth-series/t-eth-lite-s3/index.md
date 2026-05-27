@@ -7,9 +7,9 @@ tags: ESP32-S3, Ethernet, W5500, PoE, IoT
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-eth-lite?variant=43120880779445" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-eth-series/t-eth-lite-s3/assets/t-eth-lite-s3-1.jpg', alt: 'T-ETH-Lite S3 正面图' },
-  { src: '/products/t-eth-series/t-eth-lite-s3/assets/t-eth-lite-s3-2.jpg', alt: 'T-ETH-Lite S3 实物图' },
-  { src: '/products/t-eth-series/t-eth-lite-s3/assets/t-eth-lite-s3-pin-zh.jpg', alt: 'T-ETH-Lite S3 引脚图' }
+  { src: '/products/t-eth-series/t-eth-lite-s3/index/image/t-eth-lite-s3-1.jpg', alt: 'T-ETH-Lite S3 正面图' },
+  { src: '/products/t-eth-series/t-eth-lite-s3/index/image/t-eth-lite-s3-2.jpg', alt: 'T-ETH-Lite S3 实物图' },
+  { src: '/products/t-eth-series/t-eth-lite-s3/index/image/t-eth-lite-s3-pin-zh.jpg', alt: 'T-ETH-Lite S3 引脚图' }
 ]" />
 
 ## 概述
@@ -83,9 +83,9 @@ T-ETH-Lite ESP32-S3 是一款基于 ESP32-S3 芯片的嵌入式开发模块，�
 
 ## 引脚图
 
-<img src="/products/t-eth-series/t-eth-lite-s3/assets/t-eth-lite-s3-pin-zh.jpg" alt="T-ETH-Lite S3 引脚图" width=100%>
+<img src="/products/t-eth-series/t-eth-lite-s3/index/image/t-eth-lite-s3-pin-zh.jpg" alt="T-ETH-Lite S3 引脚图" width=100%>
 
-<img src="/products/t-eth-series/t-eth-lite-s3/assets/t-eth-lite-s3-info-zh.jpg" alt="T-ETH-Lite S3 概述图" width=100%>
+<img src="/products/t-eth-series/t-eth-lite-s3/index/image/t-eth-lite-s3-info-zh.jpg" alt="T-ETH-Lite S3 概述图" width=100%>
 
 ## 尺寸图
 

@@ -6,9 +6,9 @@ tags: ESP32-S3, Camera, TFT, Audio, Vision
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-camera-plus-s3" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-camera-series/t-camera-plus-s3/assets/t-cameraplus-s3-1.jpg', alt: 'T-Camera Plus S3 front view' },
-  { src: '/products/t-camera-series/t-camera-plus-s3/assets/t-cameraplus-s3-2.jpg', alt: 'T-Camera Plus S3 physical image' },
-  { src: '/products/t-camera-series/t-camera-plus-s3/assets/t-cameraplus-s3-pin-en.jpg', alt: 'T-Camera Plus S3 pin diagram' }
+  { src: '/products/t-camera-series/t-camera-plus-s3/index/image/t-cameraplus-s3-1.jpg', alt: 'T-Camera Plus S3 front view' },
+  { src: '/products/t-camera-series/t-camera-plus-s3/index/image/t-cameraplus-s3-2.jpg', alt: 'T-Camera Plus S3 physical image' },
+  { src: '/products/t-camera-series/t-camera-plus-s3/index/image/t-cameraplus-s3-pin-en.jpg', alt: 'T-Camera Plus S3 pin diagram' }
 ]" />
 
 ## Overview
@@ -97,7 +97,7 @@ T-Camera Plus S3 is a versatile smart hardware development board based on **ESP3
 
 ## Pin Diagram
 
-<img src="/products/t-camera-series/t-camera-plus-s3/assets/t-cameraplus-s3-pin-en.jpg" alt="T-Camera Plus S3 pin diagram" width=100%>
+<img src="/products/t-camera-series/t-camera-plus-s3/index/image/t-cameraplus-s3-pin-en.jpg" alt="T-Camera Plus S3 pin diagram" width=100%>
 
 ### Pin Mapping (V1.2)
 

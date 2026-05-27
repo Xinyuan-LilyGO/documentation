@@ -6,9 +6,9 @@ tags: T-Circle, LCD, ESP32
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-circle-s3?variant=44912874062005" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-circle/assets/t-circle-1.jpg', alt: 'T-Circle front view' },
-  { src: '/products/other/t-circle/assets/t-circle-2.jpg', alt: 'T-Circle physical image' },
-  { src: '/products/other/t-circle/assets/t-circle-en.jpg', alt: 'T-Circle pin diagram' }
+  { src: '/products/other/t-circle/index/image/t-circle-1.jpg', alt: 'T-Circle front view' },
+  { src: '/products/other/t-circle/index/image/t-circle-2.jpg', alt: 'T-Circle physical image' },
+  { src: '/products/other/t-circle/index/image/t-circle-en.jpg', alt: 'T-Circle pin diagram' }
 ]" />
 
 ## Overview
@@ -86,7 +86,7 @@ LILYGO T-Circle is a circular screen development board based on **ESP32**. It fe
 
 ## Pin Diagram
 
-<img src="/products/other/t-circle/assets/t-circle-en.jpg" alt="T-Circle pin diagram" width=100%>
+<img src="/products/other/t-circle/index/image/t-circle-en.jpg" alt="T-Circle pin diagram" width=100%>
 
 ## Dimension Diagram
 

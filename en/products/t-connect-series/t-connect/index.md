@@ -6,9 +6,9 @@ tags: ESP32-S3, RS485, CAN, Industrial
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-connect" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-connect-series/t-connect/assets/t-connect-1.jpg', alt: 'T-Connect front view' },
-  { src: '/products/t-connect-series/t-connect/assets/t-connect-2.jpg', alt: 'T-Connect physical image' },
-  { src: '/products/t-connect-series/t-connect/assets/t-connect-en-1.jpg', alt: 'T-Connect pin diagram' }
+  { src: '/products/t-connect-series/t-connect/index/image/t-connect-1.jpg', alt: 'T-Connect front view' },
+  { src: '/products/t-connect-series/t-connect/index/image/t-connect-2.jpg', alt: 'T-Connect physical image' },
+  { src: '/products/t-connect-series/t-connect/index/image/t-connect-en-1.jpg', alt: 'T-Connect pin diagram' }
 ]" />
 
 ## Overview
@@ -96,7 +96,7 @@ T-Connect is an industrial-grade multi-protocol communication board based on **E
 
 ## Pin Diagram
 
-<img src="/products/t-connect-series/t-connect/assets/t-connect-en-1.jpg" alt="T-Connect pin diagram" width=100%>
+<img src="/products/t-connect-series/t-connect/index/image/t-connect-en-1.jpg" alt="T-Connect pin diagram" width=100%>
 
 ### Pin Mapping
 

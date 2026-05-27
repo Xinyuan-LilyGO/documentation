@@ -6,9 +6,9 @@ tags: ESP32-S3, Long Display, AMOLED, IoT, Touch Screen
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-s3-long" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-long/assets/t-display-s3-long-1.jpg', alt: 'T-Display S3 Long front view' },
-  { src: '/products/t-display-series/t-display-s3-long/assets/t-display-s3-long-2.jpg', alt: 'T-Display S3 Long physical image' },
-  { src: '/products/t-display-series/t-display-s3-long/assets/t-display-s3-long-pin-en.jpg', alt: 'T-Display S3 Long pin diagram' }
+  { src: '/products/t-display-series/t-display-s3-long/index/image/t-display-s3-long-1.jpg', alt: 'T-Display S3 Long front view' },
+  { src: '/products/t-display-series/t-display-s3-long/index/image/t-display-s3-long-2.jpg', alt: 'T-Display S3 Long physical image' },
+  { src: '/products/t-display-series/t-display-s3-long/index/image/t-display-s3-long-pin-en.jpg', alt: 'T-Display S3 Long pin diagram' }
 ]" />
 
 ## Overview
@@ -90,7 +90,7 @@ T-Display S3 Long is a long-strip display development board based on **ESP32-S3R
 
 ## Pin Diagram
 
-<img src="/products/t-display-series/t-display-s3-long/assets/t-display-s3-long-pin-en.jpg" alt="T-Display S3 Long pin diagram" width=100%>
+<img src="/products/t-display-series/t-display-s3-long/index/image/t-display-s3-long-pin-en.jpg" alt="T-Display S3 Long pin diagram" width=100%>
 
 ### Pin Mapping
 

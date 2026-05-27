@@ -6,9 +6,9 @@ tags: ESP32-S3, AMOLED, Wearable, BHI260AP, Smart Glasses
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-glass" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/other/t-glass/assets/t-glass-1.jpg', alt: 'T-Glass front view' },
-  { src: '/products/other/t-glass/assets/t-glass-2.jpg', alt: 'T-Glass physical image' },
-  { src: '/products/other/t-glass/assets/t-glass-pin-en.jpg', alt: 'T-Glass pin diagram' }
+  { src: '/products/other/t-glass/index/image/t-glass-1.jpg', alt: 'T-Glass front view' },
+  { src: '/products/other/t-glass/index/image/t-glass-2.jpg', alt: 'T-Glass physical image' },
+  { src: '/products/other/t-glass/index/image/t-glass-pin-en.jpg', alt: 'T-Glass pin diagram' }
 ]" />
 
 ## Overview
@@ -102,7 +102,7 @@ T-Glass is a smart wearable development board based on **ESP32-S3 FN4R2** (4 MB 
 
 ## Pin Diagram
 
-<img src="/products/other/t-glass/assets/t-glass-pin-en.jpg" alt="T-Glass pin diagram" width=100%>
+<img src="/products/other/t-glass/index/image/t-glass-pin-en.jpg" alt="T-Glass pin diagram" width=100%>
 
 ## Dimension Diagram
 

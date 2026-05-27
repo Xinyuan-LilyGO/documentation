@@ -7,9 +7,9 @@ tags: ESP32-S3, AMOLED, LoRa, LR1121
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-pro-lr1121/assets/t-display-s3-pro-lr1121-1.jpg', alt: 'T-Display S3 Pro LR1121 正面图' },
-  { src: '/products/t-display-series/t-display-s3-pro-lr1121/assets/t-display-s3-pro-lr1121-2.jpg', alt: 'T-Display S3 Pro LR1121 实物图' },
-  { src: '/products/t-display-series/t-display-s3-pro-lr1121/assets/t-display-s3-pro-lr1121-3.jpg', alt: 'T-Display S3 Pro LR1121 引脚图' }
+  { src: '/products/t-display-series/t-display-s3-pro-lr1121/index/image/t-display-s3-pro-lr1121-1.jpg', alt: 'T-Display S3 Pro LR1121 正面图' },
+  { src: '/products/t-display-series/t-display-s3-pro-lr1121/index/image/t-display-s3-pro-lr1121-2.jpg', alt: 'T-Display S3 Pro LR1121 实物图' },
+  { src: '/products/t-display-series/t-display-s3-pro-lr1121/index/image/t-display-s3-pro-lr1121-3.jpg', alt: 'T-Display S3 Pro LR1121 引脚图' }
 ]" />
 
 ## 概述
@@ -94,7 +94,7 @@ T-Display S3 Pro LR1121 是一款基于 ESP32-S3 微控制器的高集成度开�
 
 ## 引脚图
 
-<img src="/products/t-display-series/t-display-s3-pro-lr1121/assets/t-display-s3-pro-lr1121-3.jpg" alt="T-Display S3 Pro LR1121 引脚图" width=100%>
+<img src="/products/t-display-series/t-display-s3-pro-lr1121/index/image/t-display-s3-pro-lr1121-3.jpg" alt="T-Display S3 Pro LR1121 引脚图" width=100%>
 
 ## 尺寸图
 

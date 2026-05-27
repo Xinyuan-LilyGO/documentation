@@ -7,9 +7,9 @@ tags: ESP32-S3, AMOLED, Display, Touch
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-display-series/t-display-s3-amoled-1.64/assets/t-display-s3-amoled-1.64-1.jpg', alt: 'T-Display S3 AMOLED 1.64 front view' },
-  { src: '/products/t-display-series/t-display-s3-amoled-1.64/assets/t-display-s3-amoled-1.64-2.jpg', alt: 'T-Display S3 AMOLED 1.64 physical image' },
-  { src: '/products/t-display-series/t-display-s3-amoled-1.64/assets/t-display-s3-amoled-1.64-en.jpg', alt: 'T-Display S3 AMOLED 1.64 pin diagram' }
+  { src: '/products/t-display-series/t-display-s3-amoled-1.64/index/image/t-display-s3-amoled-1.64-1.jpg', alt: 'T-Display S3 AMOLED 1.64 front view' },
+  { src: '/products/t-display-series/t-display-s3-amoled-1.64/index/image/t-display-s3-amoled-1.64-2.jpg', alt: 'T-Display S3 AMOLED 1.64 physical image' },
+  { src: '/products/t-display-series/t-display-s3-amoled-1.64/index/image/t-display-s3-amoled-1.64-en.jpg', alt: 'T-Display S3 AMOLED 1.64 pin diagram' }
 ]" />
 
 ## Overview
@@ -106,7 +106,7 @@ T-Display S3 AMOLED 1.64 is a high-performance IoT development board based on **
 
 ## Pin Diagram
 
-<img src="/products/t-display-series/t-display-s3-amoled-1.64/assets/t-display-s3-amoled-1.64-en.jpg" alt="T-Display S3 AMOLED 1.64 pin diagram" width=100%>
+<img src="/products/t-display-series/t-display-s3-amoled-1.64/index/image/t-display-s3-amoled-1.64-en.jpg" alt="T-Display S3 AMOLED 1.64 pin diagram" width=100%>
 
 ## Dimension Diagram
 

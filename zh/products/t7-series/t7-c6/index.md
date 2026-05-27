@@ -7,9 +7,9 @@ tags: ESP32-C6, Wi-Fi 6, Bluetooth 5, Thread, Zigbee
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t7-c6" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t7-series/t7-c6/assets/t7_c6_1.jpg', alt: 'T7 C6 正面图' },
-  { src: '/products/t7-series/t7-c6/assets/t7_c6_2.jpg', alt: 'T7 C6 实物图' },
-  { src: '/products/t7-series/t7-c6/assets/t7_c6_3.jpg', alt: 'T7 C6 引脚图' }
+  { src: '/products/t7-series/t7-c6/index/image/t7_c6_1.jpg', alt: 'T7 C6 正面图' },
+  { src: '/products/t7-series/t7-c6/index/image/t7_c6_2.jpg', alt: 'T7 C6 实物图' },
+  { src: '/products/t7-series/t7-c6/index/image/t7_c6_3.jpg', alt: 'T7 C6 引脚图' }
 ]" />
 
 ## 概述
@@ -86,7 +86,7 @@ LILYGO T7-C6 是一款基于 ESP32-C6 芯片的开发板，集成了 Wi-Fi 6、�
 
 ## 引脚图
 
-<img src="/products/t7-series/t7-c6/assets/t7_c6_3.jpg" alt="T7 C6 引脚图" width=100%>
+<img src="/products/t7-series/t7-c6/index/image/t7_c6_3.jpg" alt="T7 C6 引脚图" width=100%>
 
 ### 引脚映射
 

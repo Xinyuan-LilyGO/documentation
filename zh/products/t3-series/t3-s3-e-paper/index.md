@@ -7,9 +7,9 @@ tags: ESP32-S3, E-Paper, LoRa, Low Power, IoT
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/ts-s3-epaper" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t3-series/t3-s3-e-paper/assets/t3-s3-e-paper-1.jpg', alt: 'T3-S3 E-Paper 正面图' },
-  { src: '/products/t3-series/t3-s3-e-paper/assets/t3-s3-e-paper-2.jpg', alt: 'T3-S3 E-Paper 实物图' },
-  { src: '/products/t3-series/t3-s3-e-paper/assets/t3-s3-e-paper-zh.jpg', alt: 'T3-S3 E-Paper 引脚图' }
+  { src: '/products/t3-series/t3-s3-e-paper/index/image/t3-s3-e-paper-1.jpg', alt: 'T3-S3 E-Paper 正面图' },
+  { src: '/products/t3-series/t3-s3-e-paper/index/image/t3-s3-e-paper-2.jpg', alt: 'T3-S3 E-Paper 实物图' },
+  { src: '/products/t3-series/t3-s3-e-paper/index/image/t3-s3-e-paper-zh.jpg', alt: 'T3-S3 E-Paper 引脚图' }
 ]" />
 
 ## 概述
@@ -75,7 +75,7 @@ T3-S3 E-Paper 是一款基于 ESP32-S3FH4R2 的低功耗物联网开发板，集
 
 ## 产品参数
 
-<img src="/products/t3-series/t3-s3-e-paper/assets/t3-s3-e-paper-info-zh.jpg" alt="T3-S3 E-Paper 概述图" width=80%>
+<img src="/products/t3-series/t3-s3-e-paper/index/image/t3-s3-e-paper-info-zh.jpg" alt="T3-S3 E-Paper 概述图" width=80%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -96,7 +96,7 @@ T3-S3 E-Paper 是一款基于 ESP32-S3FH4R2 的低功耗物联网开发板，集
 
 ## 引脚图
 
-<img src="/products/t3-series/t3-s3-e-paper/assets/t3-s3-e-paper-zh.jpg" alt="T3-S3 E-Paper 引脚图" width=100%>
+<img src="/products/t3-series/t3-s3-e-paper/index/image/t3-s3-e-paper-zh.jpg" alt="T3-S3 E-Paper 引脚图" width=100%>
 
 ### 引脚映射
 
@@ -163,7 +163,7 @@ T3-S3 E-Paper 是一款基于 ESP32-S3FH4R2 的低功耗物联网开发板，集
 
 * **Q. 如何调节外接天线电阻？**  
   A. 参考下图调整电阻方向：  
-  <img src="/products/t3-series/t3-s3-e-paper/assets/t3-s3-e-paper-3.jpg" alt="天线电阻调节" width=60%>
+  <img src="/products/t3-series/t3-s3-e-paper/index/image/t3-s3-e-paper-3.jpg" alt="天线电阻调节" width=60%>
 
 * **Q. 电子墨水屏刷新率为什么比较慢？**  
   A. 这是电子墨水屏的特性，全屏刷新需要 2~3 秒，局部刷新约 0.3~0.5 秒，但刷新后无需供电可保持显示，适合静态信息展示。

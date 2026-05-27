@@ -7,9 +7,9 @@ tags: ESP32-Pico-D4, LoRa, TCXO, OLED, IoT
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3-txco" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t3-series/t3-txco/assets/t3-txco-1.jpg', alt: 'T3-TXCO 正面图' },
-  { src: '/products/t3-series/t3-txco/assets/t3-txco-2.jpg', alt: 'T3-TXCO 实物图' },
-  { src: '/products/t3-series/t3-txco/assets/t3-txco-3.jpg', alt: 'T3-TXCO 引脚图' }
+  { src: '/products/t3-series/t3-txco/index/image/t3-txco-1.jpg', alt: 'T3-TXCO 正面图' },
+  { src: '/products/t3-series/t3-txco/index/image/t3-txco-2.jpg', alt: 'T3-TXCO 实物图' },
+  { src: '/products/t3-series/t3-txco/index/image/t3-txco-3.jpg', alt: 'T3-TXCO 引脚图' }
 ]" />
 
 ## 概述
@@ -106,7 +106,7 @@ LILYGO LORA32 TCXO 是一款基于 ESP32-Pico-D4 的 LoRa 无线通信开发板�
 
 ## 引脚图
 
-<img src="/products/t3-series/t3-txco/assets/t3-txco-3.jpg" alt="T3-TXCO 引脚图" width=100%>
+<img src="/products/t3-series/t3-txco/index/image/t3-txco-3.jpg" alt="T3-TXCO 引脚图" width=100%>
 
 ### 引脚映射
 
@@ -156,7 +156,7 @@ LILYGO LORA32 TCXO 是一款基于 ESP32-Pico-D4 的 LoRa 无线通信开发板�
 
 * **Q. 如何调节外接天线电阻？**  
   A. 参考下图调整电阻方向：  
-  <img src="/products/t3-series/t3-txco/assets/t3-txco-4.jpg" alt="天线电阻调节" width=60%>
+  <img src="/products/t3-series/t3-txco/index/image/t3-txco-4.jpg" alt="天线电阻调节" width=60%>
 
 * **Q. TCXO 相比普通晶振有什么优势？**  
   A. TCXO（温度补偿晶振）在温度变化时能保持更高的频率稳定性，适合环境温度变化大的应用场景。

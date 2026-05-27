@@ -6,9 +6,9 @@ tags: STM32WL55, LoRa, OLED, Low Power, IoT
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3-stm32" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t3-series/t3-stm32/assets/t3-stm32-1.jpg', alt: 'T3-STM32 front view' },
-  { src: '/products/t3-series/t3-stm32/assets/t3-stm32-2.jpg', alt: 'T3-STM32 physical image' },
-  { src: '/products/t3-series/t3-stm32/assets/t3-stm32-3.jpg', alt: 'T3-STM32 pin diagram' }
+  { src: '/products/t3-series/t3-stm32/index/image/t3-stm32-1.jpg', alt: 'T3-STM32 front view' },
+  { src: '/products/t3-series/t3-stm32/index/image/t3-stm32-2.jpg', alt: 'T3-STM32 physical image' },
+  { src: '/products/t3-series/t3-stm32/index/image/t3-stm32-3.jpg', alt: 'T3-STM32 pin diagram' }
 ]" />
 
 ## Overview
@@ -95,7 +95,7 @@ LILYGO T3-STM32 is a versatile IoT development board based on the **STM32WL55CCU
 
 ## Pin Diagram
 
-<img src="/products/t3-series/t3-stm32/assets/t3-stm32-3.jpg" alt="T3-STM32 pin diagram" width=100%>
+<img src="/products/t3-series/t3-stm32/index/image/t3-stm32-3.jpg" alt="T3-STM32 pin diagram" width=100%>
 
 ## Dimension Diagram
 
