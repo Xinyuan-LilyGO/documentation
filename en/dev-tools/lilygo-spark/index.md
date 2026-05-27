@@ -1,8 +1,14 @@
+---
+head:
+  - - script
+    - src: https://lilygo.oss-accelerate.aliyuncs.com/spark-releases/latest/spark-latest.js
+---
+
 # LILYGO Spark User Guide
 
 ## Software Download
 
-<div id="spark-widget" data-theme="green"></div>
+<SparkWidget />
 
 Click **"Download"** above to get the installer for your current platform, or click **"All Platforms"** to expand the full list of downloads for macOS, Windows, and Linux.
 

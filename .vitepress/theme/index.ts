@@ -10,6 +10,7 @@ import ProductGrid from './components/ProductGrid.vue'
 import HomeLayout from './components/HomeLayout.vue'
 import ImageGallery from './components/ImageGallery.vue'
 import GiscusComment from './components/GiscusComment.vue'
+import SparkWidget from './components/SparkWidget.vue'
 
 export default {
   extends: DefaultTheme,
@@ -29,5 +30,6 @@ export default {
     app.component('ProductGrid', ProductGrid)
     app.component('HomeLayout', HomeLayout)
     app.component('ImageGallery', ImageGallery)
+    app.component('SparkWidget', SparkWidget)
   },
 }

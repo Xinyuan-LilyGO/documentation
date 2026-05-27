@@ -1,8 +1,14 @@
+---
+head:
+  - - script
+    - src: https://lilygo.oss-accelerate.aliyuncs.com/spark-releases/latest/spark-latest.js
+---
+
 # LILYGO Spark 使用指南
 
 ## 软件下载
 
-<div id="spark-widget" data-theme="green"></div>
+<SparkWidget />
 
 点击上方 **「下载」** 按钮获取当前平台的安装包，或点击 **「All Platforms」** 展开查看 macOS、Windows、Linux 全部下载选项。
 
