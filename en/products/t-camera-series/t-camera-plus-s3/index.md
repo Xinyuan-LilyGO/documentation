@@ -99,17 +99,68 @@ T-Camera Plus S3 is a versatile smart hardware development board based on **ESP3
 
 <img src="/products/t-camera-series/t-camera-plus-s3/index/image/t-cameraplus-s3-pin-en.jpg" alt="T-Camera Plus S3 pin diagram" width=100%>
 
-### Pin Mapping (V1.2)
+### Display
 
-| LCD | IO34 (MOSI), IO35 (SCLK), IO36 (CS), IO45 (DC), IO46 (BL) |
-| :--: | :-- |
-| Camera (OV2640) | IO7 (XCLK), IO1 (SIDO), IO2 (SIOC), IO3 (VSYNC→PWDN), IO5 (HREF), IO10 (PCLK), D0–D7 = IO12–IO15, IO11, IO13, IO8, IO6 |
-| Touch (CST816S) | IO33 (SDA), IO37 (SCL), IO47 (INT) |
-| Speaker (MAX98357A) | IO41 (BCLK), IO42 (LRCLK), IO39 (DATA) |
-| Microphone (MP34DT05-A) | IO40 (LRCLK), IO38 (DATA) |
-| SD Card | IO21 (CS), IO35 (SCLK), IO34 (MOSI), IO48 (MISO) |
-| SY6970 | IO33 (SDA), IO37 (SCL) |
-| KEY1 | IO17 |
+| ST7789V   | MOSI   | SCLK   | CS     | DC     | BL     |
+| :-------: | :----: | :----: | :----: | :----: | :----: |
+| V1.0-V1.1 | GPIO35 | GPIO36 | GPIO34 | GPIO45 | GPIO46 |
+| V1.2      | GPIO34 | GPIO35 | GPIO36 | GPIO45 | GPIO46 |
+
+### Touch
+
+| CST816S   | SDA    | SCL    | RST    | INT    |
+| :-------: | :----: | :----: | :----: | :----: |
+| V1.0-V1.1 | GPIO1  | GPIO2  | GPIO48 | GPIO47 |
+| V1.2      | GPIO33 | GPIO37 | NC     | GPIO47 |
+
+### Camera
+
+| OV2640    | XCLK  | SIOD  | SIOC  | VSYNC  | PWDN/RST | HREF  | PCLK   | D0     | D1     | D2     | D3     | D4     | D5    | D6    | D7    |
+| :-------: | :---: | :---: | :---: | :----: | :------: | :---: | :----: | :----: | :----: | :----: | :----: | :----: | :---: | :---: | :---: |
+| V1.0-V1.1 | GPIO7 | GPIO1 | GPIO2 | GPIO4  | GPIO3    | GPIO5 | GPIO10 | GPIO12 | GPIO14 | GPIO15 | GPIO13 | GPIO11 | GPIO9 | GPIO8 | GPIO6 |
+| V1.2      | GPIO7 | GPIO1 | GPIO2 | GPIO3  | GPIO4    | GPIO5 | GPIO10 | GPIO12 | GPIO14 | GPIO15 | GPIO13 | GPIO11 | GPIO9 | GPIO8 | GPIO6 |
+
+### Speaker
+
+| MAX98357A | BCLK   | LRCLK  | DATA   |
+| :-------: | :----: | :----: | :----: |
+| V1.0-V1.1 | GPIO41 | GPIO42 | GPIO38 |
+| V1.2      | GPIO41 | GPIO42 | GPIO39 |
+
+### Microphone
+
+**V1.0-V1.1 (MSM261S4030H0R)**
+
+| MSM261S4030H0R | BCLK   | WS     | DATA   |
+| :------------: | :----: | :----: | :----: |
+| V1.0-V1.1      | GPIO18 | GPIO39 | GPIO40 |
+
+**V1.2 (MP34DT05TR)**
+
+| MP34DT05TR | LRCLK  | DATA   |
+| :---------: | :----: | :----: |
+| V1.2        | GPIO40 | GPIO38 |
+
+### SDCard
+
+| SD Card   | CS     | SCLK   | MOSI   | MISO   |
+| :-------: | :----: | :----: | :----: | :----: |
+| V1.0-V1.1 | GPIO21 | GPIO36 | GPIO35 | GPIO37 |
+| V1.2      | GPIO21 | GPIO35 | GPIO34 | GPIO48 |
+
+### Power
+
+| SY6970    | SDA    | SCL    | INT    |
+| :-------: | :----: | :----: | :----: |
+| V1.0-V1.1 | GPIO1  | GPIO2  | GPIO47 |
+| V1.2      | GPIO33 | GPIO37 | NC     |
+
+### Button
+
+| Button    | KEY1   | KEY2   |
+| :-------: | :----: | :----: |
+| V1.0-V1.1 | GPIO17 | GPIO0  |
+| V1.2      | GPIO17 | GPIO0  |
 
 ## Dimension Diagram
 
@@ -127,6 +178,7 @@ T-Camera Plus S3 is a versatile smart hardware development board based on **ESP3
 ## Software Development
 
 * [T-CameraPlus-S3 GitHub Repository](https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3)
+* [Dashcam](./dashcam.md)
 
 ### Dependent Libraries
 
