@@ -9,6 +9,7 @@ tags: ESP32, WROVER, Wi-Fi, Bluetooth, MicroPython, IoT, General Purpose
 <ImageGallery :columns="3" :images="[
   { src: '/products/t7-series/t7/index/image/t7-1.jpg', alt: 'T7 正面图' },
   { src: '/products/t7-series/t7/index/image/t7-2.jpg', alt: 'T7 背面图' },
+  { src: '/products/t7-series/t7/index/image/t7-3.jpg', alt: 'T7 尺寸图' },
 ]" />
 
 ## 概述

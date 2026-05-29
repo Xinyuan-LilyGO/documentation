@@ -9,6 +9,8 @@ tags: ESP32-S3, Relay, Wi-Fi, Bluetooth, IoT, Smart Home, ESPHome, Tasmota
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-relay-series/t-relay-s3/index/image/t-relay-s3-1.jpg', alt: 'T-Relay-S3 front view' },
   { src: '/products/t-relay-series/t-relay-s3/index/image/t-relay-s3-2.jpg', alt: 'T-Relay-S3 back view' },
+  { src: '/products/t-relay-series/t-relay-s3/index/image/t-relay-s3-3.jpg', alt: 'T-Relay-S3 dimensions' },
+  { src: '/products/t-relay-series/t-relay-s3/index/image/t-relay-s3-info.jpg', alt: 'T-Relay-S3 specifications' },
 ]" />
 
 ## Overview
@@ -61,9 +63,11 @@ LILYGO T-Relay-S3 is an upgraded relay control board powered by the **ESP32-S3-W
 | Max Load Current | 10 A per relay |
 | USB | 1 × USB-C |
 
+![T-Relay-S3 Specifications](/products/t-relay-series/t-relay-s3/index/image/t-relay-s3-info.jpg)
+
 ## Pin Diagram
 
-<!-- GPIO mapping table. -->
+![T-Relay-S3 Pinout](/products/t-relay-series/t-relay-s3/index/image/t-relay-s3-pinout.jpg)
 
 ## Schematic
 

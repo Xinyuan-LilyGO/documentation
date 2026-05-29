@@ -9,6 +9,8 @@ tags: ESP32, Relay, Wi-Fi, Bluetooth, IoT, Smart Home
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-relay-series/t-relay/index/image/t-relay-1.jpg', alt: 'T-Relay 正面图' },
   { src: '/products/t-relay-series/t-relay/index/image/t-relay-2.jpg', alt: 'T-Relay 背面图' },
+  { src: '/products/t-relay-series/t-relay/index/image/t-relay-3.jpg', alt: 'T-Relay 尺寸图' },
+  { src: '/products/t-relay-series/t-relay/index/image/t-relay-info.jpg', alt: 'T-Relay 规格参数' },
 ]" />
 
 ## 概述
@@ -54,9 +56,13 @@ LILYGO T-Relay 是一款基于 **ESP32-WROVER-E** 的继电器控制开发板（
 | 继电器额定值 | 250 V AC / 10 A，28 V DC / 10 A |
 | 输入电压 | 5–24 V DC |
 
+![T-Relay 规格参数](/products/t-relay-series/t-relay/index/image/t-relay-info.jpg)
+
 ## 引脚图
 
-| 继电器 | GPIO |
+![T-Relay 引脚图](/products/t-relay-series/t-relay/index/image/t-relay-pinout.jpg)
+
+### 继电器输出
 | :---: | :--: |
 | K1 | GPIO21 |
 | K2 | GPIO19 |

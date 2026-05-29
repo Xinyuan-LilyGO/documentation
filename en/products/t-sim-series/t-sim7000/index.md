@@ -85,6 +85,8 @@ LILYGO T-SIM7000G integrates the **ESP32** microcontroller with the **SIMCom SIM
 
 ## Pin Diagram
 
+![T-SIM7000G Pinout](/products/t-sim-series/t-sim7000/index/image/t-sim7000-pinout.jpg)
+
 ### SIM7000G UART
 
 | Signal | GPIO |

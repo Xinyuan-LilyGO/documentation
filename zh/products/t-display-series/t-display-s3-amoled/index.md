@@ -9,6 +9,7 @@ tags: ESP32-S3, AMOLED, RM67162, Touch, Wi-Fi, Bluetooth, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-display-series/t-display-s3-amoled/index/image/t-display-s3-amoled-1.jpg', alt: 'T-Display-S3-AMOLED 正面' },
   { src: '/products/t-display-series/t-display-s3-amoled/index/image/t-display-s3-amoled-2.jpg', alt: 'T-Display-S3-AMOLED 背面' },
+  { src: '/products/t-display-series/t-display-s3-amoled/index/image/t-display-s3-amoled-3.jpg', alt: 'T-Display-S3-AMOLED 尺寸图' },
 ]" />
 
 ## 概述

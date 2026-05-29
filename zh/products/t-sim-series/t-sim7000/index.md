@@ -85,6 +85,8 @@ LILYGO T-SIM7000G 将 **ESP32** 微控制器与 **SIMCom SIM7000G** 多频段 LT
 
 ## 引脚图
 
+![T-SIM7000G 引脚图](/products/t-sim-series/t-sim7000/index/image/t-sim7000-pinout.jpg)
+
 ### SIM7000G UART
 
 | 信号 | GPIO |

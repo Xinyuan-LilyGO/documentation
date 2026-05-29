@@ -9,6 +9,8 @@ tags: ESP32-S3, Camera, OV2640, SIM, mPCIe, Cellular, 4G, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-sim-series/t-simcam/index/image/t-simcam-1.jpg', alt: 'T-SIMCam front view' },
   { src: '/products/t-sim-series/t-simcam/index/image/t-simcam-2.jpg', alt: 'T-SIMCam back view' },
+  { src: '/products/t-sim-series/t-simcam/index/image/t-simcam-3.jpg', alt: 'T-SIMCam dimensions' },
+  { src: '/products/t-sim-series/t-simcam/index/image/t-simcam-info.jpg', alt: 'T-SIMCam specifications' },
 ]" />
 
 ## Overview
@@ -87,6 +89,8 @@ LILYGO T-SIMCam is an all-in-one ESP32-S3 camera and cellular IoT board combinin
 | SIM | Nano SIM |
 | USB | 1 × USB-C |
 | Battery | 3.7 V Li-Po connector |
+
+![T-SIMCam Specifications](/products/t-sim-series/t-simcam/index/image/t-simcam-info.jpg)
 
 ## Pin Diagram
 

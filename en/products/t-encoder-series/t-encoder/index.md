@@ -9,6 +9,8 @@ tags: ESP32-S3, Round Display, GC9A01, Rotary Encoder, Wi-Fi, Bluetooth, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-encoder-series/t-encoder/index/image/t-encoder-1.jpg', alt: 'T-Encoder front view' },
   { src: '/products/t-encoder-series/t-encoder/index/image/t-encoder-2.jpg', alt: 'T-Encoder back view' },
+  { src: '/products/t-encoder-series/t-encoder/index/image/t-encoder-3.jpg', alt: 'T-Encoder dimensions' },
+  { src: '/products/t-encoder-series/t-encoder/index/image/t-encoder-info.jpg', alt: 'T-Encoder specifications' },
 ]" />
 
 ## Overview
@@ -84,7 +86,11 @@ LILYGO T-Encoder is a compact ESP32-S3 development board combining a **1.28-inch
 | USB | 1 × USB-C |
 | Expansion | 1 × QWIIC |
 
+![T-Encoder Specifications](/products/t-encoder-series/t-encoder/index/image/t-encoder-info.jpg)
+
 ## Pin Diagram
+
+![T-Encoder Pinout](/products/t-encoder-series/t-encoder/index/image/t-encoder-pinout.jpg)
 
 ### Display (GC9A01)
 

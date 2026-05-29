@@ -9,6 +9,8 @@ tags: ESP32-S3, TFT, Rotary Encoder, APA102, Speaker, MicroSD, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-embed-series/t-embed/index/image/t-embed-1.jpg', alt: 'T-Embed front view' },
   { src: '/products/t-embed-series/t-embed/index/image/t-embed-2.jpg', alt: 'T-Embed back view' },
+  { src: '/products/t-embed-series/t-embed/index/image/t-embed-3.jpg', alt: 'T-Embed dimensions' },
+  { src: '/products/t-embed-series/t-embed/index/image/t-embed-info.jpg', alt: 'T-Embed specifications' },
 ]" />
 
 ## Overview
@@ -93,9 +95,11 @@ LILYGO T-Embed is a multi-functional ESP32-S3 development platform featuring a *
 | Expansion | 2 × QWIIC |
 | Dimensions | 95.4 × 36.4 mm |
 
+![T-Embed Specifications](/products/t-embed-series/t-embed/index/image/t-embed-info.jpg)
+
 ## Pin Diagram
 
-<!-- GPIO mapping table. -->
+![T-Embed Pinout](/products/t-embed-series/t-embed/index/image/t-embed-pinout.jpg)
 
 ## Dimensions
 

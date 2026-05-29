@@ -9,6 +9,8 @@ tags: ESP32-S3, AMOLED, SH8501B0, Touch, AXP2101, Display, Low Power, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-display-series/t-display-amoled-lite/index/image/t-display-amoled-lite-1.jpg', alt: 'T-Display-AMOLED-Lite 正面图' },
   { src: '/products/t-display-series/t-display-amoled-lite/index/image/t-display-amoled-lite-2.jpg', alt: 'T-Display-AMOLED-Lite 背面图' },
+  { src: '/products/t-display-series/t-display-amoled-lite/index/image/t-display-amoled-lite-3.jpg', alt: 'T-Display-AMOLED-Lite 尺寸图' },
+  { src: '/products/t-display-series/t-display-amoled-lite/index/image/t-display-amoled-lite-info.jpg', alt: 'T-Display-AMOLED-Lite 规格参数' },
 ]" />
 
 ## 概述
@@ -83,6 +85,8 @@ LILYGO T-Display-AMOLED-Lite 是一款基于 **ESP32-S3R8**（双核 LX7，240 M
 | 睡眠电流 | 约 1.1 mA |
 | USB | 1 × USB-C |
 | 电池 | 锂聚合物，AXP2101 集成充电管理 |
+
+![T-Display-AMOLED-Lite 规格参数](/products/t-display-series/t-display-amoled-lite/index/image/t-display-amoled-lite-info.jpg)
 
 ## 引脚图
 

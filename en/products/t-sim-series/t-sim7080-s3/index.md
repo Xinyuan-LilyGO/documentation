@@ -9,6 +9,9 @@ tags: ESP32-S3, SIM7080G, NB-IoT, Cat-M1, GNSS, GPS, IoT, LTE
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-1.jpg', alt: 'T-SIM7080-S3 front view' },
   { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-2.jpg', alt: 'T-SIM7080-S3 back view' },
+  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-3.jpg', alt: 'T-SIM7080-S3 dimensions' },
+  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-1.jpg', alt: 'T-SIM7080-S3 specifications part 1' },
+  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-2.jpg', alt: 'T-SIM7080-S3 specifications part 2' },
 ]" />
 
 ## Overview
@@ -90,9 +93,13 @@ LILYGO T-SIM7080-S3 is a compact IoT development board combining the **ESP32-S3*
 | Weight | <!-- placeholder --> |
 | Package size | <!-- placeholder --> |
 
+![T-SIM7080-S3 Specifications Part 1](/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-1.jpg)
+
+![T-SIM7080-S3 Specifications Part 2](/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-2.jpg)
+
 ## Pin Diagram
 
-<!-- GPIO mapping table. -->
+![T-SIM7080-S3 Pinout](/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-pinout.jpg)
 
 ## Dimensions
 

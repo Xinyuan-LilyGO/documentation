@@ -9,6 +9,7 @@ tags: ESP32-S3, AMOLED, Touch, Display, WiFi, Bluetooth
 <ImageGallery :columns="3" :images="[
   { src: '/products/t4-series/t4-s3/index/image/t4-s3-1.jpg', alt: 'T4-S3 front view' },
   { src: '/products/t4-series/t4-s3/index/image/t4-s3-2.jpg', alt: 'T4-S3 back view' },
+  { src: '/products/t4-series/t4-s3/index/image/t4-s3-3.jpg', alt: 'T4-S3 dimensions' },
 ]" />
 
 ## Overview
@@ -95,7 +96,11 @@ LILYGO T4-S3 is a compact development board based on the **ESP32-S3R8** dual-cor
 
 ## Pin Diagram
 
-<!-- GPIO mapping table. -->
+![T4-S3 Specifications](/products/t4-series/t4-s3/index/image/t4-s3-info.jpg)
+
+### Pinout Diagram
+
+![T4-S3 Pinout](/products/t4-series/t4-s3/index/image/t4-s3-pinout.jpg)
 
 ## Dimensions
 

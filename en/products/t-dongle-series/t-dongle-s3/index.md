@@ -9,6 +9,7 @@ tags: ESP32-S3, USB Dongle, TFT, Wi-Fi, Bluetooth, APA102, TF Card
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-dongle-series/t-dongle-s3/index/image/t-dongle-s3-1.jpg', alt: 'T-Dongle-S3 front view' },
   { src: '/products/t-dongle-series/t-dongle-s3/index/image/t-dongle-s3-2.jpg', alt: 'T-Dongle-S3 back view' },
+  { src: '/products/t-dongle-series/t-dongle-s3/index/image/t-dongle-s3-3.jpg', alt: 'T-Dongle-S3 dimensions' },
 ]" />
 
 ## Overview
@@ -90,7 +91,9 @@ LILYGO T-Dongle-S3 is a feature-rich ESP32-S3 USB dongle development board in a 
 | Battery Connector | MX 1.25 mm 2-pin |
 | UART Connector | JST SH 1.0 mm 4-pin |
 | Antenna | On-board + IPEX |
-| Dimensions | <!-- PCB dimensions --> |
+| Dimensions | 58 × 18 × 9 mm |
+
+![T-Dongle-S3 Specifications](/products/t-dongle-series/t-dongle-s3/index/image/t-dongle-s3-info.jpg)
 
 ## Pin Diagram
 
@@ -118,9 +121,13 @@ LILYGO T-Dongle-S3 is a feature-rich ESP32-S3 USB dongle development board in a 
 | :------: | :----: |
 | ESP32-S3 | GPIO0  |
 
+### Pinout Diagram
+
+![T-Dongle-S3 Pinout](/products/t-dongle-series/t-dongle-s3/index/image/t-dongle-s3-pinout.jpg)
+
 ## Dimensions
 
-<!-- PCB and enclosure dimension diagrams. -->
+![T-Dongle-S3 Dimensions Diagram](/products/t-dongle-series/t-dongle-s3/index/image/t-dongle-s3-3.jpg)
 
 ## Schematic
 

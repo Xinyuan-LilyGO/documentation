@@ -9,6 +9,7 @@ tags: ESP32-S3, Wi-Fi, Bluetooth, PSRAM, Qwiic, IoT, General Purpose
 <ImageGallery :columns="3" :images="[
   { src: '/products/t7-series/t7-s3/index/image/t7-s3-1.jpg', alt: 'T7-S3 front view' },
   { src: '/products/t7-series/t7-s3/index/image/t7-s3-2.jpg', alt: 'T7-S3 back view' },
+  { src: '/products/t7-series/t7-s3/index/image/t7-s3-3.jpg', alt: 'T7-S3 dimensions' },
 ]" />
 
 ## Overview
@@ -58,6 +59,12 @@ LILYGO T7-S3 is a compact general-purpose development board based on the **ESP32
 | USB | 1 × USB-C (OTG capable) |
 | Expansion | Qwiic / STEMMA QT (I2C) |
 | Dimensions | 39 × 31 mm |
+
+![T7-S3 Specifications](/products/t7-series/t7-s3/index/image/t7-s3-info.jpg)
+
+## Pin Diagram
+
+![T7-S3 Pinout](/products/t7-series/t7-s3/index/image/t7-s3-pinout.jpg)
 
 ## Software Libraries
 

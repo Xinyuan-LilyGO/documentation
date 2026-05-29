@@ -9,6 +9,8 @@ tags: NRF52840, LoRa, SX1262, E-Ink, Meshtastic, GPS, BLE, BHI260AP
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-echo-series/t-echo-plus/index/image/t-echo-plus-1.jpg', alt: 'T-Echo-Plus front view' },
   { src: '/products/t-echo-series/t-echo-plus/index/image/t-echo-plus-2.jpg', alt: 'T-Echo-Plus back view' },
+  { src: '/products/t-echo-series/t-echo-plus/index/image/t-echo-plus-3.jpg', alt: 'T-Echo-Plus dimensions' },
+  { src: '/products/t-echo-series/t-echo-plus/index/image/t-echo-plus-info.jpg', alt: 'T-Echo-Plus specifications' },
 ]" />
 
 ## Overview
@@ -63,9 +65,11 @@ Flash Meshtastic firmware directly from [flasher.meshtastic.org](https://flasher
 | USB | 1 × USB-C |
 | Battery | Li-Po with charging |
 
+![T-Echo-Plus Specifications](/products/t-echo-series/t-echo-plus/index/image/t-echo-plus-info.jpg)
+
 ## Pin Diagram
 
-<!-- GPIO mapping table. -->
+![T-Echo-Plus Pinout](/products/t-echo-series/t-echo-plus/index/image/t-echo-plus-pinout.jpg)
 
 ## Dimensions
 

@@ -9,6 +9,8 @@ tags: ESP32-S3, Relay, Wi-Fi, Bluetooth, IoT, Smart Home, ESPHome, Tasmota
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-relay-series/t-relay-s3/index/image/t-relay-s3-1.jpg', alt: 'T-Relay-S3 正面图' },
   { src: '/products/t-relay-series/t-relay-s3/index/image/t-relay-s3-2.jpg', alt: 'T-Relay-S3 背面图' },
+  { src: '/products/t-relay-series/t-relay-s3/index/image/t-relay-s3-3.jpg', alt: 'T-Relay-S3 尺寸图' },
+  { src: '/products/t-relay-series/t-relay-s3/index/image/t-relay-s3-info.jpg', alt: 'T-Relay-S3 规格参数' },
 ]" />
 
 ## 概述
@@ -55,6 +57,12 @@ LILYGO T-Relay-S3 是继电器控制开发板的升级版，采用 **ESP32-S3-WR
 | 无线 | Wi-Fi 802.11 b/g/n，蓝牙 5.0 |
 | 继电器通道 | 6 路（可扩展至 24 路） |
 | 最大负载电流 | 每路 10 A |
+
+![T-Relay-S3 规格参数](/products/t-relay-series/t-relay-s3/index/image/t-relay-s3-info.jpg)
+
+## 引脚图
+
+![T-Relay-S3 引脚图](/products/t-relay-series/t-relay-s3/index/image/t-relay-s3-pinout.jpg)
 
 ## 软件开发
 

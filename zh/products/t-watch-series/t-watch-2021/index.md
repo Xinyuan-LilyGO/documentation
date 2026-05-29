@@ -9,6 +9,7 @@ tags: ESP32, 智能手表, AXP202, BMA423, TFT, Wi-Fi, 蓝牙, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-watch-series/t-watch-2021/index/image/t-watch-2021-1.jpg', alt: 'T-Watch 2021 正面' },
   { src: '/products/t-watch-series/t-watch-2021/index/image/t-watch-2021-2.jpg', alt: 'T-Watch 2021 背面' },
+  { src: '/products/t-watch-series/t-watch-2021/index/image/t-watch-2021-info.jpg', alt: 'T-Watch 2021 规格参数' },
 ]" />
 
 ## 概述
@@ -87,6 +88,8 @@ LILYGO T-Watch 2021 是一款基于 ESP32 的开源智能手表开发平台。�
 | 振动 | 振动马达 |
 | 电池 | 380 mAh 锂电池 |
 | USB | USB-C |
+
+![T-Watch 2021 规格参数](/products/t-watch-series/t-watch-2021/index/image/t-watch-2021-info.jpg)
 
 ## 引脚图
 

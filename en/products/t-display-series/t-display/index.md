@@ -8,7 +8,6 @@ tags: ESP32, ST7789V, TFT, Wi-Fi, Bluetooth, IoT
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-display-series/t-display/index/image/t-display-1.jpg', alt: 'T-Display front view' },
-  { src: '/products/t-display-series/t-display/index/image/t-display-2.jpg', alt: 'T-Display back view' },
 ]" />
 
 ## Overview
@@ -84,9 +83,11 @@ LILYGO T-Display is a compact ESP32 development board with a built-in **1.14-inc
 | USB | 1 × USB-C |
 | Working Voltage | 2.7 V – 4.2 V |
 
+![T-Display Specifications](/products/t-display-series/t-display/index/image/t-display-info.jpg)
+
 ## Pin Diagram
 
-<!-- GPIO mapping table. -->
+![T-Display Pinout](/products/t-display-series/t-display/index/image/t-display-pinout.jpg)
 
 ### Display (ST7789V)
 

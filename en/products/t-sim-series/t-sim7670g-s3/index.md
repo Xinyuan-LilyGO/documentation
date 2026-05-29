@@ -9,6 +9,9 @@ tags: ESP32-S3, SIM7670G, 4G, LTE Cat-1, GPS, IoT, Cellular
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-1.jpg', alt: 'T-SIM7670G-S3 front view' },
   { src: '/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-2.jpg', alt: 'T-SIM7670G-S3 back view' },
+  { src: '/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-3.jpg', alt: 'T-SIM7670G-S3 dimensions' },
+  { src: '/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-info-1.jpg', alt: 'T-SIM7670G-S3 specifications part 1' },
+  { src: '/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-info-2.jpg', alt: 'T-SIM7670G-S3 specifications part 2' },
 ]" />
 
 ## Overview
@@ -89,6 +92,10 @@ LILYGO T-SIM7670G-S3 combines the **ESP32-S3** dual-core LX7 microcontroller wit
 | USB | 1 × USB-C |
 | Battery | 3.7 V Li-Po connector with charging |
 | Antenna | LTE IPEX + GPS IPEX |
+
+![T-SIM7670G-S3 Specifications Part 1](/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-info-1.jpg)
+
+![T-SIM7670G-S3 Specifications Part 2](/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-info-2.jpg)
 
 ## Pin Diagram
 

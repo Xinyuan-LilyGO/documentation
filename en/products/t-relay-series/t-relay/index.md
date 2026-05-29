@@ -9,6 +9,8 @@ tags: ESP32, Relay, Wi-Fi, Bluetooth, IoT, Smart Home
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-relay-series/t-relay/index/image/t-relay-1.jpg', alt: 'T-Relay front view' },
   { src: '/products/t-relay-series/t-relay/index/image/t-relay-2.jpg', alt: 'T-Relay back view' },
+  { src: '/products/t-relay-series/t-relay/index/image/t-relay-3.jpg', alt: 'T-Relay dimensions' },
+  { src: '/products/t-relay-series/t-relay/index/image/t-relay-info.jpg', alt: 'T-Relay specifications' },
 ]" />
 
 ## Overview
@@ -73,9 +75,11 @@ LILYGO T-Relay is an ESP32-based development board with integrated relay outputs
 | Dimensions | <!-- PCB dimensions --> |
 | Weight | <!-- Weight --> |
 
+![T-Relay Specifications](/products/t-relay-series/t-relay/index/image/t-relay-info.jpg)
+
 ## Pin Diagram
 
-### Relay Outputs
+![T-Relay Pinout](/products/t-relay-series/t-relay/index/image/t-relay-pinout.jpg)
 
 | Relay | GPIO |
 | :---: | :--: |

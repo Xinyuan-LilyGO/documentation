@@ -9,6 +9,8 @@ tags: NRF52840, LoRa, SX1262, E-Ink, Meshtastic, GPS, BLE, BHI260AP
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-echo-series/t-echo-plus/index/image/t-echo-plus-1.jpg', alt: 'T-Echo-Plus 正面图' },
   { src: '/products/t-echo-series/t-echo-plus/index/image/t-echo-plus-2.jpg', alt: 'T-Echo-Plus 背面图' },
+  { src: '/products/t-echo-series/t-echo-plus/index/image/t-echo-plus-3.jpg', alt: 'T-Echo-Plus 尺寸图' },
+  { src: '/products/t-echo-series/t-echo-plus/index/image/t-echo-plus-info.jpg', alt: 'T-Echo-Plus 规格参数' },
 ]" />
 
 ## 概述
@@ -52,6 +54,12 @@ LILYGO T-Echo-Plus 是 T-Echo 的升级版本，专为 Meshtastic 网状网络�
 | IMU | BHI260AP 传感器中枢 |
 | 提示 | 蜂鸣器 + 振动马达 |
 | USB | 1 × USB-C |
+
+![T-Echo-Plus 规格参数](/products/t-echo-series/t-echo-plus/index/image/t-echo-plus-info.jpg)
+
+## 引脚图
+
+![T-Echo-Plus 引脚图](/products/t-echo-series/t-echo-plus/index/image/t-echo-plus-pinout.jpg)
 
 ## 软件开发
 

@@ -8,7 +8,6 @@ tags: ESP32, E-Paper, 2.7inch, ePaper, Wi-Fi, Bluetooth, IoT, Low Power
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t5-series/t5-epaper-2.7inch/index/image/t5-epaper-2.7inch-1.jpg', alt: 'T5 E-Paper 2.7 inch front view' },
-  { src: '/products/t5-series/t5-epaper-2.7inch/index/image/t5-epaper-2.7inch-2.jpg', alt: 'T5 E-Paper 2.7 inch back view' },
 ]" />
 
 ## Overview

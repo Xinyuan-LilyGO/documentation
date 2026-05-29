@@ -9,6 +9,7 @@ tags: ESP32, PCIe, Cellular, 4G, LTE, AXP2101, IoT, Modem
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-sim-series/t-pcie/index/image/t-pcie-1.jpg', alt: 'T-PCIE front view' },
   { src: '/products/t-sim-series/t-pcie/index/image/t-pcie-2.jpg', alt: 'T-PCIE back view' },
+  { src: '/products/t-sim-series/t-pcie/index/image/t-pcie-3.jpg', alt: 'T-PCIE dimensions' },
 ]" />
 
 ## Overview

@@ -9,6 +9,7 @@ tags: ESP32, PCIe, 蜂窝, 4G, LTE, AXP2101, IoT, 调制解调器
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-sim-series/t-pcie/index/image/t-pcie-1.jpg', alt: 'T-PCIE 正面' },
   { src: '/products/t-sim-series/t-pcie/index/image/t-pcie-2.jpg', alt: 'T-PCIE 背面' },
+  { src: '/products/t-sim-series/t-pcie/index/image/t-pcie-3.jpg', alt: 'T-PCIE 尺寸图' },
 ]" />
 
 ## 概述

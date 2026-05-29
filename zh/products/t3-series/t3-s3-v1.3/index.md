@@ -9,6 +9,8 @@ tags: ESP32-S3, LoRa, SX1262, SX1280, OLED, Meshtastic, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-1.jpg', alt: 'T3-S3 V1.3 正面图' },
   { src: '/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-2.jpg', alt: 'T3-S3 V1.3 背面图' },
+  { src: '/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-3.jpg', alt: 'T3-S3 V1.3 尺寸图' },
+  { src: '/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-info.jpg', alt: 'T3-S3 V1.3 规格参数' },
 ]" />
 
 ## 概述
@@ -72,6 +74,8 @@ LILYGO T3-S3 V1.3 是 T3-S3 的更新版本，基于 **ESP32-S3FH4R2** 双核 LX
 | USB | 1 × USB-C |
 | 尺寸 | 66 × 36 × 14 mm |
 
+![T3-S3 V1.3 规格参数](/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-info.jpg)
+
 ## 引脚图
 
 ### SX1262 引脚映射
@@ -91,6 +95,14 @@ LILYGO T3-S3 V1.3 是 T3-S3 的更新版本，基于 **ESP32-S3FH4R2** 双核 LX
 | LoRa CS | 7 | ❌ |
 | SD CS | 13 | ❌ |
 | 板载 LED | 37 | ❌ |
+
+### 对比图
+
+![T3-S3 V1.3 对比图](/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-contrast.jpg)
+
+### 引脚图
+
+![T3-S3 V1.3 引脚图](/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-pinout.jpg)
 
 ## 尺寸图
 

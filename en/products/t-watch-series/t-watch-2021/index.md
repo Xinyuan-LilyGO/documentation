@@ -9,6 +9,7 @@ tags: ESP32, Smartwatch, AXP202, BMA423, TFT, Wi-Fi, Bluetooth, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-watch-series/t-watch-2021/index/image/t-watch-2021-1.jpg', alt: 'T-Watch 2021 front view' },
   { src: '/products/t-watch-series/t-watch-2021/index/image/t-watch-2021-2.jpg', alt: 'T-Watch 2021 back view' },
+  { src: '/products/t-watch-series/t-watch-2021/index/image/t-watch-2021-info.jpg', alt: 'T-Watch 2021 specifications' },
 ]" />
 
 ## Overview
@@ -87,6 +88,8 @@ LILYGO T-Watch 2021 is an open-source ESP32-based smart watch development platfo
 | Vibration | Vibration motor |
 | Battery | 380 mAh LiPo |
 | USB | USB-C |
+
+![T-Watch 2021 Specifications](/products/t-watch-series/t-watch-2021/index/image/t-watch-2021-info.jpg)
 
 ## Pin Diagram
 

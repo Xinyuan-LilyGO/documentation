@@ -7,9 +7,9 @@ tags: ESP32, LoRa, SX1276, SX1278, OLED, IoT
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/lora3" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t3-series/t3-lora32/index/image/t3-lora32-1.jpg', alt: 'LoRa32 front view' },
-  { src: '/products/t3-series/t3-lora32/index/image/t3-lora32-2.jpg', alt: 'LoRa32 product photo' },
-  { src: '/products/t3-series/t3-lora32/index/image/t3-lora32-3.jpg', alt: 'LoRa32 pin diagram' },
+  { src: '/products/t3-series/t3-lora32/index/image/lora32-1.jpg', alt: 'LoRa32 正面图' },
+  { src: '/products/t3-series/t3-lora32/index/image/lora32-2.jpg', alt: 'LoRa32 实物图' },
+  { src: '/products/t3-series/t3-lora32/index/image/lora32-pin.jpg', alt: 'LoRa32 引脚图' }
 ]" />
 
 ## Overview

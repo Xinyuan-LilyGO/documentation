@@ -9,6 +9,9 @@ tags: ESP32-S3, SIM7080G, NB-IoT, Cat-M1, GNSS, GPS, IoT, LTE
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-1.jpg', alt: 'T-SIM7080-S3 正面' },
   { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-2.jpg', alt: 'T-SIM7080-S3 背面' },
+  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-3.jpg', alt: 'T-SIM7080-S3 尺寸图' },
+  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-1.jpg', alt: 'T-SIM7080-S3 规格参数 1' },
+  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-2.jpg', alt: 'T-SIM7080-S3 规格参数 2' },
 ]" />
 
 ## 概述
@@ -89,6 +92,10 @@ LILYGO T-SIM7080-S3 是一款紧凑型物联网开发板，将 **ESP32-S3** 双�
 | USB | USB-C（ESP32-S3）+ Micro-USB（SIM7080G 固件） |
 | 重量 | <!-- placeholder --> |
 | 外包装尺寸 | <!-- placeholder --> |
+
+![T-SIM7080-S3 规格参数 1](/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-1.jpg)
+
+![T-SIM7080-S3 规格参数 2](/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-2.jpg)
 
 ## 引脚图
 

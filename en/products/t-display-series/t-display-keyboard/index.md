@@ -9,6 +9,7 @@ tags: ESP32, ST7789V, TFT, Keyboard, Wi-Fi, Bluetooth, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-display-series/t-display-keyboard/index/image/t-display-keyboard-1.jpg', alt: 'T-Display-Keyboard front view' },
   { src: '/products/t-display-series/t-display-keyboard/index/image/t-display-keyboard-2.jpg', alt: 'T-Display-Keyboard back view' },
+  { src: '/products/t-display-series/t-display-keyboard/index/image/t-display-keyboard-3.jpg', alt: 'T-Display-Keyboard dimensions' },
 ]" />
 
 ## Overview

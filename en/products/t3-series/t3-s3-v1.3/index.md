@@ -9,6 +9,8 @@ tags: ESP32-S3, LoRa, SX1262, SX1280, OLED, Meshtastic, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-1.jpg', alt: 'T3-S3 V1.3 front view' },
   { src: '/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-2.jpg', alt: 'T3-S3 V1.3 back view' },
+  { src: '/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-3.jpg', alt: 'T3-S3 V1.3 dimensions' },
+  { src: '/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-info.jpg', alt: 'T3-S3 V1.3 specifications' },
 ]" />
 
 ## Overview
@@ -124,6 +126,8 @@ LILYGO T3-S3 V1.3 is an updated revision of the T3-S3, based on the **ESP32-S3FH
 | Weight | <!-- placeholder --> |
 | Package size | <!-- placeholder --> |
 
+![T3-S3 V1.3 Specifications](/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-info.jpg)
+
 ## Pin Diagram
 
 ### SX1262 Pin Mapping
@@ -204,6 +208,14 @@ LILYGO T3-S3 V1.3 is an updated revision of the T3-S3, based on the **ESP32-S3FH
 | BOOT Button | 0 | ❌ |
 | Battery ADC | 1 | ❌ |
 | Onboard LED | 37 | ❌ |
+
+### Contrast Comparison
+
+![T3-S3 V1.3 Contrast](/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-contrast.jpg)
+
+### Pinout Diagram
+
+![T3-S3 V1.3 Pinout](/products/t3-series/t3-s3-v1.3/index/image/t3-s3-v1.3-pinout.jpg)
 
 ## Dimensions
 

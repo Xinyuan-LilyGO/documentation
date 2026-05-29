@@ -9,6 +9,7 @@ tags: ESP32-S3, AMOLED, Touch, Display, WiFi, Bluetooth
 <ImageGallery :columns="3" :images="[
   { src: '/products/t4-series/t4-s3/index/image/t4-s3-1.jpg', alt: 'T4-S3 正面' },
   { src: '/products/t4-series/t4-s3/index/image/t4-s3-2.jpg', alt: 'T4-S3 背面' },
+  { src: '/products/t4-series/t4-s3/index/image/t4-s3-3.jpg', alt: 'T4-S3 尺寸图' },
 ]" />
 
 ## 概述
@@ -95,7 +96,11 @@ LILYGO T4-S3 是一款基于 **ESP32-S3R8** 双核 LX7 微控制器的紧凑型�
 
 ## 引脚图
 
-<!-- GPIO 映射关系表。 -->
+![T4-S3 规格参数](/products/t4-series/t4-s3/index/image/t4-s3-info.jpg)
+
+### 引脚图
+
+![T4-S3 引脚图](/products/t4-series/t4-s3/index/image/t4-s3-pinout.jpg)
 
 ## 尺寸图
 

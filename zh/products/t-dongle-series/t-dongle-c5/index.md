@@ -9,6 +9,7 @@ tags: ESP32-C5, USB Dongle, TFT, Wi-Fi 6, 蓝牙, TF卡, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-dongle-series/t-dongle-c5/index/image/t-dongle-c5-1.jpg', alt: 'T-Dongle-C5 正面' },
   { src: '/products/t-dongle-series/t-dongle-c5/index/image/t-dongle-c5-2.jpg', alt: 'T-Dongle-C5 背面' },
+  { src: '/products/t-dongle-series/t-dongle-c5/index/image/t-dongle-c5-3.jpg', alt: 'T-Dongle-C5 尺寸图' },
 ]" />
 
 ## 概述
@@ -84,13 +85,15 @@ LILYGO T-Dongle-C5 是一款基于 **ESP32-C5** 的紧凑型 USB 加密狗开发
 | USB | USB Type-A 插头 |
 | 尺寸 | 58 × 18 × 9 mm |
 
+![T-Dongle-C5 规格参数](/products/t-dongle-series/t-dongle-c5/index/image/t-dongle-c5-info.jpg)
+
 ## 引脚图
 
-<!-- GPIO 映射表。 -->
+![T-Dongle-C5 引脚图](/products/t-dongle-series/t-dongle-c5/index/image/t-dongle-c5-pinout.jpg)
 
 ## 尺寸图
 
-<!-- PCB 和外壳尺寸图。 -->
+![T-Dongle-C5 尺寸图](/products/t-dongle-series/t-dongle-c5/index/image/t-dongle-c5-3.jpg)
 
 ## 原理图
 

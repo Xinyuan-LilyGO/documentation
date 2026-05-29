@@ -9,6 +9,7 @@ tags: ESP32-S3, AMOLED, RM67162, Touch, Wi-Fi, Bluetooth, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-display-series/t-display-s3-amoled/index/image/t-display-s3-amoled-1.jpg', alt: 'T-Display-S3-AMOLED front view' },
   { src: '/products/t-display-series/t-display-s3-amoled/index/image/t-display-s3-amoled-2.jpg', alt: 'T-Display-S3-AMOLED back view' },
+  { src: '/products/t-display-series/t-display-s3-amoled/index/image/t-display-s3-amoled-3.jpg', alt: 'T-Display-S3-AMOLED dimensions' },
 ]" />
 
 ## Overview
@@ -90,9 +91,11 @@ LILYGO T-Display-S3-AMOLED is an upgraded version of the T-Display-S3, featuring
 | Buttons | 2 × programmable push buttons |
 | USB | 1 × USB-C |
 
+![T-Display-S3-AMOLED Specifications](/products/t-display-series/t-display-s3-amoled/index/image/t-display-s3-amoled-info.jpg)
+
 ## Pin Diagram
 
-<!-- GPIO mapping table. -->
+![T-Display-S3-AMOLED Pinout](/products/t-display-series/t-display-s3-amoled/index/image/t-display-s3-amoled-pinout.jpg)
 
 ### Display (RM67162)
 

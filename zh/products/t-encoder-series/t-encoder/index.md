@@ -9,6 +9,8 @@ tags: ESP32-S3, 圆形显示屏, GC9A01, 旋转编码器, Wi-Fi, 蓝牙, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-encoder-series/t-encoder/index/image/t-encoder-1.jpg', alt: 'T-Encoder 正面' },
   { src: '/products/t-encoder-series/t-encoder/index/image/t-encoder-2.jpg', alt: 'T-Encoder 背面' },
+  { src: '/products/t-encoder-series/t-encoder/index/image/t-encoder-3.jpg', alt: 'T-Encoder 尺寸图' },
+  { src: '/products/t-encoder-series/t-encoder/index/image/t-encoder-info.jpg', alt: 'T-Encoder 规格参数' },
 ]" />
 
 ## 概述
@@ -84,7 +86,11 @@ LILYGO T-Encoder 是一款紧凑型 ESP32-S3 开发板，将 **1.28 英寸 GC9A0
 | USB | 1 × USB-C |
 | 扩展 | 1 × QWIIC |
 
+![T-Encoder 规格参数](/products/t-encoder-series/t-encoder/index/image/t-encoder-info.jpg)
+
 ## 引脚图
+
+![T-Encoder 引脚图](/products/t-encoder-series/t-encoder/index/image/t-encoder-pinout.jpg)
 
 ### 显示屏（GC9A01）
 

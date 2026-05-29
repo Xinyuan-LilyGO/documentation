@@ -9,6 +9,9 @@ tags: ESP32-S3, SIM7670G, 4G, LTE Cat-1, GPS, IoT, 蜂窝
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-1.jpg', alt: 'T-SIM7670G-S3 正面' },
   { src: '/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-2.jpg', alt: 'T-SIM7670G-S3 背面' },
+  { src: '/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-3.jpg', alt: 'T-SIM7670G-S3 尺寸图' },
+  { src: '/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-info-1.jpg', alt: 'T-SIM7670G-S3 规格参数 1' },
+  { src: '/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-info-2.jpg', alt: 'T-SIM7670G-S3 规格参数 2' },
 ]" />
 
 ## 概述
@@ -89,6 +92,10 @@ LILYGO T-SIM7670G-S3 将 **ESP32-S3** 双核 LX7 微控制器与 **SIMCom SIM767
 | USB | 1 × USB-C |
 | 电池 | 3.7 V 锂电接口及充电 |
 | 天线 | LTE IPEX + GPS IPEX |
+
+![T-SIM7670G-S3 规格参数 1](/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-info-1.jpg)
+
+![T-SIM7670G-S3 规格参数 2](/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-info-2.jpg)
 
 ## 引脚图
 

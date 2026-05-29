@@ -9,6 +9,7 @@ tags: ESP32-C5, WiFi6, 5GHz, Thread, Zigbee, Bluetooth5, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t7-series/t7-c5/index/image/t7-c5-1.jpg', alt: 'T7-C5 正面图' },
   { src: '/products/t7-series/t7-c5/index/image/t7-c5-2.jpg', alt: 'T7-C5 背面图' },
+  { src: '/products/t7-series/t7-c5/index/image/t7-c5-3.jpg', alt: 'T7-C5 尺寸图' },
 ]" />
 
 ## 概述
@@ -47,6 +48,12 @@ LILYGO T7-C5 基于 **ESP32-C5-MINI-1** 模组，这是乐鑫首款支持 **双�
 | 蓝牙 | Bluetooth 5（LE） |
 | 802.15.4 | Thread / Zigbee |
 | USB | 1 × USB-C |
+
+![T7-C5 规格参数](/products/t7-series/t7-c5/index/image/t7-c5-info.jpg)
+
+## 引脚图
+
+![T7-C5 引脚图](/products/t7-series/t7-c5/index/image/t7-c5-pinout.jpg)
 
 ## 软件开发
 

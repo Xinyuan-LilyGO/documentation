@@ -9,6 +9,7 @@ tags: ESP32-C5, WiFi6, 5GHz, Thread, Zigbee, Bluetooth5, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t7-series/t7-c5/index/image/t7-c5-1.jpg', alt: 'T7-C5 front view' },
   { src: '/products/t7-series/t7-c5/index/image/t7-c5-2.jpg', alt: 'T7-C5 back view' },
+  { src: '/products/t7-series/t7-c5/index/image/t7-c5-3.jpg', alt: 'T7-C5 dimensions' },
 ]" />
 
 ## Overview
@@ -56,6 +57,12 @@ LILYGO T7-C5 is a development board based on the **ESP32-C5-MINI-1** module — 
 | Bluetooth | Bluetooth 5 (LE) |
 | 802.15.4 | Thread / Zigbee |
 | USB | 1 × USB-C |
+
+![T7-C5 Specifications](/products/t7-series/t7-c5/index/image/t7-c5-info.jpg)
+
+## Pin Diagram
+
+![T7-C5 Pinout](/products/t7-series/t7-c5/index/image/t7-c5-pinout.jpg)
 
 ## Software Libraries
 

@@ -9,6 +9,8 @@ tags: ESP32-S3, Camera, OV2640, OLED, PIR, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-1.jpg', alt: 'T-Camera-S3 front view' },
   { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-2.jpg', alt: 'T-Camera-S3 back view' },
+  { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-3.jpg', alt: 'T-Camera-S3 dimensions' },
+  { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-info.jpg', alt: 'T-Camera-S3 specifications' },
 ]" />
 
 ## Overview
@@ -86,9 +88,11 @@ LILYGO T-Camera-S3 is a compact camera development board based on the **ESP32-S3
 | USB | 1 × Type-C |
 | Battery | JST connector, Li-Po supported |
 
+![T-Camera-S3 Specifications](/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-info.jpg)
+
 ## Pin Diagram
 
-<!-- GPIO mapping table. -->
+![T-Camera-S3 Pinout](/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-pinout.jpg)
 
 ### Camera (OV2640)
 

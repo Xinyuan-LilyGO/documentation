@@ -9,6 +9,8 @@ tags: ESP32-S3, Camera, OV2640, OLED, PIR, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-1.jpg', alt: 'T-Camera-S3 正面' },
   { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-2.jpg', alt: 'T-Camera-S3 背面' },
+  { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-3.jpg', alt: 'T-Camera-S3 尺寸图' },
+  { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-info.jpg', alt: 'T-Camera-S3 规格参数' },
 ]" />
 
 ## 概述
@@ -86,9 +88,11 @@ LILYGO T-Camera-S3 是一款基于 **ESP32-S3FN16R8**（双核 LX7 @ 240 MHz）�
 | USB | 1 × Type-C |
 | 电池 | JST 接口，支持锂电池 |
 
+![T-Camera-S3 规格参数](/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-info.jpg)
+
 ## 引脚图
 
-<!-- GPIO 映射关系表。 -->
+![T-Camera-S3 引脚图](/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-pinout.jpg)
 
 ### 摄像头（OV2640）
 

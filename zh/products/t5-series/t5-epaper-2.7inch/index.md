@@ -8,7 +8,6 @@ tags: ESP32, 电子纸, 2.7寸, ePaper, Wi-Fi, 蓝牙, IoT, 低功耗
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t5-series/t5-epaper-2.7inch/index/image/t5-epaper-2.7inch-1.jpg', alt: 'T5 E-Paper 2.7 inch 正面' },
-  { src: '/products/t5-series/t5-epaper-2.7inch/index/image/t5-epaper-2.7inch-2.jpg', alt: 'T5 E-Paper 2.7 inch 背面' },
 ]" />
 
 ## 概述

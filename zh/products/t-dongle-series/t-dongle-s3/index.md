@@ -9,6 +9,7 @@ tags: ESP32-S3, USB Dongle, TFT, Wi-Fi, Bluetooth, APA102, TF Card
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-dongle-series/t-dongle-s3/index/image/t-dongle-s3-1.jpg', alt: 'T-Dongle-S3 正面' },
   { src: '/products/t-dongle-series/t-dongle-s3/index/image/t-dongle-s3-2.jpg', alt: 'T-Dongle-S3 背面' },
+  { src: '/products/t-dongle-series/t-dongle-s3/index/image/t-dongle-s3-3.jpg', alt: 'T-Dongle-S3 尺寸图' },
 ]" />
 
 ## 概述
@@ -90,7 +91,9 @@ LILYGO T-Dongle-S3 是一款功能丰富的 ESP32-S3 USB 无线开发板，采�
 | 电池接口 | MX 1.25 mm 2 针 |
 | UART 接口 | JST SH 1.0 mm 4 针 |
 | 天线 | 板载天线 + IPEX |
-| 外包装尺寸 | <!-- 尺寸 --> |
+| 外包装尺寸 | 58 × 18 × 9 mm |
+
+![T-Dongle-S3 规格参数](/products/t-dongle-series/t-dongle-s3/index/image/t-dongle-s3-info.jpg)
 
 ## 引脚图
 
@@ -118,9 +121,13 @@ LILYGO T-Dongle-S3 是一款功能丰富的 ESP32-S3 USB 无线开发板，采�
 | :------: | :----: |
 | ESP32-S3 | GPIO0  |
 
+### 引脚图
+
+![T-Dongle-S3 引脚图](/products/t-dongle-series/t-dongle-s3/index/image/t-dongle-s3-pinout.jpg)
+
 ## 尺寸图
 
-<!-- PCB 和外壳尺寸图。 -->
+![T-Dongle-S3 尺寸图](/products/t-dongle-series/t-dongle-s3/index/image/t-dongle-s3-3.jpg)
 
 ## 原理图
 

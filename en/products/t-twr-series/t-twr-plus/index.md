@@ -9,6 +9,8 @@ tags: ESP32-S3, SA868, VHF, UHF, Walkie-Talkie, GPS, OLED, Radio, APRS
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-twr-series/t-twr-plus/index/image/t-twr-plus-1.jpg', alt: 'T-TWR-Plus front view' },
   { src: '/products/t-twr-series/t-twr-plus/index/image/t-twr-plus-2.jpg', alt: 'T-TWR-Plus back view' },
+  { src: '/products/t-twr-series/t-twr-plus/index/image/t-twr-plus-3.jpg', alt: 'T-TWR-Plus dimensions' },
+  { src: '/products/t-twr-series/t-twr-plus/index/image/t-twr-plus-info.jpg', alt: 'T-TWR-Plus specifications' },
 ]" />
 
 ## Overview
@@ -73,9 +75,11 @@ LILYGO T-TWR-Plus is a programmable walkie-talkie development board based on **E
 | Battery | 21700 Li-Ion holder |
 | USB | 1 × USB-C |
 
+![T-TWR-Plus Specifications](/products/t-twr-series/t-twr-plus/index/image/t-twr-plus-info.jpg)
+
 ## Pin Diagram
 
-<!-- GPIO mapping table. -->
+![T-TWR-Plus Pinout](/products/t-twr-series/t-twr-plus/index/image/t-twr-plus-pinout.jpg)
 
 ## Dimensions
 

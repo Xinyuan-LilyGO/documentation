@@ -9,6 +9,7 @@ tags: ESP32-C5, USB Dongle, TFT, Wi-Fi 6, Bluetooth, TF Card, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-dongle-series/t-dongle-c5/index/image/t-dongle-c5-1.jpg', alt: 'T-Dongle-C5 front view' },
   { src: '/products/t-dongle-series/t-dongle-c5/index/image/t-dongle-c5-2.jpg', alt: 'T-Dongle-C5 back view' },
+  { src: '/products/t-dongle-series/t-dongle-c5/index/image/t-dongle-c5-3.jpg', alt: 'T-Dongle-C5 dimensions' },
 ]" />
 
 ## Overview
@@ -84,13 +85,15 @@ LILYGO T-Dongle-C5 is a compact ESP32-C5-based USB dongle development board in a
 | USB | USB Type-A plug |
 | Dimensions | 58 × 18 × 9 mm |
 
+![T-Dongle-C5 Specifications](/products/t-dongle-series/t-dongle-c5/index/image/t-dongle-c5-info.jpg)
+
 ## Pin Diagram
 
-<!-- GPIO mapping table. -->
+![T-Dongle-C5 Pinout](/products/t-dongle-series/t-dongle-c5/index/image/t-dongle-c5-pinout.jpg)
 
 ## Dimensions
 
-<!-- PCB and enclosure dimension diagrams. -->
+![T-Dongle-C5 Dimensions Diagram](/products/t-dongle-series/t-dongle-c5/index/image/t-dongle-c5-3.jpg)
 
 ## Schematic
 

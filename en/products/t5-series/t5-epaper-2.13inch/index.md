@@ -9,6 +9,7 @@ tags: ESP32, E-Paper, 2.13inch, SSD1680, Wi-Fi, Bluetooth, Ultra-Low-Power, IoT
 <ImageGallery :columns="3" :images="[
   { src: '/products/t5-series/t5-epaper-2.13inch/index/image/t5-epaper-2.13inch-1.jpg', alt: 'T5 ePaper 2.13inch front view' },
   { src: '/products/t5-series/t5-epaper-2.13inch/index/image/t5-epaper-2.13inch-2.jpg', alt: 'T5 ePaper 2.13inch back view' },
+  { src: '/products/t5-series/t5-epaper-2.13inch/index/image/t5-epaper-2.13inch-3.jpg', alt: 'T5 ePaper 2.13inch dimensions' },
 ]" />
 
 ## Overview
