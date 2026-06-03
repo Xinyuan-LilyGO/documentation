@@ -1,20 +1,20 @@
 ---
-title: T-Watch S3 Plus
+title: T-Watch S3
 show_source: false
-tags: T-Watch, ESP32-S3, Smart Watch, GPS, LoRa
+tags: T-Watch, ESP32-S3, Smart Watch, LoRa
 ---
 
-# {{ $frontmatter.title }}
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-watch-s3" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-watch-series/t-watch-s3/index/image/主图.jpg', alt: 'T-Watch S3 Plus front view' },
-  { src: '/products/t-watch-series/t-watch-s3/index/image/watch2020v3_s3.jpg', alt: 'T-Watch S3 Plus physical image' },
-  { src: '/products/t-watch-series/t-watch-s3/index/image/watchs3英文版.jpg', alt: 'T-Watch S3 Plus pin diagram' }
+  { src: '/products/t-watch-series/t-watch-s3/index/image/t-watch-s3-1.jpg', alt: 'T-Watch S3 front view' },
+  { src: '/products/t-watch-series/t-watch-s3/index/image/t-watch-s3-3.jpg', alt: 'T-Watch S3 pin diagram' },
+  { src: '/products/t-watch-series/t-watch-s3/index/image/t-watch-s3-info.jpg', alt: 'T-Watch S3 information' }
 ]" />
 
 ## Overview
 
-T-Watch S3 Plus is an enhanced version of T-Watch S3, adding GPS functionality. It is a multifunctional smart wearable device integrating high-performance hardware with wireless communication technology, suitable for sports health monitoring, remote interaction, and audio scenarios. Core features include a **1.54-inch 240 × 240 LCD**, **BMA423** 3-axis sensor, capacitive touch, **Max98357A** audio amplifier and PDM microphone. Available in **SX1262** and **SX1280** LoRa versions. **51.5 × 42 × 20 mm** (without strap).
+T-Watch S3 is a multifunctional smart wearable device integrating high-performance hardware with wireless communication technology, suitable for sports health monitoring, remote interaction, and audio scenarios. Core features include a **1.54-inch 240 × 240 LCD**, **BMA423** 3-axis sensor, capacitive touch, **Max98357A** audio amplifier and PDM microphone. Available in **SX1262** and **SX1280** LoRa versions. **51.5 × 42 × 20 mm** (without strap).
 
 ## Quick Start
 
@@ -95,11 +95,18 @@ T-Watch S3 Plus is an enhanced version of T-Watch S3, adding GPS functionality. 
 | Power Input | 5 V / 500 mA |
 | Dimensions | 51.5 × 42 × 20 mm (without strap) |
 
+## Product Comparison
+
+<img src="/products/t-watch-series/t-watch-s3/index/image/t-watch-s3-compare.jpg" alt="T-Watch S3 product comparison" width=100%>
+
 ## Pin Diagram
 
-<img src="/products/t-watch-series/t-watch-s3/index/image/watchs3英文版.jpg" alt="T-Watch S3 Plus pin diagram" width=100%>
+<img src="/products/t-watch-series/t-watch-s3/index/image/t-watch-s3-pinout.jpg" alt="T-Watch S3 pin diagram" width=100%>
 
 ## Dimension Diagram
+
+<img src="/products/t-watch-series/t-watch-s3/index/image/t-watch-s3-info.jpg" alt="T-Watch S3 Dimension" width=100%>
+
 
 ## Schematic
 
@@ -132,4 +139,4 @@ T-Watch S3 Plus is an enhanced version of T-Watch S3, adding GPS functionality. 
 
 | Version | Release Date | Update Description |
 | :-----: | :----------: | :----------------: |
-| T-Watch-S3-Plus V1.0 | — | Initial version with GPS functionality |
+| T-Watch-S3 V1.0 | — | Initial version |
