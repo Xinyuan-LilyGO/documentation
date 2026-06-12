@@ -140,7 +140,7 @@ T-CameraPlus-S3是一款基于ESP32-S3主控芯片的多功能智能硬件开发
 | MOSI | IO35 |
 | MISO | IO37 |
 
-| 电源芯片 SY6970 | ESP32S3 引脚 |
+| 电源芯片 SY6970(0x6A) | ESP32S3 引脚 |
 | :----: | :----: |
 | SDA | IO1 |
 | SCL | IO2 |
@@ -199,7 +199,7 @@ T-CameraPlus-S3是一款基于ESP32-S3主控芯片的多功能智能硬件开发
 | MOSI | IO34 |
 | MISO | IO48 |
 
-| 电源芯片 SY6970 | ESP32S3 引脚 |
+| 电源芯片 SY6970(0x6A) | ESP32S3 引脚 |
 | :----: | :----: |
 | SDA | IO33 |
 | SCL | IO37 |
@@ -237,8 +237,8 @@ T-CameraPlus-S3是一款基于ESP32-S3主控芯片的多功能智能硬件开发
 
 ## 原理图
 
-* [T-CameraPlus-S3_V1.0-V1.1](https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/project/T-CameraPlus-S3_V1.0-V1.1_20241109.pdf)
-* [T-CameraPlus-S3_V1.2](https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/project/T-CameraPlus-S3_V1.2_20240417.pdf)
+* [T-CameraPlus-S3_V1.0-V1.1](/products/t-camera-series/t-camera-plus-s3/index/hardware/T-CameraPlus-S3_V1.0-V1.1_20241109.pdf)
+* [T-CameraPlus-S3_V1.2](/products/t-camera-series/t-camera-plus-s3/index/hardware/T-CameraPlus-S3_V1.2_20240417.pdf)
 
 ## 数据手册
 

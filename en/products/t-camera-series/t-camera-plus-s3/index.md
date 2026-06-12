@@ -150,7 +150,7 @@ T-Camera Plus S3 is a versatile smart hardware development board based on **ESP3
 
 ### Power
 
-| SY6970    | SDA    | SCL    | INT    |
+| SY6970(0x6A)    | SDA    | SCL    | INT    |
 | :-------: | :----: | :----: | :----: |
 | V1.0-V1.1 | GPIO1  | GPIO2  | GPIO47 |
 | V1.2      | GPIO33 | GPIO37 | NC     |
@@ -166,8 +166,8 @@ T-Camera Plus S3 is a versatile smart hardware development board based on **ESP3
 
 ## Schematic
 
-* [T-CameraPlus-S3 V1.0-V1.1 Schematic](https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/project/T-CameraPlus-S3_V1.0-V1.1_20241109.pdf)
-* [T-CameraPlus-S3 V1.2 Schematic](https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/project/T-CameraPlus-S3_V1.2_20240417.pdf)
+* [T-CameraPlus-S3 V1.0-V1.1 Schematic](/products/t-camera-series/t-camera-plus-s3/index/hardware/T-CameraPlus-S3_V1.0-V1.1_20241109.pdf)
+* [T-CameraPlus-S3 V1.2 Schematic](public/products/t-camera-series/t-camera-plus-s3/index/hardware/T-CameraPlus-S3_V1.2_20240417.pdf)
 
 ## Datasheet
 
