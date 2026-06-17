@@ -6,9 +6,9 @@ tags: ESP32-S3, WiFi-HaLow, 802.11ah, Camera, IoT, Long Range
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-halow" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-halow/index/image/t-halow-1.jpg', alt: 'T-Halow front view' },
-  { src: '/products/t-sim-series/t-halow/index/image/t-halow-2.jpg', alt: 'T-Halow physical image' },
-  { src: '/products/t-sim-series/t-halow/index/image/t-halow-pin.jpg', alt: 'T-Halow pin diagram' }
+  { src: '/products/t-halow-series/t-halow/index/image/t-halow-1.jpg', alt: 'T-Halow front view' },
+  { src: '/products/t-halow-series/t-halow/index/image/t-halow-2.jpg', alt: 'T-Halow physical image' },
+  { src: '/products/t-halow-series/t-halow/index/image/t-halow-pin.jpg', alt: 'T-Halow pin diagram' }
 ]" />
 
 ## Overview
@@ -94,7 +94,7 @@ T-Halow is a long-range IoT development board based on **ESP32-S3** (16 MB Flash
 
 ## Pin Diagram
 
-<img src="/products/t-sim-series/t-halow/index/image/t-halow-pin.jpg" alt="T-Halow pin diagram" width=100%>
+<img src="/products/t-halow-series/t-halow/index/image/t-halow-pin.jpg" alt="T-Halow pin diagram" width=100%>
 
 ### Pin Mapping
 

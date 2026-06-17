@@ -6,9 +6,9 @@ tags: ESP32-P4, ESP32-C6, WiFi-HaLow, 802.11ah, MIPI, Camera, IoT, LongRange
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-halow-p4" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-halow-p4/index/image/t-halow-p4-1.jpg', alt: 'T-Halow P4 front view' },
-  { src: '/products/t-sim-series/t-halow-p4/index/image/t-halow-p4-2.jpg', alt: 'T-Halow P4 physical image' },
-  { src: '/products/t-sim-series/t-halow-p4/index/image/t-halow-p4-pin.jpg', alt: 'T-Halow P4 pin diagram' }
+  { src: '/products/t-halow-series/t-halow-p4/index/image/t-halow-p4-1.jpg', alt: 'T-Halow P4 front view' },
+  { src: '/products/t-halow-series/t-halow-p4/index/image/t-halow-p4-2.jpg', alt: 'T-Halow P4 physical image' },
+  { src: '/products/t-halow-series/t-halow-p4/index/image/t-halow-p4-pin.jpg', alt: 'T-Halow P4 pin diagram' }
 ]" />
 
 ## Overview
@@ -77,7 +77,7 @@ T-Halow P4 is a high-performance IoT development board based on **ESP32-P4** (16
 
 ## Pin Diagram
 
-<img src="/products/t-sim-series/t-halow-p4/index/image/t-halow-p4-pin.jpg" alt="T-Halow P4 pin diagram" width=100%>
+<img src="/products/t-halow-series/t-halow-p4/index/image/t-halow-p4-pin.jpg" alt="T-Halow P4 pin diagram" width=100%>
 
 ### Pin Mapping
 

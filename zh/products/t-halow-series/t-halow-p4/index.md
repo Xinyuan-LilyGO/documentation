@@ -7,9 +7,9 @@ tags: ESP32-P4, ESP32-C6, WiFi-HaLow, 802.11ah, MIPI, Camera, IoT, LongRange
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-halow-p4" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-halow-p4/index/image/t-halow-p4-1.jpg', alt: 'T-Halow-P4 正面图' },
-  { src: '/products/t-sim-series/t-halow-p4/index/image/t-halow-p4-2.jpg', alt: 'T-Halow-P4 实物图' },
-  { src: '/products/t-sim-series/t-halow-p4/index/image/t-halow-p4-pin.jpg', alt: 'T-Halow-P4 引脚图' }
+  { src: '/products/t-halow-series/t-halow-p4/index/image/t-halow-p4-1.jpg', alt: 'T-Halow-P4 正面图' },
+  { src: '/products/t-halow-series/t-halow-p4/index/image/t-halow-p4-2.jpg', alt: 'T-Halow-P4 实物图' },
+  { src: '/products/t-halow-series/t-halow-p4/index/image/t-halow-p4-pin.jpg', alt: 'T-Halow-P4 引脚图' }
 ]" />
 
 ## 概述
@@ -72,7 +72,7 @@ TX-AH 模块非 OS 驱动：[taixin-nonos-driver](https://www.taixin-semi.com/up
 
 ## 产品参数
 
-<img src="/products/t-sim-series/t-halow-p4/index/image/t-halow-p4-info.jpg" alt="T-Halow-P4 规格图" width=100%>
+<img src="/products/t-halow-series/t-halow-p4/index/image/t-halow-p4-info.jpg" alt="T-Halow-P4 规格图" width=100%>
 
 | 项目 | 参数 |
 | :-- | :-- |
@@ -99,7 +99,7 @@ TX-AH 模块非 OS 驱动：[taixin-nonos-driver](https://www.taixin-semi.com/up
 
 ## 引脚图
 
-<img src="/products/t-sim-series/t-halow-p4/index/image/t-halow-p4-pin.jpg" alt="T-Halow-P4 引脚图" width=100%>
+<img src="/products/t-halow-series/t-halow-p4/index/image/t-halow-p4-pin.jpg" alt="T-Halow-P4 引脚图" width=100%>
 
 ### 引脚映射
 
