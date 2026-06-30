@@ -16,7 +16,10 @@ tags: ESP32-S3, LoRa, GPS, Trackball, Keyboard
 
 LILYGO T-Deck Plus 是 T-Deck 的升级版本，基于 ESP32-S3 主控，搭载 2.8 英寸 ST7789 LCD（320×240）、轨迹球导航模块、物理键盘（I²C）、SX1262 LoRa、MIA-M10Q GNSS、ES7210 麦克风阵列和 TF 卡，支持 2000mAh 锂电池供电。
 
-> **注意：** T-Deck-Plus 的 Grove 接口引脚已分配给 GPS 模块，Grove 接口不可使用。T-Deck 版本无触摸屏，使用轨迹球导航代替。
+> **注意：**
+> 1. T-Deck-Plus 的 Grove 接口引脚已分配给 GPS 模块，Grove 接口不可使用。T-Deck 版本无触摸屏，使用轨迹球导航代替。
+> 2. LoRa 无线电模块与其他外设共享 SPI 总线。一次只能选择一个 SPI 设备，因此请确保在与 SX1262 通信之前，所有其他 SPI 设备的 CS 线都处于高电平（非活动状态）。
+> 3. 使用电池供电时，**GPIO10 必须设置为高电平**。如果电路板通过 USB 供电，则可以忽略此要求。
 
 ## 快速开始
 

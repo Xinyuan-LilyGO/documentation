@@ -18,6 +18,8 @@ LILYGO T-Deck is a highly integrated multi-functional embedded development platf
 > **Notes:**
 > 1. T-Deck-Plus has allocated the **Grove** interface pins for GPS module use — the Grove interface on T-Deck-Plus cannot be used as a general-purpose interface.
 > 2. T-Deck updated the [TFT_eSPI ST7789 initialization sequence](https://github.com/Xinyuan-LilyGO/T-Deck/commit/6adb8884c689f174c29a6d7172a0daa367a582eb) on 2024-07-26. If you encounter incorrect screen display, check that the initialization sequence in the repo matches.
+> 3. The LoRa radio module shares the SPI bus with other peripherals. Only one SPI device can be selected at a time — ensure all other SPI device CS lines are high (inactive) before communicating with the SX1262.
+> 4. When powered by battery, **GPIO10 must be set HIGH**. This requirement can be ignored when the board is powered via USB.
 
 ## Quick Start
 

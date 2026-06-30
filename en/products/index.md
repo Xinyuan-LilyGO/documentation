@@ -19,6 +19,7 @@ category_order:
   - t-dongle-series
   - t-eth-series
   - t-encoder-series
+  - t-halow-series
   - t7-series
   - t5-series
   - t8-series
