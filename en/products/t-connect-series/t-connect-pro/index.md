@@ -7,14 +7,13 @@ tags: ESP32-S3, LoRa, CAN, Ethernet, Industrial
 # {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro1.jpg', alt: 'T-Connect Pro front view' },
-  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro2.jpg', alt: 'T-Connect Pro physical image' },
-  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-en.jpg', alt: 'T-Connect Pro pin diagram' }
+  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-1.jpg', alt: 'T-Connect Pro front view' },
+  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-2.jpg', alt: 'T-Connect Pro side view' }
 ]" />
 
 ## Overview
 
-T-Connect Pro is a 3-layer stackable industrial-grade module based on **ESP32-S3-R8** (16 MB Flash, 8 MB PSRAM). Integrates **SX1262 LoRa** (HPD16A, 433–920 MHz), **ST7796 TFT LCD** (222 × 480, SPI) with **CST226SE** capacitive touch, **W5500 Ethernet**, **CAN** (TD501MCANFD), **RS485** (TD501D485H-A), **RS232** (TD501D232H), **AXP2101** PMU, and 10 A relay. **12–24 V DC** wide-range input. Suitable for complex industrial automation and IoT terminals.
+T-Connect Pro is a 3-layer stackable industrial-grade module based on **ESP32-S3-R8** (16 MB Flash, 8 MB PSRAM). Integrates **SX1262 LoRa** (HPD16A, 433–920 MHz), **ST7796 TFT LCD** (222 × 480, SPI) with **CST226SE** capacitive touch, **W5500 Ethernet**, **CAN** (TD501MCANFD), **RS485** (TD501D485H-A), **RS232** (TD501D232H), and 10 A relay. **12–24 V DC** wide-range input. Suitable for complex industrial automation and IoT terminals.
 
 ## Quick Start
 
@@ -25,9 +24,21 @@ T-Connect Pro is a 3-layer stackable industrial-grade module based on **ESP32-S3
 | [Original_Test](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/Original_Test) | ✓ | | Factory program |
 | [CAN](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/CAN) | ✓ | | CAN bus communication |
 | [RS485](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/RS485) | ✓ | | RS485 communication |
+| [RS485_2](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/RS485_2) | ✓ | | RS485 communication (variant) |
 | [Ethernet_HTTP](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/Ethernet_HTTP) | ✓ | | Ethernet HTTP client |
+| [Ethernet_Relay](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/Ethernet_Relay) | ✓ | | Ethernet relay control |
+| [Ethernet_Scan](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/Ethernet_Scan) | ✓ | | Ethernet network scan |
+| [GFX](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/GFX) | ✓ | | Display test |
 | [GFX_SX1262](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/GFX_SX1262) | ✓ | | Display + LoRa combined |
+| [CST226SE](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/CST226SE) | ✓ | | Touch screen test |
 | [Relay](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/Relay) | ✓ | | Relay control |
+| [SX1262_Receive_Interrupt](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX1262_Receive_Interrupt) | ✓ | | LoRa receive with interrupt |
+| [SX126x_PingPong](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX126x_PingPong) | ✓ | | LoRa ping-pong test |
+| [SX126x_Channel_Activity_Detection_Blocking](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX126x_Channel_Activity_Detection_Blocking) | ✓ | | LoRa CAD blocking mode |
+| [SX126x_Channel_Activity_Detection_Interrupt](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX126x_Channel_Activity_Detection_Interrupt) | ✓ | | LoRa CAD interrupt mode |
+| [raw](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/raw) | ✓ | | LoRa raw transmission |
+| [ttn_abp](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/ttn_abp) | ✓ | | TTN ABP activation |
+| [ttn_otaa](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/ttn_otaa) | ✓ | | TTN OTAA activation |
 
 ### PlatformIO
 
@@ -76,9 +87,11 @@ T-Connect Pro is a 3-layer stackable industrial-grade module based on **ESP32-S3
 - SX1262 LoRa (HPD16A, 433–920 MHz), W5500 Ethernet
 - ST7796 TFT LCD 222 × 480, CST226SE capacitive touch
 - CAN (TWAI), RS485, RS232 industrial protocols; 10 A relay
-- AXP2101 PMU, 12–24 V DC input, 3-layer stackable design
+- 12–24 V DC input, 3-layer stackable design
 
 ## Product Parameters
+
+<img src="/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-info.jpg" alt="T-Connect Pro overview" width=100%>
 
 | Feature | Specification |
 | :------------------------------: | :------------------------------: |
@@ -96,7 +109,6 @@ T-Connect Pro is a 3-layer stackable industrial-grade module based on **ESP32-S3
 | RS232 | TD501D232H (UART) |
 | Relay | 10 A output |
 | IMU | BMA423 (I²C) |
-| Power Management | AXP2101 PMU |
 | USB | 1 × Type-C (USB + OTG) |
 | Power Input | 12–24 V DC or 5 V/500 mA USB |
 | Expansion | 1 × QWIIC |
@@ -105,7 +117,7 @@ T-Connect Pro is a 3-layer stackable industrial-grade module based on **ESP32-S3
 
 ## Pin Diagram
 
-<img src="/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-en.jpg" alt="T-Connect Pro pin diagram" width=100%>
+<img src="/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-pinout.jpg" alt="T-Connect Pro pin diagram" width=100%>
 
 ### Pin Mapping
 
@@ -120,9 +132,12 @@ T-Connect Pro is a 3-layer stackable industrial-grade module based on **ESP32-S3
 
 ## Dimension Diagram
 
+<img src="/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-3.jpg" alt="T-Connect Pro dimension diagram" width=100%>
+
 ## Schematic
 
 * [T-Connect-Pro_V1.0 Schematic](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_V1.0.pdf)
+* [T-Connect-Pro_V1.1 Schematic](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_V1.1.pdf)
 
 ## Datasheet
 

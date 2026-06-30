@@ -7,9 +7,8 @@ tags: ESP32-S3, LoRa, CAN, Ethernet, Industrial
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-connect-pro" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro1.jpg', alt: 'T-Connect Pro 正面图' },
-  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro2.jpg', alt: 'T-Connect Pro 实物图' },
-  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-zh.jpg', alt: 'T-Connect Pro 引脚图' }
+  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-1.jpg', alt: 'T-Connect Pro 正面图' },
+  { src: '/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-2.jpg', alt: 'T-Connect Pro 侧面图' }
 ]" />
 
 ## 概述
@@ -21,7 +20,6 @@ T-Connect-Pro 是一款基于 ESP32-S3 的多功能工业级控制与通信模�
 - 工业级设计：支持12~24V宽电压输入，10A继电器输出
 - 丰富接口：3层板堆叠设计，集成触摸屏、传感器、QWIIC扩展接口
 - 实时显示：ST7796 TFT屏幕提供直观的数据显示和操作界面
-- 电源管理：AXP2101高度集成电源管理单元
 
 ## 快速开始
 
@@ -29,16 +27,24 @@ T-Connect-Pro 是一款基于 ESP32-S3 的多功能工业级控制与通信模�
 
 | 示例 | PlatformIO/Arduino | 描述 |
 | :--: | :----------------: | :--: |
+| [Original_Test](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/Original_Test) | ✓ | 出厂程序 |
 | [CAN](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/CAN) | ✓ | CAN总线通信示例 |
-| [CST226SE](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/CST226SE) | ✓ | 触摸屏测试 |
+| [RS485](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/RS485) | ✓ | RS485通信示例 |
+| [RS485_2](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/RS485_2) | ✓ | RS485通信示例（变体） |
 | [Ethernet_HTTP](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/Ethernet_HTTP) | ✓ | 以太网HTTP示例 |
 | [Ethernet_Relay](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/Ethernet_Relay) | ✓ | 以太网继电器控制 |
+| [Ethernet_Scan](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/Ethernet_Scan) | ✓ | 以太网网络扫描 |
 | [GFX](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/GFX) | ✓ | 屏幕显示测试 |
 | [GFX_SX1262](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/GFX_SX1262) | ✓ | 屏幕 + LoRa综合示例 |
-| [Original_Test](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/Original_Test) | ✓ | 出厂程序 |
+| [CST226SE](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/CST226SE) | ✓ | 触摸屏测试 |
 | [Relay](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/Relay) | ✓ | 继电器控制示例 |
-| [RS485](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/RS485) | ✓ | RS485通信示例 |
-| [SX1262_Receive_Interrupt](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX1262_Receive_Interrupt) | ✓ | LoRa接收示例 |
+| [SX1262_Receive_Interrupt](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX1262_Receive_Interrupt) | ✓ | LoRa中断接收示例 |
+| [SX126x_PingPong](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX126x_PingPong) | ✓ | LoRa收发测试 |
+| [SX126x_Channel_Activity_Detection_Blocking](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX126x_Channel_Activity_Detection_Blocking) | ✓ | LoRa信道活动检测（阻塞模式） |
+| [SX126x_Channel_Activity_Detection_Interrupt](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX126x_Channel_Activity_Detection_Interrupt) | ✓ | LoRa信道活动检测（中断模式） |
+| [raw](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/raw) | ✓ | LoRa裸数据传输 |
+| [ttn_abp](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/ttn_abp) | ✓ | TTN ABP入网示例 |
+| [ttn_otaa](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/ttn_otaa) | ✓ | TTN OTAA入网示例 |
 
 ### PlatformIO
 1. 安装[VisualStudioCode](https://code.visualstudio.com/Download)，根据你的系统类型选择安装。
@@ -87,10 +93,12 @@ T-Connect-Pro 是一款基于 ESP32-S3 的多功能工业级控制与通信模�
 - W5500 以太网，TD501MCANFD CAN总线
 - RS485（TD501D485H-A）+ RS232（TD501D232H）双串口
 - ST7796 TFT LCD 222×480，CST226SE 触摸屏
-- 10A 继电器输出，AXP2101 电源管理
+- 10A 继电器输出
 - 支持 12~24V DC 宽电压输入，3层板堆叠设计
 
 ## 产品参数
+
+<img src="/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-info.jpg" alt="T-Connect Pro 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |
@@ -103,7 +111,6 @@ T-Connect-Pro 是一款基于 ESP32-S3 的多功能工业级控制与通信模�
 | RS485 | TD501D485H-A (UART) |
 | RS232 | TD501D232H (UART) |
 | 继电器 | 10A 输出 |
-| 电源管理 | AXP2101 PMU |
 | 屏幕 | ST7796 TFT LCD，222×480 (SPI) |
 | 触摸 | CST226SE (I²C) |
 | 无线 | 2.4 GHz Wi-Fi & Bluetooth 5 (LE) |
@@ -116,7 +123,7 @@ T-Connect-Pro 是一款基于 ESP32-S3 的多功能工业级控制与通信模�
 
 ## 引脚图
 
-<img src="/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-zh.jpg" alt="T-Connect Pro 引脚图" width=100%>
+<img src="/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-pinout.jpg" alt="T-Connect Pro 引脚图" width=100%>
 
 ### 引脚映射
 
@@ -172,9 +179,12 @@ T-Connect-Pro 是一款基于 ESP32-S3 的多功能工业级控制与通信模�
 
 ## 尺寸图
 
+<img src="/products/t-connect-series/t-connect-pro/index/image/t-connect-pro-3.jpg" alt="T-Connect Pro 尺寸图" width=100%>
+
 ## 原理图
 
 * [T-Connect-Pro_V1.0](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_V1.0.pdf)
+* [T-Connect-Pro_V1.1](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_V1.1.pdf)
 
 ## 数据手册
 
