@@ -19,16 +19,19 @@ T-Keyboard S3 Pro is a high-end programmable keyboard based on **dual-MCU archit
 
 ## Quick Start
 
+> **Recommended:** Use the [T-Keyboard-S3-Pro-Library](library) for a unified driver covering displays, keys, RGB LEDs, and encoder — no manual pin configuration required. See the [Library Guide](library) for installation, quick start, and full API reference.
+
 ### Example Support
 
 | Example | PlatformIO/Arduino | ESP-IDF | Description |
 | :-----: | :----------------: | :-----: | :---------: |
-| [GFX](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro) | ✓ | | Display graphics test |
-| [Keyboard](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro) | ✓ | | Keyboard input example |
-| [Original_Test_2](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro) | ✓ | | ESP32-S3 factory test |
-| [Lvgl_UI](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro) | ✓ | | LVGL UI example |
-| [Shortcut-Keys](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro) | ✓ | | Shortcut key example |
-| [Rotary_Encoder](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro) | ✓ | | Rotary encoder example |
+| [Basic/Displays](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Basic/Displays) | ✓ | | Draw on the host's four panels |
+| [Basic/Keyboard](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Basic/Keyboard) | ✓ | | Read 5 keys with debouncing, mirror on panels |
+| [Basic/Encoder](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Basic/Encoder) | ✓ | | Rotary encoder position tracking |
+| [Basic/RGB](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Basic/RGB) | ✓ | | WS2812C LED HSV color sweep |
+| [Advanced/MultiBoard](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Advanced/MultiBoard) | ✓ | | Multi-board chaining, hot-plug detection |
+| [Advanced/BleKeyboard](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Advanced/BleKeyboard) | ✓ | | BLE HID keyboard with media keys |
+| [Advanced/Buddy](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Advanced/Buddy) | ✓ | | Claude desktop companion with 4-panel UI |
 
 ### PlatformIO
 
@@ -42,7 +45,7 @@ T-Keyboard S3 Pro is a high-end programmable keyboard based on **dual-MCU archit
 
 1. Install [Arduino IDE](https://www.arduino.cc/en/software)
 2. Add ESP32 boards URL: `https://espressif.github.io/arduino-esp32/package_esp32_index.json`
-3. Copy all directories from the project `libraries` folder to your Arduino libraries folder
+3. Install the **T-Keyboard-S3-Pro** library and its dependencies (see [Dependent Libraries](#dependent-libraries) below)
 4. In **Tools** → **Board**, configure (for ESP32-S3 host device):
 
 | Arduino IDE Setting | Value |
@@ -140,13 +143,14 @@ T-Keyboard S3 Pro is a high-end programmable keyboard based on **dual-MCU archit
 ## Software Development
 
 * [T-Keyboard-S3-Pro GitHub Repository](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro)
+* [T-Keyboard-S3-Pro-Library GitHub Repository](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library)
+* [Claude Desktop Buddy with T-Keyboard S3 Pro](claude-desktop-buddy.md)
 
 ### Dependent Libraries
 
-* [RadioLib](https://github.com/jgromes/RadioLib)
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
-* [LVGL v8.4.0](https://github.com/lvgl/lvgl/tree/v8.4.0)
-* [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
+* [T-Keyboard-S3-Pro-Library](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library)
+* [LovyanGFX](https://github.com/lovyan03/LovyanGFX)
+* [ButtonSense](https://github.com/lbuque/ButtonSense)
 
 ## FAQ
 
