@@ -9,18 +9,11 @@ The [T-Keyboard-S3-Pro-Library](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-
 
 ## Installation
 
-### Dependencies
-
-Install these libraries first (Arduino Library Manager or manually):
-
-| Library | Install |
-| :-----: | :-----: |
-| [LovyanGFX](https://github.com/lovyan03/LovyanGFX) | Arduino Library Manager or ZIP |
-| [ButtonSense](https://github.com/lbuque/ButtonSense) | Manual / ZIP |
-
 ### Arduino IDE
 
-Copy the `T-Keyboard-S3-Pro-Library` folder into your Arduino `libraries/` directory, then restart the IDE.
+Search for `LILYGO T-Keyboard-S3-Pro Library` in the Arduino Library Manager and install it — all dependencies will be installed automatically.
+
+Alternatively, manually install by copying the `T-Keyboard-S3-Pro-Library` folder into your Arduino `libraries/` directory, then restart the IDE.
 
 ### PlatformIO
 

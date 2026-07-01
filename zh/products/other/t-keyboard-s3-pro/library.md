@@ -9,18 +9,11 @@ show_source: false
 
 ## 安装
 
-### 依赖库
-
-请先安装以下库（通过 Arduino 库管理器或手动安装）：
-
-| 库 | 安装方式 |
-| :-----: | :-----: |
-| [LovyanGFX](https://github.com/lovyan03/LovyanGFX) | Arduino 库管理器 或 ZIP |
-| [ButtonSense](https://github.com/lbuque/ButtonSense) | 手动 / ZIP |
-
 ### Arduino IDE
 
-将 `T-Keyboard-S3-Pro-Library` 文件夹复制到 Arduino 的 `libraries/` 目录下，然后重启 IDE。
+在 Arduino 库管理器中搜索 `LILYGO T-Keyboard-S3-Pro Library` 并安装，所有依赖库会自动安装。
+
+也可以手动安装：将 `T-Keyboard-S3-Pro-Library` 文件夹复制到 Arduino 的 `libraries/` 目录下，然后重启 IDE。
 
 ### PlatformIO
 
