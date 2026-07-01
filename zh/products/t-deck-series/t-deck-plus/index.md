@@ -163,6 +163,190 @@ LILYGO T-Deck Plus 是 T-Deck 的升级版本，基于 ESP32-S3 主控，搭载 
 #define BOARD_GPS_RX_PIN    44
 ```
 
+## 外设初始化代码
+
+以下代码片段展示了使用上述引脚定义初始化各外设的最小配置。将 [引脚映射](#引脚映射) 中的 `#define` 代码块复制到你的程序中，然后使用相应的初始化片段。
+
+> **所有 SPI 操作前** — 先将其他 CS 线拉高：
+> ```cpp
+> digitalWrite(BOARD_SDCARD_CS, HIGH);
+> digitalWrite(BOARD_TFT_CS,    HIGH);
+> digitalWrite(RADIO_CS_PIN,    HIGH);
+> ```
+
+### 电源使能（电池供电时必须）
+
+```cpp
+// 电池供电时必须设为 HIGH；USB 供电时调用也无害
+pinMode(BOARD_POWERON, OUTPUT);
+digitalWrite(BOARD_POWERON, HIGH);
+```
+
+### 屏幕（ST7789 — Arduino_GFX）
+
+```cpp
+#include <Arduino_GFX_Library.h>
+
+Arduino_DataBus *bus = new Arduino_ESP32SPI(
+    BOARD_TFT_DC, BOARD_TFT_CS,
+    BOARD_SPI_SCK, BOARD_SPI_MOSI, BOARD_SPI_MISO);
+
+Arduino_GFX *gfx = new Arduino_ST7789(bus, -1, 0, true, 320, 240);
+
+void setup() {
+    pinMode(BOARD_TFT_BACKLIGHT, OUTPUT);
+    digitalWrite(BOARD_TFT_BACKLIGHT, HIGH);
+    gfx->begin();
+    gfx->fillScreen(BLACK);
+}
+```
+
+### 屏幕（ST7789 — TFT_eSPI）
+
+> 需要为 T-Deck 配置 `User_Setup.h` — 参考 [2024-07-26 提交](https://github.com/Xinyuan-LilyGO/T-Deck/commit/6adb8884c689f174c29a6d7172a0daa367a582eb) 获取正确的初始化序列。
+
+```cpp
+#include <TFT_eSPI.h>
+
+TFT_eSPI tft;
+
+void setup() {
+    pinMode(BOARD_TFT_BACKLIGHT, OUTPUT);
+    digitalWrite(BOARD_TFT_BACKLIGHT, HIGH);
+    tft.init();
+    tft.setRotation(1);
+    tft.fillScreen(TFT_BLACK);
+}
+```
+
+### LoRa（SX1262 — RadioLib）
+
+```cpp
+#include <RadioLib.h>
+
+SX1262 radio = new Module(
+    RADIO_CS_PIN,   // CS
+    RADIO_DIO1_PIN, // DIO1 / IRQ
+    RADIO_RST_PIN,  // RST
+    RADIO_BUSY_PIN  // BUSY
+);
+
+void setup() {
+    pinMode(BOARD_SDCARD_CS, OUTPUT); digitalWrite(BOARD_SDCARD_CS, HIGH);
+    pinMode(BOARD_TFT_CS,    OUTPUT); digitalWrite(BOARD_TFT_CS,    HIGH);
+
+    SPI.begin(BOARD_SPI_SCK, BOARD_SPI_MISO, BOARD_SPI_MOSI);
+
+    int state = radio.begin(915.0);
+    if (state != RADIOLIB_ERR_NONE) {
+        Serial.printf("LoRa 初始化失败: %d\n", state);
+    }
+}
+```
+
+### GPS（MIA-M10Q — TinyGPSPlus）
+
+> 仅 T-Deck Plus 具备。Grove 接口引脚已分配给 GPS 模块，Grove 接口不可作为通用接口使用。
+
+```cpp
+#include <TinyGPSPlus.h>
+
+TinyGPSPlus gps;
+
+void setup() {
+    // GPS 通过 UART 通信（ESP32-S3 上使用 Serial1）
+    Serial1.begin(9600, SERIAL_8N1, BOARD_GPS_TX_PIN, BOARD_GPS_RX_PIN);
+}
+
+void loop() {
+    while (Serial1.available()) {
+        gps.encode(Serial1.read());
+    }
+    if (gps.location.isUpdated()) {
+        Serial.printf("纬度: %.6f  经度: %.6f\n",
+            gps.location.lat(), gps.location.lng());
+    }
+}
+```
+
+### 键盘（I²C）
+
+```cpp
+#include <Wire.h>
+
+#define KEYBOARD_ADDR 0x55
+
+void setup() {
+    Wire.begin(BOARD_I2C_SDA, BOARD_I2C_SCL);
+    pinMode(BOARD_KEYBOARD_INT, INPUT_PULLUP);
+}
+
+void loop() {
+    if (digitalRead(BOARD_KEYBOARD_INT) == LOW) {
+        Wire.requestFrom(KEYBOARD_ADDR, 1);
+        if (Wire.available()) {
+            char key = Wire.read();
+            Serial.printf("按键: %c\n", key);
+        }
+    }
+}
+```
+
+### 轨迹球
+
+```cpp
+void setup() {
+    pinMode(BOARD_TBOX_G01, INPUT);
+    pinMode(BOARD_TBOX_G02, INPUT);
+    pinMode(BOARD_TBOX_G03, INPUT);
+    pinMode(BOARD_TBOX_G04, INPUT);
+}
+```
+
+### 麦克风（ES7210 — I²S）
+
+> 启用麦克风后，**GPIO0（BOOT / 轨迹球中间按键）不可用**。
+
+```cpp
+#include <driver/i2s.h>
+
+void setup() {
+    i2s_config_t i2s_config = {
+        .mode = (i2s_mode_t)(I2S_MODE_MASTER | I2S_MODE_RX),
+        .sample_rate = 16000,
+        .bits_per_sample = I2S_BITS_PER_SAMPLE_16BIT,
+        .channel_format = I2S_CHANNEL_FMT_RIGHT_LEFT,
+        .communication_format = I2S_COMM_FORMAT_STAND_I2S,
+        .intr_alloc_flags = ESP_INTR_FLAG_LEVEL1,
+        .dma_buf_count = 4,
+        .dma_buf_len = 256,
+        .use_apll = false,
+    };
+    i2s_pin_config_t pin_config = {
+        .mck_io_num   = BOARD_ES7210_MCLK,
+        .bck_io_num   = BOARD_ES7210_SCK,
+        .ws_io_num    = BOARD_ES7210_LRCK,
+        .data_in_num  = BOARD_ES7210_DIN,
+        .data_out_num = I2S_PIN_NO_CHANGE,
+    };
+    i2s_driver_install(I2S_NUM_0, &i2s_config, 0, NULL);
+    i2s_set_pin(I2S_NUM_0, &pin_config);
+}
+```
+
+### SD 卡（SPI）
+
+```cpp
+#include <SD.h>
+
+void setup() {
+    SPI.begin(BOARD_SPI_SCK, BOARD_SPI_MISO, BOARD_SPI_MOSI);
+    if (!SD.begin(BOARD_SDCARD_CS)) {
+        Serial.println("SD 卡初始化失败");
+    }
+}
+```
+
 ## 尺寸图
 
 ## 原理图
