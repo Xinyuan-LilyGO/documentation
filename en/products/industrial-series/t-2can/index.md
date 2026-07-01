@@ -6,14 +6,14 @@ tags: CAN, ESP32-S3, Communication
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-2can" />
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-2can/index/image/t-2can-1.jpg', alt: 'T-2Can front view' },
-  { src: '/products/t-sim-series/t-2can/index/image/t-2can-2.jpg', alt: 'T-2Can physical image' },
-  { src: '/products/t-sim-series/t-2can/index/image/t-2can-pin.jpg', alt: 'T-2Can pin diagram' }
+  { src: '/products/industrial-series/t-2can/index/image/t-2can-1.jpg', alt: 'T-2Can front view' },
+  { src: '/products/industrial-series/t-2can/index/image/t-2can-2.jpg', alt: 'T-2Can physical image' },
+  { src: '/products/industrial-series/t-2can/index/image/t-2can-pin.jpg', alt: 'T-2Can pin diagram' }
 ]" />
 
 ## Overview
 
-T-2CAN is a compact dual-channel CAN communication module based on **ESP32-S3-WROOM-1U** (16 MB Flash, 8 MB OPI PSRAM). Features two independent **MCP2515** CAN controllers (CAN 2.0B, up to 1 Mb/s), wide-range **12–24 V DC** input, signal isolation design (SGND/DGND), IPEX antenna interface, QWIIC expansion, and Type-C USB. Suitable for industrial-grade CAN bus applications and IoT gateways.
+T-2CAN is a compact dual-channel CAN communication module based on **ESP32-S3-WROOM-1U** (16 MB Flash, 8 MB OPI PSRAM). It provides two independent CAN buses: **CAN bus 1** is driven by an external **MCP2515** controller (SPI, CAN 2.0B, up to 1 Mb/s), and **CAN bus 2** uses the **ESP32-S3's built-in TWAI** controller. Features wide-range **12–24 V DC** input, signal isolation design (SGND/DGND), IPEX antenna interface, QWIIC expansion, and Type-C USB. Suitable for industrial-grade CAN bus applications and IoT gateways.
 
 ## Quick Start
 
@@ -68,7 +68,8 @@ T-2CAN is a compact dual-channel CAN communication module based on **ESP32-S3-WR
 ## Key Features
 
 - ESP32-S3-WROOM-1U dual-core LX7 @ 240 MHz, 16 MB Flash, 8 MB OPI PSRAM, Wi-Fi + BT 5.0
-- Dual independent MCP2515 CAN controllers (CAN 2.0B, up to 1 Mb/s)
+- CAN bus 1: external **MCP2515** controller via SPI (CAN 2.0B, up to 1 Mb/s)
+- CAN bus 2: ESP32-S3 built-in **TWAI** controller (CAN 2.0B)
 - 12–24 V DC wide-range input, signal isolation (SGND/DGND)
 - IPEX antenna interface, QWIIC expansion interface
 - 18 × 39 × 91 mm
@@ -80,8 +81,8 @@ T-2CAN is a compact dual-channel CAN communication module based on **ESP32-S3-WR
 | MCU | ESP32-S3-WROOM-1U (MCN16R8) |
 | Flash | 16 MB |
 | PSRAM | 8 MB (OPI PSRAM) |
-| CAN Controller | MCP2515 × 2 |
-| CAN Standard | CAN 2.0B, up to 1 Mb/s |
+| CAN Bus 1 | MCP2515 (SPI, CAN 2.0B, up to 1 Mb/s) |
+| CAN Bus 2 | ESP32-S3 built-in TWAI (CAN 2.0B) |
 | Wi-Fi | 2.4 GHz 802.11 b/g/n |
 | Bluetooth | Bluetooth 5.0 LE |
 | USB | 1 × Type-C (USB + OTG) |
@@ -93,7 +94,7 @@ T-2CAN is a compact dual-channel CAN communication module based on **ESP32-S3-WR
 
 ## Pin Diagram
 
-<img src="/products/t-sim-series/t-2can/index/image/t-2can-pin.jpg" alt="T-2Can pin diagram" width=100%>
+<img src="/products/industrial-series/t-2can/index/image/t-2can-pin.jpg" alt="T-2Can pin diagram" width=100%>
 
 ## Dimension Diagram
 

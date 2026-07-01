@@ -7,14 +7,14 @@ tags: CAN, ESP32-S3, Communication
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-2can" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-2can/index/image/t-2can-1.jpg', alt: 'T-2Can 正面图' },
-  { src: '/products/t-sim-series/t-2can/index/image/t-2can-2.jpg', alt: 'T-2Can 实物图' },
-  { src: '/products/t-sim-series/t-2can/index/image/t-2can-pin.jpg', alt: 'T-2Can 引脚图' }
+  { src: '/products/industrial-series/t-2can/index/image/t-2can-1.jpg', alt: 'T-2Can 正面图' },
+  { src: '/products/industrial-series/t-2can/index/image/t-2can-2.jpg', alt: 'T-2Can 实物图' },
+  { src: '/products/industrial-series/t-2can/index/image/t-2can-pin.jpg', alt: 'T-2Can 引脚图' }
 ]" />
 
 ## 概述
 
-LILYGO T-2CAN 是一款高性能、紧凑型嵌入式通信模块，基于 ESP32-S3 微控制器（集成 Wi-Fi 与蓝牙 BLE），创新性地集成双路独立 MCP2515 CAN 总线控制器。严格遵循 CAN 2.0B 协议标准，支持高达 1 Mb/s 的通信速率，提供两路完全独立的 CAN 通道接口（含 CAN_H、CAN_L、信号地 SGND 及电源地 DGND），每路配备 6 个 29 位验收滤波器及 2 个 29 位验收屏蔽码。支持 DC 12~24V 宽压输入，具备信号隔离设计，适用于工业级通信应用。
+LILYGO T-2CAN 是一款高性能、紧凑型嵌入式通信模块，基于 ESP32-S3-WROOM-1U（16 MB Flash，8 MB OPI PSRAM，集成 Wi-Fi 与蓝牙 BLE）。提供两路独立 CAN 总线：**CAN 总线 1** 由外置 **MCP2515** 控制器（SPI，CAN 2.0B，最高 1 Mb/s）驱动；**CAN 总线 2** 使用 **ESP32-S3 内置 TWAI** 控制器（CAN 2.0B）。支持 DC 12~24V 宽压输入，具备信号隔离设计（SGND/DGND），提供 IPEX 天线接口与 QWIIC 扩展接口，适用于工业级 CAN 总线通信与物联网网关应用。
 
 ## 快速开始
 
@@ -67,21 +67,22 @@ LILYGO T-2CAN 是一款高性能、紧凑型嵌入式通信模块，基于 ESP32
 ## 主要特点
 
 - ESP32-S3-WROOM-1U：16MB Flash，8MB OPI PSRAM，Wi-Fi + 蓝牙 5.0
-- 双路独立 MCP2515 CAN 总线控制器（CAN 2.0B，最高 1 Mb/s）
-- 每路 6 个 29 位验收滤波器 + 2 个 29 位验收屏蔽码
+- CAN 总线 1：外置 **MCP2515** 控制器（SPI，CAN 2.0B，最高 1 Mb/s）
+- CAN 总线 2：ESP32-S3 内置 **TWAI** 控制器（CAN 2.0B）
 - DC 12~24V 宽压输入，信号地与电源地隔离
 - IPEX 天线接口，QWIIC 扩展接口
 
 ## 产品参数
 
-<img src="/products/t-sim-series/t-2can/index/image/t-2can-info.jpg" alt="T-2Can 概述图" width=100%>
+<img src="/products/industrial-series/t-2can/index/image/t-2can-info.jpg" alt="T-2Can 概述图" width=100%>
 
 | 组件 | 描述 |
 | :--: | :--: |
 | MCU | ESP32-S3-WROOM-1U (MCN16R8) |
 | Flash | 16MB |
 | PSRAM | 8MB (OPI PSRAM) |
-| CAN 控制器 | MCP2515 × 2 |
+| CAN 总线 1 | MCP2515（SPI，CAN 2.0B，最高 1 Mb/s） |
+| CAN 总线 2 | ESP32-S3 内置 TWAI（CAN 2.0B） |
 | 无线 | 2.4GHz Wi-Fi + Bluetooth 5 (LE) |
 | USB | 1 × USB OTG (Type-C) |
 | 电源输入 | DC 12~24V |
@@ -92,7 +93,7 @@ LILYGO T-2CAN 是一款高性能、紧凑型嵌入式通信模块，基于 ESP32
 
 ## 引脚图
 
-<img src="/products/t-sim-series/t-2can/index/image/t-2can-pin.jpg" alt="T-2Can 引脚图" width=100%>
+<img src="/products/industrial-series/t-2can/index/image/t-2can-pin.jpg" alt="T-2Can 引脚图" width=100%>
 
 ## 尺寸图
 

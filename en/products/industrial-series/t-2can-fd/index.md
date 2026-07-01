@@ -14,7 +14,7 @@ tags: CAN FD, ESP32-S3, MCP2518
 
 ## Overview
 
-T-2Can-FD is an ESP32-S3-based development board with dual CAN FD bus interfaces. It uses two MCP2518 CAN FD controllers connected to the ESP32-S3 via SPI, supporting CAN FD (Flexible Data-Rate) while remaining compatible with classic CAN 2.0. It is ideal for industrial communication, vehicle diagnostics, robot control, and other CAN bus applications that require high reliability and high throughput.
+T-2Can-FD is an ESP32-S3-based development board with dual CAN FD bus interfaces. It provides two independent CAN buses: **CAN bus 1** is driven by an external **MCP2518FD** controller (SPI, CAN-FD capable, compatible with CAN 2.0), and **CAN bus 2** uses the **ESP32-S3's built-in TWAI** controller (CAN 2.0B). Ideal for industrial communication, vehicle diagnostics, robot control, and other CAN bus applications that require high reliability and high throughput.
 
 > **Usage Notes:**
 > 1. If firmware flashing fails, press and hold the `BOOT-0` button and try again.
@@ -81,8 +81,8 @@ T-2Can-FD is an ESP32-S3-based development board with dual CAN FD bus interfaces
 ## Key Features
 
 - MCU: ESP32-S3-WROOM-1U (16 MB Flash + 8 MB PSRAM)
-- Dual CAN FD bus interfaces: 2 × MCP2518 CAN FD controllers (SPI)
-- Supports CAN FD (Flexible Data-Rate), compatible with classic CAN 2.0
+- CAN bus 1: external **MCP2518FD** controller via SPI (CAN-FD, compatible with CAN 2.0)
+- CAN bus 2: ESP32-S3 built-in **TWAI** controller (CAN 2.0B)
 - Supports Wi-Fi + Bluetooth 5.0 LE
 - USB powered with onboard 5V buck converter
 - External UART expansion interface (CDC can be switched by configuration)
@@ -95,8 +95,8 @@ T-2Can-FD is an ESP32-S3-based development board with dual CAN FD bus interfaces
 | MCU | ESP32-S3-WROOM-1U |
 | Flash | 16 MB |
 | PSRAM | 8 MB |
-| CAN FD Controller | 2 × MCP2518 |
-| Protocol | CAN FD (Flexible Data-Rate) |
+| CAN Bus 1 | MCP2518FD (SPI, CAN-FD) |
+| CAN Bus 2 | ESP32-S3 built-in TWAI (CAN 2.0B) |
 | Interface | SPI |
 | Wireless | Wi-Fi 802.11 b/g/n + Bluetooth 5.0 LE |
 | Power | USB 5V |
@@ -113,8 +113,8 @@ Pin definitions refer to the configuration file:
 
 | Interface | Description |
 | :--: | :--: |
-| CAN1 | MCP2518 CAN FD controller, SPI chip select CS1 |
-| CAN2 | MCP2518 CAN FD controller, SPI chip select CS2 |
+| CAN1 | MCP2518FD CAN-FD controller, SPI chip select CS1 |
+| CAN2 | ESP32-S3 built-in TWAI controller |
 | USB | Default UART0 debug output |
 | UART Interface | External UART0 (requires CDC disabled) |
 | BOOT-0 | Download mode button |
@@ -155,10 +155,10 @@ A: The project uses USB as UART0 output by default. To use the external UART int
 A: Press and hold the **BOOT-0** button while retrying the download.
 
 **Q: Is T-2Can-Fd compatible with T-2Can firmware?**  
-A: No. T-2Can-Fd uses the MCP2518 library and requires corresponding CAN FD example builds.
+A: No. T-2Can-Fd uses MCP2518FD for CAN bus 1 and ESP32-S3 TWAI for CAN bus 2, requiring corresponding libraries and examples.
 
 ## Version History
 
 | Version | Release Date | Update Notes |
 | :--: | :------: | :--: |
-| T-2Can-Fd V1.0 | 2026-04-10 | Initial release, dual MCP2518 CAN FD |
+| T-2Can-Fd V1.0 | 2026-04-10 | Initial release, MCP2518FD + ESP32-S3 TWAI |
