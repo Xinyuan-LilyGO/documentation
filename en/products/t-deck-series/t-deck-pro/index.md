@@ -21,6 +21,8 @@ Suitable for IoT, outdoor devices, smart terminals, environmental monitoring, an
 
 ## Quick Start
 
+> **Note for V1.1 users:** Since version 1.1 has several hardware configuration and touch chip updates, please join the [MeshCore Discord](https://meshcore.gg/) and enter the **#ripple-gui** channel — the MeshCore team can directly assist you there.
+
 ### Example Support
 
 | Example | PlatformIO/Arduino | ESP-IDF | Description |

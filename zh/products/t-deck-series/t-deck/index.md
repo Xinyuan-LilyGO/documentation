@@ -241,8 +241,8 @@ void setup() {
 
     SPI.begin(BOARD_SPI_SCK, BOARD_SPI_MISO, BOARD_SPI_MOSI);
 
-    // 915.0 MHz, +22 dBm, 带宽 125 kHz, SF7, CR 4/5
-    int state = radio.begin(915.0);
+    // frequency (MHz), bandwidth (kHz), spreading factor, coding rate, sync word, output power (dBm)
+    int state = radio.begin(915.0, 125.0, 7, 5, RADIOLIB_SX126X_SYNC_WORD_PRIVATE, 22);
     if (state != RADIOLIB_ERR_NONE) {
         Serial.printf("LoRa 初始化失败: %d\n", state);
     }

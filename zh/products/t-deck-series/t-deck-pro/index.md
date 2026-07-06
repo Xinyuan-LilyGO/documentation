@@ -18,6 +18,8 @@ LILYGO T-Deck Pro 是一款基于 ESP32-S3 芯片的高度集成多功能开发�
 
 ## 快速开始
 
+> **V1.1 用户注意：** 由于 V1.1 版本存在若干硬件配置和触摸芯片变更，请加入 [MeshCore Discord](https://meshcore.gg/) 并进入 **#ripple-gui** 频道，MeshCore 团队可在那里直接为您提供支持。
+
 ### 示例支持
 
 | 示例 | PlatformIO | Arduino | 描述 |
