@@ -258,6 +258,7 @@ The development board is feature-rich, integrating QWERT keyboard, AI-enabled IM
 ## Software Development
 
 * [LilyGoLib](https://github.com/Xinyuan-LilyGO/LilyGoLib)
+* [Quick Start Guide](quick-start.md)
 * [Factory Firmware User Guide](factory.md)
 * [Claude Desktop Buddy with T-Lora pager](claude-desktop-buddy.md)
 

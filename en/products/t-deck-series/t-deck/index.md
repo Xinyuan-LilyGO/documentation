@@ -23,6 +23,8 @@ LILYGO T-Deck is a highly integrated multi-functional embedded development platf
 
 ## Quick Start
 
+> For a full development guide covering Arduino setup, PlatformIO config, LVGL, and peripheral code examples, see the [T-Deck Quick Start Guide](quick-start.md).
+
 ### Example Support
 
 | Example | PlatformIO/Arduino | ESP-IDF | Description |

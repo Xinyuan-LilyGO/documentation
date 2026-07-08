@@ -23,6 +23,8 @@ LILYGO T-Deck 是一款基于 ESP32-S3 的多功能嵌入式开发平台，搭�
 
 ## 快速开始
 
+> 完整开发指南（Arduino 环境配置、PlatformIO 配置、LVGL 教程及外设示例代码）请参阅 [T-Deck 快速上手指南](quick-start.md)。
+
 ### 示例支持
 
 | 示例 | PlatformIO/Arduino | 描述 |
