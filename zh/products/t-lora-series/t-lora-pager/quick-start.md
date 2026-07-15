@@ -80,7 +80,9 @@ show_source: false
 
 ## Arduino
 
-### 安装开发板支持包
+### Arduino IDE
+
+#### 安装开发板支持包
 
 1. 打开 **Arduino IDE → 文件 → 首选项**
 2. 在「附加开发板管理器网址」中添加：
@@ -91,7 +93,7 @@ show_source: false
 
 > **版本要求：** T-LoRaPager 需要 **arduino-esp32 V3.3.0-alpha1 或更高版本**。`LilyGo-T-LoRa-Pager` 开发板定义仅在 V3.x 中提供，低于此版本将报错。
 
-### 安装依赖库
+#### 安装依赖库
 
 **第一步 — 安装 LilyGoLib：**
 
@@ -124,7 +126,7 @@ ThirdParty 中包含的主要库：
 
 > Arduino IDE 提示升级库时，请**不要升级**——在确认硬件正常运行之前，请保持 ThirdParty 中的库版本不变。
 
-### 开发板配置
+#### 开发板配置
 
 | Arduino IDE 设置 | 值 |
 | :--------------: | :-: |
@@ -152,7 +154,7 @@ ThirdParty 中包含的主要库：
 - `Radio-LR1121` — Sub-1G + 2.4G LoRa
 - `Radio-SI4432` — Sub-1G ISM
 
-### 烧录
+#### 烧录
 
 选择正确的 COM 端口，点击 **上传**。
 
@@ -160,11 +162,11 @@ ThirdParty 中包含的主要库：
 
 ---
 
-## PlatformIO
+### PlatformIO
 
 > **注意：** PlatformIO 使用独立仓库 [LilyGoLib-PlatformIO](https://github.com/Xinyuan-LilyGO/LilyGoLib-PlatformIO)，目标平台为 `espressif32@6.10.0`（IDF v4.4.7 / arduino-esp32 v2.0.17），与 Arduino IDE 路径不同。
 
-### platformio.ini
+#### platformio.ini
 
 ```ini
 [platformio]
@@ -223,7 +225,7 @@ build_flags   =
     -I variants/lilygo_tlora_pager
 ```
 
-### 操作步骤
+#### 操作步骤
 
 1. 安装 [Visual Studio Code](https://code.visualstudio.com/) 和 [Python](https://www.python.org/)
 2. 在 VS Code 扩展市场安装 **PlatformIO IDE**
@@ -234,11 +236,11 @@ build_flags   =
 
 ---
 
-## LVGL
+### LVGL
 
 T-LoRaPager 使用 **LVGL v9.4.0** 配合 LilyGoLib 显示驱动，分辨率 480 × 222（ST7796 IPS），无触摸——通过旋转编码器和键盘交互。
 
-### lv_conf.h
+#### lv_conf.h
 
 将 `lv_conf.h` 放在 Arduino libraries 目录下（与 `lvgl/` 同级）。T-LoRaPager 最小配置：
 
@@ -254,7 +256,7 @@ T-LoRaPager 使用 **LVGL v9.4.0** 配合 LilyGoLib 显示驱动，分辨率 480
 
 > LVGL v9 与 v8 API 有变动。如需从 v8 迁移：`lv_disp_draw_buf_t` → `lv_draw_buf_t`，`lv_disp_drv_t` → 使用 `lv_display_create()`。
 
-### Hello World（LVGL v9）
+#### Hello World（LVGL v9）
 
 ```cpp
 #include <lvgl.h>
@@ -289,7 +291,7 @@ void loop() {
 }
 ```
 
-### 旋转编码器作为 LVGL 输入设备
+#### 旋转编码器作为 LVGL 输入设备
 
 ```cpp
 #include <lvgl.h>
@@ -323,9 +325,9 @@ void setup() {
 
 ---
 
-## 外设示例
+### 外设示例
 
-### 显示屏（LilyGoLib / ST7796）
+#### 显示屏（LilyGoLib / ST7796）
 
 LilyGoLib 提供统一的 `board` 对象封装显示驱动。
 
@@ -341,7 +343,7 @@ void setup() {
 }
 ```
 
-### LoRa（SX1262 — RadioLib）
+#### LoRa（SX1262 — RadioLib）
 
 ```cpp
 #include <RadioLib.h>
@@ -369,7 +371,7 @@ void loop() {
 }
 ```
 
-### 键盘（TCA8418 — I²C）
+#### 键盘（TCA8418 — I²C）
 
 ```cpp
 #include <Adafruit_TCA8418.h>
@@ -397,7 +399,7 @@ void loop() {
 }
 ```
 
-### 旋转编码器
+#### 旋转编码器
 
 ```cpp
 volatile int32_t encoderPos = 0;
@@ -421,7 +423,7 @@ void loop() {
 }
 ```
 
-### GPS（MIA-M10Q — TinyGPSPlus）
+#### GPS（MIA-M10Q — TinyGPSPlus）
 
 ```cpp
 #include <TinyGPSPlus.h>
@@ -445,7 +447,7 @@ void loop() {
 }
 ```
 
-### IMU（BHI260AP — SensorLib）
+#### IMU（BHI260AP — SensorLib）
 
 ```cpp
 #include <SensorLib.h>
@@ -470,7 +472,7 @@ void loop() {
 }
 ```
 
-### 音频（ES8311 — I²S）
+#### 音频（ES8311 — I²S）
 
 ```cpp
 #include <driver/i2s.h>
@@ -503,7 +505,7 @@ void setup() {
 }
 ```
 
-### RTC（PCF85063A — SensorLib）
+#### RTC（PCF85063A — SensorLib）
 
 ```cpp
 #include <SensorLib.h>
@@ -528,7 +530,7 @@ void loop() {
 }
 ```
 
-### SD 卡（SPI）
+#### SD 卡（SPI）
 
 ```cpp
 #include <SD.h>

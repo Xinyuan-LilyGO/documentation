@@ -173,7 +173,7 @@ export const en = defineConfig({
 
     outline: {
       label: 'On this page',
-      level: [2, 2],
+      level: [2, 3],
     },
     editLink: {
       pattern: 'https://github.com/Xinyuan-LilyGO/documentation/edit/master/:path',

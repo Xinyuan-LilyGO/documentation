@@ -117,6 +117,7 @@ LILYGO T4-S3 is a compact development board based on the **ESP32-S3R8** dual-cor
 ## Software Libraries
 
 * [LilyGo-AMOLED-Series GitHub Repository](https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series)
+* [Quick Start Guide](quick-start.md)
 
 ### Dependent Libraries
 

@@ -53,7 +53,9 @@ show_source: false
 
 ## Arduino
 
-### 安装开发板支持包
+### Arduino IDE
+
+#### 安装开发板支持包
 
 1. 打开 **Arduino IDE → 文件 → 首选项**
 2. 在「附加开发板管理器网址」中添加：
@@ -64,7 +66,7 @@ show_source: false
 
 > **版本锁定：** T-Deck 示例在 **arduino-esp32 2.0.14** 下测试通过。高于 2.0.14 的版本可能导致 `TFT_eSPI` 显示异常，升级前请确认兼容性。
 
-### 安装依赖库
+#### 安装依赖库
 
 将项目 `lib/` 目录中的所有文件夹复制到 Arduino Sketchbook 的 `libraries/` 目录，或通过库管理器手动安装：
 
@@ -94,7 +96,7 @@ show_source: false
 
 > **注意：** 如果所用的配置文件中未包含 `USE_HSPI_PORT`，运行时会出现 `Guru Meditation Error: Core 1 panic'ed (StoreProhibited)` 崩溃。
 
-### 开发板配置
+#### 开发板配置
 
 | Arduino IDE 设置 | 值 |
 | :--------------: | :-: |
@@ -113,7 +115,7 @@ show_source: false
 | Arduino Runs On | Core 1 |
 | Events Run On | Core 1 |
 
-### 烧录
+#### 烧录
 
 选择正确的 COM 端口，点击 **上传**。
 
@@ -123,9 +125,9 @@ show_source: false
 
 ---
 
-## PlatformIO
+### PlatformIO
 
-### platformio.ini
+#### platformio.ini
 
 ```ini
 [wifi]
@@ -185,7 +187,7 @@ build_flags =
     -DRADIOLIB_EXCLUDE_BELL
 ```
 
-### 操作步骤
+#### 操作步骤
 
 1. 安装 [Visual Studio Code](https://code.visualstudio.com/) 和 [Python](https://www.python.org/)
 2. 在 VS Code 扩展市场安装 **PlatformIO IDE**
@@ -196,13 +198,13 @@ build_flags =
 
 ---
 
-## LVGL
+### LVGL
 
 T-Deck 使用 **LVGL v8.4.0** + **TFT_eSPI** 作为显示驱动，分辨率 320 × 240，无触摸——通过轨迹球交互。
 
 > **TFT_eSPI 版本锁定：** 使用 `lib/` 中附带的 TFT_eSPI，并确保初始化序列与 [2024-07-26 提交](https://github.com/Xinyuan-LilyGO/T-Deck/commit/6adb8884c689f174c29a6d7172a0daa367a582eb) 一致。
 
-### lv_conf.h
+#### lv_conf.h
 
 将 `lv_conf.h` 放在 Arduino libraries 目录下（与 `lvgl/` 同级）。最小配置如下：
 
@@ -215,7 +217,7 @@ T-Deck 使用 **LVGL v8.4.0** + **TFT_eSPI** 作为显示驱动，分辨率 320 
 #define LV_TICK_CUSTOM_SYS_TIME_EXPR (millis())
 ```
 
-### Hello World
+#### Hello World
 
 ```cpp
 #include <TFT_eSPI.h>
@@ -274,7 +276,7 @@ void loop() {
 }
 ```
 
-### 轨迹球作为 LVGL 输入设备
+#### 轨迹球作为 LVGL 输入设备
 
 ```cpp
 #include <lvgl.h>
@@ -302,9 +304,9 @@ void setup() {
 
 ---
 
-## 外设示例
+### 外设示例
 
-### 电源使能
+#### 电源使能
 
 ```cpp
 // 使用电池供电时必须调用，USB 供电时调用也无影响
@@ -312,7 +314,7 @@ pinMode(BOARD_POWERON, OUTPUT);
 digitalWrite(BOARD_POWERON, HIGH);
 ```
 
-### 显示屏 (TFT_eSPI)
+#### 显示屏 (TFT_eSPI)
 
 ```cpp
 #include <TFT_eSPI.h>
@@ -330,7 +332,7 @@ void setup() {
 }
 ```
 
-### LoRa (SX1262 — RadioLib)
+#### LoRa (SX1262 — RadioLib)
 
 ```cpp
 #include <RadioLib.h>
@@ -356,7 +358,7 @@ void loop() {
 }
 ```
 
-### 键盘 (I²C)
+#### 键盘 (I²C)
 
 ```cpp
 #include <Wire.h>
@@ -379,7 +381,7 @@ void loop() {
 }
 ```
 
-### 轨迹球
+#### 轨迹球
 
 ```cpp
 volatile int trackX = 0, trackY = 0;
@@ -406,7 +408,7 @@ void loop() {
 }
 ```
 
-### 麦克风 (ES7210 — I²S)
+#### 麦克风 (ES7210 — I²S)
 
 > 麦克风启用后，**GPIO0（BOOT / 轨迹球中键）不可用**。
 
@@ -437,7 +439,7 @@ void setup() {
 }
 ```
 
-### GPS (MIA-M10Q — TinyGPSPlus)
+#### GPS (MIA-M10Q — TinyGPSPlus)
 
 ```cpp
 #include <TinyGPSPlus.h>
@@ -461,7 +463,7 @@ void loop() {
 }
 ```
 
-### SD 卡 (SPI)
+#### SD 卡 (SPI)
 
 ```cpp
 #include <SD.h>

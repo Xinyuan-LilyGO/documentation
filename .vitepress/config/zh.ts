@@ -171,7 +171,7 @@ export const zh = defineConfig({
 
     outline: {
       label: '本页目录',
-      level: [2, 2],
+      level: [2, 3],
     },
     docFooter: {
       prev: '上一页',

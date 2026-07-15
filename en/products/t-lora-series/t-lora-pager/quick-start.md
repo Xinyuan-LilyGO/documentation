@@ -80,7 +80,9 @@ Copy this block into every sketch — all examples below reference these constan
 
 ## Arduino
 
-### Install Board Support
+### Arduino IDE
+
+#### Install Board Support
 
 1. Open **Arduino IDE → File → Preferences**
 2. Add this URL to *Additional boards manager URLs*:
@@ -91,7 +93,7 @@ Copy this block into every sketch — all examples below reference these constan
 
 > **Version requirement:** T-LoRaPager requires **arduino-esp32 V3.3.0-alpha1 or later**. The board definition `LilyGo-T-LoRa-Pager` is only available in V3.x. Earlier versions will error.
 
-### Install Libraries
+#### Install Libraries
 
 **Step 1 — Install LilyGoLib:**
 
@@ -124,7 +126,7 @@ Key libraries included in ThirdParty:
 
 > Do **not** upgrade libraries when Arduino IDE prompts — the ThirdParty versions are tested together. Confirm normal operation before upgrading.
 
-### Board Settings
+#### Board Settings
 
 | Arduino IDE Setting | Value |
 | :-----------------: | :---: |
@@ -152,7 +154,7 @@ Key libraries included in ThirdParty:
 - `Radio-LR1121` — Sub-1G + 2.4G LoRa
 - `Radio-SI4432` — Sub-1G ISM
 
-### Upload
+#### Upload
 
 Select the correct COM port, then click **Upload**.
 
@@ -160,11 +162,11 @@ If upload fails: hold **BOOT (GPIO0)**, press **RESET**, then release BOOT. The 
 
 ---
 
-## PlatformIO
+### PlatformIO
 
 > **Note:** PlatformIO uses a separate repository — [LilyGoLib-PlatformIO](https://github.com/Xinyuan-LilyGO/LilyGoLib-PlatformIO). This targets `espressif32@6.10.0` (IDF v4.4.7 / arduino-esp32 v2.0.17), which differs from the Arduino IDE path above.
 
-### platformio.ini
+#### platformio.ini
 
 ```ini
 [platformio]
@@ -223,7 +225,7 @@ build_flags   =
     -I variants/lilygo_tlora_pager
 ```
 
-### Steps
+#### Steps
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/) and [Python](https://www.python.org/)
 2. Install the **PlatformIO IDE** extension in VS Code
@@ -234,11 +236,11 @@ build_flags   =
 
 ---
 
-## LVGL
+### LVGL
 
 T-LoRaPager uses **LVGL v9.4.0** with the LilyGoLib display driver. The display is 480 × 222 (ST7796 IPS), no touch — interaction uses the rotary encoder and keyboard.
 
-### lv_conf.h
+#### lv_conf.h
 
 Place `lv_conf.h` in your Arduino libraries folder (same level as `lvgl/`). Minimum settings for T-LoRaPager:
 
@@ -254,7 +256,7 @@ Place `lv_conf.h` in your Arduino libraries folder (same level as `lvgl/`). Mini
 
 > LVGL v9 changed the API from v8. If you're porting v8 code, note `lv_disp_draw_buf_t` → `lv_draw_buf_t`, and `lv_disp_drv_t` → use `lv_display_create()`.
 
-### Hello World (LVGL v9)
+#### Hello World (LVGL v9)
 
 ```cpp
 #include <lvgl.h>
@@ -291,7 +293,7 @@ void loop() {
 }
 ```
 
-### Rotary Encoder as LVGL Input
+#### Rotary Encoder as LVGL Input
 
 ```cpp
 #include <lvgl.h>
@@ -326,9 +328,9 @@ void setup() {
 
 ---
 
-## Peripheral Examples
+### Peripheral Examples
 
-### Display (LilyGoLib / ST7796)
+#### Display (LilyGoLib / ST7796)
 
 LilyGoLib provides a unified `board` object that wraps the display driver.
 
@@ -344,7 +346,7 @@ void setup() {
 }
 ```
 
-### LoRa (SX1262 — RadioLib)
+#### LoRa (SX1262 — RadioLib)
 
 ```cpp
 #include <RadioLib.h>
@@ -372,7 +374,7 @@ void loop() {
 }
 ```
 
-### Keyboard (TCA8418 — I²C)
+#### Keyboard (TCA8418 — I²C)
 
 ```cpp
 #include <Adafruit_TCA8418.h>
@@ -400,7 +402,7 @@ void loop() {
 }
 ```
 
-### Rotary Encoder
+#### Rotary Encoder
 
 ```cpp
 volatile int32_t encoderPos = 0;
@@ -424,7 +426,7 @@ void loop() {
 }
 ```
 
-### GNSS (MIA-M10Q — TinyGPSPlus)
+#### GNSS (MIA-M10Q — TinyGPSPlus)
 
 ```cpp
 #include <TinyGPSPlus.h>
@@ -448,7 +450,7 @@ void loop() {
 }
 ```
 
-### IMU (BHI260AP — SensorLib)
+#### IMU (BHI260AP — SensorLib)
 
 ```cpp
 #include <SensorLib.h>
@@ -473,7 +475,7 @@ void loop() {
 }
 ```
 
-### Audio (ES8311 — I²S)
+#### Audio (ES8311 — I²S)
 
 ```cpp
 #include <driver/i2s.h>
@@ -507,7 +509,7 @@ void setup() {
 }
 ```
 
-### RTC (PCF85063A — SensorLib)
+#### RTC (PCF85063A — SensorLib)
 
 ```cpp
 #include <SensorLib.h>
@@ -532,7 +534,7 @@ void loop() {
 }
 ```
 
-### SD Card (SPI)
+#### SD Card (SPI)
 
 ```cpp
 #include <SD.h>

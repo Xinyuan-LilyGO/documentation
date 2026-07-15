@@ -18,7 +18,7 @@ LILYGO T-Deck Pro 是一款基于 ESP32-S3 芯片的高度集成多功能开发�
 
 ## 快速开始
 
-> **V1.1 用户注意：** 由于 V1.1 版本存在若干硬件配置和触摸芯片变更，请加入 [MeshCore Discord](https://meshcore.gg/) 并进入 **#ripple-gui** 频道，MeshCore 团队可在那里直接为您提供支持。
+> **MeshCore 用户注意（V1.1）：** 由于 V1.1 版本存在若干硬件配置和触摸芯片变更，使用 MeshCore 固件的用户请加入 [MeshCore Discord](https://meshcore.gg/) 并进入 **#ripple-gui** 频道，MeshCore 团队可在那里直接为您提供支持。
 
 ### 示例支持
 
@@ -214,6 +214,7 @@ A7682E 为 LTE Cat1 模块，支持 LTE-FDD/GSM/GPRS/EDGE 无线通信，通过 
 ## 软件开发
 
 * [T-Deck-Pro GitHub 仓库](https://github.com/Xinyuan-LilyGO/T-Deck-Pro)
+* [快速上手指南](quick-start.md)
 
 ### 依赖库
 

@@ -117,6 +117,7 @@ LILYGO T4-S3 是一款基于 **ESP32-S3R8** 双核 LX7 微控制器的紧凑型�
 ## 软件开发
 
 * [LilyGo-AMOLED-Series GitHub 仓库](https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series)
+* [快速上手指南](quick-start.md)
 
 ### 依赖库
 

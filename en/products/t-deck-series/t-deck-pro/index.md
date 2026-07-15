@@ -21,7 +21,7 @@ Suitable for IoT, outdoor devices, smart terminals, environmental monitoring, an
 
 ## Quick Start
 
-> **Note for V1.1 users:** Since version 1.1 has several hardware configuration and touch chip updates, please join the [MeshCore Discord](https://meshcore.gg/) and enter the **#ripple-gui** channel — the MeshCore team can directly assist you there.
+> **Note for MeshCore users on V1.1:** Since version 1.1 has several hardware configuration and touch chip updates, please join the [MeshCore Discord](https://meshcore.gg/) and enter the **#ripple-gui** channel — the MeshCore team can directly assist you there.
 
 ### Example Support
 
@@ -192,6 +192,7 @@ Suitable for IoT, outdoor devices, smart terminals, environmental monitoring, an
 ## Software Development
 
 * [T-Deck-Pro GitHub Repository](https://github.com/Xinyuan-LilyGO/T-Deck-Pro)
+* [Quick Start Guide](quick-start.md)
 
 ### Dependent Libraries
 

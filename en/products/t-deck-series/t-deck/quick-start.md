@@ -53,7 +53,9 @@ Copy this block into every sketch — all examples below reference these constan
 
 ## Arduino
 
-### Install Board Support
+### Arduino IDE
+
+#### Install Board Support
 
 1. Open **Arduino IDE → File → Preferences**
 2. Add this URL to *Additional boards manager URLs*:
@@ -64,9 +66,9 @@ Copy this block into every sketch — all examples below reference these constan
 
 > **Version lock:** The T-Deck examples are tested against **arduino-esp32 2.0.14**. Versions above 2.0.14 may break `TFT_eSPI`. Stay on 2.0.14 until the upstream library is updated.
 
-### Install Libraries
+#### Install Libraries
 
-Copy all folders from the project `lib/` directory into your Arduino Sketchbook `libraries/` folder, or install them manually from Library Manager:
+Copy all folders from the project [lib](https://github.com/Xinyuan-LilyGO/T-Deck/tree/master/lib) directory into your Arduino Sketchbook `libraries/` folder, or install them manually from Library Manager:
 
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
@@ -94,7 +96,7 @@ If your version does not have `Setup210_LilyGo_T_Deck.h`, use the pre-configured
 
 > **Note:** Without `USE_HSPI_PORT` in the active setup file, the sketch will crash with `Guru Meditation Error: Core 1 panic'ed (StoreProhibited)`.
 
-### Board Settings
+#### Board Settings
 
 | Arduino IDE Setting | Value |
 | :-----------------: | :---: |
@@ -113,7 +115,7 @@ If your version does not have `Setup210_LilyGo_T_Deck.h`, use the pre-configured
 | Arduino Runs On | Core 1 |
 | Events Run On | Core 1 |
 
-### Upload
+#### Upload
 
 Select the correct COM port, then click **Upload**.
 
@@ -123,9 +125,9 @@ If upload fails: hold the trackball center button (**BOOT = GPIO0**), insert USB
 
 ---
 
-## PlatformIO
+### PlatformIO
 
-### platformio.ini
+#### platformio.ini
 
 ```ini
 [wifi]
@@ -185,7 +187,7 @@ build_flags =
     -DRADIOLIB_EXCLUDE_BELL
 ```
 
-### Steps
+#### Steps
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/) and [Python](https://www.python.org/)
 2. Install the **PlatformIO IDE** extension in VS Code
@@ -196,13 +198,13 @@ build_flags =
 
 ---
 
-## LVGL
+### LVGL
 
 T-Deck uses **LVGL v8.4.0** with **TFT_eSPI** as the display driver. The display is 320 × 240, no touch — interaction uses the trackball.
 
 > **TFT_eSPI version lock:** Use the `TFT_eSPI` version bundled in `lib/` and the initialization sequence from the [2024-07-26 commit](https://github.com/Xinyuan-LilyGO/T-Deck/commit/6adb8884c689f174c29a6d7172a0daa367a582eb).
 
-### lv_conf.h
+#### lv_conf.h
 
 Place `lv_conf.h` in your Arduino libraries folder (same level as `lvgl/`). Minimum settings:
 
@@ -215,7 +217,7 @@ Place `lv_conf.h` in your Arduino libraries folder (same level as `lvgl/`). Mini
 #define LV_TICK_CUSTOM_SYS_TIME_EXPR (millis())
 ```
 
-### Hello World
+#### Hello World
 
 ```cpp
 #include <TFT_eSPI.h>
@@ -274,7 +276,7 @@ void loop() {
 }
 ```
 
-### Trackball as LVGL Input
+#### Trackball as LVGL Input
 
 ```cpp
 #include <lvgl.h>
@@ -302,9 +304,9 @@ void setup() {
 
 ---
 
-## Peripheral Examples
+### Peripheral Examples
 
-### Power Enable
+#### Power Enable
 
 ```cpp
 // Required when running on battery; safe to call on USB too.
@@ -312,7 +314,7 @@ pinMode(BOARD_POWERON, OUTPUT);
 digitalWrite(BOARD_POWERON, HIGH);
 ```
 
-### Display (TFT_eSPI)
+#### Display (TFT_eSPI)
 
 ```cpp
 #include <TFT_eSPI.h>
@@ -330,7 +332,7 @@ void setup() {
 }
 ```
 
-### LoRa (SX1262 — RadioLib)
+#### LoRa (SX1262 — RadioLib)
 
 ```cpp
 #include <RadioLib.h>
@@ -357,7 +359,7 @@ void loop() {
 }
 ```
 
-### Keyboard (I²C)
+#### Keyboard (I²C)
 
 ```cpp
 #include <Wire.h>
@@ -380,7 +382,7 @@ void loop() {
 }
 ```
 
-### Trackball
+#### Trackball
 
 ```cpp
 volatile int trackX = 0, trackY = 0;
@@ -407,7 +409,7 @@ void loop() {
 }
 ```
 
-### Microphone (ES7210 — I²S)
+#### Microphone (ES7210 — I²S)
 
 > When the microphone is active, **GPIO0 (BOOT / trackball center) is not available**.
 
@@ -438,7 +440,7 @@ void setup() {
 }
 ```
 
-### GPS (MIA-M10Q — TinyGPSPlus)
+#### GPS (MIA-M10Q — TinyGPSPlus)
 
 ```cpp
 #include <TinyGPSPlus.h>
@@ -462,7 +464,7 @@ void loop() {
 }
 ```
 
-### SD Card (SPI)
+#### SD Card (SPI)
 
 ```cpp
 #include <SD.h>
