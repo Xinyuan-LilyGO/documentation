@@ -110,7 +110,7 @@ examples/
 - **Warm backlight** for comfortable extended reading
 - GT911 capacitive touch (two-point), I²C
 - PCF8563 RTC; TF card slot
-- 40-pin Raspberry Pi-compatible GPIO; USB-C; JST-PH 2.0 mm Li-Po
+- 40-pin Raspberry Pi-compatible GPIO; USB-C; JST-GH 2.0 mm Li-Po
 - GPS / LoRa removed vs. Pro edition — lower cost
 
 ## Product Parameters
@@ -127,7 +127,7 @@ examples/
 | RTC | PCF8563 (I²C) |
 | Storage | TF card slot |
 | USB | 1 × Type-C (USB + OTG) |
-| Battery | JST-PH 2.0 mm Li-Po |
+| Battery | JST-GH 2.0 mm Li-Po |
 | I/O Expansion | 2 × 20-pin (Raspberry Pi 40-pin compatible) |
 | Buttons | RST + SIR_io0 + io21 |
 | Mounting Holes | 6 × 3.8 mm |

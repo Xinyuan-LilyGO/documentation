@@ -79,7 +79,7 @@ LILYGO T-Display is a compact ESP32 development board with a built-in **1.14-inc
 | Display | 1.14-inch ST7789V IPS TFT, 240 × 135 px |
 | Display Interface | 4-wire SPI |
 | Buttons | 2 × programmable push buttons |
-| Battery | JST-PH 1.25mm connector, supports 1S LiPo |
+| Battery | JST-GH 1.25mm connector, supports 1S LiPo |
 | USB | 1 × USB-C |
 | Working Voltage | 2.7 V – 4.2 V |
 

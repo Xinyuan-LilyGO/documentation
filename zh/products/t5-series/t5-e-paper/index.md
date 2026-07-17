@@ -14,7 +14,7 @@ tags: E-Paper, ESP32-S3, Touch, E-Ink
 
 ## 概述
 
-LILYGO T5-4.7-S3 电容触摸屏开发板是一款基于 ESP32-S3-WROOM-1-N16R8 芯片（内置 8MB PSRAM 和 16MB Flash）的 4.7 英寸电子墨水屏（E-Paper）解决方案。该产品集成了电容式触摸功能（支持两点触控），配备了 PCF8563 实时时钟芯片，并设有 Type-C USB 接口以及 Li-Po 电池接口（JST-PH 2.0mm），支持电池电压监测（Bat ADC）。它提供兼容树莓派 40-PIN 的 GPIO 扩展接口，板载 TF 卡槽，具备专用的屏幕驱动信号（STV/LE）和 SPI 接口（CS/SCLK/MOSI/MISO），并采用 2.5D 弧面设计，专为开发低功耗、带触控交互的电子墨水屏应用（如信息牌、智能家居显示终端、便携设备等）而设计。
+LILYGO T5-4.7-S3 电容触摸屏开发板是一款基于 ESP32-S3-WROOM-1-N16R8 芯片（内置 8MB PSRAM 和 16MB Flash）的 4.7 英寸电子墨水屏（E-Paper）解决方案。该产品集成了电容式触摸功能（支持两点触控），配备了 PCF8563 实时时钟芯片，并设有 Type-C USB 接口以及 Li-Po 电池接口（JST-GH 2.0mm），支持电池电压监测（Bat ADC）。它提供兼容树莓派 40-PIN 的 GPIO 扩展接口，板载 TF 卡槽，具备专用的屏幕驱动信号（STV/LE）和 SPI 接口（CS/SCLK/MOSI/MISO），并采用 2.5D 弧面设计，专为开发低功耗、带触控交互的电子墨水屏应用（如信息牌、智能家居显示终端、便携设备等）而设计。
 
 ## 快速开始
 
@@ -81,7 +81,7 @@ examples/
 - 4.7 英寸 EDO47TC1 电子墨水屏（540×960），低功耗
 - GT911 两点电容触控，PCF8563 实时时钟
 - 兼容树莓派 40-PIN GPIO 扩展接口
-- TF 卡槽，Type-C USB，JST-PH 2.0mm 电池接口
+- TF 卡槽，Type-C USB，JST-GH 2.0mm 电池接口
 - 2.5D 弧面设计，6 × 3.8mm 定位孔
 
 ## 产品参数

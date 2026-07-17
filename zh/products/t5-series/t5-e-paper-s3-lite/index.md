@@ -96,7 +96,7 @@ examples/
 - 4.7 英寸 EDO47TC1 电子墨水屏（540×960），AG 防眩光玻璃，暖色调背光
 - GT911 两点电容触控，PCF8563 实时时钟
 - 兼容树莓派 40-PIN GPIO 扩展接口
-- TF 卡槽，Type-C USB，JST-PH 2.0mm 电池接口
+- TF 卡槽，Type-C USB，JST-GH 2.0mm 电池接口
 - 2.5D 弧面设计，6 × 3.8mm 定位孔
 
 ## 产品参数

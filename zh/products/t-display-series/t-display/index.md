@@ -79,7 +79,7 @@ LILYGO T-Display 是一款集成 **1.14 英寸 ST7789V IPS TFT LCD**（240 × 13
 | 显示屏 | 1.14 英寸 ST7789V IPS TFT，240 × 135 像素 |
 | 显示接口 | 4 线 SPI |
 | 按键 | 2 × 可编程按键 |
-| 电池 | JST-PH 1.25mm 接口，支持 1S LiPo |
+| 电池 | JST-GH 1.25mm 接口，支持 1S LiPo |
 | USB | 1 × USB-C |
 | 工作电压 | 2.7 V – 4.2 V |
 

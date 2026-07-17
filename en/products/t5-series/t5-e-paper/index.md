@@ -14,7 +14,7 @@ tags: E-Paper, ESP32-S3, Touch, E-Ink
 
 ## Overview
 
-The LILYGO T5-4.7-S3 is a **4.7-inch E-Ink (E-Paper) development board** based on the **ESP32-S3-WROOM-1-N16R8** (16 MB Flash, 8 MB PSRAM). Integrates **capacitive touch** (GT911, two-point), **PCF8563 RTC**, USB-C, Li-Po battery interface (JST-PH 2.0 mm), battery ADC, **40-pin Raspberry Pi-compatible GPIO**, onboard TF card slot, and dedicated display drive signals (STV/LE). 2.5D curved design. Ideal for low-power E-Ink applications with touch interaction: electronic labels, smart home displays, portable devices.
+The LILYGO T5-4.7-S3 is a **4.7-inch E-Ink (E-Paper) development board** based on the **ESP32-S3-WROOM-1-N16R8** (16 MB Flash, 8 MB PSRAM). Integrates **capacitive touch** (GT911, two-point), **PCF8563 RTC**, USB-C, Li-Po battery interface (JST-GH 2.0 mm), battery ADC, **40-pin Raspberry Pi-compatible GPIO**, onboard TF card slot, and dedicated display drive signals (STV/LE). 2.5D curved design. Ideal for low-power E-Ink applications with touch interaction: electronic labels, smart home displays, portable devices.
 
 ## Quick Start
 
@@ -99,7 +99,7 @@ examples/
 - GT911 capacitive touch (two-point), I²C
 - PCF8563 Real-time Clock (I²C)
 - 40-pin Raspberry Pi-compatible GPIO expansion
-- TF card slot, USB-C, JST-PH 2.0 mm Li-Po
+- TF card slot, USB-C, JST-GH 2.0 mm Li-Po
 - 2.5D curved design
 
 ## Product Parameters
@@ -116,7 +116,7 @@ examples/
 | RTC | PCF8563 (I²C) |
 | Storage | TF card slot |
 | USB | 1 × Type-C (USB + OTG) |
-| Battery | JST-PH 2.0 mm Li-Po |
+| Battery | JST-GH 2.0 mm Li-Po |
 | I/O Expansion | 2 × 20-pin (Raspberry Pi 40-pin compatible) |
 | Buttons | RST + SIR_io0 + io21 |
 | Mounting Holes | 6 × 3.8 mm |
