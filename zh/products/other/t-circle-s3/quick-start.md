@@ -11,7 +11,7 @@ show_source: false
 
 | 库名 | 版本 | 来源 |
 | :--: | :--: | :--: |
-| TFT_eSPI | ≤ 2.0.14 | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| TFT_eSPI | 最新 | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
 | CST816D（触摸） | 最新 | [GitHub](https://github.com/Xinyuan-LilyGO/T-Circle-S3) |
 | LVGL | 8.3.x | [GitHub](https://github.com/lvgl/lvgl) |
 
@@ -230,5 +230,5 @@ A：在 Arduino IDE 工具菜单中将 **USB CDC On Boot** 设为 **Enabled**。
 **Q：T-Circle 与 T-Circle S3 有何区别？**  
 A：T-Circle S3 使用 ESP32-S3，具备 USB-OTG、OPI PSRAM 和更多 GPIO，推荐用于新项目。
 
-**Q：TFT_eSPI 版本必须 ≤ 2.0.14？**  
-A：是的。更新版本更改了驱动接口，与该板卡配置文件不兼容。
+**Q：为什么 Arduino ESP32 core 必须 ≤ 2.0.14？**  
+A：Arduino ESP32 core 3.x 修改了 SPI/DMA 内部实现，导致 TFT_eSPI 在 ESP32-S3 上无法正常工作。请通过开发板管理器安装 **esp32 by Espressif Systems 2.0.14** 版本。TFT_eSPI 库本身的版本不受此限制。

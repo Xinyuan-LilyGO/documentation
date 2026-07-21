@@ -11,11 +11,11 @@ show_source: false
 
 | 库名 | 来源 |
 | :--: | :--: |
-| TFT_eSPI | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | [GitHub](https://github.com/lovyan03/LovyanGFX) |
 | Arduino_GFX | [GitHub](https://github.com/moononournation/Arduino_GFX) |
 | LVGL (v8.x) | [GitHub](https://github.com/lvgl/lvgl/tree/release/v8.4) |
 
-> **注意：** TFT_eSPI 请使用 **2.0.14 及以下版本**，高于该版本在 ESP32S3 上存在兼容性问题。
+> **说明：** LovyanGFX 支持 Arduino ESP32 core 3.x，无需降级开发板包版本。
 
 ---
 
@@ -30,7 +30,7 @@ show_source: false
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. 前往 **工具** → **开发板** → **开发板管理器**，搜索 `esp32`，安装 **esp32 by Espressif Systems 2.0.14**
+3. 前往 **工具** → **开发板** → **开发板管理器**，搜索 `esp32`，安装 **esp32 by Espressif Systems**
 
 #### 2. 开发板设置
 
@@ -50,16 +50,73 @@ show_source: false
 
 > **提示：** 使用电池供电时，请将 **USB CDC On Boot** 设为 **Disabled**，否则启动会等待 USB 连接而卡住。
 
-#### 3. TFT_eSPI 配置
+#### 3. LovyanGFX 配置
 
-T-Display-S3 使用 ST7789V（I8080 并行接口），安装 TFT_eSPI 后需激活对应配置文件：
+T-Display-S3 使用 ST7789V（I8080 8位并行接口）。LovyanGFX 需要一个自定义配置类，在你的 sketch 旁边新建头文件 `LGFX_T_Display_S3.h`：
 
-1. 打开 Arduino 库目录中的 `TFT_eSPI/User_Setup_Select.h`
-2. 注释掉默认的 `#include <User_Setup.h>`
-3. 取消注释：
-   ```cpp
-   #include <User_Setups/Setup206_LilyGo_T_Display_S3.h>
-   ```
+```cpp
+#pragma once
+#include <LovyanGFX.hpp>
+
+class LGFX : public lgfx::LGFX_Device {
+    lgfx::Panel_ST7789  _panel_instance;
+    lgfx::Bus_Parallel8 _bus_instance;
+    lgfx::Light_PWM     _light_instance;
+
+public:
+    LGFX() {
+        {
+            auto cfg = _bus_instance.config();
+            cfg.port            = 0;
+            cfg.freq_write      = 20000000;
+            cfg.pin_wr          = 8;
+            cfg.pin_rd          = 9;
+            cfg.pin_rs          = 7;   // DC
+            cfg.pin_d0          = 39;
+            cfg.pin_d1          = 40;
+            cfg.pin_d2          = 41;
+            cfg.pin_d3          = 42;
+            cfg.pin_d4          = 45;
+            cfg.pin_d5          = 46;
+            cfg.pin_d6          = 47;
+            cfg.pin_d7          = 48;
+            _bus_instance.config(cfg);
+            _panel_instance.setBus(&_bus_instance);
+        }
+        {
+            auto cfg = _panel_instance.config();
+            cfg.pin_cs           = 6;
+            cfg.pin_rst          = 5;
+            cfg.pin_busy         = -1;
+            cfg.memory_width     = 320;
+            cfg.memory_height    = 170;
+            cfg.panel_width      = 320;
+            cfg.panel_height     = 170;
+            cfg.offset_x         = 0;
+            cfg.offset_y         = 35;
+            cfg.offset_rotation  = 0;
+            cfg.dummy_read_pixel = 8;
+            cfg.dummy_read_bits  = 1;
+            cfg.readable         = false;
+            cfg.invert           = true;
+            cfg.rgb_order        = false;
+            cfg.dlen_16bit       = false;
+            cfg.bus_shared       = false;
+            _panel_instance.config(cfg);
+        }
+        {
+            auto cfg = _light_instance.config();
+            cfg.pin_bl      = 38;  // BL 引脚；GPIO15 为 Power EN，需单独拉高
+            cfg.invert      = false;
+            cfg.freq        = 44100;
+            cfg.pwm_channel = 7;
+            _light_instance.config(cfg);
+            _panel_instance.setLight(&_light_instance);
+        }
+        setPanel(&_panel_instance);
+    }
+};
+```
 
 #### 4. 上传
 
@@ -94,7 +151,6 @@ T-Display-S3 使用 ST7789V（I8080 并行接口），安装 TFT_eSPI 后需激�
 ```ini
 ; 一次只能取消注释一个
 default_envs = Factory
-; default_envs = TFT_eSPI_Hello_World
 ; default_envs = WIFI_Scan
 ```
 
@@ -111,7 +167,6 @@ default_envs = Factory
 | 示例 | 说明 |
 | :--: | :--- |
 | `Factory` | 出厂测试 |
-| `TFT_eSPI_Hello_World` | TFT_eSPI 基础显示 |
 | `WIFI_Scan` | Wi-Fi 扫描 |
 | `BLE_Uart` | BLE 串口透传 |
 | `SPIFFS_Test` | SPIFFS 文件系统 |
@@ -137,18 +192,16 @@ T-Display-S3 支持 ESP-IDF 开发，请参考 [LilyGo-Display-IDF](https://gith
 
 ### 外设示例
 
-#### Hello World（TFT_eSPI）
+#### Hello World（LovyanGFX）
 
 ```cpp
-#include <TFT_eSPI.h>
-TFT_eSPI tft = TFT_eSPI();
+#include "LGFX_T_Display_S3.h"
+
+LGFX tft;
 
 void setup() {
-    pinMode(15, OUTPUT);
-    digitalWrite(15, HIGH); // 开启显示电源
-
     tft.init();
-    tft.setRotation(1);     // 横屏
+    tft.setRotation(1);
     tft.fillScreen(TFT_BLACK);
     tft.setTextColor(TFT_WHITE, TFT_BLACK);
     tft.setTextSize(2);
@@ -161,20 +214,18 @@ void loop() {}
 #### 绘制图形
 
 ```cpp
-#include <TFT_eSPI.h>
-TFT_eSPI tft = TFT_eSPI();
+#include "LGFX_T_Display_S3.h"
+
+LGFX tft;
 
 void setup() {
-    pinMode(15, OUTPUT);
-    digitalWrite(15, HIGH);
-
     tft.init();
     tft.setRotation(1);
     tft.fillScreen(TFT_BLACK);
 
-    tft.fillCircle(80, 85, 50, TFT_BLUE);          // 实心圆
-    tft.drawRect(160, 35, 100, 100, TFT_GREEN);    // 空心矩形
-    tft.drawLine(0, 0, 319, 169, TFT_RED);         // 对角线
+    tft.fillCircle(80, 85, 50, TFT_BLUE);
+    tft.drawRect(160, 35, 100, 100, TFT_GREEN);
+    tft.drawLine(0, 0, 319, 169, TFT_RED);
 }
 
 void loop() {}
@@ -203,16 +254,14 @@ void loop() {
 #### Sprite 动画
 
 ```cpp
-#include <TFT_eSPI.h>
-TFT_eSPI tft = TFT_eSPI();
-TFT_eSprite sprite = TFT_eSprite(&tft);
+#include "LGFX_T_Display_S3.h"
+
+LGFX tft;
+LGFX_Sprite sprite(&tft);
 
 int x = 0;
 
 void setup() {
-    pinMode(15, OUTPUT);
-    digitalWrite(15, HIGH);
-
     tft.init();
     tft.setRotation(1);
     tft.fillScreen(TFT_BLACK);
@@ -223,7 +272,7 @@ void loop() {
     sprite.fillSprite(TFT_BLACK);
     sprite.fillCircle(30, 30, 28, TFT_CYAN);
     sprite.pushSprite(x, 55);
-    
+
     x += 5;
     if (x > 320) x = -60;
     delay(30);
@@ -234,7 +283,7 @@ void loop() {
 
 ### LVGL
 
-T-Display-S3 支持 LVGL 8.x，以 TFT_eSPI 作为显示刷新后端。I8080 并行接口由 TFT_eSPI 透明处理，LVGL 只需调用 `tft.pushColors()` 即可。
+T-Display-S3 支持 LVGL 8.x，以 LovyanGFX 作为显示刷新后端。
 
 #### 配置 lv_conf.h
 
@@ -249,34 +298,29 @@ T-Display-S3 支持 LVGL 8.x，以 TFT_eSPI 作为显示刷新后端。I8080 并
 #### 最简 LVGL v8 示例
 
 ```cpp
-#include <TFT_eSPI.h>
+#include "LGFX_T_Display_S3.h"
 #include <lvgl.h>
 
 #define SCREEN_W 320
 #define SCREEN_H 170
-#define TFT_PWR  15   // 显示电源使能引脚
 
-TFT_eSPI tft = TFT_eSPI();
+LGFX tft;
 
 static lv_disp_draw_buf_t draw_buf;
 static lv_color_t buf[SCREEN_W * 20];
 
 void my_disp_flush(lv_disp_drv_t *drv, const lv_area_t *area, lv_color_t *color_p) {
-    uint32_t w = area->x2 - area->x1 + 1;
-    uint32_t h = area->y2 - area->y1 + 1;
-
     tft.startWrite();
-    tft.setAddrWindow(area->x1, area->y1, w, h);
-    tft.pushColors((uint16_t *)color_p, w * h, true);
+    tft.setAddrWindow(area->x1, area->y1,
+                      area->x2 - area->x1 + 1,
+                      area->y2 - area->y1 + 1);
+    tft.writePixels((lgfx::rgb565_t *)color_p,
+                    (area->x2 - area->x1 + 1) * (area->y2 - area->y1 + 1));
     tft.endWrite();
-
     lv_disp_flush_ready(drv);
 }
 
 void setup() {
-    pinMode(TFT_PWR, OUTPUT);
-    digitalWrite(TFT_PWR, HIGH);
-
     tft.init();
     tft.setRotation(1);
 
@@ -308,7 +352,6 @@ void loop() {
 T-Display-S3 有带触摸的版本，如果你的板子带触摸，将触摸读取回调注册到 LVGL 输入驱动：
 
 ```cpp
-// 触摸读取回调 — 替换为你的触摸库实现
 void my_touchpad_read(lv_indev_drv_t *drv, lv_indev_data_t *data) {
     uint16_t x, y;
     bool touched = /* your_touch_lib.getPoint(&x, &y) */ false;
@@ -329,23 +372,15 @@ indev_drv.read_cb = my_touchpad_read;
 lv_indev_drv_register(&indev_drv);
 ```
 
-#### 出厂测试示例
-
-仓库中的 `Factory` 示例使用 LVGL 构建了完整的出厂测试 UI，是 T-Display-S3 生产级 LVGL 集成的权威参考。
-
 ---
 
 ## 常见问题
 
-**使用电池供电时屏幕不亮**
-在 `setup()` 开头加入：
-```cpp
-pinMode(15, OUTPUT);
-digitalWrite(15, HIGH); // 开启显示电源
-```
+**屏幕不亮**
+LovyanGFX 通过 `Light_PWM` 配置自动控制背光。如果屏幕不亮，确认 GPIO15 接线正确，且 `cfg.pin_bl = 15` 与你的板子版本一致。
 
 **烧录成功但屏幕无显示**
-先运行 `Arduino_GFXDemo` 确认硬件正常。若该示例正常但 TFT_eSPI 无显示，检查 `User_Setup_Select.h` 是否正确配置了 `Setup206_LilyGo_T_Display_S3.h`。
+检查 `LGFX_T_Display_S3.h` 中的引脚配置是否与你的板子引脚图一致。先运行 `Arduino_GFXDemo` 确认硬件正常。
 
 **无法上传 / 端口不断闪烁**
 手动进入下载模式（见上方步骤），或将板子移动到路径较短的目录（Windows MAX_PATH 限制）。

@@ -11,7 +11,7 @@ Copy the `libraries/` folder from the repository into your Arduino libraries dir
 
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
-| TFT_eSPI | ≤ 2.0.14 | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| TFT_eSPI | latest | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
 | CST816D (touch) | latest | [GitHub](https://github.com/Xinyuan-LilyGO/T-Circle-S3) |
 | LVGL | 8.3.x | [GitHub](https://github.com/lvgl/lvgl) |
 
@@ -230,5 +230,5 @@ A: Set **USB CDC On Boot** to **Enabled** in Arduino IDE Tools.
 **Q: T-Circle vs T-Circle S3?**  
 A: T-Circle S3 uses ESP32-S3 with USB-OTG, OPI PSRAM, and more GPIO. Use this version for new projects.
 
-**Q: TFT_eSPI version must be ≤ 2.0.14?**  
-A: Yes. Newer versions of TFT_eSPI changed the driver interface and are not compatible with this board's configuration file.
+**Q: Why must the Arduino ESP32 core be ≤ 2.0.14?**  
+A: Arduino ESP32 core 3.x changed SPI/DMA internal handling, which breaks TFT_eSPI on ESP32-S3. Install **esp32 by Espressif Systems version 2.0.14** via Boards Manager. The TFT_eSPI library version itself is not constrained.
