@@ -260,6 +260,7 @@ The development board is feature-rich, integrating QWERT keyboard, AI-enabled IM
 * [LilyGoLib](https://github.com/Xinyuan-LilyGO/LilyGoLib)
 * [Quick Start Guide](quick-start.md)
 * [Factory Firmware User Guide](factory.md)
+* [VibeKeyboard User Guide](vibe-keyboard.md)
 * [Claude Desktop Buddy with T-Lora pager](claude-desktop-buddy.md)
 
 ## FAQ
