@@ -32,7 +32,7 @@ The complete setup requires:
 - [`uv`](https://docs.astral.sh/uv/)
 - At least one of Claude Code or Codex
 
-On macOS, full functionality requires Bluetooth, Accessibility, and Microphone permissions for the application that launches `vk-daemon`, as well as the system Dictation shortcut. See [Configure macOS Permissions and Dictation](#_4-configure-macos-permissions-and-dictation).
+On macOS, full functionality requires Bluetooth, Accessibility, and Microphone permissions for the application that launches `vk-daemon`, as well as the system Dictation shortcut. See [Configure macOS Permissions and Dictation](#_5-configure-macos-permissions-and-dictation).
 
 `vk-daemon` currently provides its most complete support on macOS. Linux can run the daemon core and BLE transport, but desktop features such as window focusing, keystrokes, and native notifications are unavailable. Windows has not yet been fully validated at the project level.
 
@@ -118,20 +118,34 @@ After the firmware starts, the device displays the VibeKeyboard main screen and 
 
 ## Configure vk-daemon
 
-All commands below are run from the LilyGoLib repository root.
+### 1. Get the Source and vk-daemon
 
-### 1. Create the Runtime Environment
+The VibeKeyboard firmware and `vk-daemon` are located in the [VibeKeyboard example directory in LilyGoLib](https://github.com/Xinyuan-LilyGO/LilyGoLib/tree/master/examples/VibeKeyboard). The daemon itself is located at `examples/VibeKeyboard/tools/vk-daemon`.
 
-Enter the daemon directory and create the virtual environment from the lock file:
+Using Git is the recommended way to download the complete source and enter the daemon directory:
 
 ```bash
-cd examples/VibeKeyboard/tools/vk-daemon
+git clone https://github.com/Xinyuan-LilyGO/LilyGoLib.git
+cd LilyGoLib/examples/VibeKeyboard/tools/vk-daemon
+```
+
+Alternatively, download the LilyGoLib ZIP archive from GitHub, extract it, and navigate to:
+
+```text
+examples/VibeKeyboard/tools/vk-daemon
+```
+
+### 2. Create the Runtime Environment
+
+From the `vk-daemon` directory, create the virtual environment from the lock file:
+
+```bash
 uv sync --frozen --extra ble
 ```
 
 To test HTTP, hooks, or session discovery without a Bluetooth adapter, run `uv sync` without the BLE extra and start the daemon with `--no-ble` later.
 
-### 2. Install AI Tool Integrations
+### 3. Install AI Tool Integrations
 
 Install only the integrations used on the host:
 
@@ -151,7 +165,7 @@ Check the installation status at any time:
 uv run vk-daemon setup status
 ```
 
-### 3. Start the BLE Connection
+### 4. Start the BLE Connection
 
 1. Restart the T-LoRa-Pager and confirm that the VibeKeyboard main screen appears.
 2. Enable Bluetooth on the computer. Manual pairing in the system Bluetooth device list is not required.
@@ -173,7 +187,7 @@ device_loop.connected label=BLE
 
 Linux hosts must start BlueZ and power on the Bluetooth adapter, for example by running `power on` in `bluetoothctl`. The current user must also have permission to access BlueZ.
 
-### 4. Configure macOS Permissions and Dictation
+### 5. Configure macOS Permissions and Dictation
 
 `vk-daemon` uses macOS Transparency, Consent, and Control (TCC) permissions, not Unix root privileges. **Do not run the daemon with `sudo`.** Permissions belong to the application that launches `vk-daemon`, so each host application must be authorized separately.
 
@@ -204,7 +218,7 @@ When configuration is complete, hold Space on the VibeKeyboard main screen while
 
 > If Dictation is disabled, the shortcut does not match, or Microphone access is missing, the device still sends Voice press and release events, but Codex or Claude Code cannot receive voice input correctly.
 
-### 5. Verify the Connection
+### 6. Verify the Connection
 
 Keep the daemon running, open another terminal in the same directory, and run:
 

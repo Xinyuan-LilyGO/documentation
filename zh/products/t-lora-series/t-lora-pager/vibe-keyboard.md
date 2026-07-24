@@ -32,7 +32,7 @@ show_source: false
 - [`uv`](https://docs.astral.sh/uv/)
 - Claude Code 或 Codex，至少安装其中一种
 
-在 macOS 上使用完整功能前，需要为启动 `vk-daemon` 的宿主应用授予蓝牙、辅助功能和麦克风权限，并配置系统听写快捷键，具体操作见[配置 macOS 权限与听写](#_4-配置-macos-权限与听写)。
+在 macOS 上使用完整功能前，需要为启动 `vk-daemon` 的宿主应用授予蓝牙、辅助功能和麦克风权限，并配置系统听写快捷键，具体操作见[配置 macOS 权限与听写](#_5-配置-macos-权限与听写)。
 
 `vk-daemon` 目前主要支持 macOS。Linux 可以运行 daemon 核心和 BLE，但不支持窗口聚焦、按键和本机通知等桌面功能；Windows 尚未完成项目级验证。
 
@@ -118,20 +118,34 @@ https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json
 
 ## 配置 vk-daemon
 
-以下命令均以 LilyGoLib 仓库根目录为起点。
+### 1. 获取源码和 vk-daemon
 
-### 1. 创建运行环境
+VibeKeyboard 固件和 `vk-daemon` 位于 [LilyGoLib 的 VibeKeyboard 示例目录](https://github.com/Xinyuan-LilyGO/LilyGoLib/tree/master/examples/VibeKeyboard)，其中 daemon 的路径为 `examples/VibeKeyboard/tools/vk-daemon`。
 
-进入 daemon 目录，并根据锁文件创建虚拟环境：
+推荐使用 Git 获取完整源码并进入 daemon 目录：
 
 ```bash
-cd examples/VibeKeyboard/tools/vk-daemon
+git clone https://github.com/Xinyuan-LilyGO/LilyGoLib.git
+cd LilyGoLib/examples/VibeKeyboard/tools/vk-daemon
+```
+
+也可以在 GitHub 上下载 LilyGoLib 的 ZIP 压缩包并解压，然后进入：
+
+```text
+examples/VibeKeyboard/tools/vk-daemon
+```
+
+### 2. 创建运行环境
+
+在 `vk-daemon` 目录中，根据锁文件创建虚拟环境：
+
+```bash
 uv sync --frozen --extra ble
 ```
 
 如果只需要测试 HTTP、hook 或会话发现，不连接实体设备，可以运行 `uv sync`，之后使用 `--no-ble` 启动。
 
-### 2. 安装 AI 工具集成
+### 3. 安装 AI 工具集成
 
 只安装本机实际使用的集成：
 
@@ -151,7 +165,7 @@ uv run vk-daemon setup install claude-code
 uv run vk-daemon setup status
 ```
 
-### 3. 启动 BLE 连接
+### 4. 启动 BLE 连接
 
 1. 重启 T-LoRa-Pager，确认设备已进入 VibeKeyboard 主界面。
 2. 打开电脑的 Bluetooth。无需在系统蓝牙设备列表中手动配对。
@@ -173,7 +187,7 @@ device_loop.connected label=BLE
 
 Linux 用户需要先启动 BlueZ 并打开 Bluetooth adapter，例如在 `bluetoothctl` 中执行 `power on`，同时确保当前用户有权访问 BlueZ。
 
-### 4. 配置 macOS 权限与听写
+### 5. 配置 macOS 权限与听写
 
 `vk-daemon` 使用 macOS 的透明度、许可与控制（TCC）授权，而不是 Unix root 权限。**不要使用 `sudo` 启动 daemon**。权限归属于启动 `vk-daemon` 的宿主应用，因此从不同应用启动时，需要分别授权。
 
@@ -204,7 +218,7 @@ Linux 用户需要先启动 BlueZ 并打开 Bluetooth adapter，例如在 `bluet
 
 > 未开启系统听写、快捷键设置不一致或未授予麦克风权限时，设备端仍可发送 Voice 按下和松开事件，但 Codex 或 Claude Code 无法正常获取语音输入。
 
-### 5. 验证连接
+### 6. 验证连接
 
 保持 daemon 运行，在另一个终端中进入相同目录并执行：
 
