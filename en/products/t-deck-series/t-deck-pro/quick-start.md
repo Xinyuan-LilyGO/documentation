@@ -179,6 +179,7 @@ src_dir = examples/factory
 ; src_dir = examples/IMU_Test
 ; src_dir = examples/4G_Test
 ; src_dir = examples/Audio_Test
+; src_dir = examples/test_microphone
 boards_dir = boards
 
 [env:T-Deck-Pro]
@@ -548,6 +549,58 @@ void setup() {
     };
     i2s_driver_install(I2S_NUM_0, &cfg, 0, NULL);
     i2s_set_pin(I2S_NUM_0, &pins);
+}
+```
+
+#### Microphone
+
+```cpp
+#include <Arduino.h>
+#include <driver/i2s.h>
+
+#define MIC_DATA_PIN   17
+#define MIC_CLOCK_PIN  18
+
+static const i2s_port_t I2S_PORT = I2S_NUM_0;
+
+void setup()
+{
+    Serial.begin(115200);
+
+    i2s_config_t config = {};
+    config.mode = (i2s_mode_t)(I2S_MODE_MASTER | I2S_MODE_RX | I2S_MODE_PDM);
+    config.sample_rate = 16000;
+    config.bits_per_sample = I2S_BITS_PER_SAMPLE_16BIT;
+    config.channel_format = I2S_CHANNEL_FMT_ONLY_LEFT;
+    config.communication_format = I2S_COMM_FORMAT_STAND_I2S;
+    config.dma_buf_count = 8;
+    config.dma_buf_len = 1024;
+
+    i2s_pin_config_t pins = {};
+    pins.bck_io_num = I2S_PIN_NO_CHANGE;
+    pins.ws_io_num = MIC_CLOCK_PIN;
+    pins.data_out_num = I2S_PIN_NO_CHANGE;
+    pins.data_in_num = MIC_DATA_PIN;
+
+    i2s_driver_install(I2S_PORT, &config, 0, NULL);
+    i2s_set_pin(I2S_PORT, &pins);
+    Serial.println("PDM microphone ready");
+}
+
+void loop()
+{
+    int16_t samples[512];
+    size_t bytes_read = 0;
+    i2s_read(I2S_PORT, samples, sizeof(samples), &bytes_read, portMAX_DELAY);
+    if (bytes_read == 0) return;
+
+    uint32_t level = 0;
+    const size_t count = bytes_read / sizeof(samples[0]);
+    for (size_t i = 0; i < count; ++i) {
+        level += abs(samples[i]);
+    }
+    Serial.printf("Microphone level: %lu\n", level / count);
+    delay(100);
 }
 ```
 
