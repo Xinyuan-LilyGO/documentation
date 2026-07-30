@@ -13,7 +13,7 @@ tags: K210, ESP32, AI, Camera, Touch Screen, IoT
 
 ## Overview
 
-T-Bao is an open-source AIoT terminal based on **ESP32-D0WDQ6-V3** and **K210** RISC-V AI chip, featuring high performance, low power consumption, expandability, and programmability. It deeply integrates the K210 RISC-V architecture AI chip (with KPU neural network processor) with the ESP32 dual-core Wi-Fi/BLE communication module, equipped with a professional **OV2640** 2-megapixel camera (supporting 180° rotation) and **ST7789V 1.54-inch IPS touch screen** (240 × 240, 90° adaptive rotation). Supports millisecond-level face recognition and dynamic image processing.
+T-Bao is an open-source AIoT terminal based on **ESP32-D0WDQ6-V3** and **K210** RISC-V AI chip, featuring high performance, low power consumption, expandability, and programmability. It deeply integrates the K210 RISC-V architecture AI chip (with KPU neural network processor) with the ESP32 dual-core Wi-Fi/BLE communication module, equipped with a professional **OV2640** 2-megapixel camera (supporting 180° rotation) and **ST7789V 1.54-inch IPS touch screen** (240 × 240, 90° adaptive rotation). The display is driven by the K210 side; ESP32 communicates with K210 over UART and does not connect to the display directly. Supports millisecond-level face recognition and dynamic image processing.
 
 Built-in **MAX98357A** I2S digital power amplifier, **MSM261S** high-sensitivity microphone array, and **AXP202** intelligent power management. Integrates **MPU6050** six-axis sensor, TF card storage, and rich interface resources (UART/SPI/I2C/Touch). Compatible with Arduino/MicroPython ecosystem. Suitable for industrial vision detection, smart security, AIoT terminals, and educational robots.
 
@@ -68,7 +68,7 @@ Built-in **MAX98357A** I2S digital power amplifier, **MSM261S** high-sensitivity
 - K210 RISC-V dual-core (400 MHz), KPU neural network processor (YOLOv3, face recognition, etc.)
 - ESP32-D0WDQ6-V3, 16 MB Flash, 8 MB PSRAM, Wi-Fi + Bluetooth 4.2
 - OV2640 2 MP camera, 180° rotation
-- ST7789V 1.54-inch IPS touch screen (240 × 240)
+- ST7789V 1.54-inch IPS touch screen (240 × 240), driven by K210
 - MAX98357A I2S amplifier + MSM261S microphone array
 - AXP202 PMU, MPU6050 six-axis IMU, DRV8833 motor driver
 - 2 × QWIIC + 4 × magnetic interfaces, TF card slot
@@ -84,7 +84,7 @@ Built-in **MAX98357A** I2S digital power amplifier, **MSM261S** high-sensitivity
 | PSRAM | 8 MB |
 | Wi-Fi | 2.4 GHz 802.11 b/g/n |
 | Bluetooth | Bluetooth 4.2 + BLE |
-| Display | 1.54-inch ST7789V IPS TFT, 240 × 240 |
+| Display | 1.54-inch ST7789V IPS TFT, 240 × 240, driven by K210 |
 | Camera | OV2640 (2 MP) |
 | Audio Output | MAX98357A I2S amplifier |
 | Audio Input | MSM261S microphone array |
@@ -124,7 +124,6 @@ Built-in **MAX98357A** I2S digital power amplifier, **MSM261S** high-sensitivity
 
 * [MaixPy](https://github.com/sipeed/MaixPy) — K210 development framework
 * [LVGL](https://lvgl.io/) — Embedded graphics library
-* [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
 * [Adafruit_Sensor](https://github.com/adafruit/Adafruit_Sensor)
 
 ## FAQ

@@ -13,7 +13,6 @@ show_source: false
 | :--: | :--: | :--: |
 | LVGL | **8.3.0**（禁止升级） | [GitHub](https://github.com/lvgl/lvgl) |
 | Arduino_GFX | 最新 | [GitHub](https://github.com/moononournation/Arduino_GFX) |
-| TFT_eSPI | 最新 | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
 | XPowersLib | 最新 | [GitHub](https://github.com/lewisxhe/XPowersLib) |
 | Adafruit_BusIO | 最新 | [GitHub](https://github.com/adafruit/Adafruit_BusIO) |
 

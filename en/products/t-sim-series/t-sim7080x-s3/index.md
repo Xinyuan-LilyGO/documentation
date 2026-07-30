@@ -1,5 +1,5 @@
 ---
-title: T-SIM7080-S3
+title: T-SIM7080X-S3
 show_source: false
 tags: ESP32-S3, SIM7080G, NB-IoT, Cat-M1, GNSS, GPS, IoT, LTE
 ---
@@ -7,16 +7,16 @@ tags: ESP32-S3, SIM7080G, NB-IoT, Cat-M1, GNSS, GPS, IoT, LTE
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-sim7080-s3" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-1.jpg', alt: 'T-SIM7080-S3 front view' },
-  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-2.jpg', alt: 'T-SIM7080-S3 back view' },
-  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-3.jpg', alt: 'T-SIM7080-S3 dimensions' },
-  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-1.jpg', alt: 'T-SIM7080-S3 specifications part 1' },
-  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-2.jpg', alt: 'T-SIM7080-S3 specifications part 2' },
+  { src: '/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-1.jpg', alt: 'T-SIM7080X-S3 front view' },
+  { src: '/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-2.jpg', alt: 'T-SIM7080X-S3 back view' },
+  { src: '/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-3.jpg', alt: 'T-SIM7080X-S3 dimensions' },
+  { src: '/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-info-1.jpg', alt: 'T-SIM7080X-S3 specifications part 1' },
+  { src: '/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-info-2.jpg', alt: 'T-SIM7080X-S3 specifications part 2' },
 ]" />
 
 ## Overview
 
-LILYGO T-SIM7080-S3 is a compact IoT development board combining the **ESP32-S3** dual-core LX7 processor with the **SIM7080G** multi-band Cat-M / NB-IoT module. It adds Wi-Fi 4, Bluetooth 5.0 LE, and optional GNSS positioning, making it well-suited for low-power wide-area network (LPWAN) applications such as asset tracking, smart metering, and remote sensor nodes. The board integrates an onboard PMU with short-circuit and overload protection, an 18650 battery holder, a solar charging input (4.4 V–6 V), a TF card slot, and a nano SIM slot. Two USB ports are provided: USB-C for ESP32-S3 programming and a Micro-USB port dedicated to SIM7080G firmware upgrades.
+LILYGO T-SIM7080X-S3 is a compact IoT development board combining the **ESP32-S3** dual-core LX7 processor with the **SIM7080G** multi-band Cat-M / NB-IoT module. It adds Wi-Fi 4, Bluetooth 5.0 LE, and optional GNSS positioning, making it well-suited for low-power wide-area network (LPWAN) applications such as asset tracking, smart metering, and remote sensor nodes. The board integrates an onboard PMU with short-circuit and overload protection, an 18650 battery holder, a solar charging input (4.4 V–6 V), a TF card slot, and a nano SIM slot. Two USB ports are provided: USB-C for ESP32-S3 programming and a Micro-USB port dedicated to SIM7080G firmware upgrades.
 
 ## Quick Start
 
@@ -93,13 +93,13 @@ LILYGO T-SIM7080-S3 is a compact IoT development board combining the **ESP32-S3*
 | Weight | <!-- placeholder --> |
 | Package size | <!-- placeholder --> |
 
-![T-SIM7080-S3 Specifications Part 1](/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-1.jpg)
+![T-SIM7080X-S3 Specifications Part 1](/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-info-1.jpg)
 
-![T-SIM7080-S3 Specifications Part 2](/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-2.jpg)
+![T-SIM7080X-S3 Specifications Part 2](/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-info-2.jpg)
 
 ## Pin Diagram
 
-![T-SIM7080-S3 Pinout](/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-pinout.jpg)
+![T-SIM7080X-S3 Pinout](/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-pinout.jpg)
 
 ## Dimensions
 

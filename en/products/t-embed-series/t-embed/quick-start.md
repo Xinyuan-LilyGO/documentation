@@ -9,7 +9,8 @@ show_source: false
 
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
-| TFT_eSPI | Latest | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | Latest | [GitHub](https://github.com/lovyan03/LovyanGFX) |
+| LilyGo-display-library | Latest | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 | FastLED | Latest | [GitHub](https://github.com/FastLED/FastLED) |
 | ESP32-audioI2S | Latest | [GitHub](https://github.com/schreibfaul1/ESP32-audioI2S) |
 | LVGL | 8.x | [GitHub](https://github.com/lvgl/lvgl) |
@@ -26,7 +27,7 @@ show_source: false
    git clone https://github.com/Xinyuan-LilyGO/T-Embed.git
    ```
 3. Open `platformio.ini` and select the target example
-4. Click **✓** to build, connect via USB-C, click **→** to upload
+4. Click **Build** to build, connect via USB-C, click **Upload** to upload
 
 ---
 
@@ -34,12 +35,12 @@ show_source: false
 
 #### 1. Install ESP32 Board Support
 
-1. Open Arduino IDE → **File** → **Preferences**
+1. Open Arduino IDE -> **File** -> **Preferences**
 2. Add to "Additional Board Manager URLs":
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. Go to **Tools** → **Board** → **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
+3. Go to **Tools** -> **Board** -> **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
 
 #### 2. Board Settings
 
@@ -64,21 +65,20 @@ If upload fails: hold **BOOT**, press and release **RST**, then release **BOOT**
 
 ### Peripheral Examples
 
-#### Hello World (TFT_eSPI)
+#### Hello World (LovyanGFX)
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_EMBED
+#include <LilyGo_LovyanGFX.h>
 
-TFT_eSPI tft;
+LilyGo_T_Embed display;
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
-    tft.setTextColor(TFT_WHITE, TFT_BLACK);
-    tft.setTextSize(2);
-    tft.setCursor(60, 75);
-    tft.println("T-Embed");
+    display.begin(1);
+    display.setTextColor(TFT_WHITE, TFT_BLACK);
+    display.setTextSize(2);
+    display.setCursor(60, 75);
+    display.println("T-Embed");
 }
 
 void loop() {}
@@ -115,35 +115,34 @@ void loop() {
 
 ### LVGL
 
-T-Embed features a **1.9-inch ST7789V IPS TFT** (320 × 170) driven by TFT_eSPI.
+T-Embed features a **1.9-inch ST7789V IPS TFT** (320 × 170) driven by LovyanGFX.
 
 #### Minimal LVGL v8 Example
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_EMBED
+#include <LilyGo_LovyanGFX.h>
 #include <lvgl.h>
 
 #define SCREEN_W 320
 #define SCREEN_H 170
 
-TFT_eSPI tft;
+LilyGo_T_Embed display;
 static lv_disp_draw_buf_t draw_buf;
 static lv_color_t buf[SCREEN_W * SCREEN_H / 10];
 
 void my_disp_flush(lv_disp_drv_t *drv, const lv_area_t *area, lv_color_t *color_p) {
     uint32_t w = area->x2 - area->x1 + 1;
     uint32_t h = area->y2 - area->y1 + 1;
-    tft.startWrite();
-    tft.setAddrWindow(area->x1, area->y1, w, h);
-    tft.pushColors((uint16_t *)color_p, w * h, true);
-    tft.endWrite();
+    display.startWrite();
+    display.setAddrWindow(area->x1, area->y1, w, h);
+    display.pushPixels((uint16_t *)color_p, w * h, true);
+    display.endWrite();
     lv_disp_flush_ready(drv);
 }
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
+    display.begin(1);
 
     lv_init();
     lv_disp_draw_buf_init(&draw_buf, buf, NULL, SCREEN_W * SCREEN_H / 10);

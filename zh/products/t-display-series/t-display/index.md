@@ -20,7 +20,7 @@ LILYGO T-Display 是一款集成 **1.14 英寸 ST7789V IPS TFT LCD**（240 × 13
 
 | 示例 | PlatformIO/Arduino | ESP-IDF | 描述 |
 | :-----: | :----------------: | :-----: | :---------: |
-| [TTGO-T-Display](https://github.com/Xinyuan-LilyGO/TTGO-T-Display) | ✓ | | 显示屏演示、TFT_eSPI 示例、出厂测试 |
+| [TTGO-T-Display](https://github.com/Xinyuan-LilyGO/TTGO-T-Display) | ✓ | | 显示屏演示、示例、出厂测试 |
 
 ### PlatformIO
 
@@ -120,7 +120,6 @@ LILYGO T-Display 是一款集成 **1.14 英寸 ST7789V IPS TFT LCD**（240 × 13
 
 ### 依赖库
 
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 
 ## 常见问题
 

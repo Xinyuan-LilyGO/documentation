@@ -143,7 +143,6 @@ LILYGO T-Dongle-S3 is a feature-rich ESP32-S3 USB dongle development board in a 
 
 ### Dependent Libraries
 
-- [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 - [FastLED](https://github.com/FastLED/FastLED)
 
 ## FAQ

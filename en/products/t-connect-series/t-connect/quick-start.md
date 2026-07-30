@@ -10,7 +10,6 @@ show_source: false
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
 | RadioLib | Latest | [GitHub](https://github.com/jgromes/RadioLib) |
-| TFT_eSPI | Latest | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
 | XPowersLib | Latest | [GitHub](https://github.com/lewisxhe/XPowersLib) |
 
 ---

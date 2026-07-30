@@ -9,7 +9,7 @@ tags: K210, ESP32, AI, Camera, Motor, Robot, WiFi
 
 ## Overview
 
-T-Bao Gear is the smart car expansion of the T-Bao AIoT terminal, combining the **K210** RISC-V AI chip and **ESP32** dual-core MCU with a wheeled robot chassis. It uses a **DRV8833** dual H-bridge motor driver to control two DC gear motors and an **ES_9051** servo for camera pan/tilt. The K210 handles on-device AI inference (face detection, emotion recognition, object tracking), while the ESP32 manages motion control, WiFi communication, and Web remote control. Suitable for AI robotics education, autonomous navigation research, and remote-controlled vehicle projects.
+T-Bao Gear is the smart car expansion of the T-Bao AIoT terminal, combining the **K210** RISC-V AI chip and **ESP32** dual-core MCU with a wheeled robot chassis. It uses a **DRV8833** dual H-bridge motor driver to control two DC gear motors and an **ES_9051** servo for camera pan/tilt. The K210 handles on-device AI inference (face detection, emotion recognition, object tracking) and drives the onboard display, while the ESP32 manages motion control, WiFi communication, and Web remote control. Suitable for AI robotics education, autonomous navigation research, and remote-controlled vehicle projects.
 
 ## Quick Start
 
@@ -79,7 +79,7 @@ T-Bao Gear is the smart car expansion of the T-Bao AIoT terminal, combining the 
 - DRV8833 dual H-bridge motor driver, controls two DC gear motors
 - ES_9051 servo for camera pan/tilt (0–180°)
 - OV2640 2 MP camera with 180° rotation
-- ST7789V 1.54-inch IPS touch screen (240 × 240)
+- ST7789V 1.54-inch IPS touch screen (240 × 240), driven by K210
 - WiFi Web remote control support
 - K210 ↔ ESP32 UART communication (TX: GPIO25, RX: GPIO26)
 - Multiple operation modes: face tracking, emotion interaction, Web remote, multi-mode factory
@@ -94,7 +94,7 @@ T-Bao Gear is the smart car expansion of the T-Bao AIoT terminal, combining the 
 | PSRAM | 8 MB |
 | Wi-Fi | 2.4 GHz 802.11 b/g/n |
 | Bluetooth | Bluetooth 4.2 + BLE |
-| Display | 1.54-inch ST7789V IPS TFT, 240 × 240 |
+| Display | 1.54-inch ST7789V IPS TFT, 240 × 240, driven by K210 |
 | Camera | OV2640 (2 MP, 180° rotation) |
 | Motor Driver | DRV8833 dual H-bridge |
 | Servo | ES_9051 (0–180°) |

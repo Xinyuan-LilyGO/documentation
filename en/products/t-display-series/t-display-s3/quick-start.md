@@ -11,11 +11,11 @@ Install the following libraries via the Arduino IDE Library Manager, or place th
 
 | Library | Source |
 | :-----: | :----: |
+| LilyGo-display-library | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 | LovyanGFX | [GitHub](https://github.com/lovyan03/LovyanGFX) |
-| Arduino_GFX | [GitHub](https://github.com/moononournation/Arduino_GFX) |
 | LVGL (v8.x) | [GitHub](https://github.com/lvgl/lvgl/tree/release/v8.4) |
 
-> **Note:** LovyanGFX supports Arduino ESP32 core 3.x and does not require downgrading the board package.
+> **Note:** `LilyGo_LovyanGFX` wraps the T-Display-S3 screen pins, power enable, and backlight configuration on top of LovyanGFX, so you do not need to copy board-level configuration into every sketch.
 
 ---
 
@@ -25,12 +25,12 @@ Install the following libraries via the Arduino IDE Library Manager, or place th
 
 #### 1. Install ESP32 Board Support
 
-1. Open Arduino IDE → **File** → **Preferences**
+1. Open Arduino IDE -> **File** -> **Preferences**
 2. Add the following URL to "Additional Boards Manager URLs":
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. Go to **Tools** → **Board** → **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
+3. Go to **Tools** -> **Board** -> **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
 
 #### 2. Board Settings
 
@@ -50,73 +50,18 @@ Install the following libraries via the Arduino IDE Library Manager, or place th
 
 > **Note:** When running on battery without USB, set **USB CDC On Boot** to **Disabled** to prevent the board from stalling at boot waiting for a USB connection.
 
-#### 3. LovyanGFX Configuration
+#### 3. LilyGo_LovyanGFX Configuration
 
-T-Display-S3 uses an ST7789V via the I8080 8-bit parallel interface. LovyanGFX requires a custom config class — create a header file (e.g. `LGFX_T_Display_S3.h`) alongside your sketch:
+T-Display-S3 uses an ST7789V over the I8080 8-bit parallel interface. After installing `LilyGo_LovyanGFX`, create a `LilyGo_T_Display_S3` object directly in your sketch:
 
 ```cpp
-#pragma once
-#include <LovyanGFX.hpp>
+#define LILYGO_LGFX_USE_T_DISPLAY_S3
+#include <LilyGo_LovyanGFX.h>
 
-class LGFX : public lgfx::LGFX_Device {
-    lgfx::Panel_ST7789  _panel_instance;
-    lgfx::Bus_Parallel8 _bus_instance;
-    lgfx::Light_PWM     _light_instance;
-
-public:
-    LGFX() {
-        {
-            auto cfg = _bus_instance.config();
-            cfg.port            = 0;
-            cfg.freq_write      = 20000000;
-            cfg.pin_wr          = 8;
-            cfg.pin_rd          = 9;
-            cfg.pin_rs          = 7;   // DC
-            cfg.pin_d0          = 39;
-            cfg.pin_d1          = 40;
-            cfg.pin_d2          = 41;
-            cfg.pin_d3          = 42;
-            cfg.pin_d4          = 45;
-            cfg.pin_d5          = 46;
-            cfg.pin_d6          = 47;
-            cfg.pin_d7          = 48;
-            _bus_instance.config(cfg);
-            _panel_instance.setBus(&_bus_instance);
-        }
-        {
-            auto cfg = _panel_instance.config();
-            cfg.pin_cs           = 6;
-            cfg.pin_rst          = 5;
-            cfg.pin_busy         = -1;
-            cfg.memory_width     = 320;
-            cfg.memory_height    = 170;
-            cfg.panel_width      = 320;
-            cfg.panel_height     = 170;
-            cfg.offset_x         = 0;
-            cfg.offset_y         = 35;
-            cfg.offset_rotation  = 0;
-            cfg.dummy_read_pixel = 8;
-            cfg.dummy_read_bits  = 1;
-            cfg.readable         = false;
-            cfg.invert           = true;
-            cfg.rgb_order        = false;
-            cfg.dlen_16bit       = false;
-            cfg.bus_shared       = false;
-            _panel_instance.config(cfg);
-        }
-        {
-            auto cfg = _light_instance.config();
-            cfg.pin_bl      = 38;  // BL pin; GPIO15 is Power EN (set HIGH separately)
-            cfg.invert      = false;
-            cfg.freq        = 44100;
-            cfg.pwm_channel = 7;
-            _light_instance.config(cfg);
-            _panel_instance.setLight(&_light_instance);
-        }
-        setPanel(&_panel_instance);
-    }
-};
+LilyGo_T_Display_S3 tft;
 ```
+
+`tft.begin()` initializes the display, applies rotation and brightness, and clears the screen.
 
 #### 4. Upload
 
@@ -156,9 +101,9 @@ default_envs = Factory
 
 #### 3. Build and Upload
 
-- Click **✓** in the bottom toolbar to compile
+- Click **Upload** in the bottom toolbar to compile
 - Connect the board via USB-C
-- Click **→** to upload
+- Click **Upload** to upload
 
 ---
 
@@ -166,6 +111,7 @@ default_envs = Factory
 
 | Example | Description |
 | :-----: | :---------- |
+| `LilyGo_LovyanGFX_Board_Test` | Unified LilyGo_LovyanGFX board display test |
 | `Factory` | Factory test / demo |
 | `WIFI_Scan` | Wi-Fi network scanner |
 | `BLE_Uart` | BLE UART passthrough |
@@ -195,14 +141,13 @@ MicroPython is supported:
 #### Hello World (LovyanGFX)
 
 ```cpp
-#include "LGFX_T_Display_S3.h"
+#define LILYGO_LGFX_USE_T_DISPLAY_S3
+#include <LilyGo_LovyanGFX.h>
 
-LGFX tft;
+LilyGo_T_Display_S3 tft;
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
+    tft.begin(1);
     tft.setTextColor(TFT_WHITE, TFT_BLACK);
     tft.setTextSize(2);
     tft.drawString("T-Display-S3", 40, 80);
@@ -214,14 +159,13 @@ void loop() {}
 #### Draw Shapes
 
 ```cpp
-#include "LGFX_T_Display_S3.h"
+#define LILYGO_LGFX_USE_T_DISPLAY_S3
+#include <LilyGo_LovyanGFX.h>
 
-LGFX tft;
+LilyGo_T_Display_S3 tft;
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
+    tft.begin(1);
 
     tft.fillCircle(80, 85, 50, TFT_BLUE);
     tft.drawRect(160, 35, 100, 100, TFT_GREEN);
@@ -254,17 +198,16 @@ void loop() {
 #### Sprite Animation
 
 ```cpp
-#include "LGFX_T_Display_S3.h"
+#define LILYGO_LGFX_USE_T_DISPLAY_S3
+#include <LilyGo_LovyanGFX.h>
 
-LGFX tft;
+LilyGo_T_Display_S3 tft;
 LGFX_Sprite sprite(&tft);
 
 int x = 0;
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
+    tft.begin(1);
     sprite.createSprite(60, 60);
 }
 
@@ -298,13 +241,14 @@ Copy `lv_conf.h` from the project root (or LVGL's `lv_conf_template.h`) into you
 #### Minimal LVGL v8 Sketch
 
 ```cpp
-#include "LGFX_T_Display_S3.h"
+#define LILYGO_LGFX_USE_T_DISPLAY_S3
+#include <LilyGo_LovyanGFX.h>
 #include <lvgl.h>
 
 #define SCREEN_W 320
 #define SCREEN_H 170
 
-LGFX tft;
+LilyGo_T_Display_S3 tft;
 
 static lv_disp_draw_buf_t draw_buf;
 static lv_color_t buf[SCREEN_W * 20];
@@ -321,8 +265,7 @@ void my_disp_flush(lv_disp_drv_t *drv, const lv_area_t *area, lv_color_t *color_
 }
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
+    tft.begin(1);
 
     lv_init();
     lv_disp_draw_buf_init(&draw_buf, buf, NULL, SCREEN_W * 20);
@@ -377,10 +320,10 @@ lv_indev_drv_register(&indev_drv);
 ## FAQ
 
 **Screen stays dark**
-LovyanGFX controls the backlight automatically via the `Light_PWM` config. If the screen is dark, verify pin 15 is correctly wired and the `cfg.pin_bl = 15` value matches your board revision.
+`LilyGo_LovyanGFX` enables GPIO15 for panel power and uses GPIO38 for backlight PWM. If the screen stays dark, confirm the board variant matches this profile and power is stable.
 
 **Upload succeeds but nothing appears on screen**
-Double-check the pin assignments in `LGFX_T_Display_S3.h` against your board's pinout. Run `Arduino_GFXDemo` first to confirm the hardware is working.
+Confirm `LilyGo_LovyanGFX` is installed, then run the library `LilyGo_LovyanGFX_Board_Test` example first to verify the hardware.
 
 **Cannot upload / port keeps flashing**
 Enter download mode manually (see steps above), or move the sketch to a shorter path (Windows MAX_PATH limit can cause compile failures).

@@ -4,12 +4,11 @@ show_source: false
 ---
 
 # T-Display Bar 快速开始
-
 ## 依赖库
-
 | 库名 | 版本 | 来源 |
 | :--: | :--: | :--: |
-| TFT_eSPI | 最新 | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | 最新| [GitHub](https://github.com/lovyan03/LovyanGFX) |
+| LilyGo-display-library | 最新 | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 | LVGL | 8.x | [GitHub](https://github.com/lvgl/lvgl) |
 
 ---
@@ -24,7 +23,7 @@ show_source: false
    git clone https://github.com/Xinyuan-LilyGO/T-Display-Bar.git
    ```
 3. 打开 `platformio.ini`，选择目标示例
-4. 点击 **✓** 编译，连接 USB-C，点击 **→** 上传
+4. 点击 **Build** 编译，连接 USB-C，点击 **Upload** 上传
 
 ---
 
@@ -46,27 +45,24 @@ show_source: false
 
 ### 外设示例
 
-#### 显示屏（ST7789）
-
+#### 显示屏（ST7789 / LovyanGFX）
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_DISPLAY_BAR
+#include <LilyGo_LovyanGFX.h>
 
-TFT_eSPI tft;
+LilyGo_T_Display_Bar display;
 
 void setup() {
-  tft.begin();
-  tft.setRotation(0);
-  tft.fillScreen(TFT_BLACK);
-  tft.setTextColor(TFT_WHITE, TFT_BLACK);
-  tft.setTextSize(2);
-  tft.drawString("T-Display Bar", 5, 130);
+  display.begin(0);
+  display.setTextColor(TFT_WHITE, TFT_BLACK);
+  display.setTextSize(2);
+  display.drawString("T-Display Bar", 5, 130);
 }
 
 void loop() {}
 ```
 
 #### 触摸（CST816）
-
 ```cpp
 #include <Wire.h>
 
@@ -97,7 +93,7 @@ void loop() {
       uint8_t num = Wire.read();
       uint16_t x = ((Wire.read() & 0x0F) << 8) | Wire.read();
       uint16_t y = ((Wire.read() & 0x0F) << 8) | Wire.read();
-      Serial.printf("触摸: x=%d y=%d 手指数=%d\n", x, y, num);
+      Serial.printf("触摸: x=%d y=%d 手指：%d\n", x, y, num);
     }
   }
   delay(10);

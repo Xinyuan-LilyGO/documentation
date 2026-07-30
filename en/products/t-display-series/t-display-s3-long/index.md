@@ -134,7 +134,6 @@ T-Display S3 Long is a long-strip display development board based on **ESP32-S3R
 * [LVGL 8.3.0](https://github.com/lvgl/lvgl) — Note: do not upgrade; forced software rotation enabled
 * [XPowersLib](https://github.com/lewisxhe/XPowersLib)
 * [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 * [Adafruit_BusIO](https://github.com/adafruit/Adafruit_BusIO)
 
 ## FAQ

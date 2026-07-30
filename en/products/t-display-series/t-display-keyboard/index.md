@@ -22,7 +22,7 @@ LILYGO T-Display-Keyboard is a handheld ESP32 development kit that combines the 
 
 | Example | PlatformIO/Arduino | ESP-IDF | Description |
 | :-----: | :----------------: | :-----: | :---------: |
-| [TTGO-T-Display](https://github.com/Xinyuan-LilyGO/TTGO-T-Display) | ✓ | | Display demos, TFT_eSPI examples |
+| [TTGO-T-Display](https://github.com/Xinyuan-LilyGO/TTGO-T-Display) | ✓ | | Display demos |
 
 ### PlatformIO
 
@@ -113,7 +113,6 @@ LILYGO T-Display-Keyboard is a handheld ESP32 development kit that combines the 
 
 ### Dependent Libraries
 
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 
 ## FAQ
 

@@ -52,7 +52,6 @@ LILYGO T-PCIE 是一款基于 ESP32 的蜂窝开发板，配备 **Mini PCIe（mP
 | PSRAM | **Enable** |
 | 上传速度 | 921600 |
 
-5. 在 sketch 中打开 `utilities.h`，取消注释 `#define LILYGO_T_PCIE_XXXX` 对应您的模块型号
 6. 点击 **上传**
 
 > **注意：** 打开 Arduino IDE 时若提示有库更新，请勿点击更新，更新后可能导致编译失败或覆盖默认配置（如 TinyGSM）。

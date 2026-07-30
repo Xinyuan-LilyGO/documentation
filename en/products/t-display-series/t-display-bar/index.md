@@ -126,7 +126,6 @@ LILYGO T-Display Bar is a highly integrated embedded smart display module based 
 
 ### Dependent Libraries
 
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 * [lvgl](https://github.com/lvgl/lvgl)
 * [SensorsLib](https://github.com/lewisxhe/SensorsLib)
 * [XPowersLib](https://github.com/lewisxhe/XPowersLib)

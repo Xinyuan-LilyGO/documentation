@@ -10,7 +10,8 @@ show_source: false
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
 | RadioLib | Latest | [GitHub](https://github.com/jgromes/RadioLib) |
-| TFT_eSPI | Latest | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | Latest | [GitHub](https://github.com/lovyan03/LovyanGFX) |
+| LilyGo-display-library | Latest | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 | TinyGPSPlus | Latest | [GitHub](https://github.com/mikalhart/TinyGPSPlus) |
 | SensorLib | Latest | [GitHub](https://github.com/lewisxhe/SensorsLib) |
 | LVGL | **8.4.0** | [GitHub](https://github.com/lvgl/lvgl/tree/v8.4.0) |
@@ -29,7 +30,7 @@ show_source: false
    git clone https://github.com/Xinyuan-LilyGO/T-Deck.git
    ```
 3. Open `platformio.ini` and uncomment the example line you want to use (only one active at a time)
-4. Click **✓** to build, connect via USB, click **→** to upload
+4. Click **Build** to build, connect via USB, click **Upload** to upload
 
 ---
 
@@ -37,12 +38,12 @@ show_source: false
 
 #### 1. Install ESP32 Board Support
 
-1. Open Arduino IDE → **File** → **Preferences**
+1. Open Arduino IDE -> **File** -> **Preferences**
 2. Add to "Additional Board Manager URLs":
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. Go to **Tools** → **Board** → **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
+3. Go to **Tools** -> **Board** -> **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
 
 #### 2. Install Libraries
 
@@ -114,17 +115,16 @@ void loop() {
 #### Display (ST7789)
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_DECK_PLUS
+#include <LilyGo_LovyanGFX.h>
 
-TFT_eSPI tft;
+LilyGo_T_Deck_Plus display;
 
 void setup() {
-  tft.begin();
-  tft.setRotation(1);
-  tft.fillScreen(TFT_BLACK);
-  tft.setTextColor(TFT_WHITE, TFT_BLACK);
-  tft.setTextSize(2);
-  tft.drawString("T-Deck Plus", 80, 110);
+  display.begin(1);
+  display.setTextColor(TFT_WHITE, TFT_BLACK);
+  display.setTextSize(2);
+  display.drawString("T-Deck Plus", 80, 110);
 }
 
 void loop() {}
@@ -135,8 +135,8 @@ void loop() {}
 ```cpp
 #include <RadioLib.h>
 
-// T-Deck SX1262: CS=9, IRQ=40, RST=17, BUSY=13
-SX1262 radio = new Module(9, 40, 17, 13);
+// T-Deck SX1262: CS=9, DIO1=45, RST=17, BUSY=13
+SX1262 radio = new Module(9, 45, 17, 13);
 
 void setup() {
   Serial.begin(115200);
@@ -187,9 +187,9 @@ void loop() {
 
 ## Important Notes
 
-- The **Grove interface** pins on T-Deck Plus are allocated to the GPS module — they cannot be used as a general-purpose connector.
+- The **Grove interface** pins on T-Deck Plus are allocated to the GPS module; they cannot be used as a general-purpose connector.
 - When powered by battery, **GPIO10 must be set HIGH**.
-- The LoRa SX1262 shares the SPI bus — keep all other SPI device CS lines HIGH before communicating with it.
+- The LoRa SX1262 shares the SPI bus keep all other SPI device CS lines HIGH before communicating with it.
 
 ---
 

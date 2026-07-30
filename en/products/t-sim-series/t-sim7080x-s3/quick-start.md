@@ -3,7 +3,7 @@ title: Quick Start
 show_source: false
 ---
 
-# T-SIM7080-S3 Quick Start
+# T-SIM7080X-S3 Quick Start
 
 ## Required Libraries
 
@@ -23,7 +23,7 @@ show_source: false
    ```bash
    git clone https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series.git
    ```
-3. Open `platformio.ini` and select the `T-SIM7080-S3` environment
+3. Open `platformio.ini` and select the `T-SIM7080G-S3` environment used by the GitHub project
 4. Click **✓** to build, connect via USB-C, click **→** to upload
 
 ---

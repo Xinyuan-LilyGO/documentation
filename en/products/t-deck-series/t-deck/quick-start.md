@@ -9,7 +9,7 @@ This guide covers Arduino, PlatformIO, LVGL, and peripheral usage for the T-Deck
 
 ## Pin Definitions
 
-Copy this block into every sketch — all examples below reference these constants.
+Copy this block into every sketch - all examples below reference these constants.
 
 ```cpp
 #define BOARD_POWERON       10   // Peripheral power rail; set HIGH when on battery
@@ -57,14 +57,14 @@ Copy this block into every sketch — all examples below reference these constan
 
 #### Install Board Support
 
-1. Open **Arduino IDE → File → Preferences**
+1. Open **Arduino IDE -> File -> Preferences**
 2. Add this URL to *Additional boards manager URLs*:
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. Open **Tools → Board → Boards Manager**, search **esp32**, install **esp32 by Espressif Systems**
+3. Open **Tools -> Board -> Boards Manager**, search **esp32**, install **esp32 by Espressif Systems**
 
-> **Version lock:** The T-Deck examples are tested against **arduino-esp32 2.0.14**. Versions above 2.0.14 may break `TFT_eSPI`. Stay on 2.0.14 until the upstream library is updated.
+> **Version lock:** The upstream T-Deck examples are tested against **arduino-esp32 2.0.14**. Check repository dependency compatibility before upgrading arduino-esp32.
 
 #### Install Libraries
 
@@ -72,29 +72,27 @@ Copy all folders from the project [lib](https://github.com/Xinyuan-LilyGO/T-Deck
 
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
-| TFT_eSPI | latest (locked) | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | latest | [GitHub](https://github.com/lovyan03/LovyanGFX) |
+| LilyGo-display-library | latest | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 | RadioLib | latest | [GitHub](https://github.com/jgromes/RadioLib) |
 | LVGL | 8.4.0 | [GitHub](https://github.com/lvgl/lvgl/tree/v8.4.0) |
-| Arduino_GFX | latest | [GitHub](https://github.com/moononournation/Arduino_GFX) |
 | TinyGPSPlus | latest | [GitHub](https://github.com/mikalhart/TinyGPSPlus) |
 | TouchLib | latest | [GitHub](https://github.com/mmMicky/TouchLib) |
 | AceButton | latest | [GitHub](https://github.com/bxparks/AceButton) |
 | ESP32-audioI2S | latest | [GitHub](https://github.com/schreibfaul1/ESP32-audioI2S) |
 | SensorsLib | latest | [GitHub](https://github.com/lewisxhe/SensorsLib) |
 
-> Do **not** upgrade libraries when Arduino IDE prompts — versions in `lib/` are tested together.
+> Do **not** upgrade libraries when Arduino IDE prompts for newer versions in `lib/` are tested together.
 
-**TFT_eSPI Configuration:**
+**LovyanGFX Configuration:**
 
-Recent versions of TFT_eSPI (2.5.34+) include a dedicated `User_Setups/Setup210_LilyGo_T_Deck.h` with `USE_HSPI_PORT` already set. To activate it, edit `User_Setup_Select.h` and make sure line 137 is uncommented:
+For display examples, use `LilyGo_LovyanGFX`. The library wraps T-Deck's ST7789, backlight, peripheral power, and shared SPI CS setup, so sketches can create a `LilyGo_T_Deck` object directly.
 
-```cpp
-#include <User_Setups/Setup210_LilyGo_T_Deck.h>  // For the LilyGo T-Deck based ESP32S3 with ST7789 320 x 240 TFT
-```
+#### Basic Example
 
-If your version does not have `Setup210_LilyGo_T_Deck.h`, use the pre-configured `TFT_eSPI` from `T-Deck/lib/TFT_eSPI/` — copy the entire folder to your Arduino `libraries/` directory.
-
-> **Note:** Without `USE_HSPI_PORT` in the active setup file, the sketch will crash with `Guru Meditation Error: Core 1 panic'ed (StoreProhibited)`.
+| Example | Description |
+| :-----: | :---------- |
+| `LilyGo_LovyanGFX_Board_Test` | Unified LilyGo_LovyanGFX board display test |
 
 #### Board Settings
 
@@ -155,9 +153,8 @@ framework     = arduino
 upload_speed  = 921600
 monitor_speed = 115200
 lib_deps =
-    bodmer/TFT_eSPI
+    lovyan03/LovyanGFX
     jgromes/RadioLib
-    moononournation/Arduino_GFX_Library
     mikalhart/TinyGPSPlus
     lvgl/lvgl@^8.4.0
     AceButton
@@ -194,15 +191,13 @@ build_flags =
 3. Clone the repository and open the `T-Deck` folder in VS Code
 4. PlatformIO auto-installs dependencies on first build (may take a few minutes)
 5. In `platformio.ini`, uncomment the `src_dir` line for the example you want
-6. Click **✓** to compile, then **→** to upload
+6. Click **Build** to compile, then **Upload** to upload
 
 ---
 
 ### LVGL
 
-T-Deck uses **LVGL v8.4.0** with **TFT_eSPI** as the display driver. The display is 320 × 240, no touch — interaction uses the trackball.
-
-> **TFT_eSPI version lock:** Use the `TFT_eSPI` version bundled in `lib/` and the initialization sequence from the [2024-07-26 commit](https://github.com/Xinyuan-LilyGO/T-Deck/commit/6adb8884c689f174c29a6d7172a0daa367a582eb).
+T-Deck uses **LVGL v8.4.0** with display flushing handled by the `LilyGo_T_Deck` object from `LilyGo_LovyanGFX`. The display is 320 × 240, no touch; interaction uses the trackball.
 
 #### lv_conf.h
 
@@ -220,39 +215,26 @@ Place `lv_conf.h` in your Arduino libraries folder (same level as `lvgl/`). Mini
 #### Hello World
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_DECK
+#include <LilyGo_LovyanGFX.h>
 #include <lvgl.h>
 
-TFT_eSPI tft;
+LilyGo_T_Deck display;
 
 static lv_disp_draw_buf_t draw_buf;
 static lv_color_t buf[320 * 10];
 
-// Flush callback — copy LVGL render buffer to TFT
 void disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p) {
     uint32_t w = area->x2 - area->x1 + 1;
     uint32_t h = area->y2 - area->y1 + 1;
-    tft.startWrite();
-    tft.setAddrWindow(area->x1, area->y1, w, h);
-    tft.pushColors((uint16_t *)&color_p->full, w * h, true);
-    tft.endWrite();
+    if (display.getStartCount() == 0) display.startWrite();
+    display.pushImageDMA(area->x1, area->y1, w, h, (lgfx::swap565_t *)&color_p->full);
     lv_disp_flush_ready(disp);
 }
 
 void setup() {
-    // Power on peripherals (required on battery)
-    pinMode(BOARD_POWERON, OUTPUT);
-    digitalWrite(BOARD_POWERON, HIGH);
+    display.begin(1);
 
-    // Backlight
-    pinMode(BOARD_TFT_BACKLIGHT, OUTPUT);
-    digitalWrite(BOARD_TFT_BACKLIGHT, HIGH);
-
-    // TFT
-    tft.begin();
-    tft.setRotation(1);
-
-    // LVGL
     lv_init();
     lv_disp_draw_buf_init(&draw_buf, buf, NULL, 320 * 10);
 
@@ -264,7 +246,6 @@ void setup() {
     disp_drv.draw_buf  = &draw_buf;
     lv_disp_drv_register(&disp_drv);
 
-    // Hello World label
     lv_obj_t *label = lv_label_create(lv_scr_act());
     lv_label_set_text(label, "Hello T-Deck!");
     lv_obj_align(label, LV_ALIGN_CENTER, 0, 0);
@@ -284,7 +265,7 @@ void loop() {
 static int16_t enc_diff = 0;
 static lv_indev_state_t enc_state = LV_INDEV_STATE_REL;
 
-// Call from ISR or polling — increment/decrement enc_diff based on G01/G02
+// Call from ISR or polling increment/decrement enc_diff based on G01/G02
 void trackball_read(lv_indev_drv_t *drv, lv_indev_data_t *data) {
     data->enc_diff = enc_diff;
     data->state    = enc_state;
@@ -314,25 +295,23 @@ pinMode(BOARD_POWERON, OUTPUT);
 digitalWrite(BOARD_POWERON, HIGH);
 ```
 
-#### Display (TFT_eSPI)
+#### Display (LovyanGFX)
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_DECK
+#include <LilyGo_LovyanGFX.h>
 
-TFT_eSPI tft;
+LilyGo_T_Deck display;
 
 void setup() {
-    pinMode(BOARD_TFT_BACKLIGHT, OUTPUT);
-    digitalWrite(BOARD_TFT_BACKLIGHT, HIGH);
-    tft.begin();
-    tft.setRotation(1);   // landscape
-    tft.fillScreen(TFT_BLACK);
-    tft.setTextColor(TFT_WHITE, TFT_BLACK);
-    tft.drawString("T-Deck", 120, 110, 4);
+    display.begin(1);   // landscape
+    display.fillScreen(TFT_BLACK);
+    display.setTextColor(TFT_WHITE, TFT_BLACK);
+    display.drawString("T-Deck", 120, 110, &fonts::Font4);
 }
 ```
 
-#### LoRa (SX1262 — RadioLib)
+#### LoRa (SX1262 秒RadioLib)
 
 ```cpp
 #include <RadioLib.h>
@@ -409,7 +388,7 @@ void loop() {
 }
 ```
 
-#### Microphone (ES7210 — I²S)
+#### Microphone (ES7210 I²S)
 
 > When the microphone is active, **GPIO0 (BOOT / trackball center) is not available**.
 
@@ -440,7 +419,7 @@ void setup() {
 }
 ```
 
-#### GPS (MIA-M10Q — TinyGPSPlus)
+#### GPS (MIA-M10Q TinyGPSPlus)
 
 ```cpp
 #include <TinyGPSPlus.h>
@@ -489,7 +468,7 @@ The T-Deck repository does not include an official ESP-IDF project template. If 
 1. Create a new IDF project: `idf.py create-project t-deck`
 2. Set target: `idf.py set-target esp32s3`
 3. Use the pin definitions from the [Pin Definitions](#pin-definitions) section above
-4. Configure PSRAM in `menuconfig`: **Component config → ESP PSRAM → Enable**
+4. Configure PSRAM in `menuconfig`: **Component config -> ESP PSRAM -> Enable**
 5. Refer to the Espressif [ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/) for driver APIs
 
 ---

@@ -104,7 +104,6 @@ LILYGO T-Circle is a circular screen development board based on **ESP32**. It fe
 
 ### Dependent Libraries
 
-* [TFT_eSPI-2.5.43](https://github.com/Bodmer/TFT_eSPI)
 * [Arduino_DriveBus-1.1.16](https://github.com/Xk-w/Arduino_DriveBus)
 * [Arduino_GFX-1.3.7](https://github.com/moononournation/Arduino_GFX)
 * [FastLED-3.6.0](https://github.com/FastLED/FastLED)

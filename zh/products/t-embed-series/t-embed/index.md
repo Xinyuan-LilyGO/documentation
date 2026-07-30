@@ -119,7 +119,6 @@ LILYGO T-Embed 是一款多功能 ESP32-S3 开发平台，配备 **1.9 英寸 ST
 
 ### 依赖库
 
-- [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 - [FastLED](https://github.com/FastLED/FastLED)
 - [ESP32-audioI2S](https://github.com/schreibfaul1/ESP32-audioI2S)
 - [LVGL](https://github.com/lvgl/lvgl)

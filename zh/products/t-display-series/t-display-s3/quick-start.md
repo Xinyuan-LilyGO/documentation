@@ -11,11 +11,11 @@ show_source: false
 
 | 库名 | 来源 |
 | :--: | :--: |
+| LilyGo-display-library | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 | LovyanGFX | [GitHub](https://github.com/lovyan03/LovyanGFX) |
-| Arduino_GFX | [GitHub](https://github.com/moononournation/Arduino_GFX) |
 | LVGL (v8.x) | [GitHub](https://github.com/lvgl/lvgl/tree/release/v8.4) |
 
-> **说明：** LovyanGFX 支持 Arduino ESP32 core 3.x，无需降级开发板包版本。
+> **说明：** `LilyGo_LovyanGFX` 基于 LovyanGFX 封装了T-Display-S3 的屏幕引脚、电源和背光配置，无需在每个 sketch 中复制板级配置。
 
 ---
 
@@ -25,19 +25,19 @@ show_source: false
 
 #### 1. 安装 ESP32 开发板支持
 
-1. 打开 Arduino IDE → **文件** → **首选项**
+1. 打开 Arduino IDE -> **文件** -> **首选项**
 2. 在「附加开发板管理器网址」中添加：
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. 前往 **工具** → **开发板** → **开发板管理器**，搜索 `esp32`，安装 **esp32 by Espressif Systems**
+3. 前往 **工具** -> **开发板** -> **开发板管理器**，搜索 `esp32`，安装 **esp32 by Espressif Systems**
 
 #### 2. 开发板设置
 
 | 设置项 | 值 |
 | :----: | :----: |
 | 开发板 | **ESP32S3 Dev Module** |
-| 端口 | 你的 COM 口 |
+| 端口 | 你的 COM 口|
 | USB CDC On Boot | **Enabled** |
 | CPU Frequency | **240 MHz (WiFi)** |
 | Flash Mode | **QIO 80 MHz** |
@@ -50,86 +50,31 @@ show_source: false
 
 > **提示：** 使用电池供电时，请将 **USB CDC On Boot** 设为 **Disabled**，否则启动会等待 USB 连接而卡住。
 
-#### 3. LovyanGFX 配置
+#### 3. LilyGo_LovyanGFX 配置
 
-T-Display-S3 使用 ST7789V（I8080 8位并行接口）。LovyanGFX 需要一个自定义配置类，在你的 sketch 旁边新建头文件 `LGFX_T_Display_S3.h`：
+T-Display-S3 使用 ST7789V（I8080 8 位并行接口）。安`LilyGo_LovyanGFX` 后，示例中直接创建 `LilyGo_T_Display_S3` 对象即可
 
 ```cpp
-#pragma once
-#include <LovyanGFX.hpp>
+#define LILYGO_LGFX_USE_T_DISPLAY_S3
+#include <LilyGo_LovyanGFX.h>
 
-class LGFX : public lgfx::LGFX_Device {
-    lgfx::Panel_ST7789  _panel_instance;
-    lgfx::Bus_Parallel8 _bus_instance;
-    lgfx::Light_PWM     _light_instance;
-
-public:
-    LGFX() {
-        {
-            auto cfg = _bus_instance.config();
-            cfg.port            = 0;
-            cfg.freq_write      = 20000000;
-            cfg.pin_wr          = 8;
-            cfg.pin_rd          = 9;
-            cfg.pin_rs          = 7;   // DC
-            cfg.pin_d0          = 39;
-            cfg.pin_d1          = 40;
-            cfg.pin_d2          = 41;
-            cfg.pin_d3          = 42;
-            cfg.pin_d4          = 45;
-            cfg.pin_d5          = 46;
-            cfg.pin_d6          = 47;
-            cfg.pin_d7          = 48;
-            _bus_instance.config(cfg);
-            _panel_instance.setBus(&_bus_instance);
-        }
-        {
-            auto cfg = _panel_instance.config();
-            cfg.pin_cs           = 6;
-            cfg.pin_rst          = 5;
-            cfg.pin_busy         = -1;
-            cfg.memory_width     = 320;
-            cfg.memory_height    = 170;
-            cfg.panel_width      = 320;
-            cfg.panel_height     = 170;
-            cfg.offset_x         = 0;
-            cfg.offset_y         = 35;
-            cfg.offset_rotation  = 0;
-            cfg.dummy_read_pixel = 8;
-            cfg.dummy_read_bits  = 1;
-            cfg.readable         = false;
-            cfg.invert           = true;
-            cfg.rgb_order        = false;
-            cfg.dlen_16bit       = false;
-            cfg.bus_shared       = false;
-            _panel_instance.config(cfg);
-        }
-        {
-            auto cfg = _light_instance.config();
-            cfg.pin_bl      = 38;  // BL 引脚；GPIO15 为 Power EN，需单独拉高
-            cfg.invert      = false;
-            cfg.freq        = 44100;
-            cfg.pwm_channel = 7;
-            _light_instance.config(cfg);
-            _panel_instance.setLight(&_light_instance);
-        }
-        setPanel(&_panel_instance);
-    }
-};
+LilyGo_T_Display_S3 tft;
 ```
+
+`tft.begin()` 会完成屏幕初始化、旋转设置、亮度设置和清屏。
 
 #### 4. 上传
 
 1. 通过 USB-C 连接开发板
 2. 打开示例程序
-3. 点击「上传」
+3. 点击「上传
 
 如果无法上传，手动进入下载模式：
 1. 按住 **BOOT** 按钮
 2. 按下并释放 **RST** 按钮
 3. 释放 **BOOT** 按钮
-4. 在 IDE 中点击「上传」
-5. 上传完成后按下 **RST** 退出下载模式
+4. 在 IDE 中点击「上传
+5. 上传完成后按**RST** 退出下载模
 
 ---
 
@@ -142,11 +87,11 @@ public:
    ```bash
    git clone https://github.com/Xinyuan-LilyGO/T-Display-S3.git
    ```
-3. 在 VS Code 中打开克隆的文件夹
+3. VS Code 中打开克隆的文件夹
 
 #### 2. 选择示例
 
-打开 `platformio.ini`，取消注释你想运行的示例对应的 `default_envs` 行，确保同时只有一行生效：
+打开 `platformio.ini`，取消注释你想运行的示例对应`default_envs` 行，确保同时只有一行生效：
 
 ```ini
 ; 一次只能取消注释一个
@@ -156,9 +101,9 @@ default_envs = Factory
 
 #### 3. 编译与上传
 
-- 点击左下角 **✓** 编译
+- 点击左下*** 编译
 - 通过 USB-C 连接开发板
-- 点击 **→** 上传
+- 点击 *** 上传
 
 ---
 
@@ -166,19 +111,20 @@ default_envs = Factory
 
 | 示例 | 说明 |
 | :--: | :--- |
+| `LilyGo_LovyanGFX_Board_Test` | LilyGo_LovyanGFX 统一板级显示测试 |
 | `Factory` | 出厂测试 |
 | `WIFI_Scan` | Wi-Fi 扫描 |
 | `BLE_Uart` | BLE 串口透传 |
 | `SPIFFS_Test` | SPIFFS 文件系统 |
 | `FFat_Test` | FFat 文件系统 |
 
-完整示例列表见 [T-Display-S3 仓库](https://github.com/Xinyuan-LilyGO/T-Display-S3)。
+完整示例列表见 [T-Display-S3 仓库](https://github.com/Xinyuan-LilyGO/T-Display-S3)
 
 ---
 
 ## ESP-IDF
 
-T-Display-S3 支持 ESP-IDF 开发，请参考 [LilyGo-Display-IDF](https://github.com/Xinyuan-LilyGO/LilyGo-Display-IDF)。
+T-Display-S3 支持 ESP-IDF 开发，请参见 [LilyGo-Display-IDF](https://github.com/Xinyuan-LilyGO/LilyGo-Display-IDF)
 
 ---
 
@@ -192,17 +138,16 @@ T-Display-S3 支持 ESP-IDF 开发，请参考 [LilyGo-Display-IDF](https://gith
 
 ### 外设示例
 
-#### Hello World（LovyanGFX）
+#### Hello World（LovyanGFX
 
 ```cpp
-#include "LGFX_T_Display_S3.h"
+#define LILYGO_LGFX_USE_T_DISPLAY_S3
+#include <LilyGo_LovyanGFX.h>
 
-LGFX tft;
+LilyGo_T_Display_S3 tft;
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
+    tft.begin(1);
     tft.setTextColor(TFT_WHITE, TFT_BLACK);
     tft.setTextSize(2);
     tft.drawString("T-Display-S3", 40, 80);
@@ -214,14 +159,13 @@ void loop() {}
 #### 绘制图形
 
 ```cpp
-#include "LGFX_T_Display_S3.h"
+#define LILYGO_LGFX_USE_T_DISPLAY_S3
+#include <LilyGo_LovyanGFX.h>
 
-LGFX tft;
+LilyGo_T_Display_S3 tft;
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
+    tft.begin(1);
 
     tft.fillCircle(80, 85, 50, TFT_BLUE);
     tft.drawRect(160, 35, 100, 100, TFT_GREEN);
@@ -233,7 +177,7 @@ void loop() {}
 
 #### 读取按钮
 
-T-Display-S3 有两个按钮：BOOT（GPIO0）和另一个可配置按钮（查看你的板子型号引脚图）。
+T-Display-S3 有两个按钮：BOOT（GPIO0）和另一个可配置按钮（查看你的板子型号引脚图）
 
 ```cpp
 #define BTN_BOOT 0
@@ -254,17 +198,16 @@ void loop() {
 #### Sprite 动画
 
 ```cpp
-#include "LGFX_T_Display_S3.h"
+#define LILYGO_LGFX_USE_T_DISPLAY_S3
+#include <LilyGo_LovyanGFX.h>
 
-LGFX tft;
+LilyGo_T_Display_S3 tft;
 LGFX_Sprite sprite(&tft);
 
 int x = 0;
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
+    tft.begin(1);
     sprite.createSprite(60, 60);
 }
 
@@ -287,7 +230,7 @@ T-Display-S3 支持 LVGL 8.x，以 LovyanGFX 作为显示刷新后端。
 
 #### 配置 lv_conf.h
 
-将项目根目录下的 `lv_conf.h`（或 LVGL 的 `lv_conf_template.h`）复制到 Arduino 库目录中与 `lvgl` 文件夹同级的位置。关键配置项：
+将项目根目录下的 `lv_conf.h`（或 LVGL 的 `lv_conf_template.h`）复制到 Arduino 库目录中`lvgl` 文件夹同级的位置。关键配置项：
 
 ```c
 #define LV_COLOR_DEPTH     16
@@ -298,13 +241,14 @@ T-Display-S3 支持 LVGL 8.x，以 LovyanGFX 作为显示刷新后端。
 #### 最简 LVGL v8 示例
 
 ```cpp
-#include "LGFX_T_Display_S3.h"
+#define LILYGO_LGFX_USE_T_DISPLAY_S3
+#include <LilyGo_LovyanGFX.h>
 #include <lvgl.h>
 
 #define SCREEN_W 320
 #define SCREEN_H 170
 
-LGFX tft;
+LilyGo_T_Display_S3 tft;
 
 static lv_disp_draw_buf_t draw_buf;
 static lv_color_t buf[SCREEN_W * 20];
@@ -321,8 +265,7 @@ void my_disp_flush(lv_disp_drv_t *drv, const lv_area_t *area, lv_color_t *color_
 }
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
+    tft.begin(1);
 
     lv_init();
     lv_disp_draw_buf_init(&draw_buf, buf, NULL, SCREEN_W * 20);
@@ -349,7 +292,7 @@ void loop() {
 
 #### 添加触摸输入
 
-T-Display-S3 有带触摸的版本，如果你的板子带触摸，将触摸读取回调注册到 LVGL 输入驱动：
+T-Display-S3 有带触摸的版本，如果你的板子带触摸，将触摸读取回调注册到 LVGL 输入驱动
 
 ```cpp
 void my_touchpad_read(lv_indev_drv_t *drv, lv_indev_data_t *data) {
@@ -364,7 +307,7 @@ void my_touchpad_read(lv_indev_drv_t *drv, lv_indev_data_t *data) {
     }
 }
 
-// 在 setup() 中注册显示驱动之后添加：
+// setup() 中注册显示驱动之后添加：
 static lv_indev_drv_t indev_drv;
 lv_indev_drv_init(&indev_drv);
 indev_drv.type    = LV_INDEV_TYPE_POINTER;
@@ -377,13 +320,11 @@ lv_indev_drv_register(&indev_drv);
 ## 常见问题
 
 **屏幕不亮**
-LovyanGFX 通过 `Light_PWM` 配置自动控制背光。如果屏幕不亮，确认 GPIO15 接线正确，且 `cfg.pin_bl = 15` 与你的板子版本一致。
+`LilyGo_LovyanGFX` 会拉GPIO15 作为屏幕电源使能，并使用 GPIO38 做背光 PWM。如果屏幕不亮，请确认板子版本与该配置一致，且供电正常。
 
 **烧录成功但屏幕无显示**
-检查 `LGFX_T_Display_S3.h` 中的引脚配置是否与你的板子引脚图一致。先运行 `Arduino_GFXDemo` 确认硬件正常。
-
-**无法上传 / 端口不断闪烁**
-手动进入下载模式（见上方步骤），或将板子移动到路径较短的目录（Windows MAX_PATH 限制）。
+确认已安`LilyGo_LovyanGFX`，并先运行库中的 `LilyGo_LovyanGFX_Board_Test` 示例确认硬件正常。**无法上传 / 端口不断闪烁**
+手动进入下载模式（见上方步骤），或将板子移动到路径较短的目录（Windows MAX_PATH 限制）
 
 **使用外部电源供电**
-将 `USB CDC On Boot` 设为 `Disabled`，否则启动时会等待 USB 连接。
+`USB CDC On Boot` 设为 `Disabled`，否则启动时会等USB 连接

@@ -58,7 +58,6 @@ T-SIM7600X 是一款基于 **ESP32-WROVER-B**（N4R8：4 MB Flash，8 MB PSRAM�
 | PSRAM | **Enabled** |
 | 核心调试级别 | None |
 
-4. 在 `utilities.h` 中取消注释 `#define LILYGO_T_SIM7600X`
 5. 点击**上传**
 
 > **注意：** Arduino IDE 提示库有更新时请勿点击更新，可能导致兼容性问题（如 TinyGSM）。

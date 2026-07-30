@@ -1,5 +1,5 @@
 ---
-title: T-SIM7080-S3
+title: T-SIM7080X-S3
 show_source: false
 tags: ESP32-S3, SIM7080G, NB-IoT, Cat-M1, GNSS, GPS, IoT, LTE
 ---
@@ -7,16 +7,16 @@ tags: ESP32-S3, SIM7080G, NB-IoT, Cat-M1, GNSS, GPS, IoT, LTE
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-sim7080-s3" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-1.jpg', alt: 'T-SIM7080-S3 正面' },
-  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-2.jpg', alt: 'T-SIM7080-S3 背面' },
-  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-3.jpg', alt: 'T-SIM7080-S3 尺寸图' },
-  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-1.jpg', alt: 'T-SIM7080-S3 规格参数 1' },
-  { src: '/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-2.jpg', alt: 'T-SIM7080-S3 规格参数 2' },
+  { src: '/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-1.jpg', alt: 'T-SIM7080X-S3 正面' },
+  { src: '/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-2.jpg', alt: 'T-SIM7080X-S3 背面' },
+  { src: '/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-3.jpg', alt: 'T-SIM7080X-S3 尺寸图' },
+  { src: '/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-info-1.jpg', alt: 'T-SIM7080X-S3 规格参数 1' },
+  { src: '/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-info-2.jpg', alt: 'T-SIM7080X-S3 规格参数 2' },
 ]" />
 
 ## 概述
 
-LILYGO T-SIM7080-S3 是一款紧凑型物联网开发板，将 **ESP32-S3** 双核 LX7 处理器与 **SIM7080G** 多频 Cat-M / NB-IoT 模块集于一身。板载 Wi-Fi 4、蓝牙 5.0 LE 及可选 GNSS 定位功能，适用于资产追踪、智能抄表、远程传感器节点等低功耗广域网（LPWAN）应用场景。开发板集成了带短路和过载保护的 PMU 电源管理芯片、18650 电池座、太阳能充电输入（4.4 V–6 V）、TF 卡槽和 Nano SIM 卡槽。提供两个 USB 接口：USB-C 用于 ESP32-S3 程序烧录，Micro-USB 专用于 SIM7080G 固件升级。
+LILYGO T-SIM7080X-S3 是一款紧凑型物联网开发板，将 **ESP32-S3** 双核 LX7 处理器与 **SIM7080G** 多频 Cat-M / NB-IoT 模块集于一身。板载 Wi-Fi 4、蓝牙 5.0 LE 及可选 GNSS 定位功能，适用于资产追踪、智能抄表、远程传感器节点等低功耗广域网（LPWAN）应用场景。开发板集成了带短路和过载保护的 PMU 电源管理芯片、18650 电池座、太阳能充电输入（4.4 V–6 V）、TF 卡槽和 Nano SIM 卡槽。提供两个 USB 接口：USB-C 用于 ESP32-S3 程序烧录，Micro-USB 专用于 SIM7080G 固件升级。
 
 ## 快速开始
 
@@ -93,9 +93,9 @@ LILYGO T-SIM7080-S3 是一款紧凑型物联网开发板，将 **ESP32-S3** 双�
 | 重量 | <!-- placeholder --> |
 | 外包装尺寸 | <!-- placeholder --> |
 
-![T-SIM7080-S3 规格参数 1](/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-1.jpg)
+![T-SIM7080X-S3 规格参数 1](/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-info-1.jpg)
 
-![T-SIM7080-S3 规格参数 2](/products/t-sim-series/t-sim7080-s3/index/image/t-sim7080-s3-info-2.jpg)
+![T-SIM7080X-S3 规格参数 2](/products/t-sim-series/t-sim7080x-s3/index/image/t-sim7080x-s3-info-2.jpg)
 
 ## 引脚图
 

@@ -9,7 +9,8 @@ show_source: false
 
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
-| TFT_eSPI | Latest | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | Latest | [GitHub](https://github.com/lovyan03/LovyanGFX) |
+| LilyGo-display-library | Latest | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 
 ---
 
@@ -23,22 +24,9 @@ show_source: false
    git clone https://github.com/Xinyuan-LilyGO/TTGO-T-Display.git
    ```
 3. Open `platformio.ini` and select your example
-4. Click **✓** to build, click **→** to upload
-
----
+4. Click **Build**, then upload after selecting the correct port
 
 ### Arduino IDE
-
-#### 1. Install ESP32 Board Support
-
-1. Open Arduino IDE → **File** → **Preferences**
-2. Add to "Additional Board Manager URLs":
-   ```
-   https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-   ```
-3. Go to **Tools** → **Board** → **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
-
-#### 2. Board Settings
 
 | Setting | Value |
 | :-----: | :---: |
@@ -48,29 +36,26 @@ show_source: false
 | Flash Size | **4 MB (32Mb)** |
 | Partition Scheme | **Default 4MB with spiffs** |
 
-#### 3. Upload
-
-Open an example, select the correct port, and click **Upload**.
-
 ---
 
-### Peripheral Examples
+## Display Example
 
-#### Hello World (TFT_eSPI)
+T-Display Keyboard uses the same ESP32 T-Display board and ST7789V display profile as T-Display.
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_DISPLAY_KEYBOARD
+#include <LilyGo_LovyanGFX.h>
 
-TFT_eSPI tft;
+LilyGo_T_Display_Keyboard display;
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
-    tft.setTextColor(TFT_WHITE, TFT_BLACK);
-    tft.setTextSize(2);
-    tft.setCursor(20, 55);
-    tft.println("T-Display Keyboard");
+    display.begin(1);
+    display.setTextColor(TFT_WHITE, TFT_BLACK);
+    display.setTextSize(2);
+    display.setCursor(12, 55);
+    display.println("T-Display");
+    display.setCursor(12, 80);
+    display.println("Keyboard");
 }
 
 void loop() {}
@@ -84,4 +69,4 @@ void loop() {}
 A: Hold **BOOT**, press and release **RST**, then release **BOOT** to enter download mode.
 
 **Q: What keyboard shell does T-Display Keyboard use?**  
-A: It uses a compact QWERTY-style physical keyboard shell that houses the T-Display (ESP32 + 1.14" ST7789V) board and a battery holder.
+A: It uses a compact QWERTY-style keyboard shell that houses the T-Display board and a battery holder.

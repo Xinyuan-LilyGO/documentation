@@ -36,7 +36,6 @@ LILYGO T-Deck MAX 是基于 **ESP32-S3** 的高度集成多功能开发平台，
 | 固件 | 说明 | 来源 |
 | :--- | :--- | :--- |
 | [T-Deck-MAX_xxxxx](https://github.com/Xinyuan-LilyGO/T-Deck-MAX/tree/master/firmware) | 出厂固件 | — |
-| [crosspoint_lilygo_t_deck_max_xxxx](https://github.com/ShallowGreen123/TDeckMax-Reader) | 阅读器固件 | [TDeckMax-Reader](https://github.com/ShallowGreen123/TDeckMax-Reader) |
 
 #### 使用 WireScan 验证硬件
 

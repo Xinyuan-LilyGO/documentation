@@ -12,7 +12,7 @@ show_source: false
 | 库名 | 版本 | 来源 |
 | :--: | :--: | :--: |
 | LVGL | 8.3.9 | [GitHub](https://github.com/lvgl/lvgl/tree/release/v8.4) |
-| TFT_eSPI | 最新版 | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | 最新版 | [GitHub](https://github.com/lovyan03/LovyanGFX) |
 | Arduino_GFX | 最新版 | [GitHub](https://github.com/moononournation/Arduino_GFX) |
 | XPowersLib | 最新版 | [GitHub](https://github.com/lewisxhe/XPowersLib) |
 | SensorLib | 0.2.x | [GitHub](https://github.com/lewisxhe/SensorsLib) |
@@ -96,7 +96,7 @@ show_source: false
 | 示例 | 说明 |
 | :--: | :--- |
 | `Factory` | 出厂测试 |
-| `TFT_eSPI` | TFT_eSPI 库演示 |
+| `LovyanGFX` / `Arduino_GFX` | AMOLED 图形库演示 |
 | `Arduino_GFX` | Arduino_GFX 库演示 |
 | `LVGL` | LVGL GUI 演示 |
 | `LoRa` | LoRa 通信示例 |

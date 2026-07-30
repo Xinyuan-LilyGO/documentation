@@ -3,7 +3,7 @@ title: 快速开始
 show_source: false
 ---
 
-# T-SIM7080-S3 快速开始
+# T-SIM7080X-S3 快速开始
 
 ## 依赖库
 
@@ -18,7 +18,7 @@ show_source: false
 
 ### PlatformIO（推荐）
 
-克隆 [LilyGo-Modem-Series](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series)，在 `platformio.ini` 中选择 `T-SIM7080-S3` 环境，编译上传。
+克隆 [LilyGo-Modem-Series](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series)，在 `platformio.ini` 中选择 GitHub 项目当前使用的 `T-SIM7080G-S3` 环境，编译上传。
 
 ---
 

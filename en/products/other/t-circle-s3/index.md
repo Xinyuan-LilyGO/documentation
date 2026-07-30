@@ -125,7 +125,6 @@ LILYGO T-Circle S3 is a versatile development board based on **ESP32-S3-R8** (16
 
 ### Dependent Libraries
 
-* [TFT_eSPI-2.5.43](https://github.com/Bodmer/TFT_eSPI)
 * [Arduino_DriveBus-1.1.16](https://github.com/Xk-w/Arduino_DriveBus)
 * [Arduino_GFX-1.3.7](https://github.com/moononournation/Arduino_GFX)
 * [ESP32-audioI2S-3.0.6](https://github.com/schreibfaul1/ESP32-audioI2S)

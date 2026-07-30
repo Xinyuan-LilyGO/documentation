@@ -150,7 +150,6 @@ LILYGO T-Circle S3 是基于 ESP32-S3-R8 的圆形显示屏开发板，搭载 0.
 
 ### 依赖库
 
-* [TFT_eSPI 2.5.43](https://github.com/Bodmer/TFT_eSPI)
 * [Arduino_DriveBus 1.1.16](https://github.com/Xk-w/Arduino_DriveBus)
 * [Arduino_GFX 1.3.7](https://github.com/moononournation/Arduino_GFX)
 * [ESP32-audioI2S 3.0.6](https://github.com/schreibfaul1/ESP32-audioI2S)

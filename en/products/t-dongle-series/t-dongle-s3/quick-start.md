@@ -9,7 +9,8 @@ show_source: false
 
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
-| TFT_eSPI | Latest | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | Latest | [GitHub](https://github.com/lovyan03/LovyanGFX) |
+| LilyGo-display-library | Latest | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 | FastLED | Latest | [GitHub](https://github.com/FastLED/FastLED) |
 | LVGL | 8.x | [GitHub](https://github.com/lvgl/lvgl) |
 
@@ -25,7 +26,7 @@ show_source: false
    git clone https://github.com/Xinyuan-LilyGO/T-Dongle-S3.git
    ```
 3. Open `platformio.ini` and uncomment the target example line
-4. Click **✓** to build, insert the dongle into a USB-A port, click **→** to upload
+4. Click **Build** to build, insert the dongle into a USB-A port, click **Upload** to upload
 
 ---
 
@@ -33,16 +34,16 @@ show_source: false
 
 #### 1. Install ESP32 Board Support
 
-1. Open Arduino IDE → **File** → **Preferences**
+1. Open Arduino IDE -> **File** -> **Preferences**
 2. Add to "Additional Board Manager URLs":
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. Go to **Tools** → **Board** → **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
+3. Go to **Tools** -> **Board** -> **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
 
 #### 2. Install Libraries
 
-Copy all folders from the project `lib/` to your Arduino libraries directory, or install via **Tools** → **Manage Libraries**.
+Copy all folders from the project `lib/` to your Arduino libraries directory, or install via **Tools** -> **Manage Libraries**.
 
 #### 3. Board Settings
 
@@ -81,32 +82,20 @@ If upload fails: hold **BOOT**, press and release **RST**, then release **BOOT**
 
 ### Peripheral Examples
 
-#### Hello World (TFT_eSPI)
+#### Hello World (LovyanGFX)
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_DONGLE_S3
+#include <LilyGo_LovyanGFX.h>
 
-// T-Dongle-S3 pin definitions
-#define TFT_BL  38
-#define TFT_CS   4
-#define TFT_SCK  5
-#define TFT_MOSI 3
-#define TFT_DC   2
-#define TFT_RST  1
-
-TFT_eSPI tft;
+LilyGo_T_Dongle_S3 display;
 
 void setup() {
-    pinMode(TFT_BL, OUTPUT);
-    digitalWrite(TFT_BL, HIGH);
-
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
-    tft.setTextColor(TFT_WHITE, TFT_BLACK);
-    tft.setTextSize(2);
-    tft.setCursor(5, 65);
-    tft.println("T-Dongle S3");
+    display.begin(1);
+    display.setTextColor(TFT_WHITE, TFT_BLACK);
+    display.setTextSize(2);
+    display.setCursor(5, 65);
+    display.println("T-Dongle S3");
 }
 
 void loop() {}
@@ -139,7 +128,7 @@ void loop() {
 
 ### LVGL
 
-T-Dongle-S3 uses a 0.96-inch **ST7735 IPS TFT** (80 × 160) driven by **TFT_eSPI**. The LVGL flush callback uses `pushColors`.
+T-Dongle-S3 uses a 0.96-inch **ST7735 IPS TFT** (80 × 160) driven by LovyanGFX.
 
 #### Configure lv_conf.h
 
@@ -154,14 +143,14 @@ Copy `lv_conf.h` from the project to sit beside the `lvgl` folder in your Arduin
 #### Minimal LVGL v8 Example
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_DONGLE_S3
+#include <LilyGo_LovyanGFX.h>
 #include <lvgl.h>
 
-#define TFT_BL  38
 #define SCREEN_W  80
 #define SCREEN_H 160
 
-TFT_eSPI tft;
+LilyGo_T_Dongle_S3 display;
 
 static lv_disp_draw_buf_t draw_buf;
 static lv_color_t buf[SCREEN_W * SCREEN_H / 10];
@@ -169,20 +158,15 @@ static lv_color_t buf[SCREEN_W * SCREEN_H / 10];
 void my_disp_flush(lv_disp_drv_t *drv, const lv_area_t *area, lv_color_t *color_p) {
     uint32_t w = area->x2 - area->x1 + 1;
     uint32_t h = area->y2 - area->y1 + 1;
-    tft.startWrite();
-    tft.setAddrWindow(area->x1, area->y1, w, h);
-    tft.pushColors((uint16_t *)color_p, w * h, true);
-    tft.endWrite();
+    display.startWrite();
+    display.setAddrWindow(area->x1, area->y1, w, h);
+    display.pushPixels((uint16_t *)color_p, w * h, true);
+    display.endWrite();
     lv_disp_flush_ready(drv);
 }
 
 void setup() {
-    pinMode(TFT_BL, OUTPUT);
-    digitalWrite(TFT_BL, HIGH);
-
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
+    display.begin(1);
 
     lv_init();
     lv_disp_draw_buf_init(&draw_buf, buf, NULL, SCREEN_W * SCREEN_H / 10);
@@ -219,7 +203,7 @@ Open the `LVGL_Demo` or `Factory` example from the repository for a production-r
 A: Hold **BOOT**, press and release **RST**, then release **BOOT** to enter download mode.
 
 **Q: Screen stays off after upload?**  
-A: Ensure `TFT_BL` (GPIO38) is set HIGH before calling `tft.init()`.
+A: Use `display.begin()` from `LilyGo_T_Dongle_S3`; it initializes the GPIO38 backlight.
 
 **Q: APA102 LED not lighting up?**  
-A: Verify CI/DI pin order (CI=GPIO40, DI=GPIO39). APA102 uses SPI-like protocol — clock and data are separate pins, unlike WS2812 single-wire.
+A: Verify CI/DI pin order (CI=GPIO40, DI=GPIO39). APA102 uses SPI-like protocol clock and data are separate pins, unlike WS2812 single-wire.

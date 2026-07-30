@@ -9,7 +9,8 @@ show_source: false
 
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
-| TFT_eSPI | Latest | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | Latest | [GitHub](https://github.com/lovyan03/LovyanGFX) |
+| LilyGo-display-library | Latest | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 | LVGL | **9.x** | [GitHub](https://github.com/lvgl/lvgl) |
 
 ---
@@ -23,25 +24,23 @@ show_source: false
    ```bash
    git clone https://github.com/Xinyuan-LilyGO/T-Dongle-C5.git
    ```
-3. Open `platformio.ini` and uncomment the target example line
-4. Click **✓** to build, insert the dongle into a USB-A port, click **→** to upload
-
----
+3. Open `platformio.ini` and enable one target example
+4. Build, insert the dongle into a USB-A port, then upload
 
 ### Arduino IDE
 
 #### 1. Install ESP32 Board Support
 
-1. Open Arduino IDE → **File** → **Preferences**
+1. Open Arduino IDE -> **File** -> **Preferences**
 2. Add to "Additional Board Manager URLs":
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. Go to **Tools** → **Board** → **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
+3. Go to **Tools** -> **Board** -> **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
 
 #### 2. Install Libraries
 
-Install **TFT_eSPI** and **LVGL** via **Tools** → **Manage Libraries**, or copy from the project `lib/` folder.
+Install **LovyanGFX** and **LVGL** via **Tools** > **Manage Libraries**, then place `LilyGo_LovyanGFX` in your Arduino libraries folder.
 
 #### 3. Board Settings
 
@@ -78,21 +77,18 @@ If upload fails: hold **BOOT**, press and release **RST**, then release **BOOT**
 
 ### Peripheral Examples
 
-#### Hello World (TFT_eSPI)
+#### Hello World (LovyanGFX)
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_DONGLE_C5
+#include <LilyGo_LovyanGFX.h>
 
-TFT_eSPI tft;
+LilyGo_T_Dongle_C5 display;
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
-    tft.setTextColor(TFT_WHITE, TFT_BLACK);
-    tft.setTextSize(2);
-    tft.setCursor(5, 65);
-    tft.println("T-Dongle C5");
+    display.begin(1);
+    display.setTextColor(TFT_WHITE, TFT_BLACK);
+    display.drawString("T-Dongle-C5", 5, 28, &fonts::Font2);
 }
 
 void loop() {}
@@ -102,26 +98,27 @@ void loop() {}
 
 ### LVGL
 
-T-Dongle-C5 uses an **ESP32-C5** chip and pairs with **LVGL v9**. The display is a 0.96-inch ST7735 IPS TFT (80 × 160) driven by TFT_eSPI.
+T-Dongle-C5 uses an **ESP32-C5** chip and pairs with **LVGL v9**. The display is a 0.96-inch ST7735 IPS TFT (80 x 160) driven by LovyanGFX.
 
 #### Configure lv_conf.h
 
 Copy `lv_conf.h` from the project to sit beside the `lvgl` folder in your Arduino libraries directory. Key settings:
 
 ```c
-#define LV_COLOR_DEPTH     16
+#define LV_COLOR_DEPTH  16
 ```
 
 #### Minimal LVGL v9 Example
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_DONGLE_C5
+#include <LilyGo_LovyanGFX.h>
 #include <lvgl.h>
-
-TFT_eSPI tft;
 
 #define SCREEN_W  80
 #define SCREEN_H 160
+
+LilyGo_T_Dongle_C5 display;
 
 static lv_display_t *disp;
 static lv_color_t buf[SCREEN_W * SCREEN_H / 10];
@@ -129,17 +126,15 @@ static lv_color_t buf[SCREEN_W * SCREEN_H / 10];
 void my_disp_flush(lv_display_t *disp, const lv_area_t *area, uint8_t *px_map) {
     uint32_t w = area->x2 - area->x1 + 1;
     uint32_t h = area->y2 - area->y1 + 1;
-    tft.startWrite();
-    tft.setAddrWindow(area->x1, area->y1, w, h);
-    tft.pushColors((uint16_t *)px_map, w * h, true);
-    tft.endWrite();
+    display.startWrite();
+    display.setAddrWindow(area->x1, area->y1, w, h);
+    display.pushPixels((uint16_t *)px_map, w * h, true);
+    display.endWrite();
     lv_display_flush_ready(disp);
 }
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
+    display.begin(0);
 
     lv_init();
 
@@ -148,7 +143,7 @@ void setup() {
     lv_display_set_buffers(disp, buf, NULL, sizeof(buf), LV_DISPLAY_RENDER_MODE_PARTIAL);
 
     lv_obj_t *label = lv_label_create(lv_screen_active());
-    lv_label_set_text(label, "T-Dongle C5");
+    lv_label_set_text(label, "T-Dongle-C5");
     lv_obj_center(label);
 }
 

@@ -23,7 +23,7 @@ show_source: false
 
 ---
 
-## ESP32 侧（Wi-Fi / BLE / 显示屏）
+## ESP32 侧（Wi-Fi / BLE）
 
 ### 开发板设置
 
@@ -51,6 +51,7 @@ show_source: false
 
 - **双芯片**：K210（RISC-V，AI）通过 UART 与 ESP32（Wi-Fi/BLE）通信
 - **摄像头**：OV2640 2MP，支持 180° 旋转
+- **显示屏**：ST7789V 屏幕由 K210 侧驱动，ESP32 不直接连接显示屏
 - **K210 AI**：约 0.5 TOPS KPU，支持 YOLOv3、人脸识别和图像分类
 - **PMU**：AXP202 电源管理，控制两颗芯片的电源轨
 - **IMU**：MPU6050 六轴（I²C）
@@ -83,23 +84,21 @@ while True:
     lcd.display(img)
 ```
 
-#### ESP32 — 显示屏（TFT_eSPI）
+#### K210 — 显示屏（MaixPy）
 
-```cpp
-#include <TFT_eSPI.h>
+T-Bao 的 1.54 英寸 ST7789V 屏幕连接在 K210 侧，请使用 MaixPy 的 `lcd` 模块显示图像或文字。ESP32 侧不直接驱动该屏幕。
 
-TFT_eSPI tft;
+```python
+# 在 K210 上通过 MaixPy IDE 运行
+import lcd
+import image
 
-void setup() {
-  tft.begin();
-  tft.setRotation(1);
-  tft.fillScreen(TFT_BLACK);
-  tft.setTextColor(TFT_WHITE, TFT_BLACK);
-  tft.setTextSize(2);
-  tft.drawString("T-Bao Ready", 30, 60);
-}
+lcd.init()
 
-void loop() {}
+img = image.Image(size=(240, 240))
+img.clear()
+img.draw_string(48, 108, "T-Bao Ready", color=(255, 255, 255), scale=2)
+lcd.display(img)
 ```
 
 #### ESP32 — UART 与 K210 通信

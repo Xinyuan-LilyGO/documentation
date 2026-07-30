@@ -23,7 +23,7 @@ show_source: false
 
 ---
 
-## ESP32 Side (Wi-Fi / BLE / Display)
+## ESP32 Side (Wi-Fi / BLE)
 
 ### Board Settings
 
@@ -73,23 +73,21 @@ while True:
     lcd.display(img)
 ```
 
-#### ESP32 — Display (TFT_eSPI)
+#### K210 — Display (MaixPy)
 
-```cpp
-#include <TFT_eSPI.h>
+T-Bao's 1.54-inch ST7789V display is connected to the K210 side. Use MaixPy's `lcd` module to draw images or text. ESP32 does not drive this display directly.
 
-TFT_eSPI tft;
+```python
+# Run on K210 via MaixPy IDE
+import lcd
+import image
 
-void setup() {
-  tft.begin();
-  tft.setRotation(1);
-  tft.fillScreen(TFT_BLACK);
-  tft.setTextColor(TFT_WHITE, TFT_BLACK);
-  tft.setTextSize(2);
-  tft.drawString("T-Bao Ready", 30, 60);
-}
+lcd.init()
 
-void loop() {}
+img = image.Image(size=(240, 240))
+img.clear()
+img.draw_string(48, 108, "T-Bao Ready", color=(255, 255, 255), scale=2)
+lcd.display(img)
 ```
 
 #### ESP32 — UART Bridge to K210
@@ -117,6 +115,7 @@ void loop() {
 
 - **Dual-chip:** K210 (RISC-V, AI) communicates with ESP32 (Wi-Fi/BLE) via UART
 - **Camera:** OV2640 2 MP with 180° rotation support
+- **Display:** ST7789V display is driven by K210; ESP32 does not connect to the display directly
 - **K210 AI:** ~0.5 TOPS KPU — capable of YOLOv3, face recognition, and image classification
 - **PMU:** AXP202 power management — controls power rails for both chips
 - **IMU:** MPU6050 6-axis (I²C)

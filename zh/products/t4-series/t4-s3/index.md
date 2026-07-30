@@ -121,7 +121,6 @@ LILYGO T4-S3 是一款基于 **ESP32-S3R8** 双核 LX7 微控制器的紧凑型�
 
 ### 依赖库
 
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 * [LVGL](https://github.com/lvgl/lvgl)
 * [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
 

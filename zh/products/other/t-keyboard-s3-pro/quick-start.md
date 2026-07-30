@@ -10,6 +10,9 @@ show_source: false
 | 库名 | 版本 | 来源 |
 | :--: | :--: | :--: |
 | T-Keyboard-S3-Pro-Library | 最新 | [GitHub](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library) |
+| LovyanGFX | 最新 | 随 T-Keyboard-S3-Pro-Library 自动安装 |
+
+> **推荐：** 使用 [T-Keyboard-S3-Pro-Library](library) 统一驱动显示屏、按键、RGB 灯和编码器。该库会把四块 GC9107 屏幕封装成 LovyanGFX 设备（`display1`..`display4`），示例代码不需要再引入单独的显示驱动，也不需要手动配置屏幕引脚。
 
 ---
 
@@ -47,7 +50,7 @@ show_source: false
 
 1. 安装 [Arduino IDE](https://www.arduino.cc/en/software) 并添加 ESP32 开发板支持：
    `https://espressif.github.io/arduino-esp32/package_esp32_index.json`
-2. 克隆两个仓库并打开示例工程
+2. 通过 Arduino 库管理器安装 **T-Keyboard-S3-Pro-Library**，或将库文件夹复制到 Arduino 的 `libraries/` 目录
 3. 按上表配置开发板参数，点击「上传」
 
 ---
@@ -56,7 +59,7 @@ show_source: false
 
 - **主机 + 从机**：主机通过磁吸接口连接从机，最多支持 2×3 共 6 个从机
 - **RGB LED**：WS2812C；多设备运行时将亮度限制在 10 以内，避免电源过载
-- **4× TFT 显示屏**：每个 0.85 英寸 GC9107，128×128 像素（SPI）
+- **4× TFT 显示屏**：每个 0.85 英寸 GC9107，128×128 像素（SPI），库中作为 LovyanGFX 设备使用
 - **STM32 协处理器**：负责按键扫描；如需自定义固件，通过 STM32CubeMX + ARM Keil μVision5 经 SWD 烧录
 - **PSRAM**：OPI 8 MB，Arduino IDE 中选择 **OPI PSRAM**
 
@@ -67,67 +70,64 @@ show_source: false
 #### 按键读取（T-Keyboard-S3-Pro-Library）
 
 ```cpp
-#include <T_Keyboard_S3_Pro.h>
-
-TKeyboardS3Pro keyboard;
+#include <TKeyboardS3Pro.h>
 
 void setup() {
   Serial.begin(115200);
-  keyboard.begin();
+  TKeyboardS3Pro.begin();
 }
 
 void loop() {
-  keyboard.update();
-  if (keyboard.isPressed()) {
-    uint8_t key = keyboard.getKey();
-    Serial.printf("按键按下: %d\n", key);
+  TKeyboardS3Pro.update();
+
+  for (uint8_t i = 0; i < TKeyboardS3ProClass::KEY_COUNT; i++) {
+    if (TKeyboardS3Pro.key(i).wasPressed()) {
+      Serial.printf("KEY%u pressed\n", i + 1);
+    }
   }
-  delay(10);
 }
 ```
 
-#### TFT 显示屏（GC9107 — TFT_eSPI）
+#### TFT 显示屏（GC9107 — LovyanGFX）
 
 ```cpp
-#include <TFT_eSPI.h>
-
-TFT_eSPI tft;
+#include <TKeyboardS3Pro.h>
 
 void setup() {
-  tft.begin();
-  tft.setRotation(0);
-  tft.fillScreen(TFT_BLACK);
-  tft.setTextColor(TFT_WHITE);
-  tft.setTextSize(1);
-  tft.drawString("T-Keyboard", 20, 55);
-}
+  TKeyboardS3Pro.begin();
+  TKeyboardS3Pro.setBrightness(200);
+  TKeyboardS3Pro.fillAllScreens(TFT_BLACK);
 
-void loop() {}
-```
-
-#### RGB LED（WS2812C — FastLED）
-
-```cpp
-#include <FastLED.h>
-
-// WS2812C 引脚 — 请查阅 T-Keyboard-S3-Pro 原理图
-#define LED_PIN  38
-#define NUM_LEDS 4
-
-CRGB leds[NUM_LEDS];
-
-void setup() {
-  FastLED.addLeds<WS2812C, LED_PIN, GRB>(leds, NUM_LEDS);
-  FastLED.setBrightness(10); // 多从机场景下亮度保持低值
+  for (uint8_t i = 0; i < TKeyboardS3ProClass::HOST_SCREEN_COUNT; i++) {
+    Display& panel = TKeyboardS3Pro.displayAt(i);
+    panel.fillScreen(TFT_NAVY);
+    panel.setTextColor(TFT_WHITE);
+    panel.setTextDatum(middle_center);
+    panel.drawString(String("Panel ") + (i + 1), panel.width() / 2, panel.height() / 2);
+  }
 }
 
 void loop() {
-  for (int i = 0; i < NUM_LEDS; i++) leds[i] = CRGB::Cyan;
-  FastLED.show();
-  delay(500);
-  FastLED.clear();
-  FastLED.show();
-  delay(500);
+  TKeyboardS3Pro.update();
+}
+```
+
+#### RGB LED（T-Keyboard-S3-Pro-Library）
+
+```cpp
+#include <TKeyboardS3Pro.h>
+
+void setup() {
+  TKeyboardS3Pro.begin();
+}
+
+void loop() {
+  TKeyboardS3Pro.update();
+
+  static uint16_t hue = 0;
+  TKeyboardS3Pro.setLeds(hue, 80, 10);
+  hue = (hue + 2) % 360;
+  delay(30);
 }
 ```
 

@@ -52,7 +52,6 @@ LILYGO T-PCIE is an ESP32-based cellular development board featuring a **Mini PC
 | PSRAM | **Enable** |
 | Upload Speed | 921600 |
 
-5. Open `utilities.h` in the sketch and uncomment `#define LILYGO_T_PCIE_XXXX` for your modem
 6. Click **Upload**
 
 > **Note:** Do not update libraries when prompted in Arduino IDE — updated versions may break compatibility or overwrite default configurations (e.g. TinyGSM).

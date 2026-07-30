@@ -126,7 +126,6 @@ LILYGO T-Embed SI4732 这是基于基础款T-Embed 增加SI4732扩展模块的�
 * [PU2CLR SI4735](https://github.com/pu2clr/SI4735)
 * [RadioLib](https://github.com/jgromes/RadioLib)
 * [XPowersLib](https://github.com/lewisxhe/XPowersLib)
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 * [RotaryEncoder](http://www.mathertel.de/Arduino/RotaryEncoderLibrary.aspx)
 * [FastLED](https://github.com/FastLED/FastLED)
 * [IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266)

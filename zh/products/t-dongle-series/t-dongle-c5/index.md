@@ -109,7 +109,6 @@ LILYGO T-Dongle-C5 是一款基于 **ESP32-C5** 的紧凑型 USB 加密狗开发
 
 ### 依赖库
 
-- [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 
 ## 常见问题
 

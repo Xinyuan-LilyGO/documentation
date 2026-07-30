@@ -114,7 +114,6 @@ T-Display S3 AMOLED Plus is a highly integrated development board based on **ESP
 ### Dependent Libraries
 
 * [lvgl-8.3.9](https://github.com/lvgl/lvgl)
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 * [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
 * [XPowersLib](https://github.com/lewisxhe/XPowersLib)
 * [SensorLib](https://github.com/lewisxhe/SensorsLib)

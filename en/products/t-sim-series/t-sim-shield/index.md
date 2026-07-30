@@ -1,17 +1,17 @@
 ---
-title: Sim Shield
+title: T-Sim Shield
 show_source: false
 tags: Sim Series, Expansion Board, LoRa, Current Sensing, RS485, INA3221
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/sim-shield" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-sim-shield" />
 <ImageGallery :columns="1" :images="[
-  { src: '/products/t-sim-series/t-sim-shield/index/image/t-sim-shield-1.jpg', alt: 'Sim Shield front view' }
+  { src: '/products/t-sim-series/t-sim-shield/index/image/t-sim-shield-1.jpg', alt: 'T-Sim Shield front view' }
 ]" />
 
 ## Overview
 
-Sim Shield is a multifunction expansion board designed for the **LilyGo T-Sim Series**. Integrates **INA3221** triple-channel current sensing, **SX1262 LoRa** long-range transceiver, **RS485** (hardware auto direction control), **7–36 V DC** wide-voltage input (with 5 V/2 A regulated output), I2C/SPI expansion interfaces, and SD card slot (remapped SPI). Compatible with all LilyGo T-Sim series mainboards via a stackable connector.
+T-Sim Shield is a multifunction expansion board designed for the **LilyGo T-Sim Series**. Integrates **INA3221** triple-channel current sensing, **SX1262 LoRa** long-range transceiver, **RS485** (hardware auto direction control), **7–36 V DC** wide-voltage input (with 5 V/2 A regulated output), I2C/SPI expansion interfaces, and SD card slot (remapped SPI). Compatible with all LilyGo T-Sim series mainboards via a stackable connector.
 
 > **Important:** Always verify jumper cap and DIP switch settings before powering on. Incorrect configuration may cause hardware damage.
 
@@ -128,10 +128,10 @@ For other mainboard pin mappings and jumper configurations, refer to the [GitHub
 ## FAQ
 
 * **Q. Why is there no SD card slot output after inserting the card?**
-  A. After using the Sim Shield, insert the SD card into the **expansion board**, not the mainboard — the SPI bus is remapped.
+  A. After using the T-Sim Shield, insert the SD card into the **expansion board**, not the mainboard — the SPI bus is remapped.
 
 * **Q. Can I use an external battery with the mainboard's 18650 socket?**
-  A. No. When using an external battery connected to the Sim Shield, do **not** install a battery in the mainboard's 18650 socket.
+  A. No. When using an external battery connected to the T-Sim Shield, do **not** install a battery in the mainboard's 18650 socket.
 
 * **Q. What RS485 baud rate is recommended?**
   A. ≤115200 baud is recommended for reliable communication.

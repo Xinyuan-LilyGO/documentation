@@ -9,7 +9,8 @@ show_source: false
 
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
-| TFT_eSPI | Latest | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | Latest | [GitHub](https://github.com/lovyan03/LovyanGFX) |
+| LilyGo-display-library | Latest | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 | RadioLib | Latest | [GitHub](https://github.com/jgromes/RadioLib) |
 | FastLED | Latest | [GitHub](https://github.com/FastLED/FastLED) |
 | LVGL | 8.x | [GitHub](https://github.com/lvgl/lvgl) |
@@ -26,7 +27,7 @@ show_source: false
    git clone https://github.com/Xinyuan-LilyGO/T-Embed-CC1101.git
    ```
 3. Open `platformio.ini` and select the target example
-4. Click **✓** to build, connect via USB-C, click **→** to upload
+4. Click **Build** to build, connect via USB-C, click **Upload** to upload
 
 ---
 
@@ -52,51 +53,36 @@ If upload fails: hold **BOOT**, press and release **RST**, then release **BOOT**
 
 ---
 
-### LVGL
+### Basic Example
 
-T-Embed CC1101 uses a 1.9-inch ST7789V TFT (320×170). LVGL 8.x is pre-configured via TFT_eSPI in the official repository.
+| Example | Description |
+| :-----: | :---------- |
+| `LilyGo_LovyanGFX_Board_Test` | Unified LilyGo_LovyanGFX board display test; T-Embed CC1101 uses `display.begin(3)` |
+
+---
+
+### LovyanGFX Display Test
+
+T-Embed CC1101 uses a 1.9-inch ST7789V TFT (320×170). After installing `LovyanGFX` and `LilyGo_LovyanGFX`, create a `LilyGo_T_Embed_CC1101` object directly. This board's landscape orientation should use `display.begin(3)`.
 
 ```cpp
-#include <lvgl.h>
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_EMBED_CC1101
+#include <LilyGo_LovyanGFX.h>
 
-static lv_disp_draw_buf_t draw_buf;
-static lv_color_t buf[320 * 10];
-TFT_eSPI tft;
-
-void my_disp_flush(lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p) {
-  uint32_t w = area->x2 - area->x1 + 1;
-  uint32_t h = area->y2 - area->y1 + 1;
-  tft.startWrite();
-  tft.setAddrWindow(area->x1, area->y1, w, h);
-  tft.pushColors((uint16_t *)&color_p->full, w * h, true);
-  tft.endWrite();
-  lv_disp_flush_ready(disp);
-}
+LilyGo_T_Embed_CC1101 display;
 
 void setup() {
-  tft.begin();
-  tft.setRotation(1);
-  lv_init();
-  lv_disp_draw_buf_init(&draw_buf, buf, NULL, 320 * 10);
-
-  static lv_disp_drv_t disp_drv;
-  lv_disp_drv_init(&disp_drv);
-  disp_drv.hor_res = 320;
-  disp_drv.ver_res = 170;
-  disp_drv.flush_cb = my_disp_flush;
-  disp_drv.draw_buf = &draw_buf;
-  lv_disp_drv_register(&disp_drv);
-
-  lv_obj_t *label = lv_label_create(lv_scr_act());
-  lv_label_set_text(label, "T-Embed CC1101");
-  lv_obj_align(label, LV_ALIGN_CENTER, 0, 0);
+  display.begin(3);
+  display.setTextDatum(textdatum_t::middle_center);
+  display.fillScreen(TFT_BLACK);
+  display.drawRect(0, 0, display.width(), display.height(), TFT_CYAN);
+  display.setTextColor(TFT_WHITE, TFT_BLACK);
+  display.drawString("T-Embed CC1101", display.width() / 2, 54, &fonts::Font4);
+  display.setTextColor(TFT_YELLOW, TFT_BLACK);
+  display.drawString("LovyanGFX", display.width() / 2, 102, &fonts::Font2);
 }
 
-void loop() {
-  lv_timer_handler();
-  delay(5);
-}
+void loop() {}
 ```
 
 ---
@@ -106,17 +92,16 @@ void loop() {
 #### Display (ST7789V)
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_EMBED_CC1101
+#include <LilyGo_LovyanGFX.h>
 
-TFT_eSPI tft;
+LilyGo_T_Embed_CC1101 display;
 
 void setup() {
-  tft.begin();
-  tft.setRotation(1);
-  tft.fillScreen(TFT_BLACK);
-  tft.setTextColor(TFT_WHITE, TFT_BLACK);
-  tft.setTextSize(2);
-  tft.drawString("T-Embed CC1101", 40, 75);
+  display.begin(3);     // Landscape, rotated 180 degrees from rotation=1
+  display.fillScreen(TFT_BLACK);
+  display.setTextColor(TFT_WHITE, TFT_BLACK);
+  display.drawString("T-Embed CC1101", 40, 75, &fonts::Font2);
 }
 
 void loop() {}

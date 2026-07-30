@@ -9,7 +9,8 @@ show_source: false
 
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
-| TFT_eSPI | Latest | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | Latest | [GitHub](https://github.com/lovyan03/LovyanGFX) |
+| LilyGo-display-library | Latest | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 | LVGL | 8.x | [GitHub](https://github.com/lvgl/lvgl) |
 
 ---
@@ -24,7 +25,7 @@ show_source: false
    git clone https://github.com/Xinyuan-LilyGO/T-Encoder.git
    ```
 3. Open `platformio.ini` and select the target example
-4. Click **✓** to build, connect via USB-C, click **→** to upload
+4. Click **Build** to build, connect via USB-C, click **Upload** to upload
 
 ---
 
@@ -32,12 +33,12 @@ show_source: false
 
 #### 1. Install ESP32 Board Support
 
-1. Open Arduino IDE → **File** → **Preferences**
+1. Open Arduino IDE -> **File** -> **Preferences**
 2. Add to "Additional Board Manager URLs":
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. Go to **Tools** → **Board** → **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
+3. Go to **Tools** -> **Board** -> **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
 
 #### 2. Board Settings
 
@@ -63,14 +64,14 @@ Connect via USB-C and click **Upload**.
 #### Encoder + GC9A01 Round Display
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_ENCODER
+#include <LilyGo_LovyanGFX.h>
 
 #define ENC_A   4
 #define ENC_B   5
 #define ENC_BTN 0
-#define TFT_BL  9
 
-TFT_eSPI tft;
+LilyGo_T_Encoder display;
 int encoderPos = 0;
 int lastA = HIGH;
 
@@ -78,25 +79,20 @@ void setup() {
     pinMode(ENC_A, INPUT_PULLUP);
     pinMode(ENC_B, INPUT_PULLUP);
     pinMode(ENC_BTN, INPUT_PULLUP);
-    pinMode(TFT_BL, OUTPUT);
-    digitalWrite(TFT_BL, HIGH);
-
-    tft.init();
-    tft.setRotation(0);
-    tft.fillScreen(TFT_BLACK);
-    tft.setTextColor(TFT_WHITE, TFT_BLACK);
-    tft.setTextSize(3);
-    tft.setCursor(80, 110);
-    tft.println("0");
+    display.begin(0);
+    display.setTextColor(TFT_WHITE, TFT_BLACK);
+    display.setTextSize(3);
+    display.setCursor(80, 110);
+    display.println("0");
 }
 
 void loop() {
     int currentA = digitalRead(ENC_A);
     if (currentA != lastA && currentA == LOW) {
         encoderPos += (digitalRead(ENC_B) == LOW) ? 1 : -1;
-        tft.fillScreen(TFT_BLACK);
-        tft.setCursor(80, 110);
-        tft.println(encoderPos);
+        display.fillScreen(TFT_BLACK);
+        display.setCursor(80, 110);
+        display.println(encoderPos);
     }
     lastA = currentA;
 }

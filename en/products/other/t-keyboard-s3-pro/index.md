@@ -149,7 +149,6 @@ T-Keyboard S3 Pro is a high-end programmable keyboard based on **dual-MCU archit
 ### Dependent Libraries
 
 * [T-Keyboard-S3-Pro-Library](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library)
-* [LovyanGFX](https://github.com/lovyan03/LovyanGFX)
 * [ButtonSense](https://github.com/lbuque/ButtonSense)
 
 ## FAQ

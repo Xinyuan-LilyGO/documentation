@@ -10,7 +10,6 @@ show_source: false
 | 库名 | 版本 | 来源 |
 | :--: | :--: | :--: |
 | RadioLib | 最新 | [GitHub](https://github.com/jgromes/RadioLib) |
-| TFT_eSPI | 最新 | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
 | XPowersLib | 最新 | [GitHub](https://github.com/lewisxhe/XPowersLib) |
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: LILYGO T-Display S3 Pro
 show_source: false
-tags: ESP32-S3, AMOLED, TFT_eSPI, USB OTG, IPS, Capacitive Touch
+tags: ESP32-S3, AMOLED, USB OTG, IPS, Capacitive Touch
 ---
 
 # {{ $frontmatter.title }} <ShopLink href="https://www.lilygo.cc/products/t-display-s3-pro" />
@@ -25,7 +25,7 @@ tags: ESP32-S3, AMOLED, TFT_eSPI, USB OTG, IPS, Capacitive Touch
 | 示例 | PlatformIO/Arduino | ESP-IDF | 描述 |
 | :------ | :----------------: | :-----: | :---------- |
 | [Factory](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/examples/factory) | ✓ | | 出厂综合测试 |
-| [TFT_eSPI_Simple](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/examples/TFT_eSPI_Simple) | ✓ | | TFT_eSPI 绘图基础 |
+| [Display_Example](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/examples) | ✓ | | Arduino_GFX 显示绘图基础 |
 | [AdjustBacklight](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/examples/AdjustBacklight) | ✓ | | 背光调节（区分 V1.0/V1.1） |
 | [PMU_Example](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/examples/PMU_Example) | ✓ | | 电源管理配置与电池信息 |
 | [USB_HID_Example](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/examples/USB_HID_Example) | ✓ | | USB HID 和 OTG 功能 |
@@ -122,7 +122,6 @@ tags: ESP32-S3, AMOLED, TFT_eSPI, USB OTG, IPS, Capacitive Touch
 
 ### 依赖库
 
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 * [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
 * [XPowersLib](https://github.com/lewisxhe/XPowersLib)
 * [SensorLib](https://github.com/lewisxhe/SensorLib)

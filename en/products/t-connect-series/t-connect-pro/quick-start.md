@@ -10,7 +10,8 @@ show_source: false
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
 | RadioLib | Latest | [GitHub](https://github.com/jgromes/RadioLib) |
-| TFT_eSPI | Latest | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | Latest | [GitHub](https://github.com/lovyan03/LovyanGFX) |
+| LilyGo-display-library | Latest | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 | SensorLib | Latest | [GitHub](https://github.com/lewisxhe/SensorsLib) |
 | XPowersLib | Latest | [GitHub](https://github.com/lewisxhe/XPowersLib) |
 
@@ -26,7 +27,7 @@ show_source: false
    git clone https://github.com/Xinyuan-LilyGO/T-Connect-Pro.git
    ```
 3. Open `platformio.ini` and select the target example
-4. Click **✓** to build, connect via USB-C, click **→** to upload
+4. Click **Build** to build, connect via USB-C, click **Upload** to upload
 
 ---
 
@@ -34,12 +35,12 @@ show_source: false
 
 #### 1. Install ESP32 Board Support
 
-1. Open Arduino IDE → **File** → **Preferences**
+1. Open Arduino IDE -> **File** -> **Preferences**
 2. Add to "Additional Board Manager URLs":
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. Go to **Tools** → **Board** → **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
+3. Go to **Tools** -> **Board** -> **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
 
 #### 2. Board Settings
 
@@ -83,17 +84,16 @@ If upload fails: hold **BOOT**, press and release **RST**, then release **BOOT**
 #### Display (ST7796 TFT)
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_CONNECT_PRO
+#include <LilyGo_LovyanGFX.h>
 
-TFT_eSPI tft;
+LilyGo_T_Connect_Pro display;
 
 void setup() {
-  tft.begin();
-  tft.setRotation(0);
-  tft.fillScreen(TFT_BLACK);
-  tft.setTextColor(TFT_WHITE, TFT_BLACK);
-  tft.setTextSize(2);
-  tft.drawString("T-Connect Pro", 30, 230);
+  display.begin(0);
+  display.setTextColor(TFT_WHITE, TFT_BLACK);
+  display.setTextSize(2);
+  display.drawString("T-Connect Pro", 30, 230);
 }
 
 void loop() {}
@@ -104,8 +104,8 @@ void loop() {}
 ```cpp
 #include <RadioLib.h>
 
-// SX1262 pins — check the T-Connect-Pro schematic
-SX1262 radio = new Module(10, 3, 9, 4);
+// SX1262 pins: CS=14, DIO1=45, RST=42, BUSY=38
+SX1262 radio = new Module(14, 45, 42, 38);
 
 void setup() {
   Serial.begin(115200);
@@ -131,7 +131,7 @@ HardwareSerial rs485(1);
 
 void setup() {
   Serial.begin(115200);
-  // RS485 TX/RX pins — check schematic for your revision
+  // RS485 TX/RX pins check schematic for your revision
   rs485.begin(9600, SERIAL_8N1, 17, 18);
 }
 
@@ -149,8 +149,8 @@ void loop() {
 #include <SPI.h>
 
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-// W5500 CS pin — check schematic
-#define ETH_CS  48
+// W5500 CS pin
+#define ETH_CS  10
 
 void setup() {
   Serial.begin(115200);
@@ -174,7 +174,7 @@ void loop() { Ethernet.maintain(); }
 A: Hold **BOOT**, press and release **RST**, then release **BOOT** to enter download mode.
 
 **Q: What is the input voltage range?**  
-A: T-Connect Pro accepts **12–24 V DC** wide-range input. Do not connect USB and external DC simultaneously without checking the schematic.
+A: T-Connect Pro accepts **12-24 V DC** wide-range input. Do not connect USB and external DC simultaneously without checking the schematic.
 
 **Q: RS485 or CAN not responding?**  
 A: Ensure you have proper bus termination resistors (120 Ω) on both ends of the RS485/CAN bus.

@@ -121,7 +121,6 @@ LILYGO T-Embed is a multi-functional ESP32-S3 development platform featuring a *
 
 ### Dependent Libraries
 
-- [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 - [FastLED](https://github.com/FastLED/FastLED)
 - [ESP32-audioI2S](https://github.com/schreibfaul1/ESP32-audioI2S)
 - [LVGL](https://github.com/lvgl/lvgl)

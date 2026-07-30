@@ -11,9 +11,10 @@ Before compiling any example, install the following libraries via Arduino IDE Li
 
 | Library | Source |
 | :-----: | :----: |
+| LilyGo-display-library | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
+| LovyanGFX | [GitHub](https://github.com/lovyan03/LovyanGFX) |
 | LilyGo-AMOLED-Series | [GitHub](https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series) |
 | LVGL (v8.x) | [GitHub](https://github.com/lvgl/lvgl/tree/release/v8.4) |
-| TFT_eSPI | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
 | SensorLib | [GitHub](https://github.com/lewisxhe/SensorsLib) |
 | XPowersLib | [GitHub](https://github.com/lewisxhe/XPowersLib) |
 
@@ -27,12 +28,12 @@ Before compiling any example, install the following libraries via Arduino IDE Li
 
 #### 1. Install ESP32 Board Support
 
-1. Open Arduino IDE → **File** → **Preferences**
+1. Open Arduino IDE -> **File** -> **Preferences**
 2. Add the following URL to *Additional Boards Manager URLs*:
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. Go to **Tools** → **Board** → **Boards Manager**, search for `esp32`, and install **esp32 by Espressif Systems**
+3. Go to **Tools** -> **Board** -> **Boards Manager**, search for `esp32`, and install **esp32 by Espressif Systems**
 
 #### 2. Board Settings
 
@@ -85,14 +86,14 @@ Open `platformio.ini` and uncomment the `src_dir` line for your target example. 
 ; Only one src_dir should be uncommented at a time
 src_dir = examples/Factory
 ; src_dir = examples/AdjustBrightness
-; src_dir = examples/TFT_eSPI_Sprite
+; src_dir = examples/LVGL_Rotation
 ```
 
 #### 3. Build and Upload
 
-- Click **✓** (Build) in the PlatformIO toolbar
+- Click **Build** (Build) in the PlatformIO toolbar
 - Connect the board via USB-C
-- Click **→** (Upload)
+- Click **Upload** (Upload)
 
 ---
 
@@ -100,11 +101,9 @@ src_dir = examples/Factory
 
 | Example | Description |
 | :-----: | :---------- |
+| `LilyGo_LovyanGFX_Board_Test` | Unified LilyGo_LovyanGFX board display test |
 | `Factory` | Factory test / default demo |
 | `AdjustBrightness` | Adjust display brightness |
-| `TFT_eSPI_Sprite` | Sprite rendering with TFT_eSPI |
-| `TFT_eSPI_Sprite_ArcFill` | Arc fill animation |
-| `TFT_eSPI_Sprite_Rotation` | Screen rotation demo |
 | `LVGL_Rotation` | Screen rotation with LVGL |
 | `Touchpad` | Capacitive touch input (touch version only) |
 | `Lvgl_Images` | Color test with LVGL images |
@@ -144,7 +143,7 @@ void loop() {
 }
 ```
 
-`amoled.begin()` auto-detects the board model (T-Display-S3-AMOLED, Pro, etc.) — no manual variant selection needed.
+`amoled.begin()` auto-detects the board model (T-Display-S3-AMOLED, Pro, etc.), no manual variant selection needed.
 
 ---
 
@@ -229,7 +228,7 @@ void setup() {
 
 #### Screen Rotation
 
-Call `amoled.setRotation()` after LVGL init to change orientation. Values 0–3 map to 0°/90°/180°/270°.
+Call `amoled.setRotation()` after LVGL init to change orientation. Values 0-3 map to 0°/90°/180°/270°.
 
 ```cpp
 void setup() {
@@ -302,7 +301,7 @@ lv_anim_set_values(&a, 100, 300);
 lv_anim_set_path_cb(&a, lv_anim_path_ease_in_out); // slow-fast-slow
 ```
 
-See `examples/TFT_eSPI_Sprite_ArcFill` for a full arc animation demo.
+For sprite animation, start from `LilyGo_LovyanGFX_Board_Test`, create an `LGFX_Sprite`, and reuse the same board display object.
 
 ---
 
@@ -322,26 +321,25 @@ To use v9, rename `src/lv_conf.h.v9` to `lv_conf.h` (replacing the v8 config).
 
 ### Peripheral Examples
 
-#### AMOLED Display (RM67162 via LilyGo_AMOLED)
+#### AMOLED Display (RM67162 via LilyGo_LovyanGFX)
 
 ```cpp
-#include <LilyGo_AMOLED.h>
+#define LILYGO_LGFX_USE_T_DISPLAY_S3_AMOLED
+#include <LilyGo_LovyanGFX.h>
 
-LilyGo_Class amoled;
+LilyGo_T_Display_S3_AMOLED display;
 
 void setup() {
-  amoled.begin();  // auto-detects T-Display-S3-AMOLED
-  amoled.fillScreen(amoled.color565(0, 0, 0));
-  amoled.setTextColor(amoled.color565(0, 255, 0));
-  amoled.setTextSize(2);
-  amoled.setCursor(30, 110);
-  amoled.print("T-Display-S3-AMOLED");
+  display.begin(1);
+  display.setTextColor(TFT_GREEN, TFT_BLACK);
+  display.setTextSize(2);
+  display.drawString("T-Display-S3-AMOLED", 30, 110);
 }
 
 void loop() {}
 ```
 
-#### Touch (CST816 — touch version only)
+#### Touch (CST816 touch version only)
 
 ```cpp
 #include <LilyGo_AMOLED.h>
@@ -367,7 +365,7 @@ void loop() {
 ## Common Issues
 
 **Upload port keeps disconnecting**
-Manually enter download mode (hold BOOT → press RST → release BOOT), then upload.
+Manually enter download mode (hold BOOT press RST release BOOT), then upload.
 
 **Startup hangs when running on battery**
 Set **USB CDC On Boot** to **Disabled** in board settings.

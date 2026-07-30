@@ -20,7 +20,7 @@ LILYGO T-Display is a compact ESP32 development board with a built-in **1.14-inc
 
 | Example | PlatformIO/Arduino | ESP-IDF | Description |
 | :-----: | :----------------: | :-----: | :---------: |
-| [TTGO-T-Display](https://github.com/Xinyuan-LilyGO/TTGO-T-Display) | ✓ | | Display demos, TFT_eSPI examples, factory test |
+| [TTGO-T-Display](https://github.com/Xinyuan-LilyGO/TTGO-T-Display) | ✓ | | Display demos, factory test |
 
 ### PlatformIO
 
@@ -120,7 +120,6 @@ LILYGO T-Display is a compact ESP32 development board with a built-in **1.14-inc
 
 ### Dependent Libraries
 
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 
 ## FAQ
 

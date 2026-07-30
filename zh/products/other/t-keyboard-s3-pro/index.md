@@ -150,7 +150,6 @@ T-Keyboard S3 Pro 是一款基于**双 MCU 架构**（ESP32-S3-WROOM-1 + STM32G0
 ### 依赖库
 
 * [T-Keyboard-S3-Pro-Library](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library)
-* [LovyanGFX](https://github.com/lovyan03/LovyanGFX)
 * [ButtonSense](https://github.com/lbuque/ButtonSense)
 
 ## 常见问题

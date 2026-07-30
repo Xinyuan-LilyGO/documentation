@@ -23,7 +23,7 @@ LILYGO T-Display Bar 是一款基于 ESP32-S3R8 的高集成嵌入式智能显�
 | 示例 | PlatformIO/Arduino | 描述 |
 | :------ | :----------------: | :---------- |
 | [Factory](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/Factory) | ✓ | 出厂测试（含天气桌面、蓝牙鼠标） |
-| [TFT_ESPI_Example](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/TFT_ESPI_Example) | ✓ | TFT_eSPI 库适配示例 |
+| [GFX](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples) | ✓ | 图形库适配示例 |
 | [LVGL_Example](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/LVGL_Example) | ✓ | LVGL 图形界面示例 |
 | [WIFI_Config](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/WIFI_Config) | ✓ | Wi-Fi 配置示例 |
 | [BHI260AP](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/BHI260AP) | ✓ | 六轴 IMU 传感器示例 |
@@ -146,7 +146,6 @@ LILYGO T-Display Bar 是一款基于 ESP32-S3R8 的高集成嵌入式智能显�
 * [MadgwickAHRS](https://github.com/arduino-libraries/MadgwickAHRS)
 * [SensorLib](https://github.com/lewisxhe/SensorsLib)
 * [XPowersLib](https://github.com/lewisxhe/XPowersLib)
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 
 ## 常见问题
 

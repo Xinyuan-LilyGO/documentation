@@ -4,12 +4,11 @@ show_source: false
 ---
 
 # T-Display Keyboard 快速开始
-
 ## 依赖库
-
 | 库名 | 版本 | 来源 |
 | :--: | :--: | :--: |
-| TFT_eSPI | 最新 | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | 最新| [GitHub](https://github.com/lovyan03/LovyanGFX) |
+| LilyGo-display-library | 最新 | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 
 ---
 
@@ -22,14 +21,9 @@ show_source: false
    ```bash
    git clone https://github.com/Xinyuan-LilyGO/TTGO-T-Display.git
    ```
-3. 打开 `platformio.ini`，选择目标示例
-4. 点击 **✓** 编译，点击 **→** 上传
-
----
-
+3. 打开 `platformio.ini` 并选择目标示例
+4. 点击编译，选择端口后上传
 ### Arduino IDE
-
-#### 开发板设置
 
 | 设置项 | 值 |
 | :----: | :--: |
@@ -41,23 +35,22 @@ show_source: false
 
 ---
 
-### 外设示例
-
-#### 显示屏（TFT_eSPI）
-
+## 显示屏示例
+T-Display Keyboard 内部使用 T-Display 开发板，显示配置与 T-Display 的 ST7789V 屏幕一致
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_DISPLAY_KEYBOARD
+#include <LilyGo_LovyanGFX.h>
 
-TFT_eSPI tft;
+LilyGo_T_Display_Keyboard display;
 
 void setup() {
-    tft.init();
-    tft.setRotation(1);
-    tft.fillScreen(TFT_BLACK);
-    tft.setTextColor(TFT_WHITE, TFT_BLACK);
-    tft.setTextSize(2);
-    tft.setCursor(20, 55);
-    tft.println("T-Display Keyboard");
+    display.begin(1);
+    display.setTextColor(TFT_WHITE, TFT_BLACK);
+    display.setTextSize(2);
+    display.setCursor(12, 55);
+    display.println("T-Display");
+    display.setCursor(12, 80);
+    display.println("Keyboard");
 }
 
 void loop() {}
@@ -69,6 +62,5 @@ void loop() {}
 
 **Q：一直无法烧录？**  
 A：按住 **BOOT**，按一下 **RST** 后松开，再松开 BOOT，进入下载模式后再上传。
-
 **Q：T-Display Keyboard 用的是什么键盘外壳？**  
-A：使用紧凑型 QWERTY 物理键盘外壳，内置 T-Display（ESP32 + 1.14 英寸 ST7789V）开发板和电池仓。
+A：使用紧凑型 QWERTY 物理键盘外壳，内T-Display 开发板和电池仓。

@@ -14,7 +14,7 @@ This guide covers Arduino, PlatformIO, LVGL, and peripheral usage for the **T4-S
 The T4-S3 uses the `LilyGo_AMOLED` library which abstracts all hardware access. The pin constants below are for reference; you generally do not need to define them manually.
 
 ```cpp
-// Display (RM690B0 — QSPI)
+// Display (RM690B0 via QSPI)
 #define BOARD_DISP_DATA0    14
 #define BOARD_DISP_DATA1    10
 #define BOARD_DISP_DATA2    16
@@ -22,15 +22,15 @@ The T4-S3 uses the `LilyGo_AMOLED` library which abstracts all hardware access. 
 #define BOARD_DISP_SCK      15
 #define BOARD_DISP_CS       11
 #define BOARD_DISP_RESET    13
-#define BOARD_DISP_TE       18   // Tearing Effect — do NOT use for other purposes
+#define BOARD_DISP_TE       18   // Tearing Effect - do NOT use for other purposes
 
-// Touch (CS226SE — I2C)
+// Touch (CS226SE I2C)
 #define BOARD_TOUCH_SDA      6
 #define BOARD_TOUCH_SCL      7
 #define BOARD_TOUCH_IRQ      8
 #define BOARD_TOUCH_RST     17
 
-// PMU (SY6970 — I2C, shares I2C bus with touch)
+// PMU (SY6970 I2C, shares I2C bus with touch)
 #define BOARD_PMU_SDA        6
 #define BOARD_PMU_SCL        7
 #define BOARD_PMU_IRQ        5
@@ -56,14 +56,14 @@ The T4-S3 uses the `LilyGo_AMOLED` library which abstracts all hardware access. 
 
 #### Install Board Support
 
-1. Open **Arduino IDE → File → Preferences**
+1. Open **Arduino IDE -> File -> Preferences**
 2. Add to "Additional boards manager URLs":
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. Open **Tools → Board → Boards Manager**, search **esp32**, install **esp32 by Espressif Systems**
+3. Open **Tools -> Board -> Boards Manager**, search **esp32**, install **esp32 by Espressif Systems**
 
-> **Version note:** The `LilyGo-AMOLED-Series` library requires **arduino-esp32 ≥ 2.0.5 and < 3.0.0**. Versions ≥ 3.0.0 are not supported.
+> **Version note:** The `LilyGo-AMOLED-Series` library requires **arduino-esp32 秒2.0.5 and < 3.0.0**. Versions >= 3.0.0 are not supported.
 
 #### Install Libraries
 
@@ -71,11 +71,12 @@ Copy all folders from the project `libdeps/` directory to your Arduino Sketchboo
 
 | Library | Version | Purpose |
 | :-----: | :-----: | :------ |
+| LovyanGFX | latest | Display drawing backend |
+| LilyGo-display-library | latest | T4-S3 display quick wrapper |
 | LilyGo-AMOLED-Series | latest | Board HAL, display, touch, PMU |
 | lvgl | 8.4.0 | GUI framework (v8) |
 | XPowersLib | 0.2.7 | PMU (SY6970 / AXP2101) |
 | SensorLib | 0.2.4 | Touch (CS226SE) |
-| TFT_eSPI | 2.5.31 | Low-level SPI display driver |
 | TinyGPSPlus | 1.0.3 | GNSS NMEA parsing (Qwiic shield) |
 | Adafruit NeoPixel | 1.11.0 | NeoPixel LED (1.47-inch model only) |
 
@@ -129,10 +130,10 @@ build_flags =
     -DARDUINO_USB_CDC_ON_BOOT=1
     -DCORE_DEBUG_LEVEL=1
 lib_deps =
+    lovyan03/LovyanGFX
     lvgl/lvgl@8.4.0
     lewisxhe/XPowersLib@0.2.7
     lewisxhe/SensorLib@0.2.4
-    bodmer/TFT_eSPI@2.5.31
     mikalhart/TinyGPSPlus@1.0.3
     adafruit/Adafruit NeoPixel@1.11.0
 ```
@@ -144,13 +145,13 @@ lib_deps =
 3. Clone the `LilyGo-AMOLED-Series` repository and open it in VS Code
 4. PlatformIO will download dependencies automatically on first build
 5. Uncomment the `src_dir` for the example you want to run
-6. Click **✓** to compile, **→** to upload
+6. Click **Build** to compile, *** to upload
 
 ---
 
 ### LVGL
 
-The T4-S3 uses **LVGL v8.4.0** via the `LilyGo_AMOLED` library. The display driver, touch input, and flush callbacks are handled by `beginLvglHelper()` — you do not need to configure them manually.
+The T4-S3 uses **LVGL v8.4.0** via the `LilyGo_AMOLED` library. The display driver, touch input, and flush callbacks are handled by `beginLvglHelper()` you do not need to configure them manually.
 
 #### lv_conf.h
 
@@ -212,31 +213,30 @@ void loop()
 
 | Example | Description |
 | :-----: | :---------- |
+| `LilyGo_LovyanGFX_Board_Test` | Unified LilyGo_LovyanGFX board display test |
 | [display_touch](examples/display_touch/display_touch.ino) | LVGL UI showing live touch coordinates, a 5-entry touch log, and a dot that follows the finger |
 
-#### Display (RM690B0 — QSPI AMOLED)
+#### Display (RM690B0 via QSPI AMOLED)
 
-The display is a 2.41-inch 600 × 450 AMOLED driven over QSPI. Use `pushColors()` or the LVGL/TFT_eSPI wrappers — direct pixel access via `pushColors()` is available if needed.
+The 2.41-inch AMOLED uses RM690B0 over QSPI. For simple drawing or AI-generated display examples, use the `LilyGo_T4_S3` wrapper from `LilyGo_LovyanGFX`.
 
 ```cpp
-#include <LilyGo_AMOLED.h>
+#define LILYGO_LGFX_USE_T4_S3
+#include <LilyGo_LovyanGFX.h>
 
-LilyGo_AMOLED amoled;
+LilyGo_T4_S3 display;
 
 void setup()
 {
-    amoled.beginAMOLED_241();
-    amoled.setBrightness(200);    // 0–255
-
-    // Fill with red (RGB565)
-    uint16_t w = amoled.width();
-    uint16_t h = amoled.height();
-    uint16_t *buf = (uint16_t *)ps_malloc(w * h * 2);
-    if (buf) {
-        for (int i = 0; i < w * h; i++) buf[i] = 0xF800; // red
-        amoled.pushColors(0, 0, w, h, buf);
-        free(buf);
-    }
+    display.begin(0, 200);
+    display.enableFrameBuffer(true);
+    display.fillScreen(TFT_BLACK);
+    display.drawRect(0, 0, display.width(), display.height(), TFT_CYAN);
+    display.setTextDatum(textdatum_t::middle_center);
+    display.setTextColor(TFT_WHITE, TFT_BLACK);
+    display.drawString("T4-S3", display.width() / 2, display.height() / 2 - 24, &fonts::Font4);
+    display.setTextColor(TFT_GREEN, TFT_BLACK);
+    display.drawString("LovyanGFX", display.width() / 2, display.height() / 2 + 24, &fonts::Font2);
 }
 
 void loop() {}
@@ -326,7 +326,7 @@ void loop() {}
 #### Brightness Control
 
 ```cpp
-amoled.setBrightness(128);   // 0 (off) – 255 (full)
+amoled.setBrightness(128);   // 0 (off) to 255 (full)
 uint8_t level = amoled.getBrightness();
 ```
 
@@ -372,8 +372,8 @@ No official ESP-IDF project template exists for the T4-S3. For IDF development:
 
 1. Create a new project: `idf.py create-project t4-s3`
 2. Set target: `idf.py set-target esp32s3`
-3. Enable PSRAM in `menuconfig`: **Component config → ESP PSRAM → Enable**, type = **Octal PSRAM**
-4. Set Flash to 16 MB: **Serial flasher config → Flash size → 16 MB**
+3. Enable PSRAM in `menuconfig`: **Component config -> ESP PSRAM -> Enable**, type = **Octal PSRAM**
+4. Set Flash to 16 MB: **Serial flasher config -> Flash size -> 16 MB**
 5. Refer to [ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/)
 
 ---
@@ -387,7 +387,7 @@ No official ESP-IDF project template exists for the T4-S3. For IDF development:
   A. Hold **BOOT** (GPIO0), press and release **RST**, then click Upload. Release BOOT after the upload starts.
 
 * **Q. `beginAMOLED_241()` returns false.**
-  A. Ensure the arduino-esp32 core is ≥ 2.0.5 and < 3.0.0. Version 3.x is not currently supported by the library.
+  A. Ensure the arduino-esp32 core is >= 2.0.5 and < 3.0.0. Version 3.x is not currently supported by the library.
 
 * **Q. Which `begin()` function should I use?**
   A. Use `amoled.beginAMOLED_241()` for T4-S3 (2.41-inch). Alternatively, `amoled.begin()` auto-detects the board but `beginAMOLED_241()` is more reliable.

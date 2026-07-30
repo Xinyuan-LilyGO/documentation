@@ -11,7 +11,8 @@ Copy the `libraries/` folder from the repository into your Arduino libraries dir
 
 | Library | Source |
 | :-----: | :----: |
-| TFT_eSPI | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | [GitHub](https://github.com/lovyan03/LovyanGFX) |
+| LilyGo-display-library | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
 | CST816D (touch) | [GitHub](https://github.com/Xinyuan-LilyGO/T-Circle-S3) |
 
 ---
@@ -22,12 +23,12 @@ Copy the `libraries/` folder from the repository into your Arduino libraries dir
 
 #### 1. Install ESP32 Board Support
 
-1. Open Arduino IDE → **File** → **Preferences**
+1. Open Arduino IDE -> **File** -> **Preferences**
 2. Add to "Additional boards manager URLs":
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. Go to **Tools** → **Board** → **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
+3. Go to **Tools** -> **Board** -> **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
 
 #### 2. Install Libraries
 
@@ -60,7 +61,7 @@ If upload fails, hold **BOOT** and press **RST**, release RST first, then start 
    git clone https://github.com/Xinyuan-LilyGO/T-Circle.git
    ```
 3. Open `platformio.ini`, uncomment the desired example environment
-4. Click **✓** to build, connect the board, click **→** to upload
+4. Click **Build** to build, connect the board, click **Upload** to upload
 
 ---
 
@@ -75,22 +76,20 @@ If upload fails, hold **BOOT** and press **RST**, release RST first, then start 
 
 ### Peripheral Examples
 
-#### Hello World (TFT_eSPI)
+#### Hello World (LovyanGFX)
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_CIRCLE
+#include <LilyGo_LovyanGFX.h>
 
-TFT_eSPI tft = TFT_eSPI();
+LilyGo_T_Circle display;
 
 void setup() {
-    tft.init();
-    tft.setRotation(0);
-    tft.fillScreen(TFT_BLACK);
-
-    tft.setTextColor(TFT_WHITE, TFT_BLACK);
-    tft.setTextSize(2);
-    tft.setCursor(20, 70);
-    tft.println("T-Circle!");
+    display.begin(0);
+    display.setTextColor(TFT_WHITE, TFT_BLACK);
+    display.setTextSize(2);
+    display.setCursor(20, 70);
+    display.println("T-Circle!");
 }
 
 void loop() {}
@@ -99,25 +98,25 @@ void loop() {}
 #### Draw Shapes on the Round Screen
 
 ```cpp
-#include <TFT_eSPI.h>
+#define LILYGO_LGFX_USE_T_CIRCLE
+#include <LilyGo_LovyanGFX.h>
 
-TFT_eSPI tft = TFT_eSPI();
+LilyGo_T_Circle display;
 
 void setup() {
-    tft.init();
-    tft.fillScreen(TFT_BLACK);
+    display.begin(0);
 
     // Draw a filled circle in the centre (display is 160×160)
-    tft.fillCircle(80, 80, 60, TFT_BLUE);
+    display.fillCircle(80, 80, 60, TFT_BLUE);
 
     // Draw a ring
-    tft.drawCircle(80, 80, 75, TFT_WHITE);
+    display.drawCircle(80, 80, 75, TFT_WHITE);
 
     // Draw text inside
-    tft.setTextColor(TFT_WHITE);
-    tft.setTextSize(1);
-    tft.setCursor(55, 76);
-    tft.print("Hello!");
+    display.setTextColor(TFT_WHITE);
+    display.setTextSize(1);
+    display.setCursor(55, 76);
+    display.print("Hello!");
 }
 
 void loop() {}
@@ -172,7 +171,7 @@ void loop() {
 
 void setup() {
     Serial.begin(115200);
-    Serial.println("Woke up — running...");
+    Serial.println("Woke up - running...");
 
     // ... do work here ...
 
@@ -188,11 +187,11 @@ void loop() {}
 
 ## FAQ
 
-**Q: Upload keeps failing — what should I do?**  
+**Q: Upload keeps failing - what should I do?**  
 A: Hold **BOOT**, press and release **RST**, then start the upload while still holding BOOT.
 
-**Q: T-Circle vs T-Circle S3 — which should I use?**  
+**Q: T-Circle vs T-Circle S3 - which should I use?**  
 A: T-Circle uses the original ESP32 chip. T-Circle S3 uses the newer ESP32-S3 with USB-OTG, more GPIO, and better performance. Both use the same 0.75-inch circular display.
 
 **Q: How do I keep the round display looking good?**  
-A: Draw content inside a 160-pixel circle centered at (80, 80). Pixels outside the visible circle are physically clipped by the lens, but the controller still renders them — use `tft.fillCircle()` as a background to avoid hard corners showing.
+A: Draw content inside a 160-pixel circle centered at (80, 80). Pixels outside the visible circle are physically clipped by the lens, but the controller still renders them. Use `display.fillCircle()` as a background to avoid hard corners showing.

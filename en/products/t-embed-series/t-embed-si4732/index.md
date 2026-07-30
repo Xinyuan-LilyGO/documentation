@@ -122,7 +122,6 @@ LILYGO T-Embed SI4732 is an enhanced T-Embed featuring an integrated **SI4732-A1
 * [RadioLib](https://github.com/jgromes/RadioLib)
 * [PN532](https://github.com/Seeed-Studio/PN532)
 * [XPowersLib](https://github.com/lewisxhe/XPowersLib)
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 * [RotaryEncoder](http://www.mathertel.de/Arduino/RotaryEncoderLibrary.aspx)
 * [FastLED](https://github.com/FastLED/FastLED)
 * [IRremoteESP8266](https://github.com/crankyoldgit/IRremoteESP8266)

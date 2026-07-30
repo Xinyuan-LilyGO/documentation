@@ -130,7 +130,6 @@ LILYGO T-Encoder 是一款紧凑型 ESP32-S3 开发板，将 **1.28 英寸 GC9A0
 
 ### 依赖库
 
-- [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 - [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
 - [RotaryEncoder](http://www.mathertel.de/Arduino/RotaryEncoderLibrary.aspx)
 - [LVGL](https://github.com/lvgl/lvgl)
@@ -141,7 +140,7 @@ LILYGO T-Encoder 是一款紧凑型 ESP32-S3 开发板，将 **1.28 英寸 GC9A0
   A. 使用 RotaryEncoder 库，监控 GPIO4（A 相）和 GPIO5（B 相），库会自动处理去抖动和方向检测。
 
 * **Q. 圆形 GC9A01 显示屏可以使用 LVGL 吗？**
-  A. 可以。LVGL 兼容 GC9A01 驱动，将显示分辨率设置为 240 × 240，并在 TFT_eSPI 的 `User_Setup.h` 中设置 `GC9A01_DRIVER` 标志即可。
+ A. 可以。LVGL 兼容 GC9A01 驱动，将显示分辨率设置为 240 × 240，并使用 的 GC9A01 配置或官方显示 helper。
 
 ## 更新日志
 

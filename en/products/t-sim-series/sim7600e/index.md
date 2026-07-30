@@ -25,7 +25,6 @@ T-PCIE SIM7600E is a **mini PCIe form-factor LTE modem module** based on the **S
 | :-----: | :----------------: | :-----: | :---------: |
 | [LilyGo-Modem-Series](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series) | ✓ | | AT commands, MQTT, HTTP examples |
 
-Refer to the [T-PCIE mainboard Quick Start](../index.md#quick-start) for PlatformIO and Arduino setup. In `utilities.h`, uncomment `#define LILYGO_T_SIM7600X`.
 
 ### Development Platforms
 

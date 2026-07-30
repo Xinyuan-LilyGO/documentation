@@ -13,7 +13,6 @@ Copy all folders from the project `lib/` directory into your Arduino libraries f
 | :-----: | :-----: | :----: |
 | LVGL | **8.3.0** (do not upgrade) | [GitHub](https://github.com/lvgl/lvgl) |
 | Arduino_GFX | Latest | [GitHub](https://github.com/moononournation/Arduino_GFX) |
-| TFT_eSPI | Latest | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
 | XPowersLib | Latest | [GitHub](https://github.com/lewisxhe/XPowersLib) |
 | Adafruit_BusIO | Latest | [GitHub](https://github.com/adafruit/Adafruit_BusIO) |
 

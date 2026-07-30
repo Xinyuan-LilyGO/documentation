@@ -129,7 +129,6 @@ T-Display-S3-Long 是一款基于 ESP32-S3R8 的长条形显示屏开发板，�
 * [XPowersLib](https://github.com/lewisxhe/XPowersLib)
 * [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
 * [Adafruit_BusIO](https://github.com/adafruit/Adafruit_BusIO)
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 
 ## 常见问题
 

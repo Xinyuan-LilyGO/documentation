@@ -14,7 +14,7 @@ tags: K210, ESP32, AI, Camera, Touch Screen, IoT
 
 ## 概述
 
-T-Bao 是一款基于 ESP32-D0WDQ6-V3 和 K210 RISC-V AI 芯片的开源 AIoT 终端，深度融合 K210 RISC-V 架构 AI 芯片与 ESP32 双核 Wi-Fi/BLE 通信模组，搭载 OV2640 200 万像素摄像头（支持 180° 旋转调节）及 ST7789V 1.54 英寸 IPS 触控屏（240×240）。内置 MAX98357A I2S 数字功放、MSM261S 麦克风阵列，采用 AXP202 智能电源管理，集成 MPU6050 六轴传感器、TF 卡和磁吸扩展接口，适用于工业视觉检测、智能安防、AIoT 终端及教育机器人等场景。
+T-Bao 是一款基于 ESP32-D0WDQ6-V3 和 K210 RISC-V AI 芯片的开源 AIoT 终端，深度融合 K210 RISC-V 架构 AI 芯片与 ESP32 双核 Wi-Fi/BLE 通信模组，搭载 OV2640 200 万像素摄像头（支持 180° 旋转调节）及 ST7789V 1.54 英寸 IPS 触控屏（240×240）。该屏幕由 K210 侧驱动，ESP32 侧通过 UART 与 K210 通信，不直接连接显示屏。内置 MAX98357A I2S 数字功放、MSM261S 麦克风阵列，采用 AXP202 智能电源管理，集成 MPU6050 六轴传感器、TF 卡和磁吸扩展接口，适用于工业视觉检测、智能安防、AIoT 终端及教育机器人等场景。
 
 ## 快速开始
 
@@ -51,7 +51,7 @@ T-Bao 是一款基于 ESP32-D0WDQ6-V3 和 K210 RISC-V AI 芯片的开源 AIoT �
 
 - K210 RISC-V 双核 64bit AI 芯片，400MHz，8MB SRAM，内置 KPU 神经网络处理器
 - ESP32-D0WDQ6-V3：16MB Flash，8MB PSRAM，Wi-Fi + 蓝牙 4.2 + BLE
-- 1.54 英寸 ST7789V IPS 触控屏（240×240）
+- 1.54 英寸 ST7789V IPS 触控屏（240×240），由 K210 侧驱动
 - OV2640 200 万像素摄像头（支持 180° 旋转调节）
 - MAX98357A I2S 功放 + MSM261S 麦克风阵列
 - AXP202 PMU，MPU6050 六轴传感器，DRV8833 电机驱动
@@ -64,7 +64,7 @@ T-Bao 是一款基于 ESP32-D0WDQ6-V3 和 K210 RISC-V AI 芯片的开源 AIoT �
 | 主 MCU | ESP32-D0WDQ6-V3，Dual Core LX6，240MHz |
 | Flash | 16MB |
 | PSRAM | 8MB |
-| 屏幕 | 1.54 英寸 ST7789V IPS Touch (240×240) |
+| 屏幕 | 1.54 英寸 ST7789V IPS Touch (240×240)，K210 侧驱动 |
 | 摄像头 | OV2640（200 万像素，180° 旋转） |
 | 音频 | MAX98357A I2S 功放 + MSM261S 麦克风阵列 |
 | 传感器 | MPU6050 六轴传感器 |
@@ -107,7 +107,6 @@ T-Bao 是一款基于 ESP32-D0WDQ6-V3 和 K210 RISC-V AI 芯片的开源 AIoT �
 
 * [MaixPy](https://github.com/sipeed/MaixPy)（K210 开发框架）
 * [LVGL](https://lvgl.io/)（嵌入式图形库）
-* [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
 * [Adafruit_Sensor](https://github.com/adafruit/Adafruit_Sensor)
 
 ## 常见问题

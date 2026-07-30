@@ -5,7 +5,7 @@ show_source: false
 
 # T4-S3 快速上手
 
-本页涵盖 **T4-S3** 的 Arduino、PlatformIO、LVGL 及各外设使用方法。硬件规格与引脚定义请参考 [T4-S3 产品页](index.md)。
+本页涵盖 **T4-S3** Arduino、PlatformIO、LVGL 及各外设使用方法。硬件规格与引脚定义请参见 [T4-S3 产品页](index.md)。
 
 ---
 
@@ -14,7 +14,7 @@ show_source: false
 T4-S3 通过 `LilyGo_AMOLED` 库统一管理硬件访问，通常无需手动定义引脚。以下定义仅供参考：
 
 ```cpp
-// 显示屏（RM690B0 — QSPI）
+// 显示屏（RM690B0 QSPI）
 #define BOARD_DISP_DATA0    14
 #define BOARD_DISP_DATA1    10
 #define BOARD_DISP_DATA2    16
@@ -22,15 +22,15 @@ T4-S3 通过 `LilyGo_AMOLED` 库统一管理硬件访问，通常无需手动定
 #define BOARD_DISP_SCK      15
 #define BOARD_DISP_CS       11
 #define BOARD_DISP_RESET    13
-#define BOARD_DISP_TE       18   // 防撕裂信号 — 禁止用于其他用途
+#define BOARD_DISP_TE       18   // 防撕裂信号，禁止用于其他用途
 
-// 触摸（CS226SE — I2C）
+// 触摸（CS226SE I2C）
 #define BOARD_TOUCH_SDA      6
 #define BOARD_TOUCH_SCL      7
 #define BOARD_TOUCH_IRQ      8
 #define BOARD_TOUCH_RST     17
 
-// 电源管理（SY6970 — I2C，与触摸共用总线）
+// 电源管理（SY6970 I2C，与触摸共用总线
 #define BOARD_PMU_SDA        6
 #define BOARD_PMU_SCL        7
 #define BOARD_PMU_IRQ        5
@@ -54,34 +54,35 @@ T4-S3 通过 `LilyGo_AMOLED` 库统一管理硬件访问，通常无需手动定
 
 ### Arduino IDE
 
-#### 安装开发板支持包
+#### 安装开发板支持
 
-1. 打开 **Arduino IDE → 文件 → 首选项**
+1. 打开 **Arduino IDE -> 文件 -> 首选项**
 2. 在「附加开发板管理器网址」中添加：
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
-3. 打开 **工具 → 开发板 → 开发板管理器**，搜索 **esp32**，安装 **esp32 by Espressif Systems**
+3. 打开 **工具 -> 开发板 -> 开发板管理器**，搜索 **esp32**，安装 **esp32 by Espressif Systems**
 
-> **版本要求：** `LilyGo-AMOLED-Series` 库需要 **arduino-esp32 ≥ 2.0.5 且 < 3.0.0**，暂不支持 3.0.0 及以上版本。
+> **版本要求：** `LilyGo-AMOLED-Series` 库需要 **arduino-esp32 >= 2.0.5 且 < 3.0.0**，暂不支持3.0.0 及以上版本）
 
 #### 安装依赖库
 
-将项目 `libdeps/` 目录下的所有文件夹复制到 Arduino Sketchbook 的 `libraries/` 目录，或通过库管理器安装：
+将项目 `libdeps/` 目录下的所有文件夹复制到 Arduino Sketchbook `libraries/` 目录，或通过库管理器安装：
 
-| 库名称 | 版本 | 用途 |
+| 库名 | 版本 | 用途 |
 | :----: | :--: | :--- |
-| LilyGo-AMOLED-Series | latest | 板级 HAL、显示屏、触摸、电源管理 |
-| lvgl | 8.4.0 | GUI 框架（v8） |
-| XPowersLib | 0.2.7 | 电源管理（SY6970 / AXP2101） |
-| SensorLib | 0.2.4 | 触摸（CS226SE） |
-| TFT_eSPI | 2.5.31 | 底层 SPI 显示驱动 |
-| TinyGPSPlus | 1.0.3 | GNSS NMEA 解析（Qwiic 扩展） |
-| Adafruit NeoPixel | 1.11.0 | NeoPixel LED（仅 1.47 英寸版本） |
+| LovyanGFX | latest | 显示绘图底层|
+| LilyGo-display-library | latest | T4-S3 显示屏快速封|
+| LilyGo-AMOLED-Series | latest | 板级 HAL、显示屏、触摸、电源管理|
+| lvgl | 8.4.0 | GUI 框架（v8）|
+| XPowersLib | 0.2.7 | 电源管理（SY6970 / AXP2101|
+| SensorLib | 0.2.4 | 触摸（CS226SE|
+| TinyGPSPlus | 1.0.3 | GNSS NMEA 解析（Qwiic 扩展）|
+| Adafruit NeoPixel | 1.11.0 | NeoPixel LED（仅 1.47 英寸版本）|
 
 #### 开发板配置
 
-| Arduino IDE 设置 | 值 |
+| Arduino IDE 设置 | |
 | :--------------: | :-: |
 | Board | **ESP32S3 Dev Module** |
 | Upload Speed | 921600 |
@@ -95,9 +96,9 @@ T4-S3 通过 `LilyGo_AMOLED` 库统一管理硬件访问，通常无需手动定
 
 #### 烧录
 
-选择正确的 COM 端口，点击**上传**。
+选择正确认COM 端口，点击 **上传**
 
-若上传失败：按住 **BOOT**（GPIO0），短按 **RST** 后松开，再点击上传。
+若上传失败：按住 **BOOT**（GPIO0），短按 **RST** 后松开，再点击上传
 
 ---
 
@@ -129,10 +130,10 @@ build_flags =
     -DARDUINO_USB_CDC_ON_BOOT=1
     -DCORE_DEBUG_LEVEL=1
 lib_deps =
+    lovyan03/LovyanGFX
     lvgl/lvgl@8.4.0
     lewisxhe/XPowersLib@0.2.7
     lewisxhe/SensorLib@0.2.4
-    bodmer/TFT_eSPI@2.5.31
     mikalhart/TinyGPSPlus@1.0.3
     adafruit/Adafruit NeoPixel@1.11.0
 ```
@@ -140,25 +141,25 @@ lib_deps =
 #### 操作步骤
 
 1. 安装 [Visual Studio Code](https://code.visualstudio.com/) 和 [Python](https://www.python.org/)
-2. 在 VS Code 扩展市场安装 **PlatformIO IDE**
-3. 克隆 `LilyGo-AMOLED-Series` 仓库并用 VS Code 打开项目文件夹
-4. PlatformIO 首次构建时自动下载依赖（耐心等待）
+2. VS Code 扩展市场安装 **PlatformIO IDE**
+3. 克隆 `LilyGo-AMOLED-Series` 仓库并用 VS Code 打开项目文件夹。
+4. PlatformIO 首次构建时自动下载依赖（耐心等待）。
 5. 在 `platformio.ini` 中取消注释目标示例的 `src_dir` 行
-6. 点击 **✓** 编译，点击 **→** 烧录
+6. 点击 **Build** 编译，点击 **Upload** 烧录
 
 ---
 
 ### LVGL
 
-T4-S3 使用 **LVGL v8.4.0**，通过 `LilyGo_AMOLED` 库驱动。调用 `beginLvglHelper()` 可一键完成显示驱动、触摸输入和刷新回调的配置，无需手动编写。
+T4-S3 使用 **LVGL v8.4.0**，通过 `LilyGo_AMOLED` 库驱动。调用 `beginLvglHelper()` 可一键完成显示驱动、触摸输入和刷新回调的配置，无需手动编写
 
 #### lv_conf.h
 
-将 `lv_conf.h` 放在 Arduino libraries 目录下（与 `lvgl/` 同级）。T4-S3 关键配置：
+将 `lv_conf.h` 放在 Arduino libraries 目录下（`lvgl/` 同级）。T4-S3 关键配置。
 
 ```c
 #define LV_COLOR_DEPTH       16
-#define LV_COLOR_16_SWAP      1    // QSPI AMOLED 必须开启
+#define LV_COLOR_16_SWAP      1    // QSPI AMOLED 必须开
 #define LV_MEM_CUSTOM         1
 #define LV_MEM_CUSTOM_INCLUDE <esp32-hal-psram.h>
 #define LV_MEM_CUSTOM_ALLOC   ps_malloc
@@ -169,7 +170,7 @@ T4-S3 使用 **LVGL v8.4.0**，通过 `LilyGo_AMOLED` 库驱动。调用 `beginL
 #define LV_TICK_CUSTOM_SYS_TIME_EXPR  (millis())
 ```
 
-#### Hello World（LVGL v8）
+#### Hello World（LVGL v8
 
 ```cpp
 #include <LilyGo_AMOLED.h>
@@ -181,18 +182,18 @@ void setup()
 {
     Serial.begin(115200);
 
-    // beginAMOLED_241() 初始化 T4-S3 上的 2.41 英寸 AMOLED（RM690B0）
+    // beginAMOLED_241() 初始T4-S3 上的 2.41 英寸 AMOLED（RM690B0
     if (!amoled.beginAMOLED_241()) {
         Serial.println("显示屏初始化失败");
         while (true) delay(1000);
     }
 
-    // 一键初始化 LVGL（含显示 + 触摸）
+    // 一键初始化 LVGL（含显示 + 触摸
     beginLvglHelper(amoled);
 
     // 创建标签
     lv_obj_t *label = lv_label_create(lv_scr_act());
-    lv_label_set_text(label, "你好，T4-S3！");
+    lv_label_set_text(label, "你好，T4-S3!);
     lv_obj_set_style_text_font(label, &lv_font_montserrat_24, 0);
     lv_obj_align(label, LV_ALIGN_CENTER, 0, 0);
 }
@@ -212,38 +213,38 @@ void loop()
 
 | 示例 | 描述 |
 | :--: | :--- |
-| [display_touch](examples/display_touch/display_touch.ino) | LVGL 界面，实时显示触摸坐标、最近 5 次触摸日志，以及跟随手指的可视化圆点 |
+| `LilyGo_LovyanGFX_Board_Test` | LilyGo_LovyanGFX 统一板级显示测试 |
+| [display_touch](examples/display_touch/display_touch.ino) | LVGL 界面，实时显示触摸坐标、最新5 次触摸日志，以及跟随手指的可视化圆点 |
 
-#### 显示屏（RM690B0 — QSPI AMOLED）
+#### 显示屏（RM690B0 via QSPI AMOLED
 
-2.41 英寸 600 × 450 AMOLED，通过 QSPI 驱动。可使用 LVGL / TFT_eSPI 封装，也可直接调用 `pushColors()` 推送像素数据。
+2.41 英寸 AMOLED 使用 RM690B0，通过 QSPI 驱动。若只做图形绘制或给 AI 生成示例代码，推荐使用 `LilyGo_LovyanGFX` 中的 `LilyGo_T4_S3`
 
 ```cpp
-#include <LilyGo_AMOLED.h>
+#define LILYGO_LGFX_USE_T4_S3
+#include <LilyGo_LovyanGFX.h>
 
-LilyGo_AMOLED amoled;
+LilyGo_T4_S3 display;
 
 void setup()
 {
-    amoled.beginAMOLED_241();
-    amoled.setBrightness(200);    // 0–255
-
-    uint16_t w = amoled.width();
-    uint16_t h = amoled.height();
-    uint16_t *buf = (uint16_t *)ps_malloc(w * h * 2);
-    if (buf) {
-        for (int i = 0; i < w * h; i++) buf[i] = 0xF800; // 红色 RGB565
-        amoled.pushColors(0, 0, w, h, buf);
-        free(buf);
-    }
+    display.begin(0, 200);
+    display.enableFrameBuffer(true);
+    display.fillScreen(TFT_BLACK);
+    display.drawRect(0, 0, display.width(), display.height(), TFT_CYAN);
+    display.setTextDatum(textdatum_t::middle_center);
+    display.setTextColor(TFT_WHITE, TFT_BLACK);
+    display.drawString("T4-S3", display.width() / 2, display.height() / 2 - 24, &fonts::Font4);
+    display.setTextColor(TFT_GREEN, TFT_BLACK);
+    display.drawString("LovyanGFX", display.width() / 2, display.height() / 2 + 24, &fonts::Font2);
 }
 
 void loop() {}
 ```
 
-#### 触摸（CS226SE）
+#### 触摸（CS226SE
 
-触摸由 `beginAMOLED_241()` 自动初始化，使用 `getPoint()` 轮询坐标。
+触摸`beginAMOLED_241()` 自动初始化，使用 `getPoint()` 轮询坐标）
 
 ```cpp
 #include <LilyGo_AMOLED.h>
@@ -268,7 +269,7 @@ void loop()
 
 #### SD 卡（SPI）
 
-板载 MicroSD 卡槽，调用 `amoled.installSD()` 以默认引脚（MISO=4, MOSI=2, SCK=3, CS=1）挂载。
+板载 MicroSD 卡槽，调用 `amoled.installSD()` 以默认引脚（MISO=4, MOSI=2, SCK=3, CS=1）挂载
 
 ```cpp
 #include <LilyGo_AMOLED.h>
@@ -282,7 +283,7 @@ void setup()
     amoled.beginAMOLED_241();
 
     if (!amoled.installSD()) {
-        Serial.println("SD 卡挂载失败");
+        Serial.println("SD 卡挂载失败);
         return;
     }
     Serial.printf("SD 卡容量：%llu MB\n", SD.cardSize() / (1024 * 1024));
@@ -314,8 +315,8 @@ void setup()
 
     Serial.printf("电池电压：%u mV\n", amoled.getBattVoltage());
     Serial.printf("VBUS 电压：%u mV\n", amoled.getVbusVoltage());
-    Serial.printf("充电中：%s\n",       amoled.isCharging() ? "是" : "否");
-    Serial.printf("电池已接入：%s\n",   amoled.isBatteryConnect() ? "是" : "否");
+    Serial.printf("充电中：%s\n",       amoled.isCharging() ? "是" : "否);
+    Serial.printf("电池已接入：%s\n",   amoled.isBatteryConnect() ? "是" : "否);
 }
 
 void loop() {}
@@ -324,17 +325,17 @@ void loop() {}
 #### 亮度控制
 
 ```cpp
-amoled.setBrightness(128);   // 0（关闭）～ 255（最亮）
+amoled.setBrightness(128);   // 0（关闭）255（最亮）
 uint8_t level = amoled.getBrightness();
 ```
 
 #### 休眠 / 唤醒
 
 ```cpp
-// 显示屏休眠（MCU 继续运行）
+// 显示屏休眠（MCU 继续运行
 amoled.disp_sleep();
 
-// 唤醒显示屏
+// 唤醒显示例
 amoled.disp_wakeup();
 
 // 深度休眠（传入 true 可启用触摸唤醒）
@@ -343,7 +344,7 @@ amoled.sleep(true);
 
 #### Qwiic / I2C 扩展
 
-两个 Qwiic（JST-SH 1.0 mm）接口复用 I2C 总线（SDA=6, SCL=7），可直接使用标准 `Wire` API：
+两个 Qwiic（JST-SH 1.0 mm）接口复用 I2C 总线（SDA=6, SCL=7），可直接使用标`Wire` API
 
 ```cpp
 #include <Wire.h>
@@ -370,22 +371,22 @@ T4-S3 暂无官方 ESP-IDF 工程模板。如需 IDF 开发：
 
 1. 创建新工程：`idf.py create-project t4-s3`
 2. 设置目标芯片：`idf.py set-target esp32s3`
-3. 在 `menuconfig` 中启用 PSRAM：**Component config → ESP PSRAM → Enable**，类型选 **Octal PSRAM**
-4. 设置 Flash 大小为 16 MB：**Serial flasher config → Flash size → 16 MB**
-5. 参考 [ESP-IDF 编程指南](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/)
+3. `menuconfig` 中启用PSRAM*Component config -> ESP PSRAM -> Enable**，类型**Octal PSRAM**
+4. 设置 Flash 大小：16 MB*Serial flasher config -> Flash size -> 16 MB**
+5. 参见 [ESP-IDF 编程指南](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/)
 
 ---
 
 ## 常见问题
 
-* **Q. 上传后屏幕无显示。**
-  A. 请确认 Arduino IDE 中 PSRAM 设置为 **OPI PSRAM**。库在编译时会检查 `BOARD_HAS_PSRAM`，未启用 PSRAM 将无法初始化。
+* **Q. 上传后屏幕无显示例*
+  A. 请确认Arduino IDE PSRAM 设置**OPI PSRAM**。库在编译时会检查`BOARD_HAS_PSRAM`，未启用 PSRAM 将无法初始化
 
-* **Q. 上传失败。**
-  A. 按住 **BOOT**（GPIO0），短按 **RST** 后松开，再点击上传。上传开始后可松开 BOOT。
+* **Q. 上传失败？**
+  A. 按住 **BOOT**（GPIO0），短按 **RST** 后松开，再点击上传。上传开始后可松开 BOOT
 
-* **Q. `beginAMOLED_241()` 返回 false。**
-  A. 请确认 arduino-esp32 核心版本 ≥ 2.0.5 且 < 3.0.0，当前暂不支持 3.x 版本。
+* **Q. `beginAMOLED_241()` 返回 false？**
+  A. 请确认arduino-esp32 核心版本 >= 2.0.5 且 < 3.0.0，当前暂不支持3.x 版本）
 
 * **Q. 应该调用哪个 `begin()` 函数？**
-  A. T4-S3（2.41 英寸）请使用 `amoled.beginAMOLED_241()`。也可使用 `amoled.begin()` 自动识别，但 `beginAMOLED_241()` 更可靠。
+  A. T4-S3（2.41 英寸）请使用 `amoled.beginAMOLED_241()`。也可使`amoled.begin()` 自动识别，但 `beginAMOLED_241()` 更可靠

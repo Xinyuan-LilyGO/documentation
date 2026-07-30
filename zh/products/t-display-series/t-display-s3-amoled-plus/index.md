@@ -113,7 +113,6 @@ T-Display S3 AMOLED Plus 是一款基于 ESP32-S3 微控制器的高集成度开
 
 * [lvgl 8.3.9](https://github.com/lvgl/lvgl)
 * [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 * [XPowersLib](https://github.com/lewisxhe/XPowersLib)
 * [SensorLib](https://github.com/lewisxhe/SensorsLib)
 * [AceButton](https://github.com/bxparks/AceButton)

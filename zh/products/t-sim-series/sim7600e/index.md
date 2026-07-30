@@ -25,7 +25,6 @@ T-PCIE SIM7600E 是一款基于 **SIM7600E** 芯片的 **mini PCIe 规格 LTE �
 | :--: | :----------------: | :-----: | :--: |
 | [LilyGo-Modem-Series](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series) | ✓ | | AT 指令、MQTT、HTTP 示例 |
 
-PlatformIO 和 Arduino 的环境配置请参考 [T-PCIE 主板快速开始](../index.md#快速开始)。在 `utilities.h` 中取消注释 `#define LILYGO_T_SIM7600X`。
 
 ### 开发平台
 

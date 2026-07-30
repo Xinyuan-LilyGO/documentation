@@ -109,7 +109,6 @@ LILYGO T-Dongle-C5 is a compact ESP32-C5-based USB dongle development board in a
 
 ### Dependent Libraries
 
-- [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 
 ## FAQ
 

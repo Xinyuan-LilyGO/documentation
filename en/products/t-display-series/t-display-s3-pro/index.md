@@ -1,7 +1,7 @@
 ---
 title: T-Display S3 Pro
 show_source: false
-tags: ESP32-S3, IPS, TFT_eSPI, USB OTG, Camera, Capacitive Touch
+tags: ESP32-S3, IPS, USB OTG, Camera, Capacitive Touch
 ---
 
 # {{ $frontmatter.title }} <ShopLink href="https://www.lilygo.cc/products/t-display-s3-pro" />
@@ -21,7 +21,7 @@ T-Display S3 Pro is a high-performance development board based on **ESP32-S3R8**
 
 | Example | PlatformIO/Arduino | ESP-IDF | Description |
 | :-----: | :----------------: | :-----: | :---------: |
-| [T-Display-S3-Pro](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro) | ✓ | | Factory, TFT, PMU, USB HID, camera examples |
+| [T-Display-S3-Pro](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro) | ✓ | | Factory, Arduino_GFX, PMU, USB HID, camera examples |
 
 ### PlatformIO
 
@@ -112,7 +112,6 @@ T-Display S3 Pro is a high-performance development board based on **ESP32-S3R8**
 
 ### Dependent Libraries
 
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 * [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
 * [XPowersLib](https://github.com/lewisxhe/XPowersLib)
 * [SensorLib](https://github.com/lewisxhe/SensorLib)

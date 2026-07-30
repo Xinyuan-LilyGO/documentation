@@ -143,7 +143,6 @@ LILYGO T-Dongle-S3 是一款功能丰富的 ESP32-S3 USB 无线开发板，采�
 
 ### 依赖库
 
-- [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 - [FastLED](https://github.com/FastLED/FastLED)
 
 ## 常见问题

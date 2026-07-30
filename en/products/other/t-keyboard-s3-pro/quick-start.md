@@ -10,6 +10,9 @@ show_source: false
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
 | T-Keyboard-S3-Pro-Library | Latest | [GitHub](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library) |
+| LovyanGFX | Latest | Installed automatically with T-Keyboard-S3-Pro-Library |
+
+> **Recommended:** Use [T-Keyboard-S3-Pro-Library](library) for display, keys, RGB LEDs, and encoder. The library exposes the four GC9107 panels as LovyanGFX devices (`display1`..`display4`), so sketches do not need a separate display driver or manual panel pin configuration.
 
 ---
 
@@ -47,7 +50,7 @@ show_source: false
 
 1. Install [Arduino IDE](https://www.arduino.cc/en/software) and add ESP32 board support:
    `https://espressif.github.io/arduino-esp32/package_esp32_index.json`
-2. Clone both repos and open an example sketch
+2. Install **T-Keyboard-S3-Pro-Library** from Arduino Library Manager, or copy the library folder into your Arduino `libraries/` directory
 3. Select board settings above and click **Upload**
 
 ---
@@ -57,67 +60,64 @@ show_source: false
 #### Key Press Reading (T-Keyboard-S3-Pro-Library)
 
 ```cpp
-#include <T_Keyboard_S3_Pro.h>
-
-TKeyboardS3Pro keyboard;
+#include <TKeyboardS3Pro.h>
 
 void setup() {
   Serial.begin(115200);
-  keyboard.begin();
+  TKeyboardS3Pro.begin();
 }
 
 void loop() {
-  keyboard.update();
-  if (keyboard.isPressed()) {
-    uint8_t key = keyboard.getKey();
-    Serial.printf("Key pressed: %d\n", key);
+  TKeyboardS3Pro.update();
+
+  for (uint8_t i = 0; i < TKeyboardS3ProClass::KEY_COUNT; i++) {
+    if (TKeyboardS3Pro.key(i).wasPressed()) {
+      Serial.printf("KEY%u pressed\n", i + 1);
+    }
   }
-  delay(10);
 }
 ```
 
-#### TFT Display (GC9107 via TFT_eSPI)
+#### TFT Displays (GC9107 via LovyanGFX)
 
 ```cpp
-#include <TFT_eSPI.h>
-
-TFT_eSPI tft;
+#include <TKeyboardS3Pro.h>
 
 void setup() {
-  tft.begin();
-  tft.setRotation(0);
-  tft.fillScreen(TFT_BLACK);
-  tft.setTextColor(TFT_WHITE);
-  tft.setTextSize(1);
-  tft.drawString("T-Keyboard", 20, 55);
-}
+  TKeyboardS3Pro.begin();
+  TKeyboardS3Pro.setBrightness(200);
+  TKeyboardS3Pro.fillAllScreens(TFT_BLACK);
 
-void loop() {}
-```
-
-#### RGB LEDs (WS2812C via FastLED)
-
-```cpp
-#include <FastLED.h>
-
-// WS2812C pin — check T-Keyboard-S3-Pro schematic
-#define LED_PIN  38
-#define NUM_LEDS 4
-
-CRGB leds[NUM_LEDS];
-
-void setup() {
-  FastLED.addLeds<WS2812C, LED_PIN, GRB>(leds, NUM_LEDS);
-  FastLED.setBrightness(10); // Keep low for multi-unit setups
+  for (uint8_t i = 0; i < TKeyboardS3ProClass::HOST_SCREEN_COUNT; i++) {
+    Display& panel = TKeyboardS3Pro.displayAt(i);
+    panel.fillScreen(TFT_NAVY);
+    panel.setTextColor(TFT_WHITE);
+    panel.setTextDatum(middle_center);
+    panel.drawString(String("Panel ") + (i + 1), panel.width() / 2, panel.height() / 2);
+  }
 }
 
 void loop() {
-  for (int i = 0; i < NUM_LEDS; i++) leds[i] = CRGB::Cyan;
-  FastLED.show();
-  delay(500);
-  FastLED.clear();
-  FastLED.show();
-  delay(500);
+  TKeyboardS3Pro.update();
+}
+```
+
+#### RGB LEDs (T-Keyboard-S3-Pro-Library)
+
+```cpp
+#include <TKeyboardS3Pro.h>
+
+void setup() {
+  TKeyboardS3Pro.begin();
+}
+
+void loop() {
+  TKeyboardS3Pro.update();
+
+  static uint16_t hue = 0;
+  TKeyboardS3Pro.setLeds(hue, 80, 10);
+  hue = (hue + 2) % 360;
+  delay(30);
 }
 ```
 
@@ -127,7 +127,7 @@ void loop() {
 
 - **Host + slaves:** Host unit connects to slave units via magnetic interfaces — up to 6 slaves in a 2×3 grid
 - **RGB LEDs:** WS2812C; reduce brightness to 10 or lower when running multiple units to avoid overloading power supply
-- **4× TFT displays:** Each 0.85-inch GC9107, 128×128 px (SPI)
+- **4× TFT displays:** Each 0.85-inch GC9107, 128×128 px (SPI), exposed by the library as LovyanGFX devices
 - **STM32 co-processor:** Handles keyboard scanning; program via STM32CubeMX + ARM Keil μVision5 over SWD if customizing firmware
 - **PSRAM:** OPI 8 MB — select **OPI PSRAM** in Arduino IDE
 

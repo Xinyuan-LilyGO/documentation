@@ -121,7 +121,6 @@ LILYGO T4-S3 is a compact development board based on the **ESP32-S3R8** dual-cor
 
 ### Dependent Libraries
 
-* [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 * [LVGL](https://github.com/lvgl/lvgl)
 * [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
 

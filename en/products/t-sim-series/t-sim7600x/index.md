@@ -58,7 +58,6 @@ T-SIM7600X is a 4G LTE Cat-4 IoT development board based on **ESP32-WROVER-B** (
 | PSRAM | **Enabled** |
 | Core Debug Level | None |
 
-4. In `utilities.h`, uncomment `#define LILYGO_T_SIM7600X`
 5. Click **Upload**
 
 > **Note:** Do not update libraries when prompted in Arduino IDE — updated versions may break compatibility (e.g. TinyGSM).

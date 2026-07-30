@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32-S3R8, WIFI, BLE, LCD
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-s3?variant=42589373268149" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-display-s3" />
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-display-series/t-display-s3/index/image/t-display-s3-1.jpg', alt: 'T-Display-S3 front view' },
@@ -43,7 +43,7 @@ T-Display-S3 is a development board whose main control chip is ESP32-S3. It is e
 
 Install Arduino IDE
 
-1. In Arduino Preferences, on the Settings tab, enter the https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json URL in the Additional boards manager URLs input box. Please pay attention to the version. The test phase is using 2.0.14. It is not certain that versions above 2.0.14 can run. When the operation is abnormal, please downgrade to a version below 2.0.14. , As of 2024/08/02, TFT_eSPI does not work on versions higher than 2.0.14, see TFT_eSPI/issue3329
+1. In Arduino Preferences, on the Settings tab, enter the https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json URL in the Additional boards manager URLs input box. Please pay attention to the version. The test phase is using 2.0.14. It is not certain that versions above 2.0.14 can run. When the operation is abnormal, please downgrade to a version below 2.0.14. As of 2024/08/02, TFT_eSPI does not work on versions higher than 2.0.14, see TFT_eSPI/issue3329.
 2. Download T-Display-S3 , move to Arduino library folder (e.g. C:\Users\YourName\Documents\Arduino\libraries)
 3. Copy all folders in lib folder to Arduino library folder (e.g. C:\Users\YourName\Documents\Arduino\libraries)
 4. Enter the downloaded T-Display-S3/examples directory
@@ -167,7 +167,7 @@ Install Arduino IDE
 
 ## Software Development
 
-* [T-Display-S3 GitHub Repository](https://https://github.com/Xinyuan-LilyGO/T-Display-S3/tree/main)
+* [T-Display-S3 GitHub Repository](https://github.com/Xinyuan-LilyGO/T-Display-S3/tree/main)
 
 ### Dependent Libraries
 
@@ -193,12 +193,12 @@ Install Arduino IDE
    ```
 2.  **The program can be written normally, but there is still no display after writing**
    * If you are using **TFT_eSPI**, then you can try running `Arduino_GFXDemo` first. If nothing is displayed after writing, you can determine that there is a problem with the hardware.
-   * If `Arduino_GFXDemo` is written normally, but **TFT_eSPI** is not displayed, then it can be judged that `User_Setup_Select` has been overwritten, then please read the third article of **FAQ** to reconfigure **TFT_eSPI**
+   * If `Arduino_GFXDemo` is written normally, but **TFT_eSPI** is not displayed, then it can be judged that `User_Setup_Select` has been overwritten, then please read the third article of **FAQ** to reconfigure **TFT_eSPI**.
 3. **How to update **TFT_eSPI**, or confirm whether the **TFT_eSPI** pin configuration is correct?**
    * Search for **TFT_eSPI** in the ArduinoIDE library manager and click Update.
-   * Enter the default library manager installation location and open the **TFT_eSPI** folder. The default installation location is:(e.g. C:\Users\YourName\Documents\Arduino\libraries)
-   * Open User_Setup_Select.h, comment out #include <User_Setup.h> which is enabled by default, or delete it
-   * Search **Setup206_LilyGo_T_Display_S3**, find it, cancel the previous comment, then save it, and finally close it, so that TFT_eSPI uses the pin definition of T-Display-S3 by default
+   * Enter the default library manager installation location and open the **TFT_eSPI** folder. The default installation location is: (e.g. C:\Users\YourName\Documents\Arduino\libraries)
+   * Open User_Setup_Select.h, comment out #include <User_Setup.h> which is enabled by default, or delete it.
+   * Search **Setup206_LilyGo_T_Display_S3**, find it, cancel the previous comment, then save it, and finally close it, so that TFT_eSPI uses the pin definition of T-Display-S3 by default.
    ```c++
    #include <User_Setups/Setup206_LilyGo_T_Display_S3.h>     // For the LilyGo T-Display S3 based ESP32S3 with ST7789 170 x 320 TFT
    ```

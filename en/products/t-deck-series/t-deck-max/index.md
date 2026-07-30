@@ -36,7 +36,6 @@ Download [LILYGO Spark](https://lilygo.cc/en-us/pages/lilygo-spark), search for 
 | Firmware | Description | Source |
 | :------- | :---------- | :----- |
 | [T-Deck-MAX_xxxxx](https://github.com/Xinyuan-LilyGO/T-Deck-MAX/tree/master/firmware) | Factory program | — |
-| [crosspoint_lilygo_t_deck_max_xxxx](https://github.com/ShallowGreen123/TDeckMax-Reader) | Reader program | [TDeckMax-Reader](https://github.com/ShallowGreen123/TDeckMax-Reader) |
 
 #### Verify Hardware with WireScan
 

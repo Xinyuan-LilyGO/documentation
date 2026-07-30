@@ -1,22 +1,22 @@
 ---
-title: LILYGO Sim Shield 扩展板使用指南
+title: LILYGO T-Sim Shield 扩展板使用指南
 show_source: false
 tags: Sim系列, 扩展板, LoRa, 电流检测, RS485, INA3221
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/sim-shield" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-sim-shield" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-sim-series/t-sim-shield/index/image/t-sim-shield-1.jpg', alt: 'Sim Shield 正面图' },
-  { src: '/products/t-sim-series/t-sim-shield/index/image/intervface.png', alt: 'Sim Shield 接口图' },
-  { src: '/products/t-sim-series/t-sim-shield/index/image/battery_current_detection_mode.png', alt: 'Sim Shield 电流检测' }
+  { src: '/products/t-sim-series/t-sim-shield/index/image/t-sim-shield-1.jpg', alt: 'T-Sim Shield 正面图' },
+  { src: '/products/t-sim-series/t-sim-shield/index/image/intervface.png', alt: 'T-Sim Shield 接口图' },
+  { src: '/products/t-sim-series/t-sim-shield/index/image/battery_current_detection_mode.png', alt: 'T-Sim Shield 电流检测' }
 ]" />
 
 > **⚠️ 重要警告：** 通电前必须检查跳线帽和 DIP 开关设置，错误配置可能导致硬件损坏。
 
 ## 概述
 
-Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集成了以下功能：
+T-Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集成了以下功能：
 
 1. **三路电流检测**：基于 INA3221 芯片，支持独立电流监测
 2. **LoRa 无线通信**：集成 SX1262 模块，支持远距离传输
@@ -68,7 +68,7 @@ Sim Shield 是专为 **LilyGo T-Sim 系列** 开发的多功能扩展板，集�
 
 ## 引脚图
 
-Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配置。
+T-Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配置。
 
 ### SIM7000G / A7670X / A7608X（ESP32 版）
 
@@ -83,7 +83,7 @@ Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配
 
 适用型号：[SIM7000G-ESP32](https://lilygo.cc/products/t-sim7000g) / [A7608X-ESP32](https://lilygo.cc/products/t-a7608e-h) / [A7670X-ESP32](https://lilygo.cc/products/t-sim-a7670e)
 
-> **注意：** A7670X/A7608X 需移除电阻才能使用 Sim Shield，详情见[此链接](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/issues/160#issuecomment-2409860411)。
+> **注意：** A7670X/A7608X 需移除电阻才能使用 T-Sim Shield，详情见[此链接](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/issues/160#issuecomment-2409860411)。
 
 | 信号 | GPIO |
 | :--- | :---: |
@@ -113,7 +113,7 @@ Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配
 
 适用型号：[SIM7600X-ESP32](https://lilygo.cc/products/t-sim7600)
 
-> **注意：** GPIO32（SD CS）、GPIO34（RADIO IRQ）、GPIO12（RS RX）已被 Sim Shield 占用，分别复用为 SIM7600 DTR / STATUS / LED 引脚，请勿用于其他用途。
+> **注意：** GPIO32（SD CS）、GPIO34（RADIO IRQ）、GPIO12（RS RX）已被 T-Sim Shield 占用，分别复用为 SIM7600 DTR / STATUS / LED 引脚，请勿用于其他用途。
 
 ### SIM7670G（ESP32-S3 版）
 
@@ -283,7 +283,7 @@ Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配
   A. 通电前务必检查跳线帽和 DIP 开关设置，不同主板型号对应不同的配置，错误配置可能导致硬件损坏。
 
 * **Q. SD 卡应该插在哪里？**  
-  A. 使用 Sim Shield 后，SD 卡必须插入扩展板，而非主板。Sim Shield 重新映射了 SPI 接口。
+  A. 使用 T-Sim Shield 后，SD 卡必须插入扩展板，而非主板。T-Sim Shield 重新映射了 SPI 接口。
 
 * **Q. 如何选择正确的主板配置？**  
   A. 根据主板型号参考对应的跳线/开关配置表，确保只开启与所用主板对应的 SW 开关，其余保持 OFF。
@@ -292,7 +292,7 @@ Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格配
   A. 建议通信波特率 ≤115200，硬件已自动处理收发控制，无需软件干预。
 
 * **Q. A7670X / A7608X 使用时有特殊要求吗？**  
-  A. 需移除主板上的相关电阻才能使用 Sim Shield，详情见[此 GitHub Issue](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/issues/160#issuecomment-2409860411)。
+  A. 需移除主板上的相关电阻才能使用 T-Sim Shield，详情见[此 GitHub Issue](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/issues/160#issuecomment-2409860411)。
 
 ## 版本历史
 

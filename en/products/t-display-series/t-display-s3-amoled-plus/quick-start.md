@@ -12,7 +12,7 @@ Install the following libraries via the Arduino IDE Library Manager, or place th
 | Library | Version | Source |
 | :-----: | :-----: | :----: |
 | LVGL | 8.3.9 | [GitHub](https://github.com/lvgl/lvgl/tree/release/v8.4) |
-| TFT_eSPI | Latest | [GitHub](https://github.com/Bodmer/TFT_eSPI) |
+| LovyanGFX | Latest | [GitHub](https://github.com/lovyan03/LovyanGFX) |
 | Arduino_GFX | Latest | [GitHub](https://github.com/moononournation/Arduino_GFX) |
 | XPowersLib | Latest | [GitHub](https://github.com/lewisxhe/XPowersLib) |
 | SensorLib | 0.2.x | [GitHub](https://github.com/lewisxhe/SensorsLib) |
@@ -96,7 +96,7 @@ Open `platformio.ini` and uncomment the `src_dir` line for your example. Only on
 | Example | Description |
 | :-----: | :---------- |
 | `Factory` | Factory test |
-| `TFT_eSPI` | TFT_eSPI library demo |
+| `LovyanGFX` / `Arduino_GFX` | AMOLED graphics library demo |
 | `Arduino_GFX` | Arduino_GFX library demo |
 | `LVGL` | LVGL GUI demo |
 | `LoRa` | LoRa communication example |
