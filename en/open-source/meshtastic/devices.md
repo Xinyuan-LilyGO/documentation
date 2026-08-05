@@ -60,6 +60,9 @@ Standalone device with screen and keyboard.
 |-----------------|-------------|---------------|--------------|-----|------|
 | T-Deck          | ESP32-S3FN8 | SX1262        | YES          | 5.0 | NO   |
 | T-Deck Plus     | ESP32-S3FN8 | SX1262        | YES          | 5.0 | YES  |
+| T-Deck Pro      | ESP32-S3    | SX1262        | YES          | 5.0 | YES  |
+
+> **T-Deck Pro note:** Current T-Deck Pro hardware uses the new touch version. Older Meshtastic firmware may cause touch or device functions to fail. Use the latest firmware release. After flashing the firmware, wait for device initialization to finish before operating it; this usually takes about 2 minutes.
 
 ## T-Watch S3
 

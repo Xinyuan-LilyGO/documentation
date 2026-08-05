@@ -57,6 +57,9 @@ show_source: false
 |-----------------|-------------|---------------|--------------|-----|------|
 | T-Deck          | ESP32-S3FN8 | SX1262        | YES          | 5.0 | NO   |
 | T-Deck Plus     | ESP32-S3FN8 | SX1262        | YES          | 5.0 | YES  |
+| T-Deck Pro      | ESP32-S3    | SX1262        | YES          | 5.0 | YES  |
+
+> **T-Deck Pro 注意事项：** 目前 T-Deck Pro 使用新的触摸版本，旧版本 Meshtastic 固件可能会导致触摸或设备功能无法正常使用。建议下载并刷写最新版本固件。固件下载完成后，请等待设备初始化结束再进行操作，通常约 2 分钟。
 
 ## T-Watch S3
 

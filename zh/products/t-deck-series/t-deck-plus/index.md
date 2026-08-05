@@ -222,6 +222,7 @@ void setup() {
 ### LoRa（SX1262 — RadioLib）
 
 ```cpp
+#include <SPI.h>
 #include <RadioLib.h>
 
 SX1262 radio = new Module(
@@ -232,10 +233,14 @@ SX1262 radio = new Module(
 );
 
 void setup() {
+    pinMode(BOARD_POWERON, OUTPUT); digitalWrite(BOARD_POWERON, HIGH);
+    delay(200);
+
     pinMode(BOARD_SDCARD_CS, OUTPUT); digitalWrite(BOARD_SDCARD_CS, HIGH);
     pinMode(BOARD_TFT_CS,    OUTPUT); digitalWrite(BOARD_TFT_CS,    HIGH);
+    pinMode(RADIO_CS_PIN,    OUTPUT); digitalWrite(RADIO_CS_PIN,    HIGH);
 
-    SPI.begin(BOARD_SPI_SCK, BOARD_SPI_MISO, BOARD_SPI_MOSI);
+    SPI.begin(BOARD_SPI_SCK, BOARD_SPI_MISO, BOARD_SPI_MOSI, RADIO_CS_PIN);
 
     // frequency (MHz), bandwidth (kHz), spreading factor, coding rate, sync word, output power (dBm)
     int state = radio.begin(915.0, 125.0, 7, 5, RADIOLIB_SX126X_SYNC_WORD_PRIVATE, 22);
@@ -386,6 +391,12 @@ void setup() {
 
 * **Q. 为什么板子一直烧录失败？**  
   A. 按住轨迹球中间按键（BOOT），然后插入 USB，此时芯片进入下载模式，再点击上传。上传完成后按 RST 键退出下载模式。
+
+* **Q. LoRa 初始化出现 `Radio init failed: -2` 怎么办？**  
+  A. 该错误通常表示程序没有检测到 SX1262。请确认初始化 LoRa 前已将 GPIO10 设为 HIGH，并将其他 SPI 设备的 CS 脚拉高，例如 TFT_CS=12、SD_CS=39。还需要确认代码使用 T-Deck Plus 的 LoRa 引脚：CS=9、DIO1=45、RST=17、BUSY=13。
+
+* **Q. 如何判断 T-Deck Plus 是否正在充电或已经充满？**  
+  A. 连接 USB 后，可以从设备底部观察蓝色充电指示灯。蓝灯亮起表示正在充电；蓝灯熄灭表示电池已充满。通过这种方式可以确认设备是否能够正常充满。
 
 * **Q. 为什么 Arduino IDE 提示升级库文件？**  
   A. 建议不升级，不同版本的库文件可能不兼容。

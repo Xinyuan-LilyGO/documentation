@@ -85,19 +85,38 @@ void loop() {}
 
 #### LoRa（SX1262）
 ```cpp
+#include <SPI.h>
 #include <RadioLib.h>
 
-// T-Deck SX1262: CS=9, DIO1=45, RST=17, BUSY=13
-SX1262 radio = new Module(9, 45, 17, 13);
+#define BOARD_POWERON      10
+#define RADIO_CS_PIN        9
+#define RADIO_DIO1_PIN     45
+#define RADIO_RST_PIN      17
+#define RADIO_BUSY_PIN     13
+#define BOARD_SPI_MOSI     41
+#define BOARD_SPI_MISO     38
+#define BOARD_SPI_SCK      40
+#define BOARD_TFT_CS       12
+#define BOARD_SDCARD_CS    39
+
+SX1262 radio = new Module(RADIO_CS_PIN, RADIO_DIO1_PIN, RADIO_RST_PIN, RADIO_BUSY_PIN);
 
 void setup() {
   Serial.begin(115200);
-  // 使能 LoRa 模块
-  pinMode(10, OUTPUT);
-  digitalWrite(10, HIGH);
-  delay(100);
 
-  int state = radio.begin(915.0);
+  // 使能外设电源，T-Deck Plus 上 LoRa 模块需要该电源域
+  pinMode(BOARD_POWERON, OUTPUT);
+  digitalWrite(BOARD_POWERON, HIGH);
+  delay(200);
+
+  // LoRa、TFT、SD 卡共用 SPI，总线初始化前先释放其他设备
+  pinMode(BOARD_TFT_CS, OUTPUT);    digitalWrite(BOARD_TFT_CS, HIGH);
+  pinMode(BOARD_SDCARD_CS, OUTPUT); digitalWrite(BOARD_SDCARD_CS, HIGH);
+  pinMode(RADIO_CS_PIN, OUTPUT);    digitalWrite(RADIO_CS_PIN, HIGH);
+
+  SPI.begin(BOARD_SPI_SCK, BOARD_SPI_MISO, BOARD_SPI_MOSI, RADIO_CS_PIN);
+
+  int state = radio.begin(915.0, 125.0, 7, 5, RADIOLIB_SX126X_SYNC_WORD_PRIVATE, 22);
   if (state != RADIOLIB_ERR_NONE) {
     Serial.print("LoRa 初始化失败 "); Serial.println(state);
     while (true);
@@ -107,12 +126,12 @@ void setup() {
 
 void loop() {
   int state = radio.transmit("Hello T-Deck Plus");
-  if (state == RADIOLIB_ERR_NONE) Serial.println("发送成功);
+  if (state == RADIOLIB_ERR_NONE) Serial.println("发送成功");
   delay(2000);
 }
 ```
 
-#### GPS（MIA-M10Q
+#### GPS（MIA-M10Q）
 ```cpp
 #include <TinyGPSPlus.h>
 
@@ -138,14 +157,24 @@ void loop() {
 
 ## 注意事项
 
-- T-Deck Plus **Grove 接口**引脚已分配给 GPS 模块，不可用作通用接口- 电池供电时，**GPIO10 必须设为 HIGH**- LoRa SX1262 与其他外设共用 SPI 总线——通信前确保其SPI 设备 CS 脚为高电平
+- T-Deck Plus **Grove 接口**引脚已分配给 GPS 模块，不可用作通用接口。
+- 电池供电时，**GPIO10 必须设为 HIGH**。
+- LoRa SX1262 与其他外设共用 SPI 总线，通信前请确保其他 SPI 设备 CS 脚为高电平。
 ---
 
 ## 常见问题
 
 **Q：一直无法烧录？**  
-A：按住轨迹球中键（**BOOT**），插入 USB，再点击上传
+A：按住轨迹球中键（**BOOT**），插入 USB，再点击上传。
+
 **Q：T-Deck Plus 有触摸屏吗？**  
-A：没有，使用轨迹球模块进行导航输入
+A：没有，使用轨迹球模块进行导航输入。
+
 **Q：屏幕显示异常？**  
-A：T-Deck 2024-07-26 更新了 ST7789 初始化序列，请确认库版本与仓库当前版本一致
+A：T-Deck 2024-07-26 更新了 ST7789 初始化序列，请确认库版本与仓库当前版本一致。
+
+**Q：LoRa 初始化出现 `Radio init failed: -2` 怎么办？**  
+A：该错误通常表示程序没有检测到 SX1262。请确认初始化 LoRa 前已将 GPIO10 设为 HIGH，并将其他 SPI 设备的 CS 脚拉高，例如 TFT_CS=12、SD_CS=39。还需要确认代码使用 T-Deck Plus 的 LoRa 引脚：CS=9、DIO1=45、RST=17、BUSY=13。
+
+**Q：如何判断 T-Deck Plus 是否正在充电或已经充满？**  
+A：连接 USB 后，可以从设备底部观察蓝色充电指示灯。蓝灯亮起表示正在充电；蓝灯熄灭表示电池已充满。通过这种方式可以确认设备是否能够正常充满。

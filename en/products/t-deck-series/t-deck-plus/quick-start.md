@@ -133,19 +133,38 @@ void loop() {}
 #### LoRa (SX1262)
 
 ```cpp
+#include <SPI.h>
 #include <RadioLib.h>
 
-// T-Deck SX1262: CS=9, DIO1=45, RST=17, BUSY=13
-SX1262 radio = new Module(9, 45, 17, 13);
+#define BOARD_POWERON      10
+#define RADIO_CS_PIN        9
+#define RADIO_DIO1_PIN     45
+#define RADIO_RST_PIN      17
+#define RADIO_BUSY_PIN     13
+#define BOARD_SPI_MOSI     41
+#define BOARD_SPI_MISO     38
+#define BOARD_SPI_SCK      40
+#define BOARD_TFT_CS       12
+#define BOARD_SDCARD_CS    39
+
+SX1262 radio = new Module(RADIO_CS_PIN, RADIO_DIO1_PIN, RADIO_RST_PIN, RADIO_BUSY_PIN);
 
 void setup() {
   Serial.begin(115200);
-  // Power on LoRa module
-  pinMode(10, OUTPUT);
-  digitalWrite(10, HIGH);
-  delay(100);
 
-  int state = radio.begin(915.0);
+  // Enable the peripheral power rail used by the LoRa module.
+  pinMode(BOARD_POWERON, OUTPUT);
+  digitalWrite(BOARD_POWERON, HIGH);
+  delay(200);
+
+  // LoRa, TFT, and SD share SPI. Release the other devices before using LoRa.
+  pinMode(BOARD_TFT_CS, OUTPUT);    digitalWrite(BOARD_TFT_CS, HIGH);
+  pinMode(BOARD_SDCARD_CS, OUTPUT); digitalWrite(BOARD_SDCARD_CS, HIGH);
+  pinMode(RADIO_CS_PIN, OUTPUT);    digitalWrite(RADIO_CS_PIN, HIGH);
+
+  SPI.begin(BOARD_SPI_SCK, BOARD_SPI_MISO, BOARD_SPI_MOSI, RADIO_CS_PIN);
+
+  int state = radio.begin(915.0, 125.0, 7, 5, RADIOLIB_SX126X_SYNC_WORD_PRIVATE, 22);
   if (state != RADIOLIB_ERR_NONE) {
     Serial.print("Radio init failed: "); Serial.println(state);
     while (true);
@@ -203,3 +222,9 @@ A: No. It uses a trackball navigation module for input.
 
 **Q: Screen display looks wrong?**  
 A: T-Deck updated the ST7789 initialization sequence on 2024-07-26. Make sure your library matches the current repo version.
+
+**Q: What should I do if LoRa initialization shows `Radio init failed: -2`?**  
+A: This usually means the sketch cannot detect the SX1262. Before initializing LoRa, set GPIO10 HIGH and pull the other SPI device CS pins HIGH, such as TFT_CS=12 and SD_CS=39. Also confirm that the sketch uses the T-Deck Plus LoRa pins: CS=9, DIO1=45, RST=17, BUSY=13.
+
+**Q: How can I tell whether T-Deck Plus is charging or fully charged?**  
+A: Connect USB and check the blue charging indicator from the bottom side of the device. A lit blue LED means the battery is charging; when the blue LED turns off, the battery is fully charged. This is a quick way to confirm that the device can charge to full.

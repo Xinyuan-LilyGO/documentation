@@ -212,6 +212,7 @@ void setup() {
 ### LoRa (SX1262 — RadioLib)
 
 ```cpp
+#include <SPI.h>
 #include <RadioLib.h>
 
 SX1262 radio = new Module(
@@ -222,13 +223,19 @@ SX1262 radio = new Module(
 );
 
 void setup() {
+    pinMode(BOARD_POWERON, OUTPUT); digitalWrite(BOARD_POWERON, HIGH);
+    delay(200);
+
     pinMode(BOARD_SDCARD_CS, OUTPUT); digitalWrite(BOARD_SDCARD_CS, HIGH);
     pinMode(BOARD_TFT_CS,    OUTPUT); digitalWrite(BOARD_TFT_CS,    HIGH);
+    pinMode(RADIO_CS_PIN,    OUTPUT); digitalWrite(RADIO_CS_PIN,    HIGH);
 
-    SPI.begin(BOARD_SPI_SCK, BOARD_SPI_MISO, BOARD_SPI_MOSI);
+    SPI.begin(BOARD_SPI_SCK, BOARD_SPI_MISO, BOARD_SPI_MOSI, RADIO_CS_PIN);
 
     // frequency (MHz), bandwidth (kHz), spreading factor, coding rate, sync word, output power (dBm)
     int state = radio.begin(915.0, 125.0, 7, 5, RADIOLIB_SX126X_SYNC_WORD_PRIVATE, 22);
+    if (state != RADIOLIB_ERR_NONE) {
+        Serial.printf("LoRa init failed: %d\n", state);
     }
 }
 ```
@@ -374,6 +381,12 @@ void setup() {
 
 * **Q. Upload keeps failing?**
   A. Hold the trackball center button (BOOT), insert USB, then click Upload. Press RST to exit download mode.
+
+* **Q. What should I do if LoRa initialization shows `Radio init failed: -2`?**
+  A. This usually means the sketch cannot detect the SX1262. Before initializing LoRa, set GPIO10 HIGH and pull the other SPI device CS pins HIGH, such as TFT_CS=12 and SD_CS=39. Also confirm that the sketch uses the T-Deck Plus LoRa pins: CS=9, DIO1=45, RST=17, BUSY=13.
+
+* **Q. How can I tell whether T-Deck Plus is charging or fully charged?**
+  A. Connect USB and check the blue charging indicator from the bottom side of the device. A lit blue LED means the battery is charging; when the blue LED turns off, the battery is fully charged. This is a quick way to confirm that the device can charge to full.
 
 * **Q. Arduino IDE prompts to upgrade libraries — should I?**
   A. Do not upgrade. Stay with the library versions in the `lib` directory.

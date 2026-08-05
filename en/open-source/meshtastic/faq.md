@@ -5,7 +5,9 @@ show_source: false
 
 # {{ $frontmatter.title }}
 
-## Meshtastic Bluetooth
+## Meshtastic General
+
+### Bluetooth
 
 Meshtastic Bluetooth is disabled by default.
 If you need to enable it for device download, you can control the device to turn it on via the web version:
@@ -27,4 +29,14 @@ If you need to enable it for device download, you can control the device to turn
 5.Follow the steps to enable Bluetooth
 ![alt text](/open-source/meshtastic/faq/image/client_setting.png)
 >After making changes here, click the save button in the upper right corner and wait for the device to restart. Once the restart is complete, the Bluetooth function will be enabled....
+
+## T-Deck Pro
+
+### Touch or Device Functions Do Not Work
+
+Current T-Deck Pro hardware uses the new touch version. If you flash an older Meshtastic firmware build, touch input, device functions, or general operation may not work correctly.
+
+- Use the latest Meshtastic firmware release whenever possible.
+- After flashing, wait for device initialization to finish before operating the device. This usually takes about 2 minutes.
+- If the device still does not respond correctly after flashing, confirm that the firmware is the latest version and then run the full flashing process again.
 
