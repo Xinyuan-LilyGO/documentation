@@ -1,7 +1,7 @@
 ---
 title: LILYGO T-Deck Plus
 show_source: false
-tags: ESP32-S3, LoRa, GPS, Trackball, Keyboard
+tags: ESP32-S3, LoRa, GPS, Trackball, Keyboard, Touch
 ---
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-deck" />
@@ -14,10 +14,10 @@ tags: ESP32-S3, LoRa, GPS, Trackball, Keyboard
 
 ## 概述
 
-LILYGO T-Deck Plus 是 T-Deck 的升级版本，基于 ESP32-S3 主控，搭载 2.8 英寸 ST7789 LCD（320×240）、轨迹球导航模块、物理键盘（I²C）、SX1262 LoRa、MIA-M10Q GNSS、ES7210 麦克风阵列和 TF 卡，支持 2000mAh 锂电池供电。
+LILYGO T-Deck Plus 是 T-Deck 的升级版本，基于 ESP32-S3 主控，搭载 2.8 英寸 ST7789 LCD（320×240）、GT911 电容触摸、轨迹球导航模块、物理键盘（I²C）、SX1262 LoRa、MIA-M10Q GNSS、ES7210 麦克风阵列和 TF 卡，支持 2000mAh 锂电池供电。
 
 > **注意：**
-> 1. T-Deck-Plus 的 Grove 接口引脚已分配给 GPS 模块，Grove 接口不可使用。T-Deck 版本无触摸屏，使用轨迹球导航代替。
+> 1. T-Deck-Plus 的 Grove 接口引脚已分配给 GPS 模块，Grove 接口不可使用。T-Deck Plus 具备 GT911 电容触摸屏；标准 T-Deck 版本无触摸屏，使用轨迹球导航代替。
 > 2. LoRa 无线电模块与其他外设共享 SPI 总线。一次只能选择一个 SPI 设备，因此请确保在与 SX1262 通信之前，所有其他 SPI 设备的 CS 线都处于高电平（非活动状态）。
 > 3. 使用电池供电时，**GPIO10 必须设置为高电平**。如果电路板通过 USB 供电，则可以忽略此要求。
 
@@ -31,7 +31,7 @@ LILYGO T-Deck Plus 是 T-Deck 的升级版本，基于 ESP32-S3 主控，搭载 
 | [Keyboard_T_Deck_Master](https://github.com/Xinyuan-LilyGO/T-Deck/tree/master/examples/Keyboard_T_Deck_Master) | ✓ | 读取键盘输入 |
 | [Keyboard_ESP32C3](https://github.com/Xinyuan-LilyGO/T-Deck/tree/master/examples/Keyboard_ESP32C3) | ✓ | ESP32-C3 键盘 I2C 从机 |
 | [Microphone](https://github.com/Xinyuan-LilyGO/T-Deck/tree/master/examples/Microphone) | ✓ | 噪声检测示例 |
-| [Touchpad](https://github.com/Xinyuan-LilyGO/T-Deck/tree/master/examples/Touchpad) | ✓ | 读取轨迹球坐标 |
+| [Touchpad](https://github.com/Xinyuan-LilyGO/T-Deck/tree/master/examples/Touchpad) | ✓ | 读取触摸坐标 |
 | [GPSShield](https://github.com/Xinyuan-LilyGO/T-Deck/tree/master/examples/GPSShield) | ✓ | GPS 扩展板示例 |
 
 > 如果启用麦克风，板子中间的 BOOT 按键（GPIO0）将不可用。
@@ -80,7 +80,7 @@ LILYGO T-Deck Plus 是 T-Deck 的升级版本，基于 ESP32-S3 主控，搭载 
 ## 主要特点
 
 - ESP32-S3FN16R8：16MB Flash，8MB OPI PSRAM，Wi-Fi + 蓝牙 5.0
-- 2.8 英寸 ST7789 LCD（320×240），轨迹球导航
+- 2.8 英寸 ST7789 LCD（320×240），GT911 电容触摸，轨迹球导航
 - SX1262 LoRa（433MHz~915MHz 可选），MIA-M10Q GNSS
 - ES7210 音频编解码器 + MSM381A3729H9CP 麦克风阵列
 - 2000mAh 锂聚合物电池，物理键盘（I²C），TF 卡
@@ -97,7 +97,8 @@ LILYGO T-Deck Plus 是 T-Deck 的升级版本，基于 ESP32-S3 主控，搭载 
 | LoRa | SX1262（433MHz~915MHz 可选） |
 | GNSS | MIA-M10Q |
 | 屏幕 | 2.8 英寸 ST7789 LCD (320×240) |
-| 控制方式 | 轨迹球导航模块 |
+| 触摸 | GT911 电容触摸（I²C，INT=GPIO16） |
+| 控制方式 | 触摸屏 + 轨迹球导航模块 |
 | 输入 | 物理键盘（I²C） |
 | 音频 | ES7210 + MSM381A3729H9CP 麦克风阵列 |
 | 电池 | 2000mAh 锂聚合物电池 |
@@ -384,7 +385,7 @@ void setup() {
 ## 常见问题
 
 * **Q. T-Deck Plus 是否有触摸屏功能？**  
-  A. T-Deck Plus 没有触摸屏，使用轨迹球导航模块替代触摸操作。
+  A. 有。T-Deck Plus 配备 GT911 电容触摸屏，同时保留轨迹球导航模块。标准 T-Deck 版本没有触摸屏。
 
 * **Q. Grove 接口可以使用吗？**  
   A. T-Deck-Plus 的 Grove 接口引脚已分配给 GPS 模块，Grove 接口不可使用。

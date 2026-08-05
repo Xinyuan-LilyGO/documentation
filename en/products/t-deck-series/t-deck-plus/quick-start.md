@@ -76,7 +76,7 @@ If upload fails: hold the trackball center button (**BOOT**), insert USB, then c
 | :-----: | :---------- |
 | `Keyboard_T_Deck_Master` | Read keyboard input from T-Deck |
 | `Microphone` | ES7210 microphone noise detection |
-| `Touchpad` | Trackball position reading |
+| `Touchpad` | GT911 touchscreen coordinate reading |
 | `GPSShield` | GPS module (MIA-M10Q) example |
 | `UnitTest` | Full factory hardware test |
 
@@ -84,7 +84,7 @@ If upload fails: hold the trackball center button (**BOOT**), insert USB, then c
 
 ### LVGL
 
-T-Deck Plus uses an ST7789 TFT (320×240). LVGL 8.4.0 is included in the `T-Deck/lib/` folder.
+T-Deck Plus uses an ST7789 TFT (320×240) with a GT911 capacitive touchscreen. LVGL 8.4.0 is included in the `T-Deck/lib/` folder.
 
 ```cpp
 #include <LilyGo_TDeck.h>
@@ -218,7 +218,7 @@ void loop() {
 A: Hold the trackball center button (**BOOT**), insert USB, then click Upload.
 
 **Q: Does T-Deck Plus have a touchscreen?**  
-A: No. It uses a trackball navigation module for input.
+A: Yes. T-Deck Plus has a GT911 capacitive touchscreen and also supports trackball navigation. The standard T-Deck does not have a touchscreen.
 
 **Q: Screen display looks wrong?**  
 A: T-Deck updated the ST7789 initialization sequence on 2024-07-26. Make sure your library matches the current repo version.

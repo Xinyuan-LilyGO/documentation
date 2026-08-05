@@ -1,7 +1,7 @@
 ---
 title: T-Deck Plus
 show_source: false
-tags: ESP32-S3, LoRa, GPS, Trackball, Keyboard
+tags: ESP32-S3, LoRa, GPS, Trackball, Keyboard, Touch
 ---
 
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-deck" />
@@ -13,10 +13,10 @@ tags: ESP32-S3, LoRa, GPS, Trackball, Keyboard
 
 ## Overview
 
-LILYGO T-Deck Plus is a highly integrated multi-functional embedded development platform based on the **ESP32-S3** chip. It integrates a **2.8-inch ST7789 LCD** (320 × 240), **trackball navigation module**, **physical keyboard** (I²C), **TF card**, **LoRa SX1262** wireless module, and **ES7210 microphone array**. Compared to the standard T-Deck, T-Deck Plus adds a **GPS module** (MIA-M10Q) with the Grove interface pins repurposed for GPS — the Grove interface is not available as a general-purpose connector on T-Deck Plus.
+LILYGO T-Deck Plus is a highly integrated multi-functional embedded development platform based on the **ESP32-S3** chip. It integrates a **2.8-inch ST7789 LCD** (320 × 240) with **GT911 capacitive touch**, **trackball navigation module**, **physical keyboard** (I²C), **TF card**, **LoRa SX1262** wireless module, and **ES7210 microphone array**. Compared to the standard T-Deck, T-Deck Plus adds a **GPS module** (MIA-M10Q) with the Grove interface pins repurposed for GPS — the Grove interface is not available as a general-purpose connector on T-Deck Plus.
 
 > **Notes:**
-> 1. The **Grove** interface pins on T-Deck Plus are allocated to the GPS module and cannot be used as a general-purpose interface.
+> 1. The **Grove** interface pins on T-Deck Plus are allocated to the GPS module and cannot be used as a general-purpose interface. T-Deck Plus has a GT911 capacitive touchscreen; the standard T-Deck has no touchscreen and uses trackball navigation.
 > 2. T-Deck updated the [TFT_eSPI ST7789 initialization sequence](https://github.com/Xinyuan-LilyGO/T-Deck/commit/6adb8884c689f174c29a6d7172a0daa367a582eb) on 2024-07-26. If screen display is incorrect, check whether the initialization sequence in the repo matches.
 > 3. The LoRa radio module shares the SPI bus with other peripherals. Only one SPI device can be selected at a time — ensure all other SPI device CS lines are high (inactive) before communicating with the SX1262.
 > 4. When powered by battery, **GPIO10 must be set HIGH**. This requirement can be ignored when the board is powered via USB.
@@ -88,7 +88,7 @@ examples
 - ESP32-S3FN16R8 dual-core LX7 @ 240 MHz, Wi-Fi + Bluetooth 5.0 LE
 - SX1262 LoRa (433–915 MHz, optional)
 - MIA-M10Q GNSS module (GPS, added vs. standard T-Deck)
-- 2.8-inch ST7789 LCD (320 × 240), trackball navigation (no touch screen)
+- 2.8-inch ST7789 LCD (320 × 240), GT911 capacitive touch, trackball navigation
 - Physical keyboard (I²C)
 - ES7210 audio codec + MSM381A3729H9CP microphone array
 - 2000 mAh lithium polymer battery
@@ -106,7 +106,8 @@ examples
 | LoRa | SX1262, 433–915 MHz (optional) |
 | GPS | MIA-M10Q GNSS |
 | Display | 2.8-inch ST7789 LCD, 320 × 240 |
-| Input | Trackball + physical keyboard (I²C) |
+| Touch | GT911 capacitive touch, I²C, INT=GPIO16 |
+| Input | Touchscreen + trackball + physical keyboard (I²C) |
 | Audio | ES7210 codec + microphone array |
 | Battery | 2000 mAh lithium polymer |
 | Storage | TF card expansion |
@@ -377,7 +378,7 @@ void setup() {
   A. No. On T-Deck Plus, the Grove interface pins are allocated to the GPS module and cannot be used as a general-purpose interface.
 
 * **Q. Does T-Deck Plus have a touch screen?**
-  A. No. It uses a trackball navigation module instead.
+  A. Yes. T-Deck Plus has a GT911 capacitive touchscreen and also keeps the trackball navigation module. The standard T-Deck does not have a touchscreen.
 
 * **Q. Upload keeps failing?**
   A. Hold the trackball center button (BOOT), insert USB, then click Upload. Press RST to exit download mode.
