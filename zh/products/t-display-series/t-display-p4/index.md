@@ -172,6 +172,11 @@ T-Display-P4 有 AMOLED、TFT 两个版本：
 * **Q. OLED 屏幕出现波浪纹？**  
   A. 若低电量时波纹更明显，基本与电池相关；若电量充足仍出现，需检查屏幕供电回路。
 
+* **Q. 屏幕上出现很多 `init fail` 初始化失败提示？**  
+  A. 通常是侧边 QWIIC / 扩展接口连接器没有插好导致外设初始化失败。请先断电，检查连接器是否完全插入、是否偏斜或松动，再重新上电测试。
+
+  <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-qwiic-connector.png" alt="T-Display P4 QWIIC 连接器检查位置" width=100%>
+
 * **Q. 关于天线接口与 GPS 定位问题？**  
   A. 当前 SX1262 版本外壳上的两个天线接口只有一个有接线，只能用一个天线接口。
 

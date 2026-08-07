@@ -132,6 +132,11 @@ For pin definitions see config files:
 * **Q. Why does my board keep failing to upload programs?**
   A. Hold down the **BOOT** button and try uploading again.
 
+* **Q. Why does the screen show many `init fail` initialization errors?**
+  A. This is usually caused by the side QWIIC / expansion connector not being fully seated. Power off the board first, then check whether the connector is fully inserted, tilted, or loose. Power the board on again after reconnecting it.
+
+  <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-qwiic-connector.png" alt="T-Display P4 QWIIC connector check position" width=100%>
+
 * **Q. Why can't I get a GPS fix in the factory firmware?**
   A. Test outdoors or in an area with good GPS signal. Check the [latest factory firmware](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/firmware).
 
