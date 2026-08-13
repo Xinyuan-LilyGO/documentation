@@ -1,7 +1,7 @@
 ---
 title: T-Display SF32
 show_source: false
-tags: SF32LB52X, AMOLED, LoRa, BLE 5.3, GNSS, IMU, AIoT
+tags: SF32LB52X, AMOLED, LoRa, BLE 5.3, IMU, AIoT
 ---
 
 # {{ $frontmatter.title }} <ShopLink href="" />
@@ -14,7 +14,9 @@ tags: SF32LB52X, AMOLED, LoRa, BLE 5.3, GNSS, IMU, AIoT
 
 ## Overview
 
-T-Display SF32 is a development board based on SiFli's **SF32LB52X** ultra-low-power AIoT MCU. Built for smart wearables, smart home, industrial sensing, and IoT applications, it integrates a 2.16" AMOLED display, SX1262 LoRa, L76K GNSS, BHI260AP 9-axis IMU, BME280 temperature/humidity sensor, 24-bit audio, an 8×8 matrix keyboard interface, and USB PD fast charging. The dual-core Arm Cortex-M33 big.LITTLE architecture (HCPU @ 192 MHz + LCPU @ 24 MHz) with an integrated ePicasso 2.5D graphics engine enables rich UI with very low power consumption.
+T-Display SF32 is a development board based on SiFli's **SF32LB52X** ultra-low-power AIoT MCU. Built for smart wearables, smart home, industrial sensing, and IoT applications, the main board integrates a 2.16" AMOLED display, SX1262 LoRa, BHI260AP 9-axis IMU, BME280 temperature/humidity sensor, 24-bit audio, and USB PD fast charging; the L76K multi-constellation GNSS is located on the keyboard expansion module. The dual-core Arm Cortex-M33 big.LITTLE architecture (HCPU @ 192 MHz + LCPU @ 24 MHz) with an integrated ePicasso 2.5D graphics engine enables rich UI with very low power consumption.
+
+<a href="/en/products/t-display-series/t-display-sf32/expansion-version.html">Expansion Version Notes</a>
 
 ## Quick Start
 
@@ -51,12 +53,12 @@ After the build completes, run `uart_download.bat` and enter the device COM port
 - 2.16" AMOLED display (CO5300) with CST9220 capacitive touch
 - Dual-mode Bluetooth 5.3 (BLE 5.3 + Classic BT) with BLE Audio, RX sensitivity −100 dBm
 - SX1262 LoRa module (433 / 868 / 915 MHz, low power)
-- L76K multi-constellation GNSS (GPS, GLONASS, BeiDou, QZSS)
+- Keyboard expansion module with L76K multi-constellation GNSS (GPS, GLONASS, BeiDou, QZSS)
 - BHI260AP 9-axis IMU (accelerometer + gyroscope + magnetometer)
 - BME280 temperature & humidity sensor
 - 24-bit audio ADC/DAC with Bluetooth audio streaming, 3.5 mm jack
 - AW86224 vibration motor, VSMY14940 IR transmitter
-- TCA8418 + AW21009 8×8 matrix keyboard interface
+- Keyboard expansion module with TCA8418 + AW21009 8×8 matrix keyboard interface
 - SGM41562B USB PD fast-charging battery management
 - MicroSD slot (SDHC/SDXC)
 - 16 MB Flash + 8 MB PSRAM
@@ -77,7 +79,7 @@ After the build completes, run `uart_download.bat` and enter the device COM port
 | Touch | CST9220 capacitive |
 | Bluetooth | BLE 5.3 + Classic BT, BLE Audio |
 | LoRa | SX1262, 433 / 868 / 915 MHz |
-| GNSS | L76K (GPS / GLONASS / BeiDou / QZSS) |
+| GNSS | Keyboard expansion module: L76K (GPS / GLONASS / BeiDou / QZSS) |
 | IMU | BHI260AP, 9-axis |
 | Temp / Humidity | BME280 |
 | Audio | 24-bit ADC/DAC, 3.5 mm jack |
@@ -107,7 +109,7 @@ After the build completes, run `uart_download.bat` and enter the device COM port
 
 * [SF32LB52X Chip Spec](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/DS0052-SF32LB52X-芯片技术规格书%20V0p1.pdf)
 * [SF32LB52X User Manual](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/UM5201-SF32LB52x-用户手册%20V0p8p5.pdf)
-* [L76K GNSS Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/C2916234_卫星定位模块_L76KB-A58_规格书_WJ417768.PDF)
+* [L76K GNSS Datasheet (keyboard expansion module)](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/C2916234_卫星定位模块_L76KB-A58_规格书_WJ417768.PDF)
 * [BME280 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/BME280.pdf)
 * [SGM41562B Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/C5153801_电池管理_SGM41562BXG-TR_规格书_SGMICRO\(圣邦微\)电池管理规格书.PDF)
 * [AW86224 Vibration Motor Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/AW86224.pdf)

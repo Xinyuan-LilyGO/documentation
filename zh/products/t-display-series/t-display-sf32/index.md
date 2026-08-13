@@ -1,7 +1,7 @@
 ---
 title: T-Display SF32
 show_source: false
-tags: SF32LB52X, AMOLED, LoRa, BLE 5.3, GNSS, IMU, AIoT
+tags: SF32LB52X, AMOLED, LoRa, BLE 5.3, IMU, AIoT
 ---
 
 # {{ $frontmatter.title }} <ShopLink href="" />
@@ -14,7 +14,9 @@ tags: SF32LB52X, AMOLED, LoRa, BLE 5.3, GNSS, IMU, AIoT
 
 ## 概述
 
-T-Display SF32 是一款基于 SiFli **SF32LB52X** 超低功耗 AIoT MCU 的开发板，面向智能可穿戴、智能家居、工业传感和 IoT 应用。集成 2.16 英寸 AMOLED 显示屏、SX1262 LoRa、L76K 多星座 GNSS、BHI260AP 九轴 IMU、BME280 温湿度传感器、24 位音频、8×8 矩阵键盘接口和 USB PD 快充。双核 Arm Cortex-M33 big.LITTLE 架构（HCPU @ 192 MHz + LCPU @ 24 MHz）内置 ePicasso 2.5D 图形引擎，在极低功耗下实现丰富 UI 渲染。
+T-Display SF32 是一款基于 SiFli **SF32LB52X** 超低功耗 AIoT MCU 的开发板，面向智能可穿戴、智能家居、工业传感和 IoT 应用。主板集成 2.16 英寸 AMOLED 显示屏、SX1262 LoRa、BHI260AP 九轴 IMU、BME280 温湿度传感器、24 位音频和 USB PD 快充；L76K 多星座 GNSS 位于键盘拓展模块上。双核 Arm Cortex-M33 big.LITTLE 架构（HCPU @ 192 MHz + LCPU @ 24 MHz）内置 ePicasso 2.5D 图形引擎，在极低功耗下实现丰富 UI 渲染。
+
+<a href="/zh/products/t-display-series/t-display-sf32/expansion-version.html">拓展版本说明</a>
 
 ## 快速开始
 
@@ -51,12 +53,12 @@ build_t-display-sf32_hcpu\uart_download.bat
 - 2.16 英寸 AMOLED 显示屏（CO5300）+ CST9220 电容触摸
 - 双模蓝牙 5.3（BLE 5.3 + 经典蓝牙），支持 BLE Audio，接收灵敏度 −100 dBm
 - SX1262 LoRa 模块（433 / 868 / 915 MHz，低功耗）
-- L76K 多星座 GNSS（GPS、GLONASS、北斗、QZSS）
+- 键盘拓展模块提供 L76K 多星座 GNSS（GPS、GLONASS、北斗、QZSS）
 - BHI260AP 九轴 IMU（加速度计 + 陀螺仪 + 磁力计）
 - BME280 温湿度传感器
 - 24 位音频 ADC/DAC，支持蓝牙音频流，3.5 mm 耳机接口
 - AW86224 振动马达，VSMY14940 红外发射器
-- TCA8418 + AW21009 8×8 矩阵键盘接口
+- 键盘拓展模块提供 TCA8418 + AW21009 8×8 矩阵键盘接口
 - SGM41562B USB PD 快充电源管理
 - MicroSD 卡槽（SDHC/SDXC）
 - 16 MB Flash + 8 MB PSRAM
@@ -77,7 +79,7 @@ build_t-display-sf32_hcpu\uart_download.bat
 | 触摸 | CST9220 电容触摸 |
 | 蓝牙 | BLE 5.3 + 经典蓝牙，BLE Audio |
 | LoRa | SX1262，433 / 868 / 915 MHz |
-| GNSS | L76K（GPS / GLONASS / 北斗 / QZSS） |
+| GNSS | 键盘拓展模块：L76K（GPS / GLONASS / 北斗 / QZSS） |
 | IMU | BHI260AP，九轴 |
 | 温湿度 | BME280 |
 | 音频 | 24 位 ADC/DAC，3.5 mm 耳机接口 |
@@ -107,7 +109,7 @@ build_t-display-sf32_hcpu\uart_download.bat
 
 * [SF32LB52X 芯片技术规格书](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/DS0052-SF32LB52X-芯片技术规格书%20V0p1.pdf)
 * [SF32LB52X 用户手册](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/UM5201-SF32LB52x-用户手册%20V0p8p5.pdf)
-* [L76K GNSS 规格书](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/C2916234_卫星定位模块_L76KB-A58_规格书_WJ417768.PDF)
+* [L76K GNSS 规格书（键盘拓展模块）](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/C2916234_卫星定位模块_L76KB-A58_规格书_WJ417768.PDF)
 * [BME280 数据手册](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/BME280.pdf)
 * [SGM41562B 电池管理规格书](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/C5153801_电池管理_SGM41562BXG-TR_规格书_SGMICRO\(圣邦微\)电池管理规格书.PDF)
 * [AW86224 振动马达数据手册](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/AW86224.pdf)
