@@ -13,14 +13,14 @@ T-Display P4 is based on the **Espressif ESP32-P4** high-performance application
 
 ## Firmware Download and Flashing Notes
 
-When the documentation or repository mentions "download firmware", it usually means two actions: download the corresponding `.bin` firmware file first, then flash it to the board Flash. T-Display P4 has an **ESP32-P4 main processor** and an **ESP32-C6 wireless coprocessor**. Confirm the target chip before flashing to avoid writing firmware to the wrong chip.
+When the documentation or repository mentions "download firmware", it usually means two actions: download the corresponding `.bin` firmware file first, then use **LILYGO Spark** to flash it to the board Flash. T-Display P4 has an **ESP32-P4 main processor** and an **ESP32-C6 wireless coprocessor**. Confirm the target chip before flashing to avoid writing firmware to the wrong chip.
 
 ### Flash ESP32-P4 Main Firmware
 
 If you only need to restore the factory firmware, run official examples, or flash main applications such as `LilygoBox`, you usually only need to flash the ESP32-P4:
 
 1. Download the required `.bin` firmware from [T-Display-P4 GitHub Releases](https://github.com/Xinyuan-LilyGO/T-Display-P4/releases).
-2. Open [ESP Launchpad](https://espressif.github.io/esp-launchpad/) or another ESP flashing tool.
+2. Open [LILYGO Spark](https://lilygo.cc/en-us/pages/lilygo-spark), then go to the firmware flashing tool.
 3. Connect T-Display P4 with USB-C, and select **ESP32-P4** as the target chip.
 4. Select the downloaded `.bin` file, and set the flash address to `0x0`.
 5. Start flashing. After flashing completes, press **RST** or power-cycle the board.
@@ -29,19 +29,39 @@ If you only need to restore the factory firmware, run official examples, or flas
 
 ### Flash ESP32-C6 Coprocessor Firmware
 
-ESP32-C6 is used for wireless functions such as Wi-Fi / Bluetooth. Only perform this step when you need to update the wireless coprocessor firmware. The coprocessor firmware cannot be flashed as ESP32-P4 main firmware.
+ESP32-C6 is used for wireless functions such as Wi-Fi / Bluetooth. The coprocessor firmware cannot be flashed as ESP32-P4 main firmware. The following steps use the **LILYGO Spark** firmware flashing tool, in this order: **P4 preparation firmware → C6 coprocessor firmware → P4 factory firmware**:
 
-1. First flash the `coprocessor_download_mode` firmware from the repository to the ESP32-P4 main processor at address `0x0`.
-2. Boot the board and check the serial log. Confirm that `Coprocessor preparation completed` appears.
-3. Power off the board, then connect a 3.3V USB-TTL adapter to the coprocessor UART: board `RX` to USB-TTL `TX`, board `TX` to USB-TTL `RX`, and `GND` to `GND`.
+1. In Firmware Center, select the **T-Display P4** firmware series, find [`[T-Display-P4][coprocessor_download_mode]`](https://github.com/Xinyuan-LilyGO/T-Display-P4/blob/main/firmware/%5BT-Display-P4%5D%5Bcoprocessor_download_mode%5D), and click download. After it is downloaded, select the device's **ESP32-P4** port and flash it. This prepares the ESP32-C6 for download mode.
 
-   The UART download connector is shown below. The pin order is `RX-TX-3.3V-GND`:
+   <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-1-select-coprocessor-download-mode.png" alt="Select the T-Display P4 coprocessor download mode firmware" width=100%>
+
+2. After `coprocessor_download_mode` is flashed, click delete on the downloaded firmware, then download the next firmware.
+
+   <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-2-delete-coprocessor-download-mode.png" alt="Delete the downloaded coprocessor download mode firmware" width=100%>
+
+3. Select [`lilygobox-t-display-p4-device-v1.0-esp32c6-rev0.0-v2.12.3-merged.bin`](https://github.com/Xinyuan-LilyGO/lilygobox-espidf/releases/download/v1.0.4/lilygobox-t-display-p4-device-v1.0-esp32c6-rev0.0-v2.12.3-merged.bin) as the ESP32-C6 coprocessor firmware.
+
+   <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-3-select-c6-firmware.png" alt="Select the ESP32-C6 coprocessor firmware" width=100%>
+
+   Connect the 3.3V USB-TTL serial downloader to the device's C6 UART connector. The connector pin order is `RX-TX-3.3V-GND`. Wire board `RX` to USB-TTL `TX`, board `TX` to USB-TTL `RX`, and `GND` to `GND`.
 
    <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-uart-download.png" alt="T-Display P4 ESP32-C6 UART download connector" width=70%>
 
-4. Put ESP32-C6 into download mode: hold the coprocessor **BOOT** button, press and release **RESET**, then release **BOOT**.
-5. In the flashing tool, select **ESP32-C6** as the target chip, select the coprocessor firmware, and set the flash address to `0x0`.
-6. After the ESP32-C6 coprocessor firmware is flashed, flash the ESP32-P4 main processor back to the factory firmware or the main application firmware you want to use.
+4. In the flashing dialog, select the USB-TTL serial downloader port that corresponds to the device's **ESP32-C6**, then start flashing.
+
+   <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-4-flash-c6-port.png" alt="Select the ESP32-C6 port and start flashing" width=100%>
+
+5. After the ESP32-C6 firmware is flashed, click delete on the downloaded C6 firmware, then download the next firmware.
+
+   <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-5-delete-c6-firmware.png" alt="Delete the downloaded ESP32-C6 firmware" width=100%>
+
+6. Select [`lilygobox-t-display-p4-device-v1.0-esp32p4-rev1.0-v1.0.4-merged.bin`](https://github.com/Xinyuan-LilyGO/lilygobox-espidf/releases/download/v1.0.4/lilygobox-t-display-p4-device-v1.0-esp32p4-rev1.0-v1.0.4-merged.bin) as the ESP32-P4 factory firmware.
+
+   <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-6-select-p4-factory-firmware.png" alt="Select the ESP32-P4 factory firmware" width=100%>
+
+7. In the flashing dialog, select the USB port that corresponds to the device's **ESP32-P4**, then start flashing.
+
+   <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-7-flash-p4-port.png" alt="Select the ESP32-P4 port and start flashing" width=100%>
 
 > Note: ESP32-P4 main firmware and ESP32-C6 coprocessor firmware are not interchangeable. Select **ESP32-P4** for main firmware, and **ESP32-C6** for coprocessor firmware.
 > It is recommended to finish flashing the ESP32-C6 coprocessor firmware first, then flash the ESP32-P4 main processor back to the factory firmware or normal application firmware.

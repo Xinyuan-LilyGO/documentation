@@ -15,6 +15,12 @@ tags: ESP32-P4, MIPI, AMOLED, LoRa, GPS, ESP32-C6
 
 T-Display P4 is a multi-functional development board based on **ESP32-P4** (16 MB Flash) for complex graphics, multimedia, and IoT applications. Features a **4.05-inch MIPI TFT** (540 × 1168) or **4.1-inch AMOLED** (568 × 1232) with capacitive touch, **ESP32-C6** auxiliary processor (Wi-Fi 6 + Bluetooth 5.3, SDIO), **SX1262 LoRa** (HPD16A module), **L76K GPS**, **ES8311 + NS4150B** audio, **AW86224** linear vibration motor, **ICM20948** IMU, **BQ27220** battery monitor, **OV2710** MIPI camera. Supports keyboard expansion board (T-Display-P4-Keyboard) with CC1101, NRF24L01, and NFC (ST25R3916).
 
+## Hardware Notes
+
+The **RST** button on T-Display P4 resets the ESP32-P4 main controller only. It is not a full board power reset. Some onboard peripheral power rails are controlled through I/O expanders such as XL9535, so resetting only the ESP32-P4 may not force every peripheral through a complete power-off and power-on cycle.
+
+If the device enters download mode after power-on, does not boot normally, or cannot recover after pressing **RST**, turn the power switch off first, wait for the board capacitors to discharge, and then turn the device on again. Do not hold **BOOT** during power-on; **BOOT** may put the ESP32-P4 into download mode, making the device appear unable to start normally.
+
 ## Quick Start
 
 ### Example Support
