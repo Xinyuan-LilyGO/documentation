@@ -5,6 +5,14 @@ show_source: false
 
 # T-Dongle-S3 Quick Start
 
+## Development Environment
+
+T-Dongle-S3 supports PlatformIO and Arduino IDE. Use the official repository examples as the reference:
+
+```bash
+git clone https://github.com/Xinyuan-LilyGO/T-Dongle-S3.git
+```
+
 ## Required Libraries
 
 | Library | Version | Source |
@@ -14,38 +22,32 @@ show_source: false
 | FastLED | Latest | [GitHub](https://github.com/FastLED/FastLED) |
 | LVGL | 8.x | [GitHub](https://github.com/lvgl/lvgl) |
 
----
-
-## Arduino
-
-### PlatformIO (Recommended)
+## PlatformIO
 
 1. Install [VS Code](https://code.visualstudio.com/) and the **PlatformIO IDE** extension
-2. Clone the repository:
-   ```bash
-   git clone https://github.com/Xinyuan-LilyGO/T-Dongle-S3.git
-   ```
-3. Open `platformio.ini` and uncomment the target example line
-4. Click **Build** to build, insert the dongle into a USB-A port, click **Upload** to upload
+2. Open the `T-Dongle-S3` project folder
+3. Enable `default_envs = T-Dongle-S3` in `platformio.ini`
+4. Keep only one `src_dir = xxxx` example path that you want to run
+5. Click **Build**, plug T-Dongle-S3 into a computer USB port, then click **Upload**
 
----
+## Arduino IDE
 
-### Arduino IDE
-
-#### 1. Install ESP32 Board Support
+### 1. Install ESP32 Board Support
 
 1. Open Arduino IDE -> **File** -> **Preferences**
-2. Add to "Additional Board Manager URLs":
-   ```
-   https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-   ```
-3. Go to **Tools** -> **Board** -> **Boards Manager**, search `esp32`, install **esp32 by Espressif Systems**
+2. Add this URL to "Additional Board Manager URLs":
 
-#### 2. Install Libraries
+```text
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+```
 
-Copy all folders from the project `lib/` to your Arduino libraries directory, or install via **Tools** -> **Manage Libraries**.
+3. Go to **Tools** -> **Board** -> **Boards Manager**, search `esp32`, and install **esp32 by Espressif Systems 3.3.0 or later**
 
-#### 3. Board Settings
+### 2. Install Libraries
+
+Copy all folders in the project `lib` directory to the Arduino Sketchbook libraries directory.
+
+### 3. Board Settings
 
 | Setting | Value |
 | :-----: | :---: |
@@ -53,61 +55,61 @@ Copy all folders from the project `lib/` to your Arduino libraries directory, or
 | Upload Speed | 921600 |
 | USB Mode | **Hardware CDC and JTAG** |
 | USB CDC On Boot | **Enabled** |
-| CPU Frequency | **240 MHz (WiFi)** |
-| Flash Mode | **QIO 80 MHz** |
-| Flash Size | **16 MB (128Mb)** |
+| CPU Frequency | **240MHz (WiFi)** |
+| Core Debug Level | **None** |
+| USB DFU On Boot | **Disabled** |
+| Erase All Flash Before Sketch Upload | **Disabled** |
+| Flash Mode | **QIO 80MHz** |
+| Flash Size | **16MB (128Mb)** |
+| Arduino Runs On | **Core1** |
+| USB Firmware MSC On Boot | **Disabled** |
 | Partition Scheme | **16M Flash (3MB APP/9.9MB FATFS)** |
-| PSRAM | **OPI PSRAM** |
+| PSRAM | **Disabled** |
+| Programmer | **Esptool** |
 
-> **Note:** Set **USB CDC On Boot** to **Disabled** when running on battery.
+> **Note:** T-Dongle-S3 has no PSRAM. Set PSRAM to **Disabled** in Arduino IDE.
 
-#### 4. Upload
+### 4. USB Examples
 
-Insert the dongle into a USB-A port, open an example, and click Upload.  
-If upload fails: hold **BOOT**, press and release **RST**, then release **BOOT** to enter download mode.
+For examples with `USB` in the name, set **USB Mode** to **USB-OTG (TinyUSB)**.
 
----
+### 5. Upload
+
+Plug T-Dongle-S3 into a computer USB port, open an example, and click Upload. If upload fails, hold the **BOOT** button while plugging T-Dongle-S3 into the USB port to enter download mode, then upload again. After flashing, unplug and plug the device again. Do not hold BOOT for normal startup.
 
 ## Examples
 
 | Example | Description |
 | :-----: | :---------- |
-| `Display_Test` | ST7735 TFT display test |
-| `APA102_LED` | APA102 RGB LED color cycling |
-| `TF_Card` | TF card read/write |
-| `LVGL_Demo` | LVGL 8 UI demo |
-| `Factory` | Full factory test |
+| `factory` | Factory test |
+| `hello_world` | Basic serial output |
+| `lvgl_test` | LVGL display test |
+| `sd` | TF card read/write |
+| `qwiic` | QWIIC serial example |
 
----
+## Pin Notes
 
-### Peripheral Examples
+| Name | GPIO |
+| --- | --- |
+| RGB DIN | GPIO40 |
+| RGB CLK | GPIO39 |
+| SDMMC D0 | GPIO14 |
+| SDMMC D1 | GPIO17 |
+| SDMMC D2 | GPIO21 |
+| SDMMC D3 | GPIO18 |
+| SDMMC CLK | GPIO12 |
+| SDMMC CMD | GPIO16 |
+| Button | GPIO0 |
+| QWIIC TX | GPIO43 |
+| QWIIC RX | GPIO44 |
 
-#### Hello World (LovyanGFX)
-
-```cpp
-#define LILYGO_LGFX_USE_T_DONGLE_S3
-#include <LilyGo_LovyanGFX.h>
-
-LilyGo_T_Dongle_S3 display;
-
-void setup() {
-    display.begin(1);
-    display.setTextColor(TFT_WHITE, TFT_BLACK);
-    display.setTextSize(2);
-    display.setCursor(5, 65);
-    display.println("T-Dongle S3");
-}
-
-void loop() {}
-```
-
-#### APA102 RGB LED
+## APA102 RGB LED
 
 ```cpp
 #include <FastLED.h>
 
-#define LED_CI  40
-#define LED_DI  39
+#define LED_DI  40
+#define LED_CI  39
 #define NUM_LEDS 1
 
 CRGB leds[NUM_LEDS];
@@ -124,86 +126,25 @@ void loop() {
 }
 ```
 
----
+## LVGL
 
-### LVGL
+T-Dongle-S3 uses a 0.96-inch **ST7735 SPI color display** with 160 × 80 resolution.
 
-T-Dongle-S3 uses a 0.96-inch **ST7735 IPS TFT** (80 × 160) driven by LovyanGFX.
-
-#### Configure lv_conf.h
-
-Copy `lv_conf.h` from the project to sit beside the `lvgl` folder in your Arduino libraries directory. Key settings:
+### Key `lv_conf.h` Settings
 
 ```c
 #define LV_COLOR_DEPTH  16
-#define LV_HOR_RES_MAX  80
-#define LV_VER_RES_MAX 160
+#define LV_HOR_RES_MAX  160
+#define LV_VER_RES_MAX  80
 ```
-
-#### Minimal LVGL v8 Example
-
-```cpp
-#define LILYGO_LGFX_USE_T_DONGLE_S3
-#include <LilyGo_LovyanGFX.h>
-#include <lvgl.h>
-
-#define SCREEN_W  80
-#define SCREEN_H 160
-
-LilyGo_T_Dongle_S3 display;
-
-static lv_disp_draw_buf_t draw_buf;
-static lv_color_t buf[SCREEN_W * SCREEN_H / 10];
-
-void my_disp_flush(lv_disp_drv_t *drv, const lv_area_t *area, lv_color_t *color_p) {
-    uint32_t w = area->x2 - area->x1 + 1;
-    uint32_t h = area->y2 - area->y1 + 1;
-    display.startWrite();
-    display.setAddrWindow(area->x1, area->y1, w, h);
-    display.pushPixels((uint16_t *)color_p, w * h, true);
-    display.endWrite();
-    lv_disp_flush_ready(drv);
-}
-
-void setup() {
-    display.begin(1);
-
-    lv_init();
-    lv_disp_draw_buf_init(&draw_buf, buf, NULL, SCREEN_W * SCREEN_H / 10);
-
-    static lv_disp_drv_t disp_drv;
-    lv_disp_drv_init(&disp_drv);
-    disp_drv.hor_res  = SCREEN_W;
-    disp_drv.ver_res  = SCREEN_H;
-    disp_drv.flush_cb = my_disp_flush;
-    disp_drv.draw_buf = &draw_buf;
-    lv_disp_drv_register(&disp_drv);
-
-    lv_obj_t *label = lv_label_create(lv_scr_act());
-    lv_label_set_text(label, "T-Dongle S3");
-    lv_obj_set_style_text_font(label, &lv_font_montserrat_14, 0);
-    lv_obj_center(label);
-}
-
-void loop() {
-    lv_timer_handler();
-    delay(5);
-}
-```
-
-#### Factory Example
-
-Open the `LVGL_Demo` or `Factory` example from the repository for a production-ready LVGL integration reference.
-
----
 
 ## FAQ
 
 **Q: Upload keeps failing?**  
-A: Hold **BOOT**, press and release **RST**, then release **BOOT** to enter download mode.
+A: Hold the **BOOT** button while plugging T-Dongle-S3 into the USB port to enter download mode, then upload again.
 
-**Q: Screen stays off after upload?**  
-A: Use `display.begin()` from `LilyGo_T_Dongle_S3`; it initializes the GPIO38 backlight.
+**Q: Why should PSRAM be disabled?**  
+A: T-Dongle-S3 hardware has no PSRAM. Set PSRAM to **Disabled** in Arduino IDE.
 
-**Q: APA102 LED not lighting up?**  
-A: Verify CI/DI pin order (CI=GPIO40, DI=GPIO39). APA102 uses SPI-like protocol clock and data are separate pins, unlike WS2812 single-wire.
+**Q: Can QWIIC be used as I2C directly?**  
+A: QWIIC is configured for serial port function by default. To use it as I2C, add pull-up resistors to the external sensor.

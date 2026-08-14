@@ -4,44 +4,50 @@ show_source: false
 ---
 
 # T-Dongle-S3 快速开始
+
+## 开发环境
+
+T-Dongle-S3 支持 PlatformIO 和 Arduino IDE。项目示例以官方仓库为准：
+
+```bash
+git clone https://github.com/Xinyuan-LilyGO/T-Dongle-S3.git
+```
+
 ## 依赖库
+
 | 库名 | 版本 | 来源 |
 | :--: | :--: | :--: |
-| LovyanGFX | 最新| [GitHub](https://github.com/lovyan03/LovyanGFX) |
+| LovyanGFX | 最新 | [GitHub](https://github.com/lovyan03/LovyanGFX) |
 | LilyGo-display-library | 最新 | [Xinyuan-LilyGO/LilyGo-display-library](https://github.com/Xinyuan-LilyGO/LilyGo-display-library) |
-| FastLED | 最新| [GitHub](https://github.com/FastLED/FastLED) |
+| FastLED | 最新 | [GitHub](https://github.com/FastLED/FastLED) |
 | LVGL | 8.x | [GitHub](https://github.com/lvgl/lvgl) |
 
----
-
-## Arduino
-
-### PlatformIO（推荐）
+## PlatformIO
 
 1. 安装 [VS Code](https://code.visualstudio.com/) 和 **PlatformIO IDE** 扩展
-2. 克隆仓库：
-   ```bash
-   git clone https://github.com/Xinyuan-LilyGO/T-Dongle-S3.git
-   ```
-3. 打开 `platformio.ini`，取消注释目标示例行
-4. 点击 **Build** 编译，将 Dongle 插入 USB-A 接口，点击 **Upload** 上传
+2. 打开 `T-Dongle-S3` 项目目录
+3. 在 `platformio.ini` 中启用 `default_envs = T-Dongle-S3`
+4. 只保留一个需要运行的 `src_dir = xxxx` 示例路径
+5. 点击 **Build** 编译，将 T-Dongle-S3 插入电脑 USB 口，点击 **Upload** 上传
 
----
+## Arduino IDE
 
-### Arduino IDE
-
-#### 1. 安装 ESP32 开发板支持
+### 1. 安装 ESP32 开发板支持
 
 1. 打开 Arduino IDE -> **文件** -> **首选项**
 2. 在「附加开发板管理器网址」中添加：
-   ```
-   https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-   ```
-3. 前往 **工具** -> **开发板** -> **开发板管理器**，搜索 `esp32`，安装 **esp32 by Espressif Systems**
 
-#### 2. 安装依赖库
-将项目 `lib/` 中的所有文件夹复制到 Arduino 库目录，或通过 **工具** -> **管理库** 安装
-#### 3. 开发板设置
+```text
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+```
+
+3. 前往 **工具** -> **开发板** -> **开发板管理器**，搜索 `esp32`，安装 **esp32 by Espressif Systems 3.3.0 或更高版本**
+
+### 2. 安装依赖库
+
+将项目 `lib` 目录下的所有文件夹复制到 Arduino Sketchbook 的 libraries 目录。
+
+### 3. 开发板设置
 
 | 设置项 | 值 |
 | :----: | :--: |
@@ -49,58 +55,61 @@ show_source: false
 | Upload Speed | 921600 |
 | USB Mode | **Hardware CDC and JTAG** |
 | USB CDC On Boot | **Enabled** |
-| CPU Frequency | **240 MHz (WiFi)** |
-| Flash Mode | **QIO 80 MHz** |
-| Flash Size | **16 MB (128Mb)** |
+| CPU Frequency | **240MHz (WiFi)** |
+| Core Debug Level | **None** |
+| USB DFU On Boot | **Disabled** |
+| Erase All Flash Before Sketch Upload | **Disabled** |
+| Flash Mode | **QIO 80MHz** |
+| Flash Size | **16MB (128Mb)** |
+| Arduino Runs On | **Core1** |
+| USB Firmware MSC On Boot | **Disabled** |
 | Partition Scheme | **16M Flash (3MB APP/9.9MB FATFS)** |
-| PSRAM | **OPI PSRAM** |
+| PSRAM | **Disabled** |
+| Programmer | **Esptool** |
 
-> **提示：** 使用电池供电时，将 **USB CDC On Boot** 设为 **Disabled**。
-#### 4. 上传
+> **注意：** T-Dongle-S3 没有 PSRAM，Arduino IDE 中必须将 PSRAM 设置为 **Disabled**。
 
-将 Dongle 插入 USB-A 接口，打开示例，点击「上传」。 
-若上传失败：按住 **BOOT**，按一下 **RST** 后松开，再松开 BOOT，然后上传。
----
+### 4. USB 示例
+
+运行示例名称中包含 `USB` 的程序时，将 **USB Mode** 改为 **USB-OTG (TinyUSB)**。
+
+### 5. 上传
+
+将 T-Dongle-S3 插入电脑 USB 口，打开示例并点击「上传」。如果上传失败，按住 **BOOT** 键并插入电脑 USB 口，使设备进入下载模式后再上传。烧录完成后重新插拔设备，正常启动时不要按住 BOOT。
 
 ## 示例程序
 
 | 示例 | 说明 |
 | :--: | :--- |
-| `Display_Test` | ST7735 TFT 显示测试 |
-| `APA102_LED` | APA102 RGB LED 彩色循环 |
-| `TF_Card` | TF 卡读取|
-| `LVGL_Demo` | LVGL 8 UI 演示 |
-| `Factory` | 全功能出厂测试|
+| `factory` | 出厂测试 |
+| `hello_world` | 基础串口输出 |
+| `lvgl_test` | LVGL 显示测试 |
+| `sd` | TF 卡读写 |
+| `qwiic` | QWIIC 串口示例 |
 
----
+## 引脚说明
 
-### 外设示例
+| 名称 | GPIO |
+| --- | --- |
+| RGB DIN | GPIO40 |
+| RGB CLK | GPIO39 |
+| SDMMC D0 | GPIO14 |
+| SDMMC D1 | GPIO17 |
+| SDMMC D2 | GPIO21 |
+| SDMMC D3 | GPIO18 |
+| SDMMC CLK | GPIO12 |
+| SDMMC CMD | GPIO16 |
+| Button | GPIO0 |
+| QWIIC TX | GPIO43 |
+| QWIIC RX | GPIO44 |
 
-#### Hello World（LovyanGFX
-```cpp
-#define LILYGO_LGFX_USE_T_DONGLE_S3
-#include <LilyGo_LovyanGFX.h>
-
-LilyGo_T_Dongle_S3 display;
-
-void setup() {
-    display.begin(1);
-    display.setTextColor(TFT_WHITE, TFT_BLACK);
-    display.setTextSize(2);
-    display.setCursor(5, 65);
-    display.println("T-Dongle S3");
-}
-
-void loop() {}
-```
-
-#### APA102 RGB LED
+## APA102 RGB LED
 
 ```cpp
 #include <FastLED.h>
 
-#define LED_CI  40
-#define LED_DI  39
+#define LED_DI  40
+#define LED_CI  39
 #define NUM_LEDS 1
 
 CRGB leds[NUM_LEDS];
@@ -117,82 +126,25 @@ void loop() {
 }
 ```
 
----
+## LVGL
 
-### LVGL
+T-Dongle-S3 搭载 0.96 英寸 **ST7735 SPI 彩色屏**，分辨率为 160 × 80。
 
-T-Dongle-S3 搭载 0.96 英寸 **ST7735 IPS TFT**0 × 160），LovyanGFX 驱动
-#### 配置 lv_conf.h
-
-将项目中将 `lv_conf.h` 复制到 Arduino 库目录中`lvgl` 文件夹同级的位置。关键配置：
+### `lv_conf.h` 关键配置
 
 ```c
 #define LV_COLOR_DEPTH  16
-#define LV_HOR_RES_MAX  80
-#define LV_VER_RES_MAX 160
+#define LV_HOR_RES_MAX  160
+#define LV_VER_RES_MAX  80
 ```
-
-#### 最简 LVGL v8 示例
-
-```cpp
-#define LILYGO_LGFX_USE_T_DONGLE_S3
-#include <LilyGo_LovyanGFX.h>
-#include <lvgl.h>
-
-#define SCREEN_W  80
-#define SCREEN_H 160
-
-LilyGo_T_Dongle_S3 display;
-
-static lv_disp_draw_buf_t draw_buf;
-static lv_color_t buf[SCREEN_W * SCREEN_H / 10];
-
-void my_disp_flush(lv_disp_drv_t *drv, const lv_area_t *area, lv_color_t *color_p) {
-    uint32_t w = area->x2 - area->x1 + 1;
-    uint32_t h = area->y2 - area->y1 + 1;
-    display.startWrite();
-    display.setAddrWindow(area->x1, area->y1, w, h);
-    display.pushPixels((uint16_t *)color_p, w * h, true);
-    display.endWrite();
-    lv_disp_flush_ready(drv);
-}
-
-void setup() {
-    display.begin(1);
-
-    lv_init();
-    lv_disp_draw_buf_init(&draw_buf, buf, NULL, SCREEN_W * SCREEN_H / 10);
-
-    static lv_disp_drv_t disp_drv;
-    lv_disp_drv_init(&disp_drv);
-    disp_drv.hor_res  = SCREEN_W;
-    disp_drv.ver_res  = SCREEN_H;
-    disp_drv.flush_cb = my_disp_flush;
-    disp_drv.draw_buf = &draw_buf;
-    lv_disp_drv_register(&disp_drv);
-
-    lv_obj_t *label = lv_label_create(lv_scr_act());
-    lv_label_set_text(label, "T-Dongle S3");
-    lv_obj_set_style_text_font(label, &lv_font_montserrat_14, 0);
-    lv_obj_center(label);
-}
-
-void loop() {
-    lv_timer_handler();
-    delay(5);
-}
-```
-
-#### 出厂示例
-
-打开仓库中的 `LVGL_Demo` `Factory` 示例，这T-Dongle-S3 生产LVGL 集成的权威参考。
----
 
 ## 常见问题
 
 **Q：一直无法烧录？**  
-A：按住 **BOOT**，按一下 **RST** 后松开，再松开 BOOT，进入下载模式后再上传。
-**Q：上传后屏幕不亮？**  
-A：使用 `LilyGo_T_Dongle_S3` `display.begin()`，该函数会初始化 GPIO38 背光。
-**Q：APA102 LED 不亮？**  
-A：确认引脚顺序正确（CI=GPIO40，DI=GPIO39）。APA102 使用途SPI 协议，时钟和数据为独立引脚，与 WS2812 单线协议不同。
+A：按住 **BOOT** 键并插入电脑 USB 口，使设备进入下载模式后再上传。
+
+**Q：为什么 PSRAM 不能启用？**  
+A：T-Dongle-S3 硬件没有 PSRAM，Arduino IDE 中应设置为 **Disabled**。
+
+**Q：QWIIC 可以直接作为 I2C 使用吗？**  
+A：QWIIC 默认配置为串口功能。如需作为 I2C 使用，需要为外接传感器添加上拉电阻。
