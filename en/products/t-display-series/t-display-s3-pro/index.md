@@ -91,6 +91,21 @@ T-Display S3 Pro is a high-performance development board based on **ESP32-S3R8**
 | Mounting Holes | 4 × 2 mm |
 | Dimensions | 56.5 × 56.5 × 9.6 mm |
 
+## Electrical Parameters
+
+| Feature | Details |
+| :-- | :-- |
+| USB-C Input Voltage | 3.9 V - 6 V |
+| USB-C Output Voltage | 4.55 V - 5.55 V |
+| USB-C Output Current | 0.5 A - 1 A |
+| Charge Current | 0 - 5056 mA (programmable) |
+| Battery Voltage | 3840 - 4608 mV (programmable) |
+| Battery Capacity | 3800 mV / 470 mAh |
+| Battery Connector | ACHL connector 1.2 mm |
+| Charge Temperature | 0 - 60°C |
+
+> Recommended charging current: **< 200 mA**. The charging current should not exceed half of the battery capacity. When no battery is connected, disable charging to keep power stable.
+
 ## Pin Diagram
 
 <img src="/products/t-display-series/t-display-s3-pro/index/image/t-display-s3 pro-pin.jpg" alt="T-Display S3 Pro front pin diagram" width=100%>

@@ -103,6 +103,14 @@ T-TWR REV2.1 is a portable walkie-talkie and GNSS development board based on **E
 | Mounting Holes | 2 × 2 mm |
 | Dimensions | 126 × 39 × 29 mm + 200 mm antenna |
 
+## Power Consumption Reference
+
+| Hardware | Mode / Test Firmware | Current |
+| :-- | :-- | :-- |
+| T-TWR Rev2.1 | Deep sleep / `Factory` example | About 680 µA |
+
+> Reference measurement published in the [official T-TWR repository](https://github.com/Xinyuan-LilyGO/T-TWR#faq). Radio transmit current is substantially higher and depends on the selected power level; use a battery capable of supplying the required peak current.
+
 ## Pin Diagram
 
 <img src="/products/t-twr-series/t-twr/index/image/t-twr-3.jpg" alt="T-TWR pin diagram" width=100%>

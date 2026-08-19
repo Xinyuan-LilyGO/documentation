@@ -116,6 +116,20 @@ T-LoraPager 是一款 LILYGO 推出的手持式 AIOT 可编程开发设备，集
 | 固定孔 | 1/4 英寸螺丝接口 + 4 × M2 背孔 |
 | 尺寸 | 106 × 89 × 23mm |
 
+## 电气参数
+
+| 项目 | 参数 |
+| :-- | :-- |
+| USB-C 输入电压 | 3.9 V - 6 V |
+| USB-C 输出电压 | 4.55 V - 5.55 V |
+| USB-C 输出电流 | 0.5 A - 1 A |
+| 充电电流 | 0 - 3008 mA（可编程） |
+| 电池电压 | 3.7 V |
+| 电池容量 | 1500 mAh（5.55 Wh） |
+| 充电温度范围 | 0 - 60°C |
+
+> 推荐充电电流：**< 750 mA**。充电电流不应超过电池容量的一半。
+
 ## 引脚图
 
 <img src="/products/t-lora-series/t-lora-pager/index/image/t-lorapager-3.jpg" alt="T-LoraPager 引脚图" width=100%>

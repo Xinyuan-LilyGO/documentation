@@ -93,6 +93,14 @@ LILYGO T-TWR-Plus is a programmable walkie-talkie development board based on **E
 
 * [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
 
+## Power Consumption Reference
+
+| Hardware | Mode / Test Firmware | Current |
+| :-- | :-- | :-- |
+| T-TWR Rev2.1 | Deep sleep / `Factory` example | About 680 µA |
+
+> Reference measurement published in the [official T-TWR repository](https://github.com/Xinyuan-LilyGO/T-TWR#faq). Radio transmit current is substantially higher and depends on the selected power level; use a battery capable of supplying the required peak current.
+
 ## Software Libraries
 
 * [T-TWR GitHub Repository](https://github.com/Xinyuan-LilyGO/T-TWR)

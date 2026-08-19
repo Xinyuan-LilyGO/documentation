@@ -106,6 +106,14 @@ T-CameraPlus-S3是一款基于ESP32-S3主控芯片的多功能智能硬件开发
 | 固定孔 | 4 × 2mm 定位孔 |
 | 尺寸 | 60 × 32 × 12mm |
 
+## 功耗参考
+
+| 硬件版本 | 模式 / 测试固件 | 电流 |
+| :-- | :-- | :-- |
+| T-CameraPlus-S3 V1.2 | 深度睡眠 / `Deep_Sleep_Wake_Up` | 平均 1.7 mA |
+
+> 该结果仅适用于官方测试条件下的 V1.2，详见[功耗测试报告](https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/relevant_test/PowerConsumptionTestLog_%5BT-CameraPlus-S3_V1.2%5D_20250408.pdf)。其他硬件版本、摄像头模组及固件配置的结果可能不同。
+
 ## 引脚图
 
 <img src="/products/t-camera-series/t-camera-plus-s3/index/image/t-cameraplus-s3-pin-zh.jpg" alt="T-Camera Plus S3 引脚图" width=100%>

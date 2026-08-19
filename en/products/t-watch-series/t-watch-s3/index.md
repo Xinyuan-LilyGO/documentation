@@ -95,6 +95,17 @@ T-Watch S3 is a multifunctional smart wearable device integrating high-performan
 | Power Input | 5 V / 500 mA |
 | Dimensions | 51.5 × 42 × 20 mm (without strap) |
 
+## Electrical Parameters
+
+| Feature | Details |
+| :-- | :-- |
+| MicroUSB Input Voltage | 3.9 V - 6 V |
+| Charge Current | 0 - 1024 mA (programmable) |
+| Battery Voltage | 3.8 V |
+| Battery Capacity | 470 mAh |
+
+> Recommended charging current: **< 130 mA**. Excessive charging current may damage the battery. If the watch will not be used for an extended period, turn the battery switch to OFF.
+
 ## Product Comparison
 
 <img src="/products/t-watch-series/t-watch-s3/index/image/t-watch-s3-compare.jpg" alt="T-Watch S3 product comparison" width=100%>
@@ -134,6 +145,21 @@ T-Watch S3 is a multifunctional smart wearable device integrating high-performan
 
 * **Q. Which LoRa versions are available?**
   A. SX1262 (Sub-GHz, 433–923 MHz) and SX1280 (2.4 GHz). Choose according to regional regulations.
+
+## Power Consumption Reference
+
+| Mode | Wake-Up Source | Current |
+| :-- | :-- | :-- |
+| Light sleep | Power + BOOT buttons + touch panel | 2.38 mA |
+| Light sleep | Power + BOOT buttons | N/A |
+| Deep sleep | Power + BOOT buttons (backup power on) | 530 µA |
+| Deep sleep | Power + BOOT buttons (backup power off) | 460 µA |
+| Deep sleep | Touch panel | 1.08 mA |
+| Deep sleep | Timer (backup power on) | 510 µA |
+| Deep sleep | Timer (backup power off) | 460 µA |
+| Power off | Backup power only | 50 µA |
+
+> Reference measurements from the [official T-Watch S3 hardware documentation](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/docs/hardware/lilygo-t-watch-s3.md#-power-consumption-reference). Actual current depends on firmware and enabled peripherals. The touch reset pin is not connected; putting the touch controller to sleep disables touch wake-up.
 
 ## Version History
 

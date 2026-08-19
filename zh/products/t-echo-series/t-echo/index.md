@@ -79,6 +79,19 @@ T-Echo 兼容多个开源固件项目，包括 SoftRF 和 Meshtastic，可用于
 | 蓝牙 | 5.0 |
 | 开发环境 | Arduino / nRF5-SDK |
 
+## 电气参数
+
+| 项目 | 参数 |
+| :-- | :-- |
+| USB-C 输入电压 | 4.8 V - 5.5 V |
+| 充电电流 | 500 mA（固定） |
+| 电池电压 | 3.7 V |
+| 电池容量 | 850 mAh / 2400 mAh |
+| 电池接口 | MX 1.25 mm |
+| 充电温度 | 0 - 60°C |
+
+> 接入 USB 后电池会开始充电，此时 ADC 读取的电池电压可能不准确。供电建议使用 USB-A 转 USB-C 线，部分 USB-C 转 USB-C 电源可能不会给设备供电。
+
 ## 引脚图
 
 引脚定义请参考 [utilities.h](https://github.com/Xinyuan-LilyGO/T-Echo/blob/main/examples/Integration/utilities.h) 文件。

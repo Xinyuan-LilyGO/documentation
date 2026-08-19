@@ -13,7 +13,7 @@ tags: T-Watch, ESP32-S3, Smart Watch, GPS, LoRa
 
 ## Overview
 
-T-Watch S3 Plus is an enhanced version of T-Watch S3, adding GPS functionality to create a multifunctional smart wearable device. Features a **1.3-inch ST7789V3 IPS LCD** (240 × 240), **MIA-M10Q GNSS**, **SX1262/SX1280 LoRa** (433–923 MHz), **BMA423** 3-axis sensor, **FT6336U** capacitive touch, **Max98357A** audio amplifier, PDM microphone, **DRV2605** haptic motor, and **AXP2101** PMU. 1500 mAh battery. **51.5 × 42 × 20 mm** (without strap).
+T-Watch S3 Plus is an enhanced version of T-Watch S3, adding GPS functionality to create a multifunctional smart wearable device. Features a **1.3-inch ST7789V3 IPS LCD** (240 × 240), **MIA-M10Q or LS550G GNSS**, **SX1262/SX1280 LoRa** (433–923 MHz), **BMA423** 3-axis sensor, **FT6336U** capacitive touch, **Max98357A** audio amplifier, PDM microphone, **DRV2605** haptic motor, and **AXP2101** PMU. 940 mAh battery. **51.5 × 42 × 20 mm** (without strap).
 
 ## Quick Start
 
@@ -60,7 +60,7 @@ T-Watch S3 Plus is an enhanced version of T-Watch S3, adding GPS functionality t
 
 6. Click **Upload**
 
-> If upload fails, manually enter download mode: connect via USB-C → hold **BOOT** → press **RST** → release **RST** → release **BOOT** → upload → press **RST** to exit.
+> If upload fails, manually enter download mode: connect via Micro-USB → hold **BOOT** → press **RST** → release **RST** → release **BOOT** → upload → press **RST** to exit.
 
 ### Development Platforms
 
@@ -75,8 +75,8 @@ T-Watch S3 Plus is an enhanced version of T-Watch S3, adding GPS functionality t
 
 - ESP32-S3 @ 240 MHz, 16 MB Flash, 8 MB OPI PSRAM, Wi-Fi + BT 5.0
 - 1.3-inch ST7789V3 IPS LCD (240 × 240), FT6336U capacitive touch
-- SX1262/SX1280 LoRa, MIA-M10Q GNSS, BMA423 accelerometer, DRV2605 haptic
-- MAX98357A audio + PDM mic, PCF8563 RTC, AXP2101 PMU, 1500 mAh, 51.5 × 42 × 20 mm
+- SX1262/SX1280 LoRa, MIA-M10Q or LS550G GNSS, BMA423 accelerometer, DRV2605 haptic
+- MAX98357A audio + PDM mic, PCF8563 RTC, AXP2101 PMU, 940 mAh, 51.5 × 42 × 20 mm
 
 ## Product Parameters
 
@@ -89,7 +89,7 @@ T-Watch S3 Plus is an enhanced version of T-Watch S3, adding GPS functionality t
 | Bluetooth | Bluetooth 5.0 LE |
 | Display | 1.3-inch ST7789V3 IPS LCD, 240 × 240 (SPI) |
 | Touch | FT6336U Capacitive (I2C, Wire1) |
-| GNSS | UBlox MIA-M10Q |
+| GNSS | u-blox MIA-M10Q or Quectel LS550G |
 | LoRa | SX1262 / SX1280, 433–923 MHz (selectable) |
 | Accelerometer | BMA423 (I2C) |
 | RTC | PCF8563 |
@@ -98,11 +98,22 @@ T-Watch S3 Plus is an enhanced version of T-Watch S3, adding GPS functionality t
 | Audio Input | PDM Microphone (SPM1423HM4H-B) |
 | Haptic Motor | DRV2605 (I2C) |
 | IR Emitter | IR12-21C |
-| Battery | 3.7 V, 1500 mAh (5.55 Wh) |
-| Charging Input | USB-C, 3.9–6 V |
+| Battery | 3.7 V, 940 mAh |
+| Charging Input | Micro-USB, 3.9–6 V |
 | USB | 1 × Micro USB + OTG |
 | Buttons | POWER (hold 2 s on / 6 s off) + BOOT (built-in) |
 | Dimensions | 51.5 × 42 × 20 mm (without strap) |
+
+## Electrical Parameters
+
+| Feature | Details |
+| :-- | :-- |
+| Micro-USB Input Voltage | 3.9 V - 6 V |
+| Charge Current | 0 - 1024 mA (programmable) |
+| Battery Voltage | 3.7 V |
+| Battery Capacity | 940 mAh |
+
+> Prefer a charging current of **300 mA or less**, and do not exceed **400 mA**. Excessive charging current may damage the battery. If the watch will not be used for an extended period, turn the battery switch to OFF.
 
 ## Pin Diagram
 
@@ -179,6 +190,21 @@ T-Watch S3 Plus is an enhanced version of T-Watch S3, adding GPS functionality t
 
 * **Q. No serial output?**
   A. Ensure **USB CDC On Boot** is set to **Enabled**.
+
+## Power Consumption Reference
+
+| Mode | Wake-Up Source | Current |
+| :-- | :-- | :-- |
+| Light sleep | Power + BOOT buttons + touch panel | 2.38 mA |
+| Light sleep | Power + BOOT buttons | N/A |
+| Deep sleep | Power + BOOT buttons (backup power on) | 530 µA |
+| Deep sleep | Power + BOOT buttons (backup power off) | 460 µA |
+| Deep sleep | Touch panel | 1.08 mA |
+| Deep sleep | Timer (backup power on) | 510 µA |
+| Deep sleep | Timer (backup power off) | 460 µA |
+| Power off | Backup power only | 50 µA |
+
+> Reference measurements from the [official T-Watch S3 Plus hardware documentation](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/docs/hardware/lilygo-t-watch-s3-plus.md#-power-consumption-reference). Actual current depends on firmware and enabled peripherals. The touch reset pin is not connected; putting the touch controller to sleep disables touch wake-up.
 
 ## Version History
 

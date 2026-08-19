@@ -97,6 +97,30 @@ LILYGO T-SIM7670G-S3 combines the **ESP32-S3** dual-core LX7 microcontroller wit
 
 ![T-SIM7670G-S3 Specifications Part 2](/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-info-2.jpg)
 
+## Electrical Parameters
+
+| Feature | Details |
+| :-- | :-- |
+| USB-C Input Voltage | 5 V |
+| Solar Input Voltage | 5 V - 6 V |
+| USB-C / Solar Charge Max Current | 500 mA |
+| Battery Voltage | 3.7 V |
+| VBUS pin header | 5 V |
+| VBAT pin header | 4.2 V |
+
+> The onboard JST2.0 interface is only for solar-panel battery charging and cannot power the board directly. VBUS is tied to the USB-C input and is for external power input only. The USB/VBUS input should provide at least 2 A peak current and stay above 5 V to avoid low-voltage shutdown.
+
+### Battery Protector
+
+| Feature | Details |
+| :-- | :-- |
+| Over-Voltage Threshold | 4.30 V |
+| Under-Voltage Threshold | 2.5 V |
+| Over-Discharge Current | 3 A |
+| Chip | DW01V |
+
+> The board may reset when switching between USB and battery power because it does not have seamless power switching.
+
 ## Pin Diagram
 
 ### SIM7670G UART

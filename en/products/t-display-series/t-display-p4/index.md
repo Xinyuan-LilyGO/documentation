@@ -21,6 +21,29 @@ The **RST** button on T-Display P4 resets the ESP32-P4 main controller only. It 
 
 If the device enters download mode after power-on, does not boot normally, or cannot recover after pressing **RST**, turn the power switch off first, wait for the board capacitors to discharge, and then turn the device on again. Do not hold **BOOT** during power-on; **BOOT** may put the ESP32-P4 into download mode, making the device appear unable to start normally.
 
+### USB-C Port Usage
+
+T-Display P4 has two USB-C ports, but they are not interchangeable:
+
+| Port | Purpose | Notes |
+| :--: | :-- | :-- |
+| Right-side `P4.U` | ESP32-P4 data transfer, firmware flashing, serial terminal | Disable RTS / hardware flow control when using a serial terminal. The RTS line can reset the P4 and may cause the device to hang after reset. |
+| Left-side USB-C | Charging / power input | Not intended for data transfer or firmware flashing. |
+
+### LoRa External Antenna Warning
+
+Before switching LoRa from the internal antenna to the external antenna in software, connect the included dipole antenna to the **MMCX 1** connector first. Do not enable external antenna mode without an antenna connected, otherwise the SX1262 LoRa chip may be damaged.
+
+<img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-antenna-ports.png" alt="T-Display P4 antenna connectors" width=70%>
+
+<img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-antenna-settings.png" alt="T-Display P4 antenna setting" width=70%>
+
+### Keyboard Expansion Installation
+
+T-Display-P4-Keyboard uses a small daughterboard and Pogo Pins to connect to the P4 host. Power the device off before installation, and use tweezers or a magnifier if needed. During installation, check that the daughterboard pins are vertical, not bent, and actually enter the connector holes instead of sliding along the outside of the connector.
+
+If the screen shows `xl9555 init fail` or many `init fail` messages, first check whether the keyboard daughterboard and side QWIIC / expansion connector are aligned and making full contact, then power-cycle the device.
+
 ## Quick Start
 
 ### Example Support
@@ -99,7 +122,7 @@ Configure board as **ESP32P4 Dev Module** with appropriate settings when Arduino
 | Battery Monitor | BQ27220 |
 | Camera | OV2710 (MIPI) |
 | I/O Expander | XL9535 |
-| USB | 1 × Type-C |
+| USB | 2 × USB-C (right-side `P4.U` for data / flashing, left-side USB-C for charging / power) |
 
 ## Pin Diagram
 
@@ -139,9 +162,21 @@ For pin definitions see config files:
   A. Hold down the **BOOT** button and try uploading again.
 
 * **Q. Why does the screen show many `init fail` initialization errors?**
-  A. This is usually caused by the side QWIIC / expansion connector not being fully seated. Power off the board first, then check whether the connector is fully inserted, tilted, or loose. Power the board on again after reconnecting it.
+  A. This is usually caused by the side QWIIC / expansion connector or keyboard daughterboard not being fully seated. Power off the board first, then check whether the connector is fully inserted, tilted, whether the Pogo Pins are aligned with the connector holes, and whether any pins are bent or loose. Power the board on again after reconnecting it.
 
   <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-qwiic-connector.png" alt="T-Display P4 QWIIC connector check position" width=100%>
+
+* **Q. What should I watch out for when using the external LoRa antenna?**
+  A. Before switching LoRa to external antenna mode, connect the included dipole antenna to **MMCX 1**. Do not enable external antenna mode with no antenna connected, otherwise the SX1262 LoRa chip may be damaged.
+
+* **Q. Can both USB-C ports flash firmware?**
+  A. No. The right-side `P4.U` port is for data transfer and firmware flashing. The left-side USB-C port is for charging / power only. Disable RTS / hardware flow control when using a serial terminal on `P4.U`.
+
+* **Q. Keyboard test output is incorrect?**
+  A. Known feedback: `Shift + h` should output comma `,`, but some keyboard test application versions output apostrophe `'`, and the `'` key position is incorrect. Update to a later fixed keyboard test firmware or application.
+
+* **Q. ESP32-C6 cannot connect to Wi-Fi?**
+  A. First update the ESP32-C6 coprocessor firmware using the C6 flashing flow in Quick Start, then flash the ESP32-P4 main processor back to factory firmware or a normal application firmware. If the latest firmware still cannot connect to Wi-Fi, record the C6 firmware version, P4 firmware version, and connection log for feedback.
 
 * **Q. Why can't I get a GPS fix in the factory firmware?**
   A. Test outdoors or in an area with good GPS signal. Check the [latest factory firmware](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/firmware).

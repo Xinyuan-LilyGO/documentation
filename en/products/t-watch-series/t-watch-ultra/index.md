@@ -110,6 +110,17 @@ T-Watch Ultra is a high-performance smart watch development module based on **ES
 | Temperature Range | -40 ~ 85 °C |
 | Dimensions | 63.5 × 49 × 22 mm (without strap) |
 
+## Electrical Parameters
+
+| Feature | Details |
+| :-- | :-- |
+| USB-C Input Voltage | 3.9 V - 6 V |
+| Charge Current | 0 - 1024 mA (programmable) |
+| Battery Voltage | 3.7 V |
+| Battery Capacity | 1100 mAh (4.07 Wh) |
+
+> Recommended charging current: **< 500 mA**. Excessive charging current may cause the PMU temperature to become too high. The charging current should not exceed half of the battery capacity.
+
 ## Pin Diagram
 
 <img src="/products/t-watch-series/t-watch-ultra/index/image/t-watch-ultra-pin.jpg" alt="T-Watch Ultra pin diagram" width=100%>
@@ -191,6 +202,21 @@ T-Watch Ultra is a high-performance smart watch development module based on **ES
 
 * **Q. No serial output?**
   A. Ensure **USB CDC On Boot** is set to **Enabled**.
+
+## Power Consumption Reference
+
+| Mode | Wake-Up Source | Current |
+| :-- | :-- | :-- |
+| Light sleep | Power + BOOT buttons + touch panel | 4.6 mA |
+| Light sleep | Power + BOOT buttons | 2.1 mA |
+| Deep sleep | Power + BOOT buttons (backup power on) | 1.1 mA |
+| Deep sleep | Power + BOOT buttons (backup power off) | 840 µA |
+| Deep sleep | Touch panel | 3.34 mA |
+| Deep sleep | Timer (backup power off) | 850 µA |
+| Deep sleep | Timer (backup power on) | 1.1 mA |
+| Power off | Backup power only | 77 µA |
+
+> Reference measurements from the [official T-Watch Ultra hardware documentation](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/docs/hardware/lilygo-t-watch-ultra.md#-power-consumption-reference). Actual current depends on firmware and enabled peripherals.
 
 ## Version History
 

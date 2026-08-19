@@ -96,6 +96,21 @@ tags: ESP32-S3, AMOLED, USB OTG, IPS, Capacitive Touch
 | 安装孔 | 4 × 2mm 定位孔 |
 | 尺寸 | 56.5 × 56.5 × 9.6mm |
 
+## 电气参数
+
+| 项目 | 参数 |
+| :-- | :-- |
+| USB-C 输入电压 | 3.9 V - 6 V |
+| USB-C 输出电压 | 4.55 V - 5.55 V |
+| USB-C 输出电流 | 0.5 A - 1 A |
+| 充电电流 | 0 - 5056 mA（可编程） |
+| 电池电压 | 3840 - 4608 mV（可编程） |
+| 电池容量 | 3800 mV / 470 mAh |
+| 电池接口 | ACHL 1.2 mm 接口 |
+| 充电温度 | 0 - 60°C |
+
+> 推荐充电电流：**< 200 mA**。充电电流不应超过电池容量的一半。未连接电池时，请关闭充电功能以保持供电稳定。
+
 ## 引脚图
 
 <img src="/products/t-display-series/t-display-s3-pro/index/image/t-display-s3 pro-pin.jpg" alt="T-Display S3 Pro 引脚图（正面）" width=100%>

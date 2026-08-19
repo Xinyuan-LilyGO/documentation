@@ -148,6 +148,20 @@ The development board is feature-rich, integrating QWERT keyboard, AI-enabled IM
 | GPIO Expand                      | XINLUDA XL9555             |
 | SD Card Socket                   | Maximum 32GB (FAT32 format)    |
 
+## Electrical Parameters
+
+| Feature | Details |
+| :-- | :-- |
+| USB-C Input Voltage | 3.9 V - 6 V |
+| USB-C Output Voltage | 4.55 V - 5.55 V |
+| USB-C Output Current | 0.5 A - 1 A |
+| Charge Current | 0 - 3008 mA (programmable) |
+| Battery Voltage | 3.7 V |
+| Battery Capacity | 1500 mAh (5.55 Wh) |
+| Charge Temperature Range | 0 - 60°C |
+
+> Recommended charging current: **< 750 mA**. The charging current should not exceed half of the battery capacity.
+
 ## Pin Diagram
 
 <img src="/products/t-lora-series/t-lora-pager/index/image/t-lorapager-3.jpg" alt="summary" width=100%>

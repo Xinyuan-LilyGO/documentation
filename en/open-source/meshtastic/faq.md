@@ -7,6 +7,19 @@ show_source: false
 
 ## Meshtastic General
 
+### How to Confirm a Full Charge
+
+When USB power is connected, the USB input voltage affects battery-level detection, so the Meshtastic UI will usually show **100%** immediately. Do not use the UI battery percentage to determine whether charging is complete while USB remains connected.
+
+Check the **blue charging indicator on the bottom of the device** instead:
+
+![Location of the blue charging indicator on the bottom of the device](/open-source/meshtastic/faq/image/meshtastic-charging-led.jpg)
+
+- **Blue LED on:** the battery is charging.
+- **Blue LED off:** charging is complete and the battery is at 100%.
+
+> This indication is valid only while USB is properly connected and supplying power.
+
 ### Bluetooth
 
 Meshtastic Bluetooth is disabled by default.

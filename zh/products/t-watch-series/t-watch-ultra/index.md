@@ -125,6 +125,17 @@ LILYGO T-Watch Ultra 是一款高性能智能手表开发模组，基于 ESP32-S
 | 按键 | POWER + BOOT |
 | 尺寸 | 63.5×49×22mm |
 
+## 电气参数
+
+| 项目 | 参数 |
+| :-- | :-- |
+| USB-C 输入电压 | 3.9 V - 6 V |
+| 充电电流 | 0 - 1024 mA（可编程） |
+| 电池电压 | 3.7 V |
+| 电池容量 | 1100 mAh（4.07 Wh） |
+
+> 推荐充电电流：**< 500 mA**。过大的充电电流可能导致 PMU 温度过高。充电电流不应超过电池容量的一半。
+
 ## 引脚图
 
 <img src="/products/t-watch-series/t-watch-ultra/index/image/t-watch-ultra-pin.jpg" alt="T-Watch Ultra 引脚图" width=100%>
@@ -211,14 +222,16 @@ LILYGO T-Watch Ultra 是一款高性能智能手表开发模组，基于 ESP32-S
 
 | 模式 | 唤醒方式 | 电流 |
 | :-- | :-- | :-- |
-| 轻睡眠 | 电源按钮 + BOOT + 触摸面板 | 4.6mA |
-| 轻睡眠 | 电源按钮 + BOOT | 2.1mA |
-| 深度睡眠 | 电源按钮 + BOOT（备份电源开） | 1.1mA |
-| 深度睡眠 | 电源按钮 + BOOT（备份电源关） | 840uA |
-| 深度睡眠 | 触摸面板 | 3.34mA |
-| 深度睡眠 | 定时器（备份电源开） | 850uA |
-| 深度睡眠 | 定时器（备份电源关） | 1.1mA |
-| 关机 | 仅保持备份电源 | 77uA |
+| 轻睡眠 | 电源按钮 + BOOT + 触摸面板 | 4.6 mA |
+| 轻睡眠 | 电源按钮 + BOOT | 2.1 mA |
+| 深度睡眠 | 电源按钮 + BOOT（备份电源开启） | 1.1 mA |
+| 深度睡眠 | 电源按钮 + BOOT（备份电源关闭） | 840 µA |
+| 深度睡眠 | 触摸面板 | 3.34 mA |
+| 深度睡眠 | 定时器（备份电源关闭） | 850 µA |
+| 深度睡眠 | 定时器（备份电源开启） | 1.1 mA |
+| 关机 | 仅保留备份电源 | 77 µA |
+
+> 数据来自[官方 T-Watch Ultra 硬件文档](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/docs/hardware/lilygo-t-watch-ultra.md#-power-consumption-reference)，实际电流会随固件和已启用外设变化。
 
 ## 版本历史
 

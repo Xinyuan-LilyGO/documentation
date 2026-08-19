@@ -94,6 +94,15 @@ LILYGO T4-S3 is a compact development board based on the **ESP32-S3R8** dual-cor
 | Weight | <!-- placeholder --> |
 | Package size | <!-- placeholder --> |
 
+## Power Consumption Reference
+
+| Operating Condition | Current | Wake-Up Source |
+| :-- | :-- | :-- |
+| CPU at 240 MHz, Wi-Fi on | 90-230+ mA | - |
+| Sleep | About 230 µA | External GPIO0 |
+
+> Values published in the [official LilyGo AMOLED Series repository](https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series#current-consumption). Actual current depends on display brightness, wireless activity, enabled peripherals, and firmware.
+
 ## Pin Diagram
 
 ![T4-S3 Specifications](/products/t4-series/t4-s3/index/image/t4-s3-info.jpg)

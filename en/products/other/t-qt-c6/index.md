@@ -91,6 +91,15 @@ T-QT C6 is a compact smart wearable development kit based on **ESP32-C6-MINI-1U*
 | Buttons | RESET + BOOT |
 | Dimensions | 33 × 24 × 44.5 mm |
 
+## Power Consumption Reference
+
+| Hardware | Mode / Test Firmware | Current |
+| :-- | :-- | :-- |
+| T-QT-C6 V1.2 | Light sleep | 553 µA |
+| T-QT-C6 V1.2 | Deep sleep | 170 µA |
+
+> Measurements were taken at the battery input with the official sleep firmware. See the [T-QT-C6 V1.2 Power Consumption Test Log](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/relevant_test/PowerConsumptionTestLog_%5BT-QT-C6_V1.2%5D_20241122.pdf). Results for V1.0-V1.1 may differ because they use a different PMU.
+
 ## Pin Diagram
 
 <img src="/products/other/t-qt-c6/index/image/t-qt-c6-pin-en.jpg" alt="T-QT C6 pin diagram" width=100%>
@@ -147,7 +156,7 @@ T-QT C6 is a compact smart wearable development kit based on **ESP32-C6-MINI-1U*
   A. Hold **BOOT** and press **RST** once, release RST while still holding BOOT, then start the upload.
 
 * **Q. How to achieve low power operation?**
-  A. Use the SGM41562/ETA4662 PMU with ESP32-C6 deep sleep mode. Deep sleep draws ~172 µA, light sleep ~516 µA.
+  A. On V1.2, the official test measured approximately 170 µA in deep sleep and 553 µA in light sleep. V1.0-V1.1 use a different PMU and may differ.
 
 * **Q. Which touch gestures are supported?**
   A. CST816T supports swipe up/down/left/right, single-click, double-click, and long-press.

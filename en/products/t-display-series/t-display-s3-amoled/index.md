@@ -93,6 +93,15 @@ LILYGO T-Display-S3-AMOLED is an upgraded version of the T-Display-S3, featuring
 
 ![T-Display-S3-AMOLED Specifications](/products/t-display-series/t-display-s3-amoled/index/image/t-display-s3-amoled-info.jpg)
 
+## Power Consumption Reference
+
+| Operating Condition | Current | Wake-Up Source |
+| :-- | :-- | :-- |
+| CPU at 240 MHz, Wi-Fi on | 90-230+ mA | - |
+| Sleep | About 230 µA | External GPIO0 |
+
+> Values published in the [official LilyGo AMOLED Series repository](https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series#current-consumption). Actual current depends on display brightness, wireless activity, enabled peripherals, and firmware.
+
 ## Pin Diagram
 
 ![T-Display-S3-AMOLED Pinout](/products/t-display-series/t-display-s3-amoled/index/image/t-display-s3-amoled-pinout.jpg)

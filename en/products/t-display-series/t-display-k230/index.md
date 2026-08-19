@@ -16,6 +16,8 @@ tags: K230, AIoT, LoRa, AMOLED, RISC-V
 
 T-Display K230 is based on Canaan Technology's **K230** chip — dual-core RISC-V (1.6 GHz + 0.8 GHz) with up to 1.6 TOPS NPU — combined with **ESP32-S3-R8** (16 MB Flash, 8 MB PSRAM) for Wi-Fi/Bluetooth connectivity. Features a **4.1-inch AMOLED** display (568 × 1232, MIPI DSI), **GT9895** capacitive touch, **SX1262/SX1280 LoRa** (433–923 MHz), 3-channel MIPI CSI-2 camera, HDMI 1080P output, Ethernet, and 3.5 mm audio. Suitable for AI inference, remote wireless data transmission, IoT monitoring, and video interaction in a 104 × 51 × 15.5 mm form factor.
 
+<a href="/products/t-display-series/t-display-k230/k230/index.html?lang=en" target="_blank" rel="noopener noreferrer">K230 40Pin Pinout Tool</a>
+
 ## Quick Start
 
 ### Example Support

@@ -82,6 +82,19 @@ T-Echo is compatible with multiple open-source firmware projects, including Soft
 | GPS | Supported |
 | NFC | Supported |
 
+## Electrical Parameters
+
+| Feature | Details |
+| :-- | :-- |
+| USB-C Input Voltage | 4.8 V - 5.5 V |
+| Charge Current | 500 mA (fixed) |
+| Battery Voltage | 3.7 V |
+| Battery Capacity | 850 mAh / 2400 mAh |
+| Battery Connector | MX 1.25 mm |
+| Charge Temperature | 0 - 60°C |
+
+> When USB is connected, the battery starts charging and ADC battery-voltage readings may be inaccurate. A USB-A to USB-C cable is required for power supply; some USB-C to USB-C supplies may refuse to power the device.
+
 ## Pin Diagram
 
 For pin definitions, please refer to the [utilities.h](https://github.com/Xinyuan-LilyGO/T-Echo/blob/main/examples/Integration/utilities.h) file in the repository.

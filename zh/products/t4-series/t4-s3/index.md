@@ -94,6 +94,15 @@ LILYGO T4-S3 是一款基于 **ESP32-S3R8** 双核 LX7 微控制器的紧凑型�
 | 重量 | <!-- placeholder --> |
 | 外包装尺寸 | <!-- placeholder --> |
 
+## 功耗参考
+
+| 工作条件 | 电流 | 唤醒方式 |
+| :-- | :-- | :-- |
+| CPU 240 MHz、Wi-Fi 开启 | 90-230+ mA | - |
+| 睡眠 | 约 230 µA | 外部 GPIO0 |
+
+> 数据来自[官方 LilyGo AMOLED Series 仓库](https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series#current-consumption)。实际电流会随屏幕亮度、无线活动、已启用外设及固件变化。
+
 ## 引脚图
 
 ![T4-S3 规格参数](/products/t4-series/t4-s3/index/image/t4-s3-info.jpg)

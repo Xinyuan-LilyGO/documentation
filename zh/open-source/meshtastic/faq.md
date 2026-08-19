@@ -5,6 +5,19 @@ show_source: false
 
 ## Meshtastic 通用
 
+### 如何判断电池是否充满
+
+连接 USB 充电时，USB 输入电压会影响电池电量检测，因此 Meshtastic UI 通常会直接显示 **100%**。USB 保持连接期间，请勿使用 UI 中的电量百分比判断电池是否已经充满。
+
+请查看设备底部的**蓝色充电指示灯**：
+
+![设备底部蓝色充电指示灯位置](/open-source/meshtastic/faq/image/meshtastic-charging-led.jpg)
+
+- **蓝灯亮起**：电池正在充电。
+- **蓝灯熄灭**：充电已经完成，电池处于 100% 状态。
+
+> 以上判断仅适用于 USB 已正常连接并正在供电的情况。
+
 ### Bluetooth
 
 Meshtastic 设备的蓝牙功能默认关闭。  

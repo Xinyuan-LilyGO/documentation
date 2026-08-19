@@ -95,6 +95,15 @@ LILYGO T-QT-C6 是基于 ESP32-C6-MINI-1U 微控制器的智能可穿戴开发�
 | 按键 | RESET + BOOT |
 | 尺寸 | 33×24×44.5mm |
 
+## 功耗参考
+
+| 硬件版本 | 模式 / 测试固件 | 电流 |
+| :-- | :-- | :-- |
+| T-QT-C6 V1.2 | 浅睡眠 | 553 µA |
+| T-QT-C6 V1.2 | 深度睡眠 | 170 µA |
+
+> 数据在电池输入端使用官方睡眠测试固件测得，详见 [T-QT-C6 V1.2 功耗测试报告](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/relevant_test/PowerConsumptionTestLog_%5BT-QT-C6_V1.2%5D_20241122.pdf)。V1.0-V1.1 使用不同的 PMU，结果可能不同。
+
 ## 引脚图
 
 <img src="/products/other/t-qt-c6/index/image/t-qt-c6-pin-zh.jpg" alt="T-QT C6 引脚图" width=100%>
@@ -155,7 +164,7 @@ LILYGO T-QT-C6 是基于 ESP32-C6-MINI-1U 微控制器的智能可穿戴开发�
   A. 通过板载 QWIIC 4pin 接口快速连接兼容传感器模块，也可通过 2×7 扩展 IO 接口连接其他外设。
 
 * **Q. 如何实现低功耗运行？**  
-  A. Deep Sleep 约 172µA，Light Sleep 约 517µA。结合 SGM41562 PMU 和软件低功耗模式可实现长时间电池供电。
+  A. V1.2 官方实测深度睡眠约 170 µA、浅睡眠约 553 µA。V1.0-V1.1 使用不同的 PMU，结果可能不同。
 
 * **Q. V1.0/V1.1 和 V1.2 有什么区别？**  
   A. V1.2 将电源管理芯片更换为 SGM41562（原为 ETA4662），稳定性更好；电池背板 V1.2 改用 2pin 1.25mm 间距引脚座连接，提高系统稳定性。

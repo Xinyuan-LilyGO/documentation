@@ -91,6 +91,15 @@ T-Display S3 AMOLED Plus 是一款基于 ESP32-S3 微控制器的高集成度开
 | 固定孔 | 4 × 2mm 定位孔 |
 | 尺寸 | 60×32×12mm |
 
+## 功耗参考
+
+| 工作条件 | 电流 | 唤醒方式 |
+| :-- | :-- | :-- |
+| CPU 240 MHz、Wi-Fi 开启 | 90-230+ mA | - |
+| 睡眠 | 约 230-700 µA（动态） | 外部 GPIO0 |
+
+> 数据来自[官方 LilyGo AMOLED Series 仓库](https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series#current-consumption)。实际电流会随屏幕亮度、无线活动、已启用外设及固件变化。
+
 ## 引脚图
 
 <img src="/products/t-display-series/t-display-s3-amoled-plus/index/image/t-display-s3-amoled-plus-3.jpg" alt="T-Display S3 AMOLED Plus 引脚图" width=100%>

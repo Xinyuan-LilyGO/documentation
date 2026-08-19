@@ -93,6 +93,15 @@ T-Display S3 AMOLED Plus is a highly integrated development board based on **ESP
 | Mounting Holes | 4 × 2 mm |
 | Dimensions | 60 × 32 × 12 mm |
 
+## Power Consumption Reference
+
+| Operating Condition | Current | Wake-Up Source |
+| :-- | :-- | :-- |
+| CPU at 240 MHz, Wi-Fi on | 90-230+ mA | - |
+| Sleep | About 230-700 µA (dynamic) | External GPIO0 |
+
+> Values published in the [official LilyGo AMOLED Series repository](https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series#current-consumption). Actual current depends on display brightness, wireless activity, enabled peripherals, and firmware.
+
 ## Pin Diagram
 
 <img src="/products/t-display-series/t-display-s3-amoled-plus/index/image/t-display-s3-amoled-plus-3.jpg" alt="T-Display S3 AMOLED Plus pin diagram" width=100%>

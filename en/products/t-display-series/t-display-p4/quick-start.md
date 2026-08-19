@@ -15,6 +15,8 @@ T-Display P4 is based on the **Espressif ESP32-P4** high-performance application
 
 When the documentation or repository mentions "download firmware", it usually means two actions: download the corresponding `.bin` firmware file first, then use **LILYGO Spark** to flash it to the board Flash. T-Display P4 has an **ESP32-P4 main processor** and an **ESP32-C6 wireless coprocessor**. Confirm the target chip before flashing to avoid writing firmware to the wrong chip.
 
+> **USB-C port note:** For ESP32-P4 main firmware flashing, serial terminal access, or data transfer, connect the right-side USB-C port labeled `P4.U`. The left-side USB-C port is for charging / power only and is not used for firmware flashing or data transfer. Disable RTS / hardware flow control in serial terminal software; the RTS line may reset the P4 and cause the device to hang.
+
 ### Flash ESP32-P4 Main Firmware
 
 If you only need to restore the factory firmware, run official examples, or flash main applications such as `LilygoBox`, you usually only need to flash the ESP32-P4:
@@ -105,3 +107,6 @@ A: Arduino support for ESP32-P4 is still experimental. ESP-IDF is the recommende
 
 **Q: Upload keeps failing?**  
 A: Hold **BOOT**, press and release **RST**, then release **BOOT** to enter download mode.
+
+**Q: The device resets or hangs after opening a serial terminal?**  
+A: Make sure you are connected to the right-side `P4.U` data port, and disable RTS / hardware flow control in the serial terminal program.

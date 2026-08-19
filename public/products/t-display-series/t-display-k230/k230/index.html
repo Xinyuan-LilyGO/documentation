@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>K230 底板 GPIO 占用查询工具</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-left">
+      <h1 data-i18n="appTitle">K230 底板 GPIO 占用查询工具</h1>
+      <p id="subtitle" data-i18n="subtitle">按底板查看 GPIO 占用、40Pin 引出和 FPIOA 复用功能</p>
+    </div>
+    <div class="hero-right" aria-label="K230 GPIO MAP">
+      <div class="lang-switch" id="lang-switch" aria-label="Language">
+        <button type="button" data-lang="zh" aria-pressed="true">中</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="ja" aria-pressed="false">日</button>
+      </div>
+      <div class="brand-mark">
+        <span>K230</span>
+        <strong>GPIO MAP</strong>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="tool-layout">
+      <aside class="side-panel">
+        <section class="panel board-panel">
+          <div class="section-heading">
+            <span data-i18n="baseboards">底板</span>
+            <strong id="board-count">0</strong>
+          </div>
+          <div class="board-tabs" id="board-tabs"></div>
+        </section>
+
+        <section class="panel active-board" id="active-board"></section>
+
+        <section class="panel module-panel">
+          <div class="section-heading">
+            <span data-i18n="moduleUsage">模块占用</span>
+            <strong id="usage-count">0</strong>
+          </div>
+          <div class="module-list" id="module-list"></div>
+        </section>
+
+        <section class="panel detail" id="detail"></section>
+      </aside>
+
+      <section class="main-panel">
+        <div class="map-toolbar">
+          <label class="searchbox">
+            <span aria-hidden="true">⌕</span>
+            <input id="search" type="search" placeholder="搜索 GPIO47 / UART / LoRa / SDA / PIN 7" data-i18n-placeholder="searchPlaceholder">
+          </label>
+          <div class="legend" id="filters" aria-label="功能分类" data-i18n-aria-label="filterCategories"></div>
+        </div>
+
+        <section class="pin-stage" id="pin-stage">
+          <div class="pinmap" id="pinmap">
+            <div class="map-title"><strong>GPIO-40</strong><span>K230</span></div>
+          </div>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <script src="board-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

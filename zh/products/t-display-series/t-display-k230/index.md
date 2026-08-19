@@ -16,6 +16,8 @@ tags: K230, AIoT, LoRa, AMOLED, RISC-V
 
 T-Display K230 是基于嘉楠 K230 AI 芯片设计的高性能 AIoT 开发板，配备 4.1 英寸 AMOLED 屏幕（568×1232）和 GT9895 电容触摸。K230 搭载双核 RISC-V 处理器（大核 1.6GHz + 小核 0.8GHz）和约 1.6TOPS 算力的 NPU，内置 8Gb LPDDR4 内存。协处理器 ESP32-S3-R8 提供 Wi-Fi/蓝牙连接。板载 SX1262/SX1280 LoRa、以太网、HDMI 输出（1080P@30FPS）、3 路 MIPI CSI-2 摄像头接口和 3.5mm 音频接口，适用于 AI 推理、远程图像识别和物联网监控等场景。
 
+<a href="/products/t-display-series/t-display-k230/k230/index.html?lang=zh" target="_blank" rel="noopener noreferrer">K230 40Pin 引脚查询工具</a>
+
 ## 快速开始
 
 ### K230 SDK 编译

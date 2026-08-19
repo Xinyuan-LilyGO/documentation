@@ -95,6 +95,14 @@ T-Camera Plus S3 is a versatile smart hardware development board based on **ESP3
 | Mounting Holes | 4 × 2 mm |
 | Dimensions | 60 × 32 × 12 mm |
 
+## Power Consumption Reference
+
+| Hardware | Mode / Test Firmware | Current |
+| :-- | :-- | :-- |
+| T-CameraPlus-S3 V1.2 | Deep sleep / `Deep_Sleep_Wake_Up` | 1.7 mA average |
+
+> This result applies to V1.2 under the official test setup. See the [Power Consumption Test Log](https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/relevant_test/PowerConsumptionTestLog_%5BT-CameraPlus-S3_V1.2%5D_20250408.pdf). Other hardware revisions, camera modules, and firmware configurations may produce different results.
+
 ## Pin Diagram
 
 <img src="/products/t-camera-series/t-camera-plus-s3/index/image/t-cameraplus-s3-pin-en.jpg" alt="T-Camera Plus S3 pin diagram" width=100%>
