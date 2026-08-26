@@ -389,6 +389,8 @@ void setup() {
 * **Q. How can I tell whether T-Deck Plus is charging or fully charged?**
   A. Connect USB and check the blue charging indicator from the bottom side of the device. A lit blue LED means the battery is charging; when the blue LED turns off, the battery is fully charged. This is a quick way to confirm that the device can charge to full.
 
+  ![Location of the blue charging indicator on the bottom of T-Deck Plus](/products/t-deck-series/t-deck-plus/index/image/t-deck-plus-charging-led.jpg)
+
 * **Q. Arduino IDE prompts to upgrade libraries — should I?**
   A. Do not upgrade. Stay with the library versions in the `lib` directory.
 

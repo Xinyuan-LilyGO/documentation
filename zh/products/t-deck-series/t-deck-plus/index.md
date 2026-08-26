@@ -399,6 +399,8 @@ void setup() {
 * **Q. 如何判断 T-Deck Plus 是否正在充电或已经充满？**  
   A. 连接 USB 后，可以从设备底部观察蓝色充电指示灯。蓝灯亮起表示正在充电；蓝灯熄灭表示电池已充满。通过这种方式可以确认设备是否能够正常充满。
 
+  ![T-Deck Plus 底部蓝色充电指示灯位置](/products/t-deck-series/t-deck-plus/index/image/t-deck-plus-charging-led.jpg)
+
 * **Q. 为什么 Arduino IDE 提示升级库文件？**  
   A. 建议不升级，不同版本的库文件可能不兼容。
 
