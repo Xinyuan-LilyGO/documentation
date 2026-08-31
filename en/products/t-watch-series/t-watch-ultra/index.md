@@ -13,27 +13,23 @@ tags: Smart Watch, ESP32-S3, LoRa, GNSS, AMOLED, AI Sensor, NFC
 
 ## Overview
 
-T-Watch Ultra is a high-performance smart watch development module based on **ESP32-S3** (16 MB Flash, 8 MB OPI PSRAM). Features a **2.06-inch AMOLED** display (410 × 502, QSPI), **BHI260AP** AI motion sensor, **MIA-M10Q** GNSS, **ST25R3916 NFC**, **SX1262/SX1280 LoRa**, **MAX98357A** audio, **DRV2605** haptic, **AXP2101** PMU, **XL9555** IO expander, and MicroSD storage. 1100 mAh battery. **63.5 × 49 × 22 mm** (without strap).
+T-Watch Ultra is a high-performance smart watch development module based on **ESP32-S3**, with 16 MB QSPI Flash and 8 MB QSPI PSRAM. It integrates a **2.06-inch CO5300 AMOLED** display (410 × 502, QSPI), CST9217 touch, BHI260AP smart sensor, MIA-M10Q GNSS, ST25R3916 NFC, a selectable radio module, T3902 PDM microphone, MAX98357A amplifier, DRV2605 haptic driver, AXP2101 PMU, XL9555 IO expander, and a MicroSD slot. The built-in battery is 1100 mAh. The enclosure measures **63.5 × 49 × 22 mm** without the strap.
 
 ## Quick Start
 
 ### Example Support
 
-| Example | PlatformIO/Arduino | ESP-IDF | Description |
-| :-----: | :----------------: | :-----: | :---------: |
-| [Watch UI](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | | Watch interface example |
-| [GNSS Tracking](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | | Satellite positioning |
-| [LoRa Communication](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | | LoRa communication test |
-| [AI Sensor](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | | Motion recognition |
-| [NFC Reader](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | | NFC function demo |
+| Example | Arduino IDE | Description |
+| :-----: | :---------: | :---------- |
+| [Watch UI](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | Watch interface example |
+| [GNSS Tracking](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | Satellite positioning |
+| [LoRa Communication](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | Radio communication test |
+| [AI Sensor](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | Motion recognition |
+| [NFC Reader](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | NFC function demo |
 
 ### PlatformIO
 
-1. Install [Visual Studio Code](https://code.visualstudio.com/) and [Python](https://www.python.org/)
-2. Search for and install the **PlatformIO IDE** extension in VS Code
-3. Clone the [LilyGoLib](https://github.com/Xinyuan-LilyGO/LilyGoLib) repository
-4. Open `platformio.ini` and under `[platformio]` uncomment the desired environment
-5. Click **✓** to compile, click **→** to upload
+PlatformIO does not currently support the Arduino-ESP32 3.x setup used by the main LilyGoLib repository. For PlatformIO development, use the separate [LilyGoLib-PlatformIO](https://github.com/Xinyuan-LilyGO/LilyGoLib-PlatformIO) repository, which uses Arduino-ESP32 2.0.17 (ESP-IDF 4.4.7).
 
 ### Arduino
 
@@ -41,20 +37,24 @@ T-Watch Ultra is a high-performance smart watch development module based on **ES
 2. Install [Arduino ESP32 **V3.3.0-alpha1** or higher](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
    - Boards Manager URL: `https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json`
 3. [Download LilyGoLib](https://github.com/Xinyuan-LilyGO/LilyGoLib/archive/refs/heads/master.zip) and install via **Sketch → Include Library → Add .ZIP Library**
-4. Copy all directories from [LilyGoLib-ThirdParty](https://github.com/Xinyuan-LilyGO/LilyGoLib-ThirdParty) into your Arduino `libraries` folder
-5. In **Tools** → **Board**, configure:
+4. Download [LilyGoLib-ThirdParty](https://github.com/Xinyuan-LilyGO/LilyGoLib-ThirdParty), then copy the folders inside it into your Arduino `libraries` folder. Do not copy only the outer `LilyGoLib-ThirdParty` folder.
+5. Open **File** → **Examples** → **LilyGoLib** → **helloworld**.
+6. Select **Tools** → **Board** → **esp32** → **LilyGo T-Watch-Ultra**, then configure:
 
 | Arduino IDE Setting | Value |
 | :-----------------: | :---: |
 | Board | **LilyGo T-Watch-Ultra** |
+| Port | Device port |
 | Upload Speed | 921600 |
-| Upload Mode | **UART0/Hardware CDC** |
-| USB Mode | **CDC and JTAG** |
+| Upload Mode | **UART0 / Hardware CDC** |
+| USB Mode | **Hardware CDC and JTAG** |
 | USB CDC On Boot | Enabled |
 | USB Firmware MSC On Boot | Disabled |
 | USB DFU On Boot | Disabled |
 | CPU Frequency | 240 MHz (WiFi) |
 | Core Debug Level | None |
+| Erase All Flash Before Sketch Upload | Disabled |
+| JTAG Adapter | Disabled |
 | Partition Scheme | **16M Flash (3MB APP/9.9MB FATFS)** |
 | Board Revision | **Radio-SX1262** (or per your RF module) |
 | Arduino Runs On | Core 1 |
@@ -62,52 +62,53 @@ T-Watch Ultra is a high-performance smart watch development module based on **ES
 
    Board Revision options: `Radio-SX1262` / `Radio-SX1280` / `Radio-CC1101` / `Radio-LR1121` / `Radio-SI4432`
 
-6. Click **Upload**
+7. Click **Upload**.
 
-> If upload fails, enter download mode: hold **BOOT** → press **RST** → release **RST** → release **BOOT** → upload → press **RST** to exit.
+> Do not upgrade the libraries supplied by LilyGoLib-ThirdParty until the factory example works. If there is no serial output, confirm that **USB CDC On Boot** is **Enabled**.
+>
+> If upload fails or the USB port repeatedly connects and disconnects, enter download mode: connect USB-C, hold **BOOT**, press and release **RST**, release **BOOT**, upload, then press **RST** to exit download mode.
 
 ### Development Platforms
 
-1. [PlatformIO](https://platformio.org/)
-2. [Arduino IDE](https://www.arduino.cc/en/software)
-3. [ESP-IDF](https://www.espressif.com/en/products/sdks/esp-idf)
-4. [MicroPython](https://micropython.org/)
+1. [Arduino IDE](https://www.arduino.cc/en/software) with Arduino-ESP32 3.3.0-alpha1 or later
+2. [PlatformIO](https://platformio.org/) through the separate [LilyGoLib-PlatformIO](https://github.com/Xinyuan-LilyGO/LilyGoLib-PlatformIO) repository and Arduino-ESP32 2.0.17
 
 ## Video
 
 ## Key Features
 
-- ESP32-S3 @ 240 MHz, 16 MB Flash, 8 MB OPI PSRAM, Wi-Fi + BT 5.0
-- 2.06-inch AMOLED (410 × 502, QSPI), CST9217 capacitive touch
-- SX1262/SX1280 LoRa, MIA-M10Q GNSS, ST25R3916 NFC, BHI260AP AI sensor
-- MAX98357A audio, DRV2605 haptic, AXP2101 PMU, 1100 mAh, 63.5 × 49 × 22 mm
+- ESP32-S3 @ 240 MHz, 16 MB QSPI Flash, 8 MB QSPI PSRAM, Wi-Fi + Bluetooth 5.0
+- 2.06-inch CO5300 AMOLED (410 × 502, 600 nit, QSPI), CST9217 capacitive touch
+- Selectable SX1262, SX1280, CC1101, LR1121, or SI4432 radio; MIA-M10Q GNSS; ST25R3916 NFC
+- BHI260AP smart sensor, T3902 PDM microphone, MAX98357A amplifier, and DRV2605 haptic driver
+- AXP2101 power management, 1100 mAh battery, and MicroSD up to 32 GB (FAT32)
 
 ## Product Parameters
 
 | Feature | Specification |
 | :------------------------------: | :------------------------------: |
 | MCU | ESP32-S3 @ Dual-core LX7, 240 MHz |
-| Flash | 16 MB |
-| PSRAM | 8 MB (Octal SPI) |
+| Flash | 16 MB (QSPI) |
+| PSRAM | 8 MB (QSPI) |
 | Wi-Fi | 2.4 GHz 802.11 b/g/n |
 | Bluetooth | Bluetooth 5.0 LE |
-| Display | 2.06-inch AMOLED, 410 × 502 (QSPI) |
+| Display | 2.06-inch CO5300 AMOLED, 410 × 502, 600 nit, 60000:1 contrast (QSPI) |
 | Touch | CST9217 Capacitive |
-| LoRa | SX1262 (433–923 MHz) / SX1280 (2.4 GHz) |
+| Radio options | SX1262 / SX1280 / CC1101 / LR1121 / SI4432 |
 | GNSS | MIA-M10Q Multi-constellation |
 | NFC | ST25R3916 |
 | AI Sensor | BHI260AP Motion Sensor |
 | Audio Output | MAX98357A (I2S) |
+| Microphone | T3902 (PDM) |
 | Haptic Motor | DRV2605 |
 | Power Management | AXP2101 |
 | RTC | PCF85063A |
 | IO Expander | XL9555 (16 IOs) |
-| Communication Module | T3902 (voice call) |
-| Storage | MicroSD (max 32 GB) |
+| Storage | MicroSD, maximum 32 GB (FAT32) |
 | Battery | 3.7 V, 1100 mAh (4.07 Wh) |
-| USB | 1 × Type-C (USB OTG) |
-| Buttons | POWER (hold 2 s on / 6 s off) + BOOT (built-in) |
-| Temperature Range | -40 ~ 85 °C |
+| USB | 1 × USB-C for charging and programming; no external power output |
+| Buttons | POWER (hold 1 s to turn on / 6 s to turn off) + BOOT (GPIO0) |
+| Display Operating Temperature | -20 ~ 70 °C |
 | Dimensions | 63.5 × 49 × 22 mm (without strap) |
 
 ## Electrical Parameters
@@ -136,9 +137,12 @@ T-Watch Ultra is a high-performance smart watch development module based on **ES
 | SPI SCK | 35 |
 | SD CS | 21 |
 | RTC (PCF85063A) Interrupt | 1 |
+| Touch Interrupt | 12 |
 | NFC (ST25R3916) CS | 4 |
 | NFC (ST25R3916) Interrupt | 5 |
 | BHI260 Interrupt | 8 |
+| T3902 Microphone SCK | 17 |
+| T3902 Microphone DATA | 18 |
 | MAX98357A BCLK | 9 |
 | MAX98357A WCLK | 10 |
 | MAX98357A DOUT | 11 |
@@ -163,7 +167,7 @@ T-Watch Ultra is a high-performance smart watch development module based on **ES
 
 ## Schematic
 
-* [T-Watch Ultra Schematic](https://github.com/Xinyuan-LilyGO/LilyGoLib/tree/master/docs/hardware/)
+* [T-Watch Ultra V1.0 Schematic](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/schematic/T-Watch%20Ultra%20V1.0%20SCH%2025-07-24.pdf)
 
 ## Datasheet
 
@@ -192,7 +196,7 @@ T-Watch Ultra is a high-performance smart watch development module based on **ES
   A. The Ultra features a larger AMOLED screen, BHI260AP AI motion sensor, multi-constellation GNSS, NFC, and a larger 1100 mAh battery.
 
 * **Q. How to power on and off?**
-  A. Press and hold the POWER button for 2 seconds to power on, hold for 6 seconds to power off.
+  A. Press and hold the POWER button for 1 second to power on, and hold it for 6 seconds to power off.
 
 * **Q. Which GNSS constellations are supported?**
   A. The MIA-M10Q supports GPS, GLONASS, Galileo, BeiDou, and more.

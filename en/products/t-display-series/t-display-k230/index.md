@@ -8,8 +8,7 @@ tags: K230, AIoT, LoRa, AMOLED, RISC-V
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-1.jpg', alt: 'T-Display K230 front view' },
   { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-2.jpg', alt: 'T-Display K230 physical image' },
-  { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-3.jpg', alt: 'T-Display K230 pin diagram' },
-  { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-cn.jpg' }
+  { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-3.jpg', alt: 'T-Display K230 angled view' }
 ]" />
 
 ## Overview
@@ -96,8 +95,8 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 - 4.1-inch AMOLED (568 × 1232, MIPI DSI), GT9895 capacitive touch
 - SX1262/SX1280 LoRa (433–923 MHz)
 - 3-channel MIPI CSI-2 camera, HDMI 1080P @ 30 FPS
-- Ethernet (IEEE 802.3u), 3.5 mm audio, microphone
-- 8 Gb LPDDR4, 16 MB Flash, TF card slot
+- RTL8152B 100 Mbps Ethernet (IEEE 802.3u), 3.5 mm audio, microphone
+- 1 GB LPDDR4, 16 MB Flash, TF card slot
 - 104 × 51 × 15.5 mm
 
 ## Product Parameters
@@ -107,7 +106,7 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 | Main Processor | K230 Dual-core RISC-V, 1.6 GHz + 0.8 GHz, 1.6 TOPS NPU |
 | Co-processor | ESP32-S3-R8 |
 | Flash | 16 MB |
-| Memory | 8 Gb LPDDR4 |
+| Memory | 1 GB LPDDR4 |
 | Wi-Fi | 2.4 GHz 802.11 b/g/n (ESP32-S3) |
 | Bluetooth | Bluetooth 5.0 LE (ESP32-S3) |
 | LoRa | SX1262/SX1280, 433–923 MHz |
@@ -115,16 +114,26 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 | Touch | GT9895 capacitive |
 | Camera | 3 × MIPI CSI-2 |
 | Video Output | HDMI 1080P @ 30 FPS |
-| Network | Wi-Fi + Ethernet (IEEE 802.3u) |
+| Network | Wi-Fi + RTL8152B 100 Mbps Ethernet (IEEE 802.3u) |
 | Audio | 3.5 mm jack + microphone |
 | Storage | TF card slot |
 | USB | 1 × Power + 1 × USB 2.0 OTG (Type-C) |
 | Expansion | 2 × 20-pin dual-row header |
 | Dimensions | 104 × 51 × 15.5 mm |
 
+## Product Details
+
+<img src="/products/t-display-series/t-display-k230/index/image/t-display-k230-specifications.jpg" alt="T-Display K230 specifications" width=100%>
+
 ## Pin Diagram
 
 <img src="/products/t-display-series/t-display-k230/index/image/t-display-k230-cn.jpg" alt="T-Display K230 pin diagram" width=100%>
+
+<img src="/products/t-display-series/t-display-k230/index/image/t-display-k230-40pin.jpg" alt="T-Display K230 2 × 20-pin header pinout" width=100%>
+
+## Expansion Board
+
+<img src="/products/t-display-series/t-display-k230/index/image/t-display-k230-keyboard-extension.jpg" alt="T-Display K230 keyboard extension board" width=100%>
 
 ## Dimension Diagram
 

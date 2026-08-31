@@ -14,25 +14,29 @@ tags: Smart Watch, ESP32-S3, LoRa, GNSS, AMOLED, AI Sensor, NFC
 
 ## 概述
 
-LILYGO T-Watch Ultra 是一款高性能智能手表开发模组，基于 ESP32-S3 双核处理器，搭载 16MB 闪存与 8MB PSRAM，支持 Arduino/ESP-IDF/MicroPython 开发环境。核心功能高度集成：
+LILYGO T-Watch Ultra 是一款基于 ESP32-S3 的高性能智能手表开发模组，搭载 16MB QSPI Flash 与 8MB QSPI PSRAM。核心功能高度集成：
 
-- **显示交互**：配备 2.06 英寸 AMOLED 屏（410×502 分辨率，1600 万色），支持电容触控与 QSPI 高速渲染
-- **四重无线通信**：集成 Wi-Fi/BLE 5.0、LoRa（SX1262/SX1280，覆盖 433/868/915MHz 频段）、GNSS 定位（MIA-M10Q 模块）及 NFC（ST25R3916）
-- **智能感知与反馈**：内置 BHI260AP AI 动作传感器、DRV2605 触觉震动马达及 MAX98357A 音频功放，实现运动识别与多模态交互
-- **扩展与续航**：支持 MicroSD 卡扩展（32GB FAT32），由 AXP2101 电源管理芯片动态优化能耗，搭配 1100mAh 电池（4.07Wh）
-- **工业级设计**：紧凑尺寸（49×63.5×22mm），宽温域运行（-40℃~85℃），适用于户外运动设备、工业物联网网关等场景
+- **显示交互**：配备 2.06 英寸 CO5300 AMOLED 屏（410×502、600 nit、1600 万色），支持 CST9217 电容触控与 QSPI 高速渲染
+- **无线通信**：集成 Wi-Fi/BLE 5.0、可选射频模块、MIA-M10Q GNSS 定位及 ST25R3916 NFC
+- **智能感知与反馈**：内置 BHI260AP 智能传感器、T3902 PDM 麦克风、DRV2605 触觉驱动及 MAX98357A 音频功放
+- **扩展与续航**：支持最大 32GB FAT32 MicroSD 卡，由 AXP2101 管理电源，搭配 1100mAh 电池（4.07Wh）
+- **结构尺寸**：机身尺寸 63.5×49×22mm（不含表带）
 
 ## 快速开始
 
 ### 示例支持
 
-| 示例 | PlatformIO/Arduino | ESP-IDF | 描述 |
-| :------ | :----------------: | :-----: | :---------- |
-| [Watch UI](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | | 手表界面示例 |
-| [GNSS Tracking](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | | 卫星定位功能 |
-| [LoRa Communication](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | | LoRa 通信测试 |
-| [AI Sensor](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | | 动作识别示例 |
-| [NFC Reader](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | | NFC 功能演示 |
+| 示例 | Arduino IDE | 描述 |
+| :------ | :---------: | :---------- |
+| [Watch UI](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | 手表界面示例 |
+| [GNSS Tracking](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | 卫星定位功能 |
+| [LoRa Communication](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | 射频通信测试 |
+| [AI Sensor](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | 动作识别示例 |
+| [NFC Reader](https://github.com/Xinyuan-LilyGO/LilyGoLib) | ✓ | NFC 功能演示 |
+
+### PlatformIO
+
+LilyGoLib 主仓库使用 Arduino-ESP32 3.x，目前 PlatformIO 不支持该配置。PlatformIO 开发请使用独立的 [LilyGoLib-PlatformIO](https://github.com/Xinyuan-LilyGO/LilyGoLib-PlatformIO) 仓库，该仓库使用 Arduino-ESP32 2.0.17（ESP-IDF 4.4.7）。
 
 ### Arduino
 1. 安装 [Arduino IDE](https://www.arduino.cc/en/software)。
@@ -40,23 +44,26 @@ LILYGO T-Watch Ultra 是一款高性能智能手表开发模组，基于 ESP32-S
    * Arduino 管理器网址：`https://espressif.github.io/arduino-esp32/package_esp32_dev_index.json`
 3. [下载 LilyGoLib 库](https://github.com/Xinyuan-LilyGO/LilyGoLib/archive/refs/heads/master.zip)
 4. 打开 `Arduino IDE` -> `项目` -> `加载库` -> `添加 .ZIP 库` -> 选择下载的库压缩包
-5. [安装 LilyGoLib-ThirdParty](https://github.com/Xinyuan-LilyGO/LilyGoLib-ThirdParty)：将所有目录复制到 Arduino IDE 的库目录中
+5. [安装 LilyGoLib-ThirdParty](https://github.com/Xinyuan-LilyGO/LilyGoLib-ThirdParty)：将仓库内部的所有库文件夹复制到 Arduino IDE 的 `libraries` 目录，不要只复制最外层 `LilyGoLib-ThirdParty` 文件夹
 6. `文件` -> `示例` -> `LilyGOLib` -> `helloworld`
 7. `工具` -> `开发板` -> `esp32`，选择如下配置：
 
 | Arduino IDE 设置 | 值 |
 | :-----: | :---: |
 | Board | **LilyGo T-Watch-Ultra** |
+| Port | 设备对应端口 |
 | Upload Speed | 921600 |
-| USB Mode | **CDC and JTAG** |
+| Upload Mode | **UART0 / Hardware CDC** |
+| USB Mode | **Hardware CDC and JTAG** |
 | USB CDC On Boot | Enabled |
 | USB Firmware MSC On Boot | Disabled |
 | USB DFU On Boot | Disabled |
 | CPU Frequency | 240MHz (WiFi) |
 | Core Debug Level | None |
+| Erase All Flash Before Sketch Upload | Disabled |
+| JTAG Adapter | Disabled |
 | Partition Scheme | **16M Flash (3MB APP/9.9MB FATFS)** |
 | Board Revision | **Radio-SX1262**（根据购买版本选择） |
-| Upload Mode | **UART0/Hardware CDC** |
 | Arduino Runs On | Core 1 |
 | Events Run On | Core 1 |
 
@@ -67,7 +74,7 @@ LILYGO T-Watch Ultra 是一款高性能智能手表开发模组，基于 ESP32-S
 - Radio-LR1121（Sub 1G + 2.4G LoRa）
 - Radio-SI4432（Sub 1G ISM）
 
-> 注意：如果串口没有消息输出，请检查 USB CDC ON Boot 是否设置为 Enabled。本库依赖于最新版 arduino-esp32 **V3.3.0-alpha1** 或更高版本。
+> 在工厂示例正常运行前，不要升级 LilyGoLib-ThirdParty 中提供的依赖库。如果串口没有消息输出，请检查 **USB CDC On Boot** 是否设置为 **Enabled**。本库依赖 arduino-esp32 **V3.3.0-alpha1** 或更高版本。
 
 ### T-Watch-Ultra 进入下载模式
 
@@ -81,48 +88,45 @@ LILYGO T-Watch Ultra 是一款高性能智能手表开发模组，基于 ESP32-S
 > 6. 按下 **RST** 退出下载模式
 
 ### 开发平台
-1. [Arduino IDE](https://www.arduino.cc/en/software)
-2. [Platform IO](https://platformio.org/)
-3. [ESP-IDF](https://www.espressif.com/zh-hans/products/sdks/esp-idf)
-4. [VS Code](https://code.visualstudio.com/)
-5. [Micropython](https://micropython.org/)
+1. [Arduino IDE](https://www.arduino.cc/en/software)，使用 Arduino-ESP32 3.3.0-alpha1 或更高版本
+2. [PlatformIO](https://platformio.org/)，使用独立的 [LilyGoLib-PlatformIO](https://github.com/Xinyuan-LilyGO/LilyGoLib-PlatformIO) 仓库和 Arduino-ESP32 2.0.17
 
 ## 视频
 
 ## 主要特点
 
-- ESP32-S3：16 MB Flash，8 MB PSRAM（Octal SPI），Wi-Fi + 蓝牙 5.0
-- 2.06 英寸 AMOLED（410×502，QSPI），CST9217 电容触摸
-- LoRa：SX1262（433~923MHz）/ SX1280（2.4GHz）可选
-- GNSS：MIA-M10Q 多星座定位，NFC：ST25R3916
-- BHI260AP AI 动作传感器，DRV2605 触觉反馈，MAX98357A 音频功放
-- AXP2101 电源管理，PCF85063A RTC，XL9555 IO 扩展，T3902 通话模块
-- 1100mAh 电池，MicroSD 卡扩展，USB Type-C
+- ESP32-S3：16 MB QSPI Flash，8 MB QSPI PSRAM，Wi-Fi + 蓝牙 5.0
+- 2.06 英寸 CO5300 AMOLED（410×502、600 nit、QSPI），CST9217 电容触摸
+- 可选 SX1262、SX1280、CC1101、LR1121 或 SI4432 射频模块
+- MIA-M10Q 多星座定位、ST25R3916 NFC、BHI260AP 智能传感器
+- T3902 PDM 麦克风、MAX98357A 音频功放、DRV2605 触觉反馈
+- AXP2101 电源管理、PCF85063A RTC、XL9555 IO 扩展、1100mAh 电池、最大 32GB FAT32 MicroSD 卡
 
 ## 产品参数
 
 | 组件 | 描述 |
 | :--: | :--: |
 | MCU | ESP32-S3 双核处理器 |
-| Flash | 16MB |
-| PSRAM | 8MB (Octal SPI) |
-| 屏幕 | 2.06 英寸 AMOLED (410×502) |
+| Flash | 16MB (QSPI) |
+| PSRAM | 8MB (QSPI) |
+| 屏幕 | 2.06 英寸 CO5300 AMOLED，410×502，600 nit，60000:1 对比度 (QSPI) |
 | 触摸 | CST9217 电容触摸屏 |
-| LoRa | SX1262 (433~923MHz) / SX1280 (2.4GHz) |
+| 射频模块选项 | SX1262 / SX1280 / CC1101 / LR1121 / SI4432 |
 | GNSS | MIA-M10Q 多星座定位 |
 | NFC | ST25R3916 |
 | AI 传感器 | BHI260AP 动作传感器 |
 | 音频 | MAX98357A 音频功放 |
+| 麦克风 | T3902 (PDM) |
 | 振动马达 | DRV2605 触觉反馈 |
 | 电源管理 | AXP2101 PMU |
 | RTC | PCF85063A 实时时钟 |
 | IO 扩展 | XL9555 (16个IO) |
-| 通话模块 | T3902 |
-| 存储 | MicroSD 卡扩展 |
-| 电池 | 1100mAh 锂电池 |
+| 存储 | MicroSD，最大 32GB (FAT32) |
+| 电池 | 3.7V 1100mAh 锂电池（4.07Wh） |
 | 无线 | Wi-Fi 802.11b/g/n + Bluetooth 5.0 |
-| USB | 1 × USB OTG (Type-C) |
-| 按键 | POWER + BOOT |
+| USB | 1 × USB-C，用于充电和烧录，不支持向外供电 |
+| 按键 | POWER（长按 1 秒开机/6 秒关机）+ BOOT（GPIO0） |
+| 显示屏工作温度 | -20℃~70℃ |
 | 尺寸 | 63.5×49×22mm |
 
 ## 电气参数
@@ -151,9 +155,12 @@ LILYGO T-Watch Ultra 是一款高性能智能手表开发模组，基于 ESP32-S
 | SPI SCK | 35 | ❌ |
 | SD CS | 21 | ❌ |
 | RTC (PCF85063A) INT | 1 | ❌ |
+| 触摸屏 INT | 12 | ❌ |
 | NFC (ST25R3916) CS | 4 | ❌ |
 | NFC (ST25R3916) INT | 5 | ❌ |
 | BHI260 INT | 8 | ❌ |
+| T3902 麦克风 SCK | 17 | ❌ |
+| T3902 麦克风 DATA | 18 | ❌ |
 | PCM 功放 (MAX98357A) BCLK | 9 | ❌ |
 | PCM 功放 (MAX98357A) WCLK | 10 | ❌ |
 | PCM 功放 (MAX98357A) DOUT | 11 | ❌ |
@@ -178,7 +185,7 @@ LILYGO T-Watch Ultra 是一款高性能智能手表开发模组，基于 ESP32-S
 
 ## 原理图
 
-* [T-Watch Ultra 原理图](https://github.com/Xinyuan-LilyGO/LilyGoLib/tree/master/docs/hardware/)
+* [T-Watch Ultra V1.0 原理图](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/schematic/T-Watch%20Ultra%20V1.0%20SCH%2025-07-24.pdf)
 
 ## 数据手册
 
@@ -207,7 +214,7 @@ LILYGO T-Watch Ultra 是一款高性能智能手表开发模组，基于 ESP32-S
   A. Ultra 版本配备了更大的 AMOLED 屏幕、AI 动作传感器、GNSS 多星座定位、NFC 功能，以及更大的电池容量，功能更加全面。
 
 * **Q. 如何开机和关机？**  
-  A. 按住 POWER 按键两秒开机，按住六秒关机。BOOT 按键用于进入下载模式。
+  A. 按住 POWER 按键 1 秒开机，按住 6 秒关机。BOOT 按键用于进入下载模式。
 
 * **Q. 支持哪些 GNSS 星座？**  
   A. MIA-M10Q 模块支持 GPS、GLONASS、Galileo、北斗等多重卫星系统。

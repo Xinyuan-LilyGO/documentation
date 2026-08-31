@@ -9,12 +9,12 @@ tags: K230, AIoT, LoRa, AMOLED, RISC-V
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-1.jpg', alt: 'T-Display K230 正面图' },
   { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-2.jpg', alt: 'T-Display K230 实物图' },
-  { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-cn.jpg', alt: 'T-Display K230 引脚图' }
+  { src: '/products/t-display-series/t-display-k230/index/image/t-display-k230-3.jpg', alt: 'T-Display K230 斜视图' }
 ]" />
 
 ## 概述
 
-T-Display K230 是基于嘉楠 K230 AI 芯片设计的高性能 AIoT 开发板，配备 4.1 英寸 AMOLED 屏幕（568×1232）和 GT9895 电容触摸。K230 搭载双核 RISC-V 处理器（大核 1.6GHz + 小核 0.8GHz）和约 1.6TOPS 算力的 NPU，内置 8Gb LPDDR4 内存。协处理器 ESP32-S3-R8 提供 Wi-Fi/蓝牙连接。板载 SX1262/SX1280 LoRa、以太网、HDMI 输出（1080P@30FPS）、3 路 MIPI CSI-2 摄像头接口和 3.5mm 音频接口，适用于 AI 推理、远程图像识别和物联网监控等场景。
+T-Display K230 是基于嘉楠 K230 AI 芯片设计的高性能 AIoT 开发板，配备 4.1 英寸 AMOLED 屏幕（568×1232）和 GT9895 电容触摸。K230 搭载双核 RISC-V 处理器（大核 1.6GHz + 小核 0.8GHz）和约 1.6TOPS 算力的 NPU，内置 1 GB LPDDR4 内存。协处理器 ESP32-S3-R8 提供 Wi-Fi/蓝牙连接。板载 SX1262/SX1280 LoRa、以太网、HDMI 输出（1080P@30FPS）、3 路 MIPI CSI-2 摄像头接口和 3.5mm 音频接口，适用于 AI 推理、远程图像识别和物联网监控等场景。
 
 <a href="/products/t-display-series/t-display-k230/k230/index.html?lang=zh" target="_blank" rel="noopener noreferrer">K230 40Pin 引脚查询工具</a>
 
@@ -88,7 +88,7 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 - K230 双核 RISC-V（1.6GHz + 0.8GHz），NPU 约 1.6TOPS
 - ESP32-S3-R8：16MB Flash，Wi-Fi + 蓝牙 5.0
 - 4.1 英寸 AMOLED（568×1232），GT9895 电容触摸
-- SX1262/SX1280 LoRa（433~923MHz），以太网，HDMI 1080P@30FPS
+- SX1262/SX1280 LoRa（433~923MHz），RTL8152B 百兆以太网，HDMI 1080P@30FPS
 - 3 路 MIPI CSI-2 摄像头接口，3.5mm 音频接口
 
 ## 产品参数
@@ -98,14 +98,14 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 | 主处理器 | K230 双核 RISC-V (1.6GHz + 0.8GHz) |
 | 协处理器 | ESP32-S3-R8 |
 | NPU | 约 1.6TOPS，支持 INT8/INT16 AI 推理 |
-| 内存 | 8Gb LPDDR4 |
+| 内存 | 1 GB LPDDR4 |
 | 存储 | 16MB Flash + TF 卡 |
 | 屏幕 | 4.1 英寸 AMOLED (568×1232)，2 lane MIPI DSI |
 | 触摸 | GT9895 电容触摸 |
 | 摄像头 | 3 路 MIPI CSI-2（最高 1路 4lane + 1路 2lane，1.5Gbps） |
 | 视频输出 | HDMI 1080P@30FPS |
 | LoRa | SX1262/SX1280（433~923MHz） |
-| 网络 | Wi-Fi 802.11b/g/n（ESP32-S3）+ 以太网 |
+| 网络 | Wi-Fi 802.11b/g/n（ESP32-S3）+ RTL8152B 百兆以太网 |
 | 蓝牙 | Bluetooth 5 (LE)（ESP32-S3） |
 | 音频 | 3.5mm 音频输出 + 麦克风输入 |
 | USB | 1 × 电源 USB + 1 × USB 2.0 OTG (Type-C) |
@@ -115,9 +115,19 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 | 电源 | 5V/500mA |
 | 尺寸 | 104×51×15.5mm |
 
+## 产品详情
+
+<img src="/products/t-display-series/t-display-k230/index/image/t-display-k230-specifications.jpg" alt="T-Display K230 产品规格图" width=100%>
+
 ## 引脚图
 
 <img src="/products/t-display-series/t-display-k230/index/image/t-display-k230-cn.jpg" alt="T-Display K230 引脚图" width=100%>
+
+<img src="/products/t-display-series/t-display-k230/index/image/t-display-k230-40pin.jpg" alt="T-Display K230 2 × 20Pin 扩展排针引脚图" width=100%>
+
+## 扩展板
+
+<img src="/products/t-display-series/t-display-k230/index/image/t-display-k230-keyboard-extension.jpg" alt="T-Display K230 键盘扩展板" width=100%>
 
 ## 尺寸图
 
