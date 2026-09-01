@@ -140,7 +140,7 @@ T-Echo Card is a compact, low-power IoT development board built around the **nRF
 
 ## Schematic
 
-* [T-Echo Card Schematic](https://github.com/Xinyuan-LilyGO/T-Echo-Card/tree/master/schematic)
+* [T-Echo Card V1.0 Schematic](https://github.com/Xinyuan-LilyGO/T-Echo-Card/blob/main/project/T-Echo-Lite-Card_V1.0.pdf)
 
 ## Datasheet
 

@@ -162,7 +162,7 @@ examples/
 
 ## Schematic
 
-* [T5-ePaper-S3 V2.4 Schematic](https://github.com/Xinyuan-LilyGO/LilyGo-EPD47/blob/esp32s3/schematic/T5-ePaper-S3-V2.4.pdf)
+* [T5-ePaper-S3 V2.4 Schematic](https://github.com/Xinyuan-LilyGO/LilyGo-EPD47/blob/esp32s3/schematic/Screen-4.7-S3-V2.4%2024-12-03.pdf)
 
 ## Datasheet
 

@@ -97,7 +97,7 @@ git clone https://github.com/Xinyuan-LilyGO/T-Dongle-S3.git
 
 ## Schematic
 
-- [T-Dongle-S3-Dual Schematic](https://github.com/Xinyuan-LilyGO/T-Dongle-S3/blob/main/schematic/T-Dongle-S3-DUAL.pdf)
+- [T-Dongle-S3-Dual Schematic](https://github.com/Xinyuan-LilyGO/T-Dongle-S3/blob/main/schematic/T-Dongle-DualS3.pdf)
 
 ## Datasheet
 

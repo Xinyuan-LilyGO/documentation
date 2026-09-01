@@ -125,7 +125,7 @@ T-SIM7600X 是一款基于 **ESP32-WROVER-B**（N4R8：4 MB Flash，8 MB PSRAM�
 
 ## 原理图
 
-* [T-SIM7600X 原理图](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/blob/master/schematic/T-SIM7600.pdf)
+* [T-SIM7600X V1.3 原理图](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/blob/main/schematic/esp32/T-SIM7600X-V1.3.pdf)
 
 ## 数据手册
 

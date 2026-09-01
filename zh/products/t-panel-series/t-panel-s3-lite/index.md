@@ -96,7 +96,7 @@ T-Panel S3 Lite 是 T-Panel S3 的精简版本，搭载单颗 ESP32-S3，配备 
 
 ## 原理图
 
-[T-Panel-Lite V1.0 原理图 (PDF)](https://github.com/Xinyuan-LilyGO/T-Panel-Lite/blob/master/project/T-Panel-Lite_V1.0.pdf)
+[T-Panel-Lite V1.0 原理图 (PDF)](https://github.com/Xinyuan-LilyGO/T-Panel-Lite/blob/main/project/T-Panel_Lite_V1.0.pdf)
 
 ## 数据手册
 

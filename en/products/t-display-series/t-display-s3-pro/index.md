@@ -115,7 +115,7 @@ T-Display S3 Pro is a high-performance development board based on **ESP32-S3R8**
 
 ## Schematic
 
-* [T-Display-S3-Pro Schematic](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/blob/main/schematic/T-Display-S3-Pro.pdf)
+* [T-Display-S3-Pro Schematic](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/blob/master/schematic/T-Display-Pro.pdf)
 
 ## Datasheet
 

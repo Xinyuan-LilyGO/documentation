@@ -126,7 +126,7 @@ TX-AH 模块非 OS 驱动：[taixin-nonos-driver](https://www.taixin-semi.com/up
 ## 数据手册
 
 * [ESP32-P4 文档](https://www.espressif.com/zh-hans/products/socs/esp32-p4)
-* [TX-AH 模块规格书](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯802.11ahTX-AH-Rx00P%20Series%20module%20technical%20specification_20231116174457.pdf)
+* [TX-AH 模块规格书](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/%E6%B3%B0%E8%8A%AF802.11ah%C2%A0TX-AH-Rx00P%20Series%20module%20technical%20specification_20231116174457.pdf)
 * [AT 指令开发指南](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯AH%20Module%20AT%20instruction%20development%20guide_20230524100503.pdf)
 * [频率设置说明](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯802.11AH%20Frequency%20setting%20description_20231130110312.pdf)
 * [硬件设计指南](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯AH%20Module%20hardware%20Design%20Guide_20230621170639.pdf)

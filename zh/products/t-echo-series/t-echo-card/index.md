@@ -140,7 +140,7 @@ T-Echo Card 是一款基于 **nRF52840** 的紧凑型低功耗 IoT 开发板，�
 
 ## 原理图
 
-* [T-Echo Card 原理图](https://github.com/Xinyuan-LilyGO/T-Echo-Card/tree/master/schematic)
+* [T-Echo Card V1.0 原理图](https://github.com/Xinyuan-LilyGO/T-Echo-Card/blob/main/project/T-Echo-Lite-Card_V1.0.pdf)
 
 ## 数据手册
 

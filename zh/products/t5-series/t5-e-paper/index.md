@@ -131,7 +131,7 @@ examples/
 
 ## 原理图
 
-* [T5-ePaper-S3-V2.4](https://github.com/Xinyuan-LilyGO/LilyGo-EPD47/blob/esp32s3/schematic/T5-ePaper-S3-V2.4.pdf)
+* [T5-ePaper-S3 V2.4 原理图](https://github.com/Xinyuan-LilyGO/LilyGo-EPD47/blob/esp32s3/schematic/Screen-4.7-S3-V2.4%2024-12-03.pdf)
 
 ## 数据手册
 

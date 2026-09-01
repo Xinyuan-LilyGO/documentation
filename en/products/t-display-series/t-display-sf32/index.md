@@ -101,8 +101,7 @@ After the build completes, run `uart_download.bat` and enter the device COM port
 
 ## Schematic
 
-* [T-Display SF32 V1.0 Schematic (2026-04-02)](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/hardware/T-Display%20SF32%20V1.0%2026-04-02.pdf)
-* [T-Display SF32 V1.0 Schematic (2026-05-11)](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/hardware/T-Display%20SF32%20V1.0%2026-05-11\(1\).PDF)
+* [T-Display SF32 V1.0 Schematic](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/hardware/T-Display%20SF32%20V1.0.PDF)
 * [T-SF32-Keyboard V1.0 Schematic](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/hardware/T-SF32-Keyboard%20V1.0.PDF)
 
 ## Datasheet

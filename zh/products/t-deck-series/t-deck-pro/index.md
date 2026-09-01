@@ -201,7 +201,7 @@ A7682E 为 LTE Cat1 模块，支持 LTE-FDD/GSM/GPRS/EDGE 无线通信，通过 
 
 ## 原理图
 
-* [T-DeckPro V1.0](https://github.com/Xinyuan-LilyGO/T-Deck-Pro/blob/master/hardware/T-Deckpro%2024-05-16/T-DeckPro%20V1.0%2024-05-16.pdf)
+* [T-DeckPro V1.0](https://github.com/Xinyuan-LilyGO/T-Deck-Pro/blob/master/hardware/T-Deckpro%20v1.0%2024-05-16/T-DeckPro%20V1.0%2024-05-16.pdf)
 * [T-DeckPro V1.1](https://github.com/Xinyuan-LilyGO/T-Deck-Pro/tree/HD-V2-250915/hardware/T-Deckpro%20v1.1%2025-09-15)
 
 ## 数据手册

@@ -184,7 +184,7 @@ T-Connect-Pro 是一款基于 ESP32-S3 的多功能工业级控制与通信模�
 ## 原理图
 
 * [T-Connect-Pro_V1.0](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_V1.0.pdf)
-* [T-Connect-Pro_V1.1](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_V1.1.pdf)
+* [T-Connect-Pro_V1.1](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_v1.1.pdf)
 
 ## 数据手册
 

@@ -140,7 +140,7 @@ T-Halow 有两个不同版本，主要在配对方式上有所区别：
 ## 数据手册
 
 * [频率设置说明](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯802.11AH%20Frequency%20setting%20description_20231130110312.pdf)
-* [TX-AH-Rx00P 系列模块技术规格书](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯802.11ahTX-AH-Rx00P%20Series%20module%20technical%20specification_20231116174457.pdf)
+* [TX-AH-Rx00P 系列模块技术规格书](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/%E6%B3%B0%E8%8A%AF802.11ah%C2%A0TX-AH-Rx00P%20Series%20module%20technical%20specification_20231116174457.pdf)
 * [TX-AH-Rx00P 桥接说明](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯AH%20Bridge%20instructions_20230908122753.pdf)
 * [AH 模块 AT 指令开发指南](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯AH%20Module%20AT%20instruction%20development%20guide_20230524100503.pdf)
 * [AH 模块开发板说明](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯AH%20Module%20development%20board%20instructions_20230621205234.pdf)

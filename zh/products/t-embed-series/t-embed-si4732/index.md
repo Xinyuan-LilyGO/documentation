@@ -110,14 +110,12 @@ LILYGO T-Embed SI4732 这是基于基础款T-Embed 增加SI4732扩展模块的�
 
 ## 原理图
 
-* [T-Embed-SI4732_V1.0](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/T-Embed-CC1101%20V1.0%2024-07-29.pdf)
+* [T-Embed-SI4732 V1.0 原理图](https://github.com/Xinyuan-LilyGO/T-Embed/blob/main/schematic/T-Embed-SI4732.pdf)
 
 ## 数据手册
 
-* [SI4732](https://github.com/Xinyuan-LilyGO/T-Embed/blob/main/hardware/SI4732.pdf)
 * [BQ25896](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq25896.pdf)
 * [BQ27220](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq27220_datasheet.pdf)
-* [ST7789V](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/ST7789V.pdf)
 
 ## 软件开发
 

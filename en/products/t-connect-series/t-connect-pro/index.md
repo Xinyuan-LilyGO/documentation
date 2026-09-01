@@ -137,7 +137,7 @@ T-Connect Pro is a 3-layer stackable industrial-grade module based on **ESP32-S3
 ## Schematic
 
 * [T-Connect-Pro_V1.0 Schematic](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_V1.0.pdf)
-* [T-Connect-Pro_V1.1 Schematic](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_V1.1.pdf)
+* [T-Connect-Pro_V1.1 Schematic](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/project/T-Connect-Pro_v1.1.pdf)
 
 ## Datasheet
 

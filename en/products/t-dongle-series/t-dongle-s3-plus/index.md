@@ -112,7 +112,7 @@ The encrypted version may include an ATECC508A. To prevent the chip from being l
 
 ## Schematic
 
-- [T-Dongle-S3-Plus Schematic](https://github.com/Xinyuan-LilyGO/T-Dongle-S3/blob/main/schematic/T-Dongle-S3-PLUS.pdf)
+- [T-Dongle-S3-Plus Schematic](https://github.com/Xinyuan-LilyGO/T-Dongle-S3/blob/main/schematic/T-Dongle-S3-Plus.pdf)
 
 ## Datasheet
 

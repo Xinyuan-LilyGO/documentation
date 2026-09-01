@@ -135,9 +135,8 @@ LILYGO T-QT-C6 是基于 ESP32-C6-MINI-1U 微控制器的智能可穿戴开发�
 
 ## 原理图
 
-* [T-QT-C6 V1.0 原理图](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/master/project/T-QT-C6_V1.0)
-* [T-QT-C6 V1.1 原理图](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/master/project/T-QT-C6_V1.1)
-* [T-QT-C6 V1.2 原理图](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/master/project/T-QT-C6_V1.2)
+* [T-QT-C6 电池板 V1.1 原理图](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/project/T-QT-C6_V1.2/T-QT-C6_Battery_V1.1.pdf)
+* [T-QT-C6 MCU V1.2 原理图](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/project/T-QT-C6_V1.2/T-QT-C6_MCU_V1.2.pdf)
 
 ## 数据手册
 

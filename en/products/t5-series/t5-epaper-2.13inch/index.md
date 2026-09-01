@@ -95,8 +95,7 @@ LILYGO T5 ePaper 2.13inch is a compact ultra-low-power development board combini
 
 ## Schematic
 
-- [T5V2.3 Schematic PDF (GitHub)](https://github.com/Xinyuan-LilyGO/LilyGo-T5-Epaper-Series/blob/master/schematic/T5V2.3.pdf)
-- [T5V2.4 Schematic PDF (GitHub)](https://github.com/Xinyuan-LilyGO/LilyGo-T5-Epaper-Series/blob/master/schematic/T5V2.4.pdf)
+- [T5 2.13-inch Schematic PDF (GitHub)](https://github.com/Xinyuan-LilyGO/LilyGo-T5-Epaper-Series/blob/master/schematic/T5_2.13.pdf)
 
 ## Datasheet
 

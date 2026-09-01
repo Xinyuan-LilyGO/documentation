@@ -130,9 +130,8 @@ T-QT C6 is a compact smart wearable development kit based on **ESP32-C6-MINI-1U*
 
 ## Schematic
 
-* [T-QT-C6 V1.0 Schematic](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/project/T-QT-C6_V1.0)
-* [T-QT-C6 V1.1 Schematic](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/project/T-QT-C6_V1.1)
-* [T-QT-C6 V1.2 Schematic](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/project/T-QT-C6_V1.2)
+* [T-QT-C6 Battery V1.1 Schematic](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/project/T-QT-C6_V1.2/T-QT-C6_Battery_V1.1.pdf)
+* [T-QT-C6 MCU V1.2 Schematic](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/project/T-QT-C6_V1.2/T-QT-C6_MCU_V1.2.pdf)
 
 ## Datasheet
 

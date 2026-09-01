@@ -175,7 +175,7 @@ T-BEAM-SUPREME V3.0 是一款高性能多功能的物联网开发板，基于 ES
 
 ## 原理图
 
-* [T-Beam Supreme 原理图](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/LilyGo_T-BeamS3Supreme.pdf)
+* [T-Beam Supreme V3.1 原理图](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/T-Beam-S3-Supreme/T-Beam-S3-Supreme-V3.1.pdf)
 
 ## 数据手册
 

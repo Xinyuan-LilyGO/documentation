@@ -101,8 +101,7 @@ build_t-display-sf32_hcpu\uart_download.bat
 
 ## 原理图
 
-* [T-Display SF32 V1.0 原理图（2026-04-02）](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/hardware/T-Display%20SF32%20V1.0%2026-04-02.pdf)
-* [T-Display SF32 V1.0 原理图（2026-05-11）](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/hardware/T-Display%20SF32%20V1.0%2026-05-11\(1\).PDF)
+* [T-Display SF32 V1.0 原理图](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/hardware/T-Display%20SF32%20V1.0.PDF)
 * [T-SF32-Keyboard V1.0 原理图](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/hardware/T-SF32-Keyboard%20V1.0.PDF)
 
 ## 数据手册

@@ -121,7 +121,7 @@ tags: ESP32-S3, AMOLED, USB OTG, IPS, Capacitive Touch
 
 ## 原理图
 
-* [T-Display-S3-Pro 原理图](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/blob/main/schematic/T-Display-S3-Pro.pdf)
+* [T-Display-S3-Pro 原理图](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/blob/master/schematic/T-Display-Pro.pdf)
 * [T-Display-S3-Pro 背板设计文件](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/dimensions/BackCover)
 
 ## 数据手册

@@ -197,7 +197,7 @@ Suitable for smart hardware, environmental monitoring, LoRa long-range communica
 
 ## Schematic
 
-* [T-Beam Supreme Schematic PDF](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/LilyGo_T-BeamS3Supreme.pdf)
+* [T-Beam Supreme V3.1 Schematic PDF](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/T-Beam-S3-Supreme/T-Beam-S3-Supreme-V3.1.pdf)
 
 ## Datasheet
 

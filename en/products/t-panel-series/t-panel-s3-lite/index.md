@@ -96,7 +96,7 @@ Display SPI init (via XL9535):
 
 ## Schematic
 
-[T-Panel-Lite V1.0 Schematic (PDF)](https://github.com/Xinyuan-LilyGO/T-Panel-Lite/blob/master/project/T-Panel-Lite_V1.0.pdf)
+[T-Panel-Lite V1.0 Schematic (PDF)](https://github.com/Xinyuan-LilyGO/T-Panel-Lite/blob/main/project/T-Panel_Lite_V1.0.pdf)
 
 ## Datasheet
 
