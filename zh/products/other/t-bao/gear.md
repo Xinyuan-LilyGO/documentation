@@ -17,22 +17,22 @@ T-Bao Gear 是 T-Bao AIoT 终端的智能小车扩展版本，将 **K210** RISC-
 
 | 示例 | PlatformIO / Arduino | 功能说明 |
 | :--: | :-----------------: | :------- |
-| [DRV8833](https://github.com/Xinyuan-LilyGO/T-Bao/tree/master/example/DRV8833) | ✓ | 直流电机基础驱动，串口指令控制 |
-| [ES_9051](https://github.com/Xinyuan-LilyGO/T-Bao/tree/master/example/ES_9051) | ✓ | 舵机精确角度控制（0–180°） |
-| [Seeking](https://github.com/Xinyuan-LilyGO/T-Bao/tree/master/example/Seeking) | ✓ | 自动人脸追踪，丢失目标超时搜寻 |
-| [Emotion](https://github.com/Xinyuan-LilyGO/T-Bao/tree/master/example/Emotion) | ✓ | 随机表情动画 — 小车随机播放表情动画和运动 |
-| [Factory](https://github.com/Xinyuan-LilyGO/T-Bao/tree/master/example/Factory) | ✓ | 多模式集成：人脸跟随 / 物体识别 / 遥控 |
-| [Remote](https://github.com/Xinyuan-LilyGO/T-Bao/tree/master/example/Remote) | ✓ | WiFi Web 远程遥控驾驶 |
+| [DRV8833](https://github.com/Xinyuan-LilyGO/T-Bao/tree/main/example/drv8833) | ✓ | 直流电机基础驱动，串口指令控制 |
+| [ES_9051](https://github.com/Xinyuan-LilyGO/T-Bao/tree/main/example/servo) | ✓ | 舵机精确角度控制（0–180°） |
+| [Seeking](https://github.com/Xinyuan-LilyGO/T-Bao/tree/main/example/seeking) | ✓ | 自动人脸追踪，丢失目标超时搜寻 |
+| [Emotion](https://github.com/Xinyuan-LilyGO/T-Bao/tree/main/example/emotion) | ✓ | 随机表情动画 — 小车随机播放表情动画和运动 |
+| [Factory](https://github.com/Xinyuan-LilyGO/T-Bao/tree/main/example/factory) | ✓ | 多模式集成：人脸跟随 / 物体识别 / 遥控 |
+| [Remote](https://github.com/Xinyuan-LilyGO/T-Bao/tree/main/example/remote) | ✓ | WiFi Web 远程遥控驾驶 |
 
 ### 固件下载
 
 | 示例 | ESP32 固件 | K210 固件 | K210 模型 | 说明 |
 | :--: | :--------: | :-------: | :-------: | :--- |
-| DRV8833 | [firmware_lilygo-t-bao-esp32-DRV8833](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/firmware_lilygo-t-bao-esp32-DRV8833.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | — | 串口控制 |
-| Seeking | [firmware_lilygo-t-bao-esp32-Seeking](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/firmware_lilygo-t-bao-esp32-Seeking.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | [face_model_at_0x300000](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/model/face_model_at_0x300000.kfpkg) | 人脸追踪 + 自动搜寻 |
-| Emotion | [firmware_lilygo-t-bao-esp32-Emotion](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/firmware_lilygo-t-bao-esp32-Emotion.bin) | ⚠️ [maixpy_v0.6.2_87_g37c84a3e7](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/k210/maixpy_v0.6.2_87_g37c84a3e7.bin) | — | K210 固件与其他示例不同 |
-| Factory | [firmware_lilygo-t-bao-esp32-Factory](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/firmware_lilygo-t-bao-esp32-Factory.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | [face_model_at_0x300000](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/model/face_model_at_0x300000.kfpkg) | 多模式集成 |
-| Remote | [firmware_lilygo-t-bao-esp32-Remote](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/firmware_lilygo-t-bao-esp32-Remote.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | — | 仅需 ESP32 固件 |
+| DRV8833 | [firmware_lilygo-t-bao-esp32-DRV8833](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/esp32/firmware_lilygo-t-bao-esp32_drv8833.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | — | 串口控制 |
+| Seeking | [firmware_lilygo-t-bao-esp32-Seeking](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/esp32/firmware_lilygo-t-bao-esp32_seeking.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | [face_model_at_0x300000](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/model/face_model_at_0x300000.kfpkg) | 人脸追踪 + 自动搜寻 |
+| Emotion | [firmware_lilygo-t-bao-esp32-Emotion](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/esp32/firmware_lilygo-t-bao-esp32_emotion.bin) | ⚠️ [maixpy_v0.6.2_87_g37c84a3e7](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/k210/maixpy_v0.6.2_87_g37c84a3e7.bin) | — | K210 固件与其他示例不同 |
+| Factory | [firmware_lilygo-t-bao-esp32-Factory](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/esp32/firmware_lilygo-t-bao-esp32_factory.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | [face_model_at_0x300000](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/model/face_model_at_0x300000.kfpkg) | 多模式集成 |
+| Remote | 暂无 | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | — | 仅需 ESP32 固件 |
 
 ### K210 固件烧录
 
@@ -130,10 +130,10 @@ T-Bao Gear 是 T-Bao AIoT 终端的智能小车扩展版本，将 **K210** RISC-
 
 ## 数据手册
 
-* [K210 数据手册](https://canaan.io/product/kendryteai)
-* [ESP32 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
-* [OV2640 数据手册](https://www.ovt.com/sensors/OV2640)
-* [DRV8833 数据手册](https://www.ti.com/product/DRV8833)
+* [K210 数据手册](https://www.kendryte.com/k230/en/main/00_hardware/K230_datasheet.html)
+* [ESP32 数据手册](/datasheet/esp32_datasheet_en.pdf)
+* [OV2640 数据手册](/datasheet/OV2640-DATASHEET.pdf)
+* [DRV8833 数据手册](/datasheet/drv8833.pdf)
 
 ## 软件开发
 

@@ -135,11 +135,11 @@ XL9535 扩展引脚（I2C 地址 0x20）：
 
 ## 数据手册
 
-- [ST7701S 显示控制器](https://github.com/Xinyuan-LilyGO/T-Panel/blob/master/docs/ST7701S_SPEC_V1.4.pdf)
-- [YDP395BT001 显示面板](https://github.com/Xinyuan-LilyGO/T-Panel/blob/master/docs/YDP395BT001-V2.pdf)
-- [CST3240 触摸控制器](https://github.com/Xinyuan-LilyGO/T-Panel/blob/master/docs/HYNITRON-CST3240_V1.0.pdf)
-- [XL9535 IO 扩展芯片](https://github.com/Xinyuan-LilyGO/T-Panel/blob/master/docs/XL9535.pdf)
-- [ESP32-H2-MINI-1](https://www.espressif.com/sites/default/files/documentation/esp32-h2-mini-1_mini-1u_datasheet_en.pdf)
+- [ST7701S 显示控制器](/datasheet/ST7701S_SPEC_V1.4.pdf)
+- [YDP395BT001 显示面板](/datasheet/YDP395BT001-V2.pdf)
+- [CST3240 触摸控制器](/datasheet/HYNITRON-CST3240_V1.0.pdf)
+- [XL9535 IO 扩展芯片](/datasheet/XL9535.pdf)
+- [ESP32-H2-MINI-1](/datasheet/esp32-h2-mini-1_mini-1u_datasheet_en.pdf)
 
 ## 软件开发
 

@@ -100,8 +100,8 @@ T-Panel S3 Lite 是 T-Panel S3 的精简版本，搭载单颗 ESP32-S3，配备 
 
 ## 数据手册
 
-- [ST7701S 显示控制器](https://github.com/Xinyuan-LilyGO/T-Panel-Lite/blob/master/docs/ST7701S_SPEC_V1.4.pdf)
-- [YDP395BT001 显示面板](https://github.com/Xinyuan-LilyGO/T-Panel-Lite/blob/master/docs/YDP395BT001-V2.pdf)
+- [ST7701S 显示控制器](/datasheet/ST7701S_SPEC_V1.4.pdf)
+- [YDP395BT001 显示面板](/datasheet/YDP395BT001-V2.pdf)
 
 ## 软件开发
 

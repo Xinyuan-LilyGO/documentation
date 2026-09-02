@@ -23,8 +23,6 @@ T-Display S3 AMOLED 是一款基于 ESP32-S3 微控制器的高集成度开发�
 | 示例 | PlatformIO/Arduino | ESP-IDF | 描述 |
 | :------ | :----------------: | :-----: | :---------- |
 | [Original Test](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/Original_Test) | ✓ | | DO0143 出厂测试 |
-| [Original_Test_H0175Y003AM](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/Original_Test_H0175Y003AM) | ✓ | | H0175 出厂测试 |
-| [Original_Test_DO0143FMST10](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/Original_Test_DO0143FMST10) | ✓ | | DO0143FMST10 出厂测试 |
 | [GFX](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/GFX) | ✓ | | GFX 图形库示例 |
 | [FT3168](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/FT3168) | ✓ | | 触摸示例 |
 | [SY6970](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/SY6970) | ✓ | | 电源管理示例 |
@@ -32,8 +30,6 @@ T-Display S3 AMOLED 是一款基于 ESP32-S3 微控制器的高集成度开发�
 | [Light Sleep Wake Up](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/Light_Sleep_Wake_Up) | ✓ | | 轻睡眠唤醒 |
 | [Deep Sleep Wake Up](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/Deep_Sleep_Wake_Up) | ✓ | | 深度睡眠唤醒 |
 | [SD](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/SD) | ✓ | | SD 卡读写 |
-| [iic_scan](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/iic_scan) | | ✓ | I2C 设备扫描 |
-| [screen_touch_lvgl_9](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/screen_touch_lvgl_9) | | ✓ | LVGL 触摸示例 |
 
 ### PlatformIO
 1. 安装 [Visual Studio Code](https://code.visualstudio.com/) 并安装 "PlatformIO IDE" 扩展，安装后重启。
@@ -112,11 +108,11 @@ T-Display S3 AMOLED 是一款基于 ESP32-S3 微控制器的高集成度开发�
 
 ## 数据手册
 
-* [SH8601 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/blob/main/information/SH8601Z.pdf)
-* [FT3168 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/blob/main/information/)
-* [PCF8563 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/blob/main/information/PCF8563.pdf)
-* [SY6970 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/blob/main/information/AN_SY6970.pdf)
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [SH8601 Datasheet](/datasheet/SH8601Z.pdf)
+* [FT3168 Datasheet](/datasheet/FT3168.pdf)
+* [PCF8563 Datasheet](/datasheet/PCF8563.pdf)
+* [SY6970 Datasheet](/datasheet/AN_SY6970.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## 软件开发
 

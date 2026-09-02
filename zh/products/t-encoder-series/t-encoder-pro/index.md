@@ -140,10 +140,10 @@ LILYGO T-Encoder-Pro 是一款配备 AMOLED 触摸屏的智能控制旋钮开发
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [CHSC5816 Datasheet](https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/information/DS_CHSC5816_V1.1.5.pdf)
-* [CHSC5816 Application Note](https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/information/CHSC5816-ApplicationDoc_US_V04.pdf)
-* [DXQ120MYB2416A Datasheet](https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/information/DXQ120MYB2416A.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [CHSC5816 Datasheet](/datasheet/DS_CHSC5816_V1.1.5.pdf)
+* [CHSC5816 Application Note](/datasheet/CHSC5816-ApplicationDoc_US_V04.pdf)
+* [DXQ120MYB2416A Datasheet](/datasheet/DXQ120MYB2416A.pdf)
 
 ## 软件开发
 

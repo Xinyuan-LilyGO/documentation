@@ -139,9 +139,9 @@ LILYGO T-Display-AMOLED-Lite 是一款基于 **ESP32-S3R8**（双核 LX7，240 M
 
 ## 数据手册
 
-* [ESP32-S3 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SH8501B0 数据手册](https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series/blob/master/datasheet/SH8501B0%20DataSheet.pdf)
-* [AXP2101 数据手册](https://github.com/Xinyuan-LilyGO/XPowersLib/blob/master/datasheet/AXP2101_Datasheet_V1.0_en.pdf)
+* [ESP32-S3 数据手册](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SH8501B0 数据手册](/datasheet/SH8501B0%20DataSheet.pdf)
+* [AXP2101 数据手册](/datasheet/AXP2101_Datasheet_V1.4_en.pdf)
 * CHSC5816 触摸控制器
 * CM32181A3OP 环境光传感器
 

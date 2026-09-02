@@ -15,7 +15,7 @@ tags: T-Circle-S3, LCD, ESP32-S3, Audio
 
 LILYGO T-Circle S3 is a versatile development board based on **ESP32-S3-R8** (16 MB Flash, 8 MB PSRAM). Integrates a **0.75-inch GC9D01N TFT LCD** (160 × 160) circular screen with **CST816D** capacitive touch, **MAX98357A** I2S speaker, **MP34DT05-A** PDM microphone (V1.1) / **MSM261S4030H0R** I2S microphone (V1.0), and **APA102** LED control interface. Connects to external devices via 2 × 4-pin expansion IO interface and USB Type-C. Suitable for IoT terminals, smart wearable devices, and embedded audio visualization projects.
 
-> **Note**: T-Circle S3 is the ESP32-S3 version. For the ESP32 version, see [T-Circle](https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Circle/T-Circle.html).
+> **Note**: T-Circle S3 is the ESP32-S3 version. For the ESP32 version, see [T-Circle](../t-circle/index.md).
 
 ## Quick Start
 
@@ -115,9 +115,9 @@ LILYGO T-Circle S3 is a versatile development board based on **ESP32-S3-R8** (16
 
 ## Datasheet
 
-* [GC9D01N](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/information/GC9D01N.pdf)
-* [MAX98357A](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/information/MAX98357AETE+T.pdf)
-* [MP34DT05-A](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/information/mp34dt05-a.pdf)
+* [GC9D01N](/datasheet/GC9D01N.pdf)
+* [MAX98357A](/datasheet/MAX98357AETE+T.pdf)
+* [MP34DT05-A](/datasheet/mp34dt05-a.pdf)
 
 ## Software Development
 
@@ -125,7 +125,7 @@ LILYGO T-Circle S3 is a versatile development board based on **ESP32-S3-R8** (16
 
 ### Dependent Libraries
 
-* [Arduino_DriveBus-1.1.16](https://github.com/Xk-w/Arduino_DriveBus)
+* [Arduino_DriveBus-1.1.16](https://github.com/Llgok/Arduino_DriveBus)
 * [Arduino_GFX-1.3.7](https://github.com/moononournation/Arduino_GFX)
 * [ESP32-audioI2S-3.0.6](https://github.com/schreibfaul1/ESP32-audioI2S)
 * [FastLED-3.6.0](https://github.com/FastLED/FastLED)

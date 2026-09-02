@@ -15,7 +15,7 @@ tags: T-Circle, LCD, ESP32
 
 LILYGO T-Circle is a circular screen development board based on **ESP32**. It features a **0.75-inch GC9D01N TFT LCD** circular display with 160 × 160 resolution and 262K color support, equipped with **CST816D** capacitive touch chip for precise touch interaction. The hardware connects to external devices through 12 pins (including 3V3 power supply, SPI interface MOSI/SCK/CS, I2C communication SDA/SCL, and BLE enable pin BLEEN), compatible with development frameworks like Arduino. Its compact design integrates high-precision display, touch control, and low-power communication functions, suitable for smart watches, IoT device interfaces, or prototype development of micro embedded systems.
 
-> **Note**: T-Circle is the ESP32 version. For the ESP32-S3 version, see [T-Circle S3](https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Circle-S3/T-Circle-S3.html).
+> **Note**: T-Circle is the ESP32 version. For the ESP32-S3 version, see [T-Circle S3](../t-circle-s3/index.md).
 
 ## Quick Start
 
@@ -96,7 +96,7 @@ LILYGO T-Circle is a circular screen development board based on **ESP32**. It fe
 
 ## Datasheet
 
-* [GC9D01N](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/information/GC9D01N.pdf)
+* [GC9D01N](/datasheet/GC9D01N.pdf)
 
 ## Software Development
 
@@ -104,7 +104,7 @@ LILYGO T-Circle is a circular screen development board based on **ESP32**. It fe
 
 ### Dependent Libraries
 
-* [Arduino_DriveBus-1.1.16](https://github.com/Xk-w/Arduino_DriveBus)
+* [Arduino_DriveBus-1.1.16](https://github.com/Llgok/Arduino_DriveBus)
 * [Arduino_GFX-1.3.7](https://github.com/moononournation/Arduino_GFX)
 * [FastLED-3.6.0](https://github.com/FastLED/FastLED)
 

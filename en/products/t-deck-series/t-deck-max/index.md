@@ -205,10 +205,10 @@ Full pin map: [pinmap](https://github.com/Xinyuan-LilyGO/T-Deck-MAX/blob/master/
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SX1262 Datasheet](https://semtech.com/products/wireless-rf/lora-connect/sx1262)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
 * [A7682E Product Page](https://en.simcom.com/product/A7682E.html)
-* [BHI260AP Datasheet](https://www.bosch-sensortec.com/products/smart-sensor-systems/bhi260ap/)
+* [BHI260AP Datasheet](/datasheet/bst-bhi260ap-ds000.pdf)
 
 ## Software Libraries
 

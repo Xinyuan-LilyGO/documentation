@@ -101,19 +101,20 @@ After the build completes, run `uart_download.bat` and enter the device COM port
 
 ## Schematic
 
-* [T-Display SF32 V1.0 Schematic](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/hardware/T-Display%20SF32%20V1.0.PDF)
+* [T-Display SF32 V1.0 Schematic (2026-04-02)](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/hardware/T-Display%20SF32%20V1.0.PDF)
+* [T-Display SF32 V1.0 Schematic (2026-05-11)](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/hardware/T-Display%20SF32%20V1.0.PDF)
 * [T-SF32-Keyboard V1.0 Schematic](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/hardware/T-SF32-Keyboard%20V1.0.PDF)
 
 ## Datasheet
 
-* [SF32LB52X Chip Spec](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/DS0052-SF32LB52X-芯片技术规格书%20V0p1.pdf)
-* [SF32LB52X User Manual](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/UM5201-SF32LB52x-用户手册%20V0p8p5.pdf)
-* [L76K GNSS Datasheet (keyboard expansion module)](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/C2916234_卫星定位模块_L76KB-A58_规格书_WJ417768.PDF)
-* [BME280 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/BME280.pdf)
-* [SGM41562B Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/C5153801_电池管理_SGM41562BXG-TR_规格书_SGMICRO\(圣邦微\)电池管理规格书.PDF)
-* [AW86224 Vibration Motor Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/AW86224.pdf)
-* [AW21009 LED Driver Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/AW21009QNR.pdf)
-* [XL9555 IO Expander Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-SF32/blob/master/doc/xl9555.pdf)
+* [SF32LB52X Chip Spec](/datasheet/DS0052-SF32LB52X-%E8%8A%AF%E7%89%87%E6%8A%80%E6%9C%AF%E8%A7%84%E6%A0%BC%E4%B9%A6%20V0p1.pdf)
+* [SF32LB52X User Manual](/datasheet/UM5201-SF32LB52x-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%20V0p8p5.pdf)
+* [L76K GNSS Datasheet (keyboard expansion module)](/datasheet/L76KB-A58.pdf)
+* [BME280 Datasheet](/datasheet/BME280.pdf)
+* [SGM41562B Datasheet](/datasheet/C5153801_%E7%94%B5%E6%B1%A0%E7%AE%A1%E7%90%86_SGM41562BXG-TR_%E8%A7%84%E6%A0%BC%E4%B9%A6_SGMICRO%28%E5%9C%A3%E9%82%A6%E5%BE%AE%29%E7%94%B5%E6%B1%A0%E7%AE%A1%E7%90%86%E8%A7%84%E6%A0%BC%E4%B9%A6.PDF)
+* [AW86224 Vibration Motor Datasheet](/datasheet/AW86224.pdf)
+* [AW21009 LED Driver Datasheet](/datasheet/AW21009QNR.pdf)
+* [XL9555 IO Expander Datasheet](/datasheet/xl9555.pdf)
 
 ## Software Libraries
 

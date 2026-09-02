@@ -26,13 +26,13 @@ LILYGO T-Display Bar 是一款基于 ESP32-S3R8 的高集成嵌入式智能显�
 | [GFX](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples) | ✓ | 图形库适配示例 |
 | [LVGL_Example](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/LVGL_Example) | ✓ | LVGL 图形界面示例 |
 | [WIFI_Config](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/WIFI_Config) | ✓ | Wi-Fi 配置示例 |
-| [BHI260AP](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/BHI260AP) | ✓ | 六轴 IMU 传感器示例 |
-| [BHI260AP_StepCounter](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/BHI260AP_StepCounter) | ✓ | 步数计数示例 |
-| [BQ27220](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/BQ27220) | ✓ | 电量监测示例 |
-| [BQ25896](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/BQ25896) | ✓ | 电源管理芯片示例 |
-| [RTC](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/RTC) | ✓ | PCF8563 实时时钟示例 |
-| [SD_Card](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/SD_Card) | ✓ | SD 卡读写示例 |
-| [Sleep_Mode](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/Sleep_Mode) | ✓ | ESP32-S3 睡眠模式示例 |
+| [BHI260AP](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/Unit_Test/BHI260AP) | ✓ | 六轴 IMU 传感器示例 |
+| [BHI260AP_StepCounter](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/Unit_Test/BHI260AP_StepCounter) | ✓ | 步数计数示例 |
+| [BQ27220](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/Unit_Test/BQ27220) | ✓ | 电量监测示例 |
+| [BQ25896](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/Unit_Test/BQ25896) | ✓ | 电源管理芯片示例 |
+| [RTC](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/Unit_Test/RTC) | ✓ | PCF8563 实时时钟示例 |
+| [SD_Card](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/Unit_Test/SD_Card) | ✓ | SD 卡读写示例 |
+| [Sleep_Mode](https://github.com/Xinyuan-LilyGO/T-Display-Bar/tree/master/examples/Unit_Test/Sleep_Mode) | ✓ | ESP32-S3 睡眠模式示例 |
 
 ### PlatformIO
 
@@ -131,8 +131,8 @@ LILYGO T-Display Bar 是一款基于 ESP32-S3R8 的高集成嵌入式智能显�
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [BHI260AP Datasheet](https://www.bosch-sensortec.com/products/smart-sensor-systems/bhi260ap/)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [BHI260AP Datasheet](/datasheet/bst-bhi260ap-ds000.pdf)
 
 ## 软件开发
 

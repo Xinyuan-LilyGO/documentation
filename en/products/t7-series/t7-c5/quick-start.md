@@ -12,7 +12,7 @@ show_source: false
 1. Install [VS Code](https://code.visualstudio.com/) with the **PlatformIO IDE** extension
 2. Clone the repository:
    ```bash
-   git clone https://github.com/Xinyuan-LilyGO/LilyGo-T7-C5.git
+   git clone https://github.com/Xinyuan-LilyGO/T7-C5.git
    ```
 3. Open the project and select the environment in `platformio.ini`
 4. Click **✓** to build, connect via USB-C, then click **→** to upload

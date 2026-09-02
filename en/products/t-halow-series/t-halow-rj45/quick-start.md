@@ -18,7 +18,7 @@ T-HaLow RJ45 combines **Wi-Fi HaLow (802.11ah)** with a wired **Ethernet RJ45** 
 1. Install [VS Code](https://code.visualstudio.com/) and the **PlatformIO IDE** extension
 2. Clone the repository:
    ```bash
-   git clone https://github.com/Xinyuan-LilyGO/LilyGO-T-Halow.git
+   git clone https://github.com/Xinyuan-LilyGO/T-Halow.git
    ```
 3. Open `platformio.ini` and select the `T-HaLow-RJ45` environment
 4. Click **✓** to build, connect via USB, click **→** to upload

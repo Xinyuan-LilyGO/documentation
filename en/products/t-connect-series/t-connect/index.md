@@ -115,7 +115,7 @@ T-Connect is an industrial-grade multi-protocol communication board based on **E
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## Software Development
 
@@ -124,7 +124,7 @@ T-Connect is an industrial-grade multi-protocol communication board based on **E
 ### Dependent Libraries
 
 * [FastLED](https://github.com/FastLED/FastLED)
-* [ESP32TWAI](https://github.com/esp32/esp-idf/tree/master/examples/protocols/twai)
+* [ESP32TWAI](https://github.com/espressif/esp-idf/tree/master/examples/peripherals/twai)
 
 ## FAQ
 

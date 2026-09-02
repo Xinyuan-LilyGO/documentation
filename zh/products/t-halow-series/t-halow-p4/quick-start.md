@@ -16,7 +16,7 @@ T-HaLow P4 将 **ESP32-P4** 高性能应用处理器与 **Wi-Fi HaLow（802.11ah
 1. 安装 [ESP-IDF（ESP32-P4）](https://docs.espressif.com/projects/esp-idf/en/latest/esp32p4/get-started/)
 2. 克隆仓库：
    ```bash
-   git clone https://github.com/Xinyuan-LilyGO/LilyGO-T-Halow.git
+   git clone https://github.com/Xinyuan-LilyGO/T-Halow.git
    ```
 3. 进入示例目录并编译：
    ```bash

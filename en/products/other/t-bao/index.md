@@ -112,8 +112,8 @@ Built-in **MAX98357A** I2S digital power amplifier, **MSM261S** high-sensitivity
 
 ## Datasheet
 
-* [K210 Datasheet](https://canaan.io/product/kendryteai)
-* [OV2640 Datasheet](https://www.ovt.com/sensors/OV2640)
+* [K210 Datasheet](https://www.kendryte.com/k230/en/main/00_hardware/K230_datasheet.html)
+* [OV2640 Datasheet](/datasheet/OV2640-DATASHEET.pdf)
 
 ## Software Development
 

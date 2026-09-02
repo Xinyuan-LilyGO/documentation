@@ -123,7 +123,7 @@ QWIIC 接口默认配置为串口功能。若需要作为 I2C 使用，需要为
 
 ## 原理图
 
-- [T-Dongle-S3 原理图](https://github.com/Xinyuan-LilyGO/T-Dongle-S3/blob/main/schematic/T-Dongle-S3-QWIIC.pdf)
+- [T-Dongle-S3 GitHub 仓库（硬件资料）](https://github.com/Xinyuan-LilyGO/T-Dongle-S3/tree/main/schematic)
 
 ## 数据手册
 

@@ -100,8 +100,8 @@ Display SPI init (via XL9535):
 
 ## Datasheet
 
-- [ST7701S Display Controller](https://github.com/Xinyuan-LilyGO/T-Panel-Lite/blob/master/docs/ST7701S_SPEC_V1.4.pdf)
-- [YDP395BT001 Display Panel](https://github.com/Xinyuan-LilyGO/T-Panel-Lite/blob/master/docs/YDP395BT001-V2.pdf)
+- [ST7701S Display Controller](/datasheet/ST7701S_SPEC_V1.4.pdf)
+- [YDP395BT001 Display Panel](/datasheet/YDP395BT001-V2.pdf)
 
 ## Software Libraries
 

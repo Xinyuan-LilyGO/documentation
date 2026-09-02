@@ -108,9 +108,9 @@ LILYGO T7-C6 是一款基于 ESP32-C6 芯片的开发板，集成了 Wi-Fi 6、�
 
 ## 数据手册
 
-* [ESP32-C6 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-c6_datasheet_en.pdf)
-* [TP4065](https://github.com/Xinyuan-LilyGO/T7-C6/blob/main/information/TP4065-4.2V-SOT25-R.pdf)
-* [ESP32-C6 Technical Reference Manual](https://www.espressif.com.cn/sites/default/files/documentation/esp32-c6_technical_reference_manual_en.pdf)
+* [ESP32-C6 Datasheet](/datasheet/esp32-c6_datasheet_en.pdf)
+* [TP4065](/datasheet/TP4065-4.2V-SOT25-R.pdf)
+* [ESP32-C6 Technical Reference Manual](/datasheet/esp32-c6_technical_reference_manual_en.pdf)
 
 ## 软件开发
 

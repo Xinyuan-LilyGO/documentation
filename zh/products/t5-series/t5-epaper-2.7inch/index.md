@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32, 电子纸, 2.7寸, ePaper, Wi-Fi, 蓝牙, IoT, 低功耗
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t5-epaper" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t5s-2-7inch-e-paper" />
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t5-series/t5-epaper-2.7inch/index/image/t5-epaper-2.7inch-1.jpg', alt: 'T5 E-Paper 2.7 inch 正面' },
@@ -122,8 +122,8 @@ LILYGO T5 E-Paper 2.7 inch 是一款基于 ESP32 的电子纸开发板，搭载 
 
 ## 数据手册
 
-- [ESP32 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
-- [CP2102 数据手册](https://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf)
+- [ESP32 数据手册](/datasheet/esp32_datasheet_en.pdf)
+- [CP2102 数据手册](/datasheet/CP2102-9.pdf)
 
 ## 软件库
 

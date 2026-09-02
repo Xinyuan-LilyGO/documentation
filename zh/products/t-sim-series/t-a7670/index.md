@@ -114,11 +114,11 @@ T-A7670X R2 是一款基于 **ESP32-WROVER-E**（4 MB Flash，8 MB PSRAM）和 *
 
 ## 原理图
 
-* [T-A7670X V1.4 原理图](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/blob/main/schematic/esp32/T-A7670X-V1.4.pdf)
+* [T-A7670X V1.4 原理图](https://github.com/Xinyuan-LilyGO/LilyGO-T-A76XX/blob/main/schematic/esp32/T-A7670X-V1.4.pdf)
 
 ## 数据手册
 
-* [ESP32 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
+* [ESP32 数据手册](/datasheet/esp32_datasheet_en.pdf)
 
 ## 软件开发
 

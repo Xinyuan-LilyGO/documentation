@@ -100,8 +100,8 @@ T-ETH Lite is an Ethernet-enabled development board based on **ESP32** (16 MB Fl
 
 ## Datasheet
 
-* [DP9900M PoE](https://github.com/Xinyuan-LilyGO/LilyGO-T-ETH-Series/blob/master/datasheet/ETH-POE-DP9900M-5V.pdf)
-* [DP5300 PoE](https://github.com/Xinyuan-LilyGO/LilyGO-T-ETH-Series/blob/master/datasheet/ETH-PRO-POE-DP5300-12V.pdf)
+* [DP9900M PoE](/datasheet/ETH-POE-DP9900M-5V.pdf)
+* [DP5300 PoE](/datasheet/ETH-PRO-POE-DP5300-12V.pdf)
 
 ## Software Development
 

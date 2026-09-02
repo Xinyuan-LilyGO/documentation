@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32-S3, LoRa, Audio, Voice, Vibration, RTC
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3-s3-mvsr-board" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3-s3-mvsr" />
 <ImageGallery :columns="3" :images="[
   { src: '/products/t3-series/t3-s3-mvsr/index/image/t3-s3_mvsrboard01.jpg', alt: 'T3-S3 MVSR Board front view' },
   { src: '/products/t3-series/t3-s3-mvsr/index/image/t3-s3_mvsrboard02.jpg', alt: 'T3-S3 MVSR Board physical image' },
@@ -212,11 +212,11 @@ The T3-S3 MVSR Board is an expansion baseboard for the **T3-S3 V1.2** main board
 
 ## Datasheet
 
-* [MAX98357A Datasheet](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/MAX98357AETE+T.pdf)
-* [MP34DT05-A Datasheet](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/mp34dt05-a.pdf)
-* [MSM261S4030H0R Datasheet](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/MEMSensing-MSM261S4030H0R.pdf)
-* [PCF85063ATL Datasheet](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/PCF85063ATL-1,118.pdf)
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [MAX98357A Datasheet](/datasheet/MAX98357AETE+T.pdf)
+* [MP34DT05-A Datasheet](/datasheet/mp34dt05-a.pdf)
+* [MSM261S4030H0R Datasheet](/datasheet/MEMSensing-MSM261S4030H0R.pdf)
+* [PCF85063ATL Datasheet](/datasheet/PCF85063ATL-1,118.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## Software Development
 
@@ -224,7 +224,7 @@ The T3-S3 MVSR Board is an expansion baseboard for the **T3-S3 V1.2** main board
 
 ### Dependent Libraries
 
-* [Arduino_DriveBus](https://github.com/Xk-w/Arduino_DriveBus)
+* [Arduino_DriveBus](https://github.com/Llgok/Arduino_DriveBus)
 * [RadioLib](https://github.com/jgromes/RadioLib)
 * [ESP8266Audio](https://github.com/earlephilhower/ESP8266Audio)
 

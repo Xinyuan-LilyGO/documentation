@@ -24,13 +24,13 @@ tags: ESP32-S3, AMOLED, USB OTG, IPS, Capacitive Touch
 
 | 示例 | PlatformIO/Arduino | ESP-IDF | 描述 |
 | :------ | :----------------: | :-----: | :---------- |
-| [Factory](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/examples/factory) | ✓ | | 出厂综合测试 |
+| [Factory](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/master/examples/factory) | ✓ | | 出厂综合测试 |
 | [Display_Example](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/examples) | ✓ | | Arduino_GFX 显示绘图基础 |
-| [AdjustBacklight](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/examples/AdjustBacklight) | ✓ | | 背光调节（区分 V1.0/V1.1） |
-| [PMU_Example](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/examples/PMU_Example) | ✓ | | 电源管理配置与电池信息 |
-| [USB_HID_Example](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/examples/USB_HID_Example) | ✓ | | USB HID 和 OTG 功能 |
-| [CameraShield](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/examples/CameraShield) | ✓ | | 摄像头扩展板使用 |
-| [Cellphone](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/examples/Cellphone) | ✓ | | 拍照及相册（需 TF 卡） |
+| [AdjustBacklight](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/master/examples/AdjustBacklight) | ✓ | | 背光调节（区分 V1.0/V1.1） |
+| [PMU_Example](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/master/examples/PMU_Example) | ✓ | | 电源管理配置与电池信息 |
+| [USB_HID_Example](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/master/examples/USB_HID_Example) | ✓ | | USB HID 和 OTG 功能 |
+| [CameraShield](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/master/examples/CameraShield) | ✓ | | 摄像头扩展板使用 |
+| [Cellphone](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/master/examples/Cellphone) | ✓ | | 拍照及相册（需 TF 卡） |
 
 ### PlatformIO
 
@@ -122,12 +122,12 @@ tags: ESP32-S3, AMOLED, USB OTG, IPS, Capacitive Touch
 ## 原理图
 
 * [T-Display-S3-Pro 原理图](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/blob/master/schematic/T-Display-Pro.pdf)
-* [T-Display-S3-Pro 背板设计文件](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/main/dimensions/BackCover)
+* [T-Display-S3-Pro 背板设计文件](https://github.com/Xinyuan-LilyGO/T-Display-S3-Pro/tree/master/dimensions/BackCover)
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SY6970 Datasheet](https://www.semtech.com/products/analog-front-end/sy6970)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SY6970 Datasheet](/datasheet/AN_SY6970.pdf)
 
 ## 软件开发
 

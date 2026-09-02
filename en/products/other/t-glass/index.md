@@ -112,7 +112,7 @@ T-Glass is a smart wearable development board based on **ESP32-S3 FN4R2** (4 MB 
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## Software Development
 

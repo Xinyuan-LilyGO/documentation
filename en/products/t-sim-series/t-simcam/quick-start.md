@@ -21,7 +21,7 @@ show_source: false
 1. Install [VS Code](https://code.visualstudio.com/) and the **PlatformIO IDE** extension
 2. Clone the repository:
    ```bash
-   git clone https://github.com/Xinyuan-LilyGO/T-SimCam.git
+   git clone https://github.com/Xinyuan-LilyGO/LilyGo-Camera-Series.git
    ```
 3. Open `platformio.ini` and select the target example
 4. Click **✓** to build, connect via USB-C, click **→** to upload

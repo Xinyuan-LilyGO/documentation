@@ -166,8 +166,8 @@ examples/
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [ED047TC1 Datasheet](https://github.com/Xinyuan-LilyGO/LilyGo-EPD47/blob/esp32s3/datasheet/ED047TC1.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [ED047TC1 Datasheet](/datasheet/ED047TC1.pdf)
 
 ## Software Development
 

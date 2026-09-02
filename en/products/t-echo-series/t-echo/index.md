@@ -47,7 +47,7 @@ T-Echo is compatible with multiple open-source firmware projects, including Soft
 
 ### nRF5-SDK
 
-1. Download [nRF5-SDK](https://www.nordicsemi.com/Software-and-Tools/Software/nRF5-SDK/Download)
+1. Download [nRF5-SDK](https://www.nordicsemi.com/Products/Development-software/nrf5-sdk/download)
 2. Use nRF5-SDK for programming, supporting advanced features like NFC
 
 > **Note:** NFC functionality is not supported in Adafruit_nRF52_Arduino. Use nRF5-SDK for NFC-related development.
@@ -56,7 +56,7 @@ T-Echo is compatible with multiple open-source firmware projects, including Soft
 
 1. [Arduino IDE](https://www.arduino.cc/en/software) — Supports Adafruit nRF52
 2. [PlatformIO](https://platformio.org/) — Cross-platform development
-3. [nRF5-SDK](https://www.nordicsemi.com/Software-and-Tools/Software/nRF5-SDK/Download) — Nordic official SDK
+3. [nRF5-SDK](https://www.nordicsemi.com/Products/Development-software/nrf5-sdk/download) — Nordic official SDK
 
 ## Video
 
@@ -97,7 +97,7 @@ T-Echo is compatible with multiple open-source firmware projects, including Soft
 
 ## Pin Diagram
 
-For pin definitions, please refer to the [utilities.h](https://github.com/Xinyuan-LilyGO/T-Echo/blob/main/examples/Integration/utilities.h) file in the repository.
+For pin definitions, please refer to the [utilities.h](https://github.com/Xinyuan-LilyGO/T-Echo/blob/main/examples/Factory/utilities.h) file in the repository.
 
 ## Dimension Diagram
 
@@ -133,7 +133,7 @@ For pin definitions, please refer to the [utilities.h](https://github.com/Xinyua
   A. FLASH will be selected as MX25R1635FZUIL0 or ZD25WQ16B based on supply conditions. Pay attention to the distinction during use.
 
 * **Q. NFC is not working with Arduino?**
-  A. NFC functionality is not supported in Adafruit_nRF52_Arduino. Please use [nRF5-SDK](https://www.nordicsemi.com/Software-and-Tools/Software/nRF5-SDK/Download) for NFC programming.
+  A. NFC functionality is not supported in Adafruit_nRF52_Arduino. Please use [nRF5-SDK](https://www.nordicsemi.com/Products/Development-software/nrf5-sdk/download) for NFC programming.
 
 * **Q. How to enter DFU (download) mode?**
   A. Double-click the reset button to enter DFU mode when using USB to download firmware.

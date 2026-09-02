@@ -114,8 +114,8 @@ Requires ESP-IDF >= v5.3. Clone the repository and open with VS Code + ESP-IDF e
 
 ## Datasheet
 
-* [ESP32-C5-WROOM-1 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-C5/blob/master/doc/ESP32-C5-WROOM-1.pdf)
-* [AXP2602 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-C5/blob/master/doc/AXP2602_Datasheet_V1.0_cn%20(1).pdf)
+* [ESP32-C5-WROOM-1 Datasheet](/datasheet/ESP32-C5-WROOM-1.pdf)
+* [AXP2602 Datasheet](/datasheet/AXP2602_Datasheet_V1.0_cn%20%281%29.pdf)
 
 ## Software Libraries
 

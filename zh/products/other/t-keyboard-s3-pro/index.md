@@ -31,8 +31,8 @@ T-Keyboard S3 Pro 是一款基于**双 MCU 架构**（ESP32-S3-WROOM-1 + STM32G0
 | [Basic/Encoder](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Basic/Encoder) | ✓ | | 旋转编码器位置追踪 |
 | [Basic/RGB](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Basic/RGB) | ✓ | | WS2812C LED HSV 色彩轮播 |
 | [Advanced/MultiBoard](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Advanced/MultiBoard) | ✓ | | 多板级联，热插拔检测 |
-| [Advanced/BleKeyboard](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Advanced/BleKeyboard) | ✓ | | BLE HID 键盘（含媒体键） |
-| [Advanced/Buddy](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Advanced/Buddy) | ✓ | | Claude 桌面伴侣，四屏 UI |
+| [Advanced/BleKeyboard](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Advanced/BLEKeyboard) | ✓ | | BLE HID 键盘（含媒体键） |
+| [Advanced/Buddy](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Advanced/Claude-Desktop-Buddy) | ✓ | | Claude 桌面伴侣，四屏 UI |
 
 ### PlatformIO
 
@@ -137,9 +137,9 @@ T-Keyboard S3 Pro 是一款基于**双 MCU 架构**（ESP32-S3-WROOM-1 + STM32G0
 
 ## 数据手册
 
-* [ESP32-S3-WROOM-1 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
-* [STM32G030F6P6 Datasheet](https://www.st.com/en/microcontrollers-microprocessors/stm32g030f6.html#documentation)
-* [GC9107 Datasheet](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/blob/main/information/GC9107_DataSheet_V1.2.pdf)
+* [ESP32-S3-WROOM-1 Datasheet](/datasheet/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
+* [STM32G030F6P6 Datasheet](/datasheet/stm32g030f6.pdf)
+* [GC9107 Datasheet](/datasheet/GC9107_DataSheet_V1.2.pdf)
 
 ## 软件开发
 

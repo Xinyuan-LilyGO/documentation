@@ -228,8 +228,8 @@ LILYGO T-Beam-BPF is a variant of the T-Beam series featuring an integrated **Ba
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SX1278 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1278)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SX1278 Datasheet](/datasheet/SX1276-7-8-9_Datasheet.pdf)
 
 ## Software Libraries
 

@@ -121,7 +121,7 @@ T-TWR REV2.1 is a portable walkie-talkie and GNSS development board based on **E
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## Software Development
 

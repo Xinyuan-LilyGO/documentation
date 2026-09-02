@@ -115,7 +115,7 @@ For other mainboard pin mappings and jumper configurations, refer to the [GitHub
 
 ## Datasheet
 
-* [INA3221 Datasheet](https://www.ti.com/lit/ds/symlink/ina3221.pdf)
+* [INA3221 Datasheet](/datasheet/ina3221.pdf)
 
 ## Software Development
 

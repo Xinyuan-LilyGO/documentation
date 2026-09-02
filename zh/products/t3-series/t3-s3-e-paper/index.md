@@ -142,11 +142,11 @@ T3-S3 E-Paper 是一款基于 ESP32-S3FH4R2 的低功耗物联网开发板，集
 
 ## 数据手册
 
-* [DEPG0213BN Datasheet](https://github.com/Xinyuan-LilyGO/Lilygo-LoRa-Epaper-series/blob/master/datasheet/DEPG0213BN.pdf)
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-core/sx1262)
-* [SX1276 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276)
-* [SX1280 Datasheet](https://www.semtech.com/products/wireless-rf/lora-core/sx1280)
+* DEPG0213BN Datasheet
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
+* [SX1276 Datasheet](/datasheet/SX1276-7-8-9_Datasheet.pdf)
+* [SX1280 Datasheet](https://www.semtech.com/products/wireless-rf/lora-core/sx1280zxxxxgw1)
 
 ## 软件开发
 

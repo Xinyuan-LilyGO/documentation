@@ -103,8 +103,8 @@ LILYGO T-Knob is a smart rotary controller based on the **ESP32-C6-MINI-1U** wir
 
 ## Datasheet
 
-* [TMC6300 Datasheet](https://github.com/Xinyuan-LilyGO/T-Knob/blob/master/hardware/TMC6300_datasheet_rev1.08.pdf)
-* [MT6701 Datasheet](https://github.com/Xinyuan-LilyGO/T-Knob/blob/master/hardware/MT6701_Rev.1.0.pdf)
+* [TMC6300 Datasheet](/datasheet/TMC6300_datasheet_rev1.08.pdf)
+* [MT6701 Datasheet](/datasheet/MT6701_Rev.1.0.pdf)
 
 ## Software Development
 

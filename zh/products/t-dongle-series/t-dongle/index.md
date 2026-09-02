@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32, USB Dongle, TFT, Wi-Fi, Bluetooth, IoT
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-dongle" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-dongle-esp32-s2-1-14-inch-lcd-board" />
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-dongle-series/t-dongle/index/image/t-dongle-1.jpg', alt: 'T-Dongle 正面' },
@@ -22,7 +22,7 @@ LILYGO T-Dongle 是一款基于 **ESP32** 的紧凑型 USB 无线开发板。搭
 
 | 示例 | PlatformIO/Arduino | ESP-IDF | 描述 |
 | :-----: | :----------------: | :-----: | :---------: |
-| [T-Dongle](https://github.com/LilyGO/T-Dongle) | ✓ | | 显示屏、TF 卡、LED 示例 |
+| [T-Dongle](https://github.com/Xinyuan-LilyGO/T-Dongle-ESP32S2) | ✓ | | 显示屏、TF 卡、LED 示例 |
 
 ### PlatformIO
 
@@ -97,7 +97,7 @@ LILYGO T-Dongle 是一款基于 **ESP32** 的紧凑型 USB 无线开发板。搭
 
 ## 原理图
 
-- [LilyGO T-Dongle GitHub 仓库](https://github.com/LilyGO/T-Dongle)
+- [LilyGO T-Dongle GitHub 仓库](https://github.com/Xinyuan-LilyGO/T-Dongle-ESP32S2)
 
 ## 数据手册
 
@@ -105,7 +105,7 @@ LILYGO T-Dongle 是一款基于 **ESP32** 的紧凑型 USB 无线开发板。搭
 
 ## 软件开发
 
-- [LilyGO T-Dongle GitHub 仓库](https://github.com/LilyGO/T-Dongle)
+- [LilyGO T-Dongle GitHub 仓库](https://github.com/Xinyuan-LilyGO/T-Dongle-ESP32S2)
 
 ## 常见问题
 

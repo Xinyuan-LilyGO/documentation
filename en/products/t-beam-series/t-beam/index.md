@@ -104,8 +104,8 @@ LILYGO T-Beam is a feature-rich ESP32-based development board combining LoRa lon
 
 ## Datasheet
 
-* [ESP32 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
-* [SX1276 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276)
+* [ESP32 Datasheet](/datasheet/esp32_datasheet_en.pdf)
+* [SX1276 Datasheet](/datasheet/SX1276-7-8-9_Datasheet.pdf)
 
 ## Software Libraries
 

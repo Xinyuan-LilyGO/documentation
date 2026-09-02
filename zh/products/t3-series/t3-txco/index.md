@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32-Pico-D4, LoRa, TCXO, OLED, IoT
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3-txco" />
+# {{ $frontmatter.title }}
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t3-series/t3-txco/index/image/t3-txco-1.jpg', alt: 'T3-TXCO 正面图' },
@@ -22,11 +22,9 @@ LILYGO LORA32 TCXO 是一款基于 ESP32-Pico-D4 的 LoRa 无线通信开发板�
 
 | 示例 | PlatformIO/Arduino | ESP-IDF | 描述 |
 | :------ | :----------------: | :-----: | :---------- |
-| [LoRa_Communication](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/LoRa_Communication) | ✓ | | LoRa 通信示例 |
-| [OLED_Display](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/OLED_Display) | ✓ | | OLED 显示示例 |
-| [TCXO_Stability](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/TCXO_Stability) | ✓ | | TCXO 稳定性测试 |
-| [Battery_Power](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/Battery_Power) | ✓ | | 电池供电示例 |
-| [Solar_Power](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/Solar_Power) | ✓ | | 太阳能供电示例 |
+| [SX1276_PingPong](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/master/examples/LoRa/T3_TCXO/SX1276_PingPong) | ✓ | | LoRa 通信示例 |
+| [OLED](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/master/examples/OLED) | ✓ | | OLED 显示示例 |
+| [PMU](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/master/examples/PMU) | ✓ | | 电源管理示例 |
 
 ### PlatformIO
 
@@ -137,9 +135,9 @@ LILYGO LORA32 TCXO 是一款基于 ESP32-Pico-D4 的 LoRa 无线通信开发板�
 
 ## 数据手册
 
-* [ESP32-Pico-D4 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf)
-* [SX1276 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276)
-* [SSD1306 Datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
+* [ESP32-Pico-D4 Datasheet](/datasheet/esp32-pico-d4_datasheet_en.pdf)
+* [SX1276 Datasheet](/datasheet/SX1276-7-8-9_Datasheet.pdf)
+* [SSD1306 Datasheet](/datasheet/SSD1306.pdf)
 
 ## 软件开发
 

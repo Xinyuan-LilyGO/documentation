@@ -22,11 +22,10 @@ LILYGO T3-S3 LR1121 是一款基于 ESP32-S3 的高集成物联网开发板，�
 
 | 示例 | PlatformIO/Arduino | ESP-IDF | 描述 |
 | :------ | :----------------: | :-----: | :---------- |
-| [LR1121_DualBand](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/LR1121_DualBand) | ✓ | | LR1121 双频段通信示例 |
-| [OLED_Display](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/OLED_Display) | ✓ | | OLED 显示示例 |
-| [RTC_Clock](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/RTC_Clock) | ✓ | | 实时时钟示例 |
-| [SD_Card](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/SD_Card) | ✓ | | SD 卡读写示例 |
-| [Multi_Protocol](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/Multi_Protocol) | ✓ | | 多协议通信示例 |
+| [LR1121_PingPong](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/master/examples/LoRa/T3S3/LR1121_PingPong) | ✓ | | LR1121 通信示例 |
+| [OLED](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/master/examples/OLED) | ✓ | | OLED 显示示例 |
+| [PCF8563_SimpleTime](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/master/examples/Sensor/PCF8563_SimpleTime) | ✓ | | 实时时钟示例 |
+| [SD_Test](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/master/examples/SD/SD_Test) | ✓ | | SD 卡读写示例 |
 
 ### PlatformIO
 
@@ -146,8 +145,8 @@ LILYGO T3-S3 LR1121 是一款基于 ESP32-S3 的高集成物联网开发板，�
 ## 数据手册
 
 * [LR1121 Datasheet](https://www.semtech.com/products/wireless-rf/lora-connect/lr1121)
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [PCF85063ATL Datasheet](https://www.nxp.com/products/analog-and-mixed-signal/real-time-clocks/rtcs-with-ic-bus/tiny-real-time-clock-calendar-with-alarm-function-and-ic-bus:PCF85063A)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [PCF85063ATL Datasheet](/datasheet/PCF85063A.pdf)
 
 ## 软件开发
 

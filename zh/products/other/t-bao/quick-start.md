@@ -10,7 +10,7 @@ show_source: false
 | 工具 | 来源 |
 | :--: | :--: |
 | kflash_gui | [GitHub](https://github.com/sipeed/kflash_gui) |
-| MaixPy IDE | [GitHub](https://github.com/sipeed/MaixPy-IDE) |
+| MaixPy IDE | [GitHub](https://github.com/sipeed/MaixPy-v1) |
 | Arduino IDE | [arduino.cc](https://www.arduino.cc/en/software) |
 
 ---

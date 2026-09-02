@@ -171,11 +171,11 @@ PlatformIO does not currently support the Arduino-ESP32 3.x setup used by the ma
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262)
-* [MIA-M10Q GNSS Datasheet](https://www.u-blox.com/en/product/mia-m10-series)
-* [BHI260AP Datasheet](https://www.bosch-sensortec.com/products/motion-sensors/imu-with-integrated-ai/bhi260ap/)
-* [AXP2101 Datasheet](https://www.x-powers.com/en.php/Product/detail/id/145)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
+* [MIA-M10Q GNSS Datasheet](/datasheet/MIA-M10Q_DataSheet_UBX-22015849.pdf)
+* [BHI260AP Datasheet](/datasheet/bst-bhi260ap-ds000.pdf)
+* [AXP2101 Datasheet](/datasheet/AXP2101_Datasheet_V1.4_en.pdf)
 
 ## Software Development
 

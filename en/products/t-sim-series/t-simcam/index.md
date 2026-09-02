@@ -23,7 +23,7 @@ LILYGO T-SIMCam is an all-in-one ESP32-S3 camera and cellular IoT board combinin
 
 | Example | PlatformIO/Arduino | ESP-IDF | Description |
 | :-----: | :----------------: | :-----: | :---------: |
-| [T-SIMCam](https://github.com/Xinyuan-LilyGO/T-SIMCam) | ✓ | | Camera capture, cellular upload, MQTT examples |
+| [T-SIMCam](https://github.com/Xinyuan-LilyGO/LilyGo-Camera-Series) | ✓ | | Camera capture, cellular upload, MQTT examples |
 
 ### PlatformIO
 
@@ -122,16 +122,16 @@ LILYGO T-SIMCam is an all-in-one ESP32-S3 camera and cellular IoT board combinin
 
 ## Schematic
 
-- [T-SIMCam GitHub Repository (hardware)](https://github.com/Xinyuan-LilyGO/T-SIMCam/tree/master/hardware)
+- [T-SIMCam GitHub Repository (hardware)](https://github.com/Xinyuan-LilyGO/LilyGo-Camera-Series/tree/master/schematic)
 
 ## Datasheet
 
-- [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-- [OV2640 Datasheet](https://www.ov.com/full/product/OV2640.html)
+- [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+- [OV2640 Datasheet](/datasheet/OV2640-DATASHEET.pdf)
 
 ## Software Libraries
 
-- [T-SIMCam GitHub Repository](https://github.com/Xinyuan-LilyGO/T-SIMCam)
+- [T-SIMCam GitHub Repository](https://github.com/Xinyuan-LilyGO/LilyGo-Camera-Series)
 
 ### Dependent Libraries
 

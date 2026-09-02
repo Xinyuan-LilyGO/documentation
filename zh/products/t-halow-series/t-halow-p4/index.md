@@ -53,7 +53,7 @@ Halow 模块通过 SPI + UART 与 ESP32-P4 连接：
 
 数据传输链路：`ESP32P4 → SPI → Halow → RF → Halow → SPI → ESP32P4`
 
-TX-AH 模块非 OS 驱动：[taixin-nonos-driver](https://www.taixin-semi.com/upload/files/productFile/20251204/taixin-nonos-driver_20251204162053.zip)
+TX-AH 模块非 OS 驱动：[T-Halow SDK](https://github.com/Xinyuan-LilyGO/T-Halow/tree/master/SDK)
 
 ### 开发平台
 
@@ -125,18 +125,18 @@ TX-AH 模块非 OS 驱动：[taixin-nonos-driver](https://www.taixin-semi.com/up
 
 ## 数据手册
 
-* [ESP32-P4 文档](https://www.espressif.com/zh-hans/products/socs/esp32-p4)
-* [TX-AH 模块规格书](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/%E6%B3%B0%E8%8A%AF802.11ah%C2%A0TX-AH-Rx00P%20Series%20module%20technical%20specification_20231116174457.pdf)
-* [AT 指令开发指南](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯AH%20Module%20AT%20instruction%20development%20guide_20230524100503.pdf)
-* [频率设置说明](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯802.11AH%20Frequency%20setting%20description_20231130110312.pdf)
-* [硬件设计指南](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯AH%20Module%20hardware%20Design%20Guide_20230621170639.pdf)
-* [泰芯官方文档](https://en.taixin-semi.com/Product?prouctSubClass=33)
+* [ESP32-P4 文档](/datasheet/esp32-p4_datasheet_en.pdf)
+* [TX-AH 模块规格书](/datasheet/%E6%B3%B0%E8%8A%AF802.11ah%C2%A0TX-AH-Rx00P%20Series%20module%20technical%20specification_20231116174457.pdf)
+* [AT 指令开发指南](/datasheet/%E6%B3%B0%E8%8A%AFAH%20Module%20AT%20instruction%20development%20guide_20230524100503.pdf)
+* [频率设置说明](/datasheet/%E6%B3%B0%E8%8A%AF802.11AH%20Frequency%20setting%20description_20231130110312.pdf)
+* [硬件设计指南](/datasheet/%E6%B3%B0%E8%8A%AFAH%20Module%20hardware%20Design%20Guide_20230621170639.pdf)
+* [泰芯官方文档](/datasheet/泰芯802.11ah%20TX-AH-Rx00P系列模组技术规格书_V6.9.pdf)
 
 ## 软件开发
 
 * [T-Halow-P4 GitHub 仓库](https://github.com/Xinyuan-LilyGO/T-Halow-P4)
 * [T-Halow AT 指令集](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/docs/AT_cmd.md)
-* [泰芯驱动程序下载](https://www.taixin-semi.com/upload/files/productFile/20251204/taixin-nonos-driver_20251204162053.zip)
+* [泰芯驱动程序下载](https://github.com/Xinyuan-LilyGO/T-Halow/tree/master/SDK)
 
 ### 依赖库
 

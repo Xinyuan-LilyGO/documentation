@@ -108,8 +108,8 @@ T-Halow is a long-range IoT development board based on **ESP32-S3** (16 MB Flash
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [TX-AH Module Resources](https://en.taixin-semi.com/Product?prouctSubClass=33)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [TX-AH Module Resources](/datasheet/泰芯802.11ah%20TX-AH-Rx00P系列模组技术规格书_V6.9.pdf)
 
 ## Software Development
 

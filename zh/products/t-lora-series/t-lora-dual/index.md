@@ -116,7 +116,7 @@ T-Lora-Dual 是一款基于 **ESP32-PICO-D4** 微控制器的双频无线通信�
 ## 数据手册
 
 * [LR1121 Datasheet](https://www.semtech.com/products/wireless-rf/lora-connect/lr1121)
-* [ESP32-PICO-D4 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf)
+* [ESP32-PICO-D4 Datasheet](/datasheet/esp32-pico-d4_datasheet_en.pdf)
 
 ## 软件开发
 

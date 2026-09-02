@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32, PCIe, 蜂窝, 4G, LTE, AXP2101, IoT, 调制解调器
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-pcie" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/a-t-pcie" />
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-sim-series/t-pcie/index/image/t-pcie-1.jpg', alt: 'T-PCIE 正面' },
@@ -176,8 +176,8 @@ LILYGO T-PCIE 是一款基于 ESP32 的蜂窝开发板，配备 **Mini PCIe（mP
 
 ## 数据手册
 
-* [ESP32 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
-* [AXP2101 数据手册](http://www.x-powers.com/en.php/Info/product_detail/article_id/97)
+* [ESP32 数据手册](/datasheet/esp32_datasheet_en.pdf)
+* [AXP2101 数据手册](/datasheet/AXP2101_Datasheet_V1.4_en.pdf)
 
 ## 软件开发
 

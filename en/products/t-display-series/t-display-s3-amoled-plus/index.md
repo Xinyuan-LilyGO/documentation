@@ -114,7 +114,7 @@ T-Display S3 AMOLED Plus is a highly integrated development board based on **ESP
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## Software Development
 

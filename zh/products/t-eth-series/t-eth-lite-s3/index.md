@@ -95,8 +95,8 @@ T-ETH-Lite ESP32-S3 是一款基于 ESP32-S3 芯片的嵌入式开发模块，�
 
 ## 数据手册
 
-* [DP9900M PoE](https://github.com/Xinyuan-LilyGO/LilyGO-T-ETH-Series/blob/master/datasheet/ETH-POE-DP9900M-5V.pdf)
-* [DP5300 PoE Pro](https://github.com/Xinyuan-LilyGO/LilyGO-T-ETH-Series/blob/master/datasheet/ETH-PRO-POE-DP5300-12V.pdf)
+* [DP9900M PoE](/datasheet/ETH-POE-DP9900M-5V.pdf)
+* [DP5300 PoE Pro](/datasheet/ETH-PRO-POE-DP5300-12V.pdf)
 
 ## 软件开发
 

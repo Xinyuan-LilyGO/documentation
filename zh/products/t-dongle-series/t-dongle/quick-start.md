@@ -12,7 +12,7 @@ show_source: false
 1. 安装 [VS Code](https://code.visualstudio.com/) 和 **PlatformIO IDE** 扩展
 2. 克隆仓库：
    ```bash
-   git clone https://github.com/LilyGO/T-Dongle.git
+   git clone https://github.com/Xinyuan-LilyGO/T-Dongle-ESP32S2.git
    ```
 3. 打开项目，在 `platformio.ini` 中选择环境
 4. 编译，将 Dongle 插入 USB-A 接口后上传

@@ -16,7 +16,7 @@ T-HaLow P4 combines the **ESP32-P4** high-performance application processor with
 1. Install [ESP-IDF for ESP32-P4](https://docs.espressif.com/projects/esp-idf/en/latest/esp32p4/get-started/)
 2. Clone the repository:
    ```bash
-   git clone https://github.com/Xinyuan-LilyGO/LilyGO-T-Halow.git
+   git clone https://github.com/Xinyuan-LilyGO/T-Halow.git
    ```
 3. Navigate to the example and build:
    ```bash
@@ -29,7 +29,7 @@ T-HaLow P4 combines the **ESP32-P4** high-performance application processor with
 ## Development Platforms
 
 - [ESP-IDF (ESP32-P4)](https://docs.espressif.com/projects/esp-idf/en/latest/esp32p4/)
-- [T-HaLow Repository](https://github.com/Xinyuan-LilyGO/LilyGO-T-Halow)
+- [T-HaLow Repository](https://github.com/Xinyuan-LilyGO/T-Halow)
 
 ---
 

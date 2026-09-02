@@ -161,10 +161,10 @@ T5-4.7-S3 E-Paper PRO is a multifunctional IoT device based on **ESP32-S3-WROOM-
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [ED047TC1 Datasheet](https://github.com/Xinyuan-LilyGO/T5S3-4.7-e-paper-PRO/blob/H752-01/hardware/ED047TC1.pdf)
-* [MIA-M10Q GPS Datasheet](https://github.com/Xinyuan-LilyGO/T5S3-4.7-e-paper-PRO/blob/H752-01/hardware/MIA-M10Q_DataSheet_UBX-22015849.pdf)
-* [TPS65185 Power Driver](https://github.com/Xinyuan-LilyGO/T5S3-4.7-e-paper-PRO/blob/H752-01/hardware/tps65185.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [ED047TC1 Datasheet](/datasheet/ED047TC1.pdf)
+* [MIA-M10Q GPS Datasheet](/datasheet/MIA-M10Q-00B.pdf)
+* [TPS65185 Power Driver](/datasheet/tps65185.pdf)
 
 ## Software Development
 

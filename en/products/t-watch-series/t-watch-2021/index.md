@@ -129,9 +129,9 @@ LILYGO T-Watch 2021 is an open-source ESP32-based smart watch development platfo
 
 ## Datasheet
 
-- [ESP32 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
-- [AXP202 Datasheet](http://www.x-powers.com/en.php/Info/product_detail/article_id/29)
-- [BMA423 Datasheet](https://www.bosch-sensortec.com/products/motion-sensors/accelerometers/bma423/)
+- [ESP32 Datasheet](/datasheet/esp32_datasheet_en.pdf)
+- [AXP202 Datasheet](/datasheet/AXP192%20Brief.pdf)
+- [BMA423 Datasheet](/datasheet/BMA423.PDF)
 
 ## Software Libraries
 

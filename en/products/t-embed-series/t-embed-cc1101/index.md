@@ -111,10 +111,10 @@ LILYGO T-Embed CC1101 is a highly integrated IoT development board based on **ES
 
 ## Datasheet
 
-* [PN532](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/PN532_C1.pdf)
-* [BQ25896](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq25896.pdf)
-* [BQ27220](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq27220_datasheet.pdf)
-* [CC1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/cc1101.pdf)
+* [PN532](/datasheet/PN532_C1.pdf)
+* [BQ25896](/datasheet/bq25896.pdf)
+* [BQ27220](/datasheet/bq27220_datasheet.pdf)
+* [CC1101](/datasheet/cc1101.pdf)
 
 ## Software Development
 

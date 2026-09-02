@@ -118,10 +118,10 @@ Pin definitions 请参考配置文件：
 
 ## 数据手册
 
-- [ESP32-WROVER-E Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-wrover-e_esp32-wrover-ie_datasheet_en.pdf)
-- [LAN8671 Datasheet](https://github.com/Xinyuan-LilyGO/T-Spe/tree/main/project/docs/LAN8671C2T-E-U3B.pdf)
-- [TD301D485H-A Datasheet](https://github.com/Xinyuan-LilyGO/T-Spe/tree/main/project/docs/TD301D485H-A.pdf)
-- [SY8513 Datasheet](https://github.com/Xinyuan-LilyGO/T-Spe/tree/main/project/docs/DS_SY8513.pdf)
+- [ESP32-WROVER-E Datasheet](/datasheet/esp32-wrover-e_esp32-wrover-ie_datasheet_en.pdf)
+- [LAN8671 Datasheet](/datasheet/LAN8671C2T-E-U3B.pdf)
+- [TD301D485H-A Datasheet](/datasheet/TD301D485H-A.pdf)
+- [SY8513 Datasheet](/datasheet/DS_SY8513.pdf)
 
 ## 软件开发
 

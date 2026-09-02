@@ -126,9 +126,9 @@ LILYGO T-TWR REV2.1 是一款基于 ESP32-S3-WROOM-1-N16R8 的对讲机开发板
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SA868 Datasheet](https://github.com/Xinyuan-LilyGO/T-TWR/blob/master/datasheet/SA868%202W%20Embedded%20walkie%20talkie%20moduleV1.3.pdf)
-* [SH1106 Datasheet](https://github.com/Xinyuan-LilyGO/T-TWR/blob/master/datasheet/SPEC%20X096-2864KSWPG17-C30%20VER%20A.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SA868 Datasheet](/datasheet/SA868%202W%20Embedded%20walkie%20talkie%20moduleV1.3.pdf)
+* [SH1106 Datasheet](/datasheet/SPEC%20X096-2864KSWPG17-C30%20VER%20A.pdf)
 
 ## 软件开发
 

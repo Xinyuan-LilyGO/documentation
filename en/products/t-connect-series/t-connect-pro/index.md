@@ -32,13 +32,10 @@ T-Connect Pro is a 3-layer stackable industrial-grade module based on **ESP32-S3
 | [GFX_SX1262](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/GFX_SX1262) | ✓ | | Display + LoRa combined |
 | [CST226SE](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/CST226SE) | ✓ | | Touch screen test |
 | [Relay](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/Relay) | ✓ | | Relay control |
-| [SX1262_Receive_Interrupt](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX1262_Receive_Interrupt) | ✓ | | LoRa receive with interrupt |
 | [SX126x_PingPong](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX126x_PingPong) | ✓ | | LoRa ping-pong test |
-| [SX126x_Channel_Activity_Detection_Blocking](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX126x_Channel_Activity_Detection_Blocking) | ✓ | | LoRa CAD blocking mode |
-| [SX126x_Channel_Activity_Detection_Interrupt](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX126x_Channel_Activity_Detection_Interrupt) | ✓ | | LoRa CAD interrupt mode |
-| [raw](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/raw) | ✓ | | LoRa raw transmission |
-| [ttn_abp](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/ttn_abp) | ✓ | | TTN ABP activation |
-| [ttn_otaa](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/ttn_otaa) | ✓ | | TTN OTAA activation |
+| [raw](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/raw_halconfig) | ✓ | | LoRa raw transmission |
+| [ttn_abp](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/ttn_abp_halconfig) | ✓ | | TTN ABP activation |
+| [ttn_otaa](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/ttn_otaa_halconfig_us915) | ✓ | | TTN OTAA activation |
 
 ### PlatformIO
 
@@ -141,12 +138,12 @@ T-Connect Pro is a 3-layer stackable industrial-grade module based on **ESP32-S3
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [HPD16A Module](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/information/HPDTEK_HPD16A_TCXO_V1.1.pdf)
-* [SX1262 Datasheet](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/information/DS_SX1261-2_V2_1.pdf)
-* [TD501MCANFD](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/information/TD501MCANFD_MORNSUN.pdf)
-* [TD501D485H-A](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/information/TD501D485H-A_K-CUT.pdf)
-* [TD501D232H](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/information/TD501D232H.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [HPD16A Module](/datasheet/HPDTEK_HPD16A_TCXO_V1.1.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261-2_V2_1.pdf)
+* [TD501MCANFD](/datasheet/TD501MCANFD_MORNSUN.pdf)
+* [TD501D485H-A](/datasheet/TD501D485H-A_K-CUT.pdf)
+* [TD501D232H](/datasheet/TD501D232H_WJ146289.pdf)
 
 ## Software Development
 
@@ -154,10 +151,10 @@ T-Connect Pro is a 3-layer stackable industrial-grade module based on **ESP32-S3
 
 ### Dependent Libraries
 
-* [Arduino_DriveBus-1.1.2](https://github.com/Xk-w/Arduino_DriveBus)
+* [Arduino_DriveBus-1.1.2](https://github.com/Llgok/Arduino_DriveBus)
 * [RadioLib-6.6.0](https://github.com/jgromes/RadioLib)
 * [Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
-* [Ethernet_V2.0.0](http://www.arduino.cc/en/Reference/Ethernet)
+* [Ethernet_V2.0.0](https://docs.arduino.cc/libraries/ethernet/)
 
 ## FAQ
 

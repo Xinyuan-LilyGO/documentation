@@ -17,22 +17,22 @@ T-Bao Gear is the smart car expansion of the T-Bao AIoT terminal, combining the 
 
 | Example | PlatformIO / Arduino | Description |
 | :-----: | :-----------------: | :---------- |
-| [DRV8833](https://github.com/Xinyuan-LilyGO/T-Bao/tree/master/example/DRV8833) | ✓ | Basic DC motor drive via serial command |
-| [ES_9051](https://github.com/Xinyuan-LilyGO/T-Bao/tree/master/example/ES_9051) | ✓ | Servo precise angle control (0–180°) |
-| [Seeking](https://github.com/Xinyuan-LilyGO/T-Bao/tree/master/example/Seeking) | ✓ | Auto face-tracking with timeout search |
-| [Emotion](https://github.com/Xinyuan-LilyGO/T-Bao/tree/master/example/Emotion) | ✓ | Random emotion animations — car plays random emotion expressions and motions |
-| [Factory](https://github.com/Xinyuan-LilyGO/T-Bao/tree/master/example/Factory) | ✓ | Multi-mode: face follow / object detection / remote control |
-| [Remote](https://github.com/Xinyuan-LilyGO/T-Bao/tree/master/example/Remote) | ✓ | Web-based WiFi remote driving |
+| [DRV8833](https://github.com/Xinyuan-LilyGO/T-Bao/tree/main/example/drv8833) | ✓ | Basic DC motor drive via serial command |
+| [ES_9051](https://github.com/Xinyuan-LilyGO/T-Bao/tree/main/example/servo) | ✓ | Servo precise angle control (0–180°) |
+| [Seeking](https://github.com/Xinyuan-LilyGO/T-Bao/tree/main/example/seeking) | ✓ | Auto face-tracking with timeout search |
+| [Emotion](https://github.com/Xinyuan-LilyGO/T-Bao/tree/main/example/emotion) | ✓ | Random emotion animations — car plays random emotion expressions and motions |
+| [Factory](https://github.com/Xinyuan-LilyGO/T-Bao/tree/main/example/factory) | ✓ | Multi-mode: face follow / object detection / remote control |
+| [Remote](https://github.com/Xinyuan-LilyGO/T-Bao/tree/main/example/remote) | ✓ | Web-based WiFi remote driving |
 
 ### Firmware Download
 
 | Example | ESP32 Firmware | K210 Firmware | K210 Model | Notes |
 | :-----: | :------------: | :-----------: | :--------: | :---- |
-| DRV8833 | [firmware_lilygo-t-bao-esp32-DRV8833](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/firmware_lilygo-t-bao-esp32-DRV8833.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | — | Serial control |
-| Seeking | [firmware_lilygo-t-bao-esp32-Seeking](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/firmware_lilygo-t-bao-esp32-Seeking.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | [face_model_at_0x300000](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/model/face_model_at_0x300000.kfpkg) | Face tracking + auto search |
-| Emotion | [firmware_lilygo-t-bao-esp32-Emotion](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/firmware_lilygo-t-bao-esp32-Emotion.bin) | ⚠️ [maixpy_v0.6.2_87_g37c84a3e7](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/k210/maixpy_v0.6.2_87_g37c84a3e7.bin) | — | K210 firmware differs from other examples |
-| Factory | [firmware_lilygo-t-bao-esp32-Factory](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/firmware_lilygo-t-bao-esp32-Factory.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | [face_model_at_0x300000](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/model/face_model_at_0x300000.kfpkg) | Multi-mode integrated |
-| Remote | [firmware_lilygo-t-bao-esp32-Remote](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/firmware_lilygo-t-bao-esp32-Remote.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/raw/master/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | — | ESP32 firmware only needed |
+| DRV8833 | [firmware_lilygo-t-bao-esp32-DRV8833](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/esp32/firmware_lilygo-t-bao-esp32_drv8833.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | — | Serial control |
+| Seeking | [firmware_lilygo-t-bao-esp32-Seeking](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/esp32/firmware_lilygo-t-bao-esp32_seeking.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | [face_model_at_0x300000](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/model/face_model_at_0x300000.kfpkg) | Face tracking + auto search |
+| Emotion | [firmware_lilygo-t-bao-esp32-Emotion](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/esp32/firmware_lilygo-t-bao-esp32_emotion.bin) | ⚠️ [maixpy_v0.6.2_87_g37c84a3e7](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/k210/maixpy_v0.6.2_87_g37c84a3e7.bin) | — | K210 firmware differs from other examples |
+| Factory | [firmware_lilygo-t-bao-esp32-Factory](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/esp32/firmware_lilygo-t-bao-esp32_factory.bin) | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | [face_model_at_0x300000](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/model/face_model_at_0x300000.kfpkg) | Multi-mode integrated |
+| Remote | firmware_lilygo-t-bao-esp32-Remote | [maixpy_twatch_v0.6.2-75-g973361c0d-dirty](https://github.com/Xinyuan-LilyGO/T-Bao/blob/main/firmware/k210/maixpy_twatch_v0.6.2-75-g973361c0d-dirty.bin) | — | ESP32 firmware only needed |
 
 ### K210 Firmware Flashing
 
@@ -132,10 +132,10 @@ T-Bao Gear is the smart car expansion of the T-Bao AIoT terminal, combining the 
 
 ## Datasheet
 
-* [K210 Datasheet](https://canaan.io/product/kendryteai)
-* [ESP32 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
-* [OV2640 Datasheet](https://www.ovt.com/sensors/OV2640)
-* [DRV8833 Datasheet](https://www.ti.com/product/DRV8833)
+* [K210 Datasheet](https://www.kendryte.com/k230/en/main/00_hardware/K230_datasheet.html)
+* [ESP32 Datasheet](/datasheet/esp32_datasheet_en.pdf)
+* [OV2640 Datasheet](/datasheet/OV2640-DATASHEET.pdf)
+* [DRV8833 Datasheet](/datasheet/drv8833.pdf)
 
 ## Software Libraries
 

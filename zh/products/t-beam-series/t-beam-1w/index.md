@@ -154,9 +154,9 @@ T-Beam-1W 是一款集成了 **ESP32-S3** 双核处理器、**LoRa SX1262** 模�
 
 ## 数据手册
 
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262)
-* [AXP2101 Datasheet](https://www.x-powers.com/en/product/axp2101)
-* [L76K Datasheet](https://www.quectel.com/product/gnss-l76k)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
+* [AXP2101 Datasheet](/datasheet/AXP2101_Datasheet_V1.4_en.pdf)
+* [L76K Datasheet](/datasheet/L76KB-A58.pdf)
 
 ## 软件开发
 

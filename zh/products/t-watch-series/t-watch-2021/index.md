@@ -129,9 +129,9 @@ LILYGO T-Watch 2021 是一款基于 ESP32 的开源智能手表开发平台。�
 
 ## 数据手册
 
-- [ESP32 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
-- [AXP202 数据手册](http://www.x-powers.com/en.php/Info/product_detail/article_id/29)
-- [BMA423 数据手册](https://www.bosch-sensortec.com/products/motion-sensors/accelerometers/bma423/)
+- [ESP32 数据手册](/datasheet/esp32_datasheet_en.pdf)
+- [AXP202 数据手册](/datasheet/AXP192%20Brief.pdf)
+- [BMA423 数据手册](/datasheet/BMA423.PDF)
 
 ## 软件库
 

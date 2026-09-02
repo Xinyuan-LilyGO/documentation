@@ -92,10 +92,10 @@ T-Bao 是一款基于 ESP32-D0WDQ6-V3 和 K210 RISC-V AI 芯片的开源 AIoT �
 
 ## 数据手册
 
-* [K210 数据手册](https://canaan.io/product/kendryteai)
-* [ESP32 数据手册](https://www.espressif.com.cn/sites/default/files/documentation/esp32_datasheet_en.pdf)
-* [OV2640 数据手册](https://www.ovt.com/sensors/OV2640)
-* [ST7789V 数据手册](https://www.newhavendisplay.com/app_notes/ST7789V.pdf)
+* [K210 数据手册](https://www.kendryte.com/k230/en/main/00_hardware/K230_datasheet.html)
+* [ESP32 数据手册](/datasheet/esp32_datasheet_en.pdf)
+* [OV2640 数据手册](/datasheet/OV2640-DATASHEET.pdf)
+* [ST7789V 数据手册](/datasheet/ST7789V.pdf)
 
 ## 软件开发
 

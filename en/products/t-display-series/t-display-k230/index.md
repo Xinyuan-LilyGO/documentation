@@ -141,7 +141,7 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 
 ## Datasheet
 
-* [K230 Datasheet](https://canaan.io/product/kendryteai)
+* [K230 Datasheet](https://www.kendryte.com/k230/en/main/00_hardware/K230_datasheet.html)
 * [K230 SDK Documentation](https://github.com/kendryte/k230_docs)
 
 ## Software Development

@@ -124,9 +124,9 @@ LILYGO T-LoRa C6 is a compact IoT development board based on the **ESP32-C6-MINI
 
 ## Datasheet
 
-* [ESP32-C6 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf)
-* [ESP32-C6 Technical Reference](https://www.espressif.com/sites/default/files/documentation/esp32-c6_technical_reference_manual_en.pdf)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-core/sx1262)
+* [ESP32-C6 Datasheet](/datasheet/esp32-c6_datasheet_en.pdf)
+* [ESP32-C6 Technical Reference](/datasheet/esp32-c6_technical_reference_manual_en.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
 
 ## Software Development
 

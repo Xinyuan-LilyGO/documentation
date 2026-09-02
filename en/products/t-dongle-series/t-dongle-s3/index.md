@@ -123,7 +123,7 @@ The QWIIC connector is configured for serial port function by default. To use it
 
 ## Schematic
 
-- [T-Dongle-S3 Schematic](https://github.com/Xinyuan-LilyGO/T-Dongle-S3/blob/main/schematic/T-Dongle-S3-QWIIC.pdf)
+- [T-Dongle-S3 GitHub Repository (hardware)](https://github.com/Xinyuan-LilyGO/T-Dongle-S3/tree/main/schematic)
 
 ## Datasheet
 

@@ -175,15 +175,15 @@ T-BEAM-SUPREME V3.0 是一款高性能多功能的物联网开发板，基于 ES
 
 ## 原理图
 
-* [T-Beam Supreme V3.1 原理图](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/T-Beam-S3-Supreme/T-Beam-S3-Supreme-V3.1.pdf)
+* [T-Beam Supreme 原理图](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/schematic/T-Beam-S3-Supreme/T-Beam-S3-Supreme-V3.1.pdf)
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262)
-* [MAX-M10S Datasheet](https://www.u-blox.com/zh/product/max-m10-series)
-* [BME280 Datasheet](https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/)
-* [QMI8658 Datasheet](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/blob/master/lib/SensorsLib/datasheet/QMI8658A%20Datasheet%20Rev1.0.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
+* [MAX-M10S Datasheet](/datasheet/MAX-M10S_DataSheet_UBX-20035208.pdf)
+* [BME280 Datasheet](/datasheet/bst-bme280-ds002.pdf)
+* [QMI8658 Datasheet](/datasheet/QMI8658A%20Datasheet%20Rev1.0.pdf)
 
 ## 软件开发
 

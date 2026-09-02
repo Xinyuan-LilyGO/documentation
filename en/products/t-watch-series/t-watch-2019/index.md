@@ -113,11 +113,11 @@ Tactile feedback: GPIO37 (2020-V1/V3), DRV2605 I2C (2020-V2)
 
 ## Datasheet
 
-- [ESP32 Datasheet](https://www.espressif.com/en/products/microcontrollers/esp32/resources)
-- [ST7789V Display Controller](http://www.displayfuture.com/Display/datasheet/ST7789V.pdf)
-- [FT6336 Touchscreen Controller](https://www.alldatasheet.com/datasheet-pdf/pdf/1172978/FOCALTECH/FT6336.html)
-- [BMA423 IMU Sensor](https://www.bosch-sensortec.com/bst/products/all_products/bma423)
-- [AXP202 Power Management IC](https://www.x-powers.com/en.php/Info/product_detail/article_id/29)
+- [ESP32 Datasheet](/datasheet/esp32_datasheet_en.pdf)
+- [ST7789V Display Controller](/datasheet/ST7789V.pdf)
+- [FT6336 Touchscreen Controller](/datasheet/FT6236-FT6336-FT6436L-FT6436_Datasheet.pdf)
+- [BMA423 IMU Sensor](/datasheet/BMA423.PDF)
+- [AXP202 Power Management IC](/datasheet/AXP192%20Brief.pdf)
 
 ## Software Libraries
 

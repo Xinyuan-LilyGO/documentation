@@ -81,8 +81,8 @@ Flash Meshtastic firmware directly from [flasher.meshtastic.org](https://flasher
 
 ## Datasheet
 
-* [nRF52840 Datasheet](https://infocenter.nordicsemi.com/pdf/nRF52840_PS_v1.7.pdf)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262)
+* [nRF52840 Datasheet](/datasheet/nRF52840_PS_v1.11.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
 
 ## Software Libraries
 

@@ -95,7 +95,7 @@ LILYGO T-ETH ELITE 是一款基于 ESP32-S3-WROOM-1 模组的高性能物联网�
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## 软件开发
 

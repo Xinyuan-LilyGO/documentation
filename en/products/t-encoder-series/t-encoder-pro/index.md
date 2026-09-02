@@ -128,8 +128,8 @@ T-Encoder Pro is a smart control knob development board based on **ESP32-S3-R8**
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [CHSC5816 Datasheet](https://github.com/Xinyuan-LilyGO/T-Encoder-Pro/blob/arduino-esp32-libs_V3.0.7/information/DS_CHSC5816_V1.1.5.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [CHSC5816 Datasheet](/datasheet/DS_CHSC5816_V1.1.5.pdf)
 
 ## Software Development
 

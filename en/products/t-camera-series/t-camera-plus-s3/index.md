@@ -175,13 +175,13 @@ T-Camera Plus S3 is a versatile smart hardware development board based on **ESP3
 ## Schematic
 
 * [T-CameraPlus-S3 V1.0-V1.1 Schematic](/products/t-camera-series/t-camera-plus-s3/index/hardware/T-CameraPlus-S3_V1.0-V1.1_20241109.pdf)
-* [T-CameraPlus-S3 V1.2 Schematic](public/products/t-camera-series/t-camera-plus-s3/index/hardware/T-CameraPlus-S3_V1.2_20240417.pdf)
+* [T-CameraPlus-S3 V1.2 Schematic](/products/t-camera-series/t-camera-plus-s3/index/hardware/T-CameraPlus-S3_V1.2_20240417.pdf)
 
 ## Datasheet
 
-* [MAX98357A](https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/information/MAX98357AETE+T.pdf)
-* [MP34DT05-A](https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/information/mp34dt05-a.pdf)
-* [AN_SY6970](https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/information/AN_SY6970.pdf)
+* [MAX98357A](/datasheet/MAX98357AETE+T.pdf)
+* [MP34DT05-A](/datasheet/mp34dt05-a.pdf)
+* [AN_SY6970](/datasheet/AN_SY6970.pdf)
 
 ## Software Development
 
@@ -195,7 +195,7 @@ T-Camera Plus S3 is a versatile smart hardware development board based on **ESP3
 * [JPEGDEC-1.2.8](https://github.com/bitbank2/JPEGDEC)
 * [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 * [XPowersLib-0.2.1](https://github.com/lewisxhe/XPowersLib)
-* [Arduino_DriveBus-1.1.16](https://github.com/Xk-w/Arduino_DriveBus)
+* [Arduino_DriveBus-1.1.16](https://github.com/Llgok/Arduino_DriveBus)
 * [cst816t-1.5.0](https://github.com/koendv/cst816t)
 * [ESP32-audioI2S-3.0.6](https://github.com/schreibfaul1/ESP32-audioI2S)
 * [MiniTV](https://github.com/moononournation/MiniTV)

@@ -60,16 +60,8 @@ T-Display-P4-Keyboard 通过小尺寸子板和 Pogo Pin 与 P4 主机连接。�
 | 示例 | ESP-IDF | 描述 |
 | :------ | :-----: | :---------- |
 | [afe](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/afe) | ✓ | 音频前端 |
-| [aw86224](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/aw86224) | ✓ | 振动马达 |
-| [bq27220](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/bq27220) | ✓ | 电量监测 |
-| [deep_sleep](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/deep_sleep) | ✓ | 深度睡眠 |
-| [es8311](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/es8311) | ✓ | 音频编解码器 |
-| [l76k](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/l76k) | ✓ | GPS 定位 |
-| [lvgl_9_ui](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/lvgl_9_ui) | ✓ | 出厂示例 |
-| [screen_camera](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/screen_camera) | ✓ | 摄像头屏幕显示 |
+| [es8311_sd_wav](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/es8311_sd_wav) | ✓ | 音频编解码与 SD 卡 WAV 播放 |
 | [sx1262_lora_send_receive](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/sx1262_lora_send_receive) | ✓ | LoRa 收发 |
-| [icm20948](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/icm20948) | ✓ | 惯性传感器 |
-| [pcf8563](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/pcf8563) | ✓ | RTC 时钟 |
 | [xiaozhi](https://github.com/78/xiaozhi-esp32) | ✓ | 小智 AI |
 
 #### T-Display-P4-Keyboard 扩展板示例
@@ -78,7 +70,7 @@ T-Display-P4-Keyboard 通过小尺寸子板和 Pogo Pin 与 P4 主机连接。�
 | :------ | :-----: | :---------- |
 | [radiolib_cc1101_send_receive](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/keyboard_examples/radiolib_cc1101_send_receive) | ✓ | CC1101 收发 |
 | [radiolib_nrf24l01_send_receive](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/keyboard_examples/radiolib_nrf24l01_send_receive) | ✓ | NRF24L01 收发 |
-| [st25r3916](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/keyboard_examples/st25r3916) | ✓ | NFC 测试 |
+| [st25r3916](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/keyboard_examples/nfc-rfal_st25r3916) | ✓ | NFC 测试 |
 | [tca8418](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/keyboard_examples/tca8418) | ✓ | 键盘测试 |
 
 ### ESP-IDF（VS Code）
@@ -150,10 +142,6 @@ T-Display-P4 有 AMOLED、TFT 两个版本：
 
 <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-tft.jpg" alt="T-Display-P4 TFT 引脚图" width=100%>
 
-引脚定义请参考配置文件：
-- [t_display_p4_config.h](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/components/private_library/t_display_p4_config.h)
-- [t_display_p4_keyboard_config.h](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/components/private_library/t_display_p4_keyboard_config.h)
-
 ## 尺寸图
 
 ## 原理图
@@ -162,14 +150,14 @@ T-Display-P4 有 AMOLED、TFT 两个版本：
 
 ## 数据手册
 
-* [ESP32-P4 Datasheet](https://www.espressif.com/en/support/documents/technical-documents)
-* [ESP32-C6-MINI-1U Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c6-mini-1_mini-1u_datasheet_en.pdf)
-* [SX1262 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/information/DS_SX1261-2_V2_1.pdf)
-* [ES8311 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/information/ES8311.pdf)
-* [ICM20948 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/information/ICM20948.pdf)
-* [BQ27220 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/information/bq27220_en.pdf)
-* [L76K Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/information/L76KB-A58.pdf)
-* [PCF8563 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/information/PCF8563.pdf)
+* [ESP32-P4 Datasheet](/datasheet/esp32-p4_datasheet_en.pdf)
+* [ESP32-C6-MINI-1U Datasheet](/datasheet/esp32-c6-mini-1_mini-1u_datasheet_en.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261-2_V2_1.pdf)
+* [ES8311 Datasheet](/datasheet/ES8311.pdf)
+* [ICM20948 Datasheet](/datasheet/ICM20948.pdf)
+* [BQ27220 Datasheet](/datasheet/bq27220_en.pdf)
+* [L76K Datasheet](/datasheet/L76KB-A58.pdf)
+* [PCF8563 Datasheet](/datasheet/PCF8563.pdf)
 
 ## 软件开发
 
@@ -196,7 +184,7 @@ T-Display-P4 有 AMOLED、TFT 两个版本：
   A. 确保设备在室外或信号良好处测试，并烧录最新固件。
 
 * **Q. 关机无法充电或续航严重缩水？**  
-  A. 出厂固件最多使用 3-5 小时，未加入睡眠功能。参考[睡眠示例](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/deep_sleep)添加深度睡眠。
+  A. 出厂固件最多使用 3-5 小时，未加入睡眠功能。如需延长续航，可自行添加深度睡眠功能。
 
 * **Q. OLED 屏幕出现波浪纹？**  
   A. 若低电量时波纹更明显，基本与电池相关；若电量充足仍出现，需检查屏幕供电回路。

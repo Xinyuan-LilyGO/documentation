@@ -38,11 +38,11 @@ T-Echo-Lite is a lightweight version of T-Echo featuring a smaller form factor a
 
 | Example | Support | Description |
 | :-----: | :-----: | :---------: |
-| [aw21009qnr](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw21009qnr) | ✓ | Keyboard backlight |
+| [aw21009qnr](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw21009) | ✓ | Keyboard backlight |
 | [aw86224](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw86224) | ✓ | Vibration motor |
 | [es8311](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/es8311) | ✓ | Speaker/microphone |
 | [tca8418](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/tca8418) | ✓ | Keyboard |
-| [original_test](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/original_test) | ✓ | Factory test |
+| [original_test](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/general_test) | ✓ | Factory test |
 
 ### PlatformIO
 
@@ -139,13 +139,13 @@ For pin definitions, refer to the configuration files in the repository:
 
 ## Datasheet
 
-* [nRF52840 Datasheet](https://docs.nordicsemi.com/bundle/ps_nrf52840/page/keyfeatures_html5.html)
-* [GDEM0122T61 (E-Paper)](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/GDEM0122T61.pdf)
-* [SSD1681 (E-Paper Driver)](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/SSD1681.pdf)
-* [S62F (SX1262 Module)](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/S62F.pdf)
-* [L76KB-A58 (GPS)](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/L76KB-A58.pdf)
-* [ICM20948](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/ICM20948.pdf)
-* [ZD25WQ32CEIGR (Flash)](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/ZD25WQ32CEIGR.pdf)
+* [nRF52840 Datasheet](/datasheet/nRF52840_PS_v1.11.pdf)
+* [GDEM0122T61 (E-Paper)](/datasheet/GDEM0122T61.pdf)
+* [SSD1681 (E-Paper Driver)](/datasheet/SSD1681.pdf)
+* [S62F (SX1262 Module)](/datasheet/S62F.pdf)
+* [L76KB-A58 (GPS)](/datasheet/L76KB-A58.pdf)
+* [ICM20948](/datasheet/ICM20948.pdf)
+* [ZD25WQ32CEIGR (Flash)](/datasheet/ZD25WQ32CEIGR.PDF)
 
 ## Software Development
 

@@ -250,10 +250,10 @@ T-CameraPlus-S3是一款基于ESP32-S3主控芯片的多功能智能硬件开发
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [MAX98357A Datasheet](https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/information/MAX98357AETE+T.pdf)
-* [MP34DT05-A Datasheet](https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/information/mp34dt05-a.pdf)
-* [SY6970 Datasheet](https://github.com/Xinyuan-LilyGO/T-CameraPlus-S3/blob/arduino-esp32-libs_V2.0.14/information/EVB_SY6970.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [MAX98357A Datasheet](/datasheet/MAX98357AETE+T.pdf)
+* [MP34DT05-A Datasheet](/datasheet/mp34dt05-a.pdf)
+* [SY6970 Datasheet](/datasheet/EVB_SY6970.pdf)
 
 ## 软件开发
 
@@ -267,7 +267,7 @@ T-CameraPlus-S3是一款基于ESP32-S3主控芯片的多功能智能硬件开发
 * [MiniTV](https://github.com/moononournation/MiniTV)
 * [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
 * [XPowersLib-0.2.1](https://github.com/lewisxhe/XPowersLib)
-* [Arduino_DriveBus-1.1.16](https://github.com/Xk-w/Arduino_DriveBus)
+* [Arduino_DriveBus-1.1.16](https://github.com/Llgok/Arduino_DriveBus)
 * [cst816t-1.5.0](https://github.com/koendv/cst816t)
 * [arduino-libhelix-0.8.1](https://github.com/pschatzmann/arduino-libhelix)
 * [ESP32-audioI2S-3.0.6](https://github.com/schreibfaul1/ESP32-audioI2S)

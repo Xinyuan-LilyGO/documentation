@@ -136,7 +136,7 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 ## 数据手册
 
 * [K230 文档](https://github.com/kendryte/k230_docs)
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## 软件开发
 

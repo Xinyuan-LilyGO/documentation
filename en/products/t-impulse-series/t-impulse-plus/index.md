@@ -124,14 +124,14 @@ T-Impulse Plus is a low-power wristband based on the **nRF52840** chip, featurin
 
 ## Datasheet
 
-* [nRF52840 Datasheet](https://docs.nordicsemi.com/bundle/ps_nrf52840/page/keyfeatures_html5.html)
-* [SSD1315](https://github.com/Xinyuan-LilyGO/T-Impulse-Plus/blob/main/information/SSD1315.pdf)
-* [S62F (SX1262)](https://github.com/Xinyuan-LilyGO/T-Impulse-Plus/blob/main/information/S62F.pdf)
-* [MIA-M10Q](https://github.com/Xinyuan-LilyGO/T-Impulse-Plus/blob/main/information/MIA-M10Q-00B.pdf)
-* [ICM20948](https://github.com/Xinyuan-LilyGO/T-Impulse-Plus/blob/main/information/ICM20948.pdf)
-* [ZD25WQ32CEIGR](https://github.com/Xinyuan-LilyGO/T-Impulse-Plus/blob/main/information/ZD25WQ32CEIGR.pdf)
-* [TTP223](https://github.com/Xinyuan-LilyGO/T-Impulse-Plus/blob/main/information/TTP223-BA6-TD.pdf)
-* [SGM41562](https://github.com/Xinyuan-LilyGO/T-Impulse-Plus/blob/main/information/SGMICRO-SGM41562XGTR.pdf)
+* [nRF52840 Datasheet](/datasheet/nRF52840_PS_v1.11.pdf)
+* [SSD1315](/datasheet/SSD1315.pdf)
+* [S62F (SX1262)](/datasheet/S62F.pdf)
+* [MIA-M10Q](/datasheet/MIA-M10Q-00B.pdf)
+* [ICM20948](/datasheet/ICM20948.pdf)
+* [ZD25WQ32CEIGR](/datasheet/ZD25WQ32CEIGR.PDF)
+* [TTP223](/datasheet/TTP223-BA6-TD.pdf)
+* [SGM41562](/datasheet/SGMICRO-SGM41562XGTR.pdf)
 
 ## Software Libraries
 

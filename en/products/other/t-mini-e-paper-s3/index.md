@@ -138,9 +138,9 @@ T-Mini E-Paper S3 is a compact multifunctional development board based on **ESP3
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-core/sx1262)
-* [PCF85063ATL Datasheet](https://www.nxp.com/products/analog-and-mixed-signal/real-time-clocks/rtcs-with-ic-bus/tiny-real-time-clock-calendar-with-alarm-function-and-ic-bus:PCF85063A)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
+* [PCF85063ATL Datasheet](/datasheet/PCF85063A.pdf)
 
 ## Software Development
 
@@ -155,7 +155,7 @@ T-Mini E-Paper S3 is a compact multifunctional development board based on **ESP3
 * [AceButton](https://github.com/bxparks/AceButton)
 * [Adafruit_NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel)
 * [ArduinoJson](https://github.com/bblanchon/ArduinoJson)
-* [BMA423](https://github.com/BoschSensortec/BMA423-Sensor-API)
+* [BMA423](https://github.com/wasp-os/BMA423-Sensor-API)
 * [QMC5883LCompass](https://github.com/mprograms/QMC5883LCompass)
 
 ## FAQ

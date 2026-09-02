@@ -96,7 +96,7 @@ LILYGO T-Relay is an ESP32-based development board with integrated relay outputs
 
 ## Schematic
 
-- [LilyGo-T-Relay GitHub Repository (hardware)](https://github.com/Xinyuan-LilyGO/LilyGo-T-Relay/tree/main/hardware)
+- [LilyGo-T-Relay GitHub Repository (hardware)](https://github.com/Xinyuan-LilyGO/LilyGo-T-Relay/tree/main/Schematic)
 
 ## Datasheet
 

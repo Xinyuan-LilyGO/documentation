@@ -121,7 +121,7 @@ LILYGO T4-S3 是一款基于 **ESP32-S3R8** 双核 LX7 微控制器的紧凑型�
 
 ## 数据手册
 
-* [ESP32-S3 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [ESP32-S3 数据手册](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## 软件开发
 

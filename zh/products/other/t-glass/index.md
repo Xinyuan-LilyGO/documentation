@@ -16,7 +16,7 @@ tags: ESP32-S3, AMOLED, Wearable, BHI260AP, Smart Glasses
 
 LILYGO T-Glass 是一款基于 ESP32-S3 FN4R2 的智能可穿戴开发板，集成 BHI260AP AI 运动传感器（六轴 IMU）和 JD9613 驱动的 1.1 英寸 LTPS AMOLED 显示屏（分辨率 294×126px，可见区域 126×126px）。内置 4MB Flash 和 2MB QSPI PSRAM，配备 PCF85063A RTC、麦克风输入、振动反馈电机、侧面触摸按键和 QWIIC 扩展接口，适用于智能眼镜、运动追踪和便携可穿戴设备。
 
-> 同系列产品 T-Wristband（[LILYGO Mall](https://www.lilygo.cc/products/t-wristband-s3)）使用相同主控和代码仓库，可见区域为 126×250px。
+> 同系列产品 T-Wristband 使用相同主控和代码仓库，可见区域为 126×250px。
 
 ## 快速开始
 
@@ -116,10 +116,10 @@ LILYGO T-Glass 是一款基于 ESP32-S3 FN4R2 的智能可穿戴开发板，集�
 
 ## 数据手册
 
-* [JD9613 Datasheet](https://github.com/Xinyuan-LilyGO/LilyGO-T-Wristband-and-T-Glass/blob/master/datasheet/JD9613_DS_Preliminary_V0.02_20210325.pdf)
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/en/support/documents/technical-documents?keys=&field_type_tid%5B%5D=842)
-* [BHI260AP Datasheet](https://www.bosch-sensortec.com/products/smart-sensor-systems/bhi260ap/)
-* [PCF85063A Datasheet](https://www.nxp.com/products/analog-and-mixed-signal/real-time-clocks/rtcs-with-ic-bus/tiny-real-time-clock-calendar-with-alarm-function-and-ic-bus:PCF85063A)
+* [JD9613 Datasheet](/datasheet/JD9613_DS_Preliminary_V0.02_20210325.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [BHI260AP Datasheet](/datasheet/bst-bhi260ap-ds000.pdf)
+* [PCF85063A Datasheet](/datasheet/PCF85063A.pdf)
 
 ## 软件开发
 

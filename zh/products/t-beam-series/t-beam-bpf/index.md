@@ -229,8 +229,8 @@ LILYGO T-Beam-BPF 是 T-Beam 系列的特殊变体，集成了**带通滤波器�
 
 ## 数据手册
 
-* [ESP32-S3 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SX1278 数据手册](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1278)
+* [ESP32-S3 数据手册](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SX1278 数据手册](/datasheet/SX1276-7-8-9_Datasheet.pdf)
 
 ## 软件库
 

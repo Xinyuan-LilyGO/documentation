@@ -82,7 +82,7 @@ T-PCIE SIM7600E 是一款基于 **SIM7600E** 芯片的 **mini PCIe 规格 LTE �
 
 ## 数据手册
 
-* [SIM7600E 规格书](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/Files/T-SIM7600E-PCIE.pdf)
+* [SIM7600E 规格书](/datasheet/T-SIM7600X-V1.3.pdf)
 * [SIMCOM SIM7600X 官方页面](https://cn.simcom.com/product/SIM7600X.html)
 
 ## 软件开发

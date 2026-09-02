@@ -12,7 +12,7 @@ tags: ESP32-S3, CC1101, LoRa, NFC, TFT, Sub-GHz
   { src: '/products/t-embed-series/t-embed-cc1101/index/image/t-embed-cc1101-zh.jpg', alt: 'T-Embed CC1101 引脚图' }
 ]" />
 
-> 点这里切换到 [T-Embed-SI4732](https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Embed-SI4732/T-Embed-SI4732.html) 版本
+> 点这里切换到 [T-Embed-SI4732](../t-embed-si4732/) 版本
 
 ## 概述
 
@@ -202,10 +202,11 @@ LILYGO T-Embed CC1101 是一款基于 ESP32-S3 双核 LX7 处理器的高集成�
 
 ## 数据手册
 
-* [CC1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/cc1101.pdf)
-* [PN532](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/PN532_C1.pdf)
-* [BQ25896](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq25896.pdf)
-* [BQ27220](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq27220_datasheet.pdf)
+* [CC1101](/datasheet/cc1101.pdf)
+* [PN532](/datasheet/PN532_C1.pdf)
+* [BQ25896](/datasheet/bq25896.pdf)
+* [BQ27220](/datasheet/bq27220_datasheet.pdf)
+* ST7789V
 
 ## 软件开发
 

@@ -12,7 +12,7 @@ show_source: false
 | 库名 | 版本 | 来源 |
 | :--: | :--: | :--: |
 | Arduino_GFX | 1.3.7 | [GitHub](https://github.com/moononournation/Arduino_GFX) |
-| Arduino_DriveBus | 1.1.16 | [GitHub](https://github.com/Xk-w/Arduino_DriveBus) |
+| Arduino_DriveBus | 1.1.16 | [GitHub](https://github.com/Llgok/Arduino_DriveBus) |
 | JPEGDEC | 1.2.8 | [GitHub](https://github.com/bitbank2/JPEGDEC) |
 | LVGL | 8.3.5 | [GitHub](https://github.com/lvgl/lvgl/tree/release/v8.4) |
 | SensorLib | 0.2.x | [GitHub](https://github.com/lewisxhe/SensorsLib) |

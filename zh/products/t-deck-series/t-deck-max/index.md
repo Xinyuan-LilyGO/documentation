@@ -205,10 +205,10 @@ A7682E 是 LTE Cat 1 模块，支持 LTE-FDD/GSM/GPRS/EDGE。插入 SIM 卡后�
 
 ## 数据手册
 
-* [ESP32-S3 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SX1262 产品页面](https://semtech.com/products/wireless-rf/lora-connect/sx1262)
+* [ESP32-S3 数据手册](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SX1262 产品页面](/datasheet/DS_SX1261_SX1262.pdf)
 * [A7682E 产品页面](https://en.simcom.com/product/A7682E.html)
-* [BHI260AP 数据手册](https://www.bosch-sensortec.com/products/smart-sensor-systems/bhi260ap/)
+* [BHI260AP 数据手册](/datasheet/bst-bhi260ap-ds000.pdf)
 
 ## 软件开发
 

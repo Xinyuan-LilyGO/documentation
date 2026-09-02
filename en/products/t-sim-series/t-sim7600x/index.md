@@ -125,11 +125,11 @@ T-SIM7600X is a 4G LTE Cat-4 IoT development board based on **ESP32-WROVER-B** (
 
 ## Schematic
 
-* [T-SIM7600X V1.3 Schematic](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/blob/main/schematic/esp32/T-SIM7600X-V1.3.pdf)
+* [T-SIM7600X Schematic](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/blob/main/schematic/esp32/T-SIM7600X-V1.3.pdf)
 
 ## Datasheet
 
-* [ESP32 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
+* [ESP32 Datasheet](/datasheet/esp32_datasheet_en.pdf)
 * [SIM7600 Series Datasheet](https://cn.simcom.com/product/SIM7600X.html)
 
 ## Software Development

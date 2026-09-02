@@ -22,11 +22,9 @@ LILYGO T-LoRa C6 是一款基于 ESP32-C6-MINI-1 模组的紧凑型物联网开�
 
 | 示例 | PlatformIO/Arduino | ESP-IDF | 描述 |
 | :------ | :----------------: | :-----: | :---------- |
-| [LoRa_Communication](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/LoRa_Communication) | ✓ | | LoRa 通信示例 |
-| [WiFi6_Connection](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/WiFi6_Connection) | ✓ | | Wi-Fi 6 连接示例 |
-| [Bluetooth_LE](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/Bluetooth_LE) | ✓ | | 蓝牙低功耗示例 |
-| [Multi_Protocol](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/Multi_Protocol) | ✓ | | 多协议通信示例 |
-| [Sensor_Node](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/main/examples/Sensor_Node) | ✓ | | 传感器节点示例 |
+| [SX1262_PingPong](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/master/examples/LoRa/T3C6/SX1262_PingPong) | ✓ | | LoRa 通信示例 |
+| [BLE_server](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/master/examples/BLE/BLE_server) | ✓ | | 蓝牙低功耗示例 |
+| [I2CScanner](https://github.com/Xinyuan-LilyGO/LilyGo-LoRa-Series/tree/master/examples/Sensor/I2CScanner) | ✓ | | I2C 传感器扫描示例 |
 
 ### PlatformIO
 1. 安装 [Visual Studio Code](https://code.visualstudio.com/) 并安装 "PlatformIO IDE" 扩展，安装后重启。
@@ -112,8 +110,8 @@ LILYGO T-LoRa C6 是一款基于 ESP32-C6-MINI-1 模组的紧凑型物联网开�
 
 ## 数据手册
 
-* [ESP32-C6 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-core/sx1262)
+* [ESP32-C6 Datasheet](/datasheet/esp32-c6_datasheet_en.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
 
 ## 软件开发
 

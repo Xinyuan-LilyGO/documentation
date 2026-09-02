@@ -139,10 +139,10 @@ LILYGO T-Circle S3 是基于 ESP32-S3-R8 的圆形显示屏开发板，搭载 0.
 
 ## 数据手册
 
-* [GC9D01N Datasheet](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/master/information/GC9D01N.pdf)
-* [MAX98357A Datasheet](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/master/information/MAX98357AETE+T.pdf)
-* [MSM261S4030H0R Datasheet](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/master/information/MSM261S4030H0R.pdf)
-* [MP34DT05-A Datasheet](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/master/information/mp34dt05-a.pdf)
+* [GC9D01N Datasheet](/datasheet/GC9D01N.pdf)
+* [MAX98357A Datasheet](/datasheet/MAX98357AETE+T.pdf)
+* [MSM261S4030H0R Datasheet](/datasheet/MEMSensing-MSM261S4030H0R.pdf)
+* [MP34DT05-A Datasheet](/datasheet/mp34dt05-a.pdf)
 
 ## 软件开发
 
@@ -150,7 +150,7 @@ LILYGO T-Circle S3 是基于 ESP32-S3-R8 的圆形显示屏开发板，搭载 0.
 
 ### 依赖库
 
-* [Arduino_DriveBus 1.1.16](https://github.com/Xk-w/Arduino_DriveBus)
+* [Arduino_DriveBus 1.1.16](https://github.com/Llgok/Arduino_DriveBus)
 * [Arduino_GFX 1.3.7](https://github.com/moononournation/Arduino_GFX)
 * [ESP32-audioI2S 3.0.6](https://github.com/schreibfaul1/ESP32-audioI2S)
 * [DFRobot_MSM261](https://github.com/DFRobot/DFrobot_MSM261)（V1.0）

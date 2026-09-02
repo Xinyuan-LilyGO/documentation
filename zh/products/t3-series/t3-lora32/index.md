@@ -173,10 +173,10 @@ LILYGO T3_V1.6.1（LoRa32 V2.1.6）多协议物联网开发板是一款集成 ES
 
 ## 数据手册
 
-* [ESP32 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32_datasheet_cn.pdf)
-* [SX1276 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276)
-* [SX1278 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1278)
-* [SSD1306 Datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
+* [ESP32 Datasheet](/datasheet/esp32_datasheet_cn.pdf)
+* [SX1276 Datasheet](/datasheet/SX1276-7-8-9_Datasheet.pdf)
+* [SX1278 Datasheet](/datasheet/SX1276-7-8-9_Datasheet.pdf)
+* [SSD1306 Datasheet](/datasheet/SSD1306.pdf)
 * [CH9102 Datasheet](https://www.wch.cn/products/CH9102.html)
 
 ## 软件开发

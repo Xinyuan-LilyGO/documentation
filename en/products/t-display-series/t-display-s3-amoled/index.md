@@ -122,8 +122,8 @@ LILYGO T-Display-S3-AMOLED is an upgraded version of the T-Display-S3, featuring
 
 ## Datasheet
 
-* [RM67162 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED/blob/main/datasheet/RM67162%20DataSheet_V0.0.pdf)
-* [ESP32-S3 Datasheet](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED/blob/main/doc/esp32-s3_datasheet_en.pdf)
+* [RM67162 Datasheet](/datasheet/RM67162%20DataSheet_V0.0.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en-b8ebdddf.pdf)
 
 ## Software Libraries
 

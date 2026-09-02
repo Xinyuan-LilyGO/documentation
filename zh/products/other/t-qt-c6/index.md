@@ -29,7 +29,7 @@ LILYGO T-QT-C6 是基于 ESP32-C6-MINI-1U 微控制器的智能可穿戴开发�
 | [IMU](https://github.com/Xinyuan-LilyGO/T-QT-C6/tree/master/examples/IMU) | ✓ | 六轴 IMU 示例 |
 | [IMU_Level](https://github.com/Xinyuan-LilyGO/T-QT-C6/tree/master/examples/IMU_Level) | ✓ | IMU 水平仪示例 |
 | [Battery_Voltage](https://github.com/Xinyuan-LilyGO/T-QT-C6/tree/master/examples/Battery_Voltage) | ✓ | 电池电量检测 |
-| [Breathing_Light](https://github.com/Xinyuan-LilyGO/T-QT-C6/tree/master/examples/BREATHING_LIGHT) | ✓ | 呼吸灯示例 |
+| [Breathing_Light](https://github.com/Xinyuan-LilyGO/T-QT-C6/tree/arduino-esp32-libs_V3.0.2/examples/Breathing_Light) | ✓ | 呼吸灯示例 |
 | [Deep_Sleep](https://github.com/Xinyuan-LilyGO/T-QT-C6/tree/master/examples/Deep_Sleep) | ✓ | 深度睡眠（约 172µA） |
 | [Light_Sleep](https://github.com/Xinyuan-LilyGO/T-QT-C6/tree/master/examples/Light_Sleep) | ✓ | 轻度睡眠（约 517µA） |
 | [SGM41562](https://github.com/Xinyuan-LilyGO/T-QT-C6/tree/master/examples/SGM41562) | ✓ | 电源管理芯片（V1.2） |
@@ -135,14 +135,13 @@ LILYGO T-QT-C6 是基于 ESP32-C6-MINI-1U 微控制器的智能可穿戴开发�
 
 ## 原理图
 
-* [T-QT-C6 电池板 V1.1 原理图](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/project/T-QT-C6_V1.2/T-QT-C6_Battery_V1.1.pdf)
-* [T-QT-C6 MCU V1.2 原理图](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/arduino-esp32-libs_V3.0.2/project/T-QT-C6_V1.2/T-QT-C6_MCU_V1.2.pdf)
+* [T-QT-C6 V1.2 原理图](https://github.com/Xinyuan-LilyGO/T-QT-C6/blob/master/project/T-QT-C6_V1.2)
 
 ## 数据手册
 
-* [ESP32-C6 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c6-mini-1_mini-1u_datasheet_en.pdf)
-* [LSM6DSL Datasheet](https://www.st.com/resource/en/datasheet/lsm6dsl.pdf)
-* [SGM41562 Datasheet](https://www.sg-micro.com/uploads/soft/20230630/1688108945.pdf)
+* [ESP32-C6 Datasheet](/datasheet/esp32-c6-mini-1_mini-1u_datasheet_en.pdf)
+* [LSM6DSL Datasheet](/datasheet/lsm6dsl.pdf)
+* [SGM41562 Datasheet](/datasheet/SGMICRO-SGM41562XGTR.pdf)
 
 ## 软件开发
 
@@ -150,7 +149,7 @@ LILYGO T-QT-C6 是基于 ESP32-C6-MINI-1U 微控制器的智能可穿戴开发�
 
 ### 依赖库
 
-* [Arduino_DriveBus 1.1.16](https://github.com/Xinyuan-LilyGO/Arduino_DriveBus)
+* [Arduino_DriveBus 1.1.16](https://github.com/Llgok/Arduino_DriveBus)
 * [Arduino_GFX 1.3.7](https://github.com/moononournation/Arduino_GFX)
 * [lvgl 8.3.5](https://github.com/lvgl/lvgl)
 

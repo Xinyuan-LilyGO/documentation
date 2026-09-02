@@ -22,8 +22,8 @@ T-Display-S3-Long 是一款基于 ESP32-S3R8 的长条形显示屏开发板，�
 
 | 示例 | PlatformIO/Arduino | ESP-IDF | 描述 |
 | :------ | :----------------: | :-----: | :---------- |
-| [Factory](https://github.com/Xinyuan-LilyGO/T-Display-S3-Long/tree/master/examples/Factory) | ✓ | | 出厂测试程序 |
-| [tft](https://github.com/Xinyuan-LilyGO/T-Display-S3-Long/tree/master/examples/tft) | ✓ | | 屏幕显示测试 |
+| [Factory](https://github.com/Xinyuan-LilyGO/T-Display-S3-Long/tree/T-Display-S3-Long-cst3530/examples/factory) | ✓ | | 出厂测试程序 |
+| [tft](https://github.com/Xinyuan-LilyGO/T-Display-S3-Long/tree/T-Display-S3-Long-cst3530/examples/TFT) | ✓ | | 屏幕显示测试 |
 | [touch](https://github.com/Xinyuan-LilyGO/T-Display-S3-Long/tree/master/examples/touch) | ✓ | | 触摸功能测试 |
 | [QWIIC_Sensor](https://github.com/Xinyuan-LilyGO/T-Display-S3-Long/tree/master/examples/QWIIC_Sensor) | ✓ | | QWIIC 传感器示例 |
 | [GFX_AXS15231B_Image](https://github.com/Xinyuan-LilyGO/T-Display-S3-Long/tree/master/examples/GFX_AXS15231B_Image) | ✓ | | 图形图像显示 |
@@ -117,7 +117,7 @@ T-Display-S3-Long 是一款基于 ESP32-S3R8 的长条形显示屏开发板，�
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## 软件开发
 

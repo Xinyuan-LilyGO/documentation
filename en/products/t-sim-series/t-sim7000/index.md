@@ -109,12 +109,12 @@ LILYGO T-SIM7000G integrates the **ESP32** microcontroller with the **SIMCom SIM
 
 ## Schematic
 
-- [LilyGO-T-SIM7000G GitHub Repository (hardware)](https://github.com/Xinyuan-LilyGO/LilyGO-T-SIM7000G/tree/master/hardware)
+- [LilyGO-T-SIM7000G GitHub Repository (hardware)](https://github.com/Xinyuan-LilyGO/LilyGO-T-SIM7000G/tree/master/schematic)
 
 ## Datasheet
 
-- [ESP32 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
-- [SIM7000G Hardware Design](https://simcom.ee/documents/?dir=SIM7000x)
+- [ESP32 Datasheet](/datasheet/esp32_datasheet_en.pdf)
+- [SIM7000G Hardware Design](/datasheet/SIM7000_Hardware_Design_V1.05.pdf)
 
 ## Software Libraries
 

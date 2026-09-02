@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32-S3, SIM7670G, 4G, LTE Cat-1, GPS, IoT, 蜂窝
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-sim7670g-s3" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-sim-7670g-s3" />
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-1.jpg', alt: 'T-SIM7670G-S3 正面' },
@@ -138,12 +138,12 @@ LILYGO T-SIM7670G-S3 将 **ESP32-S3** 双核 LX7 微控制器与 **SIMCom SIM767
 
 ## 原理图
 
-- [LilyGo-Modem-Series GitHub 仓库（硬件）](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/tree/master/hardware)
+- [T-SIM7670G-S3-V1.1](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/blob/main/schematic/esp32s3/T-SIM7670G-S3-V1.1.pdf)
 
 ## 数据手册
 
-- [ESP32-S3 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-- [SIM7670G 硬件设计手册](https://simcom.ee/documents/?dir=SIM767x)
+- [ESP32-S3 数据手册](/datasheet/esp32-s3_datasheet_en.pdf)
+- [SIM7670G 硬件设计手册](/datasheet/SIM7672X_Series_Hardware_Design_V1.02.pdf)
 
 ## 软件库
 

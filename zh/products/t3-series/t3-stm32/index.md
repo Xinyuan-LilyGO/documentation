@@ -35,7 +35,7 @@ LILYGO T3 STM32 是一款基于 STM32WL55CCU6 低功耗微控制器的多功能�
 
 1. **STM32CubeProgrammer** — [ST 官方下载](https://www.st.com.cn/zh/development-tools/stm32cubeprog.html)
 2. **J-Link** — [SEGGER 下载](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)
-3. **ST-Link** — [ST 官方驱动](https://www.st.com.cn/zh/development-tools/stsw-link009.html)
+3. **ST-Link** — [ST 官方驱动](https://www.st.com/en/development-tools/stsw-link009.html)
 
 > **注意**：JLink、STLink、STM32CubeProgrammer 三种下载器均需要安装对应驱动程序才能正常使用。
 
@@ -88,9 +88,9 @@ LILYGO T3 STM32 是一款基于 STM32WL55CCU6 低功耗微控制器的多功能�
 
 ## 数据手册
 
-* [SSD1315 Datasheet](https://github.com/Xinyuan-LilyGO/T3-STM32/blob/master/hardware/SSD1315.pdf)
-* [STM32WL55 Datasheet](https://www.st.com/resource/en/datasheet/stm32wl55cc.pdf)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-core/sx1262)
+* [SSD1315 Datasheet](/datasheet/SSD1315-15ec98b4.pdf)
+* [STM32WL55 Datasheet](/datasheet/stm32wl55cc.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
 
 ## 软件开发
 
@@ -100,7 +100,7 @@ LILYGO T3 STM32 是一款基于 STM32WL55CCU6 低功耗微控制器的多功能�
 
 * [STM32 HAL Library](https://www.st.com/en/embedded-software/stm32cubewl.html)
 * [STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)
-* [LoRa Radio Driver](https://github.com/stm32-hotspot/STM32WL_LoRa_Radio_Driver)
+* LoRa Radio Driver
 
 ## 常见问题
 

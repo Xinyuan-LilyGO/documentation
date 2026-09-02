@@ -39,12 +39,12 @@ T-Echo Lite 是 T-Echo 的轻便版本，基于 nRF52840 设计，具有更小�
 
 | 示例 | Arduino/PlatformIO | 描述 |
 | :------ | :----------------: | :---------- |
-| [original_test](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/original_test) | ✓ | KeyShield 出厂测试 |
+| [original_test](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/general_test) | ✓ | KeyShield 出厂测试 |
 | [tca8418](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/tca8418) | ✓ | 键盘矩阵示例 |
 | [es8311](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/es8311) | ✓ | 音频编解码示例 |
-| [voice_speaker](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/voice_speaker) | ✓ | 语音播放示例 |
+| [voice_speaker](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/speaker_certification) | ✓ | 语音播放示例 |
 | [aw86224](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw86224) | ✓ | 振动电机示例 |
-| [aw21009qnr](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw21009qnr) | ✓ | 键盘背光示例 |
+| [aw21009qnr](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw21009) | ✓ | 键盘背光示例 |
 
 ### PlatformIO
 
@@ -71,7 +71,7 @@ T-Echo Lite 是 T-Echo 的轻便版本，基于 nRF52840 设计，具有更小�
 
 1. [Arduino IDE](https://www.arduino.cc/en/software)（Adafruit nRF52 支持）
 2. [Platform IO](https://platformio.org/)（nordicnrf52 平台）
-3. [nRF Connect SDK](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-SDK)（原生开发）
+3. [nRF Connect SDK](https://www.nordicsemi.com/Products/Development-software/nRF-Connect-SDK)（原生开发）
 
 ## 视频
 
@@ -127,12 +127,12 @@ T-Echo Lite 是 T-Echo 的轻便版本，基于 nRF52840 设计，具有更小�
 
 ## 数据手册
 
-* [nRF52840 文档](https://docs.nordicsemi.com/bundle/ps_nrf52840/page/keyfeatures_html5.html)
-* [GDEM0122T61 Datasheet](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/information/GDEM0122T61.pdf)
-* [SSD1681 Datasheet](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/information/SSD1681.pdf)
-* [S62F (SX1262) Datasheet](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/information/S62F.pdf)
-* [L76K Datasheet](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/information/L76KB-A58.pdf)
-* [ICM20948 Datasheet](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/blob/main/information/ICM20948.pdf)
+* [nRF52840 文档](/datasheet/nRF52840_PS_v1.11.pdf)
+* [GDEM0122T61 Datasheet](/datasheet/GDEM0122T61.pdf)
+* [SSD1681 Datasheet](/datasheet/SSD1681.pdf)
+* [S62F (SX1262) Datasheet](/datasheet/S62F.pdf)
+* [L76K Datasheet](/datasheet/L76KB-A58.pdf)
+* [ICM20948 Datasheet](/datasheet/ICM20948.pdf)
 
 ## 软件开发
 

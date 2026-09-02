@@ -32,9 +32,6 @@ T-Display S3 AMOLED 1.64 is a high-performance IoT development board based on **
 | [PCF8563](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/PCF8563) | ✓ | | PCF8563 RTC example |
 | [SD](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/SD) | ✓ | | SD card read/write |
 | [lvgl_benchmark](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/lvgl_benchmark) | ✓ | | LVGL performance test |
-| [iic_scan](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/iic_scan) | | ✓ | I2C device scan |
-| [touch](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/touch) | | ✓ | Touch function test |
-| [screen_touch_lvgl_9](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/screen_touch_lvgl_9) | | ✓ | Screen touch and LVGL 9 example |
 
 ### PlatformIO
 
@@ -116,18 +113,18 @@ T-Display S3 AMOLED 1.64 is a high-performance IoT development board based on **
 
 ## Datasheet
 
-* [FT3168](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.64/blob/arduino-esp32-libs_V2.0.14/information/FT3168.pdf)
-* [AN_SY6970](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.64/blob/arduino-esp32-libs_V2.0.14/information/AN_SY6970.pdf)
-* [DO0164FMST02](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.64/blob/arduino-esp32-libs_V2.0.14/information/SPEC-DO0164FMST02-20240126.pdf)
+* [FT3168](/datasheet/FT3168.pdf)
+* [AN_SY6970](/datasheet/AN_SY6970.pdf)
+* [DO0164FMST02](/datasheet/SPEC-DO0164FMST02-20240126.pdf)
 
 ## Software Development
 
-* [T-Display-S3-AMOLED-1.64-1.75 GitHub Repository](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.64-1.75)
+* [T-Display-S3-AMOLED-1.64-1.75 GitHub Repository](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75)
 
 ### Dependent Libraries
 
 * [Arduino_GFX-1.3.7](https://github.com/moononournation/Arduino_GFX)
-* [Arduino_DriveBus-1.1.16](https://github.com/Xk-w/Arduino_DriveBus)
+* [Arduino_DriveBus-1.1.16](https://github.com/Llgok/Arduino_DriveBus)
 * [JPEGDEC-1.2.8](https://github.com/bitbank2/JPEGDEC)
 * [lvgl-8.3.5](https://lvgl.io)
 * [SensorLib](https://github.com/lewisxhe/SensorsLib)

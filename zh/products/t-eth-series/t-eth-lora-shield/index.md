@@ -63,7 +63,7 @@ LILYGO T-ETH LoRa Shield 是一款专为 T-ETH-Elite 主板设计的扩展模块
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## 软件开发
 

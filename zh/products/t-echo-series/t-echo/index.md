@@ -44,7 +44,7 @@ T-Echo 兼容多个开源固件项目，包括 SoftRF 和 Meshtastic，可用于
 3. 点击左下角 (✔) 编译，点击 (→) 上传。
 
 ### nRF5-SDK
-1. 下载 [nRF5-SDK](https://www.nordicsemi.com/Software-and-Tools/Software/nRF5-SDK/Download)。
+1. 下载 [nRF5-SDK](https://www.nordicsemi.com/Products/Development-software/nrf5-sdk/download)。
 2. 使用 nRF5-SDK 进行编程，支持 NFC 等高级功能。
 
 > **注意：** 使用 nRF5-SDK 对板子编程将会丢失原先的 Adafruit Bootloader。Adafruit_nRF52_Arduino 中不支持 NFC 功能，如需使用 NFC 请用 nRF5-SDK 开发。
@@ -52,7 +52,7 @@ T-Echo 兼容多个开源固件项目，包括 SoftRF 和 Meshtastic，可用于
 ### 开发平台
 1. [Arduino IDE](https://www.arduino.cc/en/software)（Adafruit nRF52）
 2. [Platform IO](https://platformio.org/)
-3. [nRF5-SDK](https://www.nordicsemi.com/Software-and-Tools/Software/nRF5-SDK/Download)
+3. [nRF5-SDK](https://www.nordicsemi.com/Products/Development-software/nrf5-sdk/download)
 
 ## 视频
 
@@ -94,7 +94,7 @@ T-Echo 兼容多个开源固件项目，包括 SoftRF 和 Meshtastic，可用于
 
 ## 引脚图
 
-引脚定义请参考 [utilities.h](https://github.com/Xinyuan-LilyGO/T-Echo/blob/main/examples/Integration/utilities.h) 文件。
+引脚定义请参考 [utilities.h](https://github.com/Xinyuan-LilyGO/T-Echo/blob/main/examples/Factory/utilities.h) 文件。
 
 ## 尺寸图
 
@@ -104,8 +104,8 @@ T-Echo 兼容多个开源固件项目，包括 SoftRF 和 Meshtastic，可用于
 
 ## 数据手册
 
-* [nRF52840 Datasheet](https://www.nordicsemi.com/Products/nRF52840)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262)
+* [nRF52840 Datasheet](/datasheet/nRF52840_PS_v1.11.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
 
 ## 软件开发
 

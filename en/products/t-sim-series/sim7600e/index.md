@@ -82,7 +82,7 @@ T-PCIE SIM7600E is a **mini PCIe form-factor LTE modem module** based on the **S
 
 ## Datasheet
 
-* [SIM7600E Datasheet](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/Files/T-SIM7600E-PCIE.pdf)
+* [SIM7600E Datasheet](/datasheet/T-SIM7600X-V1.3.pdf)
 * [SIMCOM SIM7600X Official Page](https://cn.simcom.com/product/SIM7600X.html)
 
 ## Software Development

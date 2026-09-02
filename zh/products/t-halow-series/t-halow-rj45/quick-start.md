@@ -18,7 +18,7 @@ T-HaLow RJ45 将 **Wi-Fi HaLow（802.11ah）** 与有线 **以太网 RJ45** 接�
 1. 安装 [VS Code](https://code.visualstudio.com/) 和 **PlatformIO IDE** 扩展
 2. 克隆仓库：
    ```bash
-   git clone https://github.com/Xinyuan-LilyGO/LilyGO-T-Halow.git
+   git clone https://github.com/Xinyuan-LilyGO/T-Halow.git
    ```
 3. 打开 `platformio.ini`，选择 `T-HaLow-RJ45` 环境
 4. 点击 **✓** 编译，连接 USB，点击 **→** 上传

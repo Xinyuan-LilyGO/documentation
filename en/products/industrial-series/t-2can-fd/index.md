@@ -130,8 +130,8 @@ Pin definitions refer to the configuration file:
 
 ## Datasheet
 
-- [MCP2518 Datasheet](https://github.com/Xinyuan-LilyGO/T-2Can/blob/main/docs/MCP2518FDT-E-SL.pdf)
-- [ESP32-S3-WROOM-1U Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
+- [MCP2518 Datasheet](/datasheet/MCP2518FDT-E-SL.pdf)
+- [ESP32-S3-WROOM-1U Datasheet](/datasheet/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
 
 ## Software Development
 

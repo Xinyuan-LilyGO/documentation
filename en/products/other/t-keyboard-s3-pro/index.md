@@ -30,8 +30,8 @@ T-Keyboard S3 Pro is a high-end programmable keyboard based on **dual-MCU archit
 | [Basic/Encoder](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Basic/Encoder) | ✓ | | Rotary encoder position tracking |
 | [Basic/RGB](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Basic/RGB) | ✓ | | WS2812C LED HSV color sweep |
 | [Advanced/MultiBoard](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Advanced/MultiBoard) | ✓ | | Multi-board chaining, hot-plug detection |
-| [Advanced/BleKeyboard](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Advanced/BleKeyboard) | ✓ | | BLE HID keyboard with media keys |
-| [Advanced/Buddy](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Advanced/Buddy) | ✓ | | Claude desktop companion with 4-panel UI |
+| [Advanced/BleKeyboard](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Advanced/BLEKeyboard) | ✓ | | BLE HID keyboard with media keys |
+| [Advanced/Buddy](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro-Library/tree/master/examples/Advanced/Claude-Desktop-Buddy) | ✓ | | Claude desktop companion with 4-panel UI |
 
 ### PlatformIO
 
@@ -136,9 +136,9 @@ T-Keyboard S3 Pro is a high-end programmable keyboard based on **dual-MCU archit
 
 ## Datasheet
 
-* [ESP32-S3-WROOM-1 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
-* [STM32G030F6P6 Datasheet](https://www.st.com/en/microcontrollers-microprocessors/stm32g030f6.html#documentation)
-* [GC9107 Datasheet](https://github.com/Xinyuan-LilyGO/T-Keyboard-S3-Pro/blob/main/information/GC9107_DataSheet_V1.2.pdf)
+* [ESP32-S3-WROOM-1 Datasheet](/datasheet/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
+* [STM32G030F6P6 Datasheet](/datasheet/stm32g030f6.pdf)
+* [GC9107 Datasheet](/datasheet/GC9107_DataSheet_V1.2.pdf)
 
 ## Software Development
 

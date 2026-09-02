@@ -114,8 +114,8 @@ T-Display C5 是一款基于 **ESP32-C5**（RISC-V 32位 @ 240 MHz）的紧凑�
 
 ## 数据手册
 
-* [ESP32-C5-WROOM-1 数据手册](https://github.com/Xinyuan-LilyGO/T-Display-C5/blob/master/doc/ESP32-C5-WROOM-1.pdf)
-* [AXP2602 数据手册](https://github.com/Xinyuan-LilyGO/T-Display-C5/blob/master/doc/AXP2602_Datasheet_V1.0_cn%20(1).pdf)
+* [ESP32-C5-WROOM-1 数据手册](/datasheet/ESP32-C5-WROOM-1.pdf)
+* [AXP2602 数据手册](/datasheet/AXP2602_Datasheet_V1.0_cn%20%281%29.pdf)
 
 ## 软件开发
 

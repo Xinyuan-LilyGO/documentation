@@ -2,9 +2,15 @@
   "name": "lilygo-vitepress-wiki",
   "private": true,
   "scripts": {
+    "prepare": "git config core.hooksPath .githooks",
     "dev": "vitepress dev --host",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "check:links": "npm run check:links:internal && npm run check:links:external",
+    "check:links:staged": "npm run check:links:internal -- --staged && npm run check:links:external -- --staged",
+    "check:links:internal": "node scripts/check-internal-links.mjs",
+    "check:links:external": "node scripts/check-external-links.mjs",
+    "test:links": "node --test scripts/check-*-links.test.mjs"
   },
   "dependencies": {
     "@giscus/vue": "^3.1.1",

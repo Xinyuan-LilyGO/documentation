@@ -107,11 +107,11 @@ LILYGO T-Embed 是一款多功能 ESP32-S3 开发平台，配备 **1.9 英寸 ST
 
 ## 原理图
 
-- [T-Embed GitHub 仓库（硬件）](https://github.com/Xinyuan-LilyGO/T-Embed/tree/master/hardware)
+- [T-Embed GitHub 仓库（硬件）](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/schematic)
 
 ## 数据手册
 
-- [ESP32-S3 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+- [ESP32-S3 数据手册](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## 软件库
 

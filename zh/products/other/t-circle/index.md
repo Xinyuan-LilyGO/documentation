@@ -96,10 +96,10 @@ LILYGO T-Circle 是 ESP32 版本的圆形屏幕开发板，核心搭载 0.75 英
 
 ## 数据手册
 
-* [GC9D01N Datasheet](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/information/GC9D01N.pdf)
-* [MAX98357A Datasheet](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/information/MAX98357AETE+T.pdf)
-* [MSM261S4030H0R Datasheet](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/information/MSM261S4030H0R.pdf)
-* [MP34DT05-A Datasheet](https://github.com/Xinyuan-LilyGO/T-Circle-S3/blob/arduino-esp32-libs_V2.0.14/information/mp34dt05-a.pdf)
+* [GC9D01N Datasheet](/datasheet/GC9D01N.pdf)
+* [MAX98357A Datasheet](/datasheet/MAX98357AETE+T.pdf)
+* [MSM261S4030H0R Datasheet](/datasheet/MEMSensing-MSM261S4030H0R.pdf)
+* [MP34DT05-A Datasheet](/datasheet/mp34dt05-a.pdf)
 
 ## 软件开发
 
@@ -107,7 +107,7 @@ LILYGO T-Circle 是 ESP32 版本的圆形屏幕开发板，核心搭载 0.75 英
 
 ### 依赖库
 
-* [Arduino_DriveBus-1.1.16](https://github.com/Xk-w/Arduino_DriveBus)
+* [Arduino_DriveBus-1.1.16](https://github.com/Llgok/Arduino_DriveBus)
 * [Arduino_GFX-1.3.7](https://github.com/moononournation/Arduino_GFX)
 * [ESP32-audioI2S-3.0.6](https://github.com/schreibfaul1/ESP32-audioI2S)
 * [DFRobot_MSM261](https://github.com/DFRobot/DFrobot_MSM261)

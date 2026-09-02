@@ -166,10 +166,10 @@ T5-4.7-S3 E-Paper Pro 是基于 ESP32-S3-WROOM-1 的多功能物联网设备，�
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [ED047TC1 Screen Datasheet](https://github.com/Xinyuan-LilyGO/T5S3-4.7-e-paper-PRO/blob/H752-01/hardware/ED047TC1.pdf)
-* [MIA-M10Q GPS Datasheet](https://github.com/Xinyuan-LilyGO/T5S3-4.7-e-paper-PRO/blob/H752-01/hardware/MIA-M10Q_DataSheet_UBX-22015849.pdf)
-* [TPS65185 Datasheet](https://github.com/Xinyuan-LilyGO/T5S3-4.7-e-paper-PRO/blob/H752-01/hardware/tps65185.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [ED047TC1 Screen Datasheet](/datasheet/ED047TC1.pdf)
+* [MIA-M10Q GPS Datasheet](/datasheet/MIA-M10Q-00B.pdf)
+* [TPS65185 Datasheet](/datasheet/tps65185.pdf)
 
 ## 软件开发
 

@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32-S3, LoRa, Audio, Voice, Vibration, RTC
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3-s3-mvsr-board" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3-s3-mvsr" />
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t3-series/t3-s3-mvsr/index/image/t3-s3_mvsrboard01.jpg', alt: 'T3-S3 MVSR Board 正面图' },
@@ -193,11 +193,11 @@ T3-S3 MVSR 版本是基于 T3-S3 主板设计了带有震动马达、麦克风�
 
 ## 数据手册
 
-* [MAX98357A Datasheet](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/MAX98357AETE+T.pdf)
-* [MP34DT05-A Datasheet](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/mp34dt05-a.pdf)
-* [PCF85063ATL Datasheet](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/PCF85063ATL-1,118.pdf)
-* [MSM261S4030H0R Datasheet](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/information/MEMSensing-MSM261S4030H0R.pdf)
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [MAX98357A Datasheet](/datasheet/MAX98357AETE+T.pdf)
+* [MP34DT05-A Datasheet](/datasheet/mp34dt05-a.pdf)
+* [PCF85063ATL Datasheet](/datasheet/PCF85063ATL-1,118.pdf)
+* [MSM261S4030H0R Datasheet](/datasheet/MEMSensing-MSM261S4030H0R.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## 软件开发
 
@@ -205,7 +205,7 @@ T3-S3 MVSR 版本是基于 T3-S3 主板设计了带有震动马达、麦克风�
 
 ### 依赖库
 
-* [Arduino_DriveBus](https://github.com/Xk-w/Arduino_DriveBus)
+* [Arduino_DriveBus](https://github.com/Llgok/Arduino_DriveBus)
 * [RadioLib](https://github.com/jgromes/RadioLib)
 * [ESP8266Audio](https://github.com/earlephilhower/ESP8266Audio)
 
@@ -229,7 +229,7 @@ T3-S3 MVSR 版本是基于 T3-S3 主板设计了带有震动马达、麦克风�
 
 ## 功耗测试
 
-深度睡眠模式静态电流：**2.77µA**（[详细测试日志](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/relevant_test/PowerConsumptionTestLog_[T3-S3-MVSRBoard_V1.0]_20241104.pdf)）
+深度睡眠模式静态电流：**2.77µA**（[详细测试日志](https://github.com/Xinyuan-LilyGO/T3-S3-MVSRBoard/blob/main/relevant_test/PowerConsumptionTestLog_%5BT3-S3-MVSRBoard_V1.0%5D_20241104.pdf)）
 
 ## 版本历史
 

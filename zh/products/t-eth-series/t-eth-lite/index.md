@@ -91,8 +91,8 @@ T-ETH-Lite 是一款多功能嵌入式开发板，搭载 ESP32 主控芯片，�
 
 ## 数据手册
 
-* [DP9900M PoE](https://github.com/Xinyuan-LilyGO/LilyGO-T-ETH-Series/blob/master/datasheet/ETH-POE-DP9900M-5V.pdf)
-* [DP5300 PoE Pro](https://github.com/Xinyuan-LilyGO/LilyGO-T-ETH-Series/blob/master/datasheet/ETH-PRO-POE-DP5300-12V.pdf)
+* [DP9900M PoE](/datasheet/ETH-POE-DP9900M-5V.pdf)
+* [DP5300 PoE Pro](/datasheet/ETH-PRO-POE-DP5300-12V.pdf)
 
 ## 软件开发
 

@@ -135,11 +135,11 @@ XL9535 expanded pins (I2C address 0x20):
 
 ## Datasheet
 
-- [ST7701S Display Controller](https://github.com/Xinyuan-LilyGO/T-Panel/blob/master/docs/ST7701S_SPEC_V1.4.pdf)
-- [YDP395BT001 Display Panel](https://github.com/Xinyuan-LilyGO/T-Panel/blob/master/docs/YDP395BT001-V2.pdf)
-- [CST3240 Touch Controller](https://github.com/Xinyuan-LilyGO/T-Panel/blob/master/docs/HYNITRON-CST3240_V1.0.pdf)
-- [XL9535 IO Expander](https://github.com/Xinyuan-LilyGO/T-Panel/blob/master/docs/XL9535.pdf)
-- [ESP32-H2-MINI-1](https://www.espressif.com/sites/default/files/documentation/esp32-h2-mini-1_mini-1u_datasheet_en.pdf)
+- [ST7701S Display Controller](/datasheet/ST7701S_SPEC_V1.4.pdf)
+- [YDP395BT001 Display Panel](/datasheet/YDP395BT001-V2.pdf)
+- [CST3240 Touch Controller](/datasheet/HYNITRON-CST3240_V1.0.pdf)
+- [XL9535 IO Expander](/datasheet/XL9535.pdf)
+- [ESP32-H2-MINI-1](/datasheet/esp32-h2-mini-1_mini-1u_datasheet_en.pdf)
 
 ## Software Libraries
 

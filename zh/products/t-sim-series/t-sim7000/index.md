@@ -109,12 +109,12 @@ LILYGO T-SIM7000G 将 **ESP32** 微控制器与 **SIMCom SIM7000G** 多频段 LT
 
 ## 原理图
 
-- [LilyGO-T-SIM7000G GitHub 仓库（硬件）](https://github.com/Xinyuan-LilyGO/LilyGO-T-SIM7000G/tree/master/hardware)
+- [LilyGO-T-SIM7000G GitHub 仓库（硬件）](https://github.com/Xinyuan-LilyGO/LilyGO-T-SIM7000G/tree/master/schematic)
 
 ## 数据手册
 
-- [ESP32 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
-- [SIM7000G 硬件设计手册](https://simcom.ee/documents/?dir=SIM7000x)
+- [ESP32 数据手册](/datasheet/esp32_datasheet_en.pdf)
+- [SIM7000G 硬件设计手册](/datasheet/SIM7000_Hardware_Design_V1.05.pdf)
 
 ## 软件库
 

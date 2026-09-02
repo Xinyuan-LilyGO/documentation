@@ -206,10 +206,10 @@ A7682E 为 LTE Cat1 模块，支持 LTE-FDD/GSM/GPRS/EDGE 无线通信，通过 
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262)
-* [MIA-M10Q Datasheet](https://www.u-blox.com/en/product/mia-m10-series)
-* [BHI260AP Datasheet](https://www.bosch-sensortec.com/products/motion-sensors/imu/bhi260ap/)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
+* [MIA-M10Q Datasheet](/datasheet/MIA-M10Q_DataSheet_UBX-22015849.pdf)
+* [BHI260AP Datasheet](/datasheet/bst-bhi260ap-ds000.pdf)
 
 ## 软件开发
 

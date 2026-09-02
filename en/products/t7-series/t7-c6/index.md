@@ -97,7 +97,7 @@ The LILYGO T7-C6 is a compact development board based on the **ESP32-C6-MINI-1**
 
 ## Datasheet
 
-* [TP4065 Datasheet](https://github.com/Xinyuan-LilyGO/T7-C6/blob/main/information/TP4065-4.2V-SOT25-R.pdf)
+* [TP4065 Datasheet](/datasheet/TP4065-4.2V-SOT25-R.pdf)
 
 ## Software Development
 

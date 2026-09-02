@@ -102,8 +102,8 @@ LILYGO T-Beam 是一款功能丰富的 ESP32 开发板，将 LoRa 远距离无�
 
 ## 数据手册
 
-* [ESP32 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
-* [SX1276 数据手册](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276)
+* [ESP32 数据手册](/datasheet/esp32_datasheet_en.pdf)
+* [SX1276 数据手册](/datasheet/SX1276-7-8-9_Datasheet.pdf)
 
 ## 软件开发
 

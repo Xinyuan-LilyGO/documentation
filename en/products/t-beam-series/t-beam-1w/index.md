@@ -162,8 +162,8 @@ T-Beam-1W is a high-performance IoT development board integrating **ESP32-S3** d
 
 ## Datasheet
 
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262)
-* [AXP2101 Datasheet](https://www.x-powers.com/en/product/axp2101)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
+* [AXP2101 Datasheet](/datasheet/AXP2101_Datasheet_V1.4_en.pdf)
 
 ## Software Development
 

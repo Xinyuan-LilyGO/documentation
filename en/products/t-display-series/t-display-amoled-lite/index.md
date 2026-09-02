@@ -139,9 +139,9 @@ LILYGO T-Display-AMOLED-Lite is a compact development board based on **ESP32-S3R
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SH8501B0 Datasheet](https://github.com/Xinyuan-LilyGO/LilyGo-AMOLED-Series/blob/master/datasheet/SH8501B0%20DataSheet.pdf)
-* [AXP2101 Datasheet](https://github.com/Xinyuan-LilyGO/XPowersLib/blob/master/datasheet/AXP2101_Datasheet_V1.0_en.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SH8501B0 Datasheet](/datasheet/SH8501B0%20DataSheet.pdf)
+* [AXP2101 Datasheet](/datasheet/AXP2101_Datasheet_V1.4_en.pdf)
 * CHSC5816 Touch Controller
 * CM32181A3OP Ambient Light Sensor
 

@@ -265,9 +265,9 @@ T-Sim Shield 引脚映射根据主板型号不同而不同，请按对应表格�
 
 ## 数据手册
 
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262)
-* [INA3221 Datasheet](https://www.ti.com/product/INA3221)
-* [3D5ETR00372 太阳能板规格](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/tree/main/datasheet/3D5ETR00372_233153V01_20250828.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
+* [INA3221 Datasheet](/datasheet/ina3221.pdf)
+* [3D5ETR00372 太阳能板规格](/datasheet/3D5ETR00372_233153V01_20250828.pdf)
 
 ## 软件开发
 

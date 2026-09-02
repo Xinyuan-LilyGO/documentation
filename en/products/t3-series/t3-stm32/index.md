@@ -105,9 +105,9 @@ LILYGO T3-STM32 is a versatile IoT development board based on the **STM32WL55CCU
 
 ## Datasheet
 
-* [STM32WL55 Datasheet](https://www.st.com/resource/en/datasheet/stm32wl55cc.pdf)
-* [SSD1315 Datasheet](https://github.com/Xinyuan-LilyGO/T3-STM32/blob/master/hardware/SSD1315.pdf)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-core/sx1262)
+* [STM32WL55 Datasheet](/datasheet/stm32wl55cc.pdf)
+* [SSD1315 Datasheet](/datasheet/SSD1315-15ec98b4.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
 
 ## Software Development
 
@@ -117,7 +117,7 @@ LILYGO T3-STM32 is a versatile IoT development board based on the **STM32WL55CCU
 
 * [STM32CubeWL HAL Library](https://www.st.com/en/embedded-software/stm32cubewl.html)
 * [STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)
-* [STM32WL LoRa Radio Driver](https://github.com/stm32-hotspot/STM32WL_LoRa_Radio_Driver)
+* [STM32WL LoRa Radio Driver](https://github.com/STMicroelectronics/STM32CubeWL)
 
 ## FAQ
 

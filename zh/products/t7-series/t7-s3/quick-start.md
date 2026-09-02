@@ -12,7 +12,7 @@ show_source: false
 1. 安装 [VS Code](https://code.visualstudio.com/) 和 **PlatformIO IDE** 扩展
 2. 克隆仓库：
    ```bash
-   git clone https://github.com/Xinyuan-LilyGO/LilyGo-T7-S3.git
+   git clone https://github.com/Xinyuan-LilyGO/T7-S3.git
    ```
 3. 打开项目，在 `platformio.ini` 中选择对应环境
 4. 点击 **✓** 编译，连接 USB-C，点击 **→** 上传

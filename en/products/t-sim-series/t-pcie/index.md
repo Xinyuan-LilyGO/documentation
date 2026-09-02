@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32, PCIe, Cellular, 4G, LTE, AXP2101, IoT, Modem
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-pcie" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/a-t-pcie" />
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-sim-series/t-pcie/index/image/t-pcie-1.jpg', alt: 'T-PCIE front view' },
@@ -176,8 +176,8 @@ LILYGO T-PCIE is an ESP32-based cellular development board featuring a **Mini PC
 
 ## Datasheet
 
-* [ESP32 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
-* [AXP2101 Datasheet](http://www.x-powers.com/en.php/Info/product_detail/article_id/97)
+* [ESP32 Datasheet](/datasheet/esp32_datasheet_en.pdf)
+* [AXP2101 Datasheet](/datasheet/AXP2101_Datasheet_V1.4_en.pdf)
 
 ## Software Development
 

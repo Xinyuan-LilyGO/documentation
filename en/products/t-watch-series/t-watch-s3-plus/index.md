@@ -160,8 +160,8 @@ T-Watch S3 Plus is an enhanced version of T-Watch S3, adding GPS functionality t
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [BMA423 Datasheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bma423-ds000.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [BMA423 Datasheet](/datasheet/BMA423.PDF)
 
 ## Software Development
 

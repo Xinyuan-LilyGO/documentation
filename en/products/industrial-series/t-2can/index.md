@@ -104,8 +104,8 @@ T-2CAN is a compact dual-channel CAN communication module based on **ESP32-S3-WR
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [MCP2515 Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [MCP2515 Datasheet](/datasheet/MCP2515-Family-Data-Sheet-DS20001801K.pdf)
 
 ## Software Development
 

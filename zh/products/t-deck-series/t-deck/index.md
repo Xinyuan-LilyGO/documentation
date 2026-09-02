@@ -340,9 +340,9 @@ void setup() {
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [T-Deck ANT 868-915MHz](https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20868-915MHZ.pdf.pdf)
-* [T-Deck ANT 433MHz](https://github.com/Xinyuan-LilyGO/T-Deck/blob/master/datasheet/T-Deck%20ANT%20433MHZ.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [T-Deck ANT 868-915MHz](/datasheet/T-Deck%20ANT%20868-915MHZ.pdf)
+* [T-Deck ANT 433MHz](/datasheet/T-Deck%20ANT%20433MHZ.pdf)
 
 ## 软件开发
 

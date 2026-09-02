@@ -18,7 +18,7 @@ show_source: false
 
 ### PlatformIO（推荐）
 
-克隆 [T-SimCam](https://github.com/Xinyuan-LilyGO/T-SimCam)，打开 `platformio.ini`，选择目标示例，编译上传。
+克隆 [T-SimCam](https://github.com/Xinyuan-LilyGO/LilyGo-Camera-Series)，打开 `platformio.ini`，选择目标示例，编译上传。
 
 ---
 

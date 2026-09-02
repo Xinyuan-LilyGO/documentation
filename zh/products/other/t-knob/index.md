@@ -87,8 +87,8 @@ LILYGO T-Knob 是一款基于 ESP32-C6-MINI-1U 无线模块的智能旋钮控制
 
 ## 数据手册
 
-* [TMC6300](https://github.com/Xinyuan-LilyGO/T-Knob/blob/master/hardware/TMC6300_datasheet_rev1.08.pdf)
-* [MT6701](https://github.com/Xinyuan-LilyGO/T-Knob/blob/master/hardware/MT6701_Rev.1.0.pdf)
+* [TMC6300](/datasheet/TMC6300_datasheet_rev1.08.pdf)
+* [MT6701](/datasheet/MT6701_Rev.1.0.pdf)
 
 ## 软件开发
 

@@ -120,8 +120,8 @@ LILYGO T-Display-S3-AMOLED 是 T-Display-S3 的升级版本，搭载 **1.91 英�
 
 ## 数据手册
 
-* [RM67162 数据手册](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED/blob/main/datasheet/RM67162%20DataSheet_V0.0.pdf)
-* [ESP32-S3 数据手册](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED/blob/main/doc/esp32-s3_datasheet_en.pdf)
+* [RM67162 数据手册](/datasheet/RM67162%20DataSheet_V0.0.pdf)
+* [ESP32-S3 数据手册](/datasheet/esp32-s3_datasheet_en-b8ebdddf.pdf)
 
 ## 软件开发
 

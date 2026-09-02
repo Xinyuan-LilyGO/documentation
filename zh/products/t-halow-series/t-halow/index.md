@@ -139,18 +139,18 @@ T-Halow 有两个不同版本，主要在配对方式上有所区别：
 
 ## 数据手册
 
-* [频率设置说明](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯802.11AH%20Frequency%20setting%20description_20231130110312.pdf)
-* [TX-AH-Rx00P 系列模块技术规格书](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/%E6%B3%B0%E8%8A%AF802.11ah%C2%A0TX-AH-Rx00P%20Series%20module%20technical%20specification_20231116174457.pdf)
-* [TX-AH-Rx00P 桥接说明](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯AH%20Bridge%20instructions_20230908122753.pdf)
-* [AH 模块 AT 指令开发指南](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯AH%20Module%20AT%20instruction%20development%20guide_20230524100503.pdf)
-* [AH 模块开发板说明](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯AH%20Module%20development%20board%20instructions_20230621205234.pdf)
-* [AH 模块硬件设计指南](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/hardware/TX_AH/泰芯AH%20Module%20hardware%20Design%20Guide_20230621170639.pdf)
-* [泰芯官方资料](https://en.taixin-semi.com/Product?prouctSubClass=33)
+* [频率设置说明](/datasheet/%E6%B3%B0%E8%8A%AF802.11AH%20Frequency%20setting%20description_20231130110312.pdf)
+* [TX-AH-Rx00P 系列模块技术规格书](/datasheet/%E6%B3%B0%E8%8A%AF802.11ah%C2%A0TX-AH-Rx00P%20Series%20module%20technical%20specification_20231116174457.pdf)
+* [TX-AH-Rx00P 桥接说明](/datasheet/%E6%B3%B0%E8%8A%AFAH%20Bridge%20instructions_20230908122753.pdf)
+* [AH 模块 AT 指令开发指南](/datasheet/%E6%B3%B0%E8%8A%AFAH%20Module%20AT%20instruction%20development%20guide_20230524100503.pdf)
+* [AH 模块开发板说明](/datasheet/%E6%B3%B0%E8%8A%AFAH%20Module%20development%20board%20instructions_20230621205234.pdf)
+* [AH 模块硬件设计指南](/datasheet/%E6%B3%B0%E8%8A%AFAH%20Module%20hardware%20Design%20Guide_20230621170639.pdf)
+* [泰芯官方资料](/datasheet/泰芯802.11ah%20TX-AH-Rx00P系列模组技术规格书_V6.9.pdf)
 
 ## 软件开发
 
 * [T-Halow GitHub 仓库](https://github.com/Xinyuan-LilyGO/T-Halow)
-* [hgSDK（自行编译参考）](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/SDK/hgSDK-v1.6.4.3-29063-wnb)
+* [hgSDK（自行编译参考）](https://github.com/Xinyuan-LilyGO/T-Halow/tree/master/SDK)
 
 ## 常见问题
 
@@ -158,7 +158,7 @@ T-Halow 有两个不同版本，主要在配对方式上有所区别：
   A. 两个版本主要在配对方式上有所不同，使用相同的 AT 指令集。请根据手中的硬件版本参考对应文档。
 
 * **Q. 能否获取 TX-AH 模块的详细 SDK？**  
-  A. 泰芯暂不提供详细的 API 说明。如需自行编译，可参考 [hgSDK](https://github.com/Xinyuan-LilyGO/T-Halow/blob/master/SDK/hgSDK-v1.6.4.3-29063-wnb) 项目。
+  A. 泰芯暂不提供详细的 API 说明。如需自行编译，可参考 [hgSDK](https://github.com/Xinyuan-LilyGO/T-Halow/tree/master/SDK) 项目。
 
 * **Q. RJ45 以太网功能如何启用？**  
   A. 需要刷入专用固件才能启用 RJ45 以太网网络功能，请参考 GitHub 仓库中的固件下载说明。

@@ -113,11 +113,11 @@ T-Watch 2019 是预装配的。基本使用不需要焊接。对于扩展模块�
 
 ## 数据手册
 
-- [ESP32 数据手册](https://www.espressif.com/en/products/microcontrollers/esp32/resources)
-- [ST7789V 显示控制器](http://www.displayfuture.com/Display/datasheet/ST7789V.pdf)
-- [FT6336 触摸屏控制器](https://www.alldatasheet.com/datasheet-pdf/pdf/1172978/FOCALTECH/FT6336.html)
-- [BMA423 IMU 传感器](https://www.bosch-sensortec.com/bst/products/all_products/bma423)
-- [AXP202 电源管理芯片](https://www.x-powers.com/en.php/Info/product_detail/article_id/29)
+- [ESP32 数据手册](/datasheet/esp32_datasheet_en.pdf)
+- [ST7789V 显示控制器](/datasheet/ST7789V.pdf)
+- [FT6336 触摸屏控制器](/datasheet/FT6236-FT6336-FT6436L-FT6436_Datasheet.pdf)
+- [BMA423 IMU 传感器](/datasheet/BMA423.PDF)
+- [AXP202 电源管理芯片](/datasheet/AXP192%20Brief.pdf)
 
 ## 软件开发
 

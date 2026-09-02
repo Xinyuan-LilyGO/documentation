@@ -61,11 +61,11 @@ T-Echo Lite Kit 是 T-Echo Lite 主板与 **KeyShield** 键盘配件底板的组
 
 | 示例 | 支持 | 说明 |
 | :--: | :--: | :--: |
-| [aw21009qnr](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw21009qnr) | ✓ | 键盘背光 |
+| [aw21009qnr](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw21009) | ✓ | 键盘背光 |
 | [aw86224](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw86224) | ✓ | 振动马达 |
 | [es8311](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/es8311) | ✓ | 扬声器 / 麦克风 |
 | [tca8418](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/tca8418) | ✓ | 键盘 |
-| [original_test](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/original_test) | ✓ | 出厂测试 |
+| [original_test](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/general_test) | ✓ | 出厂测试 |
 
 ## 相关视频
 
@@ -167,12 +167,12 @@ T-Echo Lite Kit 是 T-Echo Lite 主板与 **KeyShield** 键盘配件底板的组
 
 ## 数据手册
 
-* [nRF52840 数据手册](https://docs.nordicsemi.com/bundle/ps_nrf52840/page/keyfeatures_html5.html)
-* [GDEM0122T61（电子墨水屏）](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/GDEM0122T61.pdf)
-* [SSD1681（电子墨水屏驱动）](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/SSD1681.pdf)
-* [S62F（SX1262 模组）](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/S62F.pdf)
-* [L76KB-A58（GNSS）](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/L76KB-A58.pdf)
-* [ICM20948](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/ICM20948.pdf)
+* [nRF52840 数据手册](/datasheet/nRF52840_PS_v1.11.pdf)
+* [GDEM0122T61（电子墨水屏）](/datasheet/GDEM0122T61.pdf)
+* [SSD1681（电子墨水屏驱动）](/datasheet/SSD1681.pdf)
+* [S62F（SX1262 模组）](/datasheet/S62F.pdf)
+* [L76KB-A58（GNSS）](/datasheet/L76KB-A58.pdf)
+* [ICM20948](/datasheet/ICM20948.pdf)
 
 ## 软件开发
 

@@ -260,14 +260,14 @@ The development board is feature-rich, integrating QWERT keyboard, AI-enabled IM
 
 ## Schematic
 
-* [T-Lora Pager Schematic PDF](/products/t-lora-series/t-lora-pager/index/hardware/T-Lora%20Pager%20V1.0%20SCH%2025-06-13.pdf)
+* [T-Lora Pager Schematic PDF](https://github.com/Xinyuan-LilyGO/LilyGoLib/blob/master/schematic/T-Lora%20Pager%20V1.0%20SCH%2025-06-13.pdf)
 
 ## Datasheet
 
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-core/sx1262)
-* [MIA-M10Q Datasheet](https://www.u-blox.com/en/product/mia-m10-series)
-* [BHI260AP Datasheet](https://www.bosch-sensortec.com/products/motion-sensors/imu/bhi260ap/)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
+* [MIA-M10Q Datasheet](/datasheet/MIA-M10Q_DataSheet_UBX-22015849.pdf)
+* [BHI260AP Datasheet](/datasheet/bst-bhi260ap-ds000.pdf)
 
 ## Software Development
 

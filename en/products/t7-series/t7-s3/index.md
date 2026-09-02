@@ -22,7 +22,7 @@ LILYGO T7-S3 is a compact general-purpose development board based on the **ESP32
 
 | Example | PlatformIO/Arduino | ESP-IDF | Description |
 | :-----: | :----------------: | :-----: | :---------: |
-| [LilyGo-T7-S3](https://github.com/Xinyuan-LilyGO/LilyGo-T7-S3) | ✓ | | GPIO, PSRAM, Wi-Fi, sensor examples |
+| [LilyGo-T7-S3](https://github.com/Xinyuan-LilyGO/T7-S3) | ✓ | | GPIO, PSRAM, Wi-Fi, sensor examples |
 
 ### Arduino
 
@@ -68,7 +68,7 @@ LILYGO T7-S3 is a compact general-purpose development board based on the **ESP32
 
 ## Software Libraries
 
-* [LilyGo-T7-S3 GitHub Repository](https://github.com/Xinyuan-LilyGO/LilyGo-T7-S3)
+* [LilyGo-T7-S3 GitHub Repository](https://github.com/Xinyuan-LilyGO/T7-S3)
 
 ## Changelog
 

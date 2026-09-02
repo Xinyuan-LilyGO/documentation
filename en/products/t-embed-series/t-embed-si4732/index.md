@@ -109,9 +109,9 @@ LILYGO T-Embed SI4732 is an enhanced T-Embed featuring an integrated **SI4732-A1
 
 ## Datasheet
 
-* [PN532](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/PN532_C1.pdf)
-* [BQ25896](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq25896.pdf)
-* [BQ27220](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq27220_datasheet.pdf)
+* [PN532](/datasheet/PN532_C1.pdf)
+* [BQ25896](/datasheet/bq25896.pdf)
+* [BQ27220](/datasheet/bq27220_datasheet.pdf)
 
 ## Software Development
 

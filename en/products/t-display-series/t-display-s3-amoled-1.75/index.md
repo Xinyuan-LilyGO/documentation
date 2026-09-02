@@ -31,8 +31,6 @@ T-Display S3 AMOLED 1.75 is a highly integrated development board based on **ESP
 | [PCF8563](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/PCF8563) | ✓ | | PCF8563 RTC example |
 | [SD](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/SD) | ✓ | | SD card read/write |
 | [lvgl_benchmark](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/lvgl_benchmark) | ✓ | | LVGL performance test |
-| [iic_scan](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/iic_scan) | | ✓ | I2C device scan |
-| [touch](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/tree/main/examples/touch) | | ✓ | Touch function test |
 
 ### PlatformIO
 
@@ -114,9 +112,9 @@ T-Display S3 AMOLED 1.75 is a highly integrated development board based on **ESP
 
 ## Datasheet
 
-* [SH8601](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/blob/main/information/SH8601Z.pdf)
-* [PCF8563](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/blob/main/information/PCF8563.pdf)
-* [AN_SY6970](https://github.com/Xinyuan-LilyGO/T-Display-S3-AMOLED-1.43-1.75/blob/main/information/AN_SY6970.pdf)
+* [SH8601](/datasheet/SH8601Z.pdf)
+* [PCF8563](/datasheet/PCF8563.pdf)
+* [AN_SY6970](/datasheet/AN_SY6970.pdf)
 
 ## Software Development
 
@@ -125,7 +123,7 @@ T-Display S3 AMOLED 1.75 is a highly integrated development board based on **ESP
 ### Dependent Libraries
 
 * [Arduino_GFX-1.3.7](https://github.com/moononournation/Arduino_GFX)
-* [Arduino_DriveBus-1.1.16](https://github.com/Xk-w/Arduino_DriveBus)
+* [Arduino_DriveBus-1.1.16](https://github.com/Llgok/Arduino_DriveBus)
 * [JPEGDEC-1.2.8](https://github.com/bitbank2/JPEGDEC)
 * [lvgl-8.3.5](https://lvgl.io)
 * [SensorLib](https://github.com/lewisxhe/SensorsLib)

@@ -145,8 +145,8 @@ LILYGO T3-S3 LR1121 is a highly integrated IoT development board based on **ESP3
 ## Datasheet
 
 * [LR1121 Datasheet](https://www.semtech.com/products/wireless-rf/lora-connect/lr1121)
-* [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [PCF85063ATL Datasheet](https://www.nxp.com/products/analog-and-mixed-signal/real-time-clocks/rtcs-with-ic-bus/tiny-real-time-clock-calendar-with-alarm-function-and-ic-bus:PCF85063A)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [PCF85063ATL Datasheet](/datasheet/PCF85063A.pdf)
 
 ## Software Development
 

@@ -187,9 +187,9 @@ T3S3 (LILYGO T3-S3 V1.2) 是一款集成 ESP32-S3 主控与多频段 LoRa 通信
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1262)
-* [SSD1306 Datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
+* [SSD1306 Datasheet](/datasheet/SSD1306.pdf)
 
 ## 软件开发
 

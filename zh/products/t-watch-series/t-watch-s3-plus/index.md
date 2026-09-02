@@ -185,10 +185,10 @@ T-Watch S3 Plus 是基于 T-Watch S3 的增强版本，增加了 GNSS 功能，�
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [BMA423 Datasheet](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bma423-ds000.pdf)
-* [MIA-M10Q Datasheet](https://www.u-blox.com/en/product/mia-m10-series)
-* [SX1262 Datasheet](https://www.semtech.com/products/wireless-rf/lora-connect/sx1262)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [BMA423 Datasheet](/datasheet/BMA423.PDF)
+* [MIA-M10Q Datasheet](/datasheet/MIA-M10Q_DataSheet_UBX-22015849.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
 
 ## 软件开发
 

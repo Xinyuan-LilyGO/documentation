@@ -61,11 +61,11 @@ Download [LILYGO Spark](https://lilygo.cc/en-us/pages/lilygo-spark), search for 
 
 | Example | Support | Description |
 | :-----: | :-----: | :---------: |
-| [aw21009qnr](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw21009qnr) | ✓ | Keyboard backlight |
+| [aw21009qnr](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw21009) | ✓ | Keyboard backlight |
 | [aw86224](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/aw86224) | ✓ | Vibration motor |
 | [es8311](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/es8311) | ✓ | Speaker / microphone |
 | [tca8418](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/tca8418) | ✓ | Keyboard |
-| [original_test](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/original_test) | ✓ | Factory test |
+| [original_test](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/examples/T-Echo-Lite-KeyShield/general_test) | ✓ | Factory test |
 
 ## Related Videos
 
@@ -167,12 +167,12 @@ Download [LILYGO Spark](https://lilygo.cc/en-us/pages/lilygo-spark), search for 
 
 ## Datasheet
 
-* [nRF52840 Datasheet](https://docs.nordicsemi.com/bundle/ps_nrf52840/page/keyfeatures_html5.html)
-* [GDEM0122T61 (E-Paper)](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/GDEM0122T61.pdf)
-* [SSD1681 (E-Paper Driver)](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/SSD1681.pdf)
-* [S62F (SX1262 Module)](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/S62F.pdf)
-* [L76KB-A58 (GNSS)](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/L76KB-A58.pdf)
-* [ICM20948](https://github.com/Xinyuan-LilyGO/T-Echo-Lite/tree/main/information/ICM20948.pdf)
+* [nRF52840 Datasheet](/datasheet/nRF52840_PS_v1.11.pdf)
+* [GDEM0122T61 (E-Paper)](/datasheet/GDEM0122T61.pdf)
+* [SSD1681 (E-Paper Driver)](/datasheet/SSD1681.pdf)
+* [S62F (SX1262 Module)](/datasheet/S62F.pdf)
+* [L76KB-A58 (GNSS)](/datasheet/L76KB-A58.pdf)
+* [ICM20948](/datasheet/ICM20948.pdf)
 
 ## Software Libraries
 

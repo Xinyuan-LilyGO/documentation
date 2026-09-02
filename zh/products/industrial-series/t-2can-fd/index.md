@@ -131,8 +131,8 @@ T-2Can-Fd 是一款基于 ESP32-S3 的双 CAN 总线开发板。提供两路独�
 
 ## 数据手册
 
-- [MCP2518 数据手册](https://github.com/Xinyuan-LilyGO/T-2Can/blob/main/docs/MCP2518FDT-E-SL.pdf)
-- [ESP32-S3-WROOM-1U 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
+- [MCP2518 数据手册](/datasheet/MCP2518FDT-E-SL.pdf)
+- [ESP32-S3-WROOM-1U 数据手册](/datasheet/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)
 
 ## 软件开发
 

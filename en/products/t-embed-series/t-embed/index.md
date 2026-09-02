@@ -107,13 +107,13 @@ LILYGO T-Embed is a multi-functional ESP32-S3 development platform featuring a *
 
 ## Schematic
 
-- [T-Embed GitHub Repository (hardware)](https://github.com/Xinyuan-LilyGO/T-Embed/tree/master/hardware)
+- [T-Embed GitHub Repository (hardware)](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/schematic)
 
 ## Datasheet
 
-- [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-- [ST7789V Datasheet](https://www.newhavendisplay.com/appnotes/datasheets/LCDs/ST7789V.pdf)
-- [MAX98357A Datasheet](https://www.maximintegrated.com/en/products/analog/audio/MAX98357A.html)
+- [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+- [ST7789V Datasheet](/datasheet/ST7789V.pdf)
+- [MAX98357A Datasheet](/datasheet/max98357a-max98357b.pdf)
 
 ## Software Libraries
 

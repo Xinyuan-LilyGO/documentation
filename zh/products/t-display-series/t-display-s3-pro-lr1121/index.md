@@ -104,7 +104,7 @@ T-Display S3 Pro LR1121 是一款基于 ESP32-S3 微控制器的高集成度开�
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
 * [LR1121 Datasheet](https://www.semtech.com/products/wireless-rf/lora-connect/lr1121)
 
 ## 软件开发
@@ -122,7 +122,7 @@ T-Display S3 Pro LR1121 是一款基于 ESP32-S3 微控制器的高集成度开�
 * [TinyGPSPlus](https://github.com/mikalhart/TinyGPSPlus)
 * [Adafruit_NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel)
 * [OneWire](https://github.com/PaulStoffregen/OneWire)
-* [SparkFun MAX3010x](https://github.com/sparkfun/SparkFun_MAX3010x_Pulse_and_Proximity_Sensor_Library)
+* [SparkFun MAX3010x](https://github.com/sparkfun/SparkFun_MAX3010x_Sensor_Library)
 
 ## 常见问题
 

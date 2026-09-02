@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32-Pico-D4, LoRa, TCXO, OLED, IoT
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t3-txco" />
+# {{ $frontmatter.title }}
 <ImageGallery :columns="3" :images="[
   { src: '/products/t3-series/t3-txco/index/image/t3-txco-1.jpg', alt: 'T3-TCXO front view' },
   { src: '/products/t3-series/t3-txco/index/image/t3-txco-2.jpg', alt: 'T3-TCXO physical image' },
@@ -136,9 +136,9 @@ LILYGO T3-TCXO is a wireless communication development board based on the **ESP3
 
 ## Datasheet
 
-* [ESP32-Pico-D4 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf)
-* [SX1276 Datasheet](https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276)
-* [SSD1306 Datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
+* [ESP32-Pico-D4 Datasheet](/datasheet/esp32-pico-d4_datasheet_en.pdf)
+* [SX1276 Datasheet](/datasheet/SX1276-7-8-9_Datasheet.pdf)
+* [SSD1306 Datasheet](/datasheet/SSD1306.pdf)
 
 ## Software Development
 

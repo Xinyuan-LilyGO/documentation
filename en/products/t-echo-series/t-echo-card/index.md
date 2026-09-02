@@ -140,16 +140,16 @@ T-Echo Card is a compact, low-power IoT development board built around the **nRF
 
 ## Schematic
 
-* [T-Echo Card V1.0 Schematic](https://github.com/Xinyuan-LilyGO/T-Echo-Card/blob/main/project/T-Echo-Lite-Card_V1.0.pdf)
+* [T-Echo Card Schematic](https://github.com/Xinyuan-LilyGO/T-Echo-Card/blob/main/project/T-Echo-Lite-Card_V1.0.pdf)
 
 ## Datasheet
 
-* [nRF52840 Datasheet](https://infocenter.nordicsemi.com/pdf/nRF52840_PS_v1.7.pdf)
-* [SX1262 Datasheet](https://semtech.com/products/wireless-rf/lora-core/sx1262)
-* [ICM-20948 Datasheet](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/)
-* [L76K Datasheet](https://www.quectel.com/product/gnss-l76k)
-* [MAX98357 Datasheet](https://www.analog.com/en/products/max98357a.html)
-* [MP34DT05 Datasheet](https://www.st.com/en/mems-and-sensors/mp34dt05-a.html)
+* [nRF52840 Datasheet](/datasheet/nRF52840_PS_v1.11.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261_SX1262.pdf)
+* [ICM-20948 Datasheet](/datasheet/ds-000189-icm-20948-datasheet.pdf)
+* [L76K Datasheet](/datasheet/L76KB-A58.pdf)
+* [MAX98357 Datasheet](/datasheet/max98357a-max98357b.pdf)
+* [MP34DT05 Datasheet](/datasheet/mp34dt05-a.pdf)
 
 ## Software Libraries
 
@@ -162,7 +162,7 @@ T-Echo Card is a compact, low-power IoT development board built around the **nRF
 * [Adafruit_SPIFlash](https://github.com/adafruit/Adafruit_SPIFlash)
 * [Adafruit_NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel)
 * [ICM20948_WE](https://github.com/wollewald/ICM20948_WE)
-* [cpp_bus_driver](https://github.com/Xinyuan-LilyGO/cpp_bus_driver)
+* [cpp_bus_driver](https://github.com/Llgok/cpp_bus_driver)
 
 ## FAQ
 

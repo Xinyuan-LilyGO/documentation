@@ -12,7 +12,7 @@ show_source: false
 1. Install [VS Code](https://code.visualstudio.com/) with the **PlatformIO IDE** extension
 2. Clone the repository:
    ```bash
-   git clone https://github.com/LilyGO/T-Dongle.git
+   git clone https://github.com/Xinyuan-LilyGO/T-Dongle-ESP32S2.git
    ```
 3. Open the project and select the environment in `platformio.ini`
 4. Build, plug into a USB-A port, then upload

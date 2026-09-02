@@ -125,9 +125,9 @@ T-Connect 是一款基于 ESP32-S3 芯片的多功能工业通信开发板，搭
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [TD501MCANFD Datasheet](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/information/TD501MCANFD_MORNSUN.pdf)
-* [TD501D485H-A Datasheet](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/information/TD501D485H-A_K-CUT.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [TD501MCANFD Datasheet](/datasheet/TD501MCANFD_MORNSUN.pdf)
+* [TD501D485H-A Datasheet](/datasheet/TD501D485H-A_K-CUT.pdf)
 
 ## 软件开发
 
@@ -136,7 +136,7 @@ T-Connect 是一款基于 ESP32-S3 芯片的多功能工业通信开发板，搭
 ### 依赖库
 
 * [FastLED](https://github.com/FastLED/FastLED)
-* [ESP32 TWAI](https://github.com/esp32/esp-idf/tree/master/examples/protocols/twai)
+* [ESP32 TWAI](https://github.com/espressif/esp-idf/tree/master/examples/peripherals/twai)
 
 ## 常见问题
 

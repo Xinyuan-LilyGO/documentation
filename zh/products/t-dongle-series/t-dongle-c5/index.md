@@ -101,7 +101,7 @@ LILYGO T-Dongle-C5 是一款基于 **ESP32-C5** 的紧凑型 USB 加密狗开发
 
 ## 数据手册
 
-- [ESP32-C5 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32-c5_datasheet_en.pdf)
+- [ESP32-C5 数据手册](/datasheet/esp32-c5_datasheet_en.pdf)
 
 ## 软件库
 

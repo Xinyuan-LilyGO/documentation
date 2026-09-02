@@ -50,14 +50,8 @@ If the screen shows `xl9555 init fail` or many `init fail` messages, first check
 
 | Example | ESP-IDF | Description |
 | :-----: | :-----: | :---------: |
-| [lvgl_9_ui](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/lvgl_9_ui) | ✓ | Factory example |
-| [screen_camera](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/screen_camera) | ✓ | Camera preview |
 | [sx1262_lora_send_receive](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/sx1262_lora_send_receive) | ✓ | SX1262 LoRa send/receive |
-| [l76k](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/l76k) | ✓ | L76K GPS |
-| [es8311](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/es8311) | ✓ | Audio codec |
-| [deep_sleep](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/deep_sleep) | ✓ | Deep sleep (avg 1.2 mA) |
-| [icm20948](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/icm20948) | ✓ | ICM20948 IMU |
-| [aw86224](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/aw86224) | ✓ | Vibration motor |
+| [es8311_sd_wav](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/main/examples/es8311_sd_wav) | ✓ | Audio codec and SD WAV playback |
 | [xiaozhi](https://github.com/78/xiaozhi-esp32) | ✓ | XiaoZhi AI chatbot |
 
 ### ESP-IDF (Primary)
@@ -132,21 +126,17 @@ Configure board as **ESP32P4 Dev Module** with appropriate settings when Arduino
 #### TFT Version
 <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-tft.jpg" alt="T-Display P4 TFT pin diagram" width=100%>
 
-For pin definitions see config files:
-- [t_display_p4_config.h](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/components/private_library/t_display_p4_config.h)
-- [t_display_p4_keyboard_config.h](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/components/private_library/t_display_p4_keyboard_config.h)
-
 ## Dimension Diagram
 
 ## Schematic
 
 ## Datasheet
 
-* [SX1261/2](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/information/DS_SX1261-2_V2_1.pdf)
-* [L76K GPS](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/information/L76KB-A58.pdf)
-* [ES8311](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/information/ES8311.pdf)
-* [ICM20948](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/information/ICM20948.pdf)
-* [BQ27220](https://github.com/Xinyuan-LilyGO/T-Display-P4/tree/main/information/bq27220_en.pdf)
+* [SX1261/2](/datasheet/DS_SX1261-2_V2_1.pdf)
+* [L76K GPS](/datasheet/L76KB-A58.pdf)
+* [ES8311](/datasheet/ES8311.pdf)
+* [ICM20948](/datasheet/ICM20948.pdf)
+* [BQ27220](/datasheet/bq27220_en.pdf)
 
 ## Software Development
 

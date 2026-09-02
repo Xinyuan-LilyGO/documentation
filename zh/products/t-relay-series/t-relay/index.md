@@ -71,7 +71,7 @@ LILYGO T-Relay 是一款基于 **ESP32-WROVER-E** 的继电器控制开发板（
 
 ## 原理图
 
-- [LilyGo-T-Relay 硬件文件](https://github.com/Xinyuan-LilyGO/LilyGo-T-Relay/tree/main/hardware)
+- [LilyGo-T-Relay 硬件文件](https://github.com/Xinyuan-LilyGO/LilyGo-T-Relay/tree/main/Schematic)
 
 ## 软件开发
 

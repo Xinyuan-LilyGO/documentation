@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32-S3, SIM7670G, 4G, LTE Cat-1, GPS, IoT, Cellular
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-sim7670g-s3" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-sim-7670g-s3" />
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-sim-series/t-sim7670g-s3/index/image/t-sim7670g-s3-1.jpg', alt: 'T-SIM7670G-S3 front view' },
@@ -138,12 +138,12 @@ LILYGO T-SIM7670G-S3 combines the **ESP32-S3** dual-core LX7 microcontroller wit
 
 ## Schematic
 
-- [LilyGo-Modem-Series GitHub Repository (hardware)](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/tree/master/hardware)
+- [LilyGo-Modem-Series GitHub Repository (hardware)](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/tree/main/schematic)
 
 ## Datasheet
 
-- [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-- [SIM7670G Hardware Design](https://simcom.ee/documents/?dir=SIM767x)
+- [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+- [SIM7670G Hardware Design](/datasheet/SIM7672X_Series_Hardware_Design_V1.02.pdf)
 
 ## Software Libraries
 

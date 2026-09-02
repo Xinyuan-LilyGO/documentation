@@ -57,7 +57,7 @@ LILYGO T7-C5 基于 **ESP32-C5-MINI-1** 模组，这是乐鑫首款支持 **双�
 
 ## 软件开发
 
-* [LilyGo-T7-C5 GitHub 仓库](https://github.com/Xinyuan-LilyGO/LilyGo-T7-C5)
+* [LilyGo-T7-C5 GitHub 仓库](https://github.com/Xinyuan-LilyGO/T7-C5)
 
 ## 常见问题
 

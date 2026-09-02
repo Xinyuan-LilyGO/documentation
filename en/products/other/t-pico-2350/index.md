@@ -90,9 +90,9 @@ T-PICO-2350 is a dual-processor development board based on **Raspberry Pi RP2350
 
 ## Datasheet
 
-* [RP2350 Documentation](https://www.raspberrypi.com/documentation/microcontrollers/silicon.html#rp2350)
-* [ESP32-C6 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c6-mini-1_mini-1u_datasheet_en.pdf)
-* [ST7796S Datasheet](http://www.lcdwiki.com/res/MSP4021/ST7796S-Sitronix.pdf)
+* [RP2350 Documentation](/datasheet/RP-008373-DS-2-rp2350-datasheet.pdf)
+* [ESP32-C6 Datasheet](/datasheet/esp32-c6-mini-1_mini-1u_datasheet_en.pdf)
+* [ST7796S Datasheet](/datasheet/ST7796S-Sitronix.pdf)
 
 ## Software Development
 

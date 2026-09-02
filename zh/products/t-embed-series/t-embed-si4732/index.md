@@ -12,7 +12,7 @@ tags: ESP32-S3, SI4732, Radio, TFT, AM/FM
   { src: '/products/t-embed-series/t-embed-si4732/index/image/t-embed-si4732.jpg', alt: 'T-Embed SI4732 引脚图' }
 ]" />
 
-> 点这里切换到 [T-Embed-CC1101](https://wiki.lilygo.cc/get_started/zh/LCD_OLED/T-Embed-CC1101/T-Embed-CC1101.html) 版本
+> 点这里切换到 [T-Embed-CC1101](../t-embed-cc1101/) 版本
 
 ## 概述
 
@@ -24,11 +24,10 @@ LILYGO T-Embed SI4732 这是基于基础款T-Embed 增加SI4732扩展模块的�
 
 | 示例 | PlatformIO/Arduino | ESP-IDF | 描述 |
 | :------ | :----------------: | :-----: | :---------- |
-| [SI4732_Radio](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/SI4732_Radio) | ✓ | | SI4732收音机示例 |
-| [TFT_Display](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/TFT_Display) | ✓ | | TFT屏幕显示示例 |
-| [Audio_Record_Playback](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/Audio_Record_Playback) | ✓ | | 音频录制与播放示例 |
-| [RGB_LED_Control](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/RGB_LED_Control) | ✓ | | RGB LED控制示例 |
-| [Power_Management](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/Power_Management) | ✓ | | 电源管理示例 |
+| [SI473x_Shield](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/SI473x_Shield) | ✓ | | SI4732收音机示例 |
+| [TFT_Rainbow](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/TFT_Rainbow) | ✓ | | TFT屏幕显示示例 |
+| [sound](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/sound) | ✓ | | 音频播放示例 |
+| [led](https://github.com/Xinyuan-LilyGO/T-Embed/tree/main/examples/led) | ✓ | | RGB LED控制示例 |
 
 ### PlatformIO
 1. 安装[VisualStudioCode](https://code.visualstudio.com/Download)，根据你的系统类型选择安装。
@@ -110,12 +109,14 @@ LILYGO T-Embed SI4732 这是基于基础款T-Embed 增加SI4732扩展模块的�
 
 ## 原理图
 
-* [T-Embed-SI4732 V1.0 原理图](https://github.com/Xinyuan-LilyGO/T-Embed/blob/main/schematic/T-Embed-SI4732.pdf)
+* [T-Embed-SI4732_V1.0](https://github.com/Xinyuan-LilyGO/T-Embed/blob/main/schematic/T-Embed-SI4732.pdf)
 
 ## 数据手册
 
-* [BQ25896](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq25896.pdf)
-* [BQ27220](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101/blob/master/hardware/bq27220_datasheet.pdf)
+* SI4732
+* [BQ25896](/datasheet/bq25896.pdf)
+* [BQ27220](/datasheet/bq27220_datasheet.pdf)
+* ST7789V
 
 ## 软件开发
 

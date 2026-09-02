@@ -22,7 +22,7 @@ LILYGO T7-C5 is a development board based on the **ESP32-C5-MINI-1** module — 
 
 | Example | PlatformIO/Arduino | ESP-IDF | Description |
 | :-----: | :----------------: | :-----: | :---------: |
-| [LilyGo-T7-C5](https://github.com/Xinyuan-LilyGO/LilyGo-T7-C5) | ✓ | ✓ | Wi-Fi 6, BLE, Thread/Zigbee examples |
+| [LilyGo-T7-C5](https://github.com/Xinyuan-LilyGO/T7-C5) | ✓ | ✓ | Wi-Fi 6, BLE, Thread/Zigbee examples |
 
 ### Arduino
 
@@ -66,7 +66,7 @@ LILYGO T7-C5 is a development board based on the **ESP32-C5-MINI-1** module — 
 
 ## Software Libraries
 
-* [LilyGo-T7-C5 GitHub Repository](https://github.com/Xinyuan-LilyGO/LilyGo-T7-C5)
+* [LilyGo-T7-C5 GitHub Repository](https://github.com/Xinyuan-LilyGO/T7-C5)
 
 ## FAQ
 

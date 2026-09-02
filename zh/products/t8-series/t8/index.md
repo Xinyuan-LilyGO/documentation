@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32, WROVER, PSRAM, Wi-Fi, Bluetooth, MicroPython, IoT
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t8" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t8-c3" />
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t8-series/t8/index/image/t8-1.jpg', alt: 'T8 正面图' },
@@ -79,7 +79,7 @@ LILYGO T8 是基于 ESP32-WROVER 的开发板，配备 **8 MB PSRAM**、4 MB Fla
 
 ## 数据手册
 
-* [ESP32 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
+* [ESP32 数据手册](/datasheet/esp32_datasheet_en.pdf)
 
 ## 软件库
 

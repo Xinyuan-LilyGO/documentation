@@ -112,11 +112,11 @@ T-A7670X R2 is a 4G LTE Cat1 IoT development board based on **ESP32-WROVER-E** (
 
 ## Schematic
 
-* [T-A7670X V1.4 Schematic](https://github.com/Xinyuan-LilyGO/LilyGo-Modem-Series/blob/main/schematic/esp32/T-A7670X-V1.4.pdf)
+* [T-A7670X V1.4 Schematic](https://github.com/Xinyuan-LilyGO/LilyGO-T-A76XX/blob/main/schematic/esp32/T-A7670X-V1.4.pdf)
 
 ## Datasheet
 
-* [ESP32 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
+* [ESP32 Datasheet](/datasheet/esp32_datasheet_en.pdf)
 
 ## Software Development
 

@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32, E-Paper, 2.7inch, ePaper, Wi-Fi, Bluetooth, IoT, Low Power
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t5-epaper" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t5s-2-7inch-e-paper" />
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t5-series/t5-epaper-2.7inch/index/image/t5-epaper-2.7inch-1.jpg', alt: 'T5 E-Paper 2.7 inch front view' },
@@ -122,8 +122,8 @@ LILYGO T5 E-Paper 2.7 inch is an ESP32-based e-paper development board featuring
 
 ## Datasheet
 
-- [ESP32 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
-- [CP2102 Datasheet](https://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf)
+- [ESP32 Datasheet](/datasheet/esp32_datasheet_en.pdf)
+- [CP2102 Datasheet](/datasheet/CP2102-9.pdf)
 
 ## Software Libraries
 

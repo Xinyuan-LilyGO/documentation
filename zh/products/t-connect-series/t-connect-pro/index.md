@@ -38,13 +38,10 @@ T-Connect-Pro 是一款基于 ESP32-S3 的多功能工业级控制与通信模�
 | [GFX_SX1262](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/GFX_SX1262) | ✓ | 屏幕 + LoRa综合示例 |
 | [CST226SE](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/CST226SE) | ✓ | 触摸屏测试 |
 | [Relay](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/Relay) | ✓ | 继电器控制示例 |
-| [SX1262_Receive_Interrupt](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX1262_Receive_Interrupt) | ✓ | LoRa中断接收示例 |
 | [SX126x_PingPong](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX126x_PingPong) | ✓ | LoRa收发测试 |
-| [SX126x_Channel_Activity_Detection_Blocking](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX126x_Channel_Activity_Detection_Blocking) | ✓ | LoRa信道活动检测（阻塞模式） |
-| [SX126x_Channel_Activity_Detection_Interrupt](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/SX126x_Channel_Activity_Detection_Interrupt) | ✓ | LoRa信道活动检测（中断模式） |
-| [raw](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/raw) | ✓ | LoRa裸数据传输 |
-| [ttn_abp](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/ttn_abp) | ✓ | TTN ABP入网示例 |
-| [ttn_otaa](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/ttn_otaa) | ✓ | TTN OTAA入网示例 |
+| [raw](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/raw_halconfig) | ✓ | LoRa裸数据传输 |
+| [ttn_abp](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/ttn_abp_halconfig) | ✓ | TTN ABP入网示例 |
+| [ttn_otaa](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/tree/main/examples/ttn_otaa_halconfig_us915) | ✓ | TTN OTAA入网示例 |
 
 ### PlatformIO
 1. 安装[VisualStudioCode](https://code.visualstudio.com/Download)，根据你的系统类型选择安装。
@@ -188,12 +185,12 @@ T-Connect-Pro 是一款基于 ESP32-S3 的多功能工业级控制与通信模�
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [HPD16A Module](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/information/HPDTEK_HPD16A_TCXO_V1.1.pdf)
-* [SX1262 Datasheet](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/information/DS_SX1261-2_V2_1.pdf)
-* [TD501MCANFD](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/information/TD501MCANFD_MORNSUN.pdf)
-* [TD501D485H-A](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/information/TD501D485H-A_K-CUT.pdf)
-* [TD501D232H](https://github.com/Xinyuan-LilyGO/T-Connect-Pro/blob/main/information/TD501D232H.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [HPD16A Module](/datasheet/HPDTEK_HPD16A_TCXO_V1.1.pdf)
+* [SX1262 Datasheet](/datasheet/DS_SX1261-2_V2_1.pdf)
+* [TD501MCANFD](/datasheet/TD501MCANFD_MORNSUN.pdf)
+* [TD501D485H-A](/datasheet/TD501D485H-A_K-CUT.pdf)
+* [TD501D232H](/datasheet/TD501D232H_WJ146289.pdf)
 
 ## 软件开发
 
@@ -201,10 +198,10 @@ T-Connect-Pro 是一款基于 ESP32-S3 的多功能工业级控制与通信模�
 
 ### 依赖库
 
-* 触摸：[Arduino_DriveBus-1.1.2](https://github.com/Xk-w/Arduino_DriveBus)
+* 触摸：[Arduino_DriveBus-1.1.2](https://github.com/Llgok/Arduino_DriveBus)
 * LoRa：[RadioLib-6.6.0](https://github.com/jgromes/RadioLib)
 * 屏幕：[Arduino_GFX](https://github.com/moononournation/Arduino_GFX)
-* 以太网：[Ethernet_V2.0.0](http://www.arduino.cc/en/Reference/Ethernet)
+* 以太网：[Ethernet_V2.0.0](https://docs.arduino.cc/libraries/ethernet/)
 
 ## 常见问题
 

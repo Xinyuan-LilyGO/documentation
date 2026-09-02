@@ -4,7 +4,7 @@ show_source: false
 tags: ESP32-S3, Round Display, GC9A01, Rotary Encoder, Wi-Fi, Bluetooth, IoT
 ---
 
-# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-encoder" />
+# {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-encoder-esp32" />
 
 <ImageGallery :columns="3" :images="[
   { src: '/products/t-encoder-series/t-encoder/index/image/t-encoder-1.jpg', alt: 'T-Encoder front view' },
@@ -117,12 +117,12 @@ LILYGO T-Encoder is a compact ESP32-S3 development board combining a **1.28-inch
 
 ## Schematic
 
-- [T-Encoder GitHub Repository (hardware)](https://github.com/Xinyuan-LilyGO/T-Encoder/tree/master/hardware)
+- [T-Encoder GitHub Repository (hardware)](https://github.com/Xinyuan-LilyGO/T-Encoder)
 
 ## Datasheet
 
-- [ESP32-S3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-- [GC9A01 Datasheet](https://www.buydisplay.com/download/ic/GC9A01A.pdf)
+- [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+- [GC9A01 Datasheet](/datasheet/GC9A01A.pdf)
 
 ## Software Libraries
 

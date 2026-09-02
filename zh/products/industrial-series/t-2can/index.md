@@ -103,10 +103,10 @@ LILYGO T-2CAN 是一款高性能、紧凑型嵌入式通信模块，基于 ESP32
 
 ## 数据手册
 
-* [ESP32-S3 Datasheet](https://www.espressif.com.cn/sites/default/files/documentation/esp32-s3_datasheet_en.pdf)
-* [MCP2515 Datasheet](https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf)
-* [TD501MCANFD Datasheet](https://github.com/Xinyuan-LilyGO/T-2Can-Pro/blob/main/information/TD501MCANFD_MORNSUN.pdf)
-* [TD501D485H-A Datasheet](https://github.com/Xinyuan-LilyGO/T-2Can-Pro/blob/main/information/TD501D485H-A_K-CUT.pdf)
+* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
+* [MCP2515 Datasheet](/datasheet/MCP2515-Family-Data-Sheet-DS20001801K.pdf)
+* [TD501MCANFD Datasheet](/datasheet/TD501MCANFD_MORNSUN.pdf)
+* [TD501D485H-A Datasheet](/datasheet/TD501D485H-A_K-CUT.pdf)
 
 ## 软件开发
 

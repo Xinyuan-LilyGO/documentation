@@ -97,10 +97,10 @@ T-PICO-2350 是 T-Pico 系列基于树莓派 RP2350 芯片的版本，集成 RP2
 
 ## 数据手册
 
-* [RP2350 文档](https://www.raspberrypi.com/documentation/microcontrollers/silicon.html#rp2350)
-* [ST7796S Datasheet](http://www.lcdwiki.com/res/MSP4021/ST7796S-Sitronix.pdf)
-* [LTR-553ALS 光线传感器](https://github.com/lewisxhe/SensorLib/blob/master/datasheet/LTR-553ALS-01.pdf)
-* [SY6970 Datasheet](https://github.com/Xinyuan-LilyGO/Lilygo-T-Pico2/blob/master/datasheet/AN_SY6970.pdf)
+* [RP2350 文档](/datasheet/RP-008373-DS-2-rp2350-datasheet.pdf)
+* [ST7796S Datasheet](/datasheet/ST7796S-Sitronix.pdf)
+* [LTR-553ALS 光线传感器](https://github.com/lewisxhe/SensorsLib)
+* [SY6970 Datasheet](/datasheet/AN_SY6970.pdf)
 
 ## 软件开发
 
