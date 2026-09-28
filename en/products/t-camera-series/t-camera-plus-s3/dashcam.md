@@ -86,8 +86,8 @@ All recording parameters are centralised in [config.h](config.h) — no source c
 | `REC_SEGMENT_SECONDS` | `60` | Clip duration (seconds) |
 | `REC_MIN_FREE_MB` | `150` | Minimum free SD space; triggers loop deletion when exceeded |
 | `CAM_JPEG_QUALITY` | `14` | JPEG quality (lower value = higher quality, larger file) |
-| `CAM_FRAMESIZE_OV2640` | `SVGA 800×600` | OV2640 resolution, ~25 fps |
-| `CAM_FRAMESIZE_OV5640` | `HD 1280×720` | OV5640 resolution, ~30 fps |
+| `CAM_FRAMESIZE_OV2640` | `SVGA 800×600` | OV2640 resolution |
+| `CAM_FRAMESIZE_OV5640` | `HD 1280×720` | OV5640 resolution, ~15fps (ESP32-S3 limited) |
 | `AUDIO_ENABLE` | `1` | Whether to record audio |
 | `AUDIO_SAMPLE_RATE` | `16000` | Audio sample rate (Hz) |
 | `PREVIEW_EVERY_N_FRAMES` | `6` | Update LCD preview every N frames |

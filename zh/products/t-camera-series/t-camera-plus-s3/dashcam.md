@@ -86,8 +86,8 @@ SD 卡
 | `REC_SEGMENT_SECONDS` | `60` | 每段视频时长（秒） |
 | `REC_MIN_FREE_MB` | `150` | SD 最小剩余空间，低于此值触发循环删除 |
 | `CAM_JPEG_QUALITY` | `14` | JPEG 质量（越低质量越高，文件越大） |
-| `CAM_FRAMESIZE_OV2640` | `SVGA 800×600` | OV2640 分辨率，~25 fps |
-| `CAM_FRAMESIZE_OV5640` | `HD 1280×720` | OV5640 分辨率，~30 fps |
+| `CAM_FRAMESIZE_OV2640` | `SVGA 800×600` | OV2640 分辨率 |
+| `CAM_FRAMESIZE_OV5640` | `HD 1280×720` | OV5640 分辨率，~15fps (受 ESP32-S3 限制) |
 | `AUDIO_ENABLE` | `1` | 是否录制音频 |
 | `AUDIO_SAMPLE_RATE` | `16000` | 音频采样率（Hz） |
 | `PREVIEW_EVERY_N_FRAMES` | `6` | 每 N 帧更新一次 LCD 预览 |
