@@ -13,7 +13,9 @@ T-Display P4 is based on the **Espressif ESP32-P4** high-performance application
 
 ## Firmware Download and Flashing Notes
 
-When the documentation or repository mentions "download firmware", it usually means two actions: download the corresponding `.bin` firmware file first, then use **LILYGO Spark** to flash it to the board Flash. T-Display P4 has an **ESP32-P4 main processor** and an **ESP32-C6 wireless coprocessor**. Confirm the target chip before flashing to avoid writing firmware to the wrong chip.
+When using **LILYGO Spark**, you do not need to download `.bin` files manually from GitHub. Use the built-in Firmware Download tool to search for **T-Display P4**, download the required firmware, and flash it directly. Download firmware from [T-Display-P4 GitHub Releases](https://github.com/Xinyuan-LilyGO/T-Display-P4/releases) only when flashing manually with another tool.
+
+T-Display P4 has an **ESP32-P4 main processor** and an **ESP32-C6 wireless coprocessor**. Confirm the target chip before flashing to avoid writing firmware to the wrong chip.
 
 > **USB-C port note:** For ESP32-P4 main firmware flashing, serial terminal access, or data transfer, connect the right-side USB-C port labeled `P4.U`. The left-side USB-C port is for charging / power only and is not used for firmware flashing or data transfer. Disable RTS / hardware flow control in serial terminal software; the RTS line may reset the P4 and cause the device to hang.
 
@@ -21,19 +23,18 @@ When the documentation or repository mentions "download firmware", it usually me
 
 If you only need to restore the factory firmware, run official examples, or flash main applications such as `LilygoBox`, you usually only need to flash the ESP32-P4:
 
-1. Download the required `.bin` firmware from [T-Display-P4 GitHub Releases](https://github.com/Xinyuan-LilyGO/T-Display-P4/releases).
-2. Open [LILYGO Spark](https://lilygo.cc/en-us/pages/lilygo-spark), then go to the firmware flashing tool.
-3. Connect T-Display P4 with USB-C, and select **ESP32-P4** as the target chip.
-4. Select the downloaded `.bin` file, and set the flash address to `0x0`.
-5. Start flashing. After flashing completes, press **RST** or power-cycle the board.
+1. Open [LILYGO Spark](https://lilygo.cc/en-us/pages/lilygo-spark), then go to the Firmware Download tool.
+2. Search for and select **T-Display P4**, then download the required ESP32-P4 firmware in Spark. There is no need to download it manually from GitHub.
+3. Connect T-Display P4 through the right-side `P4.U` USB-C port, then select the device's **ESP32-P4** port.
+4. Start flashing. After flashing completes, press **RST** or power-cycle the board.
 
 > If the board cannot enter download mode, hold **BOOT**, press and release **RST**, then release **BOOT** and start flashing again.
 
 ### Flash ESP32-C6 Coprocessor Firmware
 
-ESP32-C6 is used for wireless functions such as Wi-Fi / Bluetooth. The coprocessor firmware cannot be flashed as ESP32-P4 main firmware. The following steps use the **LILYGO Spark** firmware flashing tool, in this order: **P4 preparation firmware → C6 coprocessor firmware → P4 factory firmware**:
+ESP32-C6 is used for wireless functions such as Wi-Fi / Bluetooth. The coprocessor firmware cannot be flashed as ESP32-P4 main firmware. The following steps use the **LILYGO Spark** Firmware Download tool, in this order: **P4 preparation firmware → C6 coprocessor firmware → P4 factory firmware**:
 
-1. In Firmware Center, select the **T-Display P4** firmware series, find [`[T-Display-P4][coprocessor_download_mode]`](https://github.com/Xinyuan-LilyGO/T-Display-P4/blob/main/firmware/%5BT-Display-P4%5D%5Bcoprocessor_download_mode%5D), and click download. After it is downloaded, select the device's **ESP32-P4** port and flash it. This prepares the ESP32-C6 for download mode.
+1. In Spark's Firmware Download tool, select the **T-Display P4** firmware series, find `[T-Display-P4][coprocessor_download_mode]`, and click download. After it is downloaded, select the device's **ESP32-P4** port and flash it. This prepares the ESP32-C6 for download mode.
 
    <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-1-select-coprocessor-download-mode.png" alt="Select the T-Display P4 coprocessor download mode firmware" width=100%>
 
@@ -41,7 +42,7 @@ ESP32-C6 is used for wireless functions such as Wi-Fi / Bluetooth. The coprocess
 
    <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-2-delete-coprocessor-download-mode.png" alt="Delete the downloaded coprocessor download mode firmware" width=100%>
 
-3. Select [`lilygobox-t-display-p4-device-v1.0-esp32c6-rev0.0-v2.12.3-merged.bin`](https://github.com/Xinyuan-LilyGO/lilygobox-espidf/releases/download/v1.0.4/lilygobox-t-display-p4-device-v1.0-esp32c6-rev0.0-v2.12.3-merged.bin) as the ESP32-C6 coprocessor firmware.
+3. In Spark's Firmware Download tool, select `lilygobox-t-display-p4-device-v1.0-esp32c6-rev0.0-v2.12.3-merged.bin` as the ESP32-C6 coprocessor firmware.
 
    <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-3-select-c6-firmware.png" alt="Select the ESP32-C6 coprocessor firmware" width=100%>
 
@@ -57,7 +58,7 @@ ESP32-C6 is used for wireless functions such as Wi-Fi / Bluetooth. The coprocess
 
    <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-5-delete-c6-firmware.png" alt="Delete the downloaded ESP32-C6 firmware" width=100%>
 
-6. Select [`lilygobox-t-display-p4-device-v1.0-esp32p4-rev1.0-v1.0.4-merged.bin`](https://github.com/Xinyuan-LilyGO/lilygobox-espidf/releases/download/v1.0.4/lilygobox-t-display-p4-device-v1.0-esp32p4-rev1.0-v1.0.4-merged.bin) as the ESP32-P4 factory firmware.
+6. In Spark's Firmware Download tool, select `lilygobox-t-display-p4-device-v1.0-esp32p4-rev1.0-v1.0.4-merged.bin` as the ESP32-P4 factory firmware.
 
    <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-6-select-p4-factory-firmware.png" alt="Select the ESP32-P4 factory firmware" width=100%>
 

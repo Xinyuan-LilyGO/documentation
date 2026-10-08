@@ -3,7 +3,7 @@ title: Quick Start
 show_source: false
 ---
 
-# T5 E-Paper 2.13" Quick Start
+# T5 V2.4 Quick Start
 
 ## Required Libraries
 
@@ -52,9 +52,9 @@ show_source: false
 
 ## Notes
 
-- **Display:** 2.13-inch SSD1680, 212×104 px, black & white, SPI interface
-- **Full refresh:** ~8 seconds — avoid frequent full refreshes to preserve panel lifespan
-- **USB:** CP2102 USB-to-serial; install CP210x driver if the port is not detected
+- **Display:** 2.13-inch, 122×250 px, supports DEPG0213BN and GDEM0213B74, SPI interface
+- **Full refresh:** ~2 seconds with partial refresh support
+- **USB:** CH9102 USB-to-serial; install the CH9102 driver if the port is not detected
 - **TF card:** Shares the SPI bus with the display — initialize SD after the display
 
 ---
@@ -117,7 +117,7 @@ void setup() {
     lv_disp_drv_register(&disp_drv);
     
     lv_obj_t *label = lv_label_create(lv_scr_act());
-    lv_label_set_text(label, "T5 2.13in\nLVGL");
+    lv_label_set_text(label, "T5 V2.4\nLVGL");
     lv_obj_align(label, LV_ALIGN_CENTER, 0, 0);
 }
 
@@ -134,7 +134,7 @@ void loop() {
 ```cpp
 #include <GxEPD2_BW.h>
 
-// 2.13" SSD1680 212×104 — adjust pins for your board
+// T5 V2.4 2.13-inch 122×250 — select the matching panel driver and pins
 GxEPD2_BW<GxEPD2_213, GxEPD2_213::HEIGHT> display(GxEPD2_213(/*CS*/10, /*DC*/9, /*RST*/8, /*BUSY*/7));
 
 void setup() {
@@ -147,7 +147,7 @@ void setup() {
         display.setTextColor(GxEPD_BLACK);
         display.setTextSize(2);
         display.setCursor(10, 50);
-        display.print("T5 2.13\" EPaper");
+        display.print("T5 V2.4 EPaper");
     } while (display.nextPage());
 }
 
@@ -174,7 +174,7 @@ void setup() {
 }
 
 void loop() {
-    radio.transmit("Hello T5 2.13in");
+    radio.transmit("Hello T5 V2.4");
     delay(3000);
 }
 ```
@@ -205,4 +205,4 @@ void loop() {}
 A: Perform a full refresh (`display.display(false)`) on first boot to clear the panel.
 
 **Q: Port not found?**
-A: Install the CP2102 (CP210x) USB driver and reconnect.
+A: Install the CH9102 USB driver and reconnect.

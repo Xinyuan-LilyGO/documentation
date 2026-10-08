@@ -13,7 +13,9 @@ T-Display P4 基于 **乐鑫 ESP32-P4** 高性能应用处理器，使用 ESP-ID
 
 ## 固件下载与烧录说明
 
-文档或仓库中提到的“下载固件”，通常包含两个动作：先下载对应的 `.bin` 固件文件，再使用 **LILYGO Spark** 软件把固件烧录到开发板 Flash 中。T-Display P4 板上有 **ESP32-P4 主控** 和 **ESP32-C6 无线协处理器**，烧录前需要确认目标芯片，避免把固件刷到错误芯片。
+使用 **LILYGO Spark** 烧录时，不需要先从 GitHub 手动下载 `.bin` 文件。请直接使用 Spark 内置的“固件下载工具”搜索 **T-Display P4**，下载所需固件并进行烧录。只有使用其他烧录工具手动烧录时，才需要从 [T-Display-P4 GitHub Releases](https://github.com/Xinyuan-LilyGO/T-Display-P4/releases) 下载固件。
+
+T-Display P4 板上有 **ESP32-P4 主控** 和 **ESP32-C6 无线协处理器**，烧录前需要确认目标芯片，避免把固件刷到错误芯片。
 
 > **USB-C 端口注意：** 烧录 ESP32-P4 主控固件、使用串口终端或进行数据传输时，请连接右侧标记为 `P4.U` 的 USB-C 端口。左侧 USB-C 仅用于充电 / 供电，不用于固件烧录或数据传输。使用串口终端程序时请关闭 RTS / 硬件流控，RTS 线可能触发 P4 复位并导致设备卡死。
 
@@ -21,19 +23,18 @@ T-Display P4 基于 **乐鑫 ESP32-P4** 高性能应用处理器，使用 ESP-ID
 
 如果只是恢复出厂固件、运行官方示例或烧录 `LilygoBox` 等主控应用，一般只需要烧录 ESP32-P4：
 
-1. 从 [T-Display-P4 GitHub Releases](https://github.com/Xinyuan-LilyGO/T-Display-P4/releases) 下载需要的 `.bin` 固件。
-2. 打开 [LILYGO Spark](https://lilygo.cc/en-us/pages/lilygo-spark) 软件，进入“固件刷写工具”。
-3. 使用 USB-C 连接 T-Display P4，烧录目标芯片选择 **ESP32-P4**。
-4. 选择下载好的 `.bin` 文件，烧录地址填写 `0x0`。
-5. 点击烧录，等待完成后按下 **RST** 或重新上电启动。
+1. 打开 [LILYGO Spark](https://lilygo.cc/en-us/pages/lilygo-spark)，进入“固件下载工具”。
+2. 搜索并选择 **T-Display P4**，在 Spark 中下载需要的 ESP32-P4 固件，无需前往 GitHub 手动下载。
+3. 使用右侧 `P4.U` USB-C 端口连接 T-Display P4，并选择设备对应的 **ESP32-P4** 端口。
+4. 点击烧录，等待完成后按下 **RST** 或重新上电启动。
 
 > 如果无法进入烧录模式，请按住 **BOOT**，按一下 **RST** 后松开，再松开 **BOOT**，然后重新开始烧录。
 
 ### 烧录 ESP32-C6 协处理器固件
 
-ESP32-C6 用于 Wi-Fi / 蓝牙等无线功能。协处理器固件不能直接当作 ESP32-P4 主控固件烧录。以下步骤使用 **LILYGO Spark** 的“固件刷写工具”完成，顺序为 **P4 准备固件 → C6 协处理器固件 → P4 出厂固件**：
+ESP32-C6 用于 Wi-Fi / 蓝牙等无线功能。协处理器固件不能直接当作 ESP32-P4 主控固件烧录。以下步骤使用 **LILYGO Spark** 的“固件下载工具”完成，顺序为 **P4 准备固件 → C6 协处理器固件 → P4 出厂固件**：
 
-1. 在固件中心选择 **T-Display P4** 系列固件，找到 [`[T-Display-P4][coprocessor_download_mode]`](https://github.com/Xinyuan-LilyGO/T-Display-P4/blob/main/firmware/%5BT-Display-P4%5D%5Bcoprocessor_download_mode%5D) 并点击下载。下载完成后，选择设备对应的 **ESP32-P4** 端口进行烧录，用于让 ESP32-C6 进入下载准备模式。
+1. 在 Spark 的“固件下载工具”中选择 **T-Display P4** 系列固件，找到 `[T-Display-P4][coprocessor_download_mode]` 并点击下载。下载完成后，选择设备对应的 **ESP32-P4** 端口进行烧录，用于让 ESP32-C6 进入下载准备模式。
 
    <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-1-select-coprocessor-download-mode.png" alt="选择 T-Display P4 的 coprocessor download mode 固件" width=100%>
 
@@ -41,7 +42,7 @@ ESP32-C6 用于 Wi-Fi / 蓝牙等无线功能。协处理器固件不能直接�
 
    <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-2-delete-coprocessor-download-mode.png" alt="删除已下载的 coprocessor download mode 固件" width=100%>
 
-3. 选择 [`lilygobox-t-display-p4-device-v1.0-esp32c6-rev0.0-v2.12.3-merged.bin`](https://github.com/Xinyuan-LilyGO/lilygobox-espidf/releases/download/v1.0.4/lilygobox-t-display-p4-device-v1.0-esp32c6-rev0.0-v2.12.3-merged.bin) 作为 ESP32-C6 协处理器固件。
+3. 在 Spark 的“固件下载工具”中选择 `lilygobox-t-display-p4-device-v1.0-esp32c6-rev0.0-v2.12.3-merged.bin` 作为 ESP32-C6 协处理器固件。
 
    <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-3-select-c6-firmware.png" alt="选择 ESP32-C6 协处理器固件" width=100%>
 
@@ -57,7 +58,7 @@ ESP32-C6 用于 Wi-Fi / 蓝牙等无线功能。协处理器固件不能直接�
 
    <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-5-delete-c6-firmware.png" alt="删除已下载的 ESP32-C6 固件" width=100%>
 
-6. 选择 [`lilygobox-t-display-p4-device-v1.0-esp32p4-rev1.0-v1.0.4-merged.bin`](https://github.com/Xinyuan-LilyGO/lilygobox-espidf/releases/download/v1.0.4/lilygobox-t-display-p4-device-v1.0-esp32p4-rev1.0-v1.0.4-merged.bin) 作为 ESP32-P4 出厂固件。
+6. 在 Spark 的“固件下载工具”中选择 `lilygobox-t-display-p4-device-v1.0-esp32p4-rev1.0-v1.0.4-merged.bin` 作为 ESP32-P4 出厂固件。
 
    <img src="/products/t-display-series/t-display-p4/index/image/t-display-p4-c6-flash-step-6-select-p4-factory-firmware.png" alt="选择 ESP32-P4 出厂固件" width=100%>
 

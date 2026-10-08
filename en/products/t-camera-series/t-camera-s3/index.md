@@ -7,9 +7,9 @@ tags: ESP32-S3, Camera, OV2640, OLED, PIR, IoT
 # {{ $frontmatter.title }} <ShopLink href="https://lilygo.cc/products/t-camera-s3" />
 
 <ImageGallery :columns="3" :images="[
-  { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-1.jpg', alt: 'T-Camera-S3 front view' },
-  { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-2.jpg', alt: 'T-Camera-S3 back view' },
-  { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-3.jpg', alt: 'T-Camera-S3 dimensions' },
+  { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-1.jpg', alt: 'T-Camera-S3 dimensions' },
+  { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-2.jpg', alt: 'T-Camera-S3 angled front and back views' },
+  { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-3.jpg', alt: 'T-Camera-S3 front and back views' },
   { src: '/products/t-camera-series/t-camera-s3/index/image/t-camera-s3-info.jpg', alt: 'T-Camera-S3 specifications' },
 ]" />
 

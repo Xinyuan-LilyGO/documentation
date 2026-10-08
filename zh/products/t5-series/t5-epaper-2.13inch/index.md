@@ -1,20 +1,19 @@
 ---
-title: T5 ePaper 2.13inch
+title: T5 V2.4
 show_source: false
-tags: ESP32, E-Paper, 2.13inch, SSD1680, Wi-Fi, Bluetooth, Ultra-Low-Power, IoT
+tags: ESP32, E-Paper, 2.13inch, T5 V2.4, DEPG0213BN, GDEM0213B74, CH9102, Wi-Fi, Bluetooth, Ultra-Low-Power, IoT
 ---
 
 # {{ $frontmatter.title }}
 
-<ImageGallery :columns="3" :images="[
-  { src: '/products/t5-series/t5-epaper-2.13inch/index/image/t5-epaper-2.13inch-1.jpg', alt: 'T5 ePaper 2.13inch 正面' },
-  { src: '/products/t5-series/t5-epaper-2.13inch/index/image/t5-epaper-2.13inch-2.jpg', alt: 'T5 ePaper 2.13inch 背面' },
-  { src: '/products/t5-series/t5-epaper-2.13inch/index/image/t5-epaper-2.13inch-3.jpg', alt: 'T5 ePaper 2.13inch 尺寸图' },
+<ImageGallery :columns="2" :images="[
+  { src: '/products/t5-series/t5-epaper-2.13inch/index/image/t5-epaper-2.13inch-1.jpg', alt: 'T5 V2.4 正反面' },
+  { src: '/products/t5-series/t5-epaper-2.13inch/index/image/t5-epaper-2.13inch-2.jpg', alt: 'T5 V2.4 斜视图' },
 ]" />
 
 ## 概述
 
-LILYGO T5 ePaper 2.13inch 是一款小巧的超低功耗开发板，搭载 **ESP32** 双核处理器与 **2.13 英寸 SSD1680 电子墨水屏**（212 × 104 像素，黑白，2 级灰度）。电子墨水屏仅在刷新时消耗电能，断电后可无限期保持画面，非常适合电池供电的电子名牌、电子价签、物联网传感器和家居自动化显示。板载 Wi-Fi 和蓝牙连接、USB-UART（CP2102）编程接口以及 TF 卡槽。
+LILYGO T5 V2.4 是一款小巧的超低功耗开发板，搭载 **ESP32** 双核处理器与 **2.13 英寸 SPI 电子墨水屏**（122 × 250 像素）。产品支持 DEPG0213BN（2 级灰度）和 GDEM0213B74（4 级灰度）两种屏幕版本。电子墨水屏仅在刷新时消耗电能，断电后可保持画面，适合电池供电的电子名牌、电子价签、物联网传感器和家居自动化显示。板载 Wi-Fi、蓝牙 4.2/BLE、CH9102 USB-UART 编程接口以及 TF 卡槽。
 
 ## 快速开始
 
@@ -61,16 +60,20 @@ LILYGO T5 ePaper 2.13inch 是一款小巧的超低功耗开发板，搭载 **ESP
 ## 主要特性
 
 - ESP32 双核 Xtensa LX6 @ 240 MHz，支持 Wi-Fi + 蓝牙
-- 2.13 英寸 SSD1680 电子墨水屏，212 × 104 像素，黑白显示
+- 2.13 英寸电子墨水屏，122 × 250 像素
+- 支持 DEPG0213BN（2 级灰度）和 GDEM0213B74（4 级灰度）
 - 断电后可无限期保持画面（双稳态 / 零待机功耗）
-- 全局刷新时间约 8 秒
+- 支持局部刷新，全局刷新时间约 2 秒
 - 超低功耗深度睡眠模式
-- CP2102 USB-UART 编程接口
+- CH9102 USB-UART 编程接口
 - TF 卡槽提供本地存储
+- GPIO12 控制显示屏电源
 - 工作电压 3.3 V
-- 工作温度：-20 °C 至 60 °C
+- 工作温度：0 °C 至 50 °C
 
 ## 产品参数
+
+<img src="/products/t5-series/t5-epaper-2.13inch/index/image/t5-v2.4-specifications.jpg" alt="T5 V2.4 规格图" width=100%>
 
 | 参数 | 值 |
 | --- | --- |
@@ -78,24 +81,27 @@ LILYGO T5 ePaper 2.13inch 是一款小巧的超低功耗开发板，搭载 **ESP
 | Flash | 4 MB |
 | PSRAM | — |
 | 无线 | Wi-Fi 802.11 b/g/n，蓝牙 4.2 |
-| 显示屏 | 2.13 英寸 SSD1680 电子墨水屏，212 × 104，黑白 |
+| 显示屏 | 2.13 英寸电子墨水屏，122 × 250；DEPG0213BN（2 级灰度）或 GDEM0213B74（4 级灰度） |
 | 显示接口 | SPI |
 | 存储 | TF 卡槽 |
-| USB | CP2102 USB-UART |
+| USB | CH9102 USB-UART |
+| 刷新 | 支持局部刷新，全局刷新约 2 秒 |
+| 功耗 | 约 300 µA |
+| 显示屏电源控制 | GPIO12 |
 | 工作电压 | 3.3 V |
-| 工作温度 | -20 °C 至 60 °C |
+| 工作温度 | 0 °C 至 50 °C |
 
 ## 引脚图
 
-<!-- GPIO 映射关系表。 -->
+<img src="/products/t5-series/t5-epaper-2.13inch/index/image/t5-v2.4-pinmap.jpg" alt="T5 V2.4 引脚图" width=100%>
 
 ## 尺寸图
 
-<!-- PCB 和外壳尺寸图。 -->
+<img src="/products/t5-series/t5-epaper-2.13inch/index/image/t5-epaper-2.13inch-3.jpg" alt="T5 V2.4 尺寸图" width=100%>
 
 ## 原理图
 
-- [T5V2.13原理图 PDF（GitHub）](https://github.com/Xinyuan-LilyGO/LilyGo-T5-Epaper-Series/blob/master/schematic/T5_2.13.pdf)
+- [T5 V2.4 原理图 PDF（GitHub）](https://github.com/Xinyuan-LilyGO/LilyGo-T5-Epaper-Series/blob/master/schematic/T5_2.13.pdf)
 
 ## 数据手册
 
@@ -117,5 +123,6 @@ LILYGO T5 ePaper 2.13inch 是一款小巧的超低功耗开发板，搭载 **ESP
 
 | 版本 | 日期 | 说明 |
 | --- | --- | --- |
+| V2.4 | | 更新产品图片、屏幕版本与 USB-UART 芯片 |
 | V2.3.1 | | 更新 PCB 布局 |
 | V2.3 | | 初版发布 |

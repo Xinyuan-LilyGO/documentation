@@ -16,7 +16,7 @@ tags: ESP32-S3, SIM7670G, 4G, LTE Cat-1, GPS, IoT, Cellular
 
 ## Overview
 
-LILYGO T-SIM7670G-S3 combines the **ESP32-S3** dual-core LX7 microcontroller with the **SIMCom SIM7670G** LTE Cat-1 cellular module and integrated GNSS. The SIM7670G delivers LTE Cat-1 data rates (10 Mbps downlink / 5 Mbps uplink) with global multi-band coverage, voice call support, and an integrated GPS/GLONASS/BeiDou receiver. The ESP32-S3 (16 MB Flash, 8 MB PSRAM) provides Wi-Fi 802.11 b/g/n and Bluetooth 5.0 LE alongside the cellular connection. Features a Nano SIM card slot, USB-C for programming, a 3.7 V Li-Po battery connector with charging, and IPEX antenna connectors for LTE and GPS. Part of the LilyGo-Modem-Series ecosystem.
+LILYGO T-SIM7670G-S3 combines the **ESP32-S3** dual-core LX7 microcontroller with the **SIMCom SIM7670G-LLSE** LTE Cat-1 cellular module and integrated GNSS. The SIM7670G-LLSE delivers LTE Cat-1 data rates (10 Mbps downlink / 5 Mbps uplink) with global multi-band coverage, voice call support, and an integrated GPS/GLONASS/BeiDou receiver. The ESP32-S3 (16 MB Flash, 8 MB PSRAM) provides Wi-Fi 802.11 b/g/n and Bluetooth 5.0 LE alongside the cellular connection. Features a Nano SIM card slot, USB-C for programming, a 3.7 V Li-Po battery connector with charging, and IPEX antenna connectors for LTE and GPS. Part of the LilyGo-Modem-Series ecosystem.
 
 ## Quick Start
 
@@ -68,8 +68,8 @@ LILYGO T-SIM7670G-S3 combines the **ESP32-S3** dual-core LX7 microcontroller wit
 ## Key Features
 
 - ESP32-S3 dual-core LX7 @ 240 MHz, Wi-Fi + Bluetooth 5.0
-- SIMCom SIM7670G: LTE Cat-1 (10 Mbps DL / 5 Mbps UL), global multi-band
-- Voice call support via SIM7670G
+- SIMCom SIM7670G-LLSE: LTE Cat-1 (10 Mbps DL / 5 Mbps UL), global multi-band
+- Voice call support via SIM7670G-LLSE
 - Integrated GNSS: GPS, GLONASS, BeiDou
 - Nano SIM card slot
 - USB-C for programming and power
@@ -85,8 +85,10 @@ LILYGO T-SIM7670G-S3 combines the **ESP32-S3** dual-core LX7 microcontroller wit
 | Flash | 16 MB |
 | PSRAM | 8 MB |
 | Wireless | Wi-Fi 802.11 b/g/n, Bluetooth 5.0 |
-| Cellular | SIM7670G — LTE Cat-1, global multi-band |
-| Voice | Supported (SIM7670G) |
+| Cellular | SIM7670G-LLSE — LTE Cat-1, global multi-band |
+| LTE-FDD | B1/B2/B3/B4/B5/B7/B8/B18/B19/B20/B26/B28/B66 |
+| LTE-TDD | B38/B39/B40/B41 |
+| Voice | Supported (SIM7670G-LLSE) |
 | GNSS | GPS, GLONASS, BeiDou |
 | SIM | Nano SIM |
 | USB | 1 × USB-C |

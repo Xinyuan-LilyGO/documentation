@@ -16,7 +16,7 @@ tags: ESP32-S3, SIM7670G, 4G, LTE Cat-1, GPS, IoT, 蜂窝
 
 ## 概述
 
-LILYGO T-SIM7670G-S3 将 **ESP32-S3** 双核 LX7 微控制器与 **SIMCom SIM7670G** LTE Cat-1 蜂窝模块及集成 GNSS 相结合。SIM7670G 提供 LTE Cat-1 数据速率（下行 10 Mbps / 上行 5 Mbps），覆盖全球多频段，支持语音通话，并集成 GPS/GLONASS/北斗接收器。ESP32-S3（16 MB Flash，8 MB PSRAM）在蜂窝连接的基础上还提供 Wi-Fi 802.11 b/g/n 和 Bluetooth 5.0 LE。配备 Nano SIM 卡槽、USB-C 编程接口、3.7 V 锂电池接口及充电电路，以及 LTE 和 GPS 天线的 IPEX 接口。属于 LilyGo-Modem-Series 生态系列产品。
+LILYGO T-SIM7670G-S3 将 **ESP32-S3** 双核 LX7 微控制器与 **SIMCom SIM7670G-LLSE** LTE Cat-1 蜂窝模块及集成 GNSS 相结合。SIM7670G-LLSE 提供 LTE Cat-1 数据速率（下行 10 Mbps / 上行 5 Mbps），覆盖全球多频段，支持语音通话，并集成 GPS/GLONASS/北斗接收器。ESP32-S3（16 MB Flash，8 MB PSRAM）在蜂窝连接的基础上还提供 Wi-Fi 802.11 b/g/n 和 Bluetooth 5.0 LE。配备 Nano SIM 卡槽、USB-C 编程接口、3.7 V 锂电池接口及充电电路，以及 LTE 和 GPS 天线的 IPEX 接口。属于 LilyGo-Modem-Series 生态系列产品。
 
 ## 快速开始
 
@@ -68,8 +68,8 @@ LILYGO T-SIM7670G-S3 将 **ESP32-S3** 双核 LX7 微控制器与 **SIMCom SIM767
 ## 主要特性
 
 - ESP32-S3 双核 LX7 @ 240 MHz，Wi-Fi + Bluetooth 5.0
-- SIMCom SIM7670G：LTE Cat-1（下行 10 Mbps / 上行 5 Mbps），全球多频段
-- SIM7670G 支持语音通话
+- SIMCom SIM7670G-LLSE：LTE Cat-1（下行 10 Mbps / 上行 5 Mbps），全球多频段
+- SIM7670G-LLSE 支持语音通话
 - 集成 GNSS：GPS、GLONASS、北斗
 - Nano SIM 卡槽
 - USB-C 供电和编程
@@ -85,8 +85,10 @@ LILYGO T-SIM7670G-S3 将 **ESP32-S3** 双核 LX7 微控制器与 **SIMCom SIM767
 | Flash | 16 MB |
 | PSRAM | 8 MB |
 | 无线 | Wi-Fi 802.11 b/g/n，Bluetooth 5.0 |
-| 蜂窝 | SIM7670G — LTE Cat-1，全球多频段 |
-| 语音 | 支持（SIM7670G） |
+| 蜂窝 | SIM7670G-LLSE — LTE Cat-1，全球多频段 |
+| LTE-FDD | B1/B2/B3/B4/B5/B7/B8/B18/B19/B20/B26/B28/B66 |
+| LTE-TDD | B38/B39/B40/B41 |
+| 语音 | 支持（SIM7670G-LLSE） |
 | GNSS | GPS、GLONASS、北斗 |
 | SIM | Nano SIM |
 | USB | 1 × USB-C |

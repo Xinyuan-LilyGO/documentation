@@ -3,7 +3,7 @@ title: 快速开始
 show_source: false
 ---
 
-# T5 E-Paper 2.13" 快速开始
+# T5 V2.4 快速开始
 
 ## 依赖库
 
@@ -52,9 +52,9 @@ show_source: false
 
 ## 注意事项
 
-- **显示屏**：2.13 英寸 SSD1680，212×104 像素，黑白，SPI 接口
-- **全刷时间**：约 8 秒，避免频繁全刷以延长屏幕寿命
-- **USB**：CP2102 USB 转串口，若端口未识别请安装 CP210x 驱动
+- **显示屏**：2.13 英寸，122×250 像素，支持 DEPG0213BN 和 GDEM0213B74，SPI 接口
+- **全刷时间**：约 2 秒，支持局部刷新
+- **USB**：CH9102 USB 转串口，若端口未识别请安装 CH9102 驱动
 - **TF 卡**：与显示屏共用 SPI 总线，初始化时先初始化显示屏再初始化 SD
 
 ---
@@ -117,7 +117,7 @@ void setup() {
     lv_disp_drv_register(&disp_drv);
     
     lv_obj_t *label = lv_label_create(lv_scr_act());
-    lv_label_set_text(label, "T5 2.13in\nLVGL");
+    lv_label_set_text(label, "T5 V2.4\nLVGL");
     lv_obj_align(label, LV_ALIGN_CENTER, 0, 0);
 }
 
@@ -136,7 +136,7 @@ void loop() {
 ```cpp
 #include <GxEPD2_BW.h>
 
-// 2.13 英寸 SSD1680 212×104 — 请按实际引脚调整
+// T5 V2.4 2.13 英寸 122×250 — 请按实际屏幕型号和引脚调整
 GxEPD2_BW<GxEPD2_213, GxEPD2_213::HEIGHT> display(GxEPD2_213(/*CS*/10, /*DC*/9, /*RST*/8, /*BUSY*/7));
 
 void setup() {
@@ -149,7 +149,7 @@ void setup() {
         display.setTextColor(GxEPD_BLACK);
         display.setTextSize(2);
         display.setCursor(10, 50);
-        display.print("T5 2.13\" EPaper");
+        display.print("T5 V2.4 EPaper");
     } while (display.nextPage());
 }
 
@@ -176,7 +176,7 @@ void setup() {
 }
 
 void loop() {
-    radio.transmit("Hello T5 2.13in");
+    radio.transmit("Hello T5 V2.4");
     delay(3000);
 }
 ```
@@ -209,4 +209,4 @@ void loop() {}
 A：首次上电时调用 `display.display(false)` 进行全刷以清除残影。
 
 **Q：端口未识别？**
-A：安装 CP2102（CP210x）USB 驱动后重新连接。
+A：安装 CH9102 USB 驱动后重新连接。
