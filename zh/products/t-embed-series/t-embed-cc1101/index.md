@@ -84,6 +84,8 @@ LILYGO T-Embed CC1101 是一款基于 ESP32-S3 双核 LX7 处理器的高集成�
 
 ## 视频
 
+[T-Embed CC1101 屏幕更换视频](https://youtu.be/qeUaLMlrqZY)
+
 ## 主要特点
 
 - ESP32-S3FN16R8 双核 LX7 @ 240 MHz，16 MB Flash，8 MB PSRAM，Wi-Fi 6 + 蓝牙 5.0

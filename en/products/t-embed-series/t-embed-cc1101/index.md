@@ -67,6 +67,8 @@ LILYGO T-Embed CC1101 is a highly integrated IoT development board based on **ES
 
 ## Video
 
+[T-Embed CC1101 screen replacement](https://youtu.be/qeUaLMlrqZY)
+
 ## Key Features
 
 - ESP32-S3 dual-core LX7 @ 240 MHz, Wi-Fi + Bluetooth 5.0
