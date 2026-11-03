@@ -13,7 +13,7 @@ tags: K230, AIoT, LoRa, AMOLED, RISC-V
 
 ## Overview
 
-T-Display K230 is based on Canaan Technology's **K230** chip — dual-core RISC-V (1.6 GHz + 0.8 GHz) with up to 1.6 TOPS NPU — combined with **ESP32-S3-R8** (16 MB Flash, 8 MB PSRAM) for Wi-Fi/Bluetooth connectivity. Features a **4.1-inch AMOLED** display (568 × 1232, MIPI DSI), **GT9895** capacitive touch, **SX1262/SX1280 LoRa** (433–923 MHz), 3-channel MIPI CSI-2 camera, HDMI 1080P output, Ethernet, and 3.5 mm audio. Suitable for AI inference, remote wireless data transmission, IoT monitoring, and video interaction in a 104 × 51 × 15.5 mm form factor.
+T-Display K230 is based on Canaan Technology's **K230** chip — dual-core RISC-V (1.6 GHz + 0.8 GHz) with up to 1.6 TOPS NPU and 1 GB LPDDR4 memory. The board uses **RTL8189FS SDIO Wi-Fi**; Bluetooth requires a USB Bluetooth adapter or the optional nRF52840 base board. Features a **4.1-inch AMOLED** display (568 × 1232, MIPI DSI), **GT9895** capacitive touch, **SX1262/SX1280 LoRa** (433–923 MHz), 3-channel MIPI CSI-2 camera, HDMI 1080P output, Ethernet, and 3.5 mm audio. Suitable for AI inference, remote wireless data transmission, IoT monitoring, and video interaction in a 104 × 51 × 15.5 mm form factor.
 
 <a href="/products/t-display-series/t-display-k230/k230/index.html?lang=en" target="_blank" rel="noopener noreferrer">K230 40Pin Pinout Tool</a>
 
@@ -25,64 +25,44 @@ T-Display K230 is based on Canaan Technology's **K230** chip — dual-core RISC-
 | :-----: | :----------------: | :-----: | :---------: |
 | [K230 SDK](https://github.com/kendryte/k230_sdk) | | | K230 Linux/RT-Smart dual-core SDK |
 
-### K230 SDK Setup
+### T-Display K230 SDK Setup
 
-K230 SDK must be compiled in a **Linux environment** (Ubuntu 20.04 recommended). For Windows, use WSL2 + Docker.
+The T-Display-K230 repository contains the board support package and launcher. Build it in a Linux filesystem with Ubuntu 22.04 or 24.04 recommended; use WSL2 on Windows. The upstream K230 SDK documentation recommends Ubuntu 20.04 and also documents Docker.
 
-#### Pull Docker Image
-
-```shell
-docker pull ghcr.io/kendryte/k230_sdk
-```
-
-#### Download K230 SDK Source
+#### Clone the Board Repository
 
 ```shell
-git clone https://github.com/kendryte/k230_sdk
-cd k230_sdk
-make prepare_sourcecode
+git clone --recurse-submodules https://github.com/Xinyuan-LilyGO/T-Display-K230.git t-display-k230
+cd t-display-k230
+./scripts/setup_ubuntu.sh
 ```
 
-> `make prepare_sourcecode` automatically downloads Linux and RT-Smart toolchains, buildroot packages, and AI packages. Ensure this completes without errors.
-
-#### Compile K230 SDK
+#### Apply the BSP and Build the SD-Card Image
 
 ```shell
-docker run -u root -it -v $(pwd):$(pwd) -v $(pwd)/toolchain:/opt/toolchain -w $(pwd) ghcr.io/kendryte/k230_sdk /bin/bash
-make CONF=k230_evb_defconfig
+./scripts/apply_to_sdk.sh
+./scripts/build_sdcard_image.sh
 ```
 
-Pre-compiled images are available at [Canaan Developer Community](https://developer.canaan-creative.com/resource) under `K230/Images`.
+The image is generated at `k230_bsp/images/sysimage-sdcard.img`. For the upstream SDK workflow, see the [official K230 SDK README](https://github.com/kendryte/k230_sdk): run `make prepare_sourcecode`, then select a target with `make CONF=xxx`.
 
-### Flashing Image
+#### Flashing the SD Card Image
 
-**Linux:**
 ```shell
-sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
+sudo dd if=k230_bsp/images/sysimage-sdcard.img of=/dev/sdX bs=8M status=progress conv=fsync
+sync
 ```
 
-**Windows:** Use [Rufus](http://rufus.ie/downloads/) to flash the TF card.
+On Windows, use [Rufus](https://rufus.ie/en) and select **DD Image mode** if prompted. Cancel any prompt to format an unknown partition after flashing.
 
-### PlatformIO (ESP32-S3 co-processor)
-
-1. Install [Visual Studio Code](https://code.visualstudio.com/) and [Python](https://www.python.org/)
-2. Search for and install the **PlatformIO IDE** extension in VS Code
-3. Open the project folder and select the ESP32-S3 example
-4. Click **✓** to compile, click **→** to upload
-
-### Arduino (ESP32-S3 co-processor)
-
-1. Install [Arduino IDE](https://www.arduino.cc/en/software)
-2. Install [Arduino ESP32](https://docs.espressif.com/projects/arduino-esp32/en/latest/)
-3. Configure board as **ESP32S3 Dev Module**
-4. Click **Upload**
+Pre-built board images, when published, are listed in the [T-Display-K230 Releases](https://github.com/Xinyuan-LilyGO/T-Display-K230/releases). Generic images from the Canaan community require a matching board configuration.
 
 ### Development Platforms
 
-1. [K230 SDK](https://github.com/kendryte/k230_sdk) — Main K230 development
-2. [MaixPy](https://github.com/sipeed/maixpy) — K230 MicroPython
-3. [Arduino IDE](https://www.arduino.cc/en/software) — ESP32-S3 co-processor
-4. [ESP-IDF](https://www.espressif.com/en/products/sdks/esp-idf) — ESP32-S3 advanced
+1. [T-Display-K230 BSP](https://github.com/Xinyuan-LilyGO/T-Display-K230) — board Linux/RT-Smart image
+2. [K230 SDK](https://github.com/kendryte/k230_sdk) — upstream K230 development
+3. [K230 CanMV](https://github.com/kendryte/k230_canmv/) — K230 MicroPython
+4. [nRF52840 base-board firmware](https://github.com/Xinyuan-LilyGO/T-Display-K230-nRF52840) — optional BLE peripheral
 
 ## Video
 
@@ -91,7 +71,8 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 ## Key Features
 
 - K230 dual-core RISC-V (1.6 GHz + 0.8 GHz), KPU ~1.6 TOPS, H.264/H.265 codec
-- ESP32-S3-R8 co-processor: Wi-Fi + Bluetooth 5.0
+- RTL8189FS SDIO Wi-Fi (some generic K230 BSP configurations also support RTL8723DS)
+- Bluetooth via a USB Bluetooth adapter or the optional nRF52840 base board; RTL8723DS Bluetooth also requires separate UART signals
 - 4.1-inch AMOLED (568 × 1232, MIPI DSI), GT9895 capacitive touch
 - SX1262/SX1280 LoRa (433–923 MHz)
 - 3-channel MIPI CSI-2 camera, HDMI 1080P @ 30 FPS
@@ -104,17 +85,15 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 | Feature | Specification |
 | :------------------------------: | :------------------------------: |
 | Main Processor | K230 Dual-core RISC-V, 1.6 GHz + 0.8 GHz, 1.6 TOPS NPU |
-| Co-processor | ESP32-S3-R8 |
-| Flash | 16 MB |
 | Memory | 1 GB LPDDR4 |
-| Wi-Fi | 2.4 GHz 802.11 b/g/n (ESP32-S3) |
-| Bluetooth | Bluetooth 5.0 LE (ESP32-S3) |
+| Wi-Fi | 2.4 GHz 802.11 b/g/n, RTL8189FS over SDIO |
+| Bluetooth | No onboard ESP Bluetooth; use a USB Bluetooth adapter or optional nRF52840 base board |
 | LoRa | SX1262/SX1280, 433–923 MHz |
 | Display | 4.1-inch AMOLED, 568 × 1232, MIPI DSI |
 | Touch | GT9895 capacitive |
 | Camera | 3 × MIPI CSI-2 |
 | Video Output | HDMI 1080P @ 30 FPS |
-| Network | Wi-Fi + RTL8152B 100 Mbps Ethernet (IEEE 802.3u) |
+| Network | RTL8152B 100 Mbps Ethernet (IEEE 802.3u) |
 | Audio | 3.5 mm jack + microphone |
 | Storage | TF card slot |
 | USB | 1 × Power + 1 × USB 2.0 OTG (Type-C) |
@@ -160,7 +139,10 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
   A. K230 supports SDCard, eMMC, and NOR Flash boot. For development, TF card boot (SD card boot mode) is recommended.
 
 * **Q. Which Linux distribution is required for K230 SDK compilation?**
-  A. Ubuntu 20.04 is recommended. For Windows, use WSL2 + Docker.
+  A. Ubuntu 20.04 is recommended by the upstream SDK. The T-Display-K230 repository recommends Ubuntu 22.04 or 24.04 for its board build scripts; use WSL2 on Windows.
+
+* **Q. Is Wi-Fi or Bluetooth provided by an ESP32-S3 on this board?**
+  A. No. The T-Display-K230 BSP uses RTL8189FS over SDIO for Wi-Fi. Bluetooth requires a USB Bluetooth adapter or the optional nRF52840 base board; identify the exact wireless hardware and driver on your board revision.
 
 ## Version History
 

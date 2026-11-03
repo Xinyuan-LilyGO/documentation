@@ -22,7 +22,7 @@ T-Display K230 Cased Version is a high-performance AIoT terminal based on the K2
 - Integrated KPU, DPU, GPU, and VPU for AI inference and multimedia processing
 - 4.1-inch AMOLED display, 568 × 1232 resolution
 - Onboard 2MP 1080P camera, microphone, speaker, and 3.5mm headphone jack
-- Supports 2.4GHz Wi-Fi, BLE, RTL8152B 100 Mbps Ethernet, HDMI, USB, TF card, and QWIIC
+- Supports RTL8189FS SDIO Wi-Fi; Bluetooth requires a USB Bluetooth adapter or optional nRF52840 base board; also includes RTL8152B 100 Mbps Ethernet, HDMI, USB, TF card, and QWIIC
 - Enclosure size approx. 110 × 58 × 30mm
 
 ## Product Parameters
@@ -35,7 +35,7 @@ T-Display K230 Cased Version is a high-performance AIoT terminal based on the K2
 | Display | 4.1-inch AMOLED, RGB 568 × 1232 |
 | Camera | 2MP 1080P camera |
 | Memory | 1 GB LPDDR4 |
-| Wireless | 2.4GHz Wi-Fi + BLE |
+| Wireless | RTL8189FS SDIO Wi-Fi; Bluetooth via USB adapter or optional nRF52840 base board |
 | LoRa | Optional SX1262 or LR2021 module |
 | Network | RTL8152B 100 Mbps Ethernet |
 | Video Output | HDMI 1080P 30FPS |

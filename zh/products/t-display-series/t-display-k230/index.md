@@ -14,62 +14,53 @@ tags: K230, AIoT, LoRa, AMOLED, RISC-V
 
 ## 概述
 
-T-Display K230 是基于嘉楠 K230 AI 芯片设计的高性能 AIoT 开发板，配备 4.1 英寸 AMOLED 屏幕（568×1232）和 GT9895 电容触摸。K230 搭载双核 RISC-V 处理器（大核 1.6GHz + 小核 0.8GHz）和约 1.6TOPS 算力的 NPU，内置 1 GB LPDDR4 内存。协处理器 ESP32-S3-R8 提供 Wi-Fi/蓝牙连接。板载 SX1262/SX1280 LoRa、以太网、HDMI 输出（1080P@30FPS）、3 路 MIPI CSI-2 摄像头接口和 3.5mm 音频接口，适用于 AI 推理、远程图像识别和物联网监控等场景。
+T-Display K230 是基于嘉楠 K230 AI 芯片设计的高性能 AIoT 开发板，配备 4.1 英寸 AMOLED 屏幕（568×1232）和 GT9895 电容触摸。K230 搭载双核 RISC-V 处理器（大核 1.6GHz + 小核 0.8GHz）和约 1.6TOPS 算力的 NPU，内置 1 GB LPDDR4 内存。板载 RTL8189FS 通过 SDIO 提供 Wi-Fi；蓝牙需使用 USB 蓝牙适配器或可选的 nRF52840 底板。板载 SX1262/SX1280 LoRa、以太网、HDMI 输出（1080P@30FPS）、3 路 MIPI CSI-2 摄像头接口和 3.5mm 音频接口，适用于 AI 推理、远程图像识别和物联网监控等场景。
 
 <a href="/products/t-display-series/t-display-k230/k230/index.html?lang=zh" target="_blank" rel="noopener noreferrer">K230 40Pin 引脚查询工具</a>
 
 ## 快速开始
 
-### K230 SDK 编译
+### T-Display K230 SDK 编译
 
-K230 SDK 需在 Linux 环境下编译，推荐使用 Ubuntu 20.04（Windows 用户可使用 WSL2 + Docker）。
+T-Display-K230 仓库包含本板的 BSP 和 Launcher。推荐在 Ubuntu 22.04 或 24.04 的 Linux 文件系统中编译；Windows 用户请使用 WSL2。嘉楠官方 K230 SDK 文档推荐 Ubuntu 20.04，并提供 Docker 编译环境。
 
-**下载源码：**
+**下载 T-Display-K230 源码并初始化 SDK 子模块：**
 
-```shell
-git clone https://github.com/kendryte/k230_sdk
-cd k230_sdk
-make prepare_sourcecode
+```sh
+git clone --recurse-submodules https://github.com/Xinyuan-LilyGO/T-Display-K230.git t-display-k230
+cd t-display-k230
+./scripts/setup_ubuntu.sh
 ```
 
-**使用 Docker 编译：**
+**应用板级支持并构建 SD 卡镜像：**
 
-```shell
-# 拉取 Docker 镜像
-docker pull ghcr.io/kendryte/k230_sdk
-
-# 进入 Docker 环境
-docker run -u root -it -v $(pwd):$(pwd) -v $(pwd)/toolchain:/opt/toolchain -w $(pwd) ghcr.io/kendryte/k230_sdk /bin/bash
-
-# 编译（以 EVB 板为例）
-make CONF=k230_evb_defconfig
+```sh
+./scripts/apply_to_sdk.sh
+./scripts/build_sdcard_image.sh
 ```
 
 **编译产物：**
 
-```shell
-k230_evb_defconfig/images/
-├── sysimage-sdcard.img       # SD 卡/eMMC 非安全启动镜像
-├── sysimage-sdcard.img.gz    # 压缩版本
-├── sysimage-spinor32m.img    # NOR Flash 镜像
-└── ...
+```text
+k230_bsp/images/sysimage-sdcard.img
 ```
+
+如果只需要使用上游 K230 SDK，请参阅 [嘉楠 K230 SDK README](https://github.com/kendryte/k230_sdk)，执行 `make prepare_sourcecode` 下载工具链和依赖，再根据目标开发板选择 `make CONF=xxx`。T-Display K230 应使用本节的板级仓库和构建脚本。
 
 ### 烧录镜像
 
 **Linux：**
 
 ```shell
-sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
+sudo dd if=k230_bsp/images/sysimage-sdcard.img of=/dev/sdX bs=8M status=progress conv=fsync
+sync
 ```
 
-**Windows：** 使用 [rufus](http://rufus.ie/downloads/) 工具烧录。
+**Windows：** 使用 [Rufus](https://rufus.ie/en) 写入 `sysimage-sdcard.img`，如果提示写入模式，请选择 **DD 镜像模式**。Windows 提示格式化未知分区时请选择取消。
 
 ### 预编译镜像
 
-如不希望自行编译，可从以下渠道下载预编译镜像：
-- [GitHub Releases](https://github.com/kendryte/k230_sdk/releases)（v1.4 及以上）
-- [嘉楠开发者社区](https://developer.canaan-creative.com/resource)（K230/Images 分类）
+如不希望自行编译，请优先使用 [T-Display-K230 Releases](https://github.com/Xinyuan-LilyGO/T-Display-K230/releases) 中与本板匹配的镜像。嘉楠社区的通用 K230 镜像需要对应的板级配置，不能直接替代 T-Display K230 BSP 镜像。
 
 ### K230 SDK 视频教程
 
@@ -77,16 +68,18 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 
 ### 开发平台
 
-1. [K230 SDK](https://github.com/kendryte/k230_sdk)（Linux / Docker）
-2. [K230 CanMV](https://github.com/kendryte/k230_canmv/)（MicroPython 支持）
-3. [ESP32-S3 Arduino IDE](https://www.arduino.cc/en/software)（协处理器开发）
+1. [T-Display-K230 BSP](https://github.com/Xinyuan-LilyGO/T-Display-K230)（本板 Linux/RT-Smart 镜像）
+2. [K230 SDK](https://github.com/kendryte/k230_sdk)（Linux / Docker）
+3. [K230 CanMV](https://github.com/kendryte/k230_canmv/)（MicroPython 支持）
+4. [nRF52840 底板固件](https://github.com/Xinyuan-LilyGO/T-Display-K230-nRF52840)（可选 BLE 外设）
 
 ## 视频
 
 ## 主要特点
 
 - K230 双核 RISC-V（1.6GHz + 0.8GHz），NPU 约 1.6TOPS
-- ESP32-S3-R8：16MB Flash，Wi-Fi + 蓝牙 5.0
+- RTL8189FS SDIO Wi-Fi（部分 K230 BSP 也支持 RTL8723DS）
+- 蓝牙：USB 蓝牙适配器或可选 nRF52840 底板；RTL8723DS 的蓝牙还需要独立 UART 信号
 - 4.1 英寸 AMOLED（568×1232），GT9895 电容触摸
 - SX1262/SX1280 LoRa（433~923MHz），RTL8152B 百兆以太网，HDMI 1080P@30FPS
 - 3 路 MIPI CSI-2 摄像头接口，3.5mm 音频接口
@@ -96,17 +89,16 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 | 组件 | 描述 |
 | :--: | :--: |
 | 主处理器 | K230 双核 RISC-V (1.6GHz + 0.8GHz) |
-| 协处理器 | ESP32-S3-R8 |
 | NPU | 约 1.6TOPS，支持 INT8/INT16 AI 推理 |
 | 内存 | 1 GB LPDDR4 |
-| 存储 | 16MB Flash + TF 卡 |
+| 存储 | TF 卡（SD 卡镜像） |
 | 屏幕 | 4.1 英寸 AMOLED (568×1232)，2 lane MIPI DSI |
 | 触摸 | GT9895 电容触摸 |
 | 摄像头 | 3 路 MIPI CSI-2（最高 1路 4lane + 1路 2lane，1.5Gbps） |
 | 视频输出 | HDMI 1080P@30FPS |
 | LoRa | SX1262/SX1280（433~923MHz） |
-| 网络 | Wi-Fi 802.11b/g/n（ESP32-S3）+ RTL8152B 百兆以太网 |
-| 蓝牙 | Bluetooth 5 (LE)（ESP32-S3） |
+| Wi-Fi | 2.4GHz 802.11 b/g/n，RTL8189FS 通过 SDIO 连接 |
+| 蓝牙 | 板载未集成；支持 USB 蓝牙适配器和可选 nRF52840 底板 |
 | 音频 | 3.5mm 音频输出 + 麦克风输入 |
 | USB | 1 × 电源 USB + 1 × USB 2.0 OTG (Type-C) |
 | IO 接口 | 2×20 双排扩展接口 |
@@ -136,7 +128,6 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 ## 数据手册
 
 * [K230 文档](https://github.com/kendryte/k230_docs)
-* [ESP32-S3 Datasheet](/datasheet/esp32-s3_datasheet_en.pdf)
 
 ## 软件开发
 
@@ -160,13 +151,17 @@ sudo dd if=sysimage-sdcard.img of=/dev/sdx bs=1M oflag=sync
 ## 常见问题
 
 * **Q. K230 开发板如何启动？**  
-  A. 将拨码开关切换至 SD 卡启动模式，插入烧录好镜像的 TF 卡，将电源开关拨到 ON 位置即可上电启动。系统默认有两个串口：小核 Linux（用户名 root，密码为空）和大核 RTSmart。
+  A. 使用 T-Display-K230 构建的 SD 卡镜像，将启动开关切换至 SD 卡模式，插入烧录好的 TF 卡并上电。K230 默认有两个串口：小核运行 Linux（用户名 root，密码为空），大核运行 RT-Smart。
 
 * **Q. 如何快速验证硬件？**  
-  A. 下载[嘉楠开发者社区](https://developer.canaan-creative.com/resource)中的预编译镜像直接烧录，无需自行编译 SDK。
+  A. 下载 [T-Display-K230 Releases](https://github.com/Xinyuan-LilyGO/T-Display-K230/releases) 中与本板匹配的预编译镜像直接烧录，无需自行编译 SDK。嘉楠开发者社区中的通用 K230 镜像只有在板级配置匹配时才能使用。
 
 * **Q. K230 SDK 编译速度慢怎么办？**  
   A. 推荐使用 Docker 编译环境（`ghcr.io/kendryte/k230_sdk`），也可参考 `tools/docker/Dockerfile` 在本地 Linux 环境安装依赖。
+
+* **Q. T-Display K230 的 Wi-Fi 和蓝牙由 ESP32-S3 提供吗？**
+
+  A. 不是。T-Display-K230 BSP 使用 RTL8189FS 通过 SDIO 提供 Wi-Fi；蓝牙需要 USB 蓝牙适配器或可选 nRF52840 底板。请根据实际硬件版本确认无线芯片和驱动。
 
 ## 版本历史
 

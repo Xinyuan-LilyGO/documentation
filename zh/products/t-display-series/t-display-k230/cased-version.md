@@ -22,7 +22,7 @@ T-Display K230 带壳版本是基于 K230 AI 芯片设计的高性能 AIoT 终�
 - 集成 KPU、DPU、GPU、VPU，支持 AI 推理与多媒体处理
 - 4.1 英寸 AMOLED 屏幕，分辨率 568 × 1232
 - 板载 2MP 1080P 摄像头、麦克风、扬声器和 3.5mm 耳机接口
-- 支持 2.4GHz Wi-Fi、BLE、RTL8152B 百兆以太网、HDMI、USB、TF 卡和 QWIIC
+- 支持 RTL8189FS SDIO Wi-Fi；蓝牙需 USB 蓝牙适配器或可选 nRF52840 底板；同时支持 RTL8152B 百兆以太网、HDMI、USB、TF 卡和 QWIIC
 - 外壳尺寸约 110 × 58 × 30mm
 
 ## 产品参数
@@ -35,7 +35,7 @@ T-Display K230 带壳版本是基于 K230 AI 芯片设计的高性能 AIoT 终�
 | 屏幕 | 4.1 英寸 AMOLED，RGB 568 × 1232 |
 | 摄像头 | 2MP 1080P 摄像头 |
 | 内存 | 1 GB LPDDR4 |
-| 无线 | 2.4GHz Wi-Fi + BLE |
+| 无线 | RTL8189FS SDIO Wi-Fi；蓝牙需 USB 蓝牙适配器或可选 nRF52840 底板 |
 | LoRa | 可选 SX1262 或 LR2021 模块 |
 | 网络 | RTL8152B 百兆以太网接口 |
 | 视频输出 | HDMI 1080P 30FPS |
