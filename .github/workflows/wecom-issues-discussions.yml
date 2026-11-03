@@ -1,0 +1,161 @@
+name: Forward issues and discussions to WeCom digest
+
+on:
+  issues:
+    types: [opened, reopened, assigned]
+  issue_comment:
+    types: [created]
+  discussion:
+    types: [created]
+  discussion_comment:
+    types: [created]
+
+# This source repository only forwards normalized event data. The WeCom webhook
+# remains in the private relay repository and is never exposed here.
+permissions:
+  contents: read
+
+jobs:
+  forward:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create GitHub App token for the private relay repository
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.WECOM_APP_ID }}
+          private-key: ${{ secrets.WECOM_APP_PRIVATE_KEY }}
+          owner: Xinyuan-LilyGO
+          repositories: wecom-relay
+          permission-contents: write
+
+      - name: Dispatch event to the private WeCom relay repository
+        uses: actions/github-script@v7
+        env:
+          # These variables are optional for the standard Xinyuan-LilyGO/wecom-relay setup.
+          WECOM_DIGEST_OWNER: ${{ vars.WECOM_DIGEST_OWNER }}
+          WECOM_DIGEST_REPO: ${{ vars.WECOM_DIGEST_REPO }}
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            const owner = process.env.WECOM_DIGEST_OWNER || 'Xinyuan-LilyGO';
+            const repo = process.env.WECOM_DIGEST_REPO || 'wecom-relay';
+            const payload = context.payload;
+            const shorten = (value, maxBytes) => {
+              const text = String(value ?? '').trim();
+              if (!text) return '（无内容）';
+              if (Buffer.byteLength(text, 'utf8') <= maxBytes) return text;
+
+              let result = '';
+              for (const character of text) {
+                const candidate = `${result}${character}…`;
+                if (Buffer.byteLength(candidate, 'utf8') > maxBytes) break;
+                result += character;
+              }
+              return `${result}…`;
+            };
+
+            let kind;
+            let action;
+            let number;
+            let title;
+            let body;
+            let htmlUrl;
+            let sender;
+            let senderType;
+            const meta = {};
+
+            switch (context.eventName) {
+              case 'issues': {
+                const issue = payload.issue;
+                kind = 'issue';
+                action = payload.action;
+                number = issue.number;
+                title = issue.title;
+                body = issue.body;
+                htmlUrl = issue.html_url;
+                sender = payload.sender?.login || issue.user?.login;
+                senderType = payload.sender?.type || issue.user?.type;
+                meta.assignee = payload.assignee?.login;
+                meta.assignees = issue.assignees?.map((user) => user.login).slice(0, 20);
+                break;
+              }
+              case 'issue_comment': {
+                if (payload.issue?.pull_request) {
+                  core.info('Skipping a pull request comment; this workflow forwards Issues only.');
+                  return;
+                }
+                const issue = payload.issue;
+                const comment = payload.comment;
+                kind = 'issue_comment';
+                action = payload.action;
+                number = issue.number;
+                title = issue.title;
+                body = comment.body;
+                htmlUrl = comment.html_url || issue.html_url;
+                sender = payload.sender?.login || comment.user?.login;
+                senderType = payload.sender?.type || comment.user?.type;
+                meta.comment_url = comment.html_url;
+                meta.comment_id = comment.id;
+                break;
+              }
+              case 'discussion': {
+                const discussion = payload.discussion;
+                kind = 'discussion';
+                action = payload.action;
+                number = discussion.number;
+                title = discussion.title;
+                body = discussion.body;
+                htmlUrl = discussion.html_url;
+                sender = payload.sender?.login || discussion.user?.login || discussion.author?.login;
+                senderType = payload.sender?.type || discussion.user?.type || discussion.author?.type;
+                meta.category = discussion.category?.name;
+                break;
+              }
+              case 'discussion_comment': {
+                const discussion = payload.discussion;
+                const comment = payload.comment;
+                kind = 'discussion_comment';
+                action = payload.action;
+                number = discussion.number;
+                title = discussion.title;
+                body = comment.body;
+                htmlUrl = comment.html_url || discussion.html_url;
+                sender = payload.sender?.login || comment.user?.login;
+                senderType = payload.sender?.type || comment.user?.type;
+                meta.category = discussion.category?.name;
+                meta.comment_url = comment.html_url;
+                meta.comment_id = comment.id;
+                break;
+              }
+              default:
+                core.warning(`Unsupported event: ${context.eventName}`);
+                return;
+            }
+
+            meta.action = action;
+            const clientPayload = {
+              schema_version: 1,
+              source_repository: payload.repository?.full_name || `${context.repo.owner}/${context.repo.repo}`,
+              source_event: kind,
+              action,
+              number,
+              title: shorten(title, 600),
+              body: shorten(body, 2200),
+              url: htmlUrl,
+              author: sender || 'unknown',
+              meta: JSON.stringify(meta),
+            };
+
+            if (Object.keys(clientPayload).length > 10) {
+              throw new Error('repository_dispatch client_payload must contain no more than 10 top-level keys.');
+            }
+
+            await github.rest.repos.createDispatchEvent({
+              owner,
+              repo,
+              event_type: 'wecom-digest',
+              client_payload: clientPayload,
+            });
+
+            core.info(`Dispatched ${kind} #${number} to ${owner}/${repo}.`);
