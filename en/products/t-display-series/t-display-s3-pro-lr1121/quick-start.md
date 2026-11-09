@@ -121,14 +121,18 @@ void loop() {}
 
 #### LR1121 LoRa Transmit
 
+These assignments match the LR1121 Shield in the [product pin diagram](./index.md#pin-diagram).
+
 ```cpp
+#include <SPI.h>
 #include <RadioLib.h>
 
-// Adjust pins to match your board schematic
-LR1121 radio = new Module(/* NSS */, /* DIO9 */, /* RESET */, /* BUSY */);
+// NSS = GPIO7, INT = GPIO40, RST = GPIO10, BUSY = GPIO46
+LR1121 radio = new Module(7, 40, 10, 46);
 
 void setup() {
     Serial.begin(115200);
+    SPI.begin(18, 8, 17, 7);  // SCLK, MISO, MOSI, CS
     int state = radio.begin(868.0);  // frequency in MHz — check local regulations
     if (state == RADIOLIB_ERR_NONE) {
         Serial.println("LR1121 init OK");

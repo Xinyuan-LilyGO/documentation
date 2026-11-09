@@ -86,15 +86,49 @@ T-Display S3 Pro LR1121 是一款基于 ESP32-S3 微控制器的高集成度开�
 | 电源管理 | AXPM65611 + BQ25896 |
 | 无线 | 2.4GHz Wi-Fi + Bluetooth 5 (LE) |
 | USB | 1 × USB OTG (Type-C) |
-| IO 接口 | 2×13 双排扩展接口 |
+| IO 接口 | 图示排针引出 3V3、GPIO1、GPIO2、GPIO46、GPIO45、GPIO42、BAT、VBUS、GND |
 | 扩展接口 | FPC 天线 + TF 卡 + STEMMA QT/QWIIC + JST-GH 1.25mm |
-| 按键 | RESET + BOOT |
+| 按键 | RESET、BOOT、GPIO12、GPIO16 |
 | 安装孔 | 4 × 2mm 定位孔 |
 | 尺寸 | 60 × 32 × 12mm |
 
 ## 引脚图
 
 <img src="/products/t-display-series/t-display-s3-pro-lr1121/index/image/t-display-s3-pro-lr1121-3.jpg" alt="T-Display S3 Pro LR1121 引脚图" width=100%>
+
+### LR1121 Shield 引脚对应表
+
+以下 GPIO 对应上图所示的 LR1121 Shield，编号为 ESP32-S3 的 GPIO 编号。
+
+| 外设 | 信号 | GPIO |
+| :-- | :-- | :-- |
+| LR1121 | BUSY | GPIO46 |
+| LR1121 | INT | GPIO40 |
+| LR1121 | SCLK | GPIO18 |
+| LR1121 | MOSI | GPIO17 |
+| LR1121 | MISO | GPIO8 |
+| LR1121 | CS / NSS | GPIO7 |
+| LR1121 | RST | GPIO10 |
+| MAX98357A 功放 | BCLK | GPIO4 |
+| MAX98357A 功放 | LRCLK | GPIO15 |
+| MAX98357A 功放 | DATA | GPIO11 |
+| MAX98357A 功放 | SD_MODE | GPIO41 |
+| 麦克风 | LRCLK | GPIO1 |
+| 麦克风 | DATA | GPIO2 |
+| 麦克风 | EN | GPIO3 |
+| RTC | SDA | GPIO5 |
+| RTC | SCL | GPIO6 |
+| RTC | INT | GPIO21 |
+| RT9080 电源 | EN | GPIO42 |
+| 振动马达 | DATA | GPIO45 |
+| 按键 | 图中右侧上方按键 | GPIO12 |
+| 按键 | 图中右侧下方按键 | GPIO16 |
+
+图中左侧按键为 RESET 和 BOOT。排针从图示左至右依次为：**3V3、GPIO1、GPIO2、GPIO46、GPIO45、GPIO42、BAT、VBUS、GND**。两个 QWIIC 接口位于 USB-C 接口两侧。
+
+排针上的 GPIO1、GPIO2、GPIO46、GPIO45、GPIO42 分别与麦克风、LR1121 BUSY、振动马达或电源使能共用，连接外设前请确认不会与板载功能冲突。GPIO46 仅支持输入。
+
+**天线旋转方向：** 天线只能朝屏幕方向旋转，最大 180°，请勿向背面反向旋转。
 
 ## 尺寸图
 
@@ -136,7 +170,7 @@ T-Display S3 Pro LR1121 是一款基于 ESP32-S3 微控制器的高集成度开�
   A. LR1121 模块支持 1276MHz、868MHz 和 915MHz 等多个频段，请根据所在地区的法规选择合适频段。
 
 * **Q. 如何连接外部传感器？**  
-  A. 可通过板载 STEMMA QT/QWIIC 接口快速连接兼容传感器，也可通过 2×13 双排扩展接口连接其他外设。
+  A. 可通过板载 STEMMA QT/QWIIC 接口连接兼容传感器；使用排针时请按上方引脚表接线，并注意与板载外设共用的 GPIO。
 
 ## 版本历史
 

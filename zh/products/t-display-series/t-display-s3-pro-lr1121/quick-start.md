@@ -121,14 +121,18 @@ void loop() {}
 
 #### LR1121 LoRa 发送
 
+以下引脚对应[产品页引脚图](./index.md#引脚图)中的 LR1121 Shield。
+
 ```cpp
+#include <SPI.h>
 #include <RadioLib.h>
 
-// 根据实际电路图调整引脚
-LR1121 radio = new Module(/* NSS */, /* DIO9 */, /* RESET */, /* BUSY */);
+// NSS = GPIO7，INT = GPIO40，RST = GPIO10，BUSY = GPIO46
+LR1121 radio = new Module(7, 40, 10, 46);
 
 void setup() {
     Serial.begin(115200);
+    SPI.begin(18, 8, 17, 7);  // SCLK、MISO、MOSI、CS
     int state = radio.begin(868.0);  // 频率（MHz），请遵守当地无线电法规
     if (state == RADIOLIB_ERR_NONE) {
         Serial.println("LR1121 初始化成功");
