@@ -13,7 +13,7 @@ tags: ESP32-S3, AMOLED, LoRa, LR1121
 
 ## Overview
 
-T-Display S3 Pro LR1121 is a highly integrated development board based on **ESP32-S3R8** (16 MB Flash, 8 MB PSRAM). Equipped with a **1.91-inch RM67162 IPS AMOLED** display (SPI/QSPI), **LR1121** multi-band LoRa module, **AXPM65611 + BQ25896** power management, **PCF85063ATL** RTC, TF card, and STEMMA QT/QWIIC expansion. Suitable for smart wearables, IoT terminals, and scenarios requiring display interaction with long-range wireless communication, in a compact 60 × 32 × 12 mm form factor.
+T-Display S3 Pro LR1121 is a highly integrated development board based on **ESP32-S3R8** (16 MB Flash, 8 MB PSRAM). Equipped with a **1.91-inch RM67162 IPS AMOLED** display (SPI/QSPI) with optional capacitive touch, **LR1121** multi-band LoRa module, **AXPM65611 + BQ25896** power management, **PCF85063ATL** RTC, TF card, and STEMMA QT/QWIIC expansion. Suitable for smart wearables, IoT terminals, and scenarios requiring display interaction with long-range wireless communication, in a compact 60 × 32 × 12 mm form factor.
 
 ## Quick Start
 
@@ -67,7 +67,7 @@ T-Display S3 Pro LR1121 is a highly integrated development board based on **ESP3
 ## Key Features
 
 - ESP32-S3R8 dual-core LX7 @ 240 MHz, Wi-Fi + Bluetooth 5.0
-- 1.91-inch RM67162 IPS AMOLED, SPI/QSPI
+- 1.91-inch RM67162 IPS AMOLED, SPI/QSPI, optional capacitive touch
 - LR1121 multi-band LoRa (sub-GHz + 2.4 GHz)
 - AXPM65611 + BQ25896 power management, PCF85063ATL RTC
 - TF card, STEMMA QT/QWIIC, expansion header (see pin diagram)
@@ -84,7 +84,7 @@ T-Display S3 Pro LR1121 is a highly integrated development board based on **ESP3
 | Bluetooth | Bluetooth 5.0 LE |
 | LoRa | LR1121 (multi-band) |
 | Display | 1.91-inch RM67162 IPS AMOLED |
-| Touch | Capacitive |
+| Touch | Optional capacitive touch |
 | Power Management | AXPM65611 + BQ25896 |
 | RTC | PCF85063ATL |
 | Storage | TF card slot |

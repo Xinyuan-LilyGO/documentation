@@ -14,7 +14,7 @@ tags: ESP32-S3, AMOLED, LoRa, LR1121
 
 ## 概述
 
-T-Display S3 Pro LR1121 是一款基于 ESP32-S3 微控制器的高集成度开发板，搭载 16MB Flash 和 8MB PSRAM，支持复杂应用运行。配备 1.91 英寸 AMOLED 显示屏及触摸功能，内置 PMU 和 RTC，结合 VBUS 电源管理优化低功耗设计。提供 STEMMA QT/QWIIC 双接口、SD 卡存储，以及丰富的 GPIO、ADC 通道和 UART 接口。板载 LR1121 LoRa 模块，支持多频段通信，适用于智能穿戴、物联网终端等需要显示交互与多传感器集成的场景。
+T-Display S3 Pro LR1121 是一款基于 ESP32-S3 微控制器的高集成度开发板，搭载 16MB Flash 和 8MB PSRAM，支持复杂应用运行。配备 1.91 英寸 AMOLED 显示屏，触摸功能可选，内置 PMU 和 RTC，结合 VBUS 电源管理优化低功耗设计。提供 STEMMA QT/QWIIC 双接口、SD 卡存储，以及丰富的 GPIO、ADC 通道和 UART 接口。板载 LR1121 LoRa 模块，支持多频段通信，适用于智能穿戴、物联网终端等需要显示交互与多传感器集成的场景。
 
 ## 快速开始
 
@@ -66,7 +66,7 @@ T-Display S3 Pro LR1121 是一款基于 ESP32-S3 微控制器的高集成度开�
 ## 主要特点
 
 - ESP32-S3R8：16MB Flash，8MB OPI PSRAM，Wi-Fi + 蓝牙 5.0
-- 1.91 英寸 RM67162 IPS AMOLED，支持电容触摸
+- 1.91 英寸 RM67162 IPS AMOLED，可选电容触摸
 - LR1121 LoRa（多频段）
 - PCF85063ATL/1 RTC，AXPM65611 + BQ25896 电源管理
 - STEMMA QT/QWIIC 接口，TF 卡，丰富 GPIO
@@ -79,7 +79,7 @@ T-Display S3 Pro LR1121 是一款基于 ESP32-S3 微控制器的高集成度开�
 | Flash | 16MB |
 | PSRAM | 8MB (Octal SPI) |
 | 屏幕 | 1.91 英寸 RM67162 IPS AMOLED |
-| 触摸 | 电容触摸 |
+| 触摸 | 可选电容触摸 |
 | LoRa | LR1121 (多频段) |
 | 存储 | TF 卡 |
 | RTC | PCF85063ATL/1 |

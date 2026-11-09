@@ -80,7 +80,7 @@ If upload fails: hold **BOOT**, press and release **RST**, then release **BOOT**
 
 | Example | Description |
 | :-----: | :---------- |
-| `Factory` | Full factory test with display, touch, and LoRa |
+| `Factory` | Display, LoRa, and other factory tests; touch tests apply to versions with optional touch |
 | `LVGL_Demo` | LVGL 8 UI demo on RM67162 AMOLED |
 | `LR1121_LoRa` | LR1121 multi-band LoRa transmit/receive |
 | `PMU_Example` | AXPM65611 + BQ25896 power management |
@@ -154,7 +154,7 @@ void loop() {
 
 ### LVGL
 
-T-Display S3 Pro LR1121 uses a **1.91-inch RM67162 IPS AMOLED** display via SPI/QSPI. The `LilyGo-AMOLED-Series` library provides `LV_Helper` to wire LVGL directly to the board's display and touch in a few lines.
+T-Display S3 Pro LR1121 uses a **1.91-inch RM67162 IPS AMOLED** display via SPI/QSPI with optional touch. The `LilyGo-AMOLED-Series` library provides `LV_Helper` to connect LVGL to the display driver; touch support applies to versions equipped with the optional touch hardware.
 
 > **LVGL is pinned at 8.3.9.** The `LV_Helper` integration is tested against this version — do not upgrade.
 
@@ -175,7 +175,7 @@ void setup() {
         while (1) delay(1000);
     }
 
-    // LV_Helper registers the display and touch drivers with LVGL automatically
+    // LV_Helper registers the display driver; touch applies to versions with optional touch
     beginLvglHelper(amoled);
 
     lv_obj_t *label = lv_label_create(lv_scr_act());

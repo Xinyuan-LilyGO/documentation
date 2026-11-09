@@ -80,7 +80,7 @@ show_source: false
 
 | 示例 | 说明 |
 | :--: | :--- |
-| `Factory` | 含显示、触摸、LoRa 的全功能出厂测试 |
+| `Factory` | 显示、LoRa 等出厂测试；触摸测试适用于选配触摸的版本 |
 | `LVGL_Demo` | RM67162 AMOLED 上的 LVGL 8 UI 演示 |
 | `LR1121_LoRa` | LR1121 多频段 LoRa 收发 |
 | `PMU_Example` | AXPM65611 + BQ25896 电源管理 |
@@ -154,7 +154,7 @@ void loop() {
 
 ### LVGL
 
-T-Display S3 Pro LR1121 搭载 **1.91 英寸 RM67162 IPS AMOLED** 屏幕（SPI/QSPI）。`LilyGo-AMOLED-Series` 库提供 `LV_Helper`，只需几行代码即可将 LVGL 与屏幕和触摸驱动完整对接。
+T-Display S3 Pro LR1121 搭载 **1.91 英寸 RM67162 IPS AMOLED** 屏幕（SPI/QSPI），触摸功能可选。`LilyGo-AMOLED-Series` 库提供 `LV_Helper`，可将 LVGL 与屏幕驱动对接；触摸驱动适用于选配触摸的版本。
 
 > **LVGL 固定在 8.3.9 版本。** `LV_Helper` 集成已针对此版本测试，请勿升级。
 
@@ -175,7 +175,7 @@ void setup() {
         while (1) delay(1000);
     }
 
-    // LV_Helper 自动注册 LVGL 显示和触摸驱动
+    // LV_Helper 注册显示驱动；触摸驱动适用于选配触摸的版本
     beginLvglHelper(amoled);
 
     lv_obj_t *label = lv_label_create(lv_scr_act());
